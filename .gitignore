@@ -1,0 +1,14 @@
+# Track the maintained project and the directories it references.
+/*
+!/.gitignore
+!/.gitattributes
+!/AGENTS.md
+!/README.md
+!/水解桥架工程/
+!/水解设备模型库/
+!/水解设备布置模型/
+
+__pycache__/
+*.py[cod]
+.assembly-*/
+.build-*/

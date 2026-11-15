@@ -1,0 +1,44 @@
+{
+  "id": "V41B04C",
+  "group": "V41B04A-C",
+  "name": "电动葫芦",
+  "spec": "起升重量5吨，起升高度24米",
+  "qty": "3",
+  "x": 4418,
+  "y": 68894,
+  "z": 22000,
+  "level": "EL123",
+  "pos_el": 123.0,
+  "w": 1200,
+  "h": 700,
+  "depth": 650,
+  "shape": "hoist",
+  "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "source_foundation": {
+    "material": "RC",
+    "width": 1900,
+    "depth": 1900,
+    "height": 250
+  },
+  "footprint_mm": [
+    2040.0,
+    650.0
+  ],
+  "body_height_mm": 700.0,
+  "note": "hoist lift is not physical height",
+  "cad_position_mm": [
+    667352,
+    368894
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": false
+}

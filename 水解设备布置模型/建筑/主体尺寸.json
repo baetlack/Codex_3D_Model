@@ -1,0 +1,63 @@
+{
+  "source": "20251027 B系列结晶冷却厂房建施图_t3.dxf",
+  "source_sha256": "a3f73da2c570826c44af71e9b91cd67bc979329168f21e04873aaeac6ac960cd",
+  "units": "mm",
+  "axes": {
+    "east": "+X",
+    "north": "+Y",
+    "up": "+Z"
+  },
+  "massing": {
+    "extent_x_east_west": 44000,
+    "extent_y_north_south": 72000,
+    "floor_levels": [0, 6000, 12000, 23000],
+    "roof_level": 23000,
+    "parapet_top": 24500,
+    "parapet_thickness": 300,
+    "local_roof_high_point": 26900,
+    "roof_stair_rooms": [
+      {"corner": "southwest", "x": 0, "y": 0, "width": 3425, "depth": 7850},
+      {"corner": "northeast", "x": 41225, "y": 64800, "width": 3425, "depth": 7850}
+    ],
+    "exterior_wall_extent_x_east_west": 44650,
+    "exterior_wall_extent_y_north_south": 72650
+  },
+  "evidence": [
+    {
+      "view": "轴立面图",
+      "dimension": 72000,
+      "basis": "立面总尺寸链"
+    },
+    {
+      "view": "轴立面图",
+      "dimension": 44000,
+      "basis": "立面总尺寸链"
+    },
+    {
+      "view": "左视图、正视图",
+      "levels": [
+        0,
+        6000,
+        12000,
+        23000,
+        24500,
+        26900
+      ],
+      "basis": "楼层、女儿墙及楼梯间标高按用户确认的 0、+6.000、+12.000、+23.000、+24.500、+26.900 m"
+    },
+    {
+      "view": "屋面平面图及用户提供的楼梯间俯视图",
+      "basis": "截图门洞尺寸链为750+1500+750。西南与东北楼梯间外轮廓各3425×7850 mm，取自DXF A-Wall与A-Roof外边线；女儿墙厚300 mm，取屋面内外边线间距。",
+      "dxf_handles": ["A3F79", "A3EBD", "723", "724", "7C7", "7C8", "7D7", "7F6"]
+    },
+    {
+      "view": "首层平面图/门窗插入块",
+      "dimensions": [
+        44650,
+        72650
+      ],
+      "basis": "建筑外墙边界尺寸；结构轴网范围仍为44000×72000 mm"
+    }
+  ],
+  "caveat": "外墙边界和轴网范围分别表达；门窗平面位置、宽度及柱截面来自 DXF 图元。窗洞标高重复、门洞高度及+9.900m以上柱截面待结合门窗表和上部柱平面复核。"
+}

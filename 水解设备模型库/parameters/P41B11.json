@@ -1,0 +1,44 @@
+{
+  "id": "P41B11",
+  "group": "P41B11",
+  "name": "密封水循环泵",
+  "spec": "金属泵，Q=5m3/h，H=15m",
+  "qty": "1",
+  "x": 1184,
+  "y": 63112,
+  "z": 300,
+  "level": "EL100",
+  "pos_el": 100.3,
+  "w": 1200,
+  "h": 700,
+  "depth": 864.0,
+  "shape": "pump",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "source_foundation": {
+    "material": "RC",
+    "width": 1900,
+    "depth": 1900,
+    "height": 250
+  },
+  "footprint_mm": [
+    480.0,
+    475.20000000000005
+  ],
+  "body_height_mm": 434.0,
+  "dimension_status": "estimated pump casing only; motor/base omitted",
+  "cad_position_mm": [
+    664118,
+    363112
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": false
+}

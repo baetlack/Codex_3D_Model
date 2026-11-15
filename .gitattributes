@@ -1,0 +1,2 @@
+# Preserve original bytes for the SHA-256 manifests, including line endings.
+* -text

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "command": "python tools/project.py build-library",
+  "tested_from_independent_copy": true,
+  "compared_assets": 105,
+  "changed_geometry_assets": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "F41B05",
+  "group": "F41B05",
+  "name": "稀碱配置槽",
+  "spec": "ø2800X2500，V总＝12m3",
+  "qty": "1",
+  "x": 1085,
+  "y": 62054,
+  "z": 300,
+  "level": "EL100",
+  "pos_el": 100.3,
+  "w": 2800.0,
+  "h": 2500,
+  "depth": 2016.0,
+  "shape": "cylinder",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": null,
+  "source_foundation": {
+    "material": "RC",
+    "width": 3500.0,
+    "depth": 3500.0,
+    "height": 250
+  },
+  "source_support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "model_scope": "槽罐本体与顶部搅拌；不含基础及底部支撑",
+  "footprint_mm": [
+    2800.0,
+    2800.0
+  ],
+  "body_diameter_mm": 2800.0,
+  "body_height_mm": 2500.0,
+  "body_z_mm": 0,
+  "mixer_total_height_mm": 1880,
+  "mixer_height_basis": "按类型侧视比例估取",
+  "mixer_geometry_source": "槽罐搅拌器_标注侧视 v0.3（01、02、03、06）",
+  "cad_position_mm": [
+    664019,
+    362054
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": true
+}

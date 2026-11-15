@@ -1,0 +1,44 @@
+{
+  "id": "P41B01C",
+  "group": "P41B01A-F",
+  "name": "水解料中转泵",
+  "spec": "流量Q=220m3/h，扬程H=36m",
+  "qty": "6",
+  "x": -5623,
+  "y": 55068,
+  "z": -1500,
+  "level": "EL100",
+  "pos_el": 98.5,
+  "w": 1200,
+  "h": 700,
+  "depth": 864.0,
+  "shape": "pump",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "source_foundation": {
+    "material": "RC",
+    "width": 1900,
+    "depth": 1900,
+    "height": 250
+  },
+  "footprint_mm": [
+    480.0,
+    475.20000000000005
+  ],
+  "body_height_mm": 434.0,
+  "dimension_status": "estimated pump casing only; motor/base omitted",
+  "cad_position_mm": [
+    657311,
+    355068
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": false
+}

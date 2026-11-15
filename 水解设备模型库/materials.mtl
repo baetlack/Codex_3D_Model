@@ -1,0 +1,67 @@
+newmtl TankCyan
+Ka 0.03 0.38 0.43
+Kd 0.05 0.78 0.84
+Ks 0.16 0.16 0.16
+Ns 24
+
+newmtl FoundationRed
+Ka 0.25 0.05 0.06
+Kd 0.62 0.18 0.20
+Ks 0.08 0.08 0.08
+Ns 12
+
+newmtl SupportWhite
+Ka 0.42 0.44 0.45
+Kd 0.86 0.88 0.89
+Ks 0.20 0.20 0.20
+Ns 32
+
+newmtl DriveWhite
+Ka 0.42 0.44 0.45
+Kd 0.92 0.93 0.91
+Ks 0.25 0.25 0.25
+Ns 36
+
+newmtl MachineGrey
+Ka 0.18 0.20 0.21
+Kd 0.45 0.52 0.55
+Ks 0.16 0.16 0.16
+Ns 20
+
+newmtl PreheaterWhite
+Ka 0.60 0.61 0.62
+Kd 0.90 0.91 0.92
+Ks 0.20 0.20 0.20
+Ns 28
+
+newmtl BaseLightGray
+Ka 0.45 0.46 0.47
+Kd 0.72 0.74 0.76
+Ks 0.12 0.12 0.12
+Ns 16
+
+newmtl TankWhite
+Ka 0.72 0.73 0.74
+Kd 0.92 0.93 0.94
+Ks 0.08 0.08 0.08
+Ns 8
+d 1.0
+
+newmtl MixerLightGray
+Ka 0.52 0.54 0.56
+Kd 0.78 0.80 0.82
+Ks 0.14 0.14 0.14
+Ns 18
+d 1.0
+
+newmtl AnnotatedMotor
+Kd 0.2196 0.4980 0.4863
+
+newmtl AnnotatedDrive
+Kd 0.3490 0.4784 0.5961
+
+newmtl AnnotatedShaft
+Kd 0.8392 0.6431 0.3529
+
+newmtl AnnotatedFrame
+Kd 0.4275 0.5176 0.5922

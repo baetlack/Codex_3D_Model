@@ -1,0 +1,2733 @@
+{
+  "algorithm": "SHA256",
+  "files": {
+    "data/原始资料/0241B_二期水解仪表桥架布局_1031.dwg": {
+      "bytes": 2315657,
+      "sha256": "4b3882cd0157a22af684ec18ec8cdab4f1d0dda10e2978006346466c0d9a0e99"
+    },
+    "data/原始资料/0241B_二期水解仪表桥架布局_1031_t3.dxf": {
+      "bytes": 10719980,
+      "sha256": "e31c4a320fbe841b87e820260508e68d6d2ba443842536ee25efd75bfd8c402e"
+    },
+    "data/原始资料/设备/槽罐搅拌器_一体轴座标注_2026-11-06.png": {
+      "bytes": 38533,
+      "sha256": "c7ab693cdd84072df2be4fb1cab2425737958d0e9c28ffb814fb43e3c3f52cc7"
+    },
+    "data/原始资料/设备/槽罐搅拌器_中间轴范围标注_2026-11-06.png": {
+      "bytes": 37891,
+      "sha256": "7dcedfcdf2c8a8f3737eb8d259d69cab4d06d3771740ecd00a8adb17707ca6a4"
+    },
+    "data/原始资料/设备/槽罐搅拌器_支架红圈修订_2026-11-06.png": {
+      "bytes": 65174,
+      "sha256": "9327024bd55afbb1d128a1706fbf6b219db54b63913857f55e172d7fb519ba21"
+    },
+    "data/原始资料/设备/槽罐搅拌器_标注侧视_2026-11-06.png": {
+      "bytes": 1985579,
+      "sha256": "3c891433cde49860f19763d2b4b77ff9400e622c9e072cc3dae2b4ca5f1f5ff3"
+    },
+    "data/原始资料/设备基础/水解设备基础图.dwg": {
+      "bytes": 333017,
+      "sha256": "aab155025ffea7deec572bb78b1f6d05821a2ead798b03c2cd5025f4ae9c852f"
+    },
+    "data/原始资料/设备基础/水解设备基础图.dxf": {
+      "bytes": 3821825,
+      "sha256": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7"
+    },
+    "data/原始资料/设备基础/水解设备基础图_增补烟囱及洗涤塔钢塔架_20261106.dxf": {
+      "bytes": 5117133,
+      "sha256": "a456efdfeec65b79294291c0f55fa4c3eee95564e68f5a8ca41cd8c8d8b73b86"
+    },
+    "data/原始资料/连接件/L1C01.png": {
+      "bytes": 55286,
+      "sha256": "7c96d6c673f274f8cc4514ff3344e0ccd4c86fba1503328f35ef75079e202ab9"
+    },
+    "data/原始资料/连接件/L1C02.png": {
+      "bytes": 55177,
+      "sha256": "678e6fcf290d396f728662e0e6cbd4676488eb36f026f369d7923700cc22da72"
+    },
+    "data/原始资料/连接件/L1C03.png": {
+      "bytes": 54817,
+      "sha256": "dea428e03163a2612789ffd5d04eea8d9cc2da37361631851393622f745a3abe"
+    },
+    "data/原始资料/连接件/L1C04.png": {
+      "bytes": 58925,
+      "sha256": "ec64674f3cb29c4f2ddd9e20b1f9ca96f5b91a58a4e365dfbe684b9a2693bd94"
+    },
+    "data/原始资料/连接件/L1C05.png": {
+      "bytes": 51635,
+      "sha256": "aee3740643018bfa3f5f8a0d5c28e041e293b651750a914c0c8d8619ec655fec"
+    },
+    "data/原始资料/连接件/L1C06.png": {
+      "bytes": 54782,
+      "sha256": "d8c42925fa3b6c87a22c2014e347c4a1d3752fa0eeac1c7d82cfda1b3930f748"
+    },
+    "data/原始资料/连接件/L1C07-乙字弯.png": {
+      "bytes": 63856,
+      "sha256": "b8d41055f89e8c9b98710c6ec9081cadbc7dbdd26f9e25fa0e3c58bd79a823c5"
+    },
+    "data/原始资料/连接件/L1C07-侧视图.png": {
+      "bytes": 5731,
+      "sha256": "9e35bd16e55c569a4b09c979e49857ee18e8fea1b746e406530ae51f20f1d74b"
+    },
+    "data/原始资料/连接件/L1C08.png": {
+      "bytes": 67629,
+      "sha256": "28fa2cd7df2786a43f75a8f3240ecad91077718db77b255e04e2799be98ee6b8"
+    },
+    "data/原始资料/连接件/L1C09.png": {
+      "bytes": 57785,
+      "sha256": "3ae7666120e887b19a7fce6ebd9117270f4608cf8325368713ffb5dbbb40c536"
+    },
+    "data/原始资料/连接件/L2C01.png": {
+      "bytes": 57138,
+      "sha256": "ce17735cafb86d5135aba9cc8aba867a7e61f4ae3d10993fb374781ae028c83c"
+    },
+    "data/原始资料/连接件/L2C02.png": {
+      "bytes": 51748,
+      "sha256": "5f03de0ab14482a739af7e570207a97c5b8d5d6c5a4e679980a2e2bf547643c7"
+    },
+    "data/原始资料/连接件/L2C03-上坡.png": {
+      "bytes": 47424,
+      "sha256": "ffe2db7bbc69baab7e7eb36772e976c590770668ac464b729c98bf3ca8b06180"
+    },
+    "data/原始资料/连接件/L2C04-下坡.png": {
+      "bytes": 107213,
+      "sha256": "b1855deb9294cfc9f6e8ea019b4d18a48cedb93cfeb5acb7c49d832265acd10a"
+    },
+    "data/原始资料/连接件/L2C05.png": {
+      "bytes": 52500,
+      "sha256": "7430574997c1de348fd11907ec9b803a03d246058ade098e96c8a7c5088093a8"
+    },
+    "data/原始资料/连接件/L2C06-上坡.png": {
+      "bytes": 79619,
+      "sha256": "4c7d46ac55a850164b648276de3b61337496eff1e952df6c3490422160e5759a"
+    },
+    "data/原始资料/连接件/L2C07-下坡.png": {
+      "bytes": 100608,
+      "sha256": "cccca8fb3786664e279fa949888596a85fe5e75b1588bf5b7c2e4a8f4c64e997"
+    },
+    "data/原始资料/连接件/L2C08.png": {
+      "bytes": 53176,
+      "sha256": "5a1950a9984f3addc3252ed3eaf5349734df3ac21f0b8a86c29cac7b9bed2a0c"
+    },
+    "data/原始资料/连接件/L2C09.png": {
+      "bytes": 59955,
+      "sha256": "c4fe9ea26852e1222bf85e6a21e83f1af48569116d66a0087fcfddeeabe2a7b9"
+    },
+    "data/原始资料/连接件/L2C10.png": {
+      "bytes": 54737,
+      "sha256": "63984004c10ac3ae50d8cb6006ba07383612363f2ab7a6615fa149c2d99e8c57"
+    },
+    "data/原始资料/连接件/L2C11.png": {
+      "bytes": 54117,
+      "sha256": "5f20f13a114a5d305962d931b36d16bcde849560cc47f6ffec724f821f582d31"
+    },
+    "data/原始资料/连接件/L2C12-下坡.png": {
+      "bytes": 63243,
+      "sha256": "4986bb135a26e61710082dc27c518ebd43633f49daf7834845f256f39bbaf36e"
+    },
+    "data/原始资料/连接件/L2C13.png": {
+      "bytes": 50102,
+      "sha256": "8dee7b06249e745359a1ccf99d9e14cd37dd207590b40eb13b66b9d1508a4ea6"
+    },
+    "data/原始资料/连接件/L2C14.png": {
+      "bytes": 56309,
+      "sha256": "be48e8c7ae9da5b9d4d7513359d4bd1bf2d83c69ae74750e065b1db17dbfb2a1"
+    },
+    "data/原始资料/连接件/L2C15.png": {
+      "bytes": 50301,
+      "sha256": "a3f83a7c32f46621f9ae853b0f492d8ed3f18820c2be00d0273df0888fad7663"
+    },
+    "data/原始资料/连接件/L2C16.png": {
+      "bytes": 52476,
+      "sha256": "e94301b25e08dd01c3ac557612387fe445c0dfb71520a241f4f1f6aab6e259ed"
+    },
+    "data/原始资料/连接件/L2C17.png": {
+      "bytes": 52874,
+      "sha256": "1f020e2d351a80739a01d1cdafa4a0921fa7715fdf659811a28c38e52eb908a5"
+    },
+    "data/原始资料/连接件/L2C18-乙字弯.png": {
+      "bytes": 28698,
+      "sha256": "ebf13bd67823b60254dbc73d215dd230c414818fb4c9b78d0a5009be29856641"
+    },
+    "data/原始资料/连接件/L2C18-俯视图.png": {
+      "bytes": 17955,
+      "sha256": "fb36d2018589354ce3defc98bfd8a33cf1db65134b15a8e8d08fa9fd3f97c932"
+    },
+    "data/原始资料/连接件/L2C19.png": {
+      "bytes": 55110,
+      "sha256": "12a0224aa7f3775ca3cf5086bd50084ba789e576aa0d472beebc094c77a79a63"
+    },
+    "data/原始资料/连接件/L2C20.png": {
+      "bytes": 53259,
+      "sha256": "b7a9880428a2527f77d76c9eba62d68bd10df12111517980eb90cab7485a539f"
+    },
+    "data/原始资料/连接件/L2C21-下坡.png": {
+      "bytes": 69681,
+      "sha256": "c195b44a6ef62fc6e94176980418e34cfe69b2b5d9fe1f65cf693152708253ba"
+    },
+    "data/原始资料/连接件/L3C01.png": {
+      "bytes": 52169,
+      "sha256": "0860501792e7d30e2777a389cba2748523b91d59f74bc21afc64c864b691203a"
+    },
+    "data/原始资料/连接件/L3C02-侧视图.png": {
+      "bytes": 3722,
+      "sha256": "01a1ae4dd16a0e7f31ab510e2812d220b8a7e8d31441a3bb0bf1f25559af1514"
+    },
+    "data/原始资料/连接件/L3C02-俯视图.png": {
+      "bytes": 2360,
+      "sha256": "1f4bc725edc8d1aaf95c7474d8011da28af69102eac4dd4a07a0c523f798ebd1"
+    },
+    "data/原始资料/连接件/L3C02-正视图.png": {
+      "bytes": 2249,
+      "sha256": "c81b3cac8583bd1bbb5c52a03045ba37872aa95a0d735619391426ec3fad8233"
+    },
+    "data/原始资料/连接件/L3C02.png": {
+      "bytes": 55810,
+      "sha256": "017a9bf30e4e9ef3b2a7445135ac1e061dcfd75c767c22438d1cdf3a98bdeefc"
+    },
+    "data/原始资料/连接件/L3C03.png": {
+      "bytes": 50898,
+      "sha256": "7374165cc0492dcee2e76907c92873467ebd545d35a693a93fd37ea637cb62a9"
+    },
+    "data/原始资料/连接件/L3C04-侧视图.png": {
+      "bytes": 4690,
+      "sha256": "dd8b16368e0a5c3b1f96b2290c77eeba32d0ed4a8236705f2e3b9638df70a47f"
+    },
+    "data/原始资料/连接件/L3C04-俯视图.png": {
+      "bytes": 6611,
+      "sha256": "b96cb60061fe868d0be75803f008b36f2708893e5902675f3d452a6cf631c88a"
+    },
+    "data/原始资料/连接件/L3C04-正视图.png": {
+      "bytes": 4626,
+      "sha256": "7233d3dce3ff210cb4920f9328345dac955058807672e8252e8188a8f72d279c"
+    },
+    "data/原始资料/连接件/L3C04.png": {
+      "bytes": 56231,
+      "sha256": "d807de13d0d81c863236eb0b6c91eba1125dc57153bb5861d502e250db37d01d"
+    },
+    "data/原始资料/连接件/L3C05.png": {
+      "bytes": 55756,
+      "sha256": "650b1ed644f943ec62f00c39bdede97566c2a3afa7f8d688ab2e4ee91fcec0df"
+    },
+    "data/原始资料/连接件/L3C06.png": {
+      "bytes": 50746,
+      "sha256": "cc1ac8831cf41137f8e9d8c5dda29d8a36f5410924f3b24c76668f052d4f95bc"
+    },
+    "data/原始资料/连接件/L3C07.png": {
+      "bytes": 53518,
+      "sha256": "c8d38ebf83807621d2b77191e0469f782fb49f6994edcfba012f05c9a7662089"
+    },
+    "data/原始资料/连接件/L3C08.png": {
+      "bytes": 61320,
+      "sha256": "ff25888fcb330e6c5733449e7a799aa806c556b0d497e3424c397cf1f64e5c79"
+    },
+    "data/原始资料/连接件/L3C09.png": {
+      "bytes": 55409,
+      "sha256": "c6f6d11bc8fbd701b51f18b80f9ab46fce18da94ee69fb0a28046f4aabea1e3b"
+    },
+    "data/原始资料/连接件/L3C10-乙字弯.png": {
+      "bytes": 44049,
+      "sha256": "b8da59c7d1bc873b155f4fa3a1753a93bf29b370877ed71f942688193e39be53"
+    },
+    "data/原始资料/连接件/L3C10-侧视图.png": {
+      "bytes": 6611,
+      "sha256": "ebbd042de9fe4eceab9af4ab95b5cadace23c608566a829d3d6cc21c8b47286c"
+    },
+    "data/原始资料/连接件/L3C11.png": {
+      "bytes": 54986,
+      "sha256": "a67f9596745ca467279b372ad6c7909634bfc1694992b1b01803e3a2e4a0ce52"
+    },
+    "data/原始资料/连接件/L3C12.png": {
+      "bytes": 47040,
+      "sha256": "2be9fb1e21971f2b48d73a64c90938226f824e8df1c55545b79bda23c15f2be7"
+    },
+    "data/原始资料/连接件/L3C13.png": {
+      "bytes": 53500,
+      "sha256": "efbfa15a23a612f457e57055e9bfa775abdc8a113058df91b11be0d9b590c625"
+    },
+    "data/原始资料/连接件/L3C14.png": {
+      "bytes": 34649,
+      "sha256": "22407f5beb2675c5f2564c6005d9bfb9e513176a36bca2486b638c2e37848ae6"
+    },
+    "data/原始资料/连接件/L3C15.png": {
+      "bytes": 54999,
+      "sha256": "2971d7d424d1227a3c560d618646cfd722af22bebe598519b9b0f6aafb99fed1"
+    },
+    "data/原始资料/连接件/L3C16.png": {
+      "bytes": 59057,
+      "sha256": "57c3873e0da3787b9b7d4c3f15a59a713425dea2d9009c36b8782b75a5f87ff5"
+    },
+    "data/原始资料/连接件/L3C17.png": {
+      "bytes": 50518,
+      "sha256": "9b2a896db4da182dfb5fc53f34737ab435332b35f982d041e8c59b4c734aef67"
+    },
+    "data/定位详图/L1_detail_01.png": {
+      "bytes": 192952,
+      "sha256": "47c0c8fa1cfc22f9f6295ee174a4f822f0b35a8e1ded136329f91a3085945dba"
+    },
+    "data/定位详图/L1_detail_02.png": {
+      "bytes": 151213,
+      "sha256": "27c3bf399bd7af731a33db0b9ce944ee20e36743b2e2db31651a511e06ba6431"
+    },
+    "data/定位详图/L2_detail_01.png": {
+      "bytes": 205378,
+      "sha256": "a1425e78486b7c1edc3d75b11821988b49edb418cb45b813079109f5d24688df"
+    },
+    "data/定位详图/L2_detail_02.png": {
+      "bytes": 208361,
+      "sha256": "d70620a6e528fc696a3ba0d1edc043a9cbffe000b9474d07ff30d2aa5af55c81"
+    },
+    "data/定位详图/L2_detail_03.png": {
+      "bytes": 213343,
+      "sha256": "01bb1172fe628dd210a82db04fefac81b437ea087ca4efa65e0b186b200d6c42"
+    },
+    "data/定位详图/L2_detail_04.png": {
+      "bytes": 146614,
+      "sha256": "4242f645a592a6827b9d6a9969ba37709a66151b91b7bf842eb719df60313a68"
+    },
+    "data/定位详图/L3_detail_01.png": {
+      "bytes": 202767,
+      "sha256": "c9931209197636006afd48f7a2df3ab94ffce9503dc3aca904b6a10722bbe1ad"
+    },
+    "data/定位详图/L3_detail_02.png": {
+      "bytes": 206546,
+      "sha256": "9a6e050dde3fe30482baa0da0a2c87701e795605ad3538d2babe5ac9e59507c3"
+    },
+    "data/定位详图/L3_detail_03.png": {
+      "bytes": 196218,
+      "sha256": "bfb6e64dcdb146d89c1fb7bf33ce70cf1442e7668f953e05bf21923ce7024489"
+    },
+    "data/定位详图/索引.md": {
+      "bytes": 880,
+      "sha256": "762f69a7e6442814c615720fe4bca4b586b594dfea72619400196f425f9c5f41"
+    },
+    "data/工程检查.json": {
+      "bytes": 413,
+      "sha256": "55ff1f912a7dcd9c71c272eda326691c020a1ebf59aef872c880def9890f4bf0"
+    },
+    "data/来源记录.json": {
+      "bytes": 99353,
+      "sha256": "bc8b2ac8589228e1a6ce9928827c426c67f068e3978d264b27f0ac72ddab9c5e"
+    },
+    "data/读取记录/dxf_report.txt": {
+      "bytes": 41528,
+      "sha256": "31bd8582aac12d065f33aa158d47385270ec85f4d1f85c114d38cf04bf0f382d"
+    },
+    "data/读取记录/fitting_checklist.csv": {
+      "bytes": 4648,
+      "sha256": "169f10dbe7429ce6dbd9bca266cf53d57e49df0172059987e0995c366aa8c6f1"
+    },
+    "data/读取记录/fitting_locations.png": {
+      "bytes": 169751,
+      "sha256": "6f469f0b490f6c39fd038a753314f34f707988e1620c5a847c55cb7035a35301"
+    },
+    "data/读取记录/fitting_overview_clear.png": {
+      "bytes": 327836,
+      "sha256": "36305a000c1c0d63805e06ca1f88ee586c089cde7b8ba806faaf1e0c27340092"
+    },
+    "data/读取记录/fitting_overview_clear.svg": {
+      "bytes": 162464,
+      "sha256": "61208898706e807d91219c9b4d81d4bd953a27f722650003f8990cc91ddaab63"
+    },
+    "data/读取记录/fitting_screenshot_manifest.json": {
+      "bytes": 21972,
+      "sha256": "fe33f67946c134449b17415d886bdb906961bb7ca74fd497479021a35fbf9a1e"
+    },
+    "data/读取记录/screenshot_L1_1.jpg": {
+      "bytes": 201089,
+      "sha256": "059f59f1585f0aa2164bddae673bca523175602b96314bcb62864867d2f78b83"
+    },
+    "data/读取记录/screenshot_L1_2.jpg": {
+      "bytes": 32976,
+      "sha256": "3d20b2ce1fe2a254619770a9a843d4528c818b0041cac7b4964a707ec93dfdc3"
+    },
+    "data/读取记录/screenshot_L2_1.jpg": {
+      "bytes": 170912,
+      "sha256": "af547838b5fe9b7508ee4426fdf54d79bd1e1d56425c2067ff85eb0462ed0bf2"
+    },
+    "data/读取记录/screenshot_L2_2.jpg": {
+      "bytes": 199877,
+      "sha256": "e66a1876c47f80c5830755bd622cac8c356b96c07c0fa1dadde3b3c767ed1543"
+    },
+    "data/读取记录/screenshot_L2_3.jpg": {
+      "bytes": 111843,
+      "sha256": "e31c9c95a02ff6ca5b708c6c12b5accb7269f627c91132f873853e1529c83d48"
+    },
+    "data/读取记录/screenshot_L3_1.jpg": {
+      "bytes": 212824,
+      "sha256": "90b6d485d3628f5937c219f5e678334ee3ec2e59645b3b22b84e3192a3e8c7f8"
+    },
+    "data/读取记录/screenshot_L3_2.jpg": {
+      "bytes": 197468,
+      "sha256": "6925016007061d3ee2b5b398c502ebe909bf3b37333d07132ee83c52d09f5461"
+    },
+    "data/读取记录/screenshot_L3_3.jpg": {
+      "bytes": 34014,
+      "sha256": "92b7b0e25d14a6a7512327f3f58e62bf42b360df4e95937e278cf8fc86100c74"
+    },
+    "data/读取记录/tray_coordinates.csv": {
+      "bytes": 11337,
+      "sha256": "d255803fc741fb3e8a63cc480b5b2aef8584b4dd4f7f4658965d9789c5582c89"
+    },
+    "data/读取记录/tray_entget.txt": {
+      "bytes": 39829,
+      "sha256": "bceaeb1620cefad1e20724dd40d1c6b05e2abc3d163deae48cd23f76043910aa"
+    },
+    "data/读取记录/tray_objects.json": {
+      "bytes": 143929,
+      "sha256": "5c1813040dd46204e3ae0f478a57161e897da095727df1a3e3c21cb9f10aa338"
+    },
+    "data/读取记录/tray_paths.txt": {
+      "bytes": 7338,
+      "sha256": "a0e738ff5b7399e621a5ef573e7a77d5aec78a505ad38e9ec9904fbf61e62595"
+    },
+    "data/读取记录/tray_preview.png": {
+      "bytes": 849340,
+      "sha256": "d2f90ec567b29f0827637135727dc3cdce7c58dca39957d01bbadf4bb0788571"
+    },
+    "data/读取记录/连接件截图核对表.csv": {
+      "bytes": 10113,
+      "sha256": "250d8faa81c83b45f22caf85db7f0aea87b62803e529ffd485087c28d3542b0c"
+    },
+    "data/读取记录/连接件截图核对说明.md": {
+      "bytes": 3254,
+      "sha256": "77e0a92740962d86f98cf43af9824d385d5b9fb68163c77317d68caeffb8997b"
+    },
+    "data/读取记录/连接件补齐清单.md": {
+      "bytes": 3568,
+      "sha256": "48ad1113764a9dc271bed91a2d1518d4bd6ee4fcdc86d832963848b96205608e"
+    },
+    "data/重建检查.json": {
+      "bytes": 183,
+      "sha256": "0feb5582d62a0082717e948e55c3f32ce8580603c5d805840246bbc75a77be96"
+    },
+    "index.html": {
+      "bytes": 8026,
+      "sha256": "e5050251812de804fd28c3f0de31003cdb3b31f356049f6bff64e5db41f05f0c"
+    },
+    "models/整体/assembly.json": {
+      "bytes": 292959,
+      "sha256": "b9a1a30d2697db669ebbd263c3762262673a308a743dcfadcf57a4db81e2a76d"
+    },
+    "models/整体/index.html": {
+      "bytes": 7830,
+      "sha256": "7233cd0f118daf6f34767a8afa4875f5c69bde8b16f1f8df14f2ed2fc5229458"
+    },
+    "models/整体/models/L1_桥架.glb": {
+      "bytes": 115368,
+      "sha256": "f762aaccf0c7df789aee9f4bf7d2d65bfb65c878c19a28232beadc27aaf91aab"
+    },
+    "models/整体/models/L1_桥架.obj": {
+      "bytes": 139368,
+      "sha256": "b5a7f7583c63c3e42a22a67c777a2b7134623d2174fe6a11158dfd4919ffde3c"
+    },
+    "models/整体/models/L2_桥架.glb": {
+      "bytes": 222516,
+      "sha256": "f42f0e96d0621cb2e75167b43b9155d5048c0eca327c5c5bfed2dadaf178ebd2"
+    },
+    "models/整体/models/L2_桥架.obj": {
+      "bytes": 272918,
+      "sha256": "7bbe34edf2ac2f75fb66c0afbb624c67e41e3f00b5e22a18d6d97b8c851bc741"
+    },
+    "models/整体/models/L3-X01_45度乙字弯.glb": {
+      "bytes": 6748,
+      "sha256": "31f4ab0387820ee7bb3f5499d6e65ef1272b6b0f4316845a87acebb336147366"
+    },
+    "models/整体/models/L3-X01_45度乙字弯.obj": {
+      "bytes": 7319,
+      "sha256": "3e870ae8bc7c333cc2d51dfe8c2955e1ef910f1127e5810e47b44bf8d2bf158a"
+    },
+    "models/整体/models/L3-X01_参数.json": {
+      "bytes": 813,
+      "sha256": "d5b432cd0064ccbcf4f7cf5c85e60b352da812f79a1adc38a784291ae8686901"
+    },
+    "models/整体/models/L3_桥架.glb": {
+      "bytes": 205696,
+      "sha256": "e9a558dd6e016f0d33ec7ba851872f73ad5e9a684121d744cfd0f2ba5a140f97"
+    },
+    "models/整体/models/L3_桥架.obj": {
+      "bytes": 260098,
+      "sha256": "fcfcb00117a95f5fb58d9ea27bfe95d1c0b1da0f51a547ea14eafd85da9434d2"
+    },
+    "models/整体/models/三层桥架.glb": {
+      "bytes": 542152,
+      "sha256": "9a08b6216d14e0b96941d2df33f58c46136144d3356035490938fa88b58fd801"
+    },
+    "models/整体/models/三层桥架.obj": {
+      "bytes": 680917,
+      "sha256": "8d47dbab9fcf645ce5141cb47a77fbf4babff2740c5b2b64f5829147de68e5d2"
+    },
+    "models/整体/previews/三层桥架总览.png": {
+      "bytes": 518864,
+      "sha256": "a6533b48cbc67817eb9fd3510f79d2267950f06c521d1d2f4557e7a62f36f1c7"
+    },
+    "models/整体/previews/东南立管连接.png": {
+      "bytes": 517312,
+      "sha256": "0f899b7e47ad7a466db8cec5a210b7640d3fb8b6a12cc890a17c52f80bf74819"
+    },
+    "models/整体/previews/交互模型界面.png": {
+      "bytes": 543293,
+      "sha256": "03ee598997bdba8897129225a5a5531c0102a85c0d3e0acce48e040bb925637d"
+    },
+    "models/整体/previews/侧栏折叠.png": {
+      "bytes": 351179,
+      "sha256": "3146f14fece1175ad5e916254abf9daec118a01a205733a7dabec9d3bf0df8a1"
+    },
+    "models/整体/previews/接口核对示例.png": {
+      "bytes": 433693,
+      "sha256": "e392290b93044b4bf6f7fb335b6b9714d98ba82233a7dd279e3ed1c8035d8029"
+    },
+    "models/整体/previews/立管乙字弯尺寸.png": {
+      "bytes": 95498,
+      "sha256": "0ca385bc1537dd3d767657b0cde1f5a250975f868d9d46994e1d9dfc5f4f541f"
+    },
+    "models/整体/README.md": {
+      "bytes": 4333,
+      "sha256": "b7745123e6da64d20462732c88545449c014e827be253dce3436566c8f75f4f6"
+    },
+    "models/整体/reports/browser_check.json": {
+      "bytes": 746,
+      "sha256": "c2c241cd6c3c108af503f8d48f2424bb347b2dea5c8262ca3c5efcfdd51bbcf5"
+    },
+    "models/整体/reports/endpoint_adjustments.json": {
+      "bytes": 44823,
+      "sha256": "76498b86e82753d68bb14b0528d67669e22840a301deb85cceecaafd15c16530"
+    },
+    "models/整体/reports/summary.json": {
+      "bytes": 2731,
+      "sha256": "d4dde8518993ed7e409f9eba22200b190d37118d6f5c09cfe33d3118e1b39125"
+    },
+    "models/整体/reports/verification.json": {
+      "bytes": 1248,
+      "sha256": "3da435f36818c724b95c122074547c3d53e8b9ca6151b2b71922c09e1ac76c33"
+    },
+    "models/整体/reports/接口核对.csv": {
+      "bytes": 10110,
+      "sha256": "1204d08eb605d8f59dcfe53a2a838c0db050d313a29bed56313f6a88f08aeb4e"
+    },
+    "models/整体/reports/装配说明.html": {
+      "bytes": 3016,
+      "sha256": "5c28d62b71824d4fdb65047532667fc2718ee314e85be86c9cf3bb8174b2a384"
+    },
+    "models/整体/reports/装配说明.md": {
+      "bytes": 1801,
+      "sha256": "01d6503230fdfa0cf1072722235559b41360b4b0dbf3d242579b3a64a2d50551"
+    },
+    "models/整体/viewer.js": {
+      "bytes": 13720,
+      "sha256": "1304090882deff3b0592f0f525e9da8a32cbb91fac82cda564caaf1a10fbd00d"
+    },
+    "models/整体/viewer_data.js": {
+      "bytes": 730411,
+      "sha256": "6316183f42f62f079320f26d14617eb44c6ad9b6d848b21b52219c79fe1fca73"
+    },
+    "models/设备/3d.html": {
+      "bytes": 5339,
+      "sha256": "583416989247fba43a6e765ab91b2ad60cc1886c387bfb1a912c61c1fc44e689"
+    },
+    "models/设备/C4_BH2C_tank_mixer.glb": {
+      "bytes": 132928,
+      "sha256": "239d1e093089e7416da5d5b3d69f7bc0fe73bc436815e425cd2ae745547570ac"
+    },
+    "models/设备/C4_BH2C_tank_mixer.json": {
+      "bytes": 1489,
+      "sha256": "f6c48880f673ecad62263a6474ee3a0ffa149100e58c410bed647200d615c64e"
+    },
+    "models/设备/C4_BH2C_tank_mixer.mtl": {
+      "bytes": 442,
+      "sha256": "9869cd1c9e5b3828652c09308f70a47932bf50532a2029d791db7402f20a15fb"
+    },
+    "models/设备/C4_BH2C_tank_mixer.obj": {
+      "bytes": 203445,
+      "sha256": "48ace38d47239a5eaf856ef2929ab60b8074ca4e66630ae9e46594131d2f8d81"
+    },
+    "models/设备/index.html": {
+      "bytes": 4921,
+      "sha256": "214dd3385285b216fc52bf23efc9ea765cee29e58e8ae323df10a2c0bd5898ff"
+    },
+    "models/设备/model_data.js": {
+      "bytes": 236078,
+      "sha256": "f2ec751cc859c0e806d6d93b6d8da0341ddcef81b628a47e9ba84b14d5203d91"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/index.html": {
+      "bytes": 4743,
+      "sha256": "801045938b19a67c6da96f76cd22f0f51a783348d18dbac642b057474ea37e9f"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/model_data.js": {
+      "bytes": 1448053,
+      "sha256": "2fc3a78a6ca79244dde95376dac2c43e0aaaba97e340401ff1d73c2cf51f590d"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/viewer.js": {
+      "bytes": 5427,
+      "sha256": "7b9ad9c93eae0e4fd401c58856d0f9d299ea77f59e3c4f9f208086dd15b2a8a5"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/参数.json": {
+      "bytes": 2729,
+      "sha256": "54cf50816d57c1eedf05659ddaf01140cb7095fbf6f7c4b4d2f2cd1957e7e806"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.1.glb": {
+      "bytes": 875764,
+      "sha256": "4b0e2930361242616d786231007341d64b1c088fe7b01225c1eeb7ab2714f7bc"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.1.mtl": {
+      "bytes": 280,
+      "sha256": "e92df02d47fd36d95c3840d9ec6fdd2313c3f2508592e2019e7823d57ca9d3e8"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.1.obj": {
+      "bytes": 1628113,
+      "sha256": "1dfb620bd1e67527c77f4d37b73dae46b07fc0161f43021bb3c6511a1a565c8b"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.2.glb": {
+      "bytes": 876332,
+      "sha256": "49c22b8ca524a6c5a63c5a14ff9eba55512480d1a631429acff1cd8a99d4ed63"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.2.mtl": {
+      "bytes": 280,
+      "sha256": "e92df02d47fd36d95c3840d9ec6fdd2313c3f2508592e2019e7823d57ca9d3e8"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.2.obj": {
+      "bytes": 1629163,
+      "sha256": "25a0b66d6d9ba642564c17fe2944e4c39b39fc3685c349e103ca7a11088401c5"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.3.glb": {
+      "bytes": 931936,
+      "sha256": "9174fe8eabed221c809b3225561d93e30f2e33f4b39581328704fad525023a47"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.3.mtl": {
+      "bytes": 240,
+      "sha256": "9465249050b6ec3b803e46429d232bde1f6a5e23f6b93ae87be1886a09a2b2f5"
+    },
+    "models/设备/槽罐搅拌器_标注侧视/槽罐搅拌器_v0.3.obj": {
+      "bytes": 1740350,
+      "sha256": "fbeaca30266a5442c0bc0b6c41dc48fd8056cf0fcc0dd4eca6bce7e154a4eab0"
+    },
+    "models/设备/设备基础_20261106/C41B01/C41B01.glb": {
+      "bytes": 34024,
+      "sha256": "4ed91fe62bffdc339aecc97fe632585e37542e213213f4fc4e92dcd8be40e5a4"
+    },
+    "models/设备/设备基础_20261106/C41B01/C41B01.mtl": {
+      "bytes": 80,
+      "sha256": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c"
+    },
+    "models/设备/设备基础_20261106/C41B01/C41B01.obj": {
+      "bytes": 59704,
+      "sha256": "cfbc791165aeffa798260d9f2f7172c4142e5c63a5fe43f6d503e9bf6c37d49e"
+    },
+    "models/设备/设备基础_20261106/C41B01/model_data.js": {
+      "bytes": 45375,
+      "sha256": "45ebb36415b8e29d398226834ccba22cd2bab5512ccb283ebd24e47b8486a3a7"
+    },
+    "models/设备/设备基础_20261106/C41B01/参数.json": {
+      "bytes": 1098,
+      "sha256": "05681febdb48c105e49263cf4247134f9b34e582c93f253bd0b7d4defb643bfc"
+    },
+    "models/设备/设备基础_20261106/C41B02/C41B02.glb": {
+      "bytes": 34032,
+      "sha256": "6398fc168127bf34598e85864c833f067767cf6c9d1799144cdd793af29028ef"
+    },
+    "models/设备/设备基础_20261106/C41B02/C41B02.mtl": {
+      "bytes": 80,
+      "sha256": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c"
+    },
+    "models/设备/设备基础_20261106/C41B02/C41B02.obj": {
+      "bytes": 59728,
+      "sha256": "28e296600119c2641a60c89e225183925a87d833e32dbbdfef2691867e0612da"
+    },
+    "models/设备/设备基础_20261106/C41B02/model_data.js": {
+      "bytes": 45291,
+      "sha256": "a5074b65d85b02d2eb2a6c0f4caa2d5dae93cd23d8ad43c14fc752690506b601"
+    },
+    "models/设备/设备基础_20261106/C41B02/参数.json": {
+      "bytes": 1104,
+      "sha256": "06119c48f38379babc67aa00d280e0548f7bbf007e17a9a5c6d47fa633f55f9f"
+    },
+    "models/设备/设备基础_20261106/C41B03/C41B03.glb": {
+      "bytes": 34024,
+      "sha256": "7b4586fc9ee8edb63fa37f4ed3a9915c0de82ca93e7ae7d03dd2b0debe0a525b"
+    },
+    "models/设备/设备基础_20261106/C41B03/C41B03.mtl": {
+      "bytes": 80,
+      "sha256": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c"
+    },
+    "models/设备/设备基础_20261106/C41B03/C41B03.obj": {
+      "bytes": 59708,
+      "sha256": "93f4afbff5f2a74a5837b2a8b43c621fdc63af7e1684b41b3d277ab92b40d76b"
+    },
+    "models/设备/设备基础_20261106/C41B03/model_data.js": {
+      "bytes": 45011,
+      "sha256": "dfa9dbc2064b452552bb045a23f1d3b9b8cabb70edd74016828ba902424fc942"
+    },
+    "models/设备/设备基础_20261106/C41B03/参数.json": {
+      "bytes": 1082,
+      "sha256": "2a864fb455699363e65e8c616b1560ec78973bd599b449e85012e2f3f86da8a6"
+    },
+    "models/设备/设备基础_20261106/C41B04/C41B04.glb": {
+      "bytes": 148684,
+      "sha256": "f6798ca5d84c1f61d5e4dcd6a4ab6fdede9dd259524664c6ac8a8bcbde69616a"
+    },
+    "models/设备/设备基础_20261106/C41B04/C41B04.mtl": {
+      "bytes": 80,
+      "sha256": "228ba2f979065f1a684d013c8fe25ed97bd3d178ee78819b34536db5b072ec47"
+    },
+    "models/设备/设备基础_20261106/C41B04/C41B04.obj": {
+      "bytes": 147054,
+      "sha256": "cd703bf52e69f1a1f1974c2af902e6f981db31c4f853b1cbf0b52f5754b3a3ba"
+    },
+    "models/设备/设备基础_20261106/C41B04/model_data.js": {
+      "bytes": 84581,
+      "sha256": "f06ac32a2d5d71ba56ee882dc010b17c8e3e03dc61f41f8dcb37a76a2f21e747"
+    },
+    "models/设备/设备基础_20261106/C41B04/参数.json": {
+      "bytes": 1628,
+      "sha256": "df7f8d1653098dbeb3b17b8377f3d59fd0729b8266e706d66410e181f4c7836b"
+    },
+    "models/设备/设备基础_20261106/D41B01/D41B01.glb": {
+      "bytes": 15692,
+      "sha256": "1c71e72c10fc7b6746ec27ff0bcaeeb71ee64c601454d6b9e153e787938f8567"
+    },
+    "models/设备/设备基础_20261106/D41B01/D41B01.mtl": {
+      "bytes": 40,
+      "sha256": "ddce9d6807397340d006494fce9d9469b675bcabe737e7e0b4ecc01ac11ae31f"
+    },
+    "models/设备/设备基础_20261106/D41B01/D41B01.obj": {
+      "bytes": 15044,
+      "sha256": "3a0bad49ce210afede544abd63fd59fd01e8d9520823aa4483d2147793a696b1"
+    },
+    "models/设备/设备基础_20261106/D41B01/model_data.js": {
+      "bytes": 8395,
+      "sha256": "3cd646370e50df30fc3d54a4d7337aeae34693a6a69cb6eb9ab48f5044a858ed"
+    },
+    "models/设备/设备基础_20261106/D41B01/参数.json": {
+      "bytes": 2058,
+      "sha256": "d9d8862ebad4e4e84c8251612ead189f3e00f40cd3f0baeb0f920ac63ea3d9fc"
+    },
+    "models/设备/设备基础_20261106/D41B02/D41B02.glb": {
+      "bytes": 70288,
+      "sha256": "61fb5b16d2a0ffd42a6bcfe6585782d2bcbc5c684e012a906ef8d51bf0020f9b"
+    },
+    "models/设备/设备基础_20261106/D41B02/D41B02.mtl": {
+      "bytes": 120,
+      "sha256": "33630821f5018995c7d59313c17e29fce7b30f74ec15b3519d3100f44cd1f473"
+    },
+    "models/设备/设备基础_20261106/D41B02/D41B02.obj": {
+      "bytes": 111191,
+      "sha256": "1ad14dfb9d58c357d44fd8191934e0fbaa90c689b529223b1ca35aef227c2977"
+    },
+    "models/设备/设备基础_20261106/D41B02/model_data.js": {
+      "bytes": 83422,
+      "sha256": "ba0cea6eea3f902733c622b80ddb85014d58e5f249367581f55d48de8fd9de1a"
+    },
+    "models/设备/设备基础_20261106/D41B02/参数.json": {
+      "bytes": 1403,
+      "sha256": "ba491b39c2a6f45961d9d0d22c92bba452e6497fda6710297b4ba688ba4f494c"
+    },
+    "models/设备/设备基础_20261106/DXF逐项核对.md": {
+      "bytes": 6220,
+      "sha256": "738e232f7dda923618dec7ce8ed7ad7adbc9966dbd0481a88797ddbe9cd2a836"
+    },
+    "models/设备/设备基础_20261106/F41B01/F41B01.glb": {
+      "bytes": 50940,
+      "sha256": "24bfe639896af506a9b9489cbad1b81a3563280ca08663b4c6a84dec68602bf0"
+    },
+    "models/设备/设备基础_20261106/F41B01/F41B01.mtl": {
+      "bytes": 120,
+      "sha256": "33630821f5018995c7d59313c17e29fce7b30f74ec15b3519d3100f44cd1f473"
+    },
+    "models/设备/设备基础_20261106/F41B01/F41B01.obj": {
+      "bytes": 90293,
+      "sha256": "960e323f99d46943265d7cab8ad09e368489035c22c32bb3f7b4700e32ec73f1"
+    },
+    "models/设备/设备基础_20261106/F41B01/model_data.js": {
+      "bytes": 68513,
+      "sha256": "1480ea563b4f29a5c479ba80d0dd9f8f691ec3b19baf316259f85324f1df78ed"
+    },
+    "models/设备/设备基础_20261106/F41B01/参数.json": {
+      "bytes": 1168,
+      "sha256": "a90c97fc82ca3766f7403b769c322d00586cd9c0aac674c53a4f4ce81cfa02b5"
+    },
+    "models/设备/设备基础_20261106/F41B02/F41B02.glb": {
+      "bytes": 50940,
+      "sha256": "8f80e0f8c4a158c860e11ec6e7bccb5672d1771f7037d24f78775d55abc0be09"
+    },
+    "models/设备/设备基础_20261106/F41B02/F41B02.mtl": {
+      "bytes": 120,
+      "sha256": "33630821f5018995c7d59313c17e29fce7b30f74ec15b3519d3100f44cd1f473"
+    },
+    "models/设备/设备基础_20261106/F41B02/F41B02.obj": {
+      "bytes": 90293,
+      "sha256": "fe70a66cc8b739f1ea8f2d1dc0cafc063548972fa45ff04b471173bc26482eed"
+    },
+    "models/设备/设备基础_20261106/F41B02/model_data.js": {
+      "bytes": 68461,
+      "sha256": "04665d0b362b1f92a6704b8483c99399bb9417d48ebd55ab0fe91438c75c9b0c"
+    },
+    "models/设备/设备基础_20261106/F41B02/参数.json": {
+      "bytes": 1284,
+      "sha256": "d4dc55ed65920a1604fd11bcf43af15b5c7112d3d7453bdfdec27cb269b6f2c6"
+    },
+    "models/设备/设备基础_20261106/F41B03/F41B03.glb": {
+      "bytes": 10868,
+      "sha256": "700f87abbe03ffb07925cdefa380128f6658383112207151a7f5396fbc9a100f"
+    },
+    "models/设备/设备基础_20261106/F41B03/F41B03.mtl": {
+      "bytes": 80,
+      "sha256": "22b940985bd478f0313316202427953541772a5fa57f23c8642820214231167c"
+    },
+    "models/设备/设备基础_20261106/F41B03/F41B03.obj": {
+      "bytes": 10060,
+      "sha256": "f1e72e3c2768409d8d7949077d016d981ff1e6bba2898ea97a1f6e972cfc32a2"
+    },
+    "models/设备/设备基础_20261106/F41B03/model_data.js": {
+      "bytes": 5583,
+      "sha256": "08b7f7d4cb8a2e6a4e38d9835e3a547b3ea69f8e1cc5fee8c20cd165cdcb35d3"
+    },
+    "models/设备/设备基础_20261106/F41B03/参数.json": {
+      "bytes": 1223,
+      "sha256": "9f07cafad3c26eda063553e4f8ae7c0b540239642142386969e79a6d258f293a"
+    },
+    "models/设备/设备基础_20261106/F41B04/F41B04.glb": {
+      "bytes": 74220,
+      "sha256": "852f6a9fc3b3fc2b8fa320e0bae4d3212e2fb38bece5fd9db9c342d32d9115ae"
+    },
+    "models/设备/设备基础_20261106/F41B04/F41B04.mtl": {
+      "bytes": 120,
+      "sha256": "d85f2a94e242416ca640a6f80a75fd9e9e5598d757526acacf22e4d6687b79a7"
+    },
+    "models/设备/设备基础_20261106/F41B04/F41B04.obj": {
+      "bytes": 120852,
+      "sha256": "9476400caf466e7c616158ef64d1dd48f103e97ba7f5a37dcc21ea2e4e64165c"
+    },
+    "models/设备/设备基础_20261106/F41B04/model_data.js": {
+      "bytes": 88413,
+      "sha256": "bbb3bf2c70edf4b80e6a399cc64d5bde08cac366f0d3a05c9ad509d039e77132"
+    },
+    "models/设备/设备基础_20261106/F41B04/参数.json": {
+      "bytes": 1184,
+      "sha256": "ab3b795e5d55bc1f810b3d63907477dba0e143b542e653a93e4560c044823616"
+    },
+    "models/设备/设备基础_20261106/F41B04-钢塔架/F41B04-钢塔架.glb": {
+      "bytes": 2575020,
+      "sha256": "0baf7073330ad7ba047f5fb9ed812d804539258a772eb31c0ac02e6d76405d58"
+    },
+    "models/设备/设备基础_20261106/F41B04-钢塔架/F41B04-钢塔架.mtl": {
+      "bytes": 120,
+      "sha256": "e75d18e93e38671385047e79d3927d0255a03cb1de087789376ea959abfe27b5"
+    },
+    "models/设备/设备基础_20261106/F41B04-钢塔架/F41B04-钢塔架.obj": {
+      "bytes": 4866423,
+      "sha256": "a9ae2701467269ccbbf2045ad79c4fe49c73914ec9362a738e8f96bbf8a587b8"
+    },
+    "models/设备/设备基础_20261106/F41B04-钢塔架/model_data.js": {
+      "bytes": 3725950,
+      "sha256": "1d499e8593a25ae131411e8fb834c52a170a9f8ed794186e9b421decab2cd18b"
+    },
+    "models/设备/设备基础_20261106/F41B04-钢塔架/参数.json": {
+      "bytes": 1958,
+      "sha256": "bbc81450007f9c7c960cd408b1cdd57719129936d5315029ac8f3a0633bb8721"
+    },
+    "models/设备/设备基础_20261106/F41B07-1/F41B07-1.glb": {
+      "bytes": 10584,
+      "sha256": "208fff164d67526194ee837e14aeb7598dc58b4a219c86a5a0e912c352668a22"
+    },
+    "models/设备/设备基础_20261106/F41B07-1/F41B07-1.mtl": {
+      "bytes": 80,
+      "sha256": "a661986f08eb25b1f62f4804e4549165a56eb0159984c2ae3504337aa9e481fa"
+    },
+    "models/设备/设备基础_20261106/F41B07-1/F41B07-1.obj": {
+      "bytes": 9984,
+      "sha256": "89c70ccd6399555256c748083c1c3d768bde9343c0e3258182992187d2e2f076"
+    },
+    "models/设备/设备基础_20261106/F41B07-1/model_data.js": {
+      "bytes": 5575,
+      "sha256": "73376180a9c6db624fef12cf729251b553adb68b9262573e4a8cd1953868fbee"
+    },
+    "models/设备/设备基础_20261106/F41B07-1/参数.json": {
+      "bytes": 1153,
+      "sha256": "10d608de47bb692e1284881cf0681913e76b804c124369f54b24ea4fb5d5bb07"
+    },
+    "models/设备/设备基础_20261106/F41B07-2/F41B07-2.glb": {
+      "bytes": 10584,
+      "sha256": "e2323e0d233e482c28251c3c2a8c82534d7b5c51e2dddd62730f994ef5ed31ec"
+    },
+    "models/设备/设备基础_20261106/F41B07-2/F41B07-2.mtl": {
+      "bytes": 80,
+      "sha256": "a661986f08eb25b1f62f4804e4549165a56eb0159984c2ae3504337aa9e481fa"
+    },
+    "models/设备/设备基础_20261106/F41B07-2/F41B07-2.obj": {
+      "bytes": 9992,
+      "sha256": "7614f41b7164071e9382fdc1eb6c7bf55d504ea6219ccdf291628dbaddd34298"
+    },
+    "models/设备/设备基础_20261106/F41B07-2/model_data.js": {
+      "bytes": 5583,
+      "sha256": "36f4f631b54380741626c4c87461a35e6529e458996620fc31250e093c44a7a2"
+    },
+    "models/设备/设备基础_20261106/F41B07-2/参数.json": {
+      "bytes": 1153,
+      "sha256": "b2e99cbf2ed801707e1571f8873a89f8762b993fbf75a76bb5e93b7fd0ebc979"
+    },
+    "models/设备/设备基础_20261106/F41B08/F41B08.glb": {
+      "bytes": 17136,
+      "sha256": "1b62129dd29933d9bee93ed2ad0790d2e4626bd92ff08b685ca33f6dfef86544"
+    },
+    "models/设备/设备基础_20261106/F41B08/F41B08.mtl": {
+      "bytes": 40,
+      "sha256": "0391576107f7246de524a44225bc1a147423c0f0a2ae078872b26548c6a400ef"
+    },
+    "models/设备/设备基础_20261106/F41B08/F41B08.obj": {
+      "bytes": 29561,
+      "sha256": "fd9043625a828f315a9d03f9eefa6fdb15048dbcfdd7cf1f502a6b7b9ccef36e"
+    },
+    "models/设备/设备基础_20261106/F41B08/model_data.js": {
+      "bytes": 22547,
+      "sha256": "7070383d75ce819b602ade799c7e78518d9a9b5ce686f154ea4858d100a1fb53"
+    },
+    "models/设备/设备基础_20261106/F41B08/参数.json": {
+      "bytes": 1194,
+      "sha256": "794851818d89e294a167be2a7239e3470dd200b160962b7a543f6ff98fbd9cf3"
+    },
+    "models/设备/设备基础_20261106/foundation_data.js": {
+      "bytes": 24212,
+      "sha256": "1d32017bf369400eebbbe3185d6bb4f9c9054d5d1712fb1c485fd044b3bea6e6"
+    },
+    "models/设备/设备基础_20261106/L41B01/L41B01.glb": {
+      "bytes": 17136,
+      "sha256": "bd9b9a6a34646704c4948fe2bf1fe5f91b40ed14470499449a2f2352da86ecee"
+    },
+    "models/设备/设备基础_20261106/L41B01/L41B01.mtl": {
+      "bytes": 40,
+      "sha256": "0391576107f7246de524a44225bc1a147423c0f0a2ae078872b26548c6a400ef"
+    },
+    "models/设备/设备基础_20261106/L41B01/L41B01.obj": {
+      "bytes": 29565,
+      "sha256": "7a4d82addda97f200362081707bccf8c62df713719443f5b252f610cc59b7854"
+    },
+    "models/设备/设备基础_20261106/L41B01/model_data.js": {
+      "bytes": 22525,
+      "sha256": "25bc3a53421ebd306abab3adf2b4ed2b285c18677dd58e0d5159d07c97b7950a"
+    },
+    "models/设备/设备基础_20261106/L41B01/参数.json": {
+      "bytes": 1191,
+      "sha256": "c9e9dcfa296ff4eedd61494f8b51fbc14cf5905577b0d34765b10b826134e091"
+    },
+    "models/设备/设备基础_20261106/L41B02/L41B02.glb": {
+      "bytes": 74212,
+      "sha256": "87e686c10d3363169fa82a7a72aa4c609c39b2595c9bc052ddf831d03de3b8cc"
+    },
+    "models/设备/设备基础_20261106/L41B02/L41B02.mtl": {
+      "bytes": 120,
+      "sha256": "d85f2a94e242416ca640a6f80a75fd9e9e5598d757526acacf22e4d6687b79a7"
+    },
+    "models/设备/设备基础_20261106/L41B02/L41B02.obj": {
+      "bytes": 120844,
+      "sha256": "822a317f0e9e64979e8aeae3b15f165d9805190c3d372db16f43c18f50b923d4"
+    },
+    "models/设备/设备基础_20261106/L41B02/model_data.js": {
+      "bytes": 88797,
+      "sha256": "25c4be119b1109af1484ad30b414b518166ce882d5ae033eae310cfcf8bfc6f2"
+    },
+    "models/设备/设备基础_20261106/L41B02/参数.json": {
+      "bytes": 1187,
+      "sha256": "a499955ab002d2a038cbde0656e6c52d22fc2ac5aefd1fdf9b515766626f643f"
+    },
+    "models/设备/设备基础_20261106/L41B02-钢塔架/L41B02-钢塔架.glb": {
+      "bytes": 1127356,
+      "sha256": "483b73c8e99e2cff90e993364b7280932c575b531e4f069a44a544ae8083d082"
+    },
+    "models/设备/设备基础_20261106/L41B02-钢塔架/L41B02-钢塔架.mtl": {
+      "bytes": 120,
+      "sha256": "e75d18e93e38671385047e79d3927d0255a03cb1de087789376ea959abfe27b5"
+    },
+    "models/设备/设备基础_20261106/L41B02-钢塔架/L41B02-钢塔架.obj": {
+      "bytes": 2103599,
+      "sha256": "83b80e46619e27f3770052056935d834b9d9a435006624861dc335e245b1f6ce"
+    },
+    "models/设备/设备基础_20261106/L41B02-钢塔架/model_data.js": {
+      "bytes": 1782537,
+      "sha256": "2d0ea264d476bc3214d603ac0a7496825468b03576d4f1b423136769b9a9caa0"
+    },
+    "models/设备/设备基础_20261106/L41B02-钢塔架/参数.json": {
+      "bytes": 1972,
+      "sha256": "342acbfcc23cb1bbfffaa00cad0da4b4e640ec0d72bb4b6c731e08a2cae5c2f8"
+    },
+    "models/设备/设备基础_20261106/L41B03/L41B03.glb": {
+      "bytes": 40472,
+      "sha256": "418ad11781122bcceeface2df0d4dd09be9c4664168d107eb1c6b392fd0f17d1"
+    },
+    "models/设备/设备基础_20261106/L41B03/L41B03.mtl": {
+      "bytes": 120,
+      "sha256": "e75d18e93e38671385047e79d3927d0255a03cb1de087789376ea959abfe27b5"
+    },
+    "models/设备/设备基础_20261106/L41B03/L41B03.obj": {
+      "bytes": 39261,
+      "sha256": "1b8befcb1f062b9a2bca86cb899a2080783afb2a7c6a992cf5de97f118f763cf"
+    },
+    "models/设备/设备基础_20261106/L41B03/model_data.js": {
+      "bytes": 22024,
+      "sha256": "04f660813946a45374cfff69384c067192247d581896e524cf78281ae26f7079"
+    },
+    "models/设备/设备基础_20261106/L41B03/参数.json": {
+      "bytes": 1367,
+      "sha256": "f51a68124be1701fad610b7dc830f4a6648576104246495dc1580bc0768622c7"
+    },
+    "models/设备/设备基础_20261106/L41B04/L41B04.glb": {
+      "bytes": 16048,
+      "sha256": "00f0a37883fd72fba9a1037fa0e9fc2cf1d56ef9dea2b30c667e5fccd2f97b30"
+    },
+    "models/设备/设备基础_20261106/L41B04/L41B04.mtl": {
+      "bytes": 80,
+      "sha256": "22b940985bd478f0313316202427953541772a5fa57f23c8642820214231167c"
+    },
+    "models/设备/设备基础_20261106/L41B04/L41B04.obj": {
+      "bytes": 15068,
+      "sha256": "dc331b29e1045894a90d28b338e90f53dcec98980428fd4b0ecea83cf0346896"
+    },
+    "models/设备/设备基础_20261106/L41B04/model_data.js": {
+      "bytes": 8355,
+      "sha256": "0947c7c24600cab6ac79e12aaef764e3bb78adfb4d3dc19a292d869f71d0fdad"
+    },
+    "models/设备/设备基础_20261106/L41B04/参数.json": {
+      "bytes": 1205,
+      "sha256": "420537ca26a74396afbab79fcb92a3981a7e629280ac7895c8bf9d02c087f53f"
+    },
+    "models/设备/设备基础_20261106/L41B05/L41B05.glb": {
+      "bytes": 16044,
+      "sha256": "81eaa439bdaa3bf38afd2becd0064748e20495f22b64ed55596ad78d942d0492"
+    },
+    "models/设备/设备基础_20261106/L41B05/L41B05.mtl": {
+      "bytes": 80,
+      "sha256": "22b940985bd478f0313316202427953541772a5fa57f23c8642820214231167c"
+    },
+    "models/设备/设备基础_20261106/L41B05/L41B05.obj": {
+      "bytes": 15092,
+      "sha256": "284fbaaffd8728f6aae7bbb14d1ce08e4181669dcadefd3fdebb4298b3da9fbe"
+    },
+    "models/设备/设备基础_20261106/L41B05/model_data.js": {
+      "bytes": 8411,
+      "sha256": "2afad9010c2d16b4559f25c0fc8d9dfbf2804f082f7485b8f44cddb15a79751f"
+    },
+    "models/设备/设备基础_20261106/L41B05/参数.json": {
+      "bytes": 1214,
+      "sha256": "e1a1f6af5309ecaaf6ac3aed46a0d4b9be2e9341f2dd983cd385e0ce2b0cfeca"
+    },
+    "models/设备/设备基础_20261106/P41B01/model_data.js": {
+      "bytes": 17246,
+      "sha256": "172579f9cf531d953e7014f02f127d7d6f7b9f99e938b721bd6997236130636f"
+    },
+    "models/设备/设备基础_20261106/P41B01/P41B01.glb": {
+      "bytes": 21776,
+      "sha256": "1fb3a881c79cece629756dc46a4721b5eefef67c086ec288afd0a5813316b52e"
+    },
+    "models/设备/设备基础_20261106/P41B01/P41B01.mtl": {
+      "bytes": 80,
+      "sha256": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c"
+    },
+    "models/设备/设备基础_20261106/P41B01/P41B01.obj": {
+      "bytes": 35745,
+      "sha256": "e7755779e0fa25a3a9ac3a10a513e455de3befa3411fdf4bb0b0117e1a79111b"
+    },
+    "models/设备/设备基础_20261106/P41B01/参数.json": {
+      "bytes": 1183,
+      "sha256": "a20aa46652907a260320295bdd9074eff8431f2991af85fce7f6b16ae001c708"
+    },
+    "models/设备/设备基础_20261106/P41B02/model_data.js": {
+      "bytes": 10072,
+      "sha256": "f4758944550f8d1491cbcf46214b7580884d1fb6f27df8ebc152c09456b7686e"
+    },
+    "models/设备/设备基础_20261106/P41B02/P41B02.glb": {
+      "bytes": 12520,
+      "sha256": "3fa25dea795ca02373f4a5f29dd999f57ef687156021be286deb318a52c8503f"
+    },
+    "models/设备/设备基础_20261106/P41B02/P41B02.mtl": {
+      "bytes": 40,
+      "sha256": "0391576107f7246de524a44225bc1a147423c0f0a2ae078872b26548c6a400ef"
+    },
+    "models/设备/设备基础_20261106/P41B02/P41B02.obj": {
+      "bytes": 20527,
+      "sha256": "ab2fdc9f81f19183c41c64934d928e2c145e4a868eaf768ae97a2ab0b04a5b3a"
+    },
+    "models/设备/设备基础_20261106/P41B02/参数.json": {
+      "bytes": 1199,
+      "sha256": "b954fc61368697e4ea3ada4b8a8c2c706f2d993d6634e70730622ef7c19fa0cd"
+    },
+    "models/设备/设备基础_20261106/P41B10/model_data.js": {
+      "bytes": 1431,
+      "sha256": "d3ebf29595d1d7287363ef113c76fba99e1c97f68c4eb309871d7e2d62156507"
+    },
+    "models/设备/设备基础_20261106/P41B10/P41B10.glb": {
+      "bytes": 3092,
+      "sha256": "5ccee9218b704f7a37d990c2c5bf2d96dcaf1c81aa297eb40c431379785e8efd"
+    },
+    "models/设备/设备基础_20261106/P41B10/P41B10.mtl": {
+      "bytes": 80,
+      "sha256": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c"
+    },
+    "models/设备/设备基础_20261106/P41B10/P41B10.obj": {
+      "bytes": 2531,
+      "sha256": "96c3b89fc50e0c921cea15c4786cc5d8cf5c253e57e3c9b496edb2e53cdf9769"
+    },
+    "models/设备/设备基础_20261106/P41B10/参数.json": {
+      "bytes": 1143,
+      "sha256": "44e20a575b8cb96c1be12c2527fcee08db8a470d70ef5c09147fdb8710e33730"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/c01.png": {
+      "bytes": 24165,
+      "sha256": "0728d53d14f0f72822c7d9c65ebd473102b546acfdde3d7c8ac347614c5f1106"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/c02.png": {
+      "bytes": 26773,
+      "sha256": "572505b64764cc2d0f18e8ea8e5a7d16144e8f832f1e71f299f1e98f066bf329"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/c03.png": {
+      "bytes": 20306,
+      "sha256": "321afbe3e7d91b226acd7ab4141c8e7985a4ccd65e3148036d1216cb00709a77"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/c04.png": {
+      "bytes": 33424,
+      "sha256": "90f20a825e43972c36f3263772ddf9989d1fb5d676c2829a41c59762f463c57b"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/d41.png": {
+      "bytes": 49082,
+      "sha256": "0b667a43d892c47ff151b11d391d977c86fa390a2bf945b1c009f276529f4df3"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/f01.png": {
+      "bytes": 33267,
+      "sha256": "d56e7e825e6a04d3f2bb1382f2bb0261bf7ad2849c6f522fa49ea7bb687e0441"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/f02.png": {
+      "bytes": 37260,
+      "sha256": "dd9c020c3db5eca2a2a8a1ab629ca0b9301ef02ce1878b06e74e3b8f37762508"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/f03.png": {
+      "bytes": 25128,
+      "sha256": "c76007c7ea8028c0c0b3ae5f61b7a8eba495ccb35f242d2fe1dece6836c4cc35"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/f04.png": {
+      "bytes": 22770,
+      "sha256": "f1596e68038c43c8d00c88422547ce44debaa818d3dc6728d8a03816a53e6784"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/l02.png": {
+      "bytes": 26704,
+      "sha256": "44aa0778556795abcce1da2cfa097139aeb472a5b3161ef1c0bcd67fa3fbfa29"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/l03.png": {
+      "bytes": 23627,
+      "sha256": "d251bd643ca39d521ebaaeb65033da19de9c91356db5eb192484a3e184ff35dc"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/l04.png": {
+      "bytes": 18120,
+      "sha256": "67b3117de57c07c373f80e20889973952e9ee92a6a8119be69d2de5739cdba44"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/l05.png": {
+      "bytes": 18220,
+      "sha256": "699ad2f09374c7eb157c1089af645b9c570f29ff75cacd44684e792dc102b009"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/p01.png": {
+      "bytes": 36108,
+      "sha256": "6e1f1b8578f3d71b80aa9c7260f497b4ea6bb3a595fb814b75364707dc8adcbb"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/p02.png": {
+      "bytes": 34953,
+      "sha256": "48a51cf9367bef057213af6d5acd6a21a410f3c46d482ba34fa39b7414461d35"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/p10.png": {
+      "bytes": 21453,
+      "sha256": "d18c2b14aa016a53f6b69ad8a8e9f5fe596eb1d3c5f7bf7f0d25a5c817a16012"
+    },
+    "models/设备/设备基础_20261106/图纸摘录/pit.png": {
+      "bytes": 52190,
+      "sha256": "a7103df6f6dc0b4aa9269208b2710c4a9cf05333977dc2e77ebfd85114d4673a"
+    },
+    "models/设备/设备基础_20261106/基础索引.json": {
+      "bytes": 38999,
+      "sha256": "b3265fb3056ce68f904d0e56b3ea4429efaff6cb3e05961e2b214adbd4b28f35"
+    },
+    "models/设备/设备基础_20261106/模型自查问题归档_20261106.md": {
+      "bytes": 2101,
+      "sha256": "fc394a2729a623bfe0c7eaf2c4915defa192df088af814eb04c56ec07900685d"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B01/C41B01.glb": {
+      "bytes": 503216,
+      "sha256": "696b1dc9871fa4075822813d1ee732666dfaffd23126a2e03d473c393783a44a"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B01/C41B01.mtl": {
+      "bytes": 160,
+      "sha256": "fd28cf0bd8e3eb3b5bc930bc42046f766c1711671aa48f9301b38cc2c3905fb5"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B01/C41B01.obj": {
+      "bytes": 928836,
+      "sha256": "b7e9a73251d906fb24eaee5fe0b62193f6c9e4032915967c3857df2c332568a1"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B01/model_data.js": {
+      "bytes": 649923,
+      "sha256": "ca7cc418f636aa5085332fc44fd255c4b90a691c9ad2696f0a3200114a497389"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B01/参数.json": {
+      "bytes": 3069,
+      "sha256": "51f853bc159322215d39011c708e0495003226446fca431e9c5a73d5716904c5"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B02/C41B02.glb": {
+      "bytes": 1322052,
+      "sha256": "02da9ea083c7963527ad0366f1a8cfe69bbae9d4e9d407240474c35a1b08010b"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B02/C41B02.mtl": {
+      "bytes": 400,
+      "sha256": "fd501d5aa3eb6537cad0301cbd120687e3aa44b9d81782af2cf80ef9601f7636"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B02/C41B02.obj": {
+      "bytes": 2475532,
+      "sha256": "eab87068e0d6927a7a4bf287560be3611a11a664e7c61f17f01184672d79bf88"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B02/model_data.js": {
+      "bytes": 1930934,
+      "sha256": "c0a46597a13d353f4d20589b73cde661fb660a7908643a2ae2e54845481640b6"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B02/参数.json": {
+      "bytes": 3558,
+      "sha256": "61c84b3ad8358fab47e996c8ec03e565d59717abe8c6096143248d30f21c5be8"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B04/C41B04.glb": {
+      "bytes": 511688,
+      "sha256": "ff831ff29d4a18ba1a004a4895e9f853f8664f6bcd30dbb756fca3ce38f18e2e"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B04/C41B04.mtl": {
+      "bytes": 160,
+      "sha256": "fd28cf0bd8e3eb3b5bc930bc42046f766c1711671aa48f9301b38cc2c3905fb5"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B04/C41B04.obj": {
+      "bytes": 939499,
+      "sha256": "eef17416b5f2aa50a2ed5ab1d8bbbf7e3561238d186d77ab82cdcb3ffe79aa73"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B04/model_data.js": {
+      "bytes": 642429,
+      "sha256": "57f6f65fd402706548043cf432a5ba8634e57d30d24558cad12195bdd3d15721"
+    },
+    "models/设备/设备基础_20261106/设备净模/C41B04/参数.json": {
+      "bytes": 37202,
+      "sha256": "33a85c18248217ee3b17cb1fa16e8922b136e81f7762e08126915959edbe2991"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B01/D41B01.glb": {
+      "bytes": 1448904,
+      "sha256": "579396d13801bf7a704f4b270c71e551a50168840388850f0a5152fd19b4f42f"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B01/D41B01.mtl": {
+      "bytes": 320,
+      "sha256": "6b73756eb93f4e1202989fabc90b393af1e73fae8b860a349af4723fc8ed03ca"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B01/D41B01.obj": {
+      "bytes": 2713034,
+      "sha256": "43be4aa9f70d99ad194e2bfd247533fd7480d86b15a0960984c2a16a68de9548"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B01/model_data.js": {
+      "bytes": 2106478,
+      "sha256": "44ececd4d2ada7ef589950bfba1db08aad5015b43532eff35cbd9f4853caae76"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B01/参数.json": {
+      "bytes": 65133,
+      "sha256": "304acab1cb6d40d04a2463eef1e31fde346cdc8b84283d1200f54e7dde67beac"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B02/D41B02.glb": {
+      "bytes": 1404948,
+      "sha256": "524ad83329009ea3419e2c86d28f3441bd7c8b8cb2f46fcd75e84c5dddfcb833"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B02/D41B02.mtl": {
+      "bytes": 280,
+      "sha256": "c21aaf8ff3c8ae0bad03adb3e27c6d13143e210385dd4f15ebc0a58bbe539916"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B02/D41B02.obj": {
+      "bytes": 2643260,
+      "sha256": "1cfcfb34abc029114e972a870e913cf215b3eaecb8cf18ee0f587ead720c246b"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B02/model_data.js": {
+      "bytes": 2012312,
+      "sha256": "191372daf14da2d228e43d141a6ed7cd170a84891c0949b70fbe0c56a915e966"
+    },
+    "models/设备/设备基础_20261106/设备净模/D41B02/参数.json": {
+      "bytes": 2901,
+      "sha256": "279f86ed32b92a2f711534409621e7f940bb71e626afb20fdf0e69ffb358a4ca"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B01/F41B01.glb": {
+      "bytes": 1233228,
+      "sha256": "54153b4c861f27a0742f658c83010bf80a0be4ed1de5fa91039fd6105c524c0c"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B01/F41B01.mtl": {
+      "bytes": 320,
+      "sha256": "6b73756eb93f4e1202989fabc90b393af1e73fae8b860a349af4723fc8ed03ca"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B01/F41B01.obj": {
+      "bytes": 2312016,
+      "sha256": "5d67cc37933bbf1807f5c3d7f5b17536a4ebcaad3a61470e2c12aa83d9df93f1"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B01/model_data.js": {
+      "bytes": 1806268,
+      "sha256": "9d893a786d6d40b3c06c07f4eee2d769cb7b39716902d612cafe9f30fe11c0a2"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B01/参数.json": {
+      "bytes": 8603,
+      "sha256": "7cb29cda441124821230138f8c0f21e7ff58911789ff41aafea5b22790330998"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B02/F41B02.glb": {
+      "bytes": 1458912,
+      "sha256": "d089890bbd8565d6b2427042408669dc813421b2b34cdf3659d560d7b1733103"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B02/F41B02.mtl": {
+      "bytes": 320,
+      "sha256": "6b73756eb93f4e1202989fabc90b393af1e73fae8b860a349af4723fc8ed03ca"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B02/F41B02.obj": {
+      "bytes": 2755399,
+      "sha256": "0b39e40f25f7ee0b005656366456c1f6e3bbfc9c918501a74c11648e35b6ec39"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B02/model_data.js": {
+      "bytes": 2184482,
+      "sha256": "560b7b252c9ca8e8a992be0f871aef5f056312cce169f7ee0d1b8d567b2a5160"
+    },
+    "models/设备/设备基础_20261106/设备净模/F41B02/参数.json": {
+      "bytes": 27008,
+      "sha256": "554bad99f69397e42933b2133dd74ca2ab030f12038b3b79dab0d8cd06ce8feb"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B02/L41B02.glb": {
+      "bytes": 400896,
+      "sha256": "c472731cc7b8b8d94d1611ffc5126e182a8b9710883153c8c877cf341d36ed90"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B02/L41B02.mtl": {
+      "bytes": 80,
+      "sha256": "8299b4ea48e8322c21fabc39930ed85d301cff24ff8bc53745a8c2d09ba4fc21"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B02/L41B02.obj": {
+      "bytes": 741999,
+      "sha256": "c866c15a8ad125ec9a00549527f22430b26d55b70735ecab03dd292ae916eac6"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B02/model_data.js": {
+      "bytes": 509223,
+      "sha256": "5b4f6b40b07858b69bd03ab61b722c8c4d1784055b30433fd7c6a2e1f43b7d80"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B02/参数.json": {
+      "bytes": 7819,
+      "sha256": "6323f82c2e985ff7af12491873aa8edde71f2a5b41d64d52518301c9b6b5aba9"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B03/L41B03.glb": {
+      "bytes": 238752,
+      "sha256": "ef78afe4dc59fd320ddde9c494fbd5f4a8d231f472fdd19ae3333b819f14a13f"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B03/L41B03.mtl": {
+      "bytes": 120,
+      "sha256": "627751e9b6b9e7645b63ced2ed11a81e236d9747f0c1ef36807b51bebfbf1540"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B03/L41B03.obj": {
+      "bytes": 421586,
+      "sha256": "8d02906cd8b702015c36db971b42d048ba758fd95b7ff3e3aef92ba9da8b461b"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B03/model_data.js": {
+      "bytes": 294810,
+      "sha256": "6474eb31decbb2181f4883d4666347ec006e3d206a81612815966b77a15f8e47"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B03/参数.json": {
+      "bytes": 4676,
+      "sha256": "ba7a0114c491e3f9a0fdc44bf11d46ad175c7cbac453da5b545891242c41427a"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B05/L41B05.glb": {
+      "bytes": 420416,
+      "sha256": "2f6b0c0ffe7a2b78b4647cad60b5b4cf87e8808826ba73c1c2d0ffef7135d2c6"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B05/L41B05.mtl": {
+      "bytes": 80,
+      "sha256": "8299b4ea48e8322c21fabc39930ed85d301cff24ff8bc53745a8c2d09ba4fc21"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B05/L41B05.obj": {
+      "bytes": 784728,
+      "sha256": "9b7727c3475e5e150e25e51005719a0c8b018f224baf224f55e71c8116081905"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B05/model_data.js": {
+      "bytes": 588868,
+      "sha256": "a4c356b4e6fceb2451de9ad619a5a468ba2f4aab52791832f987ddc070781b2b"
+    },
+    "models/设备/设备基础_20261106/设备净模/L41B05/参数.json": {
+      "bytes": 3512,
+      "sha256": "1786be5a00139f4767a4b627480598c6c278bf48f171e27e57aaf042a6928ae6"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B01/model_data.js": {
+      "bytes": 511776,
+      "sha256": "7fde06611babafc4f5b7c5fa262c944524508a0d190429941e8d834bdc83ac9f"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B01/P41B01.glb": {
+      "bytes": 378424,
+      "sha256": "ad3fb053c92543b7fca8606fd46e5999a2bdbc8580704c1c9290e27c9825c595"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B01/P41B01.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B01/P41B01.obj": {
+      "bytes": 682339,
+      "sha256": "f7ef1e46bb1410b4bd4889f0af85af420bbbe08662d734201f1473bd2ba09cab"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B01/参数.json": {
+      "bytes": 3390,
+      "sha256": "d5b8ee9bc42981f0629572ccd2eb16399d0ad72d03fb61acc43363aa89e5755b"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B02/model_data.js": {
+      "bytes": 512057,
+      "sha256": "3735bb43cc3909d40ee54fcbd7ec91951935866047a29748ee3d39213bea3677"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B02/P41B02.glb": {
+      "bytes": 378524,
+      "sha256": "1844558547e703a28b93ff0543dfd2bccb310c81afd6fa5171b30b6d59b5d545"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B02/P41B02.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B02/P41B02.obj": {
+      "bytes": 682371,
+      "sha256": "9ffd2c3e0de379b1ca00d4fb58b1a6dcf9327b25025d7ab7eecb307735810533"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B02/参数.json": {
+      "bytes": 2898,
+      "sha256": "9a3cbdf56e5772f11c2efff343f24df5c7c7d895311c07f02cd843cb2fd27a6b"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B03/model_data.js": {
+      "bytes": 522295,
+      "sha256": "dbbe1b2d62faaca4e214f3ea016d398aecfca30d8166a5e4f5204fde17b6f705"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B03/P41B03.glb": {
+      "bytes": 378612,
+      "sha256": "2c4640eace59b896ec2a843f2fe94ba42ef0fd917c9d10e50912227f7e757463"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B03/P41B03.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B03/P41B03.obj": {
+      "bytes": 682373,
+      "sha256": "86aa25fbd1ec562e61b352c054ef42d1a7ee11fab6ef00cb5d1f9c2901132c4a"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B03/参数.json": {
+      "bytes": 2950,
+      "sha256": "783371fd2bc1fd21b33682b2e848c1e36f4dad75ebf7010151b1431e9ae65cbf"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B04/model_data.js": {
+      "bytes": 529384,
+      "sha256": "790804d37839fd35765a870c4afd84a446bbe749efcf805d0033b1c2e0cfef80"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B04/P41B04.glb": {
+      "bytes": 378800,
+      "sha256": "8d8464a064362864b2f3a352e2602db820948b06b26440e5f852f878fab11364"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B04/P41B04.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B04/P41B04.obj": {
+      "bytes": 682371,
+      "sha256": "b5495f4b4a682465ab67dd4430396218aee9e8f8de9892c7f79eaa1d5febe4ef"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B04/参数.json": {
+      "bytes": 2455,
+      "sha256": "19bef9bfcdf847ee1ad8e325fb996caaf71e531ca62714f4123147c914481f37"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B05/model_data.js": {
+      "bytes": 522295,
+      "sha256": "dbbe1b2d62faaca4e214f3ea016d398aecfca30d8166a5e4f5204fde17b6f705"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B05/P41B05.glb": {
+      "bytes": 378612,
+      "sha256": "2c4640eace59b896ec2a843f2fe94ba42ef0fd917c9d10e50912227f7e757463"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B05/P41B05.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B05/P41B05.obj": {
+      "bytes": 682373,
+      "sha256": "59f7f1f959968285f99ff6182b3f1d0980796e4cf2bbe8cc30cc74abf9d11880"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B05/参数.json": {
+      "bytes": 2950,
+      "sha256": "81a0197aba4690ad71bd21ea6a6b9ad2abfae8a17d29562b91266828121998ed"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B06/model_data.js": {
+      "bytes": 522295,
+      "sha256": "dbbe1b2d62faaca4e214f3ea016d398aecfca30d8166a5e4f5204fde17b6f705"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B06/P41B06.glb": {
+      "bytes": 378612,
+      "sha256": "2c4640eace59b896ec2a843f2fe94ba42ef0fd917c9d10e50912227f7e757463"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B06/P41B06.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B06/P41B06.obj": {
+      "bytes": 682373,
+      "sha256": "2779b9e4f93b0b8ffcde32140df538055284f519bfc5da621017a5d3160c02c9"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B06/参数.json": {
+      "bytes": 2950,
+      "sha256": "fa042b4ab9471b3e3fe320439d84f310457bf7b9ae9a876d122291dfe0c477ec"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B07/model_data.js": {
+      "bytes": 524275,
+      "sha256": "615d77a0fab1bc4e5084f9fc00de5a40d6a0a1824f8fc284c2d3df8791b1ba3f"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B07/P41B07.glb": {
+      "bytes": 379148,
+      "sha256": "39e9128644a7f9316807f9fdeedcf7fc095117809788f713678739a190061b40"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B07/P41B07.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B07/P41B07.obj": {
+      "bytes": 682371,
+      "sha256": "65eaaa63b60de085922c940ad94220a327a199ff930ac8d5507cd92a7d6f1d48"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B07/参数.json": {
+      "bytes": 2458,
+      "sha256": "e6c027911e6816e1de9b8186e3aea4886f2466a570643340d3dd55549b222a0a"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B08/model_data.js": {
+      "bytes": 512057,
+      "sha256": "3735bb43cc3909d40ee54fcbd7ec91951935866047a29748ee3d39213bea3677"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B08/P41B08.glb": {
+      "bytes": 378524,
+      "sha256": "1844558547e703a28b93ff0543dfd2bccb310c81afd6fa5171b30b6d59b5d545"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B08/P41B08.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B08/P41B08.obj": {
+      "bytes": 682371,
+      "sha256": "7e60f03b8fac70e14239ec05384d2958875b216e86274b627f6fc6c43852a5de"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B08/参数.json": {
+      "bytes": 2954,
+      "sha256": "cdbe45847cf27f446e7a0888c80565bd71fbfaec0218b1d6f5c96f1e54e27415"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B09/model_data.js": {
+      "bytes": 529384,
+      "sha256": "790804d37839fd35765a870c4afd84a446bbe749efcf805d0033b1c2e0cfef80"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B09/P41B09.glb": {
+      "bytes": 378800,
+      "sha256": "8d8464a064362864b2f3a352e2602db820948b06b26440e5f852f878fab11364"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B09/P41B09.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B09/P41B09.obj": {
+      "bytes": 682371,
+      "sha256": "4e52e4c09ec612b2a3a0d403d763c81b19aa0c39a25829ceaa135b68221b61ea"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B09/参数.json": {
+      "bytes": 2478,
+      "sha256": "d9c7baaa6d38ea8fbea5bb21ddc3bfbe3e0276c1d16369b18fcb91b3a5b6aea4"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B10/model_data.js": {
+      "bytes": 1139233,
+      "sha256": "070540dd9f3441ac53802cc57bdb1d1f40a420a53de65a0e85084bc8a04c8cb5"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B10/P41B10.glb": {
+      "bytes": 857336,
+      "sha256": "a1f46bbffe86edb11cb8618376d1128319699b6dc3bf2bac415a9623942dab27"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B10/P41B10.mtl": {
+      "bytes": 280,
+      "sha256": "fe8184ca1eee0486c368257ec42d1642b67a53b562a3729719b9509389c82f9a"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B10/P41B10.obj": {
+      "bytes": 1554566,
+      "sha256": "f5920c1c85730b0111d37447b679413e2da0e0dba7e9528f49216cf3367a0210"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B10/参数.json": {
+      "bytes": 4257,
+      "sha256": "1fe69b238e952d2d5bf6f18deed315e3b45495fd6088787c24954fbf9a1975d5"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B11/model_data.js": {
+      "bytes": 521040,
+      "sha256": "538849de66240714d5dd695403b8d796ba8c5749668f0e37887c0132c33b4451"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B11/P41B11.glb": {
+      "bytes": 378660,
+      "sha256": "84cae7a8398b29ae248119904f4ddbe735a6695de6b0870ddab244723625a9a0"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B11/P41B11.mtl": {
+      "bytes": 120,
+      "sha256": "909679958039ac3def9781641399380cdcf1cd616148d9b24afc2d120a108b69"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B11/P41B11.obj": {
+      "bytes": 681867,
+      "sha256": "311a3409c6444ca325f837f25dc7647ef9154344801b5af389fef8549ce2be2f"
+    },
+    "models/设备/设备基础_20261106/设备净模/P41B11/参数.json": {
+      "bytes": 2944,
+      "sha256": "a1f3d0d77c6991f68ab09c61b9eae7b22093005a03ce3da10a5d9d691bb21512"
+    },
+    "models/连接件库/catalog.json": {
+      "bytes": 132442,
+      "sha256": "27a5637828be03d8df22f4672d543dbc5082eb0684ec56b0e2b55d2b40f01bed"
+    },
+    "models/连接件库/glb/L1-C01.glb": {
+      "bytes": 8172,
+      "sha256": "e267eb758a129da2a97a8c44b4e12f542236451c68772e1e9963476899053739"
+    },
+    "models/连接件库/glb/L1-C02.glb": {
+      "bytes": 12536,
+      "sha256": "496e56688e573e8630fb5e7b74e1d642a8decfe25e6774365c0b1ee1456720af"
+    },
+    "models/连接件库/glb/L1-C03.glb": {
+      "bytes": 12536,
+      "sha256": "e8a9a65eec39cbe2c73fc852332c39ce8bd4226fdf189c250ab8662b2312b55d"
+    },
+    "models/连接件库/glb/L1-C04.glb": {
+      "bytes": 12536,
+      "sha256": "0b8727960e03bfcb1b8809d54c1cc9693661dfb0cc2a94a40c733b9c9a6f83c2"
+    },
+    "models/连接件库/glb/L1-C05.glb": {
+      "bytes": 8168,
+      "sha256": "b1aa29ce0000300600834dc1ef3080434c6e561c9415e05d9c342a3a35fc383c"
+    },
+    "models/连接件库/glb/L1-C06.glb": {
+      "bytes": 4764,
+      "sha256": "76c9f95f597b9aa6a34b839e9e5a3ace3b961d51f5008721b985314c140bbca7"
+    },
+    "models/连接件库/glb/L1-C07.glb": {
+      "bytes": 6192,
+      "sha256": "025495609b1958d88667813fd35bc7f36890be1a4ab8213452abd01318efab69"
+    },
+    "models/连接件库/glb/L1-C08.glb": {
+      "bytes": 8172,
+      "sha256": "11e1f594cd9be6760aa9050f236179b9c5bc46c07a257a5dca43e2e0f3d3137e"
+    },
+    "models/连接件库/glb/L1-C09.glb": {
+      "bytes": 4800,
+      "sha256": "07100af45151530984794084af7b31ba20fbac5976abcae35d9d5a0d07c8d8e4"
+    },
+    "models/连接件库/glb/L2-C01.glb": {
+      "bytes": 8128,
+      "sha256": "4a5fea50ab31f794208c67e31be8b63d2e03d91200c2e7d03e98ab5e21b8ab7a"
+    },
+    "models/连接件库/glb/L2-C02.glb": {
+      "bytes": 12528,
+      "sha256": "2048d2db435074d1b77a2cefef23f83b6664735ee0e47d09bde8cb32d9973e1c"
+    },
+    "models/连接件库/glb/L2-C03.glb": {
+      "bytes": 3444,
+      "sha256": "850554cface21ad575bd0ba9f32e5b6e09e89a3eecac4966c457117bb1c28c3f"
+    },
+    "models/连接件库/glb/L2-C04.glb": {
+      "bytes": 3464,
+      "sha256": "35a1a45af1af479b83a922c7b1e75761e33b7bfe09f4941c22d20ad565f571cd"
+    },
+    "models/连接件库/glb/L2-C05.glb": {
+      "bytes": 12528,
+      "sha256": "920e67bf99bde0a6f8cd404f33612012ec3d0740e6fe08cb0cea0a29123d6d8b"
+    },
+    "models/连接件库/glb/L2-C06.glb": {
+      "bytes": 3444,
+      "sha256": "078f1619ef61d792a0717339984d6bf7d9ae19d2796235c7d21277e26fb61a97"
+    },
+    "models/连接件库/glb/L2-C07.glb": {
+      "bytes": 3464,
+      "sha256": "57cae40081d9ac63d9a9df4d9a4577875cf1c3c6f9c9af1b1bf6aedd6dfca743"
+    },
+    "models/连接件库/glb/L2-C08.glb": {
+      "bytes": 12524,
+      "sha256": "f63aff280c8f12939af75df91c429904a409d9901d7fdc07eae704dd118f8203"
+    },
+    "models/连接件库/glb/L2-C09.glb": {
+      "bytes": 4768,
+      "sha256": "9b822f1bd46b8fb937622e9047c8cbc73a830e1b266da937f8d29e9b9be1e428"
+    },
+    "models/连接件库/glb/L2-C10.glb": {
+      "bytes": 4736,
+      "sha256": "0361d9f79587faac4c7b9416e18b0dc2cb5f209a15ed6dc4146c0a60d1e32727"
+    },
+    "models/连接件库/glb/L2-C11.glb": {
+      "bytes": 8140,
+      "sha256": "c766a8a0025e96ae6ba2ba8a1fcdf3ff3b89cce36a1c4824401f37e1b3576b44"
+    },
+    "models/连接件库/glb/L2-C12.glb": {
+      "bytes": 3488,
+      "sha256": "d90aa8442a195b14de905b48e8d6a662e9a4728f34fd96e9684a4b3351884409"
+    },
+    "models/连接件库/glb/L2-C13.glb": {
+      "bytes": 12524,
+      "sha256": "95face53db82fcd06f0c7df0847a017112a28103cb1714a28edcaa49d09b8a9f"
+    },
+    "models/连接件库/glb/L2-C14.glb": {
+      "bytes": 4768,
+      "sha256": "c4abf16a3ae109733c036461b5028b4939158880ca1f74d2df234ed6cdd4a9f6"
+    },
+    "models/连接件库/glb/L2-C15.glb": {
+      "bytes": 12524,
+      "sha256": "16348b61274216e56d022a4c629ce81502de893cd92684ba6ba90037cacfc17d"
+    },
+    "models/连接件库/glb/L2-C16.glb": {
+      "bytes": 4768,
+      "sha256": "cd046a32d3ab4e4c5b359e00fcc6a1aac2c71bd37301f0e6163626b599a85066"
+    },
+    "models/连接件库/glb/L2-C17.glb": {
+      "bytes": 4736,
+      "sha256": "cd8651810a428d7afe90439f59ffb12055bdea672bc1b66f63489ade319fad22"
+    },
+    "models/连接件库/glb/L2-C18.glb": {
+      "bytes": 6168,
+      "sha256": "d2264367f8cb1839a1ba29dfa3456fed5c72b83fb53e68b083c354e6200a357e"
+    },
+    "models/连接件库/glb/L2-C19.glb": {
+      "bytes": 8144,
+      "sha256": "e9152e98c61af2d04a9866442f0806f664bee96b243ce286689183bba4ab4bee"
+    },
+    "models/连接件库/glb/L2-C20.glb": {
+      "bytes": 8144,
+      "sha256": "62038c0ff1ecf95846f42f101d586037d92959f8136006a08451399b9fffbd45"
+    },
+    "models/连接件库/glb/L2-C21.glb": {
+      "bytes": 3492,
+      "sha256": "34ad12d33eefc19be369ea208ab1deac17311cc13ef5eb5b3f50b1ce5c3f4c89"
+    },
+    "models/连接件库/glb/L3-C01.glb": {
+      "bytes": 4768,
+      "sha256": "bec903acae2d35b2e48362b92ae3fab70f165a53fcc51eae8b8be8f185614c64"
+    },
+    "models/连接件库/glb/L3-C02.glb": {
+      "bytes": 9204,
+      "sha256": "d6bc1499e5f61f7e0d2beaea17eca05f0faab122e2185551f1acfe258721e8a6"
+    },
+    "models/连接件库/glb/L3-C03.glb": {
+      "bytes": 4796,
+      "sha256": "00166d13a99acb3b99c9c42db0b72e8b53ff01e0c115bea6193fe0bcaef08a7d"
+    },
+    "models/连接件库/glb/L3-C04.glb": {
+      "bytes": 9172,
+      "sha256": "8192232081d264592f0bc32f062aaa92a7b6fe4eb6e146a5ea0d2edb0a3cbca7"
+    },
+    "models/连接件库/glb/L3-C05.glb": {
+      "bytes": 4796,
+      "sha256": "c6f9a69fb7d9acb6ef0f60440b19297d711d99f706f43601688ff48fa4a8553f"
+    },
+    "models/连接件库/glb/L3-C06.glb": {
+      "bytes": 12524,
+      "sha256": "96c106a99f530a90c5687cfae2d6ceebd6f77f40ab12b1927ca6f9a06ea0e7b6"
+    },
+    "models/连接件库/glb/L3-C07.glb": {
+      "bytes": 4828,
+      "sha256": "7be6bf74465774e4c7508e05972ee43baff443d4d9783456aed78284a6dc3dc5"
+    },
+    "models/连接件库/glb/L3-C08.glb": {
+      "bytes": 4796,
+      "sha256": "595074bd98504d53ae74414a9e446d566de87d7d95cfa5fc0c9fdf4cf43ea706"
+    },
+    "models/连接件库/glb/L3-C09.glb": {
+      "bytes": 8144,
+      "sha256": "fc4d9a9fc75f7c273aff4ca7b7989b09de79fd4772178db34fadc0cfb8fe36b1"
+    },
+    "models/连接件库/glb/L3-C10.glb": {
+      "bytes": 6160,
+      "sha256": "7c981e47e8659d673d9230a02d75596460fa0b14555003f286293c52885ae562"
+    },
+    "models/连接件库/glb/L3-C11.glb": {
+      "bytes": 8140,
+      "sha256": "5fc3ce540a1a2e8db32ac438122bc9b031d65e9bb79597e5749d5836724e9c7f"
+    },
+    "models/连接件库/glb/L3-C12.glb": {
+      "bytes": 12528,
+      "sha256": "e40d2f60e42eaf91b6ab08dd7f89379226109130eec0911af37d56bf85f90820"
+    },
+    "models/连接件库/glb/L3-C13.glb": {
+      "bytes": 12524,
+      "sha256": "bd9cab1aa13896ab901d6ffe6100052e1466c3f1f8a95c41bc150c6b2834983a"
+    },
+    "models/连接件库/glb/L3-C14.glb": {
+      "bytes": 6780,
+      "sha256": "54612a27474806da3f5777851ff4aa5e57ba2b26cc40555958c48dc46db250b0"
+    },
+    "models/连接件库/glb/L3-C15.glb": {
+      "bytes": 9204,
+      "sha256": "ae3c92290246c2debbcdcf5f44c9ff7a6ec0ed9c210dbe651d1dc9e6d0e2a812"
+    },
+    "models/连接件库/glb/L3-C16.glb": {
+      "bytes": 8144,
+      "sha256": "b0b33e0f16d3afa08ec2d1a7c87870d275c37ea5fdc07133792b2c8642bd1a59"
+    },
+    "models/连接件库/glb/L3-C17.glb": {
+      "bytes": 4796,
+      "sha256": "04970215a273d1bb7c64b8b825efa0f13e17f04f4d07ac30384fdde13b496ac5"
+    },
+    "models/连接件库/index.html": {
+      "bytes": 4351,
+      "sha256": "8599eff92a30ee15e6f1555a8db4593ba878a8190b14eaf0275d7f04919cd9dd"
+    },
+    "models/连接件库/obj/L1-C01.obj": {
+      "bytes": 9778,
+      "sha256": "34b917e4f2d6bbce2be9c1748967c4ad6da789ba3e71bd6a12f43f721d8e8c94"
+    },
+    "models/连接件库/obj/L1-C02.obj": {
+      "bytes": 15742,
+      "sha256": "d328c1189e23a16c6bd7080629dac8a7b4581da4f0baf1f783ae32ac9611627f"
+    },
+    "models/连接件库/obj/L1-C03.obj": {
+      "bytes": 15742,
+      "sha256": "a6f5b0e5b9bd1f766857674e17ff366891243c53bb4a06d1ba961ff2ca46f718"
+    },
+    "models/连接件库/obj/L1-C04.obj": {
+      "bytes": 15742,
+      "sha256": "1d50be8c7ff5f23a6c739a9698bd8d267716f362942cbe7c042e517544bef0c8"
+    },
+    "models/连接件库/obj/L1-C05.obj": {
+      "bytes": 9778,
+      "sha256": "2d9a8fd0e15db39ff941b3cfeaeef03956c777ca389a98ce6a2c13e9a71c1e35"
+    },
+    "models/连接件库/obj/L1-C06.obj": {
+      "bytes": 5140,
+      "sha256": "fb883f3010a090c58838e615a98d6517e2a48f5dbe392b32de913c84fc104687"
+    },
+    "models/连接件库/obj/L1-C07.obj": {
+      "bytes": 7018,
+      "sha256": "a6115bff32bf896782323bd533636a9dd57f5cebd3ad32f84dc4bd677c7fd9c6"
+    },
+    "models/连接件库/obj/L1-C08.obj": {
+      "bytes": 9778,
+      "sha256": "2ba831ca8e323ca255cc97a83feb292ee46997c0b9c5dbb63e633fc4a54fc22b"
+    },
+    "models/连接件库/obj/L1-C09.obj": {
+      "bytes": 5116,
+      "sha256": "3d64caa9fcb79f4f32df2f2ab8efc463ccfb7f1e3a1ce1c2a4dad9b031306c48"
+    },
+    "models/连接件库/obj/L2-C01.obj": {
+      "bytes": 9778,
+      "sha256": "9f16562d671b506e2ba176ce97db0831ae68f13c975ab9fe154b1b955dfcd766"
+    },
+    "models/连接件库/obj/L2-C02.obj": {
+      "bytes": 15742,
+      "sha256": "4104b2f967752d29ec4fdfeaad2481495b082c70983c12bb528adbb68962a329"
+    },
+    "models/连接件库/obj/L2-C03.obj": {
+      "bytes": 3241,
+      "sha256": "e06c96535daa2665fbfaf6bfcad5da97e5049919a218d260bf493a0abe7132a7"
+    },
+    "models/连接件库/obj/L2-C04.obj": {
+      "bytes": 3283,
+      "sha256": "0e9b52c8bb53f6c0d5ca0cf0062f8379c8ade02a26007170662b1076ba900214"
+    },
+    "models/连接件库/obj/L2-C05.obj": {
+      "bytes": 15742,
+      "sha256": "66ce95fa38aac6154f1397d368974c435c3c40b50183b6bb6848dc160a26721d"
+    },
+    "models/连接件库/obj/L2-C06.obj": {
+      "bytes": 3241,
+      "sha256": "8cb8f9a5bb6305a66c93173b078db25ce8fc690b210e65d04c9b6276b66b1a27"
+    },
+    "models/连接件库/obj/L2-C07.obj": {
+      "bytes": 3283,
+      "sha256": "03bf956f97fe2d5295f411bea124f57e19083a77c0de1932267089aa8f170800"
+    },
+    "models/连接件库/obj/L2-C08.obj": {
+      "bytes": 15742,
+      "sha256": "db7f51fe784fbf20fed7ef24d80276018c72c6fa6f734f9b1618abcd413b6658"
+    },
+    "models/连接件库/obj/L2-C09.obj": {
+      "bytes": 5116,
+      "sha256": "1e1918daf10e8b0df7be5f105c4c81d241a79008c90b1532fc8a3dcc1c6e5563"
+    },
+    "models/连接件库/obj/L2-C10.obj": {
+      "bytes": 5140,
+      "sha256": "8c78045f3bbacc8349564a4e2962eea507ced20de5aca7f89148974c7b4f86e3"
+    },
+    "models/连接件库/obj/L2-C11.obj": {
+      "bytes": 9778,
+      "sha256": "ffa8bbf968f57030104c0da18194e4b7bd018fa6500a5eadd46d4c93308a2b3c"
+    },
+    "models/连接件库/obj/L2-C12.obj": {
+      "bytes": 3283,
+      "sha256": "b5495dc597c65147736c033cb3409b377000123e6934f2369133f878345e9816"
+    },
+    "models/连接件库/obj/L2-C13.obj": {
+      "bytes": 15742,
+      "sha256": "928e7c5bee556f025a6fa414f34a31cd7e8aca877ab3ca058312e50c5e25730b"
+    },
+    "models/连接件库/obj/L2-C14.obj": {
+      "bytes": 5116,
+      "sha256": "9eb8334f4ce1357cb9abf8fe7772c9cc8d88915fb0302cc8a6904288802e0331"
+    },
+    "models/连接件库/obj/L2-C15.obj": {
+      "bytes": 15742,
+      "sha256": "98d8b3f73d1929a9e08b62b823fe9022d513cb112b700a3b763136cfc232b1c2"
+    },
+    "models/连接件库/obj/L2-C16.obj": {
+      "bytes": 5116,
+      "sha256": "954e856038ccf6a000355fb94fad35c27d79c1bf5374783ba21ccd09afcb5399"
+    },
+    "models/连接件库/obj/L2-C17.obj": {
+      "bytes": 5140,
+      "sha256": "6788b583656a380494cf9dafdeb946107834a64496c4b0d967e153b00247f171"
+    },
+    "models/连接件库/obj/L2-C18.obj": {
+      "bytes": 7015,
+      "sha256": "df5a103dde6d1b5f38472c992e3828bbe3b3bcc16cb5f51b383412a74823012b"
+    },
+    "models/连接件库/obj/L2-C19.obj": {
+      "bytes": 9778,
+      "sha256": "6989c02a98496e3da6342d3c249e024f3e555b4fc2ace9602056d08313c835cf"
+    },
+    "models/连接件库/obj/L2-C20.obj": {
+      "bytes": 9778,
+      "sha256": "84e095d3c33cc081b760efe83a2bae4952248baa2c6c1365ae99e6089512eaef"
+    },
+    "models/连接件库/obj/L2-C21.obj": {
+      "bytes": 3283,
+      "sha256": "0af6e8a935c972ba46c77c47f98233b2f1c50c0cd9a60794e8f8d5abc5543924"
+    },
+    "models/连接件库/obj/L3-C01.obj": {
+      "bytes": 5116,
+      "sha256": "e33f7b0cff5f605449a07ac43d158ec69d6c25de25ef1581011b4c4f6fe76812"
+    },
+    "models/连接件库/obj/L3-C02.obj": {
+      "bytes": 11278,
+      "sha256": "c834ee1d4f75c13950d1211f842babcff7677e2756c3b17b66ce1f7e6721c23f"
+    },
+    "models/连接件库/obj/L3-C03.obj": {
+      "bytes": 5140,
+      "sha256": "02de285b7906525d6a79942197cdf1cdb5fef24c18e1f8a616651e6a816d38ff"
+    },
+    "models/连接件库/obj/L3-C04.obj": {
+      "bytes": 11326,
+      "sha256": "c671e66d6fe95116a778a76252aab6037425c0f57bf19d242e75ed654ab29866"
+    },
+    "models/连接件库/obj/L3-C05.obj": {
+      "bytes": 5140,
+      "sha256": "121adf9df94b984a8f9b6a9b7cc8e2d1a9d0f834dd227392574122abd4510121"
+    },
+    "models/连接件库/obj/L3-C06.obj": {
+      "bytes": 15742,
+      "sha256": "b63db6d60bf1a6a7ea416305733bd438721aa5bc214aaad88512598efbbb1e00"
+    },
+    "models/连接件库/obj/L3-C07.obj": {
+      "bytes": 5116,
+      "sha256": "8581f554bb74b81b2ca5d6aaef004d47650efd671164e6b4af4c78536c5d50ea"
+    },
+    "models/连接件库/obj/L3-C08.obj": {
+      "bytes": 5140,
+      "sha256": "504ae1d62f07698e7701948707de8a48bf1bda27687477e2904e23e248c69e69"
+    },
+    "models/连接件库/obj/L3-C09.obj": {
+      "bytes": 9778,
+      "sha256": "0c5b1e4d14a259398da1f031696e8f935e5852769e7b3970d8b46d84bd59ed5b"
+    },
+    "models/连接件库/obj/L3-C10.obj": {
+      "bytes": 7018,
+      "sha256": "ac986bb2c7a0722bb9411b010e1ad46aa18120486ed1d3f4a19170162037ff15"
+    },
+    "models/连接件库/obj/L3-C11.obj": {
+      "bytes": 9778,
+      "sha256": "458bd3c721b4897838245990b89e49893d9cb88d9bb6b6af277173bdeb0e5576"
+    },
+    "models/连接件库/obj/L3-C12.obj": {
+      "bytes": 15742,
+      "sha256": "36fb71f0f8ab8d55fb1bd06204c5184954ae80ba46a225febae4f9ac0473f0b2"
+    },
+    "models/连接件库/obj/L3-C13.obj": {
+      "bytes": 15742,
+      "sha256": "4ad84a6fc2c99bd10316b6653d88e3dfd36123ac90905280dca6df2f81d13947"
+    },
+    "models/连接件库/obj/L3-C14.obj": {
+      "bytes": 7702,
+      "sha256": "f19a13680ff1fc4b09d01df52cca199c004f7905a88f32e7e18595b2b3318ef6"
+    },
+    "models/连接件库/obj/L3-C15.obj": {
+      "bytes": 11278,
+      "sha256": "5fcf4f59b16acc30be6bd10f31fc4c98c7fea493024f9b1ab1d915b1e176f702"
+    },
+    "models/连接件库/obj/L3-C16.obj": {
+      "bytes": 9778,
+      "sha256": "84b1a7767764626a410c1c4d1b7b9246f3ce38402029899fe737ecb9f85809b4"
+    },
+    "models/连接件库/obj/L3-C17.obj": {
+      "bytes": 5140,
+      "sha256": "155b195ec47862cb192ed2c42ef64bf78c9381a74645e0488f2a57b941722d10"
+    },
+    "models/连接件库/parameters/L1-C01.json": {
+      "bytes": 2140,
+      "sha256": "dc3daa5df406bb559c833cdd8d0e19591b4ff4c9499976232a4150074cc6eb6c"
+    },
+    "models/连接件库/parameters/L1-C02.json": {
+      "bytes": 2425,
+      "sha256": "5c04144ac555ddcf6e30da4b0bed5aeb453dc4a239189b5de5da7502adfb231f"
+    },
+    "models/连接件库/parameters/L1-C03.json": {
+      "bytes": 2421,
+      "sha256": "735c749086e159409a83bd0b0cfd17fa03c577b4513ab25e7df4b2bc2b83c1d6"
+    },
+    "models/连接件库/parameters/L1-C04.json": {
+      "bytes": 2421,
+      "sha256": "d83184cdb9e47833370ec0e2ff603bd623538d002f831a65d85a950622f60998"
+    },
+    "models/连接件库/parameters/L1-C05.json": {
+      "bytes": 2149,
+      "sha256": "5322296f392e2f5102563f9adb19068de8dbfecc8e548ab26e7e72495ebaa243"
+    },
+    "models/连接件库/parameters/L1-C06.json": {
+      "bytes": 2130,
+      "sha256": "57d6a781eb797a231577ccc962a1e735c54566053071eb118842753e797aa154"
+    },
+    "models/连接件库/parameters/L1-C07.json": {
+      "bytes": 2731,
+      "sha256": "72d45ce6192b99859115b5e4fc278d18eba3951a1fd34d5130f1b78a42d9bbb5"
+    },
+    "models/连接件库/parameters/L1-C08.json": {
+      "bytes": 2166,
+      "sha256": "444b578a1ed94ccf524ad2ab73469092a1b9e1a5145237047cf77bf4bfda6cc2"
+    },
+    "models/连接件库/parameters/L1-C09.json": {
+      "bytes": 2154,
+      "sha256": "10c5ff9d262751d3baca63059c298a9f6869060cf9e72dad7d4b183468751865"
+    },
+    "models/连接件库/parameters/L2-C01.json": {
+      "bytes": 2142,
+      "sha256": "e643340712a465b1115238f7c2e8c085d2d6106ce477f2f529c35b08a70d7aa3"
+    },
+    "models/连接件库/parameters/L2-C02.json": {
+      "bytes": 2454,
+      "sha256": "372695aa8c85e24c86de34c89ef7d1ec5e1220bb458ecb2081562db660326573"
+    },
+    "models/连接件库/parameters/L2-C03.json": {
+      "bytes": 2347,
+      "sha256": "3f87034349482861307cd091c877fb80b39cea778942572730a63d791387bf41"
+    },
+    "models/连接件库/parameters/L2-C04.json": {
+      "bytes": 2433,
+      "sha256": "9b87bebff35291ce6c2eeb0086d42df80598c2da53e9ae860dfb2844d7c5acfe"
+    },
+    "models/连接件库/parameters/L2-C05.json": {
+      "bytes": 2455,
+      "sha256": "9be2c1b2459d7cb54bc63f911aa1f59f650be1e4c0c3346fff353a3b52fe56d6"
+    },
+    "models/连接件库/parameters/L2-C06.json": {
+      "bytes": 2347,
+      "sha256": "3baa9003a7757892ae8ae04588b80c2f36e01f8b908913955ce2e5519ba30576"
+    },
+    "models/连接件库/parameters/L2-C07.json": {
+      "bytes": 2433,
+      "sha256": "9b56c1df76fd57fad94359689d8652259a60c15f6f53e2b59bca479c4938cf79"
+    },
+    "models/连接件库/parameters/L2-C08.json": {
+      "bytes": 2452,
+      "sha256": "fa19d8906d2f041c1e6ad274b274353b95594fbd72d0d067f7f7563d1b580969"
+    },
+    "models/连接件库/parameters/L2-C09.json": {
+      "bytes": 2156,
+      "sha256": "0f749ccc8094e513a950d67eee6741ad30086f75efd79a3cccc7affd4d737de3"
+    },
+    "models/连接件库/parameters/L2-C10.json": {
+      "bytes": 2128,
+      "sha256": "db30ff7059edc89a6e400c5614bf2b1fee5eef227651e379518678b6bcdf2605"
+    },
+    "models/连接件库/parameters/L2-C11.json": {
+      "bytes": 2146,
+      "sha256": "cfd15cc96c8222302f5579668f761f83513c333d6f96a9c8b3a5ab41cf174309"
+    },
+    "models/连接件库/parameters/L2-C12.json": {
+      "bytes": 2352,
+      "sha256": "5276deeffec4f51db32748c884e343dd501802711cf3a41a20c2286970fb08a6"
+    },
+    "models/连接件库/parameters/L2-C13.json": {
+      "bytes": 2452,
+      "sha256": "31f1040d99a97351c8d6dbdb1c27ceab09399384369ee73bdb3a75a2f1fa8c51"
+    },
+    "models/连接件库/parameters/L2-C14.json": {
+      "bytes": 2154,
+      "sha256": "ba9decf702581aefbd651366f124921bfc45c2e253622b468f8d313db0c20c0f"
+    },
+    "models/连接件库/parameters/L2-C15.json": {
+      "bytes": 2452,
+      "sha256": "e90bdb151b73509788a2705ceca4d3d0abb552cc7dba75af342ab4ad2f2cc2fa"
+    },
+    "models/连接件库/parameters/L2-C16.json": {
+      "bytes": 2154,
+      "sha256": "689630355065db29d776a444780553b593ec970e86b2513fc7d436710ba58cf8"
+    },
+    "models/连接件库/parameters/L2-C17.json": {
+      "bytes": 2128,
+      "sha256": "163e7da6654f88eaa5741e48d88dab94009606a19eacd7baffa3adf67b09741e"
+    },
+    "models/连接件库/parameters/L2-C18.json": {
+      "bytes": 2846,
+      "sha256": "14d65ca1826510b8d5e73c0c89c259c0f53f3090eaee5c265562d6193a55186b"
+    },
+    "models/连接件库/parameters/L2-C19.json": {
+      "bytes": 2172,
+      "sha256": "83d217c2d3e040017d3375d4afd0c8f0cff87eb1bbaea8472e05e24380549bf3"
+    },
+    "models/连接件库/parameters/L2-C20.json": {
+      "bytes": 2146,
+      "sha256": "eaebb3376c3f4dd011afad4ba73b740dfa97381392a9ecbc815f35a6c7d4c33e"
+    },
+    "models/连接件库/parameters/L2-C21.json": {
+      "bytes": 2356,
+      "sha256": "dd4e20fcddc5d6a3fb36dc0f37814cb3b6b435b5aaa43688b502c40eee8df80a"
+    },
+    "models/连接件库/parameters/L3-C01.json": {
+      "bytes": 2150,
+      "sha256": "6eece3c2691e04b82f1c15861a7e87c57f7e471e46903da26dba786c827c9e11"
+    },
+    "models/连接件库/parameters/L3-C02.json": {
+      "bytes": 3541,
+      "sha256": "b419454e0a251ad71ce4e2b7eb54613e0e4e26c615023d5e8c1b7c9d5a4e214f"
+    },
+    "models/连接件库/parameters/L3-C03.json": {
+      "bytes": 2119,
+      "sha256": "99e9507cc17ca76117acde10a0eae845601046dc07b1cc3b5458dbdee4f3f89a"
+    },
+    "models/连接件库/parameters/L3-C04.json": {
+      "bytes": 3495,
+      "sha256": "a18af4fa08fb31935bea1899898d90d65cc0a18823f76427ec88b806daae5153"
+    },
+    "models/连接件库/parameters/L3-C05.json": {
+      "bytes": 2118,
+      "sha256": "b5ee00220e316dc1a1e1d0bc41ef92796db73a2b155a448d2d75846fb711df7e"
+    },
+    "models/连接件库/parameters/L3-C06.json": {
+      "bytes": 2422,
+      "sha256": "417d99f379501fd7c30acda73701cb700cc06f5ad58e14b5d114a21d4f56a5a7"
+    },
+    "models/连接件库/parameters/L3-C07.json": {
+      "bytes": 2147,
+      "sha256": "9a822a8bc8a55951b922d3e560b3ad3703a0e980375d1f674ebf373033a46a3f"
+    },
+    "models/连接件库/parameters/L3-C08.json": {
+      "bytes": 2119,
+      "sha256": "d3302086166e877842b85bbd4af5cec6e486d61a9660e085bd0047562370ce60"
+    },
+    "models/连接件库/parameters/L3-C09.json": {
+      "bytes": 2142,
+      "sha256": "6ccbb008d975df8c93eba765861b84b62b4a34726d536cdebec91bd5656b7d4d"
+    },
+    "models/连接件库/parameters/L3-C10.json": {
+      "bytes": 2730,
+      "sha256": "47732c00d18df2c0272b606ebc0221b8ea4ed52ccd9c0bfd0b0724a2a2aff8e5"
+    },
+    "models/连接件库/parameters/L3-C11.json": {
+      "bytes": 2140,
+      "sha256": "9132cf9c277687af4f38adca2d0c1e55cfcdcb2005bd32676070a4782f5e26de"
+    },
+    "models/连接件库/parameters/L3-C12.json": {
+      "bytes": 2421,
+      "sha256": "6d53f645b47c2c5ea88087c27bfda9e843d0f8fb44356b8d7dc8d5120d79753a"
+    },
+    "models/连接件库/parameters/L3-C13.json": {
+      "bytes": 2448,
+      "sha256": "fc07d4cb8783f5df328c747a57b538c5876198ff61c0e142eee8635fca59fefd"
+    },
+    "models/连接件库/parameters/L3-C14.json": {
+      "bytes": 2129,
+      "sha256": "5942dfa143b6cec6ccc381c848ce41ffebc86ddf2a805fa0033606f189d3e657"
+    },
+    "models/连接件库/parameters/L3-C15.json": {
+      "bytes": 3543,
+      "sha256": "acdab5005bafde877a2bd0c5b10d7483aada17cf6934a70414369bea969ac1b4"
+    },
+    "models/连接件库/parameters/L3-C16.json": {
+      "bytes": 2144,
+      "sha256": "e9f024c96a31a4c5b7ca89fee66e612960d834849225fb678a679329209563c6"
+    },
+    "models/连接件库/parameters/L3-C17.json": {
+      "bytes": 2121,
+      "sha256": "dcd9063abb8ae687b7c32680fcdcd2ce57c6962523a4e4264e561371d59bd3f7"
+    },
+    "models/连接件库/previews/L1-C01.png": {
+      "bytes": 15850,
+      "sha256": "b43dc4c1cec8cf482b4d9b6f6ee31f8e5c2e3fc2482a962dfdbad2a1910a192e"
+    },
+    "models/连接件库/previews/L1-C02.png": {
+      "bytes": 16751,
+      "sha256": "e29cecdf282d197ad263daf3a96602034d2415bcafd33d9b2b41e289c5635bbd"
+    },
+    "models/连接件库/previews/L1-C03.png": {
+      "bytes": 16734,
+      "sha256": "8d559adc85981e2884734bca0416369b2a7f821d628e4fe36ed1b182bf5688bd"
+    },
+    "models/连接件库/previews/L1-C04.png": {
+      "bytes": 16669,
+      "sha256": "411de8bf5f4640b082831cc63c715e5c03712fe19aea98c0a252b5eef1c98f08"
+    },
+    "models/连接件库/previews/L1-C05.png": {
+      "bytes": 16835,
+      "sha256": "d9a97ded486ef2a745a6a5fa6765f34f77f05bcb39dbc29733caccdaeae87b20"
+    },
+    "models/连接件库/previews/L1-C06.png": {
+      "bytes": 16236,
+      "sha256": "26de9c7a0778cedea699e0264b7bb242b151ec50e1e828f0cedaa765a5dd0a51"
+    },
+    "models/连接件库/previews/L1-C07.png": {
+      "bytes": 24095,
+      "sha256": "340cfafc072db39ef308ee53100a409a75ae0e3bab0e5e5770e0030c686dbc4c"
+    },
+    "models/连接件库/previews/L1-C08.png": {
+      "bytes": 17454,
+      "sha256": "89243287e692c4dc9c953942c80b200b6ab0b64fd4f7267cdfd359112bd46fe7"
+    },
+    "models/连接件库/previews/L1-C09.png": {
+      "bytes": 18331,
+      "sha256": "2d426b3fbe2d53a17801ebc3ad5c304f892a2bd1f3613df9127b811cc9263343"
+    },
+    "models/连接件库/previews/L1_library.png": {
+      "bytes": 159884,
+      "sha256": "ba7474ce9b7e09f46a3e1472096e6972848a2aa07f2717980f92f6f33d71a855"
+    },
+    "models/连接件库/previews/L2-C01.png": {
+      "bytes": 16067,
+      "sha256": "cbe89baa864bf206774b063c4e1e91322498001cd8ad81566561b1a54c3d587e"
+    },
+    "models/连接件库/previews/L2-C02.png": {
+      "bytes": 16356,
+      "sha256": "541fcaadf1b8e07563996e0e79ed46a8b60ae38ae307a143de8f6faaba9e47ca"
+    },
+    "models/连接件库/previews/L2-C03.png": {
+      "bytes": 11747,
+      "sha256": "da94897521addda83c5b00edab3ddcc16181d324cb502cf44808a3027ff044ab"
+    },
+    "models/连接件库/previews/L2-C04.png": {
+      "bytes": 17468,
+      "sha256": "6f139e816e637c1b94d51a8b9489e838b12ae2323b83919788151b5ff10f6d8c"
+    },
+    "models/连接件库/previews/L2-C05.png": {
+      "bytes": 16320,
+      "sha256": "fcda7adf83fff1249f009a65ee8f72ffe20088513cc93d0058596fef4ebb68dd"
+    },
+    "models/连接件库/previews/L2-C06.png": {
+      "bytes": 11745,
+      "sha256": "76fae7a8d5ef7e28ff6c3c3b38c31476d2c4fefa743a8b4ab28699924ce703a2"
+    },
+    "models/连接件库/previews/L2-C07.png": {
+      "bytes": 17460,
+      "sha256": "63ff4d08bdb0c3d063ccfe07862550ddcd1f51ee6bbd5c6555ebed21a6eafe7d"
+    },
+    "models/连接件库/previews/L2-C08.png": {
+      "bytes": 16437,
+      "sha256": "f26527e6b0e0ec3241100b756ae3a66ce79aecc1f58922e5fe5c4f57224646ba"
+    },
+    "models/连接件库/previews/L2-C09.png": {
+      "bytes": 19235,
+      "sha256": "bba5db7c16ad834bfa185f98f4eb77ae49479b408691f6967a5633a92c1d5b44"
+    },
+    "models/连接件库/previews/L2-C10.png": {
+      "bytes": 20391,
+      "sha256": "9156745d70ec3ecce8c09766ac6e27ca4f8f275af9b1f87ff97947b82affdc80"
+    },
+    "models/连接件库/previews/L2-C11.png": {
+      "bytes": 17203,
+      "sha256": "ec854072b330cce9c6810fc485de47c422b4343c1fb8e23e096533737dac52fb"
+    },
+    "models/连接件库/previews/L2-C12.png": {
+      "bytes": 15419,
+      "sha256": "66f8824950f4b3fcb62ef4449d2fd82f49a478ba2e0a6ef64fb3a99c7083fcb1"
+    },
+    "models/连接件库/previews/L2-C13.png": {
+      "bytes": 16665,
+      "sha256": "cbe5b1e03d5958dccb5dd3c270a46010073e71a65c703dec64c635bf94d4bec2"
+    },
+    "models/连接件库/previews/L2-C14.png": {
+      "bytes": 19032,
+      "sha256": "4b091d4b917af63a156d6ddc8071a40fcd7e561ce2df0e8e6b62b16a304a1143"
+    },
+    "models/连接件库/previews/L2-C15.png": {
+      "bytes": 16613,
+      "sha256": "c7cf041b56cb364fe06acb5a121cf44d2097ddd8b11dcd23d7091b90d7efbe78"
+    },
+    "models/连接件库/previews/L2-C16.png": {
+      "bytes": 19065,
+      "sha256": "9c60c3d6df4561cdec7f714b0551f5af7814f58964e8ed4b03ed4d8326f52e4e"
+    },
+    "models/连接件库/previews/L2-C17.png": {
+      "bytes": 20311,
+      "sha256": "7e7b167e1e03a813986b784c537c19993ba01a00c2171ad68156a449333dae46"
+    },
+    "models/连接件库/previews/L2-C18.png": {
+      "bytes": 13346,
+      "sha256": "3f80594ab532170a97fbbe97fa6414fb0c389cf48167f901cadefbe626bfef19"
+    },
+    "models/连接件库/previews/L2-C19.png": {
+      "bytes": 17727,
+      "sha256": "90d66151476420ef73e734f3c960667a45145ba586e85246f5f25e243034f820"
+    },
+    "models/连接件库/previews/L2-C20.png": {
+      "bytes": 17765,
+      "sha256": "c34da6e64124e9e817dab2bc64501794ed35bdef85e2ac1d361234d95adad3e4"
+    },
+    "models/连接件库/previews/L2-C21.png": {
+      "bytes": 14821,
+      "sha256": "1196c29b77133195a40c5c4d36978229d2ef2cd32fc2aeea4905cd10a3864e4c"
+    },
+    "models/连接件库/previews/L2_library.png": {
+      "bytes": 359115,
+      "sha256": "aaf6644a1659a4d42e44e6754c16443257dff218e4e07269ed0c5383f2f1c269"
+    },
+    "models/连接件库/previews/L3-C01.png": {
+      "bytes": 19076,
+      "sha256": "19a3c49c5182d6e511a4bd5a1e1a6a4b55255eef467c72aa1cb395b7b7bc3ea0"
+    },
+    "models/连接件库/previews/L3-C02.png": {
+      "bytes": 13894,
+      "sha256": "1e688698838de6115b6ef581b01d6aa2cd6ee6aa6f21272d422a28dbc2ab684d"
+    },
+    "models/连接件库/previews/L3-C03.png": {
+      "bytes": 19104,
+      "sha256": "c9780e81e52767f0b9ebca23803f58ea6fc283c32d67c167856f5c29da73e05e"
+    },
+    "models/连接件库/previews/L3-C04.png": {
+      "bytes": 17599,
+      "sha256": "5485d94273d4288115dcbe57a73627e4e7827a01407e9f7f5ed3c215bfb0848c"
+    },
+    "models/连接件库/previews/L3-C05.png": {
+      "bytes": 19078,
+      "sha256": "b432572278e8bc39e90acdc88879d9b979994830d0c1f875cf5306ed2dcfa3d2"
+    },
+    "models/连接件库/previews/L3-C06.png": {
+      "bytes": 16403,
+      "sha256": "44d62b10bec1488c780df99397a2ef8a23201181862cf861d024319b3cafadc7"
+    },
+    "models/连接件库/previews/L3-C07.png": {
+      "bytes": 15577,
+      "sha256": "85130330d2a5c7a24804397e6aabbf65117daa1c15c104dd79c32dd955950cca"
+    },
+    "models/连接件库/previews/L3-C08.png": {
+      "bytes": 19288,
+      "sha256": "2b6106099dec79049272db607ea403080ae828f903f1d84134de817c6e0a2f20"
+    },
+    "models/连接件库/previews/L3-C09.png": {
+      "bytes": 17842,
+      "sha256": "41c3ba995ef8632b807ffedc0484066dc72a81e733275b7070f2062072796588"
+    },
+    "models/连接件库/previews/L3-C10.png": {
+      "bytes": 21958,
+      "sha256": "4c755946dc8a92bed29f797cdba586989ef5e7993bc987e9b2b7092c1a62b1f6"
+    },
+    "models/连接件库/previews/L3-C11.png": {
+      "bytes": 17240,
+      "sha256": "e439ca4e7d213330733eca0619b6be2a56ec8360ae22e14e64dc8640fd9f95ee"
+    },
+    "models/连接件库/previews/L3-C12.png": {
+      "bytes": 15222,
+      "sha256": "7b47bddc874777c2b2e6e12004967bcc765166b1d78e6fd6019389f4c57648a3"
+    },
+    "models/连接件库/previews/L3-C13.png": {
+      "bytes": 16059,
+      "sha256": "0911a8c3f3c8e26b465dea4b54015cc252a38d9da12e6c10d9fbf8d8ac826904"
+    },
+    "models/连接件库/previews/L3-C14.png": {
+      "bytes": 16233,
+      "sha256": "424318bc36ebf704307f1e4db62700df024c715b7d9f845b6395181be9b7c676"
+    },
+    "models/连接件库/previews/L3-C15.png": {
+      "bytes": 13818,
+      "sha256": "179b77bbe482317b68b24f0531e26ea891a9a5e2bf3e85b1c8c4f4fb1c4636a7"
+    },
+    "models/连接件库/previews/L3-C16.png": {
+      "bytes": 17654,
+      "sha256": "f91280a9a1ce7116392d59ecaf0063f60f4e928b16f46a063ae555c478440ed0"
+    },
+    "models/连接件库/previews/L3-C17.png": {
+      "bytes": 19080,
+      "sha256": "6d27b45d33785b5e2f3b7ec092e2d886ca4077b80db5338f9d065f1a62177f9a"
+    },
+    "models/连接件库/previews/L3_library.png": {
+      "bytes": 298440,
+      "sha256": "9b857e01f7133b77fca7d6c8ad2789310b8d31274d0d90a2a79dd0b0b730b003"
+    },
+    "models/连接件库/previews/修订模型三视图.png": {
+      "bytes": 214805,
+      "sha256": "47b3d3de467af1df39c868c884bf32568d789e7fb6b5746322192426f00a86b4"
+    },
+    "models/连接件库/README.md": {
+      "bytes": 4309,
+      "sha256": "2922afc87bc686d6cb2d40285ca4a3519b75fa794da506849cc01cee31946292"
+    },
+    "models/连接件库/screenshots/L1C01.png": {
+      "bytes": 55286,
+      "sha256": "7c96d6c673f274f8cc4514ff3344e0ccd4c86fba1503328f35ef75079e202ab9"
+    },
+    "models/连接件库/screenshots/L1C02.png": {
+      "bytes": 55177,
+      "sha256": "678e6fcf290d396f728662e0e6cbd4676488eb36f026f369d7923700cc22da72"
+    },
+    "models/连接件库/screenshots/L1C03.png": {
+      "bytes": 54817,
+      "sha256": "dea428e03163a2612789ffd5d04eea8d9cc2da37361631851393622f745a3abe"
+    },
+    "models/连接件库/screenshots/L1C04.png": {
+      "bytes": 58925,
+      "sha256": "ec64674f3cb29c4f2ddd9e20b1f9ca96f5b91a58a4e365dfbe684b9a2693bd94"
+    },
+    "models/连接件库/screenshots/L1C05.png": {
+      "bytes": 51635,
+      "sha256": "aee3740643018bfa3f5f8a0d5c28e041e293b651750a914c0c8d8619ec655fec"
+    },
+    "models/连接件库/screenshots/L1C06.png": {
+      "bytes": 54782,
+      "sha256": "d8c42925fa3b6c87a22c2014e347c4a1d3752fa0eeac1c7d82cfda1b3930f748"
+    },
+    "models/连接件库/screenshots/L1C07-乙字弯.png": {
+      "bytes": 63856,
+      "sha256": "b8d41055f89e8c9b98710c6ec9081cadbc7dbdd26f9e25fa0e3c58bd79a823c5"
+    },
+    "models/连接件库/screenshots/L1C07-侧视图.png": {
+      "bytes": 5731,
+      "sha256": "9e35bd16e55c569a4b09c979e49857ee18e8fea1b746e406530ae51f20f1d74b"
+    },
+    "models/连接件库/screenshots/L1C08.png": {
+      "bytes": 67629,
+      "sha256": "28fa2cd7df2786a43f75a8f3240ecad91077718db77b255e04e2799be98ee6b8"
+    },
+    "models/连接件库/screenshots/L1C09.png": {
+      "bytes": 57785,
+      "sha256": "3ae7666120e887b19a7fce6ebd9117270f4608cf8325368713ffb5dbbb40c536"
+    },
+    "models/连接件库/screenshots/L2C01.png": {
+      "bytes": 57138,
+      "sha256": "ce17735cafb86d5135aba9cc8aba867a7e61f4ae3d10993fb374781ae028c83c"
+    },
+    "models/连接件库/screenshots/L2C02.png": {
+      "bytes": 51748,
+      "sha256": "5f03de0ab14482a739af7e570207a97c5b8d5d6c5a4e679980a2e2bf547643c7"
+    },
+    "models/连接件库/screenshots/L2C03-上坡.png": {
+      "bytes": 47424,
+      "sha256": "ffe2db7bbc69baab7e7eb36772e976c590770668ac464b729c98bf3ca8b06180"
+    },
+    "models/连接件库/screenshots/L2C04-下坡.png": {
+      "bytes": 107213,
+      "sha256": "b1855deb9294cfc9f6e8ea019b4d18a48cedb93cfeb5acb7c49d832265acd10a"
+    },
+    "models/连接件库/screenshots/L2C05.png": {
+      "bytes": 52500,
+      "sha256": "7430574997c1de348fd11907ec9b803a03d246058ade098e96c8a7c5088093a8"
+    },
+    "models/连接件库/screenshots/L2C06-上坡.png": {
+      "bytes": 79619,
+      "sha256": "4c7d46ac55a850164b648276de3b61337496eff1e952df6c3490422160e5759a"
+    },
+    "models/连接件库/screenshots/L2C07-下坡.png": {
+      "bytes": 100608,
+      "sha256": "cccca8fb3786664e279fa949888596a85fe5e75b1588bf5b7c2e4a8f4c64e997"
+    },
+    "models/连接件库/screenshots/L2C08.png": {
+      "bytes": 53176,
+      "sha256": "5a1950a9984f3addc3252ed3eaf5349734df3ac21f0b8a86c29cac7b9bed2a0c"
+    },
+    "models/连接件库/screenshots/L2C09.png": {
+      "bytes": 59955,
+      "sha256": "c4fe9ea26852e1222bf85e6a21e83f1af48569116d66a0087fcfddeeabe2a7b9"
+    },
+    "models/连接件库/screenshots/L2C10.png": {
+      "bytes": 54737,
+      "sha256": "63984004c10ac3ae50d8cb6006ba07383612363f2ab7a6615fa149c2d99e8c57"
+    },
+    "models/连接件库/screenshots/L2C11.png": {
+      "bytes": 54117,
+      "sha256": "5f20f13a114a5d305962d931b36d16bcde849560cc47f6ffec724f821f582d31"
+    },
+    "models/连接件库/screenshots/L2C12-下坡.png": {
+      "bytes": 63243,
+      "sha256": "4986bb135a26e61710082dc27c518ebd43633f49daf7834845f256f39bbaf36e"
+    },
+    "models/连接件库/screenshots/L2C13.png": {
+      "bytes": 50102,
+      "sha256": "8dee7b06249e745359a1ccf99d9e14cd37dd207590b40eb13b66b9d1508a4ea6"
+    },
+    "models/连接件库/screenshots/L2C14.png": {
+      "bytes": 56309,
+      "sha256": "be48e8c7ae9da5b9d4d7513359d4bd1bf2d83c69ae74750e065b1db17dbfb2a1"
+    },
+    "models/连接件库/screenshots/L2C15.png": {
+      "bytes": 50301,
+      "sha256": "a3f83a7c32f46621f9ae853b0f492d8ed3f18820c2be00d0273df0888fad7663"
+    },
+    "models/连接件库/screenshots/L2C16.png": {
+      "bytes": 52476,
+      "sha256": "e94301b25e08dd01c3ac557612387fe445c0dfb71520a241f4f1f6aab6e259ed"
+    },
+    "models/连接件库/screenshots/L2C17.png": {
+      "bytes": 52874,
+      "sha256": "1f020e2d351a80739a01d1cdafa4a0921fa7715fdf659811a28c38e52eb908a5"
+    },
+    "models/连接件库/screenshots/L2C18-乙字弯.png": {
+      "bytes": 28698,
+      "sha256": "ebf13bd67823b60254dbc73d215dd230c414818fb4c9b78d0a5009be29856641"
+    },
+    "models/连接件库/screenshots/L2C18-俯视图.png": {
+      "bytes": 17955,
+      "sha256": "fb36d2018589354ce3defc98bfd8a33cf1db65134b15a8e8d08fa9fd3f97c932"
+    },
+    "models/连接件库/screenshots/L2C19.png": {
+      "bytes": 55110,
+      "sha256": "12a0224aa7f3775ca3cf5086bd50084ba789e576aa0d472beebc094c77a79a63"
+    },
+    "models/连接件库/screenshots/L2C20.png": {
+      "bytes": 53259,
+      "sha256": "b7a9880428a2527f77d76c9eba62d68bd10df12111517980eb90cab7485a539f"
+    },
+    "models/连接件库/screenshots/L2C21-下坡.png": {
+      "bytes": 69681,
+      "sha256": "c195b44a6ef62fc6e94176980418e34cfe69b2b5d9fe1f65cf693152708253ba"
+    },
+    "models/连接件库/screenshots/L3C01.png": {
+      "bytes": 52169,
+      "sha256": "0860501792e7d30e2777a389cba2748523b91d59f74bc21afc64c864b691203a"
+    },
+    "models/连接件库/screenshots/L3C02-侧视图.png": {
+      "bytes": 3722,
+      "sha256": "01a1ae4dd16a0e7f31ab510e2812d220b8a7e8d31441a3bb0bf1f25559af1514"
+    },
+    "models/连接件库/screenshots/L3C02-俯视图.png": {
+      "bytes": 2360,
+      "sha256": "1f4bc725edc8d1aaf95c7474d8011da28af69102eac4dd4a07a0c523f798ebd1"
+    },
+    "models/连接件库/screenshots/L3C02-正视图.png": {
+      "bytes": 2249,
+      "sha256": "c81b3cac8583bd1bbb5c52a03045ba37872aa95a0d735619391426ec3fad8233"
+    },
+    "models/连接件库/screenshots/L3C02.png": {
+      "bytes": 55810,
+      "sha256": "017a9bf30e4e9ef3b2a7445135ac1e061dcfd75c767c22438d1cdf3a98bdeefc"
+    },
+    "models/连接件库/screenshots/L3C03.png": {
+      "bytes": 50898,
+      "sha256": "7374165cc0492dcee2e76907c92873467ebd545d35a693a93fd37ea637cb62a9"
+    },
+    "models/连接件库/screenshots/L3C04-侧视图.png": {
+      "bytes": 4690,
+      "sha256": "dd8b16368e0a5c3b1f96b2290c77eeba32d0ed4a8236705f2e3b9638df70a47f"
+    },
+    "models/连接件库/screenshots/L3C04-俯视图.png": {
+      "bytes": 6611,
+      "sha256": "b96cb60061fe868d0be75803f008b36f2708893e5902675f3d452a6cf631c88a"
+    },
+    "models/连接件库/screenshots/L3C04-正视图.png": {
+      "bytes": 4626,
+      "sha256": "7233d3dce3ff210cb4920f9328345dac955058807672e8252e8188a8f72d279c"
+    },
+    "models/连接件库/screenshots/L3C04.png": {
+      "bytes": 56231,
+      "sha256": "d807de13d0d81c863236eb0b6c91eba1125dc57153bb5861d502e250db37d01d"
+    },
+    "models/连接件库/screenshots/L3C05.png": {
+      "bytes": 55756,
+      "sha256": "650b1ed644f943ec62f00c39bdede97566c2a3afa7f8d688ab2e4ee91fcec0df"
+    },
+    "models/连接件库/screenshots/L3C06.png": {
+      "bytes": 50746,
+      "sha256": "cc1ac8831cf41137f8e9d8c5dda29d8a36f5410924f3b24c76668f052d4f95bc"
+    },
+    "models/连接件库/screenshots/L3C07.png": {
+      "bytes": 53518,
+      "sha256": "c8d38ebf83807621d2b77191e0469f782fb49f6994edcfba012f05c9a7662089"
+    },
+    "models/连接件库/screenshots/L3C08.png": {
+      "bytes": 61320,
+      "sha256": "ff25888fcb330e6c5733449e7a799aa806c556b0d497e3424c397cf1f64e5c79"
+    },
+    "models/连接件库/screenshots/L3C09.png": {
+      "bytes": 55409,
+      "sha256": "c6f6d11bc8fbd701b51f18b80f9ab46fce18da94ee69fb0a28046f4aabea1e3b"
+    },
+    "models/连接件库/screenshots/L3C10-乙字弯.png": {
+      "bytes": 44049,
+      "sha256": "b8da59c7d1bc873b155f4fa3a1753a93bf29b370877ed71f942688193e39be53"
+    },
+    "models/连接件库/screenshots/L3C10-侧视图.png": {
+      "bytes": 6611,
+      "sha256": "ebbd042de9fe4eceab9af4ab95b5cadace23c608566a829d3d6cc21c8b47286c"
+    },
+    "models/连接件库/screenshots/L3C11.png": {
+      "bytes": 54986,
+      "sha256": "a67f9596745ca467279b372ad6c7909634bfc1694992b1b01803e3a2e4a0ce52"
+    },
+    "models/连接件库/screenshots/L3C12.png": {
+      "bytes": 47040,
+      "sha256": "2be9fb1e21971f2b48d73a64c90938226f824e8df1c55545b79bda23c15f2be7"
+    },
+    "models/连接件库/screenshots/L3C13.png": {
+      "bytes": 53500,
+      "sha256": "efbfa15a23a612f457e57055e9bfa775abdc8a113058df91b11be0d9b590c625"
+    },
+    "models/连接件库/screenshots/L3C14.png": {
+      "bytes": 34649,
+      "sha256": "22407f5beb2675c5f2564c6005d9bfb9e513176a36bca2486b638c2e37848ae6"
+    },
+    "models/连接件库/screenshots/L3C15.png": {
+      "bytes": 54999,
+      "sha256": "2971d7d424d1227a3c560d618646cfd722af22bebe598519b9b0f6aafb99fed1"
+    },
+    "models/连接件库/screenshots/L3C16.png": {
+      "bytes": 59057,
+      "sha256": "57c3873e0da3787b9b7d4c3f15a59a713425dea2d9009c36b8782b75a5f87ff5"
+    },
+    "models/连接件库/screenshots/L3C17.png": {
+      "bytes": 50518,
+      "sha256": "9b2a896db4da182dfb5fc53f34737ab435332b35f982d041e8c59b4c734aef67"
+    },
+    "models/连接件库/verification.json": {
+      "bytes": 6859,
+      "sha256": "e9ae9e225133b3ef2890b008a307fbc715bfcab8f2c73eaf3911cd9482bbe792"
+    },
+    "models/连接件库/viewer.js": {
+      "bytes": 7571,
+      "sha256": "52797ffdd9571340a7bc3a0162157af1885831ec90dc98fca0f309d9b82bff04"
+    },
+    "models/连接件库/viewer_data.js": {
+      "bytes": 332434,
+      "sha256": "1c052c04bc68b7c86037bf00485bc8ecd609852502791bc996d848801b1221a3"
+    },
+    "models/连接件库/修订记录.md": {
+      "bytes": 1848,
+      "sha256": "cb255ccd3221ef569d3c7d043fc308acff61936b590dc5dd3b97f252bd8bec7c"
+    },
+    "models/连接件库/模型目录.csv": {
+      "bytes": 4177,
+      "sha256": "3df68da4962eba1fa06e090ec8abb3c861adb2d1154a6f2308f0903854817684"
+    },
+    "project.json": {
+      "bytes": 3223,
+      "sha256": "dc329175678836259a9044177eb8ba4395fb3d332de8aaf1a58a80f1e704f2f2"
+    },
+    "README.md": {
+      "bytes": 5590,
+      "sha256": "2d9140db4d1b1279eafff5f6e911131874d11b5e32ee5dd4dd08df06aca3dd83"
+    },
+    "tools/check_project.py": {
+      "bytes": 1876,
+      "sha256": "940566d790dc651c96d507f8f429c9ab7b9376c19419dc3698045a0f29470b84"
+    },
+    "tools/check_viewer.mjs": {
+      "bytes": 9961,
+      "sha256": "fab2748001c276d66932a87861894bb5be1512df2837d057640533c0cca9f960"
+    },
+    "tools/export_cad.ps1": {
+      "bytes": 1344,
+      "sha256": "956316e0dea7380ee7873d09502ec76ce69f1401f775cb8817febb3b87d0ee83"
+    },
+    "tools/project.py": {
+      "bytes": 4740,
+      "sha256": "defdacfd11035c36a13ec68df477c35aacb4d86fad9c4e8c0243242098343567"
+    },
+    "tools/requirements.txt": {
+      "bytes": 26,
+      "sha256": "804b39905f33d2c6c67d30d3c2e832ccb0d9a1d97ed31ed1b0fff95d68045545"
+    },
+    "tools/source/assembly_revision02.py": {
+      "bytes": 8979,
+      "sha256": "58b1bafbcc60df62bbba04517d2654c9ea7f6c16af138690a82c9a536358ab0c"
+    },
+    "tools/source/audit_tray.py": {
+      "bytes": 1123,
+      "sha256": "0f296d11ef23fc0dddd788f903083b0972c219104cb34b234d902f16f263260f"
+    },
+    "tools/source/build_annotated_agitator.py": {
+      "bytes": 12051,
+      "sha256": "9d9dfb28fe5fd84e11ad7172f081376d5070a6a088e1cbd56f259fb960cdd557"
+    },
+    "tools/source/build_equipment_foundations.py": {
+      "bytes": 35369,
+      "sha256": "641e579ac06da14457344e2a7cbe6cb90300ea47c0dc3b0d11a68e59d4b91f60"
+    },
+    "tools/source/build_fitting_library.py": {
+      "bytes": 21440,
+      "sha256": "a7d8bcdec60e99d81a6f4595b56f7473f1ab1b461d367402ebcaedb941c85103"
+    },
+    "tools/source/build_hydrolysis_tank.py": {
+      "bytes": 6756,
+      "sha256": "34b8724cf3fcdcc0ebbceea7318de5fc887022a8683c927184a954bfb17ea008"
+    },
+    "tools/source/build_tank_mixer.py": {
+      "bytes": 14562,
+      "sha256": "3386c0695d0246f7e92151ac43cd5ab5f6d2262b93bccbdc94c2d5ffa2f98d9f"
+    },
+    "tools/source/build_tray_assembly.py": {
+      "bytes": 20762,
+      "sha256": "03d25baaec0cc0d11c743c29c718f2f7c0f7a27525b45b3f1e4b60a38cc3713e"
+    },
+    "tools/source/check_assembly_viewer.mjs": {
+      "bytes": 7332,
+      "sha256": "0d7f62aa2b2841029c80c02bb751c5d68b17f175fc701d0edf3a1dd9554a58aa"
+    },
+    "tools/source/clear_fitting_maps.py": {
+      "bytes": 4221,
+      "sha256": "af928ab8b00cd10b6cee0cf9ad8375e03fc244c5a69972ff669ab691c5ccabaf"
+    },
+    "tools/source/export_paths.lsp": {
+      "bytes": 488,
+      "sha256": "4573bc3904b890c3a5ca74581a225f7458f71e5527bbadf03d0d58e6783b97a5"
+    },
+    "tools/source/export_trays.ps1": {
+      "bytes": 1140,
+      "sha256": "1f3b8b7765511ebbc87f1d5a7e9c63e4f88cc3b4c9eb319fca9524035502e31d"
+    },
+    "tools/source/fitting_checklist.py": {
+      "bytes": 3461,
+      "sha256": "708e68efbb3a3bf25dcab1845d73fdc6aa046eef5b466e7f7fa226dc1142d396"
+    },
+    "tools/source/inspect_assembly.py": {
+      "bytes": 1055,
+      "sha256": "739e4e31ea3937370ad33e3c88a0714205776f8b4fcd2110cfb64425a94c253e"
+    },
+    "tools/source/inspect_dxf.py": {
+      "bytes": 2306,
+      "sha256": "d2c86654fd4c6e077c8acd0496b0c37b660204b602ba4fefa448174058e24fff"
+    },
+    "tools/source/make_preview.py": {
+      "bytes": 3169,
+      "sha256": "57c24174c807daf4de591724a15d90464b7a119b9f7bd749ef8215bbecd3c4aa"
+    },
+    "tools/source/overview_clear.py": {
+      "bytes": 3668,
+      "sha256": "12dc611cfee2152ba304190b6e3cefdbb5d8d0cc4bf7541c6952f8bc7c4a512b"
+    },
+    "tools/source/package_tray_assembly.py": {
+      "bytes": 550,
+      "sha256": "c449ef3f6082de21b5372d011185f85e90ab276554813e9aabf440bca0f0613a"
+    },
+    "tools/source/project_maintenance.py": {
+      "bytes": 4336,
+      "sha256": "cdf292aad3d7b0aab72aa9ea8df6d49aaf76c6e07f592be585c84f6e0a417953"
+    },
+    "tools/source/reconcile_screenshots.py": {
+      "bytes": 4310,
+      "sha256": "78b1fe6b596c82b6094aa88406e1ee2ce5accc896b6e3b28634f55fa5c0cd2dc"
+    },
+    "tools/source/render_revision_views.py": {
+      "bytes": 2365,
+      "sha256": "52b33b0f4f7a863337283d21d295d4efd2a4a08938173985dba9c9010f873855"
+    },
+    "tools/source/render_riser_dimensions.py": {
+      "bytes": 2468,
+      "sha256": "2afb9dea90b9b75173cf9e8a8fadbcee1d958731482ed051703e2d15d475d1ed"
+    },
+    "tools/source/screenshot_sheets.py": {
+      "bytes": 698,
+      "sha256": "0a3743082cfb9ad93169a4566033b90c8641effcd8684fde030eb81962e5c785"
+    },
+    "tools/source/verify_fitting_library.py": {
+      "bytes": 4769,
+      "sha256": "99bf71a7f20c52427c9bce27431eb486a22c94e122e6447c1af730f2ce477469"
+    },
+    "tools/source/verify_tray_assembly.py": {
+      "bytes": 5853,
+      "sha256": "9ca0b4b12bd5c29260577249734d6f66676c003a678c3bd4d67b9e54d5709714"
+    },
+    "viewer/panels.css": {
+      "bytes": 862,
+      "sha256": "c1614d80c6aef752b8bfae7891c659512f9ff7af1930e91e6553909153959b71"
+    },
+    "viewer/panels.js": {
+      "bytes": 1459,
+      "sha256": "1912e7114ef6b74b566a62883ea68be59ed863eb2a9ff8ce31ed77c102fa06d3"
+    },
+    "viewer/viewer.js": {
+      "bytes": 13734,
+      "sha256": "5b37af3bc81fdec4e2b15f5a042674ae273a0d0f48a7923ac833ed09eba1d518"
+    }
+  }
+}

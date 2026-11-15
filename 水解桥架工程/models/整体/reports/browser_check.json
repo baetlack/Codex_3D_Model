@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "browser": "Chrome headless",
+  "checks": [
+    "112 parts loaded",
+    "Independent sidebar folding, canvas resize and retained selection/filter",
+    "Select fitting and isolate floor",
+    "Search fitting",
+    "Hide straight trays",
+    "Show three floors and spread/top view",
+    "North-up / east-right plan projection",
+    "Locate new 45-degree riser offset",
+    "Pointer rotation and wheel zoom",
+    "Exact 0-degree elevation and 90-degree pitch limits",
+    "Upright orbit limits and southeast direction reset",
+    "Bottom and side-edge alignment details",
+    "Cross-floor riser adjacency",
+    "Narrow viewport: initially folded, independent reopening and usable canvas"
+  ],
+  "uncaught_exceptions": []
+}

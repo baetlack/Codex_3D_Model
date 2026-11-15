@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>桥架 v0.2 装配说明</title>
+<style>body{font:16px/1.9 'Microsoft YaHei',sans-serif;margin:40px auto;padding:0 24px;max-width:900px;background:#14212e;color:#dce9f4}h1{font-size:25px}h2{font-size:19px;margin-top:32px;color:#8bd6e1}a{color:#8bd6e1}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid #40586d;padding:10px;text-align:left}small{color:#9eb7cb}img{max-width:100%;background:white}</style>
+<body><a href="../index.html">← 返回三层模型</a><h1>整体桥架 v0.2 · 方向与立管修订</h1>
+<p>EL100 / EL106 / EL112。64段桥架、47个v1.2库连接件、新增1个45°乙字弯，共112个构件。</p>
+<h2>浏览方向</h2><p>X东、Y北、Z上，默认东南轴测、35°俯角。北向俯视为上北下南、左西右东。点击“方向复位（东南）”恢复方向；俯仰限制0°～90°，禁止底面翻转。</p>
+<h2>连续东南竖管</h2><p>L3-S-37C11已转正90°，与L2-S-37C18同轴、同槽口朝向，在EL112直接接续。</p>
+<h2>新增乙字弯 L3-X01</h2><table><tr><th>项目</th><th>尺寸</th></tr><tr><td>截面</td><td>500×200 mm</td></tr><tr><td>中段水平偏移 / 升高</td><td>971.03 / 971.03 mm</td></tr><tr><td>斜段倾角</td><td>45°</td></tr><tr><td>两端直段</td><td>150 mm / 端</td></tr><tr><td>接口总高差</td><td>1271.03 mm</td></tr><tr><td>下、上接口</td><td>EL115.42897 / EL116.70000</td></tr></table>
+<p>37C11上端已相应裁短，另一端与37C12衔接。<a href="../models/L3-X01_参数.json">计算参数与端点坐标</a> · <a href="../models/L3-X01_45度乙字弯.glb">单件GLB</a></p>
+<h2>按接触边对齐</h2><table><tr><th>连接件</th><th>直段</th><th>规则</th></tr><tr><td>L3-C03 A</td><td>37C27</td><td>底板对齐</td></tr><tr><td>L3-C17 A</td><td>37C21</td><td>底板对齐</td></tr><tr><td>L3-C04 C</td><td>37C74</td><td>同侧边线对齐，取最小X、最小Y边线</td></tr></table>
+<p>截面尺寸差异保留，按确认后的接触边建立连接，中心无需重合。C04下部弯头C05及相邻支路同步平移，保持连续。</p>
+<h2>记录与验证</h2><p>110条连接关系的指定接触点对齐检查、同轴竖管和45°斜段检查均通过；另检查了5个GLB的文件结构和网格。浏览器已验证方向复位、防翻转、上北右东、连接导航与常规操作。尚未进行全场碰撞检查。</p>
+<p><a href="verification.json">几何检查</a> · <a href="browser_check.json">浏览器测试</a> · <a href="endpoint_adjustments.json">端点调整</a> · <a href="接口核对.csv">接口记录</a></p><p>当前32个端点相对原数据中心基点位移超过100 mm，最大约765.75 mm。原DWG及v1.2模型库源文件未修改。</p><small>GLB：米、Y向上（东+X、北-Z）；OBJ：米、Z向上（东+X、北+Y）。本页可离线打开。</small></body></html>

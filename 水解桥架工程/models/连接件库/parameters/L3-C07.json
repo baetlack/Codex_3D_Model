@@ -1,0 +1,100 @@
+{
+  "id": "L3-C07",
+  "source_screenshot_id": "L3-C08",
+  "source_screenshot": "screenshots/L3C08.png",
+  "dwg_handle": "37F04",
+  "kind": "vertical_up",
+  "shape": "垂直上弯",
+  "units": "mm",
+  "coordinate_system": "local right-handed Z-up; GLB stores meters Y-up",
+  "parameters": {
+    "kind": "vertical_up",
+    "w1": 200,
+    "L": 400,
+    "h": 200
+  },
+  "ports": [
+    {
+      "name": "A",
+      "position_mm": [
+        -400.0,
+        0.0,
+        0.0
+      ],
+      "outward_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "width_mm": 200.0,
+      "height_mm": 200.0,
+      "section_up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "B",
+      "position_mm": [
+        0.0,
+        0.0,
+        -400.0
+      ],
+      "outward_normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "width_mm": 200.0,
+      "height_mm": 200.0,
+      "section_up": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "construction_notes": [
+    "L采用局部两臂长度，垂直转向以接口法向为准；最终旋转姿态由装配端口确定。",
+    "板厚2mm为建模假定；无盖、无孔、无法兰及螺栓。壁板分体相交，未做实体布尔合并。"
+  ],
+  "association_status": "proposed_swap_pending_assembly_check",
+  "geometry_status": "parametric_reference_model_pending_CAD_overlay",
+  "source_views": [],
+  "revision": "1.1",
+  "source_CAD_bbox_mm": [
+    [
+      573297.0488728628,
+      84136.38121893555,
+      6200
+    ],
+    [
+      573497.0488728628,
+      84336.38121893555,
+      6200
+    ]
+  ],
+  "source_screenshot_SHA256": "ff25888fcb330e6c5733449e7a799aa806c556b0d497e3424c397cf1f64e5c79",
+  "files": {
+    "glb": "glb/L3-C07.glb",
+    "obj": "obj/L3-C07.obj",
+    "parameters": "parameters/L3-C07.json"
+  },
+  "mesh": {
+    "vertices": 132,
+    "triangles": 44,
+    "bbox_mm": [
+      [
+        -400.0,
+        -100.0,
+        -400.0
+      ],
+      [
+        200.00000000000003,
+        100.0,
+        200.00000000000003
+      ]
+    ]
+  }
+}

@@ -1,0 +1,3056 @@
+{
+  "baseline": "1.0",
+  "date": "2026-11-03",
+  "pipeline": [
+    {
+      "step": "用户准备",
+      "detail": "原版DWG为专业对象主源，T3/DXF用于平面辅助；提供47个连接件截图与9个补充视图，保留原文件。"
+    },
+    {
+      "step": "计算机读取",
+      "detail": "AutoCAD 2025 + T30天正电气，COM读取专业桥架属性；AutoLISP读取路径端点。导出快照保存在读取记录。"
+    },
+    {
+      "step": "形状与参数整理",
+      "detail": "截图人工/视觉判读及用户补充确认，不是全自动CAD转换；编号交叉映射和参数表独立保留。"
+    },
+    {
+      "step": "几何生成与装配",
+      "detail": "程序生成开口U形薄壁桥架；使用已确认连接件v1.2，直段适配接口，应用v0.2方向及连接修订。"
+    },
+    {
+      "step": "验证",
+      "detail": "几何、接口、库资产哈希和浏览器功能检查；不等于工程审图或全场碰撞检查。"
+    }
+  ],
+  "source_layers": [
+    "CABLETRAY_WEAK",
+    "CABLETRAY_WEAK_DOTE",
+    "CABLETRAY_WEAK_HIDE",
+    "CABLETRAY_WEAK_DIM",
+    "CABLETRAY_WEAK_HATCH"
+  ],
+  "user_confirmed": [
+    "仅建三层，EL100/106/112；共用立管位于东南角，通向后续待建机柜室。",
+    "连接件库v1.2已确认；L2-C18的乙字弯局部偏移为负Y。装配实例可按图面安装方向作镜像。",
+    "L2-S-37C18与L3-S-37C11连续、方向一致；C11与C12通过45度乙字弯相连。",
+    "L3-C03、C17按底部连接；L3-C04按侧边线连接。"
+  ],
+  "implementation_choices": [
+    "C04采用minX/minY外侧边对齐，作为当前实现选择留存，用户后续可修订。",
+    "板厚2mm为建模假设；未建孔、盖板、螺栓、法兰，部分相交薄板未布尔合并。",
+    "原路径prin1导出约0.5mm精度；端点因连接件接口适配而变化，详见endpoint_adjustments.json。",
+    "18个自由直段端点；不代表全部工程线路已闭合。厂房结构和机柜室位置尺寸待补充。",
+    "平面标题标高不能据此认定厂房完整楼层；44m×72m仅为已有柱轴范围读取参考。"
+  ],
+  "number_mapping": "data/读取记录/fitting_screenshot_manifest.json；旧清单中的待补建状态为历史记录，以当前模型和本记录为准。",
+  "rules": {
+    "version": "0.2",
+    "geographic_axes": {
+      "east": "+X",
+      "north": "+Y",
+      "up": "+Z"
+    },
+    "default_camera": {
+      "view": "southeast",
+      "yaw_deg": -45,
+      "elevation_deg": 35,
+      "roll_deg": 0,
+      "elevation_limits_deg": [
+        0,
+        90
+      ]
+    },
+    "accepted_alignment_rules": [
+      {
+        "fitting": "L3-C03",
+        "port": "A",
+        "alignment": "bottom"
+      },
+      {
+        "fitting": "L3-C17",
+        "port": "A",
+        "alignment": "bottom"
+      },
+      {
+        "fitting": "L3-C04",
+        "port": "C",
+        "alignment": "side_edges_min_X_min_Y"
+      }
+    ],
+    "riser_splice": {
+      "lower": "L2-S-37C18",
+      "upper": "L3-S-37C11",
+      "at_mm": [
+        38603.545825055626,
+        13870.265508939789,
+        12000.0
+      ],
+      "up": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    "new_offset": {
+      "width_mm": 500,
+      "height_mm": 200,
+      "horizontal_offset_mm": 971.0304178625186,
+      "offset_X_mm": 970.9801608635462,
+      "offset_Y_mm": -9.879252181177435,
+      "diagonal_rise_mm": 971.0304178625186,
+      "straight_end_mm": 150,
+      "total_rise_mm": 1271.0304178625186,
+      "diagonal_angle_deg": 45,
+      "path_centerline_mm": [
+        [
+          38603.545825055626,
+          13870.265508939789,
+          15428.96958213748
+        ],
+        [
+          38603.545825055626,
+          13870.265508939789,
+          15578.96958213748
+        ],
+        [
+          39574.52598591917,
+          13860.386256758611,
+          16550.0
+        ],
+        [
+          39574.52598591917,
+          13860.386256758611,
+          16700.0
+        ]
+      ],
+      "construction": "Horizontal offset equals diagonal rise exactly; end stubs sized for miter clearance; dimensions in mm"
+    },
+    "fitting_translations": [
+      {
+        "part": "L3-C03",
+        "translation_mm": [
+          0.0,
+          0.0,
+          50.0
+        ]
+      },
+      {
+        "part": "L3-C17",
+        "translation_mm": [
+          0.0,
+          0.0,
+          50.0
+        ]
+      },
+      {
+        "part": "L3-C05",
+        "translation_mm": [
+          -50.0,
+          -150.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "L1-C01",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C01",
+      "dwg_handle": "37E73",
+      "screenshot_id": "L1-C01",
+      "parameter_record": "models/连接件库/parameters/L1-C01.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C02",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C02",
+      "dwg_handle": "37C3D",
+      "screenshot_id": "L1-C02",
+      "parameter_record": "models/连接件库/parameters/L1-C02.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C03",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C03",
+      "dwg_handle": "37C45",
+      "screenshot_id": "L1-C03",
+      "parameter_record": "models/连接件库/parameters/L1-C03.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C04",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C04",
+      "dwg_handle": "37C47",
+      "screenshot_id": "L1-C04",
+      "parameter_record": "models/连接件库/parameters/L1-C04.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C05",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C05",
+      "dwg_handle": "37C41",
+      "screenshot_id": "L1-C05",
+      "parameter_record": "models/连接件库/parameters/L1-C05.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C06",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C06",
+      "dwg_handle": "37C43",
+      "screenshot_id": "L1-C06",
+      "parameter_record": "models/连接件库/parameters/L1-C06.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C07",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C07",
+      "dwg_handle": "37E7A",
+      "screenshot_id": "L1-C07",
+      "parameter_record": "models/连接件库/parameters/L1-C07.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C08",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C08",
+      "dwg_handle": "37C3A",
+      "screenshot_id": "L1-C08",
+      "parameter_record": "models/连接件库/parameters/L1-C08.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L1-C09",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L1-C09",
+      "dwg_handle": "37C3C",
+      "screenshot_id": "L1-C09",
+      "parameter_record": "models/连接件库/parameters/L1-C09.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C01",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C01",
+      "dwg_handle": "37C06",
+      "screenshot_id": "L2-C01",
+      "parameter_record": "models/连接件库/parameters/L2-C01.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C02",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C02",
+      "dwg_handle": "37C05",
+      "screenshot_id": "L2-C02",
+      "parameter_record": "models/连接件库/parameters/L2-C02.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C03",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C03",
+      "dwg_handle": "37EAC",
+      "screenshot_id": "L2-C03",
+      "parameter_record": "models/连接件库/parameters/L2-C03.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C04",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C04",
+      "dwg_handle": "37EAD",
+      "screenshot_id": "L2-C04",
+      "parameter_record": "models/连接件库/parameters/L2-C04.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C05",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C05",
+      "dwg_handle": "37C09",
+      "screenshot_id": "L2-C05",
+      "parameter_record": "models/连接件库/parameters/L2-C05.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C06",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C06",
+      "dwg_handle": "37EAE",
+      "screenshot_id": "L2-C06",
+      "parameter_record": "models/连接件库/parameters/L2-C06.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C07",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C07",
+      "dwg_handle": "37EAF",
+      "screenshot_id": "L2-C07",
+      "parameter_record": "models/连接件库/parameters/L2-C07.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C08",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C08",
+      "dwg_handle": "37C02",
+      "screenshot_id": "L2-C08",
+      "parameter_record": "models/连接件库/parameters/L2-C08.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C09",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C09",
+      "dwg_handle": "37CB0",
+      "screenshot_id": "L2-C09",
+      "parameter_record": "models/连接件库/parameters/L2-C09.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C10",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C10",
+      "dwg_handle": "37CCA",
+      "screenshot_id": "L2-C10",
+      "parameter_record": "models/连接件库/parameters/L2-C10.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C11",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C11",
+      "dwg_handle": "37CBC",
+      "screenshot_id": "L2-C11",
+      "parameter_record": "models/连接件库/parameters/L2-C11.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C12",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C12",
+      "dwg_handle": "37EC5",
+      "screenshot_id": "L2-C12",
+      "parameter_record": "models/连接件库/parameters/L2-C12.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C13",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C13",
+      "dwg_handle": "37CDE",
+      "screenshot_id": "L2-C13",
+      "parameter_record": "models/连接件库/parameters/L2-C13.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C14",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C14",
+      "dwg_handle": "37EED",
+      "screenshot_id": "L2-C14",
+      "parameter_record": "models/连接件库/parameters/L2-C14.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C15",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C15",
+      "dwg_handle": "37CDA",
+      "screenshot_id": "L2-C15",
+      "parameter_record": "models/连接件库/parameters/L2-C15.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C16",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C16",
+      "dwg_handle": "37EDF",
+      "screenshot_id": "L2-C16",
+      "parameter_record": "models/连接件库/parameters/L2-C16.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C17",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C17",
+      "dwg_handle": "37C19",
+      "screenshot_id": "L2-C17",
+      "parameter_record": "models/连接件库/parameters/L2-C17.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C18",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C18",
+      "dwg_handle": "37ECC",
+      "screenshot_id": "L2-C18",
+      "parameter_record": "models/连接件库/parameters/L2-C18.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C19",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C19",
+      "dwg_handle": "37C68",
+      "screenshot_id": "L2-C19",
+      "parameter_record": "models/连接件库/parameters/L2-C19.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C20",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C20",
+      "dwg_handle": "37ED7",
+      "screenshot_id": "L2-C20",
+      "parameter_record": "models/连接件库/parameters/L2-C20.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L2-C21",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L2-C21",
+      "dwg_handle": "37ED8",
+      "screenshot_id": "L2-C21",
+      "parameter_record": "models/连接件库/parameters/L2-C21.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C01",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C01",
+      "dwg_handle": "37C10",
+      "screenshot_id": "L3-C01",
+      "parameter_record": "models/连接件库/parameters/L3-C01.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C02",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C02",
+      "dwg_handle": "37C26",
+      "screenshot_id": "L3-C03",
+      "parameter_record": "models/连接件库/parameters/L3-C02.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C03",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C03",
+      "dwg_handle": "37C29",
+      "screenshot_id": "L3-C02",
+      "parameter_record": "models/连接件库/parameters/L3-C03.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C04",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C04",
+      "dwg_handle": "37C71",
+      "screenshot_id": "L3-C05",
+      "parameter_record": "models/连接件库/parameters/L3-C04.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C05",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C05",
+      "dwg_handle": "37C75",
+      "screenshot_id": "L3-C04",
+      "parameter_record": "models/连接件库/parameters/L3-C05.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C06",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C06",
+      "dwg_handle": "37C6D",
+      "screenshot_id": "L3-C06",
+      "parameter_record": "models/连接件库/parameters/L3-C06.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C07",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C07",
+      "dwg_handle": "37F04",
+      "screenshot_id": "L3-C08",
+      "parameter_record": "models/连接件库/parameters/L3-C07.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C08",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C08",
+      "dwg_handle": "37F00",
+      "screenshot_id": "L3-C07",
+      "parameter_record": "models/连接件库/parameters/L3-C08.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C09",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C09",
+      "dwg_handle": "37EF7",
+      "screenshot_id": "L3-C09",
+      "parameter_record": "models/连接件库/parameters/L3-C09.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C10",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C10",
+      "dwg_handle": "37EFD",
+      "screenshot_id": "L3-C10",
+      "parameter_record": "models/连接件库/parameters/L3-C10.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C11",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C11",
+      "dwg_handle": "37C6B",
+      "screenshot_id": "L3-C11",
+      "parameter_record": "models/连接件库/parameters/L3-C11.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C12",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C12",
+      "dwg_handle": "37BE7",
+      "screenshot_id": "L3-C12",
+      "parameter_record": "models/连接件库/parameters/L3-C12.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C13",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C13",
+      "dwg_handle": "37C1B",
+      "screenshot_id": "L3-C13",
+      "parameter_record": "models/连接件库/parameters/L3-C13.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C14",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C14",
+      "dwg_handle": "37C1D",
+      "screenshot_id": "L3-C14",
+      "parameter_record": "models/连接件库/parameters/L3-C14.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C15",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C15",
+      "dwg_handle": "37C1E",
+      "screenshot_id": "L3-C17",
+      "parameter_record": "models/连接件库/parameters/L3-C15.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C16",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C16",
+      "dwg_handle": "37C23",
+      "screenshot_id": "L3-C16",
+      "parameter_record": "models/连接件库/parameters/L3-C16.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-C17",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-C17",
+      "dwg_handle": "37C25",
+      "screenshot_id": "L3-C15",
+      "parameter_record": "models/连接件库/parameters/L3-C17.json",
+      "provenance": {
+        "CAD": [
+          "句柄",
+          "原图包围盒",
+          "对象属性"
+        ],
+        "screenshot_and_user": [
+          "连接件形状",
+          "尺寸与补充三视图；以参数文件和生成脚本为准"
+        ],
+        "calculated": [
+          "局部网格",
+          "装配旋转和平移",
+          "接口位置"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37F08",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37F08",
+      "dwg_handle": "37F08",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37F03",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37F03",
+      "dwg_handle": "37F03",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37EFB",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37EFB",
+      "dwg_handle": "37EFB",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37EF8",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37EF8",
+      "dwg_handle": "37EF8",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37EF3",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37EF3",
+      "dwg_handle": "37EF3",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37EF1",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37EF1",
+      "dwg_handle": "37EF1",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EEE",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EEE",
+      "dwg_handle": "37EEE",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EEC",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EEC",
+      "dwg_handle": "37EEC",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EE1",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EE1",
+      "dwg_handle": "37EE1",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EDE",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EDE",
+      "dwg_handle": "37EDE",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37ED3",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37ED3",
+      "dwg_handle": "37ED3",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37ED2",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37ED2",
+      "dwg_handle": "37ED2",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37ED1",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37ED1",
+      "dwg_handle": "37ED1",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EC8",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EC8",
+      "dwg_handle": "37EC8",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EC6",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EC6",
+      "dwg_handle": "37EC6",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EC1",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EC1",
+      "dwg_handle": "37EC1",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EB9",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EB9",
+      "dwg_handle": "37EB9",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EAB",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EAB",
+      "dwg_handle": "37EAB",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37EAA",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37EAA",
+      "dwg_handle": "37EAA",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37E8F",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37E8F",
+      "dwg_handle": "37E8F",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37E8E",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37E8E",
+      "dwg_handle": "37E8E",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37E8D",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37E8D",
+      "dwg_handle": "37E8D",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37E8C",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37E8C",
+      "dwg_handle": "37E8C",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37E74",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37E74",
+      "dwg_handle": "37E74",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37E70",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37E70",
+      "dwg_handle": "37E70",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37E6E",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37E6E",
+      "dwg_handle": "37E6E",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37CDD",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37CDD",
+      "dwg_handle": "37CDD",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37CDC",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37CDC",
+      "dwg_handle": "37CDC",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37CD8",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37CD8",
+      "dwg_handle": "37CD8",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37CCB",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37CCB",
+      "dwg_handle": "37CCB",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37CC9",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37CC9",
+      "dwg_handle": "37CC9",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C74",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C74",
+      "dwg_handle": "37C74",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C73",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C73",
+      "dwg_handle": "37C73",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C72",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C72",
+      "dwg_handle": "37C72",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C70",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C70",
+      "dwg_handle": "37C70",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C6F",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C6F",
+      "dwg_handle": "37C6F",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37C69",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37C69",
+      "dwg_handle": "37C69",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C48",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C48",
+      "dwg_handle": "37C48",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C46",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C46",
+      "dwg_handle": "37C46",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C44",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C44",
+      "dwg_handle": "37C44",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C42",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C42",
+      "dwg_handle": "37C42",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C40",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C40",
+      "dwg_handle": "37C40",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C3F",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C3F",
+      "dwg_handle": "37C3F",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C3E",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C3E",
+      "dwg_handle": "37C3E",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C3B",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C3B",
+      "dwg_handle": "37C3B",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37C39",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37C39",
+      "dwg_handle": "37C39",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C28",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C28",
+      "dwg_handle": "37C28",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C27",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C27",
+      "dwg_handle": "37C27",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C24",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C24",
+      "dwg_handle": "37C24",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C22",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C22",
+      "dwg_handle": "37C22",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C21",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C21",
+      "dwg_handle": "37C21",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C20",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C20",
+      "dwg_handle": "37C20",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C1F",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C1F",
+      "dwg_handle": "37C1F",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C1C",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C1C",
+      "dwg_handle": "37C1C",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C1A",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C1A",
+      "dwg_handle": "37C1A",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37C18",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37C18",
+      "dwg_handle": "37C18",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C12",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C12",
+      "dwg_handle": "37C12",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37C11",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37C11",
+      "dwg_handle": "37C11",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37C07",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37C07",
+      "dwg_handle": "37C07",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37C03",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37C03",
+      "dwg_handle": "37C03",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L2-S-37BFF",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L2-S-37BFF",
+      "dwg_handle": "37BFF",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L1-S-37BFC",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L1-S-37BFC",
+      "dwg_handle": "37BFC",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37BE6",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37BE6",
+      "dwg_handle": "37BE6",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-S-37BE5",
+      "category": "straight",
+      "assembly_record": "models/整体/assembly.json#L3-S-37BE5",
+      "dwg_handle": "37BE5",
+      "provenance": {
+        "CAD": [
+          "原始路径端点",
+          "宽",
+          "高",
+          "起止标高"
+        ],
+        "calculated": [
+          "相对楼层原点坐标",
+          "接口适配后的端点与长度"
+        ],
+        "user": [
+          "指定立管方向、连续连接与贴底/贴边规则（适用时）"
+        ]
+      }
+    },
+    {
+      "id": "L3-X01",
+      "category": "fitting",
+      "assembly_record": "models/整体/assembly.json#L3-X01",
+      "dwg_handle": null,
+      "parameter_record": "models/整体/models/L3-X01_参数.json",
+      "provenance": {
+        "user": [
+          "45度连接要求"
+        ],
+        "calculated": [
+          "两端坐标差",
+          "971.0304mm水平偏移",
+          "1271.0304mm总升高"
+        ],
+        "assumed": [
+          "两端各150mm直段；为转角净空选取"
+        ]
+      }
+    }
+  ],
+  "traceability_limit": "已保留原始导出、截图、参数、配置与生成公式；历史逐字段判读时间与置信度未曾采集，不伪造精度或确认记录。",
+  "changes": [
+    {
+      "revision": "1.33-f41b08-integrated-cylinder-and-audit",
+      "date": "2026-11-06",
+      "user_request": "密封水循环槽采用一体圆柱，其余自查问题归档",
+      "scope": "F41B08 槽体采用 Ø1000×1000 mm 单一封闭网格，消除槽盖与筒壳重面。圆形暂定基础 Ø1100×200 mm 独立组合。",
+      "basis": "用户确认、设备台账及俯视图 353F",
+      "audit_archive": "models/设备/设备基础_20261106/模型自查问题归档_20261106.md",
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "equipment_library_sha256": {
+        "tools/build_sheet_models.py": "746da085abd08027f0b5d9bc9da30e76507de75111b3db23fa15fb39619c351f",
+        "示图建模_20260521/模型/F41B08/model_data.js": "5788212d935f67e10408f73c512c435e29064a7481b4b3596705e30eb8dc3dfa",
+        "示图建模_20260521/模型/F41B08/F41B08.glb": "2bfbe677a9472a08270176c070331d32bf5168658970241decc34df6d83e5034"
+      }
+    },
+    {
+      "revision": "1.32-exhaust-stack-and-scrubber-frames",
+      "date": "2026-11-06",
+      "user_request": "按新版设备基础 DXF 建模尾气烟囱与洗涤塔钢塔架",
+      "source": "data/原始资料/设备基础/水解设备基础图_增补烟囱及洗涤塔钢塔架_20261106.dxf",
+      "source_sha256": "a456efdfeec65b79294291c0f55fa4c3eee95564e68f5a8ca41cd8c8d8b73b86",
+      "scope": "F41B04 以新版背立面量测的 Ø1000×15100 mm 建筒体，筒顶约 38.400 m。钢架顶 36.800 m，检修平台 27.800 m。L41B02 按 2400×2400 mm 四柱方架，架顶 31.300 m。两套钢塔架均可与原圆台、设备组合。",
+      "limits": "烟囱台账高 17000 mm、旧设备示图高 11000 mm，新版平面圆外径约 Ø1100 mm，筒径以新版立面和台账为准。钢架构件层次见参数，厂房绝对定位待核。洗涤塔 26.300 m 层南侧 GJ04 与现有模型中下接口相交，现场放样待核。",
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "audit": "models/设备/设备基础_20261106/DXF逐项核对.md",
+      "equipment_library_sha256": {
+        "library_viewer.js": "4c09ab0460eb068852fdbaf9aa5a340d963b083757ec96359b2cdc89f0253bd0",
+        "tools/build_sheet_models.py": "ebcec4e10f8d2e88492b36a18e68f9da5f644c39bd61db29d088c8effbdbe135",
+        "示图建模_20260521/设备台账对照.json": "68feff81255ac9e66aedb35eaf12b9c6ea4adacaef62392fff21ac658da8b5ea",
+        "示图建模_20260521/模型/F41B04/model_data.js": "6f4fd24f50aa02f78dcfe91cb26aa2099e15a19fe3dbcd1441f8d268554f70ea"
+      }
+    },
+    {
+      "revision": "1.31-targeted-equipment-corrections",
+      "date": "2026-11-06",
+      "user_request": "回退钛液预热槽，去掉热水预热槽两处顶口圆垫座，恢复尾气风机蜗壳支架",
+      "scope": "C41B02 恢复上一轮槽顶复核前的六处顶口与两处侧口；C41B01 两只小接管直接装于槽盖；P41B10 恢复原蜗壳两只支脚与两块脚底板，支架随设备显示。",
+      "audit": "models/设备/设备基础_20261106/DXF逐项核对.md",
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "equipment_library_sha256": {
+        "tools/build_sheet_models.py": "cb8c2794d133754c844ad8378b5149b0d5d75ba899bddc977e4674f12e8059a9",
+        "示图建模_20260521/设备台账对照.json": "bc21dd1b77546013d402d846859aab511433300b26c9af36284841483fb5496b",
+        "示图建模_20260521/模型/C41B01/model_data.js": "2bb3efbd8c501c1fc9ed7843e6e5571a87b61be08017b475dceef6a7e464e6de",
+        "示图建模_20260521/模型/P41B10/model_data.js": "a1d264c4b6d85a6296bea0370542c65ac6028ee6ba36083d38b93736562ea3d4"
+      },
+      "equipment_mesh_sha256": {
+        "models/设备/设备基础_20261106/设备净模/C41B01/model_data.js": "ca7cc418f636aa5085332fc44fd255c4b90a691c9ad2696f0a3200114a497389",
+        "models/设备/设备基础_20261106/设备净模/C41B02/model_data.js": "c0a46597a13d353f4d20589b73cde661fb660a7908643a2ae2e54845481640b6",
+        "models/设备/设备基础_20261106/设备净模/P41B10/model_data.js": "070540dd9f3441ac53802cc57bdb1d1f40a420a53de65a0e85084bc8a04c8cb5"
+      }
+    },
+    {
+      "revision": "1.30-roof-ports-and-fan-drive-base",
+      "date": "2026-11-06",
+      "user_request": "复核槽顶安装口，恢复尾气风机电机下底座",
+      "scope": "以已有俯视及侧视核对顶口中心、内外圈和层次；保留侧口几何；P41B10 恢复原传动底座五件并独立于土建基础。",
+      "audit": "models/设备/设备基础_20261106/DXF逐项核对.md",
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "equipment_library_sha256": {
+        "tools/build_sheet_models.py": "92990c8cb474db7dfe387dd7a98d8b08ffe8af4db1d311d79c7e11d2fe910ec1",
+        "示图建模_20260521/设备台账对照.json": "a5e3f4acb1a406e72abd4913e5c9ac3b95aa2741f9123d9567f98be6c6ff3d96",
+        "示图建模_20260521/模型/P41B10/model_data.js": "f771c81358ca4848a9b6134d6cc99896100c25bc3a991b5e0356e7908adba6f2"
+      }
+    },
+    {
+      "revision": "1.29-all-equipment-dxf-review",
+      "date": "2026-11-06",
+      "user_request": "逐组核对设备 DXF 两视图，补法兰接口并复核设备与基础组合",
+      "scope": "35个位号组逐项核对；冷却器三对与钢架、旋流除雾器与钢平台、蒸汽分汽缸与双墩鞍座可组合。两套确认槽罐原档案留存，设备库更新接口预览和导出。",
+      "audit": "models/设备/设备基础_20261106/DXF逐项核对.md",
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "equipment_dxf_sha256": {
+        "示图建模_20260521/原始资料/水解设备模型示图_更新20261105.dxf": "b06d01a8b8bd50f8cd815412f37ede908c2573b0636030ab6018a92a124a3338",
+        "示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf"
+      },
+      "equipment_library_sha256": {
+        "library_viewer.js": "8fca9f26e898be2da922de2d088d38fe7a999ce9c492e0215e1b1ef4ddc21217",
+        "tools/build_sheet_models.py": "f6850dc5cdc92d04e412a88af39a835fb3b7169d1fc8e50e9eabe3ab1688c0eb",
+        "示图建模_20260521/设备台账对照.json": "4ebfa47a1fdaa3ed07f598cf6e083c66ddd1298ccb038f12d7af9fabc071df04"
+      }
+    },
+    {
+      "revision": "1.28-seed-pair-filter-and-provisional-bases",
+      "date": "2026-11-06",
+      "user_request": "补晶种槽侧口和翼式托耳并成对建模，修正过滤器侧口，补两套暂定基础，泵基础和葫芦轨道略过",
+      "scope": "晶种槽 B/C、D/E 按定位点配对，双槽预览采用 B/C 的 2600 mm 南北中心距和镜像朝向；F41B08 暂定 Ø1100×200，L41B01 暂定 Ø1300×200",
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "entry": "../水解设备模型库/index.html",
+      "equipment_library_sha256": {
+        "library_viewer.js": "6c6ca10d7bd1143b9cb689757c516562fb4bcb6b6ae4948427258c1a51294fa0",
+        "示图建模_20260521/设备台账对照.json": "d50b85dd2c9a59a8180a2a7327e6e565f79c4e4f52846762d766b70d955131ea",
+        "示图建模_20260521/模型/D41B01/model_data.js": "414cb88f39273ecbcc1909dad1fabbf4d55fff0cfd549ae5e2f3c647f533f48b",
+        "示图建模_20260521/模型/L41B01/model_data.js": "8ad3f45e73369f08aa6dd8e6806fb764ddc7b2ca2eb3c88559561ee8fbdd7919"
+      }
+    },
+    {
+      "revision": "1.27-foundation-datums-and-equipment-separation",
+      "date": "2026-11-06",
+      "user_request": "拆分设备自带支撑与基础，按地面基准分别标示地上、地下及垫层，并核对缺图和组合状态",
+      "scope": "21套去支撑设备净模保留原模型的本体网格与法线；18套基础保留独立几何并按平剖图记录结构与垫层。35个位号组中16组缺资料、9组独立、10组可合看。",
+      "hydrolysis_datum_mm": {
+        "grade": 0,
+        "structure_top": 1500,
+        "structure_bottom": -1000,
+        "blinding": 100
+      },
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "entry": "../水解设备模型库/index.html",
+      "equipment_library_sha256": {
+        "library_viewer.js": "8bfc967016bd93799e5bc637e177c36d42d743477086c676dc3d71682f64de7d"
+      }
+    },
+    {
+      "revision": "1.26-equipment-foundations",
+      "date": "2026-11-06",
+      "user_request": "根据补充的水解设备基础图建模",
+      "scope": "18套基础、集水坑和钢架对应19个位号组。按平剖面标注建模，设备库支持独立查看及有就位依据的组合预览",
+      "source_dxfs": [
+        "data/原始资料/设备基础/水解设备基础图.dxf"
+      ],
+      "retained_dwgs": [
+        "data/原始资料/设备基础/水解设备基础图.dwg"
+      ],
+      "asset_index": "models/设备/设备基础_20261106/基础索引.json",
+      "generator": "tools/source/build_equipment_foundations.py",
+      "entry": "../水解设备模型库/index.html",
+      "source_sha256": {
+        "data/原始资料/设备基础/水解设备基础图.dxf": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7",
+        "data/原始资料/设备基础/水解设备基础图.dwg": "aab155025ffea7deec572bb78b1f6d05821a2ead798b03c2cd5025f4ae9c852f"
+      },
+      "equipment_library_sha256": {
+        "index.html": "e89901562849905cbc99e70b6b680ebec3c08a333f3ee732779081c5a90f394b",
+        "library_viewer.js": "581054bb0ea50da2e58f79a2528c390d0551b34660c7bc4408a59fcf32d4a0e9"
+      }
+    },
+    {
+      "revision": "1.25-equipment-panel-placement",
+      "date": "2026-11-06",
+      "user_request": "设备库收展按钮位置参照桥架模型",
+      "scope": "目录图标置于左栏内侧顶部，详情图标置于右栏内侧顶部，桌面收起后保留窄栏供展开",
+      "entry": "../水解设备模型库/index.html",
+      "reference": "viewer/panels.css",
+      "equipment_library_sha256": {
+        "index.html": "23e4fac0191fe08a1fe57fd5d2c6ef5ab02f60df953524862ff119cf898bb259"
+      }
+    },
+    {
+      "revision": "1.24-chinese-part-groups",
+      "date": "2026-11-06",
+      "user_request": "恢复水解槽等模型的中文部件菜单，收展侧栏使用图标",
+      "scope": "两套槽罐档案在设备库首页按原档案的中文部件范围筛选，其他类型沿用中文组名。两侧栏采用独立收展图标",
+      "entry": "../水解设备模型库/index.html",
+      "equipment_library_sha256": {
+        "index.html": "456f279f35f2f28e5647d267c6a1230793db7831b9a5e69ac305e9fe917a238d",
+        "library_viewer.js": "13a5eeac6631a76aa55d6f9f207e19b1307fe9f162279865f894f12a5f040ba8"
+      }
+    },
+    {
+      "revision": "1.23-equipment-catalog-only",
+      "date": "2026-11-06",
+      "user_request": "首页仅保留模型与台账目录，保留尺寸标注，隐藏主台账图号或型号，设备名称优先于位号显示",
+      "scope": "首页直接展示35个位号组的类型模型，尺寸标注读取当前网格的圆筒段或整体包络。保留已有单台资产与台账原件",
+      "entry": "../水解设备模型库/index.html",
+      "equipment_library_sha256": {
+        "index.html": "7a00fb2c09c1fd215c426e43e491477d9f2f27bbaf543d0b77ed10561d996aeb",
+        "library_viewer.js": "66fe89f65593ef2856e6d9061122bd878e5c8a48f78388f4792f7c37bc2169d6"
+      }
+    },
+    {
+      "revision": "1.22-integrated-equipment-library",
+      "date": "2026-11-06",
+      "user_request": "在设备独立模型库首页整合示图台账、类型模型与浏览交互",
+      "scope": "99台单台定位模型及35个位号组共用浏览界面，分别调用对应网格。支持正交居中、Shift拖动平移、缓速滚轮与独立收起两侧栏",
+      "entry": "../水解设备模型库/index.html",
+      "ledger_source": "../水解设备模型库/示图建模_20260521/设备台账对照.json",
+      "renderer": "../水解设备模型库/orthographic_viewer.js",
+      "equipment_library_sha256": {
+        "index.html": "d037f5755c818ed58ec6e56ee2c45df9bfab401551d20e206d0e80adce730534",
+        "library_viewer.js": "997b9e44f35d7e9c2962ae6f93e6fe2bd237bc34e4aa542623823ff9244fbf33",
+        "orthographic_viewer.js": "28ea12913787cbe9daadab9412e6c6d4e91270ab4471eabe883c1a5e19bfde9c",
+        "示图建模_20260521/ledger_data.js": "02b789cc3fa55d954db3f350432d80a3e5e237acff0675fdaca6632c54ab1249",
+        "示图建模_20260521/设备台账对照.json": "201d639fb7d2ec430bdf2f6017fa698fa40f283e083d1d6c9d4673ab68fdf23b"
+      }
+    },
+    {
+      "revision": "1.21-unified-orthographic-equipment-style",
+      "date": "2026-11-06",
+      "user_request": "按钛液预热槽样本统一其余设备的建模风格，保留关键参数",
+      "scope": "35个位号组对应32套类型模型。以C41B02为样本统一正交预览、曲面法线与展示配色，沿用各模型几何、部件和工程参数",
+      "renderer": "../水解设备模型库/orthographic_viewer.js"
+    },
+    {
+      "revision": "1.20-complete-six-equipment-groups",
+      "date": "2026-11-06",
+      "user_request": "根据现有视图和台账参数酌情补建六个待补设备组",
+      "scope": "L41B04减温减压器、L41B05蒸汽分汽缸、V41B01至V41B04四组电动葫芦；量测值和示意尺度分别注明",
+      "archive_path": "../水解设备模型库/示图建模_20260521/"
+    },
+    {
+      "revision": "1.19-C41B02-orthographic-preview",
+      "date": "2026-11-06",
+      "user_request": "以钛液预热槽或水解槽为样本优化三维视觉效果，避免透视错误",
+      "scope": "C41B02预览使用v1.4模型，优化光照和材质表现；正交相机各视图共用等比缩放，显示比例尺",
+      "archive_path": "../水解设备模型库/设备档案/C41B02_钛液预热槽/3d.html"
+    },
+    {
+      "revision": "1.18-shared-mixer-for-agitated-tanks",
+      "date": "2026-11-06",
+      "user_request": "将C41B02确认的槽顶搅拌总成应用到所有带搅拌的槽罐",
+      "source_model": "models/设备/槽罐搅拌器_标注侧视/index.html",
+      "scope": "8个位号组、6套类型几何、39台单台模型，及设备布置预览。共用源v0.3的01、02、03、06组，沿用各组确认或估取的搅拌高度，保留已有槽内轴和叶轮。"
+    },
+    {
+      "revision": "1.17-C41B02-symmetric-intermediate-shaft",
+      "date": "2026-11-06",
+      "user_request": "槽顶恢复双端对称中间轴，下半段轴和叶轮沿用原模型",
+      "scope": "档案v1.4装回标注侧视搅拌器03组，沿用装配变换。中间轴上下接合面分别为Z6232.105和Z4888.279 mm，保留接合面以下的原直轴和两层叶轮",
+      "source_model": "models/设备/槽罐搅拌器_标注侧视/index.html",
+      "archive_path": "../水解设备模型库/设备档案/C41B02_钛液预热槽/"
+    },
+    {
+      "revision": "1.16-C41B02-annotated-agitator-assembly",
+      "date": "2026-11-06",
+      "user_request": "C41B02槽顶换用标注侧视搅拌器，保留原轴与叶轮",
+      "source_model": "models/设备/槽罐搅拌器_标注侧视/index.html",
+      "scope": "档案v1.3采用源v0.3的01、02、06组，按槽盖安装面Z5055和电机顶Z7185统一缩放1.065。输出轴接原轴顶，套筒加通孔，保留原轴与双层叶轮网格",
+      "archive_path": "../水解设备模型库/设备档案/C41B02_钛液预热槽/"
+    },
+    {
+      "revision": "1.18-annotated-agitator-v0.3",
+      "date": "2026-11-06",
+      "user_request": "图一两处轴座与支架一体并有轴孔；图二框内为两端一致的中间轴，叶轮不直接连接",
+      "source_images": {
+        "data/原始资料/设备/槽罐搅拌器_一体轴座标注_2026-11-06.png": "codex-clipboard-5189a700-b0f7-4c0d-a2ce-c8385a9d23c1.png",
+        "data/原始资料/设备/槽罐搅拌器_中间轴范围标注_2026-11-06.png": "codex-clipboard-7d5d9216-3b4f-4f52-8dfb-5a6f9b3d03ff.png"
+      },
+      "scope": "轴座和连接筋接入支架闭合网格；中间轴改为单件镜像台阶轴；保留独立叶轮并留出示意接口空间。",
+      "parameters": "models/设备/槽罐搅拌器_标注侧视/参数.json"
+    },
+    {
+      "revision": "1.17-annotated-agitator-v0.2",
+      "date": "2026-11-06",
+      "user_request": "连接渐扩开窗支架上端、中间横带和下端的三处红圈缺口",
+      "source_image": "data/原始资料/设备/槽罐搅拌器_支架红圈修订_2026-11-06.png",
+      "source_image_original_name": "codex-clipboard-afdbc22f-3e59-4235-aa96-212110133520.png",
+      "scope": "支架两侧壳在三处接通并共用网格边，保留上下检修窗及轴系内腔。",
+      "parameters": "models/设备/槽罐搅拌器_标注侧视/参数.json"
+    },
+    {
+      "revision": "1.16-annotated-agitator-v0.1",
+      "date": "2026-11-06",
+      "user_request": "分析标注侧视图并建模槽罐搅拌器",
+      "source_image": "data/原始资料/设备/槽罐搅拌器_标注侧视_2026-11-06.png",
+      "source_image_original_name": "codex-clipboard-2911218a-fd68-497c-a866-e15e3294b72a.png",
+      "generator": "tools/source/build_annotated_agitator.py",
+      "entry": "models/设备/槽罐搅拌器_标注侧视/index.html",
+      "parameters": "models/设备/槽罐搅拌器_标注侧视/参数.json",
+      "scope": "独立分件模型。按标注映射电机、联轴器、两段中间轴及末级轴与叶轮，支架和槽顶接口另分组。"
+    },
+    {
+      "revision": "1.15-C41B02-stepped-drive-rings",
+      "date": "2026-11-05",
+      "user_request": "微调钛液预热槽顶部比例，电机下方三道环从上到下变大",
+      "scope": "C41B02档案更新至1.2，三层环外径按详图比例近似取Ø490、Ø550、Ø640 mm，保持槽顶至驱动顶2185 mm",
+      "source_image": "../水解设备模型库/设备档案/C41B02_钛液预热槽/来源_搅拌驱动详图.png"
+    },
+    {
+      "revision": "1.14-C41B02-display-polish",
+      "date": "2026-11-05",
+      "user_request": "适度美化钛液预热槽单台模型",
+      "scope": "C41B02档案更新至1.1，调整展示配色、曲面着色和浏览页面，沿用确认版的分件网格及尺寸",
+      "archive_path": "../水解设备模型库/设备档案/C41B02_钛液预热槽/"
+    },
+    {
+      "revision": "1.13-pump-layout-and-supplementary-models",
+      "date": "2026-11-05",
+      "user_request": "按确认的共用卧式泵外形建模，量取布置图尺寸，并按新版设备示图补建缺项",
+      "scope": "新增10套泵型、4套补图设备，P41A08按同型号暂复用P41B08。共24套批次初模覆盖27个位号组，2组复用确认档案，6组待补",
+      "archive_path": "../水解设备模型库/示图建模_20260521/",
+      "sources": [
+        "水解设备模型示图_更新20261105.dxf",
+        "3.水解工段设备布置图+2026.5.21.dxf"
+      ],
+      "measurement": "逐组记录布置图根句柄及轮廓图元；泵高度为示意估值，管道泵及立式泵符号尺寸与暂定卧式模型尺寸分列"
+    },
+    {
+      "revision": "1.12-shared-horizontal-pump-outline",
+      "date": "2026-11-05",
+      "user_request": "确认水解中转泵、压滤供料泵、钛液事故泵、稀碱中转泵及稀碱输送泵使用共用外形，并按项目俯视修正竖向出口偏置",
+      "scope": "P41B01、P41B02、P41B03、P41B05、P41B06共用二维外形示意。俯视泵在左、电机在右时，出口圆心位于轴线下侧。各组设备尺寸待核对",
+      "archive_path": "../水解设备模型库/示图建模_20260521/视图/五类卧式泵_共用外形.svg"
+    },
+    {
+      "revision": "1.11-P41B10-ports-and-foundation",
+      "date": "2026-11-05",
+      "user_request": "按补图调整尾气风机进出口，传动组件下方方箱归为基础",
+      "scope": "P41B10类型模型修订至1.2，采用正面圆形进风与侧上方切向出风，出风圆法兰朝上，基础独立分件",
+      "source_image": "../水解设备模型库/示图建模_20260521/原始资料/P41B10_用户进出口参考.png"
+    },
+    {
+      "revision": "1.10-P41B10-scroll-fan",
+      "date": "2026-11-05",
+      "user_request": "参照用户提供的离心风机示意图优化P41B10",
+      "scope": "P41B10类型模型修订至1.1，结合DXF两视图细化蜗壳、开口和传动部件，外形参考图另存",
+      "archive_path": "../水解设备模型库/示图建模_20260521/模型/P41B10/"
+    },
+    {
+      "revision": "1.9-equipment-sheet-type-models",
+      "date": "2026-11-05",
+      "user_request": "对应示图名称上方侧视和下方俯视，以2026.5.21设备台账建立资料足够的类型模型",
+      "archive_path": "../水解设备模型库/示图建模_20260521/",
+      "scope": "台账水解页35个位号组；新增10套类型模型覆盖12组，复用2组，21组待补。图纸及台账保留副本，逐项记录原图句柄和台账行",
+      "generator": "../水解设备模型库/tools/build_sheet_models.py"
+    },
+    {
+      "revision": "1.8-D41B02-type-model",
+      "date": "2026-11-05",
+      "user_request": "参照钛液预热槽建立水解槽，槽体Ø5900×4700 mm，顶部搅拌总高3076 mm",
+      "archive_path": "../水解设备模型库/设备档案/D41B02_水解槽/",
+      "scope": "按现有设备目录映射为D41B02类型，独立存档；槽底至电机顶7776 mm，支脚及基础另计",
+      "generator": "tools/source/build_hydrolysis_tank.py",
+      "source_image": "来源_用户侧视图.png"
+    },
+    {
+      "revision": "1.7-archive-C41B02",
+      "date": "2026-11-05",
+      "user_request": "确认设备为钛液预热槽C41B02并归档",
+      "archive_path": "../水解设备模型库/设备档案/C41B02_钛液预热槽/",
+      "scope": "将确认版模型副本及查看页面归档到水解设备模型库；保留本目录生成工作副本"
+    },
+    {
+      "revision": "1.6-lid-cone-drive-revision",
+      "date": "2026-11-05",
+      "user_request": [
+        "03改为槽盖",
+        "04改为无内部结构的圆台形镂空外壳支架",
+        "05按提供的侧视轮廓建成各向侧视一致的实体驱动组件"
+      ],
+      "scope": "替换槽口环形件为全圆槽盖；支架改成回转薄壳；驱动改成轴对称实体和环布纵向筋；同步侧视与3D页面"
+    },
+    {
+      "revision": "1.4-flat-bottom-tank",
+      "date": "2026-11-05",
+      "user_feedback": "槽体为直筒平底；底部脚和横向平面为基础",
+      "scope": "取消罐体底部收锥；圆柱筒体和平底独立于支脚及基础；更新HTML侧视和三维模型"
+    },
+    {
+      "revision": "1.5-interactive-3d-view",
+      "date": "2026-11-05",
+      "user_request": "依次进行3D建模",
+      "scope": "新增离线可旋转缩放的3D HTML视图，支持按基础、罐体、法兰、支架、驱动和轴叶轮顺序隔离查看",
+      "outputs": [
+        "models/设备/3d.html",
+        "models/设备/model_data.js"
+      ]
+    },
+    {
+      "revision": "1.3-tank-mixer-side-view-correction",
+      "date": "2026-11-05",
+      "user_feedback": "指出首版HTML预览与输入侧视图不符",
+      "scope": "重画为正立侧视；三维搅拌器改为窄幅中心布置，补入锥形支撑、分层横撑和紧凑驱动组件",
+      "outputs": [
+        "models/设备/index.html",
+        "models/设备/C4_BH2C_tank_mixer.glb",
+        "models/设备/C4_BH2C_tank_mixer.obj"
+      ]
+    },
+    {
+      "revision": "1.2-tank-mixer",
+      "date": "2026-11-05",
+      "user_request": [
+        "根据侧视图建模",
+        "主体为ø5500×5000圆柱槽罐",
+        "搅拌器高度2185mm"
+      ],
+      "scope": "新增独立设备模型；未修改桥架装配及已确认连接件",
+      "assumptions": [
+        "槽罐底面Z=0，筒体高度5000mm；搅拌器2185mm按槽顶以上高度处理，总高7185mm",
+        "搅拌器支架、驱动、轴和双层叶轮依据侧视轮廓简化，未标注部件尺寸为示意假设",
+        "底部支脚为示意构造；未建内部液位、喷嘴、人孔、焊缝及板厚",
+        "侧视图红色3600标注缺少明确尺寸基准，未用于模型约束"
+      ],
+      "outputs": [
+        "models/设备/index.html",
+        "models/设备/C4_BH2C_tank_mixer.glb",
+        "models/设备/C4_BH2C_tank_mixer.obj",
+        "models/设备/C4_BH2C_tank_mixer.json",
+        "tools/source/build_tank_mixer.py"
+      ]
+    },
+    {
+      "revision": "1.1-viewer",
+      "date": "2026-11-03",
+      "user_request": [
+        "俯仰角度0到90度",
+        "左右侧栏独立折叠展开"
+      ],
+      "scope": "浏览交互；几何未修改"
+    },
+    {
+      "revision": "1.1.1-viewer",
+      "date": "2026-11-06",
+      "scope": "左右侧栏使用30像素图标按钮"
+    }
+  ]
+}
