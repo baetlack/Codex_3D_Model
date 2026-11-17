@@ -157,7 +157,11 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
         return [width/2+offset[0]+dot(v,right)*pixelsPerMm,
                 height/2-offset[1]-dot(v,up)*pixelsPerMm];
       };
-      onFrame({width,height,project,viewName,pixelsPerMm,hasModel:vertexCount>0});
+      const ray=(x,y)=>{
+        const u=(x-width/2-offset[0])/pixelsPerMm,v=(height/2-offset[1]-y)/pixelsPerMm,depth=radius*1.05;
+        return {origin:center.map((value,i)=>value+right[i]*u+up[i]*v+eye[i]*depth),direction:eye.map(value=>-value),maxDistance:2*depth};
+      };
+      onFrame({width,height,project,ray,clip:[...section],viewName,pixelsPerMm,hasModel:vertexCount>0});
     }
     function view(a,b,name){yaw=a;tilt=b;viewName=name;recenter();draw();}
     canvas.onpointerdown=e=>{

@@ -1,6 +1,6 @@
 {
   "AGENTS.md": "5ea94cf02cda63fa86536a826275e7b01c43f33a9bbe994d784b2ecff476ed4f",
-  "README.md": "cf63245e601bd36f1e5d85bc9493c6fc9d17a04236275e0a073a3b716ea63f29",
+  "README.md": "86839a796a1daf8736917f2dcf188510548d2d61538347123a24175a677b8723",
   "assembly.json": "d12c25edcb33c6ab463f69b8b03808f2ad32e4bbdebf10e5505f5d5753b73bb5",
   "data/assembly.js": "7976b7065c3cfc13248353a694d72265b6f27e1f22d4fc5d19f4f7458ac2980e",
   "data/building.js": "4f4e7e1154383a959e824d8b6f9fdb12a60ace6162e3abb90a33cd6405756779",
@@ -14,11 +14,11 @@
   "data/浏览器检查.json": "8ab7303dccdbc7b067ff9f225a78b5f8942aaff09f6000081296f4d5b6480faf",
   "data/碰撞报告.json": "d69f951b5c984c18d6dcdb41930916413fb066cd640ec1a1e8e474668b785066",
   "data/设备就位表.json": "367e8473eb5733cff1ccc41b66853e1f656326a2a73235f29dc067b8ebfec2b2",
-  "index.html": "462dd29584e5526fb83ea389383ba5d122c8fa07cabeb8a613f4de325dcb8747",
-  "previews/几何相交核对.png": "15f1875b08e87630d6ae4890c67a0382509315c7200eef8c612901b6213c4e2a",
-  "previews/厂房总装外观.png": "ff51c23690545351874a4d13d593f88913e54dfeab916e66b5ea32cebb1d80d1",
-  "previews/厂房桥架设备总装.png": "c0ebb4db7c4163e8a7ab51d41dbb1f13a90801f446d325a470a3973368b2d62d",
-  "previews/正常表面接触.png": "8983080cb7152920459402a28811afaf039ce7a09561ef55d8cd616ad130b94b",
+  "index.html": "35027cff50207bc3d67945282bdb4d63fc84d53a224c69e417bf179c507e26a2",
+  "previews/几何相交核对.png": "8f3fec7714672bb8e0e21d3c8899c1ec6afd8fc06a10b7d812cf8d5f85af2935",
+  "previews/厂房总装外观.png": "c854fb2ca8550afb0f02c8c28133bdf172c298ca263ea9c519d2df1676e7a48e",
+  "previews/厂房桥架设备总装.png": "1b10bd737f1131ef82558f278dbe0aaf6e8bc4ffd0e6f6d03c85b105618c9aef",
+  "previews/正常表面接触.png": "7c6713a391103116e4ff8a31c95a2f1f6bded2c8c3a26216491d16ddbb852132",
   "requirements.txt": "53329ba916cd9da9abdf9303b1b1366baf7d917d073b9f7bb9451704e88ac9c9",
   "tools/build_assembly.py": "49b0ed19138476a3774b6805b3d1d5757d8f950a85872981a3e766e8c60bc63a",
   "tools/check_assembly.py": "e0a770405d80bef93e2932f09cf154335289ce948e294af91c713551a0166c0d",
@@ -28,5 +28,5 @@
   "tools/test_geometry.py": "84f7b7f3b08c798fb640ef3a8f4b7c3a45723c229e76db5b9b00003a0a806011",
   "tools/test_revision.py": "5a678791c43b6fbb1880ef1f644f2cc9d6c893662b471998ceeb9d269c55a2e4",
   "viewer.css": "dead2cabebea2e8317fae268de41d521674dee2bb5061023403f31e5eadefe8a",
-  "viewer.js": "12325c71ed9c1408ba855c2c6e0c58899375580d7ed3e964626ffa1a21329bac"
+  "viewer.js": "78ad534aa57dcfec57e2f1a92fa29677c8b2277c755095229e9de30b207378a3"
 }
