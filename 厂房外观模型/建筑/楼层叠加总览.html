@@ -11,7 +11,7 @@
  <p><a href="index.html" style="color:#9bd8e8">查看厂房外观</a></p>
 </section></main>
 <script src="结构立柱数据.js"></script><script>
-const c=document.querySelector('#view'),g=c.getContext('2d'),COLS=window.STRUCTURE_COLUMNS.columns;
+const c=document.querySelector('#view'),g=c.getContext('2d'),COLS=window.STRUCTURE_COLUMNS.columns.filter(c=>!(c.width===400&&c.depth===400&&c.x>38000));
 let yaw=-Math.PI/4,pitch=35*Math.PI/180,zoom=1,drag=null;
 const {floor_levels:LEVELS,roof_level:ROOF,local_roof_high_point:STAIR_TOP,
  roof_stair_rooms:STAIRS,exterior_wall_extent_x_east_west:W,exterior_wall_extent_y_north_south:D}=STRUCTURE_COLUMNS.building_massing;

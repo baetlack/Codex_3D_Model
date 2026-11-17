@@ -8,10 +8,12 @@ OUT=Path(__file__).resolve().parents[1];ROOT=OUT.parent
 
 def script(path,variable):
  s=path.read_text(encoding='utf-8-sig');match=re.search(r'window\.'+variable+r'\s*=',s);return json.JSONDecoder().raw_decode(s[match.end():].lstrip())[0]
-def tri(parts,translation=(0,0,0),angle=0,scale=1):
+def tri(parts,translation=(0,0,0),angle=0,scale=1,mirror_y=False):
  result=[];a=np.deg2rad(angle);rot=np.array([[np.cos(a),-np.sin(a),0],[np.sin(a),np.cos(a),0],[0,0,1]])
  for p in parts:
-  v=np.asarray(p['vertices'],float)*scale;v=v@rot.T+translation
+  v=np.asarray(p['vertices'],float)*scale
+  if mirror_y:v[:,1]*=-1
+  v=v@rot.T+translation
   for f in p['faces']:
    for i in range(1,len(f)-1):result.append(v[[f[0],f[i],f[i+1]]])
  t=np.asarray(result)
@@ -38,15 +40,43 @@ def inside(point,ts):
  hits=np.sort(d[ok&(u>=-1e-8)&(v>=-1e-8)&(u+v<=1+1e-8)&(d>1e-5)])
  hits=hits[np.r_[True,np.diff(hits)>1e-4]] if len(hits) else hits
  return len(hits)%2==1
-def closed_components(parts,position,angle):
+def closed_components(parts,position,angle,mirror_y=False):
  out=[]
  for p in parts:
   edges={}
   for f in p['faces']:
    for i in range(len(f)):
     e=tuple(sorted((f[i],f[(i+1)%len(f)])));edges[e]=edges.get(e,0)+1
-  if edges and all(n==2 for n in edges.values()):out.append(tri([p],position,angle))
+  if edges and all(n==2 for n in edges.values()):out.append(tri([p],position,angle,mirror_y=mirror_y))
  return out
+
+def clip_polygon(points, axis, value, keep_above):
+ result=[]
+ for a,b in zip(points,points[1:]+points[:1]):
+  da=(a[axis]-value)*(1 if keep_above else -1);db=(b[axis]-value)*(1 if keep_above else -1)
+  if da>=0:result.append(a)
+  if (da>=0)!=(db>=0):result.append(a+(b-a)*da/(da-db))
+ return result
+
+def column_penetration(other,column,tolerance=0.1):
+ """Clip actual surfaces against the open box interior, excluding face contact."""
+ low=column['low']+tolerance;high=column['high']-tolerance
+ candidates=np.flatnonzero(np.all(other['th']>low,axis=1)&np.all(other['tl']<high,axis=1))
+ best=None
+ for i in candidates:
+  poly=list(other['t'][i])
+  for axis in range(3):
+   poly=clip_polygon(poly,axis,low[axis],True)
+   if not poly:break
+   poly=clip_polygon(poly,axis,high[axis],False)
+   if not poly:break
+  if len(poly)<3:continue
+  area=sum(np.linalg.norm(np.cross(poly[j]-poly[0],poly[j+1]-poly[0])) for j in range(1,len(poly)-1))/2
+  if area<1e-6:continue
+  point=np.mean(poly,axis=0);depth=float(np.min(np.r_[point-column['low'],column['high']-point]))
+  if best is None or depth>best['interior_sample_depth_mm']:
+   best={'triangle':int(i),'interior_sample_mm':point.round(4).tolist(),'interior_sample_depth_mm':round(depth,4)}
+ return best
 
 def run():
  cfg=json.loads((OUT/'assembly.json').read_text());hashes=json.loads((OUT/'data/来源与哈希.json').read_text())['sources']
@@ -54,8 +84,8 @@ def run():
  objects=[];cache={};closed={}
  for p in cfg['equipment']:
   source=cfg['assets'][p['asset']]['source'];parts=cache.setdefault(source,script(ROOT/source,'MODEL_PARTS'))
-  t=tri(parts,p['position_mm'],p['rotation_deg']);objects.append(object_mesh(p['id'],'equipment',t,p['z_status']))
-  closed[p['id']]=closed_components(parts,p['position_mm'],p['rotation_deg'])
+  t=tri(parts,p['position_mm'],p['rotation_deg'],mirror_y=p.get('mirror_y',False));objects.append(object_mesh(p['id'],'equipment',t,p['z_status']))
+  closed[p['id']]=closed_components(parts,p['position_mm'],p['rotation_deg'],p.get('mirror_y',False))
  for g in script(ROOT/'水解桥架工程/models/整体/viewer_data.js','GEOMETRY'):
   parts=[{'vertices':g['v'],'faces':g['f']}];objects.append(object_mesh(g['id'],'bridge',tri(parts,scale=1000)))
  for p in script(OUT/'data/building.js','ASSEMBLY_BUILDING'):
@@ -67,17 +97,32 @@ def run():
    if a['kind']==b['kind'] and a['kind']!='equipment':continue
    overlap=np.minimum(a['high'],b['high'])-np.maximum(a['low'],b['low'])
    if np.any(overlap<0):continue
-   candidates+=1;proof=surface(a,b);method='triangle-SAT'
+   candidates+=1
+   record={'a':a['id'],'b':b['id'],'kind':a['kind']+'/'+b['kind'],'overlap_aabb_mm':overlap.round(3).tolist(),'position_mm':((np.maximum(a['low'],b['low'])+np.minimum(a['high'],b['high']))/2).round(3).tolist(),'placement_status':[a['status'],b['status']]}
+   if b['kind']=='structure':
+    interior=column_penetration(a,b)
+    if interior:
+     record.update(method='triangle-clipped-to-column-open-interior',status='构件穿入柱体内部',**interior);hits.append(record)
+    elif surface(a,b) is not None:
+     record.update(method='surface-contact-without-open-interior-penetration',status='表面接触（正常）');contacts.append(record)
+    elif any(inside((b['low']+b['high'])/2,t) for t in closed.get(a['id'],[])):
+     record.update(method='closed-component-contains-column-center',status='柱体进入设备闭合实体，待复核');hits.append(record)
+    continue
+   proof=surface(a,b);method='triangle-SAT'
    if proof is None:
     contains=any(inside(b['t'][0,0],t) for t in closed.get(a['id'],[])) or any(inside(a['t'][0,0],t) for t in closed.get(b['id'],[]))
     if not contains:continue
     method='closed-component-ray-containment'
-   record={'a':a['id'],'b':b['id'],'kind':a['kind']+'/'+b['kind'],'method':method,'triangles':proof,'overlap_aabb_mm':overlap.round(3).tolist(),'position_mm':((np.maximum(a['low'],b['low'])+np.minimum(a['high'],b['high']))/2).round(3).tolist(),'status':'几何相交，需核对安装/接触关系','placement_status':[a['status'],b['status']]}
-   (contacts if overlap.min()<1 else hits).append(record)
- report={'version':'0.1','status':'存在待复核项' if hits else '已检查范围未发现几何相交','object_count':len(objects),'aabb_candidates':candidates,'intersections':hits,'contacts_under_1mm':contacts,
+   record.update(method=method,triangles=proof,status='几何相交，需核对安装/接触关系')
+   if overlap.min()<0.1:
+    record['status']='表面接触（正常）';contacts.append(record)
+   else:hits.append(record)
+ report={'version':'0.2','status':'存在待复核项' if hits else '已检查范围未发现几何相交','object_count':len(objects),'aabb_candidates':candidates,'intersections':hits,'normal_contacts':contacts,'contact_tolerance_mm':0.1,
   'unplaced_excluded':len(cfg['unplaced']),'scope':'桥架/设备、桥架/柱、设备/柱、设备/设备；支持面与设备基础不参与报错',
   'limits':['相交是几何证据，不自动认定施工冲突','部分安装标高、管口朝向及上层柱截面待核','无真实梁板截面与开孔资料，未检查梁板碰撞；墙体为显示假设，不用于碰撞定论','不检查检修空间；不将相接桥架端口列为冲突']}
  (OUT/'data/碰撞报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  (OUT/'data/collisions.js').write_text('window.ASSEMBLY_COLLISIONS='+json.dumps(report,ensure_ascii=False,separators=(',',':'))+';\n')
- print(json.dumps({k:v for k,v in report.items() if k not in ('intersections','contacts_under_1mm')},ensure_ascii=False));print('intersections',len(hits),'contacts',len(contacts))
+ special={'version':'0.2','contact_tolerance_mm':0.1,'columns_retained':sum(o['kind']=='structure' for o in objects),'penetrations':[r for r in hits if r['kind']=='bridge/structure'],'normal_contacts':[r for r in contacts if r['kind']=='bridge/structure'],'rule':'真实三角面进入柱体开内部才报穿入；仅表面接触为正常，未改桥架位置'}
+ (OUT/'data/桥架立柱核对.json').write_text(json.dumps(special,ensure_ascii=False,indent=2)+'\n')
+ print(json.dumps({k:v for k,v in report.items() if k not in ('intersections','normal_contacts')},ensure_ascii=False));print('intersections',len(hits),'contacts',len(contacts))
 if __name__=='__main__':run()

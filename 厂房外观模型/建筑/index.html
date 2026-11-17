@@ -84,7 +84,7 @@ function drawRoofStructures(){
 }
 function draw(){let w=c.clientWidth,h=c.clientHeight;g.fillStyle='#111923';g.fillRect(0,0,w,h);let pts=[];for(const x of [0,W])for(const y of [0,D])for(const z of [0,TOP])pts.push(proj(x,y,z));let ax=Math.min(...pts.map(p=>p[0])),bx=Math.max(...pts.map(p=>p[0])),ay=Math.min(...pts.map(p=>p[1])),by=Math.max(...pts.map(p=>p[1]));let s=Math.min(w/(bx-ax)*.7,h/(by-ay)*.76)*zoom,ox=w/2-(ax+bx)/2*s,oy=h*.56-(ay+by)/2*s;P=(x,y,z)=>{let q=proj(x,y,z);return [ox+q[0]*s,oy+q[1]*s]};
  // Structural column footprints and storeys follow closed column outlines from the structural drawing.
- for(const col of STRUCTURE.columns)for(const [z0,z1] of STRUCTURE.story_ranges_mm)column(col.x,col.y,z0,z1,col.width,col.depth);
+ for(const col of STRUCTURE.columns.filter(c=>!(c.width===400&&c.depth===400&&c.x>38000)))for(const [z0,z1] of STRUCTURE.story_ranges_mm)column(col.x,col.y,z0,z1,col.width,col.depth);
  for(const level of LEVELS){const z=level===0?level:level-450;for(const y of Y)for(let i=0;i<X.length-1;i++)beam(X[i],y,X[i+1],y,z);for(const x of X)for(let j=0;j<Y.length-1;j++)beam(x,Y[j],x,Y[j+1],z)}
  // Draw far façades first, then an opaque roof slab, then near façades so roof surfaces occlude distant openings.
  const sideCenter={south:[22325,0],north:[22325,72650],west:[0,36325],east:[44650,36325]},roofDepth=depth(22325,36325,ROOF),sides=Object.keys(sideCenter).sort((a,b)=>depth(...sideCenter[a],ROOF/2)-depth(...sideCenter[b],ROOF/2));

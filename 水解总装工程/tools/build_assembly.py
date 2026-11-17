@@ -7,6 +7,7 @@ import numpy as np
 from scipy.optimize import linear_sum_assignment
 import ezdxf
 from types import SimpleNamespace
+from review_layout import review
 
 OUT=Path(__file__).resolve().parents[1]; ROOT=OUT.parent
 LAYOUT='水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf'
@@ -113,10 +114,16 @@ def build():
             'source_insert':b.dxf.handle,'source_block':b.dxf.name,'label_handle':a['label'],'label_distance_mm':a['distance'],
             'source_floor_origin_mm':origin[floor],'z_basis':basis,'source':LAYOUT}
         placements.append(record)
+    layout_review=review(drawing,origin,placements,assets,ROOT,read)
+    save('data/布置复核.json',layout_review)
     # Register architectural wall coordinates to the structural axis origin.
     arch=doc('厂房外观模型/建筑/立面门窗数据.json'); cols=doc('厂房外观模型/建筑/结构立柱数据.json')
     mass=doc('厂房外观模型/建筑/主体尺寸.json')['massing'];buildings=[]
+    removed_columns=[]
     for i,c in enumerate(cols['columns']):
+        if c['width']==400 and c['depth']==400 and c['x']>38000:
+            removed_columns.append({'id':'COL-%03d'%i,**c,'reason':'按用户截图暂移除东侧细柱；源结构数据保留'})
+            continue
         buildings.append(box('COL-%03d'%i,c['x']-c['width']/2,c['y']-c['depth']/2,0,c['width'],c['depth'],23000,kind='structure'))
     # Source building viewer uses wall SW corner; axes lie 325 mm inward.
     shift=-325;W,D=44650,72650
@@ -145,14 +152,19 @@ def build():
     for i,s in enumerate(mass['roof_stair_rooms']):
         # Source exterior model represents stair rooms as enclosed volumes.
         buildings.append(box(f'STAIR-{i}',s['x']+shift,s['y']+shift,23000,s['width'],s['depth'],3900,'#b7bdc0','roof',False))
-    # Floor planes are reference planes only: no invented slabs or beam sections.
+    # Faint floor plates are visualization aids, not fabricated structural geometry.
+    for el,z in [(100,0),(106,6000),(112,12000),(123,23000)]:
+        plate=box('FLOOR-EL'+str(el),shift,shift,z-160,W,D,160,'#bac5cb','floor',False)
+        plate.update(el=el,thickness_status='160mm为显示板厚；结构厚度与真实开孔待详图确认')
+        buildings.append(plate)
+    save('data/柱与楼板修订.json',{'removed_columns':removed_columns,'retained_columns':len(cols['columns'])-len(removed_columns),'floor_EL':[100,106,112,123],'floors_for_display_only':True})
     civil=[]
     for p in placements:
         key=p['asset']
         if key not in ('D41B02','F41B01','C41B01','C41B02','C41B03'):continue
         if key not in foundation['assets']:continue
         source=FOUND+key+'/model_data.js';assets['foundation-'+key]={'path':'../'+source,'source':source,'units':'mm'};mesh(source)
-        civil.append({'id':'BASE-'+p['id'],'name':foundation['assets'][key]['name'],'asset':'foundation-'+key,'position_mm':p['position_mm'],'rotation_deg':p['rotation_deg'],'level':p['level'],'support_for':p['id']})
+        civil.append({'id':'BASE-'+p['id'],'name':foundation['assets'][key]['name'],'asset':'foundation-'+key,'position_mm':p['position_mm'],'rotation_deg':p['rotation_deg'],'mirror_y':p.get('mirror_y',False),'level':p['level'],'support_for':p['id']})
     # Cross-check 23 main vessel centers against the independent architectural plan.
     refs=doc('厂房外观模型/建筑/一层设备基础.json')['items']; checks=[]
     for p in placements:
@@ -173,14 +185,14 @@ def build():
     bd=ezdxf.readfile(ROOT/bridge_dxf);grid=bd.blocks['水解一楼'];xs=sorted(round(e.dxf.center.x) for e in grid.query('CIRCLE') if e.dxf.center.y<0 and e.dxf.center.x>=0)
     assert xs==[0,6000,13000,19000,26000,32000,38000,44000],xs
     read(BRIDGE);read('水解桥架工程/models/整体/assembly.json')
-    assembly={'version':'0.1','local_z0_EL':100,'units':'mm','axes':{'east':'+X','north':'+Y','up':'+Z'},
+    assembly={'version':'0.2','local_z0_EL':100,'units':'mm','axes':{'east':'+X','north':'+Y','up':'+Z'},
         'modules':{'building':{'translation_mm':[-325,-325,0],'basis':'外墙边界原点转结构轴网；22台基础中心误差小于1mm，D41B02B1按建筑基础中心修正约200mm'},'bridge':{'translation_mm':[0,0,0],'rotation_deg':0,'scale':1,'basis':'原水解一楼建筑块轴网，与结构柱轴一致'}},
         'assets':assets,'equipment':placements,'foundations':civil,'unplaced':pending,
-        'limits':['上部柱截面沿用源模型，+9.900m以上需结构图复核','墙厚200mm及屋面厚200mm仅显示假设，不参与确认碰撞','不补画缺少截面依据的梁板；楼层线仅为标高参考','图块朝向尚未逐项与类型模型管口方向核对','未定位设备不进入空间场景或碰撞检查；待核安装标高单列']}
-    audit={'axis_grid_x_mm':xs,'main_vessel_foundation_checks':checks,'max_error_mm':max(c['error_mm'] for c in checks),'placed':len(placements),'unplaced':len(pending),'z_referenced':sum(p['z_status']=='有安装基准' for p in placements),'limitations':assembly['limits']}
+        'limits':['上部柱截面沿用源模型，+9.900m以上需结构图复核','墙厚200mm及屋面厚200mm仅显示假设，不参与确认碰撞','楼板为淡化显示板，板厚160mm与真实开孔待核；不参与施工碰撞定论','图块朝向尚未逐项与类型模型管口方向核对','未定位设备不进入空间场景或碰撞检查；待核安装标高单列']}
+    audit={'axis_grid_x_mm':xs,'main_vessel_foundation_checks':checks,'max_error_mm':max(c['error_mm'] for c in checks),'placed':len(placements),'unplaced':len(pending),'z_referenced':sum(p['z_status']=='有安装基准' for p in placements),'limitations':assembly['limits'],'layout_reviewed':layout_review['reviewed'],'layout_pending':layout_review['pending']}
     save('assembly.json',assembly);save('data/设备就位表.json',placements);save('data/待核设备.json',pending);save('data/对齐依据.json',audit)
     (OUT/'data/building.js').write_text('window.ASSEMBLY_BUILDING='+json.dumps(buildings,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     (OUT/'data/assembly.js').write_text('window.SITE_ASSEMBLY='+json.dumps(assembly,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
-    save('data/来源与哈希.json',{'version':'0.1','sources':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in sorted(inputs)}})
+    save('data/来源与哈希.json',{'version':'0.2','sources':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in sorted(inputs)}})
     print(json.dumps(audit,ensure_ascii=False))
 if __name__=='__main__':build()

@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "sources": {
     "厂房外观模型/建筑/一层设备基础.json": "7c3ea55ea08e569e15e4da205ddecb9c36e9ee2a9d0eafc141d13dfd74d15410",
     "厂房外观模型/建筑/主体尺寸.json": "d778052944c48efbf874119c15b2c6d57ccfa3c92b9eb457e984f29deac6ea0c",
@@ -25,6 +25,7 @@
     "水解桥架工程/models/设备/设备基础_20261106/设备净模/P41B02/model_data.js": "3735bb43cc3909d40ee54fcbd7ec91951935866047a29748ee3d39213bea3677",
     "水解桥架工程/models/设备/设备基础_20261106/设备净模/P41B08/model_data.js": "3735bb43cc3909d40ee54fcbd7ec91951935866047a29748ee3d39213bea3677",
     "水解设备模型库/catalog.json": "782d6f524c3fdb969e4a2d1d7403a38ca4ef3a7d07c2dc3ca8f4662e855c65c4",
+    "水解设备模型库/tools/read_equipment_dxf.py": "7f60985f5ef697d1507717ff1753e1b4455a7cb1ca9956e716509d44ccc73df9",
     "水解设备模型库/示图建模_20260521/models.js": "fcb1630deef09718cdf5fcfc3531fe3ef634d82f85afec67ba3311ee49dbe3c5",
     "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
     "水解设备模型库/示图建模_20260521/模型/C41B03/model_data.js": "5963d7ea5eac635933a847491744d8c79b1eef80f22836e1628cc4e53283bccf",
