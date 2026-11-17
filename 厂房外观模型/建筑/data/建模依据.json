@@ -1,5 +1,5 @@
 {
-  "version": "1.0-complete-building",
+  "version": "1.1-display-fix",
   "units": "mm",
   "EL_at_local_z0": 100,
   "wall_origin_to_axis_mm": [

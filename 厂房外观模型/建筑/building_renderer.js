@@ -50,13 +50,13 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
     let yaw=-Math.PI/4, tilt=.36, zoom=1, drag=null, pan=[0,0], aim=[0,0];
     let center=[0,0,0], radius=1, vertexCount=0, points=[];
     let section=[-2000,50000];
-    let overlayRanges=[];
+    let overlayRanges=[],drawRanges=[];
     let viewName='东南轴测';
 
     function setParts(parts) {
       const low=[Infinity,Infinity,Infinity], high=[-Infinity,-Infinity,-Infinity];
       const data=[];
-      points=[];overlayRanges=[];
+      points=[];overlayRanges=[];drawRanges=[];
       for (const part of parts) {
         const rangeStart=data.length/9;
         const color=[1,3,5].map(i=>parseInt(part.color.slice(i,i+2),16)/255);
@@ -77,6 +77,7 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
             data.push(...part.vertices[face[corner]],...(part.normals?.[j]?.[corner]||fallback),...color);
           }
         });
+        drawRanges.push({start:rangeStart,count:data.length/9-rangeStart,wall:part.kind==='wall'});
         if(part.kind==='floor'||part.kind==='roof')overlayRanges.push({start:rangeStart,count:data.length/9-rangeStart});
       }
       center=points.length ? low.map((v,i)=>(v+high[i])/2) : [0,0,0];
@@ -131,7 +132,13 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
       gl.uniform2f(uniforms.offset,2*offset[0]/width,2*offset[1]/height);
       gl.uniform1f(uniforms.depth,radius*1.05);
       gl.uniform2fv(uniforms.section,section);
-      gl.drawArrays(gl.TRIANGLES,0,vertexCount);
+      // Coplanar wall/column faces need deterministic depth ownership.
+      // Bias only facade raster depth; do not move columns or alter projection.
+      for(const range of drawRanges){
+        if(range.wall){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(1,8);}
+        else gl.disable(gl.POLYGON_OFFSET_FILL);
+        gl.drawArrays(gl.TRIANGLES,range.start,range.count);
+      }
       gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(-1,-1);
       for(const range of overlayRanges)gl.drawArrays(gl.TRIANGLES,range.start,range.count);
       gl.disable(gl.POLYGON_OFFSET_FILL);

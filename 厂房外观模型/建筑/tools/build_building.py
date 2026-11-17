@@ -231,7 +231,7 @@ def build():
   for xx,ww in [(x,door0-x),(door0+1500,x+width-door0-1500)]:merge(p,prism('',xx,door_y,23000,ww,200,3300))
   merge(p,prism('',door0,door_y,25200,1500,200,1100));merge(p,prism('',x,y,26300,width,depth,600))
   PARTS.append(p);PARTS.append(prism('ROOF-DOOR-'+corner,door0,door_y,23000,1500,50,2200,'roof','#718995'))
- metadata={'version':'1.0-complete-building','units':'mm','EL_at_local_z0':100,'wall_origin_to_axis_mm':[-325,-325],'facade':doc('立面门窗数据.json')['counts'],'stairs':stair_records,'rooms':room_records,'holes':holes,'primary_columns':88,'source_files':{q.name:hashlib.sha256(q.read_bytes()).hexdigest() for q in [ARCH,STRUCT]},'limits':['房间首层隔墙顶按二层板底接合，吊顶未另造','保留旧建筑浏览的300x450示意梁截面；非逐根结构梁配筋模型','160mm为楼板显示厚度，孔位与内轮廓按建施图','未修改设备/桥架模型与就位表']}
+ metadata={'version':'1.1-display-fix','units':'mm','EL_at_local_z0':100,'wall_origin_to_axis_mm':[-325,-325],'facade':doc('立面门窗数据.json')['counts'],'stairs':stair_records,'rooms':room_records,'holes':holes,'primary_columns':88,'source_files':{q.name:hashlib.sha256(q.read_bytes()).hexdigest() for q in [ARCH,STRUCT]},'limits':['房间首层隔墙顶按二层板底接合，吊顶未另造','保留旧建筑浏览的300x450示意梁截面；非逐根结构梁配筋模型','160mm为楼板显示厚度，孔位与内轮廓按建施图','未修改设备/桥架模型与就位表']}
  save('building.json',metadata);save('data/建模依据.json',metadata)
  data={'metadata':metadata,'parts':PARTS};(ROOT/'model_data.js').write_text('window.BUILDING_MODEL='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
  print(json.dumps({'parts':len(PARTS),'triangles':sum(len(p['faces']) for p in PARTS),'stairs':len(stair_records),'rooms':len(room_records),'hoisting_holes':sum(h['type']=='hoisting' for h in holes),'equipment_floor_holes':sum(h['type']=='equipment' for h in holes)},ensure_ascii=False))

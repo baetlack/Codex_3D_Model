@@ -1,0 +1,18 @@
+{
+  "coplanar_fixture": {
+    "samples": 246,
+    "mismatches": 0
+  },
+  "standalone_four_elevations": {
+    "samples": 40,
+    "mismatches": [],
+    "depth_bits": 24
+  },
+  "assembly_probe_scope": "完整建筑；设备、桥架、基础隐藏",
+  "assembly_four_elevations": {
+    "samples": 40,
+    "mismatches": [],
+    "depth_bits": 24
+  },
+  "uncaught_errors": []
+}
