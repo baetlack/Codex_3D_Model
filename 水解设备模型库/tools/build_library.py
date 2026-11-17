@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT.parent / '水解桥架工程' / 'tools' / 'source'))
 from build_tank_mixer import MIXER_HEIGHTS, mixer_at, mixer_reference
 
-SOURCE = Path(__file__).resolve().parents[2] / "水解设备布置模型" / "设备数据.json"
+SOURCE = Path(__file__).resolve().parents[2] / "备用设备模型" / "设备数据.json"
 SCREEN_SOURCE = Path(__file__).resolve().parents[2] / "设备"
 MATERIALS = {
     "shell": "TankCyan",
