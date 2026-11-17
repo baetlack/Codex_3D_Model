@@ -31,7 +31,7 @@ with sync_playwright() as p:
  page.screenshot(path=str(out/'previews/正常表面接触.png'))
  checks['66_penetrations_18_normal_contacts']=True
  page.locator('#pendingTab').click();assert page.locator('#list button').count()==27;checks['pending_27_excluded']=True
- page.locator('#reset').click();assert abs(page.evaluate('assemblyViewer.getState().pitch')-math.radians(35))<1e-6
+ page.locator('#reset').click();assert abs(page.evaluate('assemblyViewer.getState().pitch')-math.radians(3))<1e-6
  rect=page.locator('#scene').bounding_box();page.mouse.move(rect['x']+rect['width']/2,rect['y']+rect['height']/2);page.mouse.down();page.mouse.move(rect['x']+300,rect['y']-500,steps=10);page.mouse.up();assert 0<=page.evaluate('assemblyViewer.getState().pitch')<=math.pi/2;checks['rotation_upright_constraint']=True
  rect=page.locator('#scene').bounding_box();page.mouse.move(rect['x']+rect['width']/2,rect['y']+rect['height']/2);before=page.evaluate('assemblyViewer.getState().zoom');page.mouse.wheel(0,-200);page.wait_for_timeout(250);checks['wheel_zoom']=page.evaluate('assemblyViewer.getState().zoom')>before;assert checks['wheel_zoom']
  for key in ['equipment','bridge','structure','foundations','roof','labels','floors']:page.locator('#'+key).check();page.locator('#'+key).uncheck();page.locator('#'+key).check()

@@ -5,24 +5,17 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
     if (!gl) throw new Error('Missing WebGL');
     const vertex = [
       'attribute vec3 p, n, c; uniform vec3 pivot, right, up; uniform mediump vec3 eye;',
-      'uniform vec2 scale, offset; uniform float depth; varying vec3 normal, color; varying float worldZ;',
+      'uniform vec2 scale, offset; uniform float depth; uniform mediump float strokeDepth; varying vec3 normal, color; varying float worldZ;',
       'void main(){vec3 v=p-pivot;normal=n;color=c;',
-      'worldZ=p.z;gl_Position=vec4(vec2(dot(v,right),dot(v,up))*scale+offset,-dot(v,eye)/depth,1.0);}'
+      'worldZ=p.z;gl_Position=vec4(vec2(dot(v,right),dot(v,up))*scale+offset,-dot(v,eye)/depth-strokeDepth,1.0);}'
     ].join('\n');
     const fragment = [
       'precision mediump float; uniform mediump vec3 eye; varying vec3 normal, color; varying float worldZ;',
-      'uniform vec2 section;',
+      'uniform vec2 section; uniform mediump float strokeDepth;',
+      window.BUILDING_STYLE.shader,
       'void main(){if(worldZ<section.x||worldZ>section.y)discard;',
       '  vec3 n=normalize(gl_FrontFacing?normal:-normal);',
-      '  vec3 light=normalize(vec3(0.15,-0.82,0.72));',
-      '  float key=max(0.0,dot(n,light));',
-      '  float fill=max(0.0,dot(n,normalize(vec3(-0.75,0.42,0.45))));',
-      '  float sky=0.38+0.13*(0.5+0.5*n.z);',
-      '  float front=max(0.0,dot(n,eye));',
-      '  float sheen=0.09*key*pow(max(0.0,dot(n,normalize(light+eye))),28.0);',
-      '  vec3 linear=pow(color,vec3(2.2))*(sky+0.48*key+0.24*fill+0.08*front);',
-      '  linear+=sheen*vec3(0.83,0.93,1.0);',
-      '  gl_FragColor=vec4(pow(clamp(linear,0.0,1.0),vec3(1.0/2.2)),1.0);',
+      '  gl_FragColor=vec4(strokeDepth>0.0?color:buildingShade(color,n),1.0);',
       '}'
     ].join('\n');
     const program = gl.createProgram();
@@ -40,12 +33,17 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
     if (!doubleSided) gl.enable(gl.CULL_FACE);
     const buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
-    ['p','n','c'].forEach((name,i) => {
-      const attribute=gl.getAttribLocation(program,name);
-      gl.enableVertexAttribArray(attribute);
-      gl.vertexAttribPointer(attribute,3,gl.FLOAT,false,36,12*i);
-    });
-    const uniforms = Object.fromEntries(['pivot','right','up','eye','scale','offset','depth','section']
+    const attributes=['p','n','c'].map(name=>gl.getAttribLocation(program,name));
+    function bindGeometry(target){
+      gl.bindBuffer(gl.ARRAY_BUFFER,target);
+      attributes.forEach((attribute,i)=>{
+        gl.enableVertexAttribArray(attribute);
+        gl.vertexAttribPointer(attribute,3,gl.FLOAT,false,36,12*i);
+      });
+    }
+    bindGeometry(buffer);
+    const strokeBuffer=gl.createBuffer();let strokeCount=0;
+    const uniforms = Object.fromEntries(['pivot','right','up','eye','scale','offset','depth','section','strokeDepth']
       .map(name=>[name,gl.getUniformLocation(program,name)]));
     let yaw=-Math.PI/4, tilt=.36, zoom=1, drag=null, pan=[0,0], aim=[0,0];
     let center=[0,0,0], radius=1, vertexCount=0, points=[];
@@ -55,11 +53,12 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
 
     function setParts(parts) {
       const low=[Infinity,Infinity,Infinity], high=[-Infinity,-Infinity,-Infinity];
-      const data=[];
+      const data=[],strokes=[];
       points=[];overlayRanges=[];drawRanges=[];
       for (const part of parts) {
+        strokes.push(...BUILDING_STYLE.strokes(part));
         const rangeStart=data.length/9;
-        const color=[1,3,5].map(i=>parseInt(part.color.slice(i,i+2),16)/255);
+        const color=[1,3,5].map(i=>parseInt(window.BUILDING_STYLE.color(part).slice(i,i+2),16)/255);
         for (const point of part.vertices) {
           points.push(point);
           point.forEach((v,k)=>{low[k]=Math.min(low[k],v); high[k]=Math.max(high[k],v);});
@@ -78,12 +77,15 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
           }
         });
         drawRanges.push({start:rangeStart,count:data.length/9-rangeStart,wall:part.kind==='wall'});
-        if(part.kind==='floor'||part.kind==='roof')overlayRanges.push({start:rangeStart,count:data.length/9-rangeStart});
+        if(part.kind==='roof')overlayRanges.push({start:rangeStart,count:data.length/9-rangeStart});
       }
       center=points.length ? low.map((v,i)=>(v+high[i])/2) : [0,0,0];
       radius=1;
       for (const [x,y,z] of points) radius=Math.max(radius,Math.hypot(x-center[0],y-center[1],z-center[2]));
       vertexCount=data.length/9;
+      bindGeometry(strokeBuffer);strokeCount=strokes.length/9;
+      gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(strokes),gl.STATIC_DRAW);
+      bindGeometry(buffer);
       gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.STATIC_DRAW);
       fit();
     }
@@ -109,6 +111,7 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
       zoom=1;
       pan=[0,0];
       recenter();
+      zoom=BUILDING_STYLE.fitZoom(canvas,points,radius,centerProjection ? .82 : .92,yaw,tilt);
       draw();
     }
     function draw() {
@@ -132,16 +135,23 @@ function createBuildingViewer(canvas, {doubleSided=false, centerProjection=false
       gl.uniform2f(uniforms.offset,2*offset[0]/width,2*offset[1]/height);
       gl.uniform1f(uniforms.depth,radius*1.05);
       gl.uniform2fv(uniforms.section,section);
-      // Coplanar wall/column faces need deterministic depth ownership.
-      // Bias only facade raster depth; do not move columns or alter projection.
+      gl.uniform1f(uniforms.strokeDepth,0);
+      // Prefer the continuous facade at coplanar wall/column faces.
+      // Raster depth only: columns stay complete for structure and interior views.
       for(const range of drawRanges){
-        if(range.wall){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(1,8);}
+        if(range.wall){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(-1,-8);}
         else gl.disable(gl.POLYGON_OFFSET_FILL);
         gl.drawArrays(gl.TRIANGLES,range.start,range.count);
       }
       gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(-1,-1);
       for(const range of overlayRanges)gl.drawArrays(gl.TRIANGLES,range.start,range.count);
       gl.disable(gl.POLYGON_OFFSET_FILL);
+      if(strokeCount){
+        bindGeometry(strokeBuffer);gl.depthMask(false);
+        gl.uniform1f(uniforms.strokeDepth,24/(radius*1.05));
+        gl.drawArrays(gl.LINES,0,strokeCount);
+        gl.depthMask(true);gl.uniform1f(uniforms.strokeDepth,0);bindGeometry(buffer);
+      }
       const project = point => {
         const v=point.map((value,i)=>value-center[i]);
         return [width/2+offset[0]+dot(v,right)*pixelsPerMm,
