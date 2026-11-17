@@ -1,0 +1,16 @@
+{
+  "http_load_and_72_equipment": true,
+  "full_height_not_clipped": true,
+  "inside_shell_and_roof": true,
+  "north_top": true,
+  "search_selection_and_correction": true,
+  "floor_and_section": true,
+  "intersection_highlight_and_focus": true,
+  "pending_27_excluded": true,
+  "rotation_upright_constraint": true,
+  "wheel_zoom": true,
+  "layer_toggles": true,
+  "file_offline_load": "当前浏览器策略禁止 file://；本地HTTP已通过",
+  "narrow_viewport": true,
+  "uncaught_errors": []
+}
