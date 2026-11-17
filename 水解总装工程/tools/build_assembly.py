@@ -116,53 +116,15 @@ def build():
         placements.append(record)
     layout_review=review(drawing,origin,placements,assets,ROOT,read)
     save('data/布置复核.json',layout_review)
-    # Register architectural wall coordinates to the structural axis origin.
-    arch=doc('厂房外观模型/建筑/立面门窗数据.json'); cols=doc('厂房外观模型/建筑/结构立柱数据.json')
-    mass=doc('厂房外观模型/建筑/主体尺寸.json')['massing'];buildings=[]
-    removed_columns=[]
-    for i,c in enumerate(cols['columns']):
-        if c['width']==400 and c['depth']==400 and c['x']>38000:
-            removed_columns.append({'id':'COL-%03d'%i,**c,'reason':'按用户截图暂移除东侧细柱；源结构数据保留'})
-            continue
-        buildings.append(box('COL-%03d'%i,c['x']-c['width']/2,c['y']-c['depth']/2,0,c['width'],c['depth'],23000,kind='structure'))
-    # Source building viewer uses wall SW corner; axes lie 325 mm inward.
-    shift=-325;W,D=44650,72650
-    def wall(side,u0,u1,z0,z1,name,color='#b7bdc0',kind='wall'):
-        if side in ('south','north'):return box(name,u0+shift,shift+(0 if side=='south' else D-200),z0,u1-u0,200,z1-z0,color,kind)
-        return box(name,shift+(0 if side=='west' else W-200),u0+shift,z0,200,u1-u0,z1-z0,color,kind)
-    for side in ['east','west','south','north']:
-        length=D if side in ('east','west') else W;holes=[]
-        for o in arch['openings']:
-            if o['side']!=side:continue
-            lo=o.get('sill',0);hi=o.get('head',lo+o.get('height',0));holes.append((max(0,o['center']-o['width']/2),min(length,o['center']+o['width']/2),lo,hi,o['kind']))
-        cuts=sorted(set([0,length]+[v for h in holes for v in h[:2]]))
-        for i,(u0,u1) in enumerate(zip(cuts,cuts[1:])):
-            hs=sorted((h[2],h[3]) for h in holes if h[0]<(u0+u1)/2<h[1]);cur=0
-            for lo,hi in hs+[(23000,23000)]:
-                if lo>cur:buildings.append(wall(side,u0,u1,cur,lo,f'WALL-{side}-{i}-{cur}'))
-                cur=max(cur,hi)
-        for i,(u0,u1,lo,hi,kind) in enumerate(holes):
-            buildings.append(wall(side,u0,u1,lo,hi,f'OPEN-{side}-{i}','#6f939e' if kind=='window' else '#64717a','opening'))
-            # Cross muntins add depth without decorative texture.
-            if kind=='window':
-                buildings.append(wall(side,(u0+u1)/2-25,(u0+u1)/2+25,lo,hi,f'FRAME-{side}-{i}-v','#ccd2d4','opening'))
-                buildings.append(wall(side,u0,u1,(lo+hi)/2-25,(lo+hi)/2+25,f'FRAME-{side}-{i}-h','#ccd2d4','opening'))
-    buildings.append(box('ROOF',shift,shift,22800,W,D,200,'#c6cbcd','roof',False))
-    for i,(x,y,w,d) in enumerate([(shift,shift,W,300),(shift,D+shift-300,W,300),(shift,shift,300,D),(W+shift-300,shift,300,D)]):buildings.append(box(f'PARAPET-{i}',x,y,23000,w,d,1500,'#b7bdc0','roof',False))
-    for i,s in enumerate(mass['roof_stair_rooms']):
-        # Source exterior model represents stair rooms as enclosed volumes.
-        buildings.append(box(f'STAIR-{i}',s['x']+shift,s['y']+shift,23000,s['width'],s['depth'],3900,'#b7bdc0','roof',False))
-    # Faint floor plates are visualization aids, not fabricated structural geometry.
-    for el,z in [(100,0),(106,6000),(112,12000),(123,23000)]:
-        plate=box('FLOOR-EL'+str(el),shift,shift,z-160,W,D,160,'#bac5cb','floor',False)
-        plate.update(el=el,thickness_status='160mm为显示板厚；结构厚度与真实开孔待详图确认')
-        buildings.append(plate)
-    save('data/柱与楼板修订.json',{'removed_columns':removed_columns,'retained_columns':len(cols['columns'])-len(removed_columns),'floor_EL':[100,106,112,123],'floors_for_display_only':True})
+    # Building geometry is authored and maintained solely in 厂房外观模型.
+    building_path='厂房外观模型/建筑/model_data.js'
+    if not (ROOT/building_path).exists():raise SystemExit('先运行 厂房外观模型/建筑/tools/build_building.py')
+    buildings=js(building_path)['parts']
+    read('厂房外观模型/建筑/building.json')
     civil=[]
     for p in placements:
         key=p['asset']
-        if key not in ('D41B02','F41B01','C41B01','C41B02','C41B03'):continue
-        if key not in foundation['assets']:continue
+        if key not in ('D41B02','F41B01','C41B01','C41B02','C41B03') or key not in foundation['assets']:continue
         source=FOUND+key+'/model_data.js';assets['foundation-'+key]={'path':'../'+source,'source':source,'units':'mm'};mesh(source)
         civil.append({'id':'BASE-'+p['id'],'name':foundation['assets'][key]['name'],'asset':'foundation-'+key,'position_mm':p['position_mm'],'rotation_deg':p['rotation_deg'],'mirror_y':p.get('mirror_y',False),'level':p['level'],'support_for':p['id']})
     # Cross-check 23 main vessel centers against the independent architectural plan.
@@ -185,14 +147,14 @@ def build():
     bd=ezdxf.readfile(ROOT/bridge_dxf);grid=bd.blocks['水解一楼'];xs=sorted(round(e.dxf.center.x) for e in grid.query('CIRCLE') if e.dxf.center.y<0 and e.dxf.center.x>=0)
     assert xs==[0,6000,13000,19000,26000,32000,38000,44000],xs
     read(BRIDGE);read('水解桥架工程/models/整体/assembly.json')
-    assembly={'version':'0.2','local_z0_EL':100,'units':'mm','axes':{'east':'+X','north':'+Y','up':'+Z'},
-        'modules':{'building':{'translation_mm':[-325,-325,0],'basis':'外墙边界原点转结构轴网；22台基础中心误差小于1mm，D41B02B1按建筑基础中心修正约200mm'},'bridge':{'translation_mm':[0,0,0],'rotation_deg':0,'scale':1,'basis':'原水解一楼建筑块轴网，与结构柱轴一致'}},
+    assembly={'version':'0.3','local_z0_EL':100,'units':'mm','axes':{'east':'+X','north':'+Y','up':'+Z'},
+        'modules':{'building':{'translation_mm':[0,0,0],'rotation_deg':0,'scale':1,'source':'../厂房外观模型/建筑/model_data.js','basis':'完整建筑源网格已归一到柱轴坐标，直接引用，不重复平移'},'bridge':{'translation_mm':[0,0,0],'rotation_deg':0,'scale':1,'basis':'原水解一楼建筑块轴网，与结构柱轴一致'}},
         'assets':assets,'equipment':placements,'foundations':civil,'unplaced':pending,
-        'limits':['上部柱截面沿用源模型，+9.900m以上需结构图复核','墙厚200mm及屋面厚200mm仅显示假设，不参与确认碰撞','楼板为淡化显示板，板厚160mm与真实开孔待核；不参与施工碰撞定论','图块朝向尚未逐项与类型模型管口方向核对','未定位设备不进入空间场景或碰撞检查；待核安装标高单列']}
+        'limits':['上部柱截面沿用源模型，+9.900m以上需结构图复核','墙厚200mm及屋面厚200mm仅显示假设，不参与确认碰撞','建筑统一引用厂房外观模型完整网格；160mm板厚为显示口径，吊装孔按建施图真切孔','图块朝向尚未逐项与类型模型管口方向核对','未定位设备不进入空间场景或碰撞检查；待核安装标高单列']}
     audit={'axis_grid_x_mm':xs,'main_vessel_foundation_checks':checks,'max_error_mm':max(c['error_mm'] for c in checks),'placed':len(placements),'unplaced':len(pending),'z_referenced':sum(p['z_status']=='有安装基准' for p in placements),'limitations':assembly['limits'],'layout_reviewed':layout_review['reviewed'],'layout_pending':layout_review['pending']}
     save('assembly.json',assembly);save('data/设备就位表.json',placements);save('data/待核设备.json',pending);save('data/对齐依据.json',audit)
-    (OUT/'data/building.js').write_text('window.ASSEMBLY_BUILDING='+json.dumps(buildings,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
+    (OUT/'data/building.js').write_text('// Compatibility alias only; authoritative mesh lives in 厂房外观模型.\nwindow.ASSEMBLY_BUILDING=window.BUILDING_MODEL.parts;\n',encoding='utf-8')
     (OUT/'data/assembly.js').write_text('window.SITE_ASSEMBLY='+json.dumps(assembly,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
-    save('data/来源与哈希.json',{'version':'0.2','sources':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in sorted(inputs)}})
+    save('data/来源与哈希.json',{'version':'0.3','sources':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in sorted(inputs)}})
     print(json.dumps(audit,ensure_ascii=False))
 if __name__=='__main__':build()

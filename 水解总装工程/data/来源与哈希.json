@@ -1,10 +1,9 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "sources": {
+    "厂房外观模型/建筑/building.json": "1140b0ed7345ec2d3b91bd71dd9b0036ffe676b9815ee8bff28c0f19aaf46862",
+    "厂房外观模型/建筑/model_data.js": "e03bb0dbcc2de869200e8f5bf81214f90c9c5caaa688331f6eb5fb6e817ba499",
     "厂房外观模型/建筑/一层设备基础.json": "7c3ea55ea08e569e15e4da205ddecb9c36e9ee2a9d0eafc141d13dfd74d15410",
-    "厂房外观模型/建筑/主体尺寸.json": "d778052944c48efbf874119c15b2c6d57ccfa3c92b9eb457e984f29deac6ea0c",
-    "厂房外观模型/建筑/立面门窗数据.json": "2d28fdbf3583e4655a9edeb07bcb3871e424cae483daaa180fcc582657642861",
-    "厂房外观模型/建筑/结构立柱数据.json": "9d7dac5b2a185660645851252894c057055e1227e9714f3d3bdba754d794749c",
     "水解桥架工程/data/原始资料/0241B_二期水解仪表桥架布局_1031_t3.dxf": "e31c4a320fbe841b87e820260508e68d6d2ba443842536ee25efd75bfd8c402e",
     "水解桥架工程/models/整体/assembly.json": "b9a1a30d2697db669ebbd263c3762262673a308a743dcfadcf57a4db81e2a76d",
     "水解桥架工程/models/整体/viewer_data.js": "6316183f42f62f079320f26d14617eb44c6ad9b6d848b21b52219c79fe1fca73",

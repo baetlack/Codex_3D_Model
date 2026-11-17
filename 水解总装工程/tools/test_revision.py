@@ -3,7 +3,7 @@ from pathlib import Path
 import json,numpy as np
 from check_assembly import script
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'水解总装工程'
-cfg=json.loads((OUT/'assembly.json').read_text());building=script(OUT/'data/building.js','ASSEMBLY_BUILDING');source=json.loads((ROOT/'厂房外观模型/建筑/结构立柱数据.json').read_text())['columns']
+cfg=json.loads((OUT/'assembly.json').read_text());building=script(ROOT/'厂房外观模型/建筑/model_data.js','BUILDING_MODEL')['parts'];source=json.loads((ROOT/'厂房外观模型/建筑/结构立柱数据.json').read_text())['columns']
 cols=[p for p in building if p['kind']=='structure'];assert len(cols)==88
 for i,c in enumerate(source):
  existing=next((p for p in cols if p['name']=='COL-%03d'%i),None)

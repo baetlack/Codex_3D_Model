@@ -16,6 +16,5 @@
   "layer_toggles": true,
   "file_offline_load": "当前浏览器策略禁止 file://；本地HTTP已通过",
   "narrow_viewport": true,
-  "uncaught_errors": [],
-  "factory_exterior_and_frame_88_columns_source_98_preserved": true
+  "uncaught_errors": []
 }

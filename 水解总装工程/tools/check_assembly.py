@@ -88,7 +88,7 @@ def run():
   closed[p['id']]=closed_components(parts,p['position_mm'],p['rotation_deg'],p.get('mirror_y',False))
  for g in script(ROOT/'水解桥架工程/models/整体/viewer_data.js','GEOMETRY'):
   parts=[{'vertices':g['v'],'faces':g['f']}];objects.append(object_mesh(g['id'],'bridge',tri(parts,scale=1000)))
- for p in script(OUT/'data/building.js','ASSEMBLY_BUILDING'):
+ for p in script(ROOT/'厂房外观模型/建筑/model_data.js','BUILDING_MODEL')['parts']:
   if p['kind']=='structure':
    t=tri([p]);objects.append(object_mesh(p['name'],'structure',t,'上部柱截面待核'));closed[p['name']]=[t]
  candidates=0;hits=[];contacts=[]
@@ -117,12 +117,12 @@ def run():
    if overlap.min()<0.1:
     record['status']='表面接触（正常）';contacts.append(record)
    else:hits.append(record)
- report={'version':'0.2','status':'存在待复核项' if hits else '已检查范围未发现几何相交','object_count':len(objects),'aabb_candidates':candidates,'intersections':hits,'normal_contacts':contacts,'contact_tolerance_mm':0.1,
+ report={'version':'0.3','status':'存在待复核项' if hits else '已检查范围未发现几何相交','object_count':len(objects),'aabb_candidates':candidates,'intersections':hits,'normal_contacts':contacts,'contact_tolerance_mm':0.1,
   'unplaced_excluded':len(cfg['unplaced']),'scope':'桥架/设备、桥架/柱、设备/柱、设备/设备；支持面与设备基础不参与报错',
-  'limits':['相交是几何证据，不自动认定施工冲突','部分安装标高、管口朝向及上层柱截面待核','无真实梁板截面与开孔资料，未检查梁板碰撞；墙体为显示假设，不用于碰撞定论','不检查检修空间；不将相接桥架端口列为冲突']}
+  'limits':['相交是几何证据，不自动认定施工冲突','部分安装标高、管口朝向及上层柱截面待核','本报告仍限原主体柱/设备/桥架；新增房间、楼梯及梁架未纳入检查','不检查检修空间；不将相接桥架端口列为冲突']}
  (OUT/'data/碰撞报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  (OUT/'data/collisions.js').write_text('window.ASSEMBLY_COLLISIONS='+json.dumps(report,ensure_ascii=False,separators=(',',':'))+';\n')
- special={'version':'0.2','contact_tolerance_mm':0.1,'columns_retained':sum(o['kind']=='structure' for o in objects),'penetrations':[r for r in hits if r['kind']=='bridge/structure'],'normal_contacts':[r for r in contacts if r['kind']=='bridge/structure'],'rule':'真实三角面进入柱体开内部才报穿入；仅表面接触为正常，未改桥架位置'}
+ special={'version':'0.3','contact_tolerance_mm':0.1,'columns_retained':sum(o['kind']=='structure' for o in objects),'penetrations':[r for r in hits if r['kind']=='bridge/structure'],'normal_contacts':[r for r in contacts if r['kind']=='bridge/structure'],'rule':'真实三角面进入柱体开内部才报穿入；仅表面接触为正常，未改桥架位置'}
  (OUT/'data/桥架立柱核对.json').write_text(json.dumps(special,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:v for k,v in report.items() if k not in ('intersections','normal_contacts')},ensure_ascii=False));print('intersections',len(hits),'contacts',len(contacts))
 if __name__=='__main__':run()
