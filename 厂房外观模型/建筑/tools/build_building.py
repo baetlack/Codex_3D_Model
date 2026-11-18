@@ -7,6 +7,7 @@ import json,math,hashlib,subprocess,sys
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1];REPO=ROOT.parents[1]
 from dxf_geometry import read_entities,first,number,geometry
+from floor_openings import extract_openings,curb_mesh,guard_mesh
 ARCH=next((ROOT/'原始资料').glob('*建施*'));STRUCT=next((ROOT/'原始资料').glob('*结构*'))
 ORIGINS={1:(4388240.,171772.),2:(4528663.5,167930.4),3:(4684213.,163771.5)}
 PARTS=[];RECORDS=[]
@@ -153,6 +154,7 @@ def build():
    if ox<cx<ox+44650 and oy<cy<oy+72650:
     x,y=cx-ox-325,cy-oy-325;r=e['radius'];poly=[[x+r*math.cos(i*math.tau/96),y+r*math.sin(i*math.tau/96)] for i in range(96)]
     if not any(h['type']=='equipment' and math.hypot(bounds(h['polygon'])[0]-(x-r),bounds(h['polygon'])[1]-(y-r))<1 for h in holes):holes.append({'id':'EQHOLE-'+e['handle'],'type':'equipment','floor':2,'EL':106,'polygon':poly,'source_handle':e['handle'],'radius_mm':r})
+ floor_openings=extract_openings(arch,ORIGINS);holes.extend(floor_openings)
  stair_specs=[('SW','B',-26.39,.43,0),('NE','B',43999.78,72000.44,180),('SE','A',41124.74,.45,0),('NW','A',2874.64,72000.44,180)]
  stair_records=[]
  for corner,group,x,y,yaw in stair_specs:
@@ -218,6 +220,10 @@ def build():
    for t in np.linspace(0,1,math.ceil(math.dist(a,b)/110)+1):
     q=[a[k]+t*(b[k]-a[k]) for k in range(2)];rod(rail,[*q,z+100],[*q,z+1100],16)
   PARTS.append(rail)
+ # Additional labelled floor apertures share lifting-hole colors and curb/guard sections.
+ for hole in floor_openings:
+  PARTS.append(curb_mesh(hole,part,rect,interval_at,edge_x))
+  if hole['guard_height_mm']:PARTS.append(guard_mesh(hole,part,rod))
  # Four correctly cut floor plates; roof skin reuses the same apertures.
  for el in [100,106,112,123]:PARTS.append(floor_mesh(el,[h for h in holes if h['EL']==el]))
  roof=floor_mesh(123,[h for h in holes if h['EL']==123]);roof.update(name='ROOF',kind='roof',color='#aebcc4');PARTS.append(roof)
@@ -231,9 +237,9 @@ def build():
   for xx,ww in [(x,door0-x),(door0+1500,x+width-door0-1500)]:merge(p,prism('',xx,door_y,23000,ww,200,3300))
   merge(p,prism('',door0,door_y,25200,1500,200,1100));merge(p,prism('',x,y,26300,width,depth,600))
   PARTS.append(p);PARTS.append(prism('ROOF-DOOR-'+corner,door0,door_y,23000,1500,50,2200,'roof','#718995'))
- metadata={'version':'1.1-display-fix','units':'mm','EL_at_local_z0':100,'wall_origin_to_axis_mm':[-325,-325],'facade':doc('立面门窗数据.json')['counts'],'stairs':stair_records,'rooms':room_records,'holes':holes,'primary_columns':88,'source_files':{q.name:hashlib.sha256(q.read_bytes()).hexdigest() for q in [ARCH,STRUCT]},'limits':['房间首层隔墙顶按二层板底接合，吊顶未另造','保留旧建筑浏览的300x450示意梁截面；非逐根结构梁配筋模型','160mm为楼板显示厚度，孔位与内轮廓按建施图','未修改设备/桥架模型与就位表']}
- save('building.json',metadata);save('data/建模依据.json',metadata)
+ metadata={'version':'1.2-floor-openings','units':'mm','EL_at_local_z0':100,'wall_origin_to_axis_mm':[-325,-325],'facade':doc('立面门窗数据.json')['counts'],'stairs':stair_records,'rooms':room_records,'holes':holes,'primary_columns':88,'source_files':{q.name:hashlib.sha256(q.read_bytes()).hexdigest() for q in [ARCH,STRUCT]},'limits':['房间首层隔墙顶按二层板底接合，吊顶未另造','保留旧建筑浏览的300x450示意梁截面；非逐根结构梁配筋模型','160mm为楼板显示厚度，孔位与内轮廓按建施图','未修改设备/桥架模型与就位表']}
+ save('data/楼板开孔依据.json',{'units':'mm','coordinates':'柱轴坐标，东X/北Y；Z0=EL100','openings':floor_openings});save('building.json',metadata);save('data/建模依据.json',metadata)
  data={'metadata':metadata,'parts':PARTS};(ROOT/'model_data.js').write_text('window.BUILDING_MODEL='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
- print(json.dumps({'parts':len(PARTS),'triangles':sum(len(p['faces']) for p in PARTS),'stairs':len(stair_records),'rooms':len(room_records),'hoisting_holes':sum(h['type']=='hoisting' for h in holes),'equipment_floor_holes':sum(h['type']=='equipment' for h in holes)},ensure_ascii=False))
+ print(json.dumps({'parts':len(PARTS),'triangles':sum(len(p['faces']) for p in PARTS),'stairs':len(stair_records),'rooms':len(room_records),'hoisting_holes':sum(h['type']=='hoisting' for h in holes),'added_floor_openings':len(floor_openings),'equipment_floor_holes':sum(h['type']=='equipment' for h in holes)},ensure_ascii=False))
  return data
 if __name__=='__main__':build()

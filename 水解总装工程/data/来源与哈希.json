@@ -1,8 +1,8 @@
 {
   "version": "0.3",
   "sources": {
-    "厂房外观模型/建筑/building.json": "76098d8fddcd3b90816a47da4ba32a3894ace87fc0c4900975f0cf2c011c7c67",
-    "厂房外观模型/建筑/model_data.js": "f30671ec3b1c18611d28625ffa527e1969229ca48e3da4b838505d5209d6cef8",
+    "厂房外观模型/建筑/building.json": "007dea957d91890725c5cab141e087d5327f6c91933f9a68249b7139da0792ba",
+    "厂房外观模型/建筑/model_data.js": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b",
     "厂房外观模型/建筑/一层设备基础.json": "7c3ea55ea08e569e15e4da205ddecb9c36e9ee2a9d0eafc141d13dfd74d15410",
     "水解桥架工程/data/原始资料/0241B_二期水解仪表桥架布局_1031_t3.dxf": "e31c4a320fbe841b87e820260508e68d6d2ba443842536ee25efd75bfd8c402e",
     "水解桥架工程/models/整体/assembly.json": "b9a1a30d2697db669ebbd263c3762262673a308a743dcfadcf57a4db81e2a76d",
