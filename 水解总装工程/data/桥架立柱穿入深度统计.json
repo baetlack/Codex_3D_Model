@@ -1,0 +1,6741 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "source_sha256": {
+    "水解总装工程/tools/audit_bridge_columns.py": "20367672bb68356001b0f90985dfef13f9027777c84fed0cf2fb85724d79b065",
+    "水解总装工程/tools/check_assembly.py": "e0a770405d80bef93e2932f09cf154335289ce948e294af91c713551a0166c0d",
+    "厂房外观模型/建筑/model_data.js": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b",
+    "厂房外观模型/建筑/结构立柱数据.json": "9d7dac5b2a185660645851252894c057055e1227e9714f3d3bdba754d794749c",
+    "水解桥架工程/models/整体/viewer_data.js": "6316183f42f62f079320f26d14617eb44c6ad9b6d848b21b52219c79fe1fca73",
+    "水解桥架工程/models/整体/assembly.json": "b9a1a30d2697db669ebbd263c3762262673a308a743dcfadcf57a4db81e2a76d"
+  },
+  "tolerance_mm": 0.1,
+  "scope": {
+    "bridge_components": 112,
+    "columns": {
+      "structure": 88,
+      "room_column": 8,
+      "stair_column": 24
+    }
+  },
+  "definitions": {
+    "max_depth_mm": "实际桥架面进入柱体后，距最近X/Y柱侧面的最大距离；不是包围盒跨度，也不是旧报告三角面采样点深度。",
+    "separation_mm": "仅对这一对模型，沿X或Y四个正负方向中，刚好不再穿柱的最小平移距离（允许表面接触）。",
+    "direction": "东+X、北+Y；数值只用于比较几何重叠程度，不是可直接应用到整条桥架的整改位移。",
+    "depth_band": "为本次统计自定义的比较档位，不是施工规范的合格/不合格阈值。"
+  },
+  "summary": {
+    "penetration_pairs": 69,
+    "normal_contact_pairs": 18,
+    "aabb_only_pairs": 3,
+    "affected_bridge_components": 35,
+    "affected_columns": 38,
+    "column_level_groups": 54,
+    "long_vertical_overlap_pairs": [
+      {
+        "bridge": "L3-S-37C28",
+        "column": "COL-028",
+        "max_depth_mm": 10.976,
+        "overlap_height_mm": 2398.577
+      },
+      {
+        "bridge": "L3-S-37C24",
+        "column": "COL-064",
+        "max_depth_mm": 10.976,
+        "overlap_height_mm": 2400.122
+      }
+    ],
+    "by_column_scope": {
+      "structure": 66,
+      "stair_column": 3
+    },
+    "by_level": {
+      "L1": 15,
+      "L2": 27,
+      "L3": 27
+    },
+    "depth_bands": [
+      {
+        "range": "0.1–10 mm",
+        "total": 21,
+        "L1": 2,
+        "L2": 14,
+        "L3": 5
+      },
+      {
+        "range": ">10–30 mm",
+        "total": 17,
+        "L1": 3,
+        "L2": 4,
+        "L3": 10
+      },
+      {
+        "range": ">30–60 mm",
+        "total": 27,
+        "L1": 10,
+        "L2": 9,
+        "L3": 8
+      },
+      {
+        "range": ">60–100 mm",
+        "total": 1,
+        "L1": 0,
+        "L2": 0,
+        "L3": 1
+      },
+      {
+        "range": ">100 mm",
+        "total": 3,
+        "L1": 0,
+        "L2": 0,
+        "L3": 3
+      }
+    ],
+    "separation_bands": [
+      {
+        "range": "0.1–10 mm",
+        "total": 21
+      },
+      {
+        "range": ">10–30 mm",
+        "total": 16
+      },
+      {
+        "range": ">30–60 mm",
+        "total": 28
+      },
+      {
+        "range": ">60–100 mm",
+        "total": 0
+      },
+      {
+        "range": ">100 mm",
+        "total": 4
+      }
+    ]
+  },
+  "validation": {
+    "independent_linear_program_verified_pairs": 69,
+    "all_axis_separation_results_rechecked": true
+  },
+  "limits": [
+    "反映当前模型几何，不单凭穿入数值认定成因或施工冲突。",
+    "750/650柱截面取自5.970–9.900m柱平面并沿用到23m；上部柱截面仍需原结构图逐段复核。",
+    "未调整任何桥架、建筑或设备模型，未将孤立配对的平移下限作为整装方案。"
+  ],
+  "penetrations": [
+    {
+      "bridge": "L3-S-37C70",
+      "cad_handle": "37C70",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-031",
+      "column_scope": "structure",
+      "source_column_part": "COL-031",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          31625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          32375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        750.0,
+        199.98,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">100 mm",
+      "max_depth_mm": 199.98,
+      "depth_witness_mm": [
+        32000.0,
+        21775.02,
+        15000.0
+      ],
+      "old_sample_depth_mm": 199.98,
+      "separation_mm": 199.98,
+      "direction": "Y+",
+      "moves_mm": {
+        "X-": 7403.37,
+        "X+": 6750.389,
+        "Y-": 750.02,
+        "Y+": 199.98
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        750.0,
+        199.98,
+        100.0
+      ],
+      "intersection_low_mm": [
+        31625.0,
+        21775.02,
+        15000.0
+      ],
+      "intersection_high_mm": [
+        32375.0,
+        21975.0,
+        15100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 199.98,
+      "overlapped_width_percent": 99.99
+    },
+    {
+      "bridge": "L3-S-37C70",
+      "cad_handle": "37C70",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-032",
+      "column_scope": "structure",
+      "source_column_part": "COL-032",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          37625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          38375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        750.0,
+        199.98,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">100 mm",
+      "max_depth_mm": 199.98,
+      "depth_witness_mm": [
+        38000.0,
+        21775.02,
+        15000.0
+      ],
+      "old_sample_depth_mm": 199.98,
+      "separation_mm": 199.98,
+      "direction": "Y+",
+      "moves_mm": {
+        "X-": 1403.37,
+        "X+": 12750.389,
+        "Y-": 750.02,
+        "Y+": 199.98
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        750.0,
+        199.98,
+        100.0
+      ],
+      "intersection_low_mm": [
+        37625.0,
+        21775.02,
+        15000.0
+      ],
+      "intersection_high_mm": [
+        38375.0,
+        21975.0,
+        15100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 199.98,
+      "overlapped_width_percent": 99.99
+    },
+    {
+      "bridge": "L3-S-37C70",
+      "cad_handle": "37C70",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-030",
+      "column_scope": "structure",
+      "source_column_part": "COL-030",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          21275.0,
+          0.0
+        ],
+        [
+          26325.0,
+          21925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        650.0,
+        149.98,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">100 mm",
+      "max_depth_mm": 149.98,
+      "depth_witness_mm": [
+        26000.0,
+        21775.02,
+        15000.0
+      ],
+      "old_sample_depth_mm": 149.98,
+      "separation_mm": 149.98,
+      "direction": "Y+",
+      "moves_mm": {
+        "X-": 13353.37,
+        "X+": 700.389,
+        "Y-": 700.02,
+        "Y+": 149.98
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        650.0,
+        149.98,
+        100.0
+      ],
+      "intersection_low_mm": [
+        25675.0,
+        21775.02,
+        15000.0
+      ],
+      "intersection_high_mm": [
+        26325.0,
+        21925.0,
+        15100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 149.98,
+      "overlapped_width_percent": 74.99
+    },
+    {
+      "bridge": "L3-C16",
+      "cad_handle": "37C23",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          100.0
+        ]
+      ],
+      "column": "COL-063",
+      "column_scope": "structure",
+      "source_column_part": "COL-063",
+      "level": "L3",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        6000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          5625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          6375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        294.891,
+        448.422,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">60–100 mm",
+      "max_depth_mm": 71.6565,
+      "depth_witness_mm": [
+        5696.6565,
+        50096.6565,
+        15000.814
+      ],
+      "old_sample_depth_mm": 48.422,
+      "separation_mm": 143.313,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 294.891,
+        "X+": 1055.109,
+        "Y-": 143.313,
+        "Y+": 901.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        294.891,
+        143.313,
+        100.0
+      ],
+      "intersection_low_mm": [
+        5625.0,
+        50025.0,
+        15000.814
+      ],
+      "intersection_high_mm": [
+        5919.891,
+        50168.313,
+        15100.814
+      ]
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-019",
+      "column_scope": "structure",
+      "source_column_part": "COL-019",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          14025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          14775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 59.43,
+      "depth_witness_mm": [
+        12684.43,
+        14400.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 59.43,
+      "separation_mm": 59.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 59.43,
+        "X+": 890.57,
+        "Y-": 57999.619,
+        "Y+": 7800.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        14025.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        14775.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 59.43,
+      "overlapped_width_percent": 29.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 59.43,
+      "depth_witness_mm": [
+        12684.43,
+        21600.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 59.43,
+      "separation_mm": 59.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 59.43,
+        "X+": 890.57,
+        "Y-": 50799.619,
+        "Y+": 15000.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        21225.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        21975.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 59.43,
+      "overlapped_width_percent": 29.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-055",
+      "column_scope": "structure",
+      "source_column_part": "COL-055",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          42825.0,
+          0.0
+        ],
+        [
+          13375.0,
+          43575.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 59.43,
+      "depth_witness_mm": [
+        12684.43,
+        43200.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 59.43,
+      "separation_mm": 59.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 59.43,
+        "X+": 890.57,
+        "Y-": 29199.619,
+        "Y+": 36600.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        42825.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        43575.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 59.43,
+      "overlapped_width_percent": 29.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 59.43,
+      "depth_witness_mm": [
+        12684.43,
+        50400.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 59.43,
+      "separation_mm": 59.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 59.43,
+        "X+": 890.57,
+        "Y-": 21999.619,
+        "Y+": 43800.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        50025.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        50775.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 59.43,
+      "overlapped_width_percent": 29.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-073",
+      "column_scope": "structure",
+      "source_column_part": "COL-073",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          57225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          57975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 59.43,
+      "depth_witness_mm": [
+        12684.43,
+        57600.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 59.43,
+      "separation_mm": 59.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 59.43,
+        "X+": 890.57,
+        "Y-": 14799.619,
+        "Y+": 51000.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        57225.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        57975.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 59.43,
+      "overlapped_width_percent": 29.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-083",
+      "column_scope": "structure",
+      "source_column_part": "COL-083",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        64800.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          64425.0,
+          0.0
+        ],
+        [
+          13375.0,
+          65175.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 59.43,
+      "depth_witness_mm": [
+        12684.43,
+        64800.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 59.43,
+      "separation_mm": 59.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 59.43,
+        "X+": 890.57,
+        "Y-": 7599.619,
+        "Y+": 58200.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        59.43,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        64425.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        65175.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 59.43,
+      "overlapped_width_percent": 29.715
+    },
+    {
+      "bridge": "L1-C08",
+      "cad_handle": "37C3A",
+      "bridge_sections_mm": [
+        [
+          400.0,
+          200.0
+        ]
+      ],
+      "column": "COL-018",
+      "column_scope": "structure",
+      "source_column_part": "COL-018",
+      "level": "L1",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        6000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          5625.0,
+          14025.0,
+          0.0
+        ],
+        [
+          6375.0,
+          14775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        55.208,
+        703.278,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 55.208,
+      "depth_witness_mm": [
+        5680.208,
+        14400.0,
+        4600.521
+      ],
+      "old_sample_depth_mm": 55.208,
+      "separation_mm": 55.208,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 55.208,
+        "X+": 1594.792,
+        "Y-": 703.278,
+        "Y+": 946.722
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        55.208,
+        703.278,
+        200.0
+      ],
+      "intersection_low_mm": [
+        5625.0,
+        14025.0,
+        4600.521
+      ],
+      "intersection_high_mm": [
+        5680.208,
+        14728.278,
+        4800.521
+      ]
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-022",
+      "column_scope": "structure",
+      "source_column_part": "COL-022",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          31625.0,
+          14025.0,
+          0.0
+        ],
+        [
+          32375.0,
+          14775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        52.317,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 52.317,
+      "depth_witness_mm": [
+        32322.683,
+        14400.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 52.317,
+      "separation_mm": 52.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 897.683,
+        "X+": 52.317,
+        "Y-": 57052.042,
+        "Y+": 7750.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        52.317,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        14025.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32375.0,
+        14775.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 52.317,
+      "overlapped_width_percent": 26.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-031",
+      "column_scope": "structure",
+      "source_column_part": "COL-031",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          31625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          32375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        52.317,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 52.317,
+      "depth_witness_mm": [
+        32322.683,
+        21600.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 52.317,
+      "separation_mm": 52.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 897.683,
+        "X+": 52.317,
+        "Y-": 49852.042,
+        "Y+": 14950.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        52.317,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        21225.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32375.0,
+        21975.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 52.317,
+      "overlapped_width_percent": 26.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-049",
+      "column_scope": "structure",
+      "source_column_part": "COL-049",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          31625.0,
+          35625.0,
+          0.0
+        ],
+        [
+          32375.0,
+          36375.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        52.317,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 52.317,
+      "depth_witness_mm": [
+        32322.683,
+        36000.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 52.317,
+      "separation_mm": 52.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 897.683,
+        "X+": 52.317,
+        "Y-": 35452.042,
+        "Y+": 29350.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        52.317,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        35625.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32375.0,
+        36375.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 52.317,
+      "overlapped_width_percent": 26.1585
+    },
+    {
+      "bridge": "L3-C03",
+      "cad_handle": "37C29",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L3",
+      "bridge_type": "垂直下弯",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        210.976,
+        50.019,
+        400.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 50.019,
+      "depth_witness_mm": [
+        13244.5025,
+        21275.019,
+        15002.359
+      ],
+      "old_sample_depth_mm": 50.019,
+      "separation_mm": 50.019,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 210.976,
+        "Y-": 50.019,
+        "Y+": 899.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        210.976,
+        50.019,
+        400.0
+      ],
+      "intersection_low_mm": [
+        13164.024,
+        21225.0,
+        15002.359
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        21275.019,
+        15402.359
+      ]
+    },
+    {
+      "bridge": "L3-S-37C27",
+      "cad_handle": "37C27",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-027",
+      "column_scope": "structure",
+      "source_column_part": "COL-027",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        6000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          5625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          6375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        700.389,
+        50.019,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 50.019,
+      "depth_witness_mm": [
+        6000.0,
+        21275.019,
+        15002.359
+      ],
+      "old_sample_depth_mm": 50.019,
+      "separation_mm": 50.019,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 7539.024,
+        "X+": 700.389,
+        "Y-": 50.019,
+        "Y+": 899.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        700.389,
+        50.019,
+        100.0
+      ],
+      "intersection_low_mm": [
+        5674.611,
+        21225.0,
+        15002.359
+      ],
+      "intersection_high_mm": [
+        6375.0,
+        21275.019,
+        15102.359
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 50.019,
+      "overlapped_width_percent": 25.0095
+    },
+    {
+      "bridge": "L3-S-37C27",
+      "cad_handle": "37C27",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        539.024,
+        50.019,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 50.019,
+      "depth_witness_mm": [
+        13164.023998,
+        21275.019,
+        15002.359
+      ],
+      "old_sample_depth_mm": 50.019,
+      "separation_mm": 50.019,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 539.024,
+        "X+": 7700.389,
+        "Y-": 50.019,
+        "Y+": 899.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        539.024,
+        50.019,
+        100.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        21225.0,
+        15002.359
+      ],
+      "intersection_high_mm": [
+        13164.024,
+        21275.019,
+        15102.359
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 50.019,
+      "overlapped_width_percent": 25.0095
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "cad_handle": "37BFC",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-019",
+      "column_scope": "structure",
+      "source_column_part": "COL-019",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          14025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          14775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        13325.362,
+        14400.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 57974.619,
+        "Y+": 7782.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13325.362,
+        14025.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        14775.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "cad_handle": "37BFC",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        13325.362,
+        21600.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 50774.619,
+        "Y+": 14982.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13325.362,
+        21225.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        21975.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "cad_handle": "37BFC",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-055",
+      "column_scope": "structure",
+      "source_column_part": "COL-055",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          42825.0,
+          0.0
+        ],
+        [
+          13375.0,
+          43575.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        13325.362,
+        43200.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 29174.619,
+        "Y+": 36582.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13325.362,
+        42825.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        43575.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "cad_handle": "37BFC",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        13325.362,
+        50400.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 21974.619,
+        "Y+": 43782.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13325.362,
+        50025.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        50775.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "cad_handle": "37BFC",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-073",
+      "column_scope": "structure",
+      "source_column_part": "COL-073",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          57225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          57975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        13325.362,
+        57600.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 14774.619,
+        "Y+": 50982.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13325.362,
+        57225.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        57975.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "cad_handle": "37BFC",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-083",
+      "column_scope": "structure",
+      "source_column_part": "COL-083",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        64800.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          64425.0,
+          0.0
+        ],
+        [
+          13375.0,
+          65175.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        13325.362,
+        64800.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 7574.619,
+        "Y+": 58182.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13325.362,
+        64425.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        65175.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37C46",
+      "cad_handle": "37C46",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-023",
+      "column_scope": "structure",
+      "source_column_part": "COL-023",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          37625.0,
+          14025.0,
+          0.0
+        ],
+        [
+          38375.0,
+          14775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        38325.362,
+        14400.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 57974.619,
+        "Y+": 7782.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        38325.362,
+        14025.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        38375.0,
+        14775.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37C46",
+      "cad_handle": "37C46",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-032",
+      "column_scope": "structure",
+      "source_column_part": "COL-032",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          37625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          38375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        38325.362,
+        21600.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 50774.619,
+        "Y+": 14982.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        38325.362,
+        21225.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        38375.0,
+        21975.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L1-S-37C46",
+      "cad_handle": "37C46",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-050",
+      "column_scope": "structure",
+      "source_column_part": "COL-050",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          37625.0,
+          35625.0,
+          0.0
+        ],
+        [
+          38375.0,
+          36375.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 49.638,
+      "depth_witness_mm": [
+        38325.362,
+        36000.0,
+        4800.521
+      ],
+      "old_sample_depth_mm": 49.638,
+      "separation_mm": 49.638,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 900.362,
+        "X+": 49.638,
+        "Y-": 36374.619,
+        "Y+": 29382.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        49.638,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        38325.362,
+        35625.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        38375.0,
+        36375.0,
+        5000.521
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 49.638,
+      "overlapped_width_percent": 24.819
+    },
+    {
+      "bridge": "L3-C17",
+      "cad_handle": "37C25",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L3",
+      "bridge_type": "垂直下弯",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        210.976,
+        48.422,
+        400.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 48.422,
+      "depth_witness_mm": [
+        13245.301,
+        50073.422,
+        15000.814
+      ],
+      "old_sample_depth_mm": 48.422,
+      "separation_mm": 48.422,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 210.976,
+        "Y-": 48.422,
+        "Y+": 901.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        210.976,
+        48.422,
+        400.0
+      ],
+      "intersection_low_mm": [
+        13164.024,
+        50025.0,
+        15000.814
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        50073.422,
+        15400.814
+      ]
+    },
+    {
+      "bridge": "L3-S-37C21",
+      "cad_handle": "37C21",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-063",
+      "column_scope": "structure",
+      "source_column_part": "COL-063",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        6000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          5625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          6375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        455.109,
+        48.422,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 48.422,
+      "depth_witness_mm": [
+        6123.2345,
+        50073.422,
+        15000.814
+      ],
+      "old_sample_depth_mm": 48.422,
+      "separation_mm": 48.422,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 7539.024,
+        "X+": 455.109,
+        "Y-": 48.422,
+        "Y+": 901.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        455.109,
+        48.422,
+        100.0
+      ],
+      "intersection_low_mm": [
+        5919.891,
+        50025.0,
+        15000.814
+      ],
+      "intersection_high_mm": [
+        6375.0,
+        50073.422,
+        15100.814
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 48.422,
+      "overlapped_width_percent": 24.211
+    },
+    {
+      "bridge": "L3-S-37C21",
+      "cad_handle": "37C21",
+      "bridge_sections_mm": [
+        [
+          200,
+          100
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        539.024,
+        48.422,
+        100.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 48.422,
+      "depth_witness_mm": [
+        13164.023996,
+        50073.422,
+        15000.814
+      ],
+      "old_sample_depth_mm": 48.422,
+      "separation_mm": 48.422,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 539.024,
+        "X+": 7455.109,
+        "Y-": 48.422,
+        "Y+": 901.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        539.024,
+        48.422,
+        100.0
+      ],
+      "intersection_low_mm": [
+        12625.0,
+        50025.0,
+        15000.814
+      ],
+      "intersection_high_mm": [
+        13164.024,
+        50073.422,
+        15100.814
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 48.422,
+      "overlapped_width_percent": 24.211
+    },
+    {
+      "bridge": "L3-S-37C1A",
+      "cad_handle": "37C1A",
+      "bridge_sections_mm": [
+        [
+          500,
+          200
+        ]
+      ],
+      "column": "COL-049",
+      "column_scope": "structure",
+      "source_column_part": "COL-049",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          31625.0,
+          35625.0,
+          0.0
+        ],
+        [
+          32375.0,
+          36375.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        750.0,
+        47.03,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 47.03,
+      "depth_witness_mm": [
+        32000.0,
+        36327.97,
+        18000.936
+      ],
+      "old_sample_depth_mm": 47.03,
+      "separation_mm": 47.03,
+      "direction": "Y+",
+      "moves_mm": {
+        "X-": 7159.37,
+        "X+": 1375.389,
+        "Y-": 1202.97,
+        "Y+": 47.03
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        750.0,
+        47.03,
+        200.0
+      ],
+      "intersection_low_mm": [
+        31625.0,
+        36327.97,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        32375.0,
+        36375.0,
+        18200.936
+      ],
+      "bridge_width_mm": 500,
+      "overlapped_width_mm": 47.03,
+      "overlapped_width_percent": 9.406
+    },
+    {
+      "bridge": "L3-S-37C1A",
+      "cad_handle": "37C1A",
+      "bridge_sections_mm": [
+        [
+          500,
+          200
+        ]
+      ],
+      "column": "COL-050",
+      "column_scope": "structure",
+      "source_column_part": "COL-050",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          37625.0,
+          35625.0,
+          0.0
+        ],
+        [
+          38375.0,
+          36375.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        750.0,
+        47.03,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">30–60 mm",
+      "max_depth_mm": 47.03,
+      "depth_witness_mm": [
+        38000.0,
+        36327.97,
+        18000.936
+      ],
+      "old_sample_depth_mm": 47.03,
+      "separation_mm": 47.03,
+      "direction": "Y+",
+      "moves_mm": {
+        "X-": 1159.37,
+        "X+": 7375.389,
+        "Y-": 1202.97,
+        "Y+": 47.03
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        750.0,
+        47.03,
+        200.0
+      ],
+      "intersection_low_mm": [
+        37625.0,
+        36327.97,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        38375.0,
+        36375.0,
+        18200.936
+      ],
+      "bridge_width_mm": 500,
+      "overlapped_width_mm": 47.03,
+      "overlapped_width_percent": 9.406
+    },
+    {
+      "bridge": "L1-C05",
+      "cad_handle": "37C41",
+      "bridge_sections_mm": [
+        [
+          800.0,
+          200.0
+        ]
+      ],
+      "column": "STAIR-SE-TZ-4",
+      "column_scope": "stair_column",
+      "source_column_part": "STAIR-SE-TZ",
+      "level": "L1",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        300.0,
+        400.0
+      ],
+      "column_axis_xy_mm": [
+        41000.0,
+        7325.0
+      ],
+      "column_bounds_mm": [
+        [
+          40850.0,
+          7125.0,
+          0.0
+        ],
+        [
+          41150.0,
+          7525.0,
+          12000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        300.0,
+        267.898,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 26.118,
+      "depth_witness_mm": [
+        41123.882,
+        7392.898,
+        4800.521
+      ],
+      "old_sample_depth_mm": 26.118,
+      "separation_mm": 26.118,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 1073.882,
+        "X+": 26.118,
+        "Y-": 267.898,
+        "Y+": 1632.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        26.118,
+        267.898,
+        200.0
+      ],
+      "intersection_low_mm": [
+        41123.882,
+        7125.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        41150.0,
+        7392.898,
+        5000.521
+      ]
+    },
+    {
+      "bridge": "L1-C06",
+      "cad_handle": "37C43",
+      "bridge_sections_mm": [
+        [
+          800.0,
+          200.0
+        ]
+      ],
+      "column": "STAIR-SE-TZ-4",
+      "column_scope": "stair_column",
+      "source_column_part": "STAIR-SE-TZ",
+      "level": "L1",
+      "bridge_type": "垂直下弯",
+      "column_section_mm": [
+        300.0,
+        400.0
+      ],
+      "column_axis_xy_mm": [
+        41000.0,
+        7325.0
+      ],
+      "column_bounds_mm": [
+        [
+          40850.0,
+          7125.0,
+          0.0
+        ],
+        [
+          41150.0,
+          7525.0,
+          12000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        26.118,
+        122.102,
+        500.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 26.118,
+      "depth_witness_mm": [
+        41123.882,
+        7450.89,
+        4800.521
+      ],
+      "old_sample_depth_mm": 26.118,
+      "separation_mm": 26.118,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 1073.882,
+        "X+": 26.118,
+        "Y-": 777.898,
+        "Y+": 122.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        26.118,
+        122.102,
+        200.0
+      ],
+      "intersection_low_mm": [
+        41123.882,
+        7402.898,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        41150.0,
+        7525.0,
+        5000.521
+      ]
+    },
+    {
+      "bridge": "L1-S-37C48",
+      "cad_handle": "37C48",
+      "bridge_sections_mm": [
+        [
+          800,
+          200
+        ]
+      ],
+      "column": "STAIR-SE-TZ-4",
+      "column_scope": "stair_column",
+      "source_column_part": "STAIR-SE-TZ",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        300.0,
+        400.0
+      ],
+      "column_axis_xy_mm": [
+        41000.0,
+        7325.0
+      ],
+      "column_bounds_mm": [
+        [
+          40850.0,
+          7125.0,
+          0.0
+        ],
+        [
+          41150.0,
+          7525.0,
+          12000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        26.118,
+        10.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 26.118,
+      "depth_witness_mm": [
+        41123.882,
+        7397.898,
+        4800.521
+      ],
+      "old_sample_depth_mm": 26.118,
+      "separation_mm": 26.118,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 1073.882,
+        "X+": 26.118,
+        "Y-": 277.898,
+        "Y+": 132.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        26.118,
+        10.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        41123.882,
+        7392.898,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        41150.0,
+        7402.898,
+        5000.521
+      ],
+      "bridge_width_mm": 800,
+      "overlapped_width_mm": 26.118,
+      "overlapped_width_percent": 3.2647
+    },
+    {
+      "bridge": "L2-C05",
+      "cad_handle": "37C09",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          500.0,
+          200.0
+        ]
+      ],
+      "column": "COL-013",
+      "column_scope": "structure",
+      "source_column_part": "COL-013",
+      "level": "L2",
+      "bridge_type": "水平三通",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          32325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        452.317,
+        149.527,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 15.922,
+      "depth_witness_mm": [
+        32309.078,
+        6890.922,
+        10800.331
+      ],
+      "old_sample_depth_mm": 14.8135,
+      "separation_mm": 31.844,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 877.21,
+        "X+": 31.844,
+        "Y-": 149.527,
+        "Y+": 1300.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        31.844,
+        149.527,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32293.156,
+        6875.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        7024.527,
+        11000.331
+      ]
+    },
+    {
+      "bridge": "L2-C02",
+      "cad_handle": "37C05",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          500.0,
+          200.0
+        ]
+      ],
+      "column": "COL-011",
+      "column_scope": "structure",
+      "source_column_part": "COL-011",
+      "level": "L2",
+      "bridge_type": "水平三通",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          19325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        450.011,
+        149.527,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 14.769,
+      "depth_witness_mm": [
+        19310.231,
+        6889.769,
+        10800.331
+      ],
+      "old_sample_depth_mm": 14.769,
+      "separation_mm": 29.538,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 879.516,
+        "X+": 29.538,
+        "Y-": 149.527,
+        "Y+": 1300.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        29.538,
+        149.527,
+        200.0
+      ],
+      "intersection_low_mm": [
+        19295.462,
+        6875.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        19325.0,
+        7024.527,
+        11000.331
+      ]
+    },
+    {
+      "bridge": "L2-C08",
+      "cad_handle": "37C02",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          500.0,
+          200.0
+        ]
+      ],
+      "column": "COL-012",
+      "column_scope": "structure",
+      "source_column_part": "COL-012",
+      "level": "L2",
+      "bridge_type": "水平三通",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          26325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        450.011,
+        149.527,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 14.769,
+      "depth_witness_mm": [
+        26310.231,
+        6889.769,
+        10800.331
+      ],
+      "old_sample_depth_mm": 14.769,
+      "separation_mm": 29.538,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 879.516,
+        "X+": 29.538,
+        "Y-": 149.527,
+        "Y+": 1300.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        29.538,
+        149.527,
+        200.0
+      ],
+      "intersection_low_mm": [
+        26295.462,
+        6875.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        26325.0,
+        7024.527,
+        11000.331
+      ]
+    },
+    {
+      "bridge": "L3-C02",
+      "cad_handle": "37C26",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L3",
+      "bridge_type": "垂直三通",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        350.019,
+        400.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        21475.019,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 350.019,
+        "Y+": 1199.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        350.019,
+        400.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        21225.0,
+        17800.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        21575.019,
+        18200.936
+      ]
+    },
+    {
+      "bridge": "L3-C15",
+      "cad_handle": "37C1E",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L3",
+      "bridge_type": "垂直三通",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        348.422,
+        400.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        50273.422,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 348.422,
+        "Y+": 1201.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        348.422,
+        400.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        50025.0,
+        17800.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        50373.422,
+        18200.936
+      ]
+    },
+    {
+      "bridge": "L3-S-37BE5",
+      "cad_handle": "37BE5",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-019",
+      "column_scope": "structure",
+      "source_column_part": "COL-019",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          14025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          14775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        699.981,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        14419.5215,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 6750.019,
+        "Y+": 699.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        699.981,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        14075.019,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        14775.0,
+        18200.936
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 10.976,
+      "overlapped_width_percent": 5.488
+    },
+    {
+      "bridge": "L3-S-37BE6",
+      "cad_handle": "37BE6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        399.981,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        21769.5215,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 14802.97,
+        "Y+": 399.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        399.981,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        21575.019,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        21975.0,
+        18200.936
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 10.976,
+      "overlapped_width_percent": 5.488
+    },
+    {
+      "bridge": "L3-S-37C1F",
+      "cad_handle": "37C1F",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-055",
+      "column_scope": "structure",
+      "source_column_part": "COL-055",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          42825.0,
+          0.0
+        ],
+        [
+          13375.0,
+          43575.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        43200.0,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 6748.422,
+        "Y+": 6647.03
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        42825.0,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        43575.0,
+        18200.936
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 10.976,
+      "overlapped_width_percent": 5.488
+    },
+    {
+      "bridge": "L3-S-37C20",
+      "cad_handle": "37C20",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        401.578,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        50568.723,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 21999.619,
+        "Y+": 401.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        401.578,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        50373.422,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        50775.0,
+        18200.936
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 10.976,
+      "overlapped_width_percent": 5.488
+    },
+    {
+      "bridge": "L3-S-37C20",
+      "cad_handle": "37C20",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-073",
+      "column_scope": "structure",
+      "source_column_part": "COL-073",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          57225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          57975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        57600.0,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 14799.619,
+        "Y+": 7601.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        57225.0,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        57975.0,
+        18200.936
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 10.976,
+      "overlapped_width_percent": 5.488
+    },
+    {
+      "bridge": "L3-S-37C20",
+      "cad_handle": "37C20",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-083",
+      "column_scope": "structure",
+      "source_column_part": "COL-083",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        64800.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          64425.0,
+          0.0
+        ],
+        [
+          13375.0,
+          65175.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        750.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        64800.0,
+        18000.936
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 7599.619,
+        "Y+": 14801.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        750.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        64425.0,
+        18000.936
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        65175.0,
+        18200.936
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 10.976,
+      "overlapped_width_percent": 5.488
+    },
+    {
+      "bridge": "L3-S-37C24",
+      "cad_handle": "37C24",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-064",
+      "column_scope": "structure",
+      "source_column_part": "COL-064",
+      "level": "L3",
+      "bridge_type": "竖向直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          50025.0,
+          0.0
+        ],
+        [
+          13375.0,
+          50775.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        48.422,
+        2400.122
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        50073.422,
+        16600.875
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 48.422,
+        "Y+": 901.578
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        2.0,
+        2400.122
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        50071.422,
+        15400.814
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        50073.422,
+        17800.936
+      ]
+    },
+    {
+      "bridge": "L3-S-37C28",
+      "cad_handle": "37C28",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-028",
+      "column_scope": "structure",
+      "source_column_part": "COL-028",
+      "level": "L3",
+      "bridge_type": "竖向直段",
+      "column_section_mm": [
+        750.0,
+        750.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          12625.0,
+          21225.0,
+          0.0
+        ],
+        [
+          13375.0,
+          21975.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        10.976,
+        50.019,
+        2398.577
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.976,
+      "depth_witness_mm": [
+        13364.024,
+        21275.019,
+        16601.6475
+      ],
+      "old_sample_depth_mm": 10.976,
+      "separation_mm": 10.976,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 939.024,
+        "X+": 10.976,
+        "Y-": 50.019,
+        "Y+": 899.981
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        10.976,
+        2.0,
+        2398.577
+      ],
+      "intersection_low_mm": [
+        13364.024,
+        21273.019,
+        15402.359
+      ],
+      "intersection_high_mm": [
+        13375.0,
+        21275.019,
+        17800.936
+      ]
+    },
+    {
+      "bridge": "L2-C11",
+      "cad_handle": "37CBC",
+      "bridge_sections_mm": [
+        [
+          500.0,
+          200.0
+        ]
+      ],
+      "column": "COL-014",
+      "column_scope": "structure",
+      "source_column_part": "COL-014",
+      "level": "L2",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          37675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          38325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        521.454,
+        399.527,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": ">10–30 mm",
+      "max_depth_mm": 10.4905,
+      "depth_witness_mm": [
+        38314.5095,
+        6885.4905,
+        9001.63
+      ],
+      "old_sample_depth_mm": 10.4905,
+      "separation_mm": 20.981,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 1178.546,
+        "X+": 20.981,
+        "Y-": 20.981,
+        "Y+": 1300.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        20.981,
+        20.981,
+        200.0
+      ],
+      "intersection_low_mm": [
+        38304.019,
+        6875.0,
+        9001.63
+      ],
+      "intersection_high_mm": [
+        38325.0,
+        6895.981,
+        9201.63
+      ]
+    },
+    {
+      "bridge": "L2-C01",
+      "cad_handle": "37C06",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          500.0,
+          200.0
+        ]
+      ],
+      "column": "COL-010",
+      "column_scope": "structure",
+      "source_column_part": "COL-010",
+      "level": "L2",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          12675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          13325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        409.43,
+        99.527,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 9.43,
+      "depth_witness_mm": [
+        12684.43,
+        6974.527,
+        10800.331
+      ],
+      "old_sample_depth_mm": 9.43,
+      "separation_mm": 9.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 9.43,
+        "X+": 840.57,
+        "Y-": 99.527,
+        "Y+": 1300.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        9.43,
+        99.527,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12675.0,
+        6875.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        6974.527,
+        11000.331
+      ]
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-010",
+      "column_scope": "structure",
+      "source_column_part": "COL-010",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          12675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          13325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        9.43,
+        550.473,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 9.43,
+      "depth_witness_mm": [
+        12684.43,
+        7245.0485,
+        10800.331
+      ],
+      "old_sample_depth_mm": 9.43,
+      "separation_mm": 9.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 9.43,
+        "X+": 840.57,
+        "Y-": 65149.619,
+        "Y+": 550.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        9.43,
+        550.473,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12675.0,
+        6974.527,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        7525.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 9.43,
+      "overlapped_width_percent": 4.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-037",
+      "column_scope": "structure",
+      "source_column_part": "COL-037",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        28800.0
+      ],
+      "column_bounds_mm": [
+        [
+          12675.0,
+          28475.0,
+          0.0
+        ],
+        [
+          13325.0,
+          29125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        9.43,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 9.43,
+      "depth_witness_mm": [
+        12684.43,
+        28800.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 9.43,
+      "separation_mm": 9.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 9.43,
+        "X+": 840.57,
+        "Y-": 43549.619,
+        "Y+": 22150.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        9.43,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12675.0,
+        28475.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        29125.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 9.43,
+      "overlapped_width_percent": 4.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-046",
+      "column_scope": "structure",
+      "source_column_part": "COL-046",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          12675.0,
+          35675.0,
+          0.0
+        ],
+        [
+          13325.0,
+          36325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        9.43,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 9.43,
+      "depth_witness_mm": [
+        12684.43,
+        36000.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 9.43,
+      "separation_mm": 9.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 9.43,
+        "X+": 840.57,
+        "Y-": 36349.619,
+        "Y+": 29350.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        9.43,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12675.0,
+        35675.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        36325.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 9.43,
+      "overlapped_width_percent": 4.715
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "cad_handle": "37BFF",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-092",
+      "column_scope": "structure",
+      "source_column_part": "COL-092",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        72000.0
+      ],
+      "column_bounds_mm": [
+        [
+          12675.0,
+          71675.0,
+          0.0
+        ],
+        [
+          13325.0,
+          72325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        9.43,
+        349.619,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 9.43,
+      "depth_witness_mm": [
+        12684.43,
+        71854.5245,
+        10800.331
+      ],
+      "old_sample_depth_mm": 9.43,
+      "separation_mm": 9.43,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 9.43,
+        "X+": 840.57,
+        "Y-": 349.619,
+        "Y+": 65350.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        9.43,
+        349.619,
+        200.0
+      ],
+      "intersection_low_mm": [
+        12675.0,
+        71675.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        12684.43,
+        72024.619,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 9.43,
+      "overlapped_width_percent": 4.715
+    },
+    {
+      "bridge": "L1-C01",
+      "cad_handle": "37E73",
+      "bridge_sections_mm": [
+        [
+          400.0,
+          200.0
+        ],
+        [
+          800.0,
+          200.0
+        ]
+      ],
+      "column": "COL-009",
+      "column_scope": "structure",
+      "source_column_part": "COL-009",
+      "level": "L1",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        6000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          5675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          6325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        505.208,
+        117.898,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 5.208,
+      "depth_witness_mm": [
+        5680.208,
+        6992.898,
+        4800.521
+      ],
+      "old_sample_depth_mm": 5.208,
+      "separation_mm": 5.208,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 5.208,
+        "X+": 1044.792,
+        "Y-": 117.898,
+        "Y+": 1632.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        5.208,
+        117.898,
+        200.0
+      ],
+      "intersection_low_mm": [
+        5675.0,
+        6875.0,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        5680.208,
+        6992.898,
+        5000.521
+      ]
+    },
+    {
+      "bridge": "L1-S-37E70",
+      "cad_handle": "37E70",
+      "bridge_sections_mm": [
+        [
+          400,
+          200
+        ]
+      ],
+      "column": "COL-009",
+      "column_scope": "structure",
+      "source_column_part": "COL-009",
+      "level": "L1",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        6000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          5675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          6325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        5.208,
+        532.102,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 5.208,
+      "depth_witness_mm": [
+        5680.208,
+        7256.345,
+        4800.521
+      ],
+      "old_sample_depth_mm": 5.208,
+      "separation_mm": 5.208,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 5.208,
+        "X+": 1044.792,
+        "Y-": 993.869,
+        "Y+": 532.102
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        5.208,
+        532.102,
+        200.0
+      ],
+      "intersection_low_mm": [
+        5675.0,
+        6992.898,
+        4800.521
+      ],
+      "intersection_high_mm": [
+        5680.208,
+        7525.0,
+        5000.521
+      ],
+      "bridge_width_mm": 400,
+      "overlapped_width_mm": 5.208,
+      "overlapped_width_percent": 1.302
+    },
+    {
+      "bridge": "L3-C09",
+      "cad_handle": "37EF7",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-043",
+      "column_scope": "structure",
+      "source_column_part": "COL-043",
+      "level": "L3",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        44000.0,
+        28800.0
+      ],
+      "column_bounds_mm": [
+        [
+          43675.0,
+          28475.0,
+          0.0
+        ],
+        [
+          44325.0,
+          29125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        4.332,
+        325.805,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 4.332,
+      "depth_witness_mm": [
+        43679.332,
+        28799.195,
+        16900.0
+      ],
+      "old_sample_depth_mm": 4.332,
+      "separation_mm": 4.332,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 4.332,
+        "X+": 1245.668,
+        "Y-": 924.195,
+        "Y+": 325.805
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        4.332,
+        325.805,
+        200.0
+      ],
+      "intersection_low_mm": [
+        43675.0,
+        28799.195,
+        16900.0
+      ],
+      "intersection_high_mm": [
+        43679.332,
+        29125.0,
+        17100.0
+      ]
+    },
+    {
+      "bridge": "L3-S-37EF1",
+      "cad_handle": "37EF1",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-052",
+      "column_scope": "structure",
+      "source_column_part": "COL-052",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        44000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          43675.0,
+          35675.0,
+          0.0
+        ],
+        [
+          44325.0,
+          36325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 4.332,
+      "depth_witness_mm": [
+        43679.332,
+        36000.0,
+        16900.0
+      ],
+      "old_sample_depth_mm": 4.332,
+      "separation_mm": 4.332,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 4.332,
+        "X+": 845.668,
+        "Y-": 28799.619,
+        "Y+": 6925.805
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        43675.0,
+        35675.0,
+        16900.0
+      ],
+      "intersection_high_mm": [
+        43679.332,
+        36325.0,
+        17100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 4.332,
+      "overlapped_width_percent": 2.166
+    },
+    {
+      "bridge": "L3-S-37EF1",
+      "cad_handle": "37EF1",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-061",
+      "column_scope": "structure",
+      "source_column_part": "COL-061",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        44000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          43675.0,
+          42875.0,
+          0.0
+        ],
+        [
+          44325.0,
+          43525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 4.332,
+      "depth_witness_mm": [
+        43679.332,
+        43200.0,
+        16900.0
+      ],
+      "old_sample_depth_mm": 4.332,
+      "separation_mm": 4.332,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 4.332,
+        "X+": 845.668,
+        "Y-": 21599.619,
+        "Y+": 14125.805
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        43675.0,
+        42875.0,
+        16900.0
+      ],
+      "intersection_high_mm": [
+        43679.332,
+        43525.0,
+        17100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 4.332,
+      "overlapped_width_percent": 2.166
+    },
+    {
+      "bridge": "L3-S-37EF1",
+      "cad_handle": "37EF1",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-070",
+      "column_scope": "structure",
+      "source_column_part": "COL-070",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        44000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          43675.0,
+          50075.0,
+          0.0
+        ],
+        [
+          44325.0,
+          50725.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 4.332,
+      "depth_witness_mm": [
+        43679.332,
+        50400.0,
+        16900.0
+      ],
+      "old_sample_depth_mm": 4.332,
+      "separation_mm": 4.332,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 4.332,
+        "X+": 845.668,
+        "Y-": 14399.619,
+        "Y+": 21325.805
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        43675.0,
+        50075.0,
+        16900.0
+      ],
+      "intersection_high_mm": [
+        43679.332,
+        50725.0,
+        17100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 4.332,
+      "overlapped_width_percent": 2.166
+    },
+    {
+      "bridge": "L3-S-37EF1",
+      "cad_handle": "37EF1",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-079",
+      "column_scope": "structure",
+      "source_column_part": "COL-079",
+      "level": "L3",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        44000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          43675.0,
+          57275.0,
+          0.0
+        ],
+        [
+          44325.0,
+          57925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 4.332,
+      "depth_witness_mm": [
+        43679.332,
+        57600.0,
+        16900.0
+      ],
+      "old_sample_depth_mm": 4.332,
+      "separation_mm": 4.332,
+      "direction": "X-",
+      "moves_mm": {
+        "X-": 4.332,
+        "X+": 845.668,
+        "Y-": 7199.619,
+        "Y+": 28525.805
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        4.332,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        43675.0,
+        57275.0,
+        16900.0
+      ],
+      "intersection_high_mm": [
+        43679.332,
+        57925.0,
+        17100.0
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 4.332,
+      "overlapped_width_percent": 2.166
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-013",
+      "column_scope": "structure",
+      "source_column_part": "COL-013",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          32325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        500.473,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.317,
+      "depth_witness_mm": [
+        32322.683,
+        7273.605,
+        10800.331
+      ],
+      "old_sample_depth_mm": 2.317,
+      "separation_mm": 2.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 847.683,
+        "X+": 2.317,
+        "Y-": 64202.042,
+        "Y+": 500.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        500.473,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        7024.527,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        7525.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.317,
+      "overlapped_width_percent": 1.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-040",
+      "column_scope": "structure",
+      "source_column_part": "COL-040",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        28800.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          28475.0,
+          0.0
+        ],
+        [
+          32325.0,
+          29125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.317,
+      "depth_witness_mm": [
+        32322.683,
+        28800.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 2.317,
+      "separation_mm": 2.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 847.683,
+        "X+": 2.317,
+        "Y-": 42602.042,
+        "Y+": 22100.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        28475.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        29125.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.317,
+      "overlapped_width_percent": 1.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-058",
+      "column_scope": "structure",
+      "source_column_part": "COL-058",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          42875.0,
+          0.0
+        ],
+        [
+          32325.0,
+          43525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.317,
+      "depth_witness_mm": [
+        32322.683,
+        43200.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 2.317,
+      "separation_mm": 2.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 847.683,
+        "X+": 2.317,
+        "Y-": 28202.042,
+        "Y+": 36500.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        42875.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        43525.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.317,
+      "overlapped_width_percent": 1.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-067",
+      "column_scope": "structure",
+      "source_column_part": "COL-067",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          50075.0,
+          0.0
+        ],
+        [
+          32325.0,
+          50725.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.317,
+      "depth_witness_mm": [
+        32322.683,
+        50400.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 2.317,
+      "separation_mm": 2.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 847.683,
+        "X+": 2.317,
+        "Y-": 21002.042,
+        "Y+": 43700.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        50075.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        50725.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.317,
+      "overlapped_width_percent": 1.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-076",
+      "column_scope": "structure",
+      "source_column_part": "COL-076",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          57275.0,
+          0.0
+        ],
+        [
+          32325.0,
+          57925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.317,
+      "depth_witness_mm": [
+        32322.683,
+        57600.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 2.317,
+      "separation_mm": 2.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 847.683,
+        "X+": 2.317,
+        "Y-": 13802.042,
+        "Y+": 50900.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        57275.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        57925.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.317,
+      "overlapped_width_percent": 1.1585
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "cad_handle": "37C69",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-086",
+      "column_scope": "structure",
+      "source_column_part": "COL-086",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        64800.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          64475.0,
+          0.0
+        ],
+        [
+          32325.0,
+          65125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.317,
+      "depth_witness_mm": [
+        32322.683,
+        64800.0,
+        10800.331
+      ],
+      "old_sample_depth_mm": 2.317,
+      "separation_mm": 2.317,
+      "direction": "X+",
+      "moves_mm": {
+        "X-": 847.683,
+        "X+": 2.317,
+        "Y-": 6602.042,
+        "Y+": 58100.473
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        650.0,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        64475.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        65125.0,
+        11000.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.317,
+      "overlapped_width_percent": 1.1585
+    },
+    {
+      "bridge": "L2-C19",
+      "cad_handle": "37C68",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-095",
+      "column_scope": "structure",
+      "source_column_part": "COL-095",
+      "level": "L2",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        32000.0,
+        72000.0
+      ],
+      "column_bounds_mm": [
+        [
+          31675.0,
+          71675.0,
+          0.0
+        ],
+        [
+          32325.0,
+          72325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        2.317,
+        2.042,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.042,
+      "depth_witness_mm": [
+        32322.8205,
+        71677.042,
+        10800.331
+      ],
+      "old_sample_depth_mm": 1.6503,
+      "separation_mm": 2.042,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 1247.683,
+        "X+": 2.317,
+        "Y-": 2.042,
+        "Y+": 1247.958
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        2.317,
+        2.042,
+        200.0
+      ],
+      "intersection_low_mm": [
+        32322.683,
+        71675.0,
+        10800.331
+      ],
+      "intersection_high_mm": [
+        32325.0,
+        71677.042,
+        11000.331
+      ]
+    },
+    {
+      "bridge": "L2-C20",
+      "cad_handle": "37ED7",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "column": "COL-096",
+      "column_scope": "structure",
+      "source_column_part": "COL-096",
+      "level": "L2",
+      "bridge_type": "水平弯头",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        72000.0
+      ],
+      "column_bounds_mm": [
+        [
+          37675.0,
+          71675.0,
+          0.0
+        ],
+        [
+          38325.0,
+          72325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        395.291,
+        2.042,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.042,
+      "depth_witness_mm": [
+        38126.3335,
+        71677.042,
+        10400.331
+      ],
+      "old_sample_depth_mm": 2.042,
+      "separation_mm": 2.042,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 854.709,
+        "X+": 395.291,
+        "Y-": 2.042,
+        "Y+": 1043.249
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        395.291,
+        2.042,
+        200.0
+      ],
+      "intersection_low_mm": [
+        37929.709,
+        71675.0,
+        10400.331
+      ],
+      "intersection_high_mm": [
+        38325.0,
+        71677.042,
+        10600.331
+      ]
+    },
+    {
+      "bridge": "L2-S-37ED2",
+      "cad_handle": "37ED2",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-096",
+      "column_scope": "structure",
+      "source_column_part": "COL-096",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        72000.0
+      ],
+      "column_bounds_mm": [
+        [
+          37675.0,
+          71675.0,
+          0.0
+        ],
+        [
+          38325.0,
+          72325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        254.709,
+        2.042,
+        200.0
+      ],
+      "status": "实际穿入",
+      "depth_band": "0.1–10 mm",
+      "max_depth_mm": 2.042,
+      "depth_witness_mm": [
+        37803.375499,
+        71677.042,
+        10400.331
+      ],
+      "old_sample_depth_mm": 2.042,
+      "separation_mm": 2.042,
+      "direction": "Y-",
+      "moves_mm": {
+        "X-": 254.709,
+        "X+": 4700.011,
+        "Y-": 2.042,
+        "Y+": 847.958
+      },
+      "separation_rechecked": true,
+      "actual_intersection_extent_mm": [
+        254.709,
+        2.042,
+        200.0
+      ],
+      "intersection_low_mm": [
+        37675.0,
+        71675.0,
+        10400.331
+      ],
+      "intersection_high_mm": [
+        37929.709,
+        71677.042,
+        10600.331
+      ],
+      "bridge_width_mm": 200,
+      "overlapped_width_mm": 2.042,
+      "overlapped_width_percent": 1.021
+    }
+  ],
+  "normal_contacts": [
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-011",
+      "column_scope": "structure",
+      "source_column_part": "COL-011",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          19325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        500.473,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-020",
+      "column_scope": "structure",
+      "source_column_part": "COL-020",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          14075.0,
+          0.0
+        ],
+        [
+          19325.0,
+          14725.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-029",
+      "column_scope": "structure",
+      "source_column_part": "COL-029",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          21275.0,
+          0.0
+        ],
+        [
+          19325.0,
+          21925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-038",
+      "column_scope": "structure",
+      "source_column_part": "COL-038",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        28800.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          28475.0,
+          0.0
+        ],
+        [
+          19325.0,
+          29125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-047",
+      "column_scope": "structure",
+      "source_column_part": "COL-047",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          35675.0,
+          0.0
+        ],
+        [
+          19325.0,
+          36325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-056",
+      "column_scope": "structure",
+      "source_column_part": "COL-056",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          42875.0,
+          0.0
+        ],
+        [
+          19325.0,
+          43525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-065",
+      "column_scope": "structure",
+      "source_column_part": "COL-065",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          50075.0,
+          0.0
+        ],
+        [
+          19325.0,
+          50725.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC6",
+      "cad_handle": "37EC6",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-074",
+      "column_scope": "structure",
+      "source_column_part": "COL-074",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        19000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          18675.0,
+          57275.0,
+          0.0
+        ],
+        [
+          19325.0,
+          57925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EC1",
+      "cad_handle": "37EC1",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-012",
+      "column_scope": "structure",
+      "source_column_part": "COL-012",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          26325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        500.473,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-021",
+      "column_scope": "structure",
+      "source_column_part": "COL-021",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        14400.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          14075.0,
+          0.0
+        ],
+        [
+          26325.0,
+          14725.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-030",
+      "column_scope": "structure",
+      "source_column_part": "COL-030",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        21600.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          21275.0,
+          0.0
+        ],
+        [
+          26325.0,
+          21925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-039",
+      "column_scope": "structure",
+      "source_column_part": "COL-039",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        28800.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          28475.0,
+          0.0
+        ],
+        [
+          26325.0,
+          29125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-048",
+      "column_scope": "structure",
+      "source_column_part": "COL-048",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        36000.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          35675.0,
+          0.0
+        ],
+        [
+          26325.0,
+          36325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-057",
+      "column_scope": "structure",
+      "source_column_part": "COL-057",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        43200.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          42875.0,
+          0.0
+        ],
+        [
+          26325.0,
+          43525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-066",
+      "column_scope": "structure",
+      "source_column_part": "COL-066",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        50400.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          50075.0,
+          0.0
+        ],
+        [
+          26325.0,
+          50725.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-075",
+      "column_scope": "structure",
+      "source_column_part": "COL-075",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        57600.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          57275.0,
+          0.0
+        ],
+        [
+          26325.0,
+          57925.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-085",
+      "column_scope": "structure",
+      "source_column_part": "COL-085",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        64800.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          64475.0,
+          0.0
+        ],
+        [
+          26325.0,
+          65125.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    },
+    {
+      "bridge": "L2-S-37EB9",
+      "cad_handle": "37EB9",
+      "bridge_sections_mm": [
+        [
+          200,
+          200
+        ]
+      ],
+      "column": "COL-094",
+      "column_scope": "structure",
+      "source_column_part": "COL-094",
+      "level": "L2",
+      "bridge_type": "水平直段",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        72000.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          71675.0,
+          0.0
+        ],
+        [
+          26325.0,
+          72325.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        0.011,
+        349.619,
+        200.0
+      ],
+      "status": "表面接触（正常）"
+    }
+  ],
+  "aabb_only": [
+    {
+      "bridge": "L1-C02",
+      "cad_handle": "37C3D",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          800.0,
+          200.0
+        ]
+      ],
+      "column": "COL-010",
+      "column_scope": "structure",
+      "source_column_part": "COL-010",
+      "level": "L1",
+      "bridge_type": "水平三通",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        13000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          12675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          13325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        599.638,
+        117.898,
+        200.0
+      ],
+      "status": "仅包围盒候选，未发现实际穿入或接触"
+    },
+    {
+      "bridge": "L1-C03",
+      "cad_handle": "37C45",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          800.0,
+          200.0
+        ]
+      ],
+      "column": "COL-012",
+      "column_scope": "structure",
+      "source_column_part": "COL-012",
+      "level": "L1",
+      "bridge_type": "水平三通",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        26000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          25675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          26325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        599.638,
+        117.898,
+        200.0
+      ],
+      "status": "仅包围盒候选，未发现实际穿入或接触"
+    },
+    {
+      "bridge": "L1-C04",
+      "cad_handle": "37C47",
+      "bridge_sections_mm": [
+        [
+          200.0,
+          200.0
+        ],
+        [
+          800.0,
+          200.0
+        ]
+      ],
+      "column": "COL-014",
+      "column_scope": "structure",
+      "source_column_part": "COL-014",
+      "level": "L1",
+      "bridge_type": "水平三通",
+      "column_section_mm": [
+        650.0,
+        650.0
+      ],
+      "column_axis_xy_mm": [
+        38000.0,
+        7200.0
+      ],
+      "column_bounds_mm": [
+        [
+          37675.0,
+          6875.0,
+          0.0
+        ],
+        [
+          38325.0,
+          7525.0,
+          23000.0
+        ]
+      ],
+      "aabb_overlap_mm": [
+        599.638,
+        117.898,
+        200.0
+      ],
+      "status": "仅包围盒候选，未发现实际穿入或接触"
+    }
+  ],
+  "by_bridge": [
+    {
+      "bridge": "L1-C01",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-009"
+      ],
+      "depths_mm": [
+        5.208
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    },
+    {
+      "bridge": "L1-C05",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "STAIR-SE-TZ-4"
+      ],
+      "depths_mm": [
+        26.118
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L1-C06",
+      "bridge_type": "垂直下弯",
+      "pairs": 1,
+      "columns": [
+        "STAIR-SE-TZ-4"
+      ],
+      "depths_mm": [
+        26.118
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L1-C08",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-018"
+      ],
+      "depths_mm": [
+        55.208
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    },
+    {
+      "bridge": "L1-S-37BFC",
+      "bridge_type": "水平直段",
+      "pairs": 6,
+      "columns": [
+        "COL-019",
+        "COL-028",
+        "COL-055",
+        "COL-064",
+        "COL-073",
+        "COL-083"
+      ],
+      "depths_mm": [
+        49.638
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L1-S-37C46",
+      "bridge_type": "水平直段",
+      "pairs": 3,
+      "columns": [
+        "COL-023",
+        "COL-032",
+        "COL-050"
+      ],
+      "depths_mm": [
+        49.638
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L1-S-37C48",
+      "bridge_type": "水平直段",
+      "pairs": 1,
+      "columns": [
+        "STAIR-SE-TZ-4"
+      ],
+      "depths_mm": [
+        26.118
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L1-S-37E70",
+      "bridge_type": "水平直段",
+      "pairs": 1,
+      "columns": [
+        "COL-009"
+      ],
+      "depths_mm": [
+        5.208
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    },
+    {
+      "bridge": "L2-C01",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-010"
+      ],
+      "depths_mm": [
+        9.43
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    },
+    {
+      "bridge": "L2-C02",
+      "bridge_type": "水平三通",
+      "pairs": 1,
+      "columns": [
+        "COL-011"
+      ],
+      "depths_mm": [
+        14.769
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L2-C05",
+      "bridge_type": "水平三通",
+      "pairs": 1,
+      "columns": [
+        "COL-013"
+      ],
+      "depths_mm": [
+        15.922
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L2-C08",
+      "bridge_type": "水平三通",
+      "pairs": 1,
+      "columns": [
+        "COL-012"
+      ],
+      "depths_mm": [
+        14.769
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L2-C11",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-014"
+      ],
+      "depths_mm": [
+        10.4905
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L2-C19",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-095"
+      ],
+      "depths_mm": [
+        2.042
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L2-C20",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-096"
+      ],
+      "depths_mm": [
+        2.042
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L2-S-37BFF",
+      "bridge_type": "水平直段",
+      "pairs": 10,
+      "columns": [
+        "COL-010",
+        "COL-019",
+        "COL-028",
+        "COL-037",
+        "COL-046",
+        "COL-055",
+        "COL-064",
+        "COL-073",
+        "COL-083",
+        "COL-092"
+      ],
+      "depths_mm": [
+        9.43,
+        59.43
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    },
+    {
+      "bridge": "L2-S-37C69",
+      "bridge_type": "水平直段",
+      "pairs": 9,
+      "columns": [
+        "COL-013",
+        "COL-022",
+        "COL-031",
+        "COL-040",
+        "COL-049",
+        "COL-058",
+        "COL-067",
+        "COL-076",
+        "COL-086"
+      ],
+      "depths_mm": [
+        2.317,
+        52.317
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L2-S-37ED2",
+      "bridge_type": "水平直段",
+      "pairs": 1,
+      "columns": [
+        "COL-096"
+      ],
+      "depths_mm": [
+        2.042
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L3-C02",
+      "bridge_type": "垂直三通",
+      "pairs": 1,
+      "columns": [
+        "COL-028"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-C03",
+      "bridge_type": "垂直下弯",
+      "pairs": 1,
+      "columns": [
+        "COL-028"
+      ],
+      "depths_mm": [
+        50.019
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L3-C09",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-043"
+      ],
+      "depths_mm": [
+        4.332
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    },
+    {
+      "bridge": "L3-C15",
+      "bridge_type": "垂直三通",
+      "pairs": 1,
+      "columns": [
+        "COL-064"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-C16",
+      "bridge_type": "水平弯头",
+      "pairs": 1,
+      "columns": [
+        "COL-063"
+      ],
+      "depths_mm": [
+        71.6565
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L3-C17",
+      "bridge_type": "垂直下弯",
+      "pairs": 1,
+      "columns": [
+        "COL-064"
+      ],
+      "depths_mm": [
+        48.422
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L3-S-37BE5",
+      "bridge_type": "水平直段",
+      "pairs": 1,
+      "columns": [
+        "COL-019"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37BE6",
+      "bridge_type": "水平直段",
+      "pairs": 1,
+      "columns": [
+        "COL-028"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C1A",
+      "bridge_type": "水平直段",
+      "pairs": 2,
+      "columns": [
+        "COL-049",
+        "COL-050"
+      ],
+      "depths_mm": [
+        47.03
+      ],
+      "best_directions": [
+        "Y+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C1F",
+      "bridge_type": "水平直段",
+      "pairs": 1,
+      "columns": [
+        "COL-055"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C20",
+      "bridge_type": "水平直段",
+      "pairs": 3,
+      "columns": [
+        "COL-064",
+        "COL-073",
+        "COL-083"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C21",
+      "bridge_type": "水平直段",
+      "pairs": 2,
+      "columns": [
+        "COL-063",
+        "COL-064"
+      ],
+      "depths_mm": [
+        48.422
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C24",
+      "bridge_type": "竖向直段",
+      "pairs": 1,
+      "columns": [
+        "COL-064"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C27",
+      "bridge_type": "水平直段",
+      "pairs": 2,
+      "columns": [
+        "COL-027",
+        "COL-028"
+      ],
+      "depths_mm": [
+        50.019
+      ],
+      "best_directions": [
+        "Y-"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C28",
+      "bridge_type": "竖向直段",
+      "pairs": 1,
+      "columns": [
+        "COL-028"
+      ],
+      "depths_mm": [
+        10.976
+      ],
+      "best_directions": [
+        "X+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37C70",
+      "bridge_type": "水平直段",
+      "pairs": 3,
+      "columns": [
+        "COL-030",
+        "COL-031",
+        "COL-032"
+      ],
+      "depths_mm": [
+        149.98,
+        199.98
+      ],
+      "best_directions": [
+        "Y+"
+      ]
+    },
+    {
+      "bridge": "L3-S-37EF1",
+      "bridge_type": "水平直段",
+      "pairs": 4,
+      "columns": [
+        "COL-052",
+        "COL-061",
+        "COL-070",
+        "COL-079"
+      ],
+      "depths_mm": [
+        4.332
+      ],
+      "best_directions": [
+        "X-"
+      ]
+    }
+  ]
+}
