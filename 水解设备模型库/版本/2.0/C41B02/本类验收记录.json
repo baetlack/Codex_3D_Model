@@ -1,0 +1,52 @@
+{
+  "revision": "2.0-C41B02-01",
+  "date": "2026-11-18",
+  "status": "本体/接口/支承几何与浏览检查通过；POS定义与新接口绝对方位仍待核",
+  "items": [
+    "C41B02A",
+    "C41B02B",
+    "C41B02C",
+    "C41B02D",
+    "C41B02E"
+  ],
+  "unchanged_other_items": 94,
+  "confirmed_dimensions_mm": {
+    "tank_OD": 5500,
+    "tank_H": 5000,
+    "mixer_above_shell_top": 2185
+  },
+  "cover_changes": "按用户选择采用新增总图8组k盖及b/j各8处",
+  "support_H_mm": 160,
+  "foundation_unchanged_mm": [
+    5700,
+    150
+  ],
+  "local_datum": "型钢底承托面Z0",
+  "installation_EL": {
+    "bearing": 112.15,
+    "tank_bottom": 112.31,
+    "tank_top": 117.31,
+    "motor_top": 119.495
+  },
+  "geometry_scope": {
+    "columns": 120,
+    "beams": 76,
+    "bridge_parts": 112,
+    "other_placed_equipment": 67,
+    "intersections": []
+  },
+  "checks": [
+    "原模型及1.0哈希",
+    "槽体与原搅拌尺寸",
+    "基础/型钢接触0mm",
+    "5台位置/旋转/镜像保持",
+    "其余94项不变",
+    "新旧版本浏览与下载",
+    "建筑和桥架原几何不变"
+  ],
+  "pending": [
+    "POS EL承托面定义待确认，5台安装Z状态未标确认。",
+    "新接口绝对方位待工艺图，原旋转/镜像只作暂用。",
+    "盖径、法兰及局部厚度等包络假设见参数。"
+  ]
+}

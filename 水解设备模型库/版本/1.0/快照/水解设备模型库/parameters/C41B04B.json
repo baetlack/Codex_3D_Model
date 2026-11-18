@@ -1,0 +1,53 @@
+{
+  "id": "C41B04B",
+  "group": "C41B04A-F",
+  "name": "偏钛酸冷却器",
+  "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+  "qty": "6",
+  "x": 9372,
+  "y": 75269,
+  "z": 4500,
+  "level": "EL106",
+  "pos_el": 104.5,
+  "w": 1700,
+  "h": 3600,
+  "depth": 1700,
+  "shape": "coolerUnit",
+  "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": null,
+  "quantity_role": "individual unit expanded from paired CAD callout",
+  "source_foundation": {
+    "material": "RC",
+    "width": 1950,
+    "depth": 1950,
+    "height": 180
+  },
+  "source_support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "model_scope": "冷却器本体；不含基础及底部支撑",
+  "footprint_mm": [
+    1700.0,
+    1700.0
+  ],
+  "body_height_mm": 3600.0,
+  "paired_platform_reference_mm": [
+    4800,
+    2725
+  ],
+  "platform_center_spacing_mm": 2400,
+  "foundation_removed": true,
+  "support_removed": true,
+  "cad_position_mm": [
+    672306,
+    375269
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": true
+}

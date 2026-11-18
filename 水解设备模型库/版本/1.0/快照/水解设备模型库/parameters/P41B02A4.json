@@ -1,0 +1,44 @@
+{
+  "id": "P41B02A4",
+  "group": "P41B02A/B1-4",
+  "name": "一洗压滤供料泵",
+  "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+  "qty": "8",
+  "x": 19659,
+  "y": 49479,
+  "z": 0,
+  "level": "EL100",
+  "pos_el": null,
+  "w": 1200,
+  "h": 700,
+  "depth": 864.0,
+  "shape": "pump",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "source_foundation": {
+    "material": "RC",
+    "width": 1900,
+    "depth": 1900,
+    "height": 250
+  },
+  "footprint_mm": [
+    480.0,
+    475.20000000000005
+  ],
+  "body_height_mm": 434.0,
+  "dimension_status": "estimated pump casing only; motor/base omitted",
+  "cad_position_mm": [
+    682593,
+    349479
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": false
+}

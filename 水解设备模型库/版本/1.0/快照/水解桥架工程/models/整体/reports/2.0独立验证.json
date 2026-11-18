@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "version": "2.0",
+  "frozen_1_0_hashes": "passed",
+  "parts": 112,
+  "columns": 120,
+  "penetrations": 0,
+  "interfaces": 110,
+  "max_viewer_rounding_error_mm": 0.0005000000091968104,
+  "unchanged_fitting_shape_orientation_section_elevation": true,
+  "straight_interfaces_and_direction": "passed",
+  "new_other_geometry_pairs": [],
+  "beams": 76,
+  "placed_equipment": 72,
+  "unplaced_equipment_excluded": 27
+}

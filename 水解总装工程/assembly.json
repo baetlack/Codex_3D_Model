@@ -92,8 +92,8 @@
       "units": "mm"
     },
     "C41B02": {
-      "path": "../水解桥架工程/models/设备/设备基础_20261106/设备净模/C41B02/model_data.js",
-      "source": "水解桥架工程/models/设备/设备基础_20261106/设备净模/C41B02/model_data.js",
+      "path": "../水解设备模型库/版本/2.0/C41B02/设备/model_data.js",
+      "source": "水解设备模型库/版本/2.0/C41B02/设备/model_data.js",
       "units": "mm"
     },
     "C41B01": {
@@ -132,8 +132,8 @@
       "units": "mm"
     },
     "foundation-C41B02": {
-      "path": "../水解桥架工程/models/设备/设备基础_20261106/C41B02/model_data.js",
-      "source": "水解桥架工程/models/设备/设备基础_20261106/C41B02/model_data.js",
+      "path": "../水解设备模型库/版本/2.0/C41B02/基础/model_data.js",
+      "source": "水解设备模型库/版本/2.0/C41B02/基础/model_data.js",
       "units": "mm"
     },
     "foundation-C41B01": {
@@ -3439,8 +3439,8 @@
       "rotation_deg": 0.0,
       "level": "EL112",
       "xy_status": "图块中心定位",
-      "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
       "source_insert": "3321D",
       "source_block": "钛液预热槽",
       "label_handle": "33783",
@@ -3449,36 +3449,49 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "layout_review": {
-        "reference_handle": "3321D",
-        "reference_block": "钛液预热槽",
-        "source_rotation_deg": 180.0,
-        "source_scale": [
-          -1.0,
-          1
-        ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": true,
-        "native_center_offset_mm": [
-          0,
-          -0.41335
-        ],
-        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
+      "equipment_version": "2.0-C41B02-01",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "3321D",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "3321D",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
         }
       }
     },
@@ -3494,8 +3507,8 @@
       "rotation_deg": 0.0,
       "level": "EL112",
       "xy_status": "图块中心定位",
-      "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
       "source_insert": "33245",
       "source_block": "钛液预热槽",
       "label_handle": "33786",
@@ -3504,36 +3517,49 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
-      "layout_review": {
-        "reference_handle": "33245",
-        "reference_block": "钛液预热槽",
-        "source_rotation_deg": 0.0,
-        "source_scale": [
-          1,
-          1
-        ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": true,
-        "native_center_offset_mm": [
-          0,
-          -0.41335
-        ],
-        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
+      "equipment_version": "2.0-C41B02-01",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "33245",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "33245",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
         }
       }
     },
@@ -3658,8 +3684,8 @@
       "rotation_deg": 180.0,
       "level": "EL112",
       "xy_status": "图块中心定位",
-      "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
       "source_insert": "33BEC",
       "source_block": "钛液预热槽",
       "label_handle": "33BEE",
@@ -3668,36 +3694,49 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "layout_review": {
-        "reference_handle": "33BEC",
-        "reference_block": "钛液预热槽",
-        "source_rotation_deg": 0.0,
-        "source_scale": [
-          -1.0,
-          1
-        ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": true,
-        "native_center_offset_mm": [
-          0,
-          -0.41335
-        ],
-        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
+      "equipment_version": "2.0-C41B02-01",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "33BEC",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "33BEC",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
         }
       }
     },
@@ -3766,8 +3805,8 @@
       "rotation_deg": 0.0,
       "level": "EL112",
       "xy_status": "图块中心定位",
-      "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
       "source_insert": "38103",
       "source_block": "钛液预热槽",
       "label_handle": "38109",
@@ -3776,36 +3815,49 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "layout_review": {
-        "reference_handle": "38103",
-        "reference_block": "钛液预热槽",
-        "source_rotation_deg": 180.0,
-        "source_scale": [
-          -1.0,
-          1
-        ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": true,
-        "native_center_offset_mm": [
-          0,
-          -0.41335
-        ],
-        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
+      "equipment_version": "2.0-C41B02-01",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "38103",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "38103",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
         }
       }
     },
@@ -3821,8 +3873,8 @@
       "rotation_deg": 0.0,
       "level": "EL112",
       "xy_status": "图块中心定位",
-      "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
       "source_insert": "38106",
       "source_block": "钛液预热槽",
       "label_handle": "3810C",
@@ -3831,36 +3883,49 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
-      "layout_review": {
-        "reference_handle": "38106",
-        "reference_block": "钛液预热槽",
-        "source_rotation_deg": 0.0,
-        "source_scale": [
-          1,
-          1
-        ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": true,
-        "native_center_offset_mm": [
-          0,
-          -0.41335
-        ],
-        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
+      "equipment_version": "2.0-C41B02-01",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "38106",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "38106",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
         }
       }
     },
@@ -4772,5 +4837,8 @@
     "建筑统一引用厂房外观模型完整网格；160mm板厚为显示口径，吊装孔按建施图真切孔",
     "图块朝向尚未逐项与类型模型管口方向核对",
     "未定位设备不进入空间场景或碰撞检查；待核安装标高单列"
-  ]
+  ],
+  "equipment_versions": {
+    "C41B02": "2.0-C41B02-01"
+  }
 }

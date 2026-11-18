@@ -3,12 +3,18 @@
 const byId = id => document.getElementById(id);
 const batch = '示图建模_20260521/';
 const ledger = window.EQUIPMENT_LEDGER || {};
-const rows = ledger.清单 || [];
+const overrides=window.EQUIPMENT_VERSION_OVERRIDES||{};
+const rows = (ledger.清单 || []).map(row=>({...row,...(overrides.ledger?.[row.位号]||{})}));
 const rowsByTag = new Map(rows.map(row=>[row.位号,row]));
 const typeModels = window.BATCH_MODELS || {};
 const foundationRoot = '../水解桥架工程/models/设备/设备基础_20261106/';
 const foundationSourceRoot = '../水解桥架工程/data/原始资料/设备基础/';
-const foundations = window.EQUIPMENT_FOUNDATIONS;
+const foundations = window.EQUIPMENT_FOUNDATIONS ? JSON.parse(JSON.stringify(window.EQUIPMENT_FOUNDATIONS)) : null;
+if (foundations) {
+ for (const [key,value] of Object.entries(overrides.equipment||{})) foundations.equipment[key]={...foundations.equipment[key],...value};
+ for (const [key,value] of Object.entries(overrides.foundations||{})) foundations.assets[key]={...foundations.assets[key],...value};
+}
+const foundationDir=key=>foundations.assets[key].dir||(foundationRoot+key+'/');
 const archiveImages = {
   C41B02:['搅拌驱动详图','来源_搅拌驱动详图.png'],
   D41B02:['用户侧视图','来源_用户侧视图.png']
@@ -174,6 +180,7 @@ function renderLedger(row, type) {
   if (drawings.childElementCount) info.append(drawings);
 }
 
+function tagForRow(row){return row?.位号?.slice(0,6);}
 function renderDetail(row, type, foundationIds, civilOnly) {
   detail.replaceChildren();
   views.replaceChildren();
@@ -184,7 +191,7 @@ function renderDetail(row, type, foundationIds, civilOnly) {
   const bounds=clean?.bounds||type?.model?.bounds;
   if (bounds && !civilOnly) field(detail,'设备包络 X × Y × Z',bounds.join(' × ')+' mm');
   if (type && !civilOnly) {
-    const dir=clean?foundationRoot+clean.path:type.dir;
+    const dir=clean?.dir||(clean?foundationRoot+clean.path:type.dir);
     const stem=clean?type.key:type.stem;
     const downloads=element('div','','links');
     downloads.append(link('原类型档案',type.entry),link('设备 GLB',dir+stem+'.glb',true),
@@ -192,14 +199,21 @@ function renderDetail(row, type, foundationIds, civilOnly) {
       link('设备参数 JSON',dir+'参数.json'));
     detail.append(downloads);
   }
-  for (const [label,view] of Object.entries(row.视图||{})) figure('DXF '+label,batch+view.文件);
+  for (const [label,view] of Object.entries(row.视图||{})) figure((tagForRow(row)==='C41B02'&&overrides.version?'1.0旧示图 ':'DXF ')+label,batch+view.文件);
+  if (tagForRow(row)==='C41B02'&&overrides.version) {figure('2.0新增总图主视','版本/2.0/C41B02/来源_主视.png');figure('2.0新增总图俯视','版本/2.0/C41B02/来源_俯视.png');}
   if (row.尺寸量测?.布置图量测视图) figure('布置量测',batch+row.尺寸量测.布置图量测视图);
   renderLedger(row,type);
+  if (tagForRow(row)==='C41B02' && overrides.version) {
+    const info=section(detail,'本类2.0整改与安装');
+    field(info,'安装链','楼面EL112.000 → 圆台顶/型钢底EL112.150 → 槽底EL112.310 → 槽顶EL117.310 → 电机顶EL119.495');
+    field(info,'待核','新接口绝对方位；POS EL是否指型钢底。盖/法兰和未明示厚度含包络假设。');
+    const links=element('div','','links');links.append(link('1.0冻结原版','版本/1.0/index.html'),link('本类整改说明','版本/2.0/C41B02/整改说明.html'),link('5台安装表','版本/2.0/C41B02/安装表.json'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('钛液预热槽(C41B02A-E).dxf'),true));info.append(links);
+  }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
     const civil=section(detail,support?'安装支架与图纸':'基础图与模型');
     for (const id of foundationIds) {
-      const data=foundations.assets[id], folder=foundationRoot+id+'/';
+      const data=foundations.assets[id], folder=foundationDir(id);
       const isSupport=data.kind==='安装支架';
       const label=isSupport?'支架':'基础';
       const panel=foundationIds.length>1?disclosure(civil,data.name):civil;
@@ -264,7 +278,8 @@ function collectPartGroups(mesh, archive) {
     const categories=[
       ['基础与支脚',/^(Leg|Pad)_/],
       ['槽体',/^Tank_(shell|flat)/],
-      ['槽盖',/^(Tank_cover|Lid_)/],
+      ['槽盖与安装框',/^(Tank_cover|Lid_|盖面_)/],
+      ['底部型钢支撑',/^设备支撑_/],
       ['槽顶搅拌总成',/^(01_|02_|03_Intermediate_shaft$|06_)/],
       ['开窗支架与轴座',/^06_/],
       ['驱动组件',/^(01|02)_/],
@@ -326,7 +341,7 @@ async function select(id) {
   setMessage('正在载入类型模型…');
   try {
     const clean=foundations?.equipment?.[type.key];
-    const loaded=civilOnly?[]:await loadParts(clean?foundationRoot+clean.path:type.dir);
+    const loaded=civilOnly?[]:await loadParts(clean?.dir||(clean?foundationRoot+clean.path:type.dir));
     if (token!==selection) return;
     const shell=loaded.find(part=>/^(Tank_shell(?:_|$)|本体_(筒壳|直筒段|烟囱直筒)$)/.test(part.name));
     const equipmentDimensions=loaded.length?{...meshBounds(shell?[shell]:loaded),cylindrical:Boolean(shell)}:null;
@@ -364,9 +379,9 @@ async function select(id) {
         const key=combinedModes.get(value)||value;
         const config=foundations.assets[key];
         try {
-          const civil=await loadParts(foundationRoot+key+'/');
+          const civil=await loadParts(foundationDir(key));
           const companion=combined&&config.companion?foundations.assets[config.companion]:null;
-          const base=companion?placeParts(await loadParts(foundationRoot+config.companion+'/'),companion.mount):[];
+          const base=companion?placeParts(await loadParts(foundationDir(config.companion)),companion.mount):[];
           const fixtures=combined&&config.fixture_prefix
             ?(await loadParts(type.dir)).filter(part=>part.name.startsWith(config.fixture_prefix)):[];
           if (token!==selection || request!==viewRequest) return;
@@ -593,5 +608,7 @@ search.oninput=state.onchange=renderList;
 for (const status of new Set(rows.map(row=>row.状态).filter(Boolean))) state.add(new Option(status,status));
 byId('library-count').textContent=rows.length+' 组';
 sources();
+const initialType=new URLSearchParams(location.search).get('type');
+if (initialType) rowTag=rows.find(row=>row.位号.startsWith(initialType))?.位号||rowTag;
 select(rowTag);
 

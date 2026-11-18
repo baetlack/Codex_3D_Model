@@ -1,0 +1,54 @@
+{
+  "id": "D41B02D2",
+  "group": "D41B02A-E1-3",
+  "name": "水解槽",
+  "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+  "qty": "15",
+  "x": 1285,
+  "y": 23827,
+  "z": 1500,
+  "level": "EL100",
+  "pos_el": 101.5,
+  "w": 5900.0,
+  "h": 4700,
+  "depth": 4248.0,
+  "shape": "cylinder",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": null,
+  "body_shape": "圆柱槽体",
+  "body_diameter_mm": 5900.0,
+  "body_height_mm": 4700.0,
+  "foundation_height_mm": 350,
+  "mixer_height_mm": 560,
+  "source_foundation": {
+    "material": "RC",
+    "width": 6600.0,
+    "depth": 6600.0,
+    "height": 350,
+    "piers": 8
+  },
+  "source_support": {
+    "material": "steel",
+    "count": 12,
+    "height": 300
+  },
+  "model_scope": "槽罐本体与顶部搅拌；不含基础及底部支撑",
+  "footprint_mm": [
+    5900.0,
+    5900.0
+  ],
+  "body_z_mm": 0,
+  "mixer_total_height_mm": 3076,
+  "mixer_height_basis": "确认高度",
+  "mixer_geometry_source": "槽罐搅拌器_标注侧视 v0.3（01、02、03、06）",
+  "cad_position_mm": [
+    664219,
+    323827
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": true
+}

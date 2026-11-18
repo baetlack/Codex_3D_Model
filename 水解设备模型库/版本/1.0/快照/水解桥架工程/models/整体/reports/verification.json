@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "parts": 112,
+  "library_fittings": 47,
+  "derived_fittings": 1,
+  "straights": 64,
+  "connections": 110,
+  "library_assets_unchanged": true,
+  "fitting_shapes_isometric": true,
+  "mirrored_instances": [
+    "L2-C18"
+  ],
+  "contacts_aligned": true,
+  "accepted_edge_alignment_rules": 3,
+  "unresolved_contact_issues": 0,
+  "continuous_riser_axis_and_orientation": true,
+  "new_offset_diagonal_angle_deg": 45,
+  "files": [
+    {
+      "file": "L1_桥架.glb",
+      "parts": 22,
+      "triangles": 1172,
+      "status": "passed"
+    },
+    {
+      "file": "L3_桥架.glb",
+      "parts": 42,
+      "triangles": 2072,
+      "status": "passed"
+    },
+    {
+      "file": "L2_桥架.glb",
+      "parts": 48,
+      "triangles": 2220,
+      "status": "passed"
+    },
+    {
+      "file": "L3-X01_45度乙字弯.glb",
+      "parts": 1,
+      "triangles": 60,
+      "status": "passed"
+    },
+    {
+      "file": "三层桥架.glb",
+      "parts": 112,
+      "triangles": 5464,
+      "status": "passed"
+    }
+  ],
+  "scope": "Checks confirm files, geometric reuse and user-defined floor/side contacts and riser connectivity, not full-scene clash detection or fabrication status."
+}

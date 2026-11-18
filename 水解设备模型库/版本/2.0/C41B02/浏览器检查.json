@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": {
+    "35_groups_and_new_datum_pending_labels": true,
+    "combined_equipment_and_unchanged_foundation": true,
+    "eight_covers_and_nozzle_parts": true,
+    "support_and_civil_separate": true,
+    "panel_controls": true,
+    "new_glb_download": true,
+    "other_type_unaffected": true,
+    "frozen_1_0_six_port_geometry": true,
+    "current_assembly_5_revised_72_placed": true,
+    "frozen_1_0_installation": true,
+    "version_2_wrapper": true
+  },
+  "page_errors": [],
+  "failed_resources": []
+}

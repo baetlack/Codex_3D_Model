@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C41B02 钛液预热槽 · 3D 模型</title>
+<style>
+  * { box-sizing:border-box }
+  body { margin:0; background:#101a22; color:#e3edf1; font:14px "Microsoft YaHei",sans-serif }
+  header { padding:20px 24px; border-bottom:1px solid #2f414a }
+  h1 { font-size:22px; margin:0 }
+  header p,.muted { color:#a8bec8; margin:.5rem 0 0; line-height:1.6 }
+  main { display:grid; grid-template-columns:minmax(0,1fr) 272px; height:calc(100dvh - 88px); min-height:520px }
+  section { display:grid; grid-template-rows:auto minmax(0,1fr) auto; min-height:360px; background:radial-gradient(ellipse at 46% 42%,#304553,#182731 70%,#14212b); overflow:hidden }
+  canvas { display:block; width:100%; height:100%; min-height:0; touch-action:none; cursor:grab }
+  canvas:active { cursor:grabbing }
+  .tools { display:flex; gap:6px; flex-wrap:wrap; padding:14px 16px 0 }
+  button,select,.links a { font:inherit; color:#e1eff2; background:#1d313b; border:1px solid #49616c; border-radius:5px; padding:7px 10px }
+  button { cursor:pointer }
+  button:hover,.links a:hover { border-color:#9ad6cd }
+  aside { padding:20px; border-left:1px solid #2f414a; overflow:auto }
+  h2 { margin:18px 0 12px; font-size:14px; color:#9ad6cd }
+  dl { margin:0 }
+  dl div { padding:10px 0; border-bottom:1px solid #2f414a }
+  dt { color:#a8bec8; font-size:12px }
+  dd { margin:4px 0 0; font-size:18px; font-variant-numeric:tabular-nums }
+  a { color:#9ad6cd }
+  .links { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px }
+  .links a { text-decoration:none }
+  .status { display:flex; justify-content:space-between; align-items:end; gap:10px; padding:8px 16px 14px; color:#bacdd5; font-size:12px; line-height:1.6 }
+  #view-label { color:#e1eff2 }
+  #scale-bar { display:block; text-align:center; white-space:nowrap; margin-left:auto }
+  #scale-bar::after { display:block; content:""; width:var(--bar-width,0px); height:5px; border:solid #9abfc9; border-width:0 1px 1px }
+  @media(max-width:780px) { main { display:block; height:auto } section { height:64vh } aside { border-left:0;border-top:1px solid #2f414a } }
+</style>
+<header><h1>C41B02 · 钛液预热槽</h1><p>直筒平底槽体 · 顶部搅拌 · 模型档案 v1.4</p></header>
+<main>
+  <section>
+    <div class="tools">
+      <button id="reset">东南复位</button>
+      <button id="side">正立侧视</button>
+      <button id="top">俯视</button>
+      <select id="part" aria-label="选择显示部件">
+        <option value="all">全部部件</option>
+        <option value="foundation">基础与支脚</option>
+        <option value="tank">槽体</option>
+        <option value="lid">槽盖</option>
+        <option value="top-assembly">槽顶搅拌总成</option>
+        <option value="support">开窗支架与轴座</option>
+        <option value="drive">驱动组件</option>
+        <option value="shaft">轴与叶轮</option>
+        <option value="intermediate">双端对称中间轴</option>
+      </select>
+    </div>
+    <canvas id="view" aria-label="可旋转钛液预热槽三维模型"></canvas>
+    <footer class="status">
+      <div><strong id="view-label">正交投影 · 东南轴测</strong><br><span id="hint">拖动旋转 · 滚轮缩放</span></div>
+      <span id="scale-bar" aria-label="当前视图比例尺"></span>
+    </footer>
+  </section>
+  <aside>
+    <h2>主要尺寸</h2>
+    <dl>
+      <div><dt>槽体直径 × 高度</dt><dd>Ø5500 × 5000 mm</dd></div>
+      <div><dt>槽顶至驱动顶</dt><dd>2185 mm</dd></div>
+      <div><dt>槽底至驱动顶</dt><dd>7185 mm</dd></div>
+    </dl>
+    <h2>模型与图纸</h2>
+    <div class="links">
+      <a href="C41B02_钛液预热槽.glb" download>GLB</a>
+      <a href="C41B02_钛液预热槽.obj" download>OBJ</a>
+      <a href="C41B02_钛液预热槽.mtl" download>OBJ 材质</a>
+    </div>
+    <a href="index.html">正立侧视图</a> · <a href="参数.json">参数记录</a>
+  </aside>
+</main>
+<script src="model_data.js"></script>
+<script src="../../orthographic_viewer.js"></script>
+<script>
+  const el = id => document.getElementById(id);
+  function group(name) {
+    if (/^(Leg|Pad)_/.test(name)) return 'foundation';
+    if (/^Tank_(shell|flat)/.test(name)) return 'tank';
+    if (/^(Tank_cover|Lid_)/.test(name)) return 'lid';
+    if (name.startsWith('06_')) return 'support';
+    if (/^(01|02)_/.test(name)) return 'drive';
+    return 'shaft';
+  }
+
+  try {
+    startEquipmentViewer(window.MODEL_PARTS,{
+      canvas:el('view'), selectControl:el('part'),
+      startSide:new URLSearchParams(location.search).get('view')==='side',
+      isVisible(part,filter) {
+        const category=group(part.name);
+        const intermediate=part.name==='03_Intermediate_shaft';
+        return filter==='all' || category===filter ||
+          (filter==='intermediate' && intermediate) ||
+          (filter==='top-assembly' && (category==='drive' || category==='support' || intermediate));
+      }
+    });
+  }
+  catch(error) { el('hint').textContent='无法打开三维预览，可通过右侧链接下载模型。';console.error(error); }
+</script>
+</html>

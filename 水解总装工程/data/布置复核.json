@@ -2541,7 +2541,7 @@
     },
     {
       "id": "C41B02C",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图8组接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         9500.0,
         61200.0
@@ -2553,7 +2553,7 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "legacy_six_port_evidence": {
         "reference_handle": "3321D",
         "reference_block": "钛液预热槽",
         "source_rotation_deg": 180.0,
@@ -2568,24 +2568,13 @@
           -0.41335
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
-        }
-      }
+        "top_plan": null
+      },
+      "equipment_version": "2.0-C41B02-01"
     },
     {
       "id": "C41B02B",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图8组接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         9500.0,
         46800.4
@@ -2597,7 +2586,7 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": true,
-      "evidence": {
+      "legacy_six_port_evidence": {
         "reference_handle": "33245",
         "reference_block": "钛液预热槽",
         "source_rotation_deg": 0.0,
@@ -2612,20 +2601,9 @@
           -0.41335
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
-        }
-      }
+        "top_plan": null
+      },
+      "equipment_version": "2.0-C41B02-01"
     },
     {
       "id": "C41B01A",
@@ -2716,7 +2694,7 @@
     },
     {
       "id": "C41B02A",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图8组接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         9500.0,
         18000.0
@@ -2728,7 +2706,7 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 180.0,
       "mirror_y": false,
-      "evidence": {
+      "legacy_six_port_evidence": {
         "reference_handle": "33BEC",
         "reference_block": "钛液预热槽",
         "source_rotation_deg": 0.0,
@@ -2743,20 +2721,9 @@
           -0.41335
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
-        }
-      }
+        "top_plan": null
+      },
+      "equipment_version": "2.0-C41B02-01"
     },
     {
       "id": "C41B03A",
@@ -2802,7 +2769,7 @@
     },
     {
       "id": "C41B02E",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图8组接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         35000.0,
         32400.0
@@ -2814,7 +2781,7 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "legacy_six_port_evidence": {
         "reference_handle": "38103",
         "reference_block": "钛液预热槽",
         "source_rotation_deg": 180.0,
@@ -2829,24 +2796,13 @@
           -0.41335
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
-        }
-      }
+        "top_plan": null
+      },
+      "equipment_version": "2.0-C41B02-01"
     },
     {
       "id": "C41B02D",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图8组接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         35000.0,
         18000.4
@@ -2858,7 +2814,7 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": true,
-      "evidence": {
+      "legacy_six_port_evidence": {
         "reference_handle": "38106",
         "reference_block": "钛液预热槽",
         "source_rotation_deg": 0.0,
@@ -2873,20 +2829,9 @@
           -0.41335
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 6,
-          "nearest_error_mm": [
-            0.047,
-            0.039,
-            0.0,
-            0.022,
-            0.022,
-            0.0
-          ]
-        }
-      }
+        "top_plan": null
+      },
+      "equipment_version": "2.0-C41B02-01"
     },
     {
       "id": "C41B01B",
@@ -2996,7 +2941,7 @@
       "status": "圆轮廓位置可核，朝向缺少特征待核"
     }
   ],
-  "reviewed": 56,
-  "pending": 16,
+  "reviewed": 51,
+  "pending": 21,
   "rule": "位置/朝向按真实图块与顶视特征复核；负比例只取镜像与方向，设备净模尺寸不缩放；无法对应的保留待核"
 }

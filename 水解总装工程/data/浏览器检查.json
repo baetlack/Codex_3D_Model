@@ -16,5 +16,6 @@
   "layer_toggles": true,
   "file_offline_load": "当前浏览器策略禁止 file://；本地HTTP已通过",
   "narrow_viewport": true,
-  "uncaught_errors": []
+  "uncaught_errors": [],
+  "equipment_C41B02_revision_review": "设备2.0本类浏览器检查与当前总装5台加载通过；证据路径相对仓库根：水解设备模型库/版本/2.0/C41B02/浏览器检查.json"
 }

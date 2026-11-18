@@ -1,0 +1,387 @@
+{
+  "version": "0.3",
+  "contact_tolerance_mm": 0.1,
+  "columns_retained": 88,
+  "penetrations": [],
+  "normal_contacts": [
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-011",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        7200.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-020",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        14400.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-029",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        21600.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-038",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        28800.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-047",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        36000.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-056",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        43200.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-065",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        50400.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC6",
+      "b": "COL-074",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        19324.994,
+        57600.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EC1",
+      "b": "COL-012",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        7200.0,
+        10900.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-021",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        14400.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-030",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        21600.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-039",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        28800.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-048",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        36000.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-057",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        43200.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-066",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        50400.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-075",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        57600.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-085",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        650.0,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        64800.0,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    },
+    {
+      "a": "L2-S-37EB9",
+      "b": "COL-094",
+      "kind": "bridge/structure",
+      "overlap_aabb_mm": [
+        0.011,
+        349.619,
+        200.0
+      ],
+      "position_mm": [
+        26324.994,
+        71849.81,
+        10100.331
+      ],
+      "placement_status": [
+        "定位有依据",
+        "上部柱截面待核"
+      ],
+      "method": "surface-contact-without-open-interior-penetration",
+      "status": "表面接触（正常）"
+    }
+  ],
+  "rule": "真实三角面进入柱体开内部才报穿入；仅表面接触为正常；当前引用桥架2.0，整改记录位于桥架源模块"
+}

@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "2.0-first-C41B02",
   "units": "mm",
   "count": 99,
   "source": "2.水解水洗设备一览表 2026.8.12.xlsx",
@@ -1409,46 +1409,78 @@
       "group": "C41B02A-E",
       "name": "钛液预热槽",
       "spec": "ø5500X5000，V总＝118m3",
-      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
       "ledger_spec": "ø5500X5000，V总＝118m3",
       "drawing_pos_el": 112.15,
       "qty": "5",
-      "level": "EL100",
-      "pos_el": 100.3,
+      "level": "EL112",
+      "pos_el": 112.15,
       "cad_position_mm": [
         657066,
         366618
       ],
-      "plan_sheet": "EL100",
-      "w": 5900,
-      "h": 4700,
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
       "shape": "preheater",
       "large_equipment": true,
-      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-01",
+      "position_mm": [
+        9500.0,
+        61200.4134,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02C.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02C.json"
     },
     {
       "id": "C41B02B",
       "group": "C41B02A-E",
       "name": "钛液预热槽",
       "spec": "ø5500X5000，V总＝118m3",
-      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
       "ledger_spec": "ø5500X5000，V总＝118m3",
       "drawing_pos_el": 112.15,
       "qty": "5",
-      "level": "EL100",
-      "pos_el": 100.3,
+      "level": "EL112",
+      "pos_el": 112.15,
       "cad_position_mm": [
         657092,
         352218
       ],
-      "plan_sheet": "EL100",
-      "w": 5900,
-      "h": 4700,
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
       "shape": "preheater",
       "large_equipment": true,
-      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-01",
+      "position_mm": [
+        9500.0,
+        46799.9867,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02B.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02B.json"
     },
     {
       "id": "C41B01A",
@@ -1495,23 +1527,39 @@
       "group": "C41B02A-E",
       "name": "钛液预热槽",
       "spec": "ø5500X5000，V总＝118m3",
-      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
       "ledger_spec": "ø5500X5000，V总＝118m3",
       "drawing_pos_el": 112.15,
       "qty": "5",
-      "level": "EL100",
-      "pos_el": 100.3,
+      "level": "EL112",
+      "pos_el": 112.15,
       "cad_position_mm": [
         657293,
         323418
       ],
-      "plan_sheet": "EL100",
-      "w": 5900,
-      "h": 4700,
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
       "shape": "preheater",
       "large_equipment": true,
-      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-01",
+      "position_mm": [
+        9500.0,
+        17999.5866,
+        12150
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02A.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02A.json"
     },
     {
       "id": "C41B03A",
@@ -1538,46 +1586,78 @@
       "group": "C41B02A-E",
       "name": "钛液预热槽",
       "spec": "ø5500X5000，V总＝118m3",
-      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
       "ledger_spec": "ø5500X5000，V总＝118m3",
       "drawing_pos_el": 112.15,
       "qty": "5",
-      "level": "EL100",
-      "pos_el": 100.3,
+      "level": "EL112",
+      "pos_el": 112.15,
       "cad_position_mm": [
         682270,
         337818
       ],
-      "plan_sheet": "EL100",
-      "w": 5900,
-      "h": 4700,
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
       "shape": "preheater",
       "large_equipment": true,
-      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-01",
+      "position_mm": [
+        35000.0,
+        32400.4134,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02E.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02E.json"
     },
     {
       "id": "C41B02D",
       "group": "C41B02A-E",
       "name": "钛液预热槽",
       "spec": "ø5500X5000，V总＝118m3",
-      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
       "ledger_spec": "ø5500X5000，V总＝118m3",
       "drawing_pos_el": 112.15,
       "qty": "5",
-      "level": "EL100",
-      "pos_el": 100.3,
+      "level": "EL112",
+      "pos_el": 112.15,
       "cad_position_mm": [
         682478,
         323418
       ],
-      "plan_sheet": "EL100",
-      "w": 5900,
-      "h": 4700,
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
       "shape": "preheater",
       "large_equipment": true,
-      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-01",
+      "position_mm": [
+        35000.0,
+        17999.9866,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02D.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02D.json"
     },
     {
       "id": "C41B01B",
@@ -1999,5 +2079,7 @@
       "position_basis": "台账有设备；本布置图内未找到可确认的对应位号位置",
       "height_basis": "泵外形按同系列P41B08示意，未取得总图尺寸"
     }
-  ]
+  ],
+  "legacy_export_version": "0.2",
+  "binding_policy": "C41B02当前模型与参数按current_files；obj/及viewer_data.js旧网格保留历史，当前浏览不读取它们。其余条目不变。"
 }

@@ -1,0 +1,2003 @@
+{
+  "version": "0.2",
+  "units": "mm",
+  "count": 99,
+  "source": "2.水解水洗设备一览表 2026.8.12.xlsx",
+  "models": [
+    {
+      "id": "D41B02C3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        374227
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02C2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        367027
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02C1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        359827
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02A3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        331027
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02A2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        323827
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02A1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        316627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02D3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        331027
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02D2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        323827
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02D1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        316627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02E3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        352627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02E2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        345427
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02E1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        338227
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A2",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        368115
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A1",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        375315
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A4",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        353715
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A3",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        360915
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01C",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        657311,
+        355068
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01F",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        672763,
+        335939
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B4",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        324915
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B07A",
+      "group": "F41B07A/B",
+      "name": "废水收集地坑",
+      "spec": "V=1500X1500X2000=4.5m3(地下池）",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        670969,
+        347275
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500,
+      "h": 2000,
+      "shape": "pit",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B07A",
+      "group": "P41B07A/B",
+      "name": "废水输送泵",
+      "spec": "立式泵，流量Q=30m3/h，扬程H=30m",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 100.1,
+      "cad_position_mm": [
+        671099,
+        343252
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B05",
+      "group": "P41B05",
+      "name": "稀碱中转泵",
+      "spec": "流量Q=10m3/h,扬程H=10m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        671449,
+        362017
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B1",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        346515
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B2",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        339315
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B3",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        332115
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01A",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        657172,
+        333436
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04E",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        659824,
+        368218
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04F",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        662224,
+        368218
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02B3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        352627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02B2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        345427
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02B1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        338227
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B06",
+      "group": "F41B06",
+      "name": "稀碱储槽",
+      "spec": "ø2800X2500，V总＝12m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        664741,
+        356225
+      ],
+      "plan_sheet": "EL100",
+      "w": 2800.0,
+      "h": 2500,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B05",
+      "group": "F41B05",
+      "name": "稀碱配置槽",
+      "spec": "ø2800X2500，V总＝12m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        664019,
+        362054
+      ],
+      "plan_sheet": "EL100",
+      "w": 2800.0,
+      "h": 2500,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B03",
+      "group": "P41B03",
+      "name": "钛液事故泵",
+      "spec": "流量Q=50m3/h,扬程H=33m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        673495,
+        364974
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B02",
+      "group": "F41B02",
+      "name": "钛液事故槽",
+      "spec": "ø2800X2500，V总＝12m3，V有＝9.5m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        665433,
+        366971
+      ],
+      "plan_sheet": "EL100",
+      "w": 2800.0,
+      "h": 2500,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B04",
+      "group": "P41B04",
+      "name": "水解喷淋增压泵",
+      "spec": "管道泵，Q=120m3/h,H=40m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        670735,
+        373695
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B4",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682596,
+        331095
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B3",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682705,
+        335491
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B2",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682698,
+        339548
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B1",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682518,
+        344528
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A4",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        682593,
+        349479
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A3",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682610,
+        353579
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A2",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682620,
+        358172
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A1",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682620,
+        362273
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01A",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        660491,
+        329517
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01B",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        660528,
+        338395
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01D",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.1,
+      "cad_position_mm": [
+        660346,
+        359995
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01E",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        673530,
+        329495
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01C",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        660346,
+        351095
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01F",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        673532,
+        338395
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01E",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        672763,
+        332376
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01B",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        657114,
+        335194
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01D",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        657311,
+        356678
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B06",
+      "group": "P41B06",
+      "name": "稀碱输送泵",
+      "spec": "流量Q=10m3/h,扬程H=33m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        671525,
+        356829
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B07B",
+      "group": "F41B07A/B",
+      "name": "废水收集地坑",
+      "spec": "V=1500X1500X2000=4.5m3(地下池）",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        663043,
+        357881
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500,
+      "h": 2000,
+      "shape": "pit",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B07B",
+      "group": "P41B07A/B",
+      "name": "废水输送泵",
+      "spec": "立式泵，流量Q=30m3/h，扬程H=30m",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 100.1,
+      "cad_position_mm": [
+        663187,
+        360793
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B08",
+      "group": "P41B08",
+      "name": "偏钛酸转运泵",
+      "spec": "流量Q=120m3/h,扬程H=20m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682766,
+        367256
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B11",
+      "group": "P41B11",
+      "name": "密封水循环泵",
+      "spec": "金属泵，Q=5m3/h，H=15m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        664118,
+        363112
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B08",
+      "group": "F41B08",
+      "name": "密封水循环槽",
+      "spec": "V=∅1000x1000，V=0.785m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        660825,
+        364448
+      ],
+      "plan_sheet": "EL100",
+      "w": 1000.0,
+      "h": 1000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04A",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        669906,
+        375269
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04B",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        672306,
+        375269
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04C",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        669906,
+        372142
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04D",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        672306,
+        372142
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01B",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        644096,
+        358281
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01D",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        675447,
+        329270
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01A",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        646645,
+        322393
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01C",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        644096,
+        360881
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01E",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        675447,
+        331870
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B03",
+      "group": "L41B03",
+      "name": "旋流除雾器",
+      "spec": "直径ø1800，高H=3100",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        660751,
+        343767
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 3100,
+      "shape": "demister",
+      "large_equipment": true,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B02",
+      "group": "L41B02",
+      "name": "尾气洗涤塔",
+      "spec": "直径∅2200，高H=10300",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        661756,
+        347460
+      ],
+      "plan_sheet": "EL100",
+      "w": 2200.0,
+      "h": 10300,
+      "shape": "tower",
+      "large_equipment": true,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02C",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        657066,
+        366618
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900,
+      "h": 4700,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02B",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        657092,
+        352218
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900,
+      "h": 4700,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B01A",
+      "group": "C41B01A/B",
+      "name": "热水预热槽",
+      "spec": "ø3500X4000，V总=38.5m3",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        655634,
+        345018
+      ],
+      "plan_sheet": "EL100",
+      "w": 3500.0,
+      "h": 4000,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B03B",
+      "group": "C41B03A-C",
+      "name": "稀碱预热槽",
+      "spec": "Φ1500X2000,V全=3.5m3",
+      "qty": "3",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        654571,
+        358707
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500.0,
+      "h": 2000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02A",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        657293,
+        323418
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900,
+      "h": 4700,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B03A",
+      "group": "C41B03A-C",
+      "name": "稀碱预热槽",
+      "spec": "Φ1500X2000,V全=3.5m3",
+      "qty": "3",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        654343,
+        329604
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500.0,
+      "h": 2000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02E",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682270,
+        337818
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900,
+      "h": 4700,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02D",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5900 × 4700 mm（用户指定）",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682478,
+        323418
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900,
+      "h": 4700,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B01B",
+      "group": "C41B01A/B",
+      "name": "热水预热槽",
+      "spec": "ø3500X4000，V总=38.5m3",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        670237,
+        321423
+      ],
+      "plan_sheet": "EL100",
+      "w": 3500.0,
+      "h": 4000,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B03C",
+      "group": "C41B03A-C",
+      "name": "稀碱预热槽",
+      "spec": "Φ1500X2000,V全=3.5m3",
+      "qty": "3",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        679677,
+        329371
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500.0,
+      "h": 2000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B03",
+      "group": "F41B03",
+      "name": "冷凝水分汽器",
+      "spec": "直筒段∅1000，高H=1000",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        684204,
+        346629
+      ],
+      "plan_sheet": "EL100",
+      "w": 1000.0,
+      "h": 1000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B05",
+      "group": "L41B05",
+      "name": "蒸汽分汽缸",
+      "spec": "ø1000X3800，V=3.28m3",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        686302,
+        342955
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 3800,
+      "shape": "filter",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B04",
+      "group": "L41B04",
+      "name": "减温减压器",
+      "spec": "处理量40t/h，出口压力0.5MPa饱和蒸汽",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": null,
+      "cad_position_mm": [
+        684771,
+        356319
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1500,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B09A",
+      "group": "P41B09A/B",
+      "name": "减温水增压泵",
+      "spec": "Q=4m3/h，H=131m，立式管道泵",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": null,
+      "cad_position_mm": [
+        680168,
+        361724
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "A/B共用CAD位号点；单泵坐标由并列关系估分",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B09B",
+      "group": "P41B09A/B",
+      "name": "减温水增压泵",
+      "spec": "Q=4m3/h，H=131m，立式管道泵",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": null,
+      "cad_position_mm": [
+        681368,
+        361724
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "A/B共用CAD位号点；单泵坐标由并列关系估分",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B04",
+      "group": "F41B04",
+      "name": "尾气烟囱",
+      "spec": "直径∅1000，高H=17000",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        673677,
+        338409
+      ],
+      "plan_sheet": "EL100",
+      "w": 1000.0,
+      "h": 17000,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B10",
+      "group": "P41B10",
+      "name": "尾气风机",
+      "spec": "Q=40000m3/h，△P=3000Pa",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        661519,
+        336466
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B01A",
+      "group": "V41B01A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量1吨，起升高度6米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        658569,
+        313277
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B01C",
+      "group": "V41B01A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量1吨，起升高度6米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        684088,
+        313063
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B01B",
+      "group": "V41B01A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量1吨，起升高度6米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        673349,
+        313277
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B02A",
+      "group": "V41B02A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度12米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        655827,
+        310145
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B02B",
+      "group": "V41B02A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度12米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        668970,
+        309943
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B03A",
+      "group": "V41B03A/B",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度24米",
+      "qty": "2",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        652762,
+        309376
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B03B",
+      "group": "V41B03A/B",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度24米",
+      "qty": "2",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        676078,
+        309345
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B04A",
+      "group": "V41B04A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量5吨，起升高度24米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        667352,
+        375894
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B04B",
+      "group": "V41B04A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量5吨，起升高度24米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        667352,
+        371894
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B04C",
+      "group": "V41B04A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量5吨，起升高度24米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        667352,
+        368894
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B02C",
+      "group": "V41B02A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度12米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        917708,
+        323118
+      ],
+      "plan_sheet": "EL123",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41A08",
+      "group": "P41A08",
+      "name": "偏钛酸转运泵",
+      "spec": "流量Q=120m3/h，扬程H=20m",
+      "qty": "1",
+      "level": "未定位",
+      "pos_el": null,
+      "cad_position_mm": [
+        null,
+        null
+      ],
+      "plan_sheet": null,
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "台账有设备；本布置图内未找到可确认的对应位号位置",
+      "height_basis": "泵外形按同系列P41B08示意，未取得总图尺寸"
+    }
+  ]
+}

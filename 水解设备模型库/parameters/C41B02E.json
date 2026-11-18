@@ -1,53 +1,639 @@
 {
+  "version": "2.0-C41B02-01",
+  "name": "钛液预热槽",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/钛液预热槽(C41B02A-E).dxf",
+  "drawing_number": "LMT0701-03-C3302-1",
+  "source_sha256": "780da2ce70e1a9290e4a6986a98dabb13781605e060d24934c1fd0ac59653cb0",
+  "user_decision": "2026-11-18按新增总图更新盖面和外部接口；保留Ø5500×5000及搅拌高2185mm",
+  "tank": {
+    "outside_diameter_mm": 5500,
+    "straight_shell_height_mm": 5000,
+    "bottom_z_mm": 160,
+    "shell_top_z_mm": 5160,
+    "basis": "既有用户确认尺寸"
+  },
+  "cover": {
+    "outside_diameter_mm": 5724,
+    "plate_top_z_mm": 5215,
+    "k_count": 8,
+    "b_count": 8,
+    "j_count": 8,
+    "m_opening_mm": [
+      2900,
+      1020
+    ],
+    "basis": "新增总图俯视与管口表；板厚/法兰包络仍含示意值"
+  },
+  "support": {
+    "kind": "槽底I16型钢",
+    "height_mm": 160,
+    "beam_count": 9,
+    "center_spacing_mm": 650,
+    "basis": "主视8×650=5200及160高；翼缘88/腹板6/翼缘厚10和弦长端部为展示假设"
+  },
+  "mixer": {
+    "height_above_shell_top_mm": 2185,
+    "top_z_mm": 7345,
+    "geometry": "冻结1.0原搅拌、开窗支架、轴与叶轮刚性上移160mm，未缩放未改形"
+  },
+  "local_datum": {
+    "origin": "底部型钢承托面",
+    "bearing_z_mm": 0,
+    "tank_bottom_z_mm": 160,
+    "foundation_top_z_mm": 0,
+    "foundation_bottom_z_mm": -150
+  },
+  "installation": {
+    "foundation_top_EL": 112.15,
+    "steel_bearing_EL": 112.15,
+    "tank_bottom_EL": 112.31,
+    "tank_top_EL": 117.31,
+    "mixer_top_EL": 119.495,
+    "status": "按基础顶和新增160mm型钢换算；POS EL是否指型钢底仍待确认",
+    "orientation_status": "新总图按工艺管口方位图；旧6孔布置符号不能证明新8组接口的现场方位，暂保留原实例旋转/镜像并标待核"
+  },
+  "ports": [
+    {
+      "id": "k1",
+      "dn": 800,
+      "center_mm": [
+        1940.147018273702,
+        803.6352079666885,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 22.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b1",
+      "dn": 40,
+      "center_mm": [
+        1801.565088397009,
+        746.2326931119251,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j1",
+      "dn": 40,
+      "center_mm": [
+        2078.728948150395,
+        861.037722821452,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k2",
+      "dn": 800,
+      "center_mm": [
+        803.6352079666887,
+        1940.147018273702,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 67.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b2",
+      "dn": 40,
+      "center_mm": [
+        746.2326931119252,
+        1801.565088397009,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j2",
+      "dn": 40,
+      "center_mm": [
+        861.0377228214521,
+        2078.728948150395,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k3",
+      "dn": 800,
+      "center_mm": [
+        -803.6352079666884,
+        1940.147018273702,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 112.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b3",
+      "dn": 40,
+      "center_mm": [
+        -746.232693111925,
+        1801.565088397009,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j3",
+      "dn": 40,
+      "center_mm": [
+        -861.0377228214519,
+        2078.728948150395,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k4",
+      "dn": 800,
+      "center_mm": [
+        -1940.147018273702,
+        803.6352079666888,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 157.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b4",
+      "dn": 40,
+      "center_mm": [
+        -1801.565088397009,
+        746.2326931119253,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j4",
+      "dn": 40,
+      "center_mm": [
+        -2078.728948150395,
+        861.0377228214522,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k5",
+      "dn": 800,
+      "center_mm": [
+        -1940.1470182737023,
+        -803.6352079666883,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 202.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b5",
+      "dn": 40,
+      "center_mm": [
+        -1801.5650883970093,
+        -746.2326931119248,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j5",
+      "dn": 40,
+      "center_mm": [
+        -2078.7289481503954,
+        -861.0377228214518,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k6",
+      "dn": 800,
+      "center_mm": [
+        -803.635207966688,
+        -1940.1470182737023,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 247.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b6",
+      "dn": 40,
+      "center_mm": [
+        -746.2326931119245,
+        -1801.5650883970093,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j6",
+      "dn": 40,
+      "center_mm": [
+        -861.0377228214514,
+        -2078.7289481503954,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k7",
+      "dn": 800,
+      "center_mm": [
+        803.635207966689,
+        -1940.1470182737019,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 292.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b7",
+      "dn": 40,
+      "center_mm": [
+        746.2326931119255,
+        -1801.5650883970088,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j7",
+      "dn": 40,
+      "center_mm": [
+        861.0377228214525,
+        -2078.728948150395,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "k8",
+      "dn": 800,
+      "center_mm": [
+        1940.1470182737023,
+        -803.6352079666881,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pitch_circle_mm": 4200,
+      "angle_deg": 337.5,
+      "status": "DN/数量按总图；盖外径1000mm与厚度为图面比例包络"
+    },
+    {
+      "id": "b8",
+      "dn": 40,
+      "center_mm": [
+        1801.5650883970093,
+        -746.2326931119246,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "j8",
+      "dn": 40,
+      "center_mm": [
+        2078.7289481503954,
+        -861.0377228214516,
+        5515
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "status": "DN/数量/伸出按管口表；b/j间距300mm按图面比例，待详图"
+    },
+    {
+      "id": "a",
+      "dn": 200,
+      "center_mm": [
+        1697.0562748477141,
+        1697.056274847714,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "angle_deg": 45,
+      "status": "DN/伸出按管口表；Φ4800圆周位置和小口角度按图面量测，待工艺方位图"
+    },
+    {
+      "id": "c",
+      "dn": 150,
+      "center_mm": [
+        2390.8672754201893,
+        -209.17378259437996,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "angle_deg": 355,
+      "status": "DN/伸出按管口表；Φ4800圆周位置和小口角度按图面量测，待工艺方位图"
+    },
+    {
+      "id": "d",
+      "dn": 200,
+      "center_mm": [
+        -2390.8672754201893,
+        209.17378259437967,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "angle_deg": 175,
+      "status": "DN/伸出按管口表；Φ4800圆周位置和小口角度按图面量测，待工艺方位图"
+    },
+    {
+      "id": "e",
+      "dn": 65,
+      "center_mm": [
+        -1376.5834472425113,
+        -1965.9649062935798,
+        5315
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 100,
+      "angle_deg": 235,
+      "status": "DN/伸出按管口表；Φ4800圆周位置和小口角度按图面量测，待工艺方位图"
+    },
+    {
+      "id": "f",
+      "dn": 80,
+      "center_mm": [
+        1376.5834472425106,
+        -1965.9649062935803,
+        5315
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 100,
+      "angle_deg": 305,
+      "status": "DN/伸出按管口表；Φ4800圆周位置和小口角度按图面量测，待工艺方位图"
+    },
+    {
+      "id": "n",
+      "dn": 200,
+      "center_mm": [
+        1.4695761589768238e-13,
+        2400.0,
+        5365
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "projection_mm": 150,
+      "angle_deg": 90,
+      "status": "DN/伸出按管口表；Φ4800圆周位置和小口角度按图面量测，待工艺方位图"
+    },
+    {
+      "id": "p",
+      "dn": 250,
+      "coaxial_with": "a",
+      "center_mm": [
+        1697.0562748477141,
+        1697.0562748477141,
+        5255
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "status": "按管口表与俯视a,p共轴；套管局部高度为包络"
+    },
+    {
+      "id": "g",
+      "dn": "350/250",
+      "center_mm": [
+        3150.0,
+        0.0,
+        460.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "projection_mm": 400,
+      "status": "DN与伸出长度按管口表；变径及法兰外廓为展示包络"
+    },
+    {
+      "id": "h",
+      "dn": "250/150",
+      "center_mm": [
+        -3150.0,
+        3.8576374173141627e-13,
+        4860.0
+      ],
+      "normal": [
+        -1.0,
+        1.2246467991473532e-16,
+        0.0
+      ],
+      "projection_mm": 400,
+      "status": "DN与伸出长度按管口表；变径及法兰外廓为展示包络"
+    }
+  ],
+  "bounds_mm": [
+    6300.0,
+    5724.0,
+    7345.0
+  ],
+  "confirmed_dimensions": [
+    "槽体外径5500",
+    "直筒高5000",
+    "搅拌高出槽顶2185"
+  ],
+  "limits": [
+    "新总图为转曲页面，DXF页面坐标不是设备毫米实尺寸。",
+    "新图剖面与底圈另标φ5560、俯视盖外径φ5724；本体5500仍按用户确认的外径，不宣称已完成制造内外径定义复核。",
+    "盘管/衬里/焊缝/螺栓不展开；内部轴和叶轮沿用旧模型。",
+    "小口位置、盖外径、支撑截面及未明示厚度属于量测或包络，不作加工尺寸。",
+    "本类仅第1张总图；第2—8张详图未提供。"
+  ],
   "id": "C41B02E",
   "group": "C41B02A-E",
-  "name": "钛液预热槽",
-  "spec": "ø5500X5000，V总＝118m3",
   "qty": "5",
-  "x": 19336,
-  "y": 37818,
-  "z": 0,
-  "level": "EL100",
-  "pos_el": 100.3,
-  "w": 5900,
-  "h": 4700,
-  "depth": 5900,
-  "shape": "preheater",
-  "position_basis": "槽体底面按用户指定EL100.300；平面位置保留布置图位号点",
-  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-  "foundation": null,
-  "support": null,
-  "ledger_spec": "ø5500X5000，V总＝118m3",
-  "model_spec": "Ø5900 × 4700 mm（用户指定）",
-  "drawing_pos_el": 112.15,
-  "source_foundation": {
-    "material": "RC",
-    "width": 6200.0,
-    "depth": 6200.0,
-    "height": 250
-  },
-  "source_support": {
-    "material": "steel",
-    "count": 12,
-    "height": 250
-  },
-  "model_scope": "槽罐本体与顶部搅拌；不含基础及底部支撑",
-  "footprint_mm": [
-    5900.0,
-    5900.0
+  "level": "EL112",
+  "pos_el": 112.15,
+  "position_mm": [
+    35000.0,
+    32400.4134,
+    12150
   ],
-  "body_diameter_mm": 5900.0,
-  "body_height_mm": 4700.0,
-  "body_z_mm": 0,
-  "mixer_total_height_mm": 2185,
-  "mixer_height_basis": "确认高度",
-  "mixer_geometry_source": "槽罐搅拌器_标注侧视 v0.3（01、02、03、06）",
-  "cad_position_mm": [
-    682270,
-    337818
-  ],
-  "plan_sheet": "EL100",
-  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
-  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
-  "large_equipment": true
+  "rotation_deg": 0.0,
+  "mirror_y": false,
+  "position_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
+  "coordinate_reference": "建筑轴网本地毫米坐标；安装原点为型钢底承托面",
+  "current_files": {
+    "model": "版本/2.0/C41B02/设备/model_data.js",
+    "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+    "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+    "parameters": "parameters/C41B02E.json",
+    "installation": "版本/2.0/C41B02/安装表.json"
+  },
+  "legacy_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02E.json"
 }

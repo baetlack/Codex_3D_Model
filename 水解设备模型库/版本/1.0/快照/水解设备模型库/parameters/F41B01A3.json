@@ -1,0 +1,53 @@
+{
+  "id": "F41B01A3",
+  "group": "F41B01A/B1-4",
+  "name": "偏钛酸缓冲槽",
+  "spec": "ø5000X5900，V总＝115.8m3",
+  "qty": "8",
+  "x": 14971,
+  "y": 60915,
+  "z": 300,
+  "level": "EL100",
+  "pos_el": 100.3,
+  "w": 5000.0,
+  "h": 5900,
+  "depth": 3600.0,
+  "shape": "cylinder",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": null,
+  "body_shape": "圆柱槽体",
+  "body_diameter_mm": 5000.0,
+  "body_height_mm": 5900.0,
+  "foundation_height_mm": 250,
+  "mixer_height_mm": 700,
+  "source_foundation": {
+    "material": "RC",
+    "width": 5700.0,
+    "depth": 5700.0,
+    "height": 250
+  },
+  "source_support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "model_scope": "槽罐本体与顶部搅拌；不含基础及底部支撑",
+  "footprint_mm": [
+    5000.0,
+    5000.0
+  ],
+  "body_z_mm": 0,
+  "mixer_total_height_mm": 2310,
+  "mixer_height_basis": "按类型侧视比例估取",
+  "mixer_geometry_source": "槽罐搅拌器_标注侧视 v0.3（01、02、03、06）",
+  "cad_position_mm": [
+    677905,
+    360915
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": true
+}

@@ -1,0 +1,49 @@
+{
+  "id": "L41B01F",
+  "group": "L41B01A-F",
+  "name": "水解过滤器",
+  "spec": "ø1200,H=1220",
+  "qty": "6",
+  "x": 10598,
+  "y": 38395,
+  "z": 300,
+  "level": "EL100",
+  "pos_el": 100.3,
+  "w": 1200,
+  "h": 1220,
+  "depth": 864.0,
+  "shape": "filter",
+  "position_basis": "平面设备位号点；按图题偏移归一",
+  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "foundation": null,
+  "support": null,
+  "source_foundation": {
+    "material": "RC",
+    "width": 1900,
+    "depth": 1900,
+    "height": 250
+  },
+  "source_support": {
+    "material": "steel",
+    "count": 12,
+    "height": 250
+  },
+  "model_scope": "设备本体；不含基础及底部支撑",
+  "footprint_mm": [
+    1200.0,
+    1200.0
+  ],
+  "body_diameter_mm": 1200.0,
+  "body_height_mm": 1220.0,
+  "body_z_mm": 0,
+  "mixer_total_height_mm": null,
+  "mixer_height_basis": null,
+  "cad_position_mm": [
+    673532,
+    338395
+  ],
+  "plan_sheet": "EL100",
+  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
+  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
+  "large_equipment": false
+}

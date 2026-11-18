@@ -1,0 +1,3002 @@
+{
+  "version": "0.2",
+  "source": "3.水解工段设备布置图+2026.5.21.dxf",
+  "records": [
+    {
+      "id": "D41B02C3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        68075.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        68074.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331D2",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D2",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            68074.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02C2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        60875.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        60874.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331D1",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D1",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            60874.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02C1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        53675.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        53674.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331D0",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D0",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            53674.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02A3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9499.9986,
+        24875.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        24874.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380A2",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380A2",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            24874.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02A2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9499.9986,
+        17675.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        17674.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380A4",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380A4",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            17674.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02A1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9499.9986,
+        10475.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        10474.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380A6",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380A6",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            10474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02D3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        22499.9986,
+        24875.0006
+      ],
+      "after_xy_mm": [
+        22500.0,
+        24874.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "331D9",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D9",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            24874.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02D2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        22499.9986,
+        17675.0006
+      ],
+      "after_xy_mm": [
+        22500.0,
+        17674.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "331D8",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D8",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            17674.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02D1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        22499.9986,
+        10475.0006
+      ],
+      "after_xy_mm": [
+        22500.0,
+        10474.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "331D7",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D7",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            10474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02E3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        22500.0,
+        46475.0006
+      ],
+      "after_xy_mm": [
+        22500.0,
+        46474.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "331D6",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D6",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            46474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02E2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        22500.0,
+        39275.0006
+      ],
+      "after_xy_mm": [
+        22500.0,
+        39274.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "331D5",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D5",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            39274.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02E1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        22500.0,
+        32075.0006
+      ],
+      "after_xy_mm": [
+        22500.0,
+        32074.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "331D4",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D4",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            32074.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        61299.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        61300.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331DC",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DC",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            61300.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        68499.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        68500.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331DD",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DD",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            68500.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A4",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        46899.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        46900.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331DA",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DA",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            46900.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        54099.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        54100.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331DB",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DB",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            54100.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "P41B01C",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        15700.0,
+        49650.0
+      ],
+      "after_xy_mm": [
+        15335.0,
+        49650.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "evidence": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B01F",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        28695.4973,
+        29500.0
+      ],
+      "after_xy_mm": [
+        28330.4973,
+        29500.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "evidence": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "F41B01B4",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        34999.9714,
+        18099.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        18100.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380C1",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C1",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            18100.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01B1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        39699.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        39700.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380C4",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C4",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            39700.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01B2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        32499.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        32500.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380C3",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C3",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            32500.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01B3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.03,
+        25299.91
+      ],
+      "after_xy_mm": [
+        35000.0,
+        25300.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "380C2",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C2",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            25300.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "P41B01A",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        15700.0,
+        28050.0
+      ],
+      "after_xy_mm": [
+        15335.0,
+        28050.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "evidence": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "C41B04E",
+      "status": "位置已核，接口方位待核",
+      "before_xy_mm": [
+        21300.0,
+        63299.5427
+      ],
+      "after_xy_mm": [
+        21300.0,
+        63300.0094
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "7BBA3",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBA3",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            21300.0,
+            63300.0094
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04F",
+      "status": "位置已核，接口方位待核",
+      "before_xy_mm": [
+        23700.0,
+        63299.5427
+      ],
+      "after_xy_mm": [
+        23700.0,
+        63300.0094
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "7BBA2",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBA2",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            23700.0,
+            63300.0094
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02B3",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        46475.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        46474.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331CF",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331CF",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            46474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02B2",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        39275.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        39274.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331CE",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331CE",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            39274.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02B1",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9700.0,
+        32075.0006
+      ],
+      "after_xy_mm": [
+        9500.0,
+        32074.9998
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "331CD",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331CD",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            32074.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B06",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        23300.0,
+        52400.0
+      ],
+      "after_xy_mm": [
+        23300.0,
+        52453.6
+      ],
+      "before_rotation_deg": 90.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "38A43",
+        "reference_block": "钛液事故槽",
+        "source_rotation_deg": 90.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": -90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          53.6,
+          0
+        ],
+        "basis": "复用F41B02类型；按对应事故槽块中心和方位就位",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 5,
+          "nearest_error_mm": [
+            0.0,
+            0.038,
+            0.02,
+            0.007,
+            853.2,
+            0.007
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B05",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        23300.0,
+        55600.0
+      ],
+      "after_xy_mm": [
+        23300.0,
+        55653.6
+      ],
+      "before_rotation_deg": 90.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "5D249",
+        "reference_block": "钛液事故槽",
+        "source_rotation_deg": 90.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": -90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          53.6,
+          0
+        ],
+        "basis": "复用F41B02类型；按对应事故槽块中心和方位就位",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 5,
+          "nearest_error_mm": [
+            0.0,
+            0.038,
+            0.02,
+            0.007,
+            853.2,
+            0.007
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B02",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        23300.0,
+        59600.0
+      ],
+      "after_xy_mm": [
+        23300.0,
+        59653.6
+      ],
+      "before_rotation_deg": 90.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "5D252",
+        "reference_block": "钛液事故槽",
+        "source_rotation_deg": 90.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": -90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          53.6,
+          0
+        ],
+        "basis": "顶口方位转-90度；槽中心相对块插入点偏X+53.6mm",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 5,
+          "nearest_error_mm": [
+            0.0,
+            0.038,
+            0.02,
+            0.007,
+            853.2,
+            0.007
+          ]
+        }
+      }
+    },
+    {
+      "id": "P41B02B4",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        24800.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        24475.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02B3",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        29300.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        28975.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02B2",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        33800.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        33475.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02B1",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.1554,
+        38300.0
+      ],
+      "after_xy_mm": [
+        41500.0,
+        37975.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A4",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        42800.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        42475.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A3",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        47300.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        46975.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A2",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        51800.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        51475.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A1",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        56300.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        55975.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "L41B01A",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01B",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01D",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01E",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01C",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01F",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "P41B01E",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        28695.4973,
+        28000.0
+      ],
+      "after_xy_mm": [
+        28330.4973,
+        28000.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "evidence": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B01B",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        15700.0,
+        29550.0
+      ],
+      "after_xy_mm": [
+        15335.0,
+        29550.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "evidence": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B01D",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        15700.0,
+        51150.0
+      ],
+      "after_xy_mm": [
+        15335.0,
+        51150.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "evidence": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B08",
+      "status": "泵原点及长轴已校正",
+      "before_xy_mm": [
+        41500.0,
+        60800.0
+      ],
+      "after_xy_mm": [
+        41499.8447,
+        60475.0
+      ],
+      "before_rotation_deg": 90.00000000000003,
+      "after_rotation_deg": 90.0,
+      "evidence": {
+        "sample_handle": "B5E59",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          365734.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "F41B08",
+      "status": "圆轮廓位置可核，朝向缺少特征待核"
+    },
+    {
+      "id": "C41B04A",
+      "status": "位置已核，接口方位待核",
+      "before_xy_mm": [
+        21300.0,
+        70299.5332
+      ],
+      "after_xy_mm": [
+        21300.0001,
+        70299.5095
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "7BB27",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BB27",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            21300.0001,
+            70299.5095
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04B",
+      "status": "位置已核，接口方位待核",
+      "before_xy_mm": [
+        23700.0,
+        70299.5332
+      ],
+      "after_xy_mm": [
+        23700.0,
+        70299.5095
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "7BB13",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BB13",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            23700.0,
+            70299.5095
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04C",
+      "status": "位置已核，接口方位待核",
+      "before_xy_mm": [
+        21300.0,
+        66300.4573
+      ],
+      "after_xy_mm": [
+        21300.0,
+        66299.9906
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "7BBCF",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBCF",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            21300.0,
+            66299.9906
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04D",
+      "status": "位置已核，接口方位待核",
+      "before_xy_mm": [
+        23700.0,
+        66300.4573
+      ],
+      "after_xy_mm": [
+        23700.0,
+        66299.9906
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "7BBCE",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBCE",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            23700.0,
+            66299.9906
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01B",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        3700.0,
+        52700.001
+      ],
+      "after_xy_mm": [
+        3700.0,
+        52700.001
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "F1B27",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01D",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        28300.0,
+        23900.001
+      ],
+      "after_xy_mm": [
+        28300.0,
+        23900.001
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "F1B3D",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01A",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        3700.0,
+        19300.001
+      ],
+      "after_xy_mm": [
+        3700.0,
+        19300.001
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "F1AB4",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01C",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        3700.0,
+        55300.001
+      ],
+      "after_xy_mm": [
+        3700.0,
+        55300.001
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "F1B18",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01E",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        28300.0,
+        26500.001
+      ],
+      "after_xy_mm": [
+        28300.0,
+        26500.001
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "F1B2E",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02C",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        61200.0
+      ],
+      "after_xy_mm": [
+        9500.0,
+        61200.4134
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "3321D",
+        "reference_block": "钛液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          -0.41335
+        ],
+        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 6,
+          "nearest_error_mm": [
+            0.047,
+            0.039,
+            0.0,
+            0.022,
+            0.022,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02B",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        46800.4
+      ],
+      "after_xy_mm": [
+        9500.0,
+        46799.9867
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "33245",
+        "reference_block": "钛液预热槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          -0.41335
+        ],
+        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 6,
+          "nearest_error_mm": [
+            0.047,
+            0.039,
+            0.0,
+            0.022,
+            0.022,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B01A",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        39599.8
+      ],
+      "after_xy_mm": [
+        9500.0,
+        39599.8
+      ],
+      "before_rotation_deg": 270.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "33246",
+        "reference_block": "热水预热槽",
+        "source_rotation_deg": 270.0,
+        "source_scale": [
+          0.9696927021915351,
+          0.9696927021915351
+        ],
+        "model_to_block_rotation_deg": 90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.144,
+            0.165,
+            0.186,
+            0.182,
+            0.175,
+            0.169,
+            0.138
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B03B",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        52800.0
+      ],
+      "after_xy_mm": [
+        9500.0,
+        52800.0
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "33244",
+        "reference_block": "碱液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 4,
+          "matched_within_5mm": 4,
+          "nearest_error_mm": [
+            0.036,
+            0.037,
+            0.037,
+            0.012
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02A",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        18000.0
+      ],
+      "after_xy_mm": [
+        9500.0,
+        17999.5866
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "33BEC",
+        "reference_block": "钛液预热槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          -0.41335
+        ],
+        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 6,
+          "nearest_error_mm": [
+            0.047,
+            0.039,
+            0.0,
+            0.022,
+            0.022,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B03A",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        9500.0,
+        24000.0
+      ],
+      "after_xy_mm": [
+        9500.0,
+        24000.0
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 180.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "33BEB",
+        "reference_block": "碱液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 4,
+          "matched_within_5mm": 4,
+          "nearest_error_mm": [
+            0.036,
+            0.037,
+            0.037,
+            0.012
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02E",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.0,
+        32400.0
+      ],
+      "after_xy_mm": [
+        35000.0,
+        32400.4134
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "38103",
+        "reference_block": "钛液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          -0.41335
+        ],
+        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 6,
+          "nearest_error_mm": [
+            0.047,
+            0.039,
+            0.0,
+            0.022,
+            0.022,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02D",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.0,
+        18000.4
+      ],
+      "after_xy_mm": [
+        35000.0,
+        17999.9866
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "evidence": {
+        "reference_handle": "38106",
+        "reference_block": "钛液预热槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          -0.41335
+        ],
+        "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 6,
+          "nearest_error_mm": [
+            0.047,
+            0.039,
+            0.0,
+            0.022,
+            0.022,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B01B",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        29500.0,
+        17999.8
+      ],
+      "after_xy_mm": [
+        29500.0,
+        17999.8
+      ],
+      "before_rotation_deg": 270.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "38107",
+        "reference_block": "热水预热槽",
+        "source_rotation_deg": 270.0,
+        "source_scale": [
+          0.9696927021915351,
+          0.9696927021915351
+        ],
+        "model_to_block_rotation_deg": 90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.144,
+            0.165,
+            0.186,
+            0.182,
+            0.175,
+            0.169,
+            0.138
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B03C",
+      "status": "位置与顶视方位已复核",
+      "before_xy_mm": [
+        35000.0,
+        24000.0
+      ],
+      "after_xy_mm": [
+        35000.0,
+        24000.0
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "evidence": {
+        "reference_handle": "38105",
+        "reference_block": "碱液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 4,
+          "matched_within_5mm": 4,
+          "nearest_error_mm": [
+            0.036,
+            0.037,
+            0.037,
+            0.012
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B03",
+      "status": "圆轮廓位置可核，朝向缺少特征待核"
+    },
+    {
+      "id": "L41B04",
+      "status": "原点或类型方向未充分对应，保留待核",
+      "evidence": {
+        "source_rotation_deg": 90.00000000000003,
+        "source_scale": [
+          1.5,
+          1.5
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "F41B04",
+      "status": "圆轮廓位置可核，朝向缺少特征待核"
+    }
+  ],
+  "reviewed": 56,
+  "pending": 16,
+  "rule": "位置/朝向按真实图块与顶视特征复核；负比例只取镜像与方向，设备净模尺寸不缩放；无法对应的保留待核"
+}

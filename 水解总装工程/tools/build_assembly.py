@@ -34,6 +34,13 @@ def build():
     origin=[list(e.dxf.insert)[:2] for e in origins]
     tags=doc('水解设备模型库/catalog.json')['models']; models=js('水解设备模型库/示图建模_20260521/models.js')
     foundation=js(FOUND+'foundation_data.js')
+    equipment_project=doc('水解设备模型库/project.json') if (ROOT/'水解设备模型库/project.json').exists() else {}
+    revisions=equipment_project.get('revisions',{})
+    c02_install=doc('水解设备模型库/'+revisions['C41B02']['placements']) if 'C41B02' in revisions else []
+    for revision in revisions.values():
+        params=doc('水解设备模型库/'+str(Path(revision['equipment']).with_name('参数.json')))
+        inputs.add(params['source_drawing'])
+        doc('水解设备模型库/'+str(Path(revision['foundation']).with_name('参数.json')))
     labels=[]
     for e in m.query('TEXT MTEXT'):
         s=e.dxf.text if e.dxftype()=='TEXT' else e.plain_text()
@@ -83,7 +90,8 @@ def build():
         source_key={'F41B05':'F41B02','F41B06':'F41B02'}.get(key,key)
         if not a:
             pending.append({'id':tag,'name':row['name'],'reason':'未取得可唯一关联的平面设备图块，禁止以文字插入点代替设备中心','legacy_position_mm':row['cad_position_mm']});continue
-        if source_key in foundation['equipment']:path=FOUND+foundation['equipment'][source_key]['path']+'model_data.js'
+        if source_key in revisions:path='水解设备模型库/'+revisions[source_key]['equipment']
+        elif source_key in foundation['equipment']:path=FOUND+foundation['equipment'][source_key]['path']+'model_data.js'
         elif source_key in models:path='水解设备模型库/示图建模_20260521/模型/'+source_key+'/model_data.js'
         else:
             pending.append({'id':tag,'name':row['name'],'reason':'暂无可关联的正式类型净模'});continue
@@ -121,11 +129,28 @@ def build():
     if not (ROOT/building_path).exists():raise SystemExit('先运行 厂房外观模型/建筑/tools/build_building.py')
     buildings=js(building_path)['parts']
     read('厂房外观模型/建筑/building.json')
+    if c02_install:
+        revised={p['id']:p for p in c02_install}
+        for p in placements:
+            if p['asset']!='C41B02':continue
+            record=revised[p['id']]
+            assert np.allclose(p['position_mm'],record['position_mm'],atol=.001)
+            assert p['rotation_deg']==record['rotation_deg'] and p.get('mirror_y',False)==record.get('mirror_y',False)
+            for field in ['equipment_version','local_datum','z_status','orientation_status','z_basis','installation_review']:p[field]=record[field]
+            p.pop('layout_review',None)
+        for record in layout_review['records']:
+            if record['id'] in revised:
+                record['legacy_six_port_evidence']=record.pop('evidence',{})
+                record['status']='新总图8组接口，位置保留、工艺方位待核'
+                record['equipment_version']='2.0-C41B02-01'
+        layout_review['reviewed']=sum(p['status'] in ('位置与顶视方位已复核','泵原点及长轴已校正') for p in layout_review['records'])
+        layout_review['pending']=sum('待核' in p['status'] for p in layout_review['records'])
+        save('data/布置复核.json',layout_review)
     civil=[]
     for p in placements:
         key=p['asset']
         if key not in ('D41B02','F41B01','C41B01','C41B02','C41B03') or key not in foundation['assets']:continue
-        source=FOUND+key+'/model_data.js';assets['foundation-'+key]={'path':'../'+source,'source':source,'units':'mm'};mesh(source)
+        source=('水解设备模型库/'+revisions[key]['foundation']) if key in revisions else FOUND+key+'/model_data.js';assets['foundation-'+key]={'path':'../'+source,'source':source,'units':'mm'};mesh(source)
         civil.append({'id':'BASE-'+p['id'],'name':foundation['assets'][key]['name'],'asset':'foundation-'+key,'position_mm':p['position_mm'],'rotation_deg':p['rotation_deg'],'mirror_y':p.get('mirror_y',False),'level':p['level'],'support_for':p['id']})
     # Cross-check 23 main vessel centers against the independent architectural plan.
     refs=doc('厂房外观模型/建筑/一层设备基础.json')['items']; checks=[]
@@ -152,6 +177,7 @@ def build():
         'assets':assets,'equipment':placements,'foundations':civil,'unplaced':pending,
         'limits':['上部柱截面沿用源模型，+9.900m以上需结构图复核','墙厚200mm及屋面厚200mm仅显示假设，不参与确认碰撞','建筑统一引用厂房外观模型完整网格；160mm板厚为显示口径，吊装孔按建施图真切孔','图块朝向尚未逐项与类型模型管口方向核对','未定位设备不进入空间场景或碰撞检查；待核安装标高单列']}
     audit={'axis_grid_x_mm':xs,'main_vessel_foundation_checks':checks,'max_error_mm':max(c['error_mm'] for c in checks),'placed':len(placements),'unplaced':len(pending),'z_referenced':sum(p['z_status']=='有安装基准' for p in placements),'limitations':assembly['limits'],'layout_reviewed':layout_review['reviewed'],'layout_pending':layout_review['pending']}
+    assembly['equipment_versions']={key:value['version'] for key,value in revisions.items()}
     save('assembly.json',assembly);save('data/设备就位表.json',placements);save('data/待核设备.json',pending);save('data/对齐依据.json',audit)
     (OUT/'data/building.js').write_text('// Compatibility alias only; authoritative mesh lives in 厂房外观模型.\nwindow.ASSEMBLY_BUILDING=window.BUILDING_MODEL.parts;\n',encoding='utf-8')
     (OUT/'data/assembly.js').write_text('window.SITE_ASSEMBLY='+json.dumps(assembly,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
