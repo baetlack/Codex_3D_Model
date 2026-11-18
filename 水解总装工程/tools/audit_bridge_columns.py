@@ -127,7 +127,7 @@ def audit(lp=False):
  groups=[]
  for id in sorted({r['bridge'] for r in rows}):
   rr=[r for r in rows if r['bridge']==id];groups.append({'bridge':id,'bridge_type':rr[0]['bridge_type'],'pairs':len(rr),'columns':[r['column'] for r in rr],'depths_mm':sorted({r['max_depth_mm'] for r in rr}),'best_directions':sorted({r['direction'] for r in rr})})
- return {'schema_version':1,'units':'mm','source_sha256':inputs,'tolerance_mm':.1,
+ return {'schema_version':1,'assembly_version':json.loads((ROOT/'水解桥架工程/models/整体/assembly.json').read_text())['version'],'units':'mm','source_sha256':inputs,'tolerance_mm':.1,
     'scope':{'bridge_components':len(bridges),'columns':dict(collections.Counter(c['kind'] for c in columns))},
     'definitions':{'max_depth_mm':'实际桥架面进入柱体后，距最近X/Y柱侧面的最大距离；不是包围盒跨度，也不是旧报告三角面采样点深度。',
       'separation_mm':'仅对这一对模型，沿X或Y四个正负方向中，刚好不再穿柱的最小平移距离（允许表面接触）。',
@@ -137,7 +137,7 @@ def audit(lp=False):
        'column_level_groups':len({(r['level'],r['column']) for r in rows}),'long_vertical_overlap_pairs':[{'bridge':r['bridge'],'column':r['column'],'max_depth_mm':r['max_depth_mm'],'overlap_height_mm':r['actual_intersection_extent_mm'][2]} for r in rows if r['actual_intersection_extent_mm'][2]>1000],'by_column_scope':dict(collections.Counter(r['column_scope'] for r in rows)),
        'by_level':dict(collections.Counter(r['level'] for r in rows)),'depth_bands':bands,'separation_bands':[{'range':label,'total':int(sum(low<r['separation_mm']<=high for r in rows))} for low,high,label in BINS]},
     'validation':{'independent_linear_program_verified_pairs':verified,'all_axis_separation_results_rechecked':True},
-    'limits':['反映当前模型几何，不单凭穿入数值认定成因或施工冲突。','750/650柱截面取自5.970–9.900m柱平面并沿用到23m；上部柱截面仍需原结构图逐段复核。','未调整任何桥架、建筑或设备模型，未将孤立配对的平移下限作为整装方案。'],
+    'limits':['反映当前模型几何，不单凭穿入数值认定成因或施工冲突。','750/650柱截面取自5.970–9.900m柱平面并沿用到23m；上部柱截面仍需原结构图逐段复核。','本统计脚本仅读取当前模型；2.0整改历史与1.0冻结结果见桥架工程/版本目录。'],
     'penetrations':sorted(rows,key=lambda r:(-r['max_depth_mm'],r['bridge'],r['column'])),'normal_contacts':contacts,'aabb_only':box_only,'by_bridge':groups}
 
 
@@ -174,7 +174,7 @@ def write_reports(report):
  lines += [f"- {len(large)}组发生在750×750柱上，其中{len(medium)}组在30–60mm。750比650柱每侧多50mm，与部分成组差值相符，但不能据此确认错位成因或擅自修改柱截面。",
    '- 同一桥架常连续碰到多根柱，应结合整段走向、接口和柱截面核对，不能把本表平移下限直接逐件套用。',
    '- 最深内侵与退出距离不是同一个量；弯头、三通等角部交叠尤其不能只取旧报告的采样点深度当修补量。','',
-   '![典型位置的实际相交面](../previews/桥架立柱重叠典型案例.png)','',
+   *(['![典型位置的实际相交面](../previews/桥架立柱重叠典型案例.png)',''] if rows else ['当前2.0未发现穿柱；整改前69组的明细与典型图已冻结在桥架工程/版本/1.0。','']),
    '## 所有穿入配对（按深度降序）','', '| 桥架 | 立柱 | 柱截面mm | 最深内侵mm | 单轴退出距离mm | 方向 |','|---|---|---|---:|---:|---|']
  for r in rows:lines.append(f"| {r['bridge']} | {r['column']} | {r['column_section_mm'][0]:g}×{r['column_section_mm'][1]:g} | {r['max_depth_mm']:.3f} | {r['separation_mm']:.3f} | {r['direction']} |")
  lines += ['', '## 按桥架构件归并','', '| 桥架 | 类型 | 穿入配对数 | 涉及立柱 | 深度mm |','|---|---|---:|---|---|']

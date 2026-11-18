@@ -22,14 +22,14 @@ with sync_playwright() as p:
  page.locator('#top').click();assert abs(page.evaluate('assemblyViewer.getState().pitch')-math.pi/2)<1e-6;checks['north_top']=True
  page.locator('#search').fill('D41B02B1');page.locator('#list button').click();assert '位置修正' in page.locator('#details').inner_text();checks['search_selection_and_correction']=True
  page.locator('#floor').select_option('106');page.locator('#cut').fill('110');page.locator('#cut').dispatch_event('input');assert page.locator('#cutValue').inner_text()=='EL110.0';checks['floor_and_section']=True
- page.locator('#search').fill('');page.locator('#issuesTab').click();page.locator('#list button').first.click();assert page.locator('#floor').input_value()=='all';checks['intersection_highlight_and_focus']=True
- assert page.locator('#isolate').get_attribute('aria-pressed')=='true';page.locator('#isolate').click();page.locator('#isolate').click();checks['pair_isolation']=True
+ page.locator('#search').fill('');page.locator('#issuesTab').click()
+ assert page.locator('#list button').count()==0;checks['v2_zero_primary_column_penetrations']=True
  page.screenshot(path=str(out/'previews/几何相交核对.png'))
- assert page.locator('#list button').count()==66
  page.locator('#issueScope').select_option('bridge-contact');assert page.locator('#list button').count()==18
  page.locator('#list button').first.click();assert '表面接触（正常）' in page.locator('#details').inner_text()
  page.screenshot(path=str(out/'previews/正常表面接触.png'))
- checks['66_penetrations_18_normal_contacts']=True
+ assert page.locator('#isolate').get_attribute('aria-pressed')=='true';page.locator('#isolate').click();page.locator('#isolate').click();checks['pair_isolation']=True
+ checks['0_penetrations_18_normal_contacts']=True
  page.locator('#pendingTab').click();assert page.locator('#list button').count()==27;checks['pending_27_excluded']=True
  page.locator('#reset').click();assert abs(page.evaluate('assemblyViewer.getState().pitch')-math.radians(3))<1e-6
  rect=page.locator('#scene').bounding_box();page.mouse.move(rect['x']+rect['width']/2,rect['y']+rect['height']/2);page.mouse.down();page.mouse.move(rect['x']+300,rect['y']-500,steps=10);page.mouse.up();assert 0<=page.evaluate('assemblyViewer.getState().pitch')<=math.pi/2;checks['rotation_upright_constraint']=True

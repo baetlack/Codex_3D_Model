@@ -4,7 +4,7 @@
   "name": "二期水解工段仪表桥架",
   "baseline_version": "1.0",
   "baseline_date": "2026-11-03",
-  "assembly_version": "0.2-direction-and-riser",
+  "assembly_version": "2.0-column-contact",
   "fitting_library_version": "1.2-direction-fix",
   "entry": "index.html",
   "paths": {
@@ -75,7 +75,7 @@
     "library_fittings": 47,
     "derived_fittings": 1
   },
-  "scope": "三层桥架；新增独立槽罐及顶部搅拌器设备模型；厂房结构与机柜室尚未建立",
+  "scope": "三层桥架独立维护；建筑和设备通过水解总装工程组合，不改其他模块源网格",
   "configuration_scope": "路径由 tools/project.py 读取；楼层、参数、装配规则仍在 tools/source 生成脚本中。修改本清单不会自动改变几何或浏览器内嵌数据。",
   "rules_file": "data/来源记录.json",
   "integrity_file": "data/文件清单.json",
@@ -84,7 +84,10 @@
       "version": "0.3",
       "entry": "models/设备/槽罐搅拌器_标注侧视/index.html",
       "source": "data/原始资料/设备/槽罐搅拌器_标注侧视_2026-11-06.png",
-      "revision_sources": ["data/原始资料/设备/槽罐搅拌器_一体轴座标注_2026-11-06.png", "data/原始资料/设备/槽罐搅拌器_中间轴范围标注_2026-11-06.png"],
+      "revision_sources": [
+        "data/原始资料/设备/槽罐搅拌器_一体轴座标注_2026-11-06.png",
+        "data/原始资料/设备/槽罐搅拌器_中间轴范围标注_2026-11-06.png"
+      ],
       "build_command": "python tools/project.py build-agitator",
       "status": "单张侧视比例重建，设备位号待确认"
     },
@@ -93,16 +96,32 @@
       "entry": "../水解设备模型库/index.html",
       "asset_index": "models/设备/设备基础_20261106/基础索引.json",
       "source": "data/原始资料/设备基础/水解设备基础图_增补烟囱及洗涤塔钢塔架_20261106.dxf",
-      "equipment_tags": ["F41B04", "L41B02"],
+      "equipment_tags": [
+        "F41B04",
+        "L41B02"
+      ],
       "build_command": "python tools/project.py build-equipment-foundations"
     }
   },
-  "revision": "1.1.1-viewer",
+  "revision": "2.0-column-contact",
   "viewer_features": {
     "elevation_limits_deg": [
       0,
       90
     ],
     "independent_collapsible_panels": true
+  },
+  "active_version": "2.0",
+  "versions": {
+    "1.0": {
+      "entry": "版本/1.0/浏览.html",
+      "status": "frozen",
+      "baseline_commit": "4533d7a"
+    },
+    "2.0": {
+      "entry": "版本/2.0/index.html",
+      "status": "active",
+      "basis": "厂房柱位与截面固定，接口联动整改"
+    }
   }
 }

@@ -35,12 +35,17 @@ def refresh_entry():
         html=html.replace('src="'+prefix,'src="models/整体/'+prefix).replace('href="'+prefix,'href="models/整体/'+prefix)
     html=html.replace('当前为装配初版。直段端点已适配连接件接口，未新增层间连接线路。','三层桥架工程；参数来源、装配规则与当前边界见工程说明。')
     html=html.replace('<span class="version">','<a href="models/连接件库/index.html">连接件库</a> · <a href="README.md">工程说明</a> · <span class="version">')
+    if CONFIG.get('active_version')=='2.0':
+        html=html.replace('整体装配预览 v0.2','桥架 2.0 · 柱面接触整改').replace('<span class="version">','<a href="版本/1.0/浏览.html">1.0 原版</a> · <a href="版本/2.0/index.html">2.0 整改版</a> · <span class="version">')
+    html='\n'.join(line.rstrip() for line in html.splitlines())+'\n'
     (ROOT/'index.html').write_text(html,encoding='utf-8')
     js=(P['assembly']/'viewer.js').read_text(encoding='utf-8').replace('href="reports/装配说明.html"','href="models/整体/reports/装配说明.html"')
     (ROOT/'viewer/viewer.js').write_text(js,encoding='utf-8')
 
 def main():
     command=sys.argv[1] if len(sys.argv)>1 else 'check'
+    if command=='versions':
+        run(ROOT/'tools','version_pages.py'); return
     if command=='snapshot': snapshot(); print('SHA256 snapshot updated.'); return
     if command=='build-agitator':
         run(ROOT/'tools/source','build_annotated_agitator.py')
@@ -48,6 +53,8 @@ def main():
     if command=='build-equipment-foundations':
         run(ROOT/'tools/source','build_equipment_foundations.py')
         return
+    if command=='check-v2':
+        run(ROOT/'tools/source','verify_columns_v2.py'); return
     if command not in ['check','build','build-library']: raise SystemExit('Use check | build | build-library | build-agitator | build-equipment-foundations | snapshot')
     if command=='check':
         expected=json.loads(INDEX.read_text(encoding='utf-8'))['files'];actual=hashes()
@@ -59,7 +66,10 @@ def main():
         if command=='build-library': run(work,'build_fitting_library.py')
         run(work,'verify_fitting_library.py')
         if command.startswith('build'):
-            run(work,'build_tray_assembly.py');run(work,'render_riser_dimensions.py')
+            if CONFIG.get('active_version')=='2.0':
+                subprocess.run([sys.executable,str(ROOT/'tools/source/rectify_columns_v2.py'),'--output',str(work/'三层桥架模型')],check=True)
+            else: run(work,'build_tray_assembly.py')
+            run(work,'render_riser_dimensions.py')
         run(work,'verify_tray_assembly.py')
         if command.startswith('build'):
             if command=='build-library': shutil.copytree(work/'连接件模型库',P['fitting_library'],dirs_exist_ok=True)
@@ -71,7 +81,9 @@ def main():
                 evidence=json.loads(browser.read_text(encoding='utf-8'))
                 evidence['current_build_status']='not_rerun_after_rebuild'
                 browser.write_text(json.dumps(evidence,ensure_ascii=False,indent=2),encoding='utf-8')
+            if CONFIG.get('active_version')=='2.0': run(ROOT/'tools','version_pages.py')
             print('Build complete. Update provenance/version; rerun browser review, then snapshot.')
+    if CONFIG.get('active_version')=='2.0' and command=='check': run(ROOT/'tools/source','verify_columns_v2.py')
     print('Geometry and interfaces passed. '+('File hashes passed.' if command=='check' else ''))
 
 if __name__=='__main__': main()

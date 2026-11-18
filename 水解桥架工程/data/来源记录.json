@@ -3052,5 +3052,16 @@
       "date": "2026-11-06",
       "scope": "左右侧栏使用30像素图标按钮"
     }
-  ]
+  ],
+  "column_contact_revision_2_0": {
+    "date": "2026-11-18",
+    "user_authorization": "保留当前版本为1.0，按柱位、柱截面及连接件—直段联动方案整改2.0，两版均在桥架工程内",
+    "baseline": "版本/1.0/冻结清单.json",
+    "builder": "tools/source/rectify_columns_v2.py",
+    "verification": "tools/source/verify_columns_v2.py",
+    "report": "models/整体/reports/2.0整改核对.json",
+    "coordinate_basis": "固定厂房外观模型当前120根柱；不改柱网、柱截面、设备或连接件形状",
+    "active": "2.0",
+    "original_sources_unchanged": true
+  }
 }

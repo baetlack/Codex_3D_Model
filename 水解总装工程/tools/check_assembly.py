@@ -122,7 +122,7 @@ def run():
   'limits':['相交是几何证据，不自动认定施工冲突','部分安装标高、管口朝向及上层柱截面待核','本报告仍限原主体柱/设备/桥架；新增房间、楼梯及梁架未纳入检查','不检查检修空间；不将相接桥架端口列为冲突']}
  (OUT/'data/碰撞报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  (OUT/'data/collisions.js').write_text('window.ASSEMBLY_COLLISIONS='+json.dumps(report,ensure_ascii=False,separators=(',',':'))+';\n')
- special={'version':'0.3','contact_tolerance_mm':0.1,'columns_retained':sum(o['kind']=='structure' for o in objects),'penetrations':[r for r in hits if r['kind']=='bridge/structure'],'normal_contacts':[r for r in contacts if r['kind']=='bridge/structure'],'rule':'真实三角面进入柱体开内部才报穿入；仅表面接触为正常，未改桥架位置'}
+ special={'version':'0.3','contact_tolerance_mm':0.1,'columns_retained':sum(o['kind']=='structure' for o in objects),'penetrations':[r for r in hits if r['kind']=='bridge/structure'],'normal_contacts':[r for r in contacts if r['kind']=='bridge/structure'],'rule':'真实三角面进入柱体开内部才报穿入；仅表面接触为正常；当前引用桥架2.0，整改记录位于桥架源模块'}
  (OUT/'data/桥架立柱核对.json').write_text(json.dumps(special,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:v for k,v in report.items() if k not in ('intersections','normal_contacts')},ensure_ascii=False));print('intersections',len(hits),'contacts',len(contacts))
 if __name__=='__main__':run()

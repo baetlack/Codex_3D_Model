@@ -1,0 +1,34 @@
+{
+  "width_mm": 500,
+  "height_mm": 200,
+  "horizontal_offset_mm": 971.0304178625186,
+  "offset_X_mm": 970.9801608635462,
+  "offset_Y_mm": -9.879252181177435,
+  "diagonal_rise_mm": 971.0304178625186,
+  "straight_end_mm": 150,
+  "total_rise_mm": 1271.0304178625186,
+  "diagonal_angle_deg": 45,
+  "path_centerline_mm": [
+    [
+      38603.545825055626,
+      13870.265508939789,
+      15428.96958213748
+    ],
+    [
+      38603.545825055626,
+      13870.265508939789,
+      15578.96958213748
+    ],
+    [
+      39574.52598591917,
+      13860.386256758611,
+      16550.0
+    ],
+    [
+      39574.52598591917,
+      13860.386256758611,
+      16700.0
+    ]
+  ],
+  "construction": "Horizontal offset equals diagonal rise exactly; end stubs sized for miter clearance; dimensions in mm"
+}

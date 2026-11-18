@@ -1,0 +1,352 @@
+{
+  "models": 47,
+  "GLB_structure": "passed",
+  "finite_nonzero_triangles": "passed",
+  "unit_normals": "passed",
+  "interface_metadata": "passed",
+  "all_screenshots_preserved": "passed",
+  "scope": "File and mesh structure only; not dimensional validation against CAD, not manifold/boolean validation. Browser UI not manually tested.",
+  "details": [
+    {
+      "id": "L1-C01",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8172,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C02",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12536,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C03",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12536,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C04",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12536,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C05",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8168,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C06",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4764,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C07",
+      "triangles": 60,
+      "ports": 2,
+      "glb_bytes": 6192,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C08",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8172,
+      "checks": "passed"
+    },
+    {
+      "id": "L1-C09",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4800,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C01",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8128,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C02",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12528,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C03",
+      "triangles": 28,
+      "ports": 2,
+      "glb_bytes": 3444,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C04",
+      "triangles": 28,
+      "ports": 2,
+      "glb_bytes": 3464,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C05",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12528,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C06",
+      "triangles": 28,
+      "ports": 2,
+      "glb_bytes": 3444,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C07",
+      "triangles": 28,
+      "ports": 2,
+      "glb_bytes": 3464,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C08",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12524,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C09",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4768,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C10",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4736,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C11",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8140,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C12",
+      "triangles": 28,
+      "ports": 2,
+      "glb_bytes": 3488,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C13",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12524,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C14",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4768,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C15",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12524,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C16",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4768,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C17",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4736,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C18",
+      "triangles": 60,
+      "ports": 2,
+      "glb_bytes": 6168,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C19",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8144,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C20",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8144,
+      "checks": "passed"
+    },
+    {
+      "id": "L2-C21",
+      "triangles": 28,
+      "ports": 2,
+      "glb_bytes": 3492,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C01",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4768,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C02",
+      "triangles": 96,
+      "ports": 3,
+      "glb_bytes": 9204,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C03",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4796,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C04",
+      "triangles": 96,
+      "ports": 3,
+      "glb_bytes": 9172,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C05",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4796,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C06",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12524,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C07",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4828,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C08",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4796,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C09",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8144,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C10",
+      "triangles": 60,
+      "ports": 2,
+      "glb_bytes": 6160,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C11",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8140,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C12",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12528,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C13",
+      "triangles": 136,
+      "ports": 3,
+      "glb_bytes": 12524,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C14",
+      "triangles": 68,
+      "ports": 2,
+      "glb_bytes": 6780,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C15",
+      "triangles": 96,
+      "ports": 3,
+      "glb_bytes": 9204,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C16",
+      "triangles": 84,
+      "ports": 2,
+      "glb_bytes": 8144,
+      "checks": "passed"
+    },
+    {
+      "id": "L3-C17",
+      "triangles": 44,
+      "ports": 2,
+      "glb_bytes": 4796,
+      "checks": "passed"
+    }
+  ],
+  "identical_geometry_pairs": [
+    [
+      "L2-C04",
+      "L2-C07"
+    ],
+    [
+      "L3-C02",
+      "L3-C15"
+    ]
+  ],
+  "preserved_source_images": 56,
+  "revision_envelopes_and_dimensions": "passed"
+}

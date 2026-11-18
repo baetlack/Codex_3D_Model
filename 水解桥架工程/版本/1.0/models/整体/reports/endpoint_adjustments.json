@@ -1,0 +1,2050 @@
+[
+  {
+    "straight": "L3-S-37F08",
+    "end": 0,
+    "endpoint_adjustment_mm": 205.246,
+    "original_world_center_mm": [
+      40346.611189034535,
+      28900.018774550575,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      40141.36919303483,
+      28899.195076308002,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37F08",
+    "end": 1,
+    "endpoint_adjustment_mm": 15.293,
+    "original_world_center_mm": [
+      40146.611189034535,
+      28900.018774550575,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      40131.36919303506,
+      28899.195076308002,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37F03",
+    "end": 0,
+    "endpoint_adjustment_mm": 199.134,
+    "original_world_center_mm": [
+      40646.611189034535,
+      28900.018774550575,
+      18000.0
+    ],
+    "assembled_world_center_mm": [
+      40641.36919303483,
+      28899.195076308002,
+      17800.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37F03",
+    "end": 1,
+    "endpoint_adjustment_mm": 5.306,
+    "original_world_center_mm": [
+      40646.611189034535,
+      28900.018774550575,
+      17300.0
+    ],
+    "assembled_world_center_mm": [
+      40641.36919303483,
+      28899.195076308002,
+      17300.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EFB",
+    "end": 0,
+    "endpoint_adjustment_mm": 15.272,
+    "original_world_center_mm": [
+      39599.611189034535,
+      34875.11877455058,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      39584.36977319338,
+      34875.34421532088,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EFB",
+    "end": 1,
+    "endpoint_adjustment_mm": 15.293,
+    "original_world_center_mm": [
+      39596.611189034535,
+      29450.018774550575,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      39581.36919303506,
+      29449.195076308002,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EF8",
+    "end": 0,
+    "endpoint_adjustment_mm": 247.62,
+    "original_world_center_mm": [
+      39599.611189034535,
+      36025.11877455058,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      39584.36977319338,
+      35777.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EF8",
+    "end": 1,
+    "endpoint_adjustment_mm": 15.272,
+    "original_world_center_mm": [
+      39599.611189034535,
+      35225.11877455058,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      39584.36977319338,
+      35225.34421532088,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EF3",
+    "end": 0,
+    "endpoint_adjustment_mm": 95.283,
+    "original_world_center_mm": [
+      43174.611189034535,
+      28900.018774550575,
+      17000.0
+    ],
+    "assembled_world_center_mm": [
+      43079.33155425114,
+      28899.195076308002,
+      17000.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EF3",
+    "end": 1,
+    "endpoint_adjustment_mm": 5.306,
+    "original_world_center_mm": [
+      40946.611189034535,
+      28900.018774550575,
+      17000.0
+    ],
+    "assembled_world_center_mm": [
+      40941.36919303483,
+      28899.195076308002,
+      17000.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EF1",
+    "end": 0,
+    "endpoint_adjustment_mm": 99.289,
+    "original_world_center_mm": [
+      43574.611189034535,
+      29300.018774550575,
+      17000.0
+    ],
+    "assembled_world_center_mm": [
+      43579.33155425114,
+      29399.195076308002,
+      17000.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37EF1",
+    "end": 1,
+    "endpoint_adjustment_mm": 4.72,
+    "original_world_center_mm": [
+      43574.611189034535,
+      64474.61877455058,
+      17000.0
+    ],
+    "assembled_world_center_mm": [
+      43579.33155425114,
+      64474.61877455058,
+      17000.0
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37EEE",
+    "end": 0,
+    "endpoint_adjustment_mm": 285.745,
+    "original_world_center_mm": [
+      39599.98913078912,
+      9775.01877455059,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      39314.24892762146,
+      9775.01877455059,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EEE",
+    "end": 1,
+    "endpoint_adjustment_mm": 28.603,
+    "original_world_center_mm": [
+      39124.98913078912,
+      9775.01877455059,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      39153.545825055626,
+      9775.01877455059,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EEC",
+    "end": 0,
+    "endpoint_adjustment_mm": 216.106,
+    "original_world_center_mm": [
+      39999.98913078912,
+      9775.01877455059,
+      8700.0
+    ],
+    "assembled_world_center_mm": [
+      39914.24892762146,
+      9775.01877455059,
+      8501.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EEC",
+    "end": 1,
+    "endpoint_adjustment_mm": 85.74,
+    "original_world_center_mm": [
+      39999.98913078912,
+      9775.01877455059,
+      6000.0
+    ],
+    "assembled_world_center_mm": [
+      39914.24892762146,
+      9775.01877455059,
+      6000.0
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37EE1",
+    "end": 0,
+    "endpoint_adjustment_mm": 285.745,
+    "original_world_center_mm": [
+      39599.98913078912,
+      12025.018774550583,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      39314.24892762146,
+      12025.018774550583,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EE1",
+    "end": 1,
+    "endpoint_adjustment_mm": 28.603,
+    "original_world_center_mm": [
+      39124.98913078912,
+      12025.018774550583,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      39153.545825055626,
+      12025.018774550583,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EDE",
+    "end": 0,
+    "endpoint_adjustment_mm": 216.106,
+    "original_world_center_mm": [
+      39999.98913078912,
+      12025.018774550583,
+      8700.0
+    ],
+    "assembled_world_center_mm": [
+      39914.24892762146,
+      12025.018774550583,
+      8501.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EDE",
+    "end": 1,
+    "endpoint_adjustment_mm": 85.74,
+    "original_world_center_mm": [
+      39999.98913078912,
+      12025.018774550583,
+      6000.0
+    ],
+    "assembled_world_center_mm": [
+      39914.24892762146,
+      12025.018774550583,
+      6000.0
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37ED3",
+    "end": 0,
+    "endpoint_adjustment_mm": 97.692,
+    "original_world_center_mm": [
+      38424.98913078912,
+      71174.61877455059,
+      10500.0
+    ],
+    "assembled_world_center_mm": [
+      38429.70949600579,
+      71077.04181773185,
+      10500.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37ED3",
+    "end": 1,
+    "endpoint_adjustment_mm": 4.732,
+    "original_world_center_mm": [
+      38424.98913078912,
+      64474.61877455059,
+      10500.0
+    ],
+    "assembled_world_center_mm": [
+      38429.70949600579,
+      64474.61877455059,
+      10500.331262623786
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37ED2",
+    "end": 0,
+    "endpoint_adjustment_mm": 2.446,
+    "original_world_center_mm": [
+      33624.98913078912,
+      71574.61877455059,
+      10500.0
+    ],
+    "assembled_world_center_mm": [
+      33624.98913078912,
+      71577.04181773185,
+      10500.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37ED2",
+    "end": 1,
+    "endpoint_adjustment_mm": 95.311,
+    "original_world_center_mm": [
+      38024.98913078912,
+      71574.61877455059,
+      10500.0
+    ],
+    "assembled_world_center_mm": [
+      37929.70949600579,
+      71577.04181773185,
+      10500.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37ED1",
+    "end": 0,
+    "endpoint_adjustment_mm": 97.725,
+    "original_world_center_mm": [
+      32824.98913078912,
+      71574.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      32922.68333028286,
+      71577.04181773185,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37ED1",
+    "end": 1,
+    "endpoint_adjustment_mm": 2.446,
+    "original_world_center_mm": [
+      33224.98913078912,
+      71574.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      33224.98913078912,
+      71577.04181773185,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EC8",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.331,
+    "original_world_center_mm": [
+      18574.989130789123,
+      72024.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      18574.989130789123,
+      72024.61877455059,
+      10900.331262623786
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37EC8",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.331,
+    "original_world_center_mm": [
+      18574.989130789123,
+      62573.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      18574.989130789123,
+      62573.61877455059,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EC6",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      19424.989130789123,
+      7025.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      19424.989130789123,
+      7024.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EC6",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.331,
+    "original_world_center_mm": [
+      19424.989130789123,
+      61398.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      19424.989130789123,
+      61398.61877455059,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EC1",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      26424.989130789123,
+      7025.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      26424.989130789123,
+      7024.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EC1",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.331,
+    "original_world_center_mm": [
+      26424.989130789123,
+      7525.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      26424.989130789123,
+      7525.01877455059,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EB9",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.331,
+    "original_world_center_mm": [
+      26424.989130789123,
+      8325.01877455059,
+      10100.0
+    ],
+    "assembled_world_center_mm": [
+      26424.989130789123,
+      8325.01877455059,
+      10100.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EB9",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.331,
+    "original_world_center_mm": [
+      26424.989130789123,
+      72024.61877455059,
+      10100.0
+    ],
+    "assembled_world_center_mm": [
+      26424.989130789123,
+      72024.61877455059,
+      10100.331262623786
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37EAB",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      33924.98913078912,
+      6475.01877455059,
+      11300.0
+    ],
+    "assembled_world_center_mm": [
+      33924.98913078912,
+      6474.52724449792,
+      11300.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EAB",
+    "end": 1,
+    "endpoint_adjustment_mm": 5.035,
+    "original_world_center_mm": [
+      36064.98913078912,
+      6475.01877455059,
+      11300.0
+    ],
+    "assembled_world_center_mm": [
+      36069.98913078912,
+      6474.52724449792,
+      11300.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EAA",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      21224.989130789123,
+      6475.01877455059,
+      11300.0
+    ],
+    "assembled_world_center_mm": [
+      21224.989130789123,
+      6474.52724449792,
+      11300.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37EAA",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      23774.989130789123,
+      6475.01877455059,
+      11300.0
+    ],
+    "assembled_world_center_mm": [
+      23774.989130789123,
+      6474.52724449792,
+      11300.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8F",
+    "end": 0,
+    "endpoint_adjustment_mm": 381.444,
+    "original_world_center_mm": [
+      37174.98913078912,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      36793.54582505592,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8F",
+    "end": 1,
+    "endpoint_adjustment_mm": 5.035,
+    "original_world_center_mm": [
+      36474.98913078912,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      36469.98913078912,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8E",
+    "end": 0,
+    "endpoint_adjustment_mm": 2.381,
+    "original_world_center_mm": [
+      32974.98913078912,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      32972.68333028286,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8E",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      33524.98913078912,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      33524.98913078912,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8D",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      25874.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      25874.989130789123,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8D",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      24174.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      24174.989130789123,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8C",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      19974.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      19974.989130789123,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37E8C",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      20824.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      20824.989130789123,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37E74",
+    "end": 0,
+    "endpoint_adjustment_mm": 196.801,
+    "original_world_center_mm": [
+      5475.362410901114,
+      14025.018774550583,
+      4700.0
+    ],
+    "assembled_world_center_mm": [
+      5480.208497263608,
+      13828.278448982688,
+      4700.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37E74",
+    "end": 1,
+    "endpoint_adjustment_mm": 4.876,
+    "original_world_center_mm": [
+      5475.362410901114,
+      8349.01877455059,
+      4700.0
+    ],
+    "assembled_world_center_mm": [
+      5480.208497263608,
+      8348.868774550589,
+      4700.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37E70",
+    "end": 0,
+    "endpoint_adjustment_mm": 4.876,
+    "original_world_center_mm": [
+      5475.362410901114,
+      7868.718774550587,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      5480.208497263608,
+      7868.868774550589,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37E70",
+    "end": 1,
+    "endpoint_adjustment_mm": 32.489,
+    "original_world_center_mm": [
+      5475.362410901114,
+      7025.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      5480.208497263608,
+      6992.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37E6E",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      12725.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      12725.362410901114,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37E6E",
+    "end": 1,
+    "endpoint_adjustment_mm": 197.78,
+    "original_world_center_mm": [
+      6375.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      6180.208497263608,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CDD",
+    "end": 0,
+    "endpoint_adjustment_mm": 28.603,
+    "original_world_center_mm": [
+      38574.98913078912,
+      9225.01877455059,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      9225.01877455059,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CDD",
+    "end": 1,
+    "endpoint_adjustment_mm": 251.143,
+    "original_world_center_mm": [
+      38574.98913078912,
+      7025.01877455059,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      7274.52724449792,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CDC",
+    "end": 0,
+    "endpoint_adjustment_mm": 28.603,
+    "original_world_center_mm": [
+      38574.98913078912,
+      11475.018774550583,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      11475.018774550583,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CDC",
+    "end": 1,
+    "endpoint_adjustment_mm": 28.603,
+    "original_world_center_mm": [
+      38574.98913078912,
+      10325.018774550583,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      10325.018774550583,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CD8",
+    "end": 0,
+    "endpoint_adjustment_mm": 99.449,
+    "original_world_center_mm": [
+      38574.98913078912,
+      13375.018774550583,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      13470.265508939789,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CD8",
+    "end": 1,
+    "endpoint_adjustment_mm": 28.603,
+    "original_world_center_mm": [
+      38574.98913078912,
+      12575.018774550583,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      12575.018774550583,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CCB",
+    "end": 0,
+    "endpoint_adjustment_mm": 221.45,
+    "original_world_center_mm": [
+      38024.98913078912,
+      6475.01877455059,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      37803.545825055626,
+      6474.52724449792,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CCB",
+    "end": 1,
+    "endpoint_adjustment_mm": 181.451,
+    "original_world_center_mm": [
+      37974.98913078912,
+      6475.01877455059,
+      9100.0
+    ],
+    "assembled_world_center_mm": [
+      37793.54582505592,
+      6474.52724449792,
+      9101.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CC9",
+    "end": 0,
+    "endpoint_adjustment_mm": 181.451,
+    "original_world_center_mm": [
+      37574.98913078912,
+      6475.01877455059,
+      9500.0
+    ],
+    "assembled_world_center_mm": [
+      37393.54582505592,
+      6474.52724449792,
+      9501.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37CC9",
+    "end": 1,
+    "endpoint_adjustment_mm": 269.795,
+    "original_world_center_mm": [
+      37574.98913078912,
+      6475.01877455059,
+      10500.0
+    ],
+    "assembled_world_center_mm": [
+      37393.54582505592,
+      6474.52724449792,
+      10300.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C74",
+    "end": 0,
+    "endpoint_adjustment_mm": 150.771,
+    "original_world_center_mm": [
+      39393.611189034535,
+      22025.018774550575,
+      15400.0
+    ],
+    "assembled_world_center_mm": [
+      39378.36967362219,
+      21875.020222638246,
+      15400.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C74",
+    "end": 1,
+    "endpoint_adjustment_mm": 150.774,
+    "original_world_center_mm": [
+      39393.611189034535,
+      22025.018774550575,
+      17900.0
+    ],
+    "assembled_world_center_mm": [
+      39378.36967362219,
+      21875.020222638246,
+      17900.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C73",
+    "end": 0,
+    "endpoint_adjustment_mm": 15.271,
+    "original_world_center_mm": [
+      39593.611189034535,
+      21474.918774550584,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      39578.36967362219,
+      21475.020222638246,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C73",
+    "end": 1,
+    "endpoint_adjustment_mm": 285.767,
+    "original_world_center_mm": [
+      39589.611189034535,
+      14175.018774550575,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      39574.52598591917,
+      14460.386256758611,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C72",
+    "end": 0,
+    "endpoint_adjustment_mm": 15.293,
+    "original_world_center_mm": [
+      39596.611189034535,
+      28350.018774550575,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      39581.36919303506,
+      28349.195076308002,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C72",
+    "end": 1,
+    "endpoint_adjustment_mm": 15.271,
+    "original_world_center_mm": [
+      39593.611189034535,
+      22574.918774550584,
+      18300.0
+    ],
+    "assembled_world_center_mm": [
+      39578.36967362219,
+      22575.020222638246,
+      18300.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C70",
+    "end": 0,
+    "endpoint_adjustment_mm": 150.771,
+    "original_world_center_mm": [
+      39043.611189034535,
+      22025.018774550575,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      39028.36967362219,
+      21875.020222638246,
+      15050.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C70",
+    "end": 1,
+    "endpoint_adjustment_mm": 158.113,
+    "original_world_center_mm": [
+      25674.611189034535,
+      22025.018774550575,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      25624.611189034535,
+      21875.020222638246,
+      15050.0
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L3-S-37C6F",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.936,
+    "original_world_center_mm": [
+      30449.611189034535,
+      14075.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      30449.611189034535,
+      14075.018774550575,
+      18100.93638943694
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L3-S-37C6F",
+    "end": 1,
+    "endpoint_adjustment_mm": 3.096,
+    "original_world_center_mm": [
+      30449.611189034535,
+      36025.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      30449.611189034535,
+      36027.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C69",
+    "end": 0,
+    "endpoint_adjustment_mm": 2.381,
+    "original_world_center_mm": [
+      32424.989130789123,
+      7025.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      32422.68333028286,
+      7024.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C69",
+    "end": 1,
+    "endpoint_adjustment_mm": 97.605,
+    "original_world_center_mm": [
+      32424.989130789123,
+      71174.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      32422.68333028286,
+      71077.04181773185,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C48",
+    "end": 0,
+    "endpoint_adjustment_mm": 367.937,
+    "original_world_center_mm": [
+      41517.362410901114,
+      7025.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      41523.881759765325,
+      7392.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C48",
+    "end": 1,
+    "endpoint_adjustment_mm": 327.944,
+    "original_world_center_mm": [
+      41517.362410901114,
+      7075.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      41523.881759765325,
+      7402.897750974749,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C46",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      38425.362410901114,
+      7025.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      38425.362410901114,
+      6992.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C46",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.521,
+    "original_world_center_mm": [
+      38425.362410901114,
+      71999.61877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      38425.362410901114,
+      71999.61877455059,
+      4900.521131240637
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L1-S-37C44",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      26425.362410901114,
+      7025.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      26425.362410901114,
+      6992.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C44",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.521,
+    "original_world_center_mm": [
+      26425.362410901114,
+      71999.61877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      26425.362410901114,
+      71999.61877455059,
+      4900.521131240637
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L1-S-37C42",
+    "end": 0,
+    "endpoint_adjustment_mm": 327.944,
+    "original_world_center_mm": [
+      41517.362410901114,
+      7475.01877455059,
+      5300.0
+    ],
+    "assembled_world_center_mm": [
+      41523.881759765325,
+      7802.897750974749,
+      5300.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C42",
+    "end": 1,
+    "endpoint_adjustment_mm": 327.944,
+    "original_world_center_mm": [
+      41517.362410901114,
+      7475.01877455059,
+      6000.0
+    ],
+    "assembled_world_center_mm": [
+      41523.881759765325,
+      7802.897750974749,
+      6000.0
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L1-S-37C40",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      39125.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      39125.362410901114,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C40",
+    "end": 1,
+    "endpoint_adjustment_mm": 394.79,
+    "original_world_center_mm": [
+      40817.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      40423.881759765325,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C3F",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      27125.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      27125.362410901114,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C3F",
+    "end": 1,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      37725.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      37725.362410901114,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C3E",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      14125.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      14125.362410901114,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C3E",
+    "end": 1,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      25725.362410901114,
+      6325.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      25725.362410901114,
+      6292.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C3B",
+    "end": 0,
+    "endpoint_adjustment_mm": 217.149,
+    "original_world_center_mm": [
+      4050.3624109011143,
+      14525.018774550583,
+      4300.0
+    ],
+    "assembled_world_center_mm": [
+      4136.102614068717,
+      14528.278448982688,
+      4100.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C3B",
+    "end": 1,
+    "endpoint_adjustment_mm": 85.802,
+    "original_world_center_mm": [
+      4050.3624109011143,
+      14525.018774550583,
+      0.0
+    ],
+    "assembled_world_center_mm": [
+      4136.102614068717,
+      14528.278448982688,
+      0.0
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L1-S-37C39",
+    "end": 0,
+    "endpoint_adjustment_mm": 195.182,
+    "original_world_center_mm": [
+      4975.362410901114,
+      14525.018774550583,
+      4700.0
+    ],
+    "assembled_world_center_mm": [
+      4780.208497263608,
+      14528.278448982688,
+      4700.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37C39",
+    "end": 1,
+    "endpoint_adjustment_mm": 285.759,
+    "original_world_center_mm": [
+      4450.362410901114,
+      14525.018774550583,
+      4700.0
+    ],
+    "assembled_world_center_mm": [
+      4736.102614068717,
+      14528.278448982688,
+      4700.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C28",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.483,
+    "original_world_center_mm": [
+      13424.611189034535,
+      21175.018774550575,
+      15400.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      21175.018774550575,
+      15402.35864336859
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C28",
+    "end": 1,
+    "endpoint_adjustment_mm": 39.424,
+    "original_world_center_mm": [
+      13424.611189034535,
+      21175.018774550575,
+      17800.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      21175.018774550575,
+      17800.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C27",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.483,
+    "original_world_center_mm": [
+      13124.611189034535,
+      21175.018774550575,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      13164.023857999127,
+      21175.018774550575,
+      15052.35864336859
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C27",
+    "end": 1,
+    "endpoint_adjustment_mm": 2.359,
+    "original_world_center_mm": [
+      5674.611189034535,
+      21175.018774550575,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      5674.611189034535,
+      21175.018774550575,
+      15052.35864336859
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L3-S-37C24",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.439,
+    "original_world_center_mm": [
+      13424.611189034535,
+      49974.61877455058,
+      15400.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      49973.421744345476,
+      15400.814387294144
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C24",
+    "end": 1,
+    "endpoint_adjustment_mm": 39.442,
+    "original_world_center_mm": [
+      13424.611189034535,
+      49974.61877455058,
+      17800.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      49973.421744345476,
+      17800.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C22",
+    "end": 0,
+    "endpoint_adjustment_mm": 98.919,
+    "original_world_center_mm": [
+      5424.611189034535,
+      50374.61877455058,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      5419.890823817928,
+      50473.421744345476,
+      15050.814387294144
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C22",
+    "end": 1,
+    "endpoint_adjustment_mm": 4.79,
+    "original_world_center_mm": [
+      5424.611189034535,
+      57967.61877455058,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      5419.890823817928,
+      57967.61877455058,
+      15050.814387294144
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L3-S-37C21",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.439,
+    "original_world_center_mm": [
+      13124.611189034535,
+      49974.61877455058,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      13164.023857999127,
+      49973.421744345476,
+      15050.814387294144
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C21",
+    "end": 1,
+    "endpoint_adjustment_mm": 95.291,
+    "original_world_center_mm": [
+      5824.611189034535,
+      49974.61877455058,
+      15050.0
+    ],
+    "assembled_world_center_mm": [
+      5919.890823817928,
+      49973.421744345476,
+      15050.814387294144
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C20",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.442,
+    "original_world_center_mm": [
+      13424.611189034535,
+      50374.61877455058,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      50373.421744345476,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C20",
+    "end": 1,
+    "endpoint_adjustment_mm": 39.424,
+    "original_world_center_mm": [
+      13424.611189034535,
+      72024.61877455059,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      72024.61877455059,
+      18100.93638943694
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L3-S-37C1F",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.534,
+    "original_world_center_mm": [
+      13424.611189034535,
+      36925.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      36927.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C1F",
+    "end": 1,
+    "endpoint_adjustment_mm": 39.442,
+    "original_world_center_mm": [
+      13424.611189034535,
+      49574.61877455058,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      49573.421744345476,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C1C",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.534,
+    "original_world_center_mm": [
+      13924.611189034535,
+      36475.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13964.023857999127,
+      36477.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C1C",
+    "end": 1,
+    "endpoint_adjustment_mm": 3.096,
+    "original_world_center_mm": [
+      29299.611189034535,
+      36475.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      29299.611189034535,
+      36477.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C1A",
+    "end": 0,
+    "endpoint_adjustment_mm": 266.259,
+    "original_world_center_mm": [
+      39050.611189034535,
+      36575.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      38784.36977319338,
+      36577.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C1A",
+    "end": 1,
+    "endpoint_adjustment_mm": 3.096,
+    "original_world_center_mm": [
+      30999.611189034535,
+      36575.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      30999.611189034535,
+      36577.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C18",
+    "end": 0,
+    "endpoint_adjustment_mm": 99.449,
+    "original_world_center_mm": [
+      38574.98913078912,
+      13775.018774550583,
+      9500.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      13870.265508939789,
+      9501.630112647592
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C18",
+    "end": 1,
+    "endpoint_adjustment_mm": 99.436,
+    "original_world_center_mm": [
+      38574.98913078912,
+      13775.018774550583,
+      12000.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      13870.265508939789,
+      12000.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C12",
+    "end": 0,
+    "endpoint_adjustment_mm": 217.278,
+    "original_world_center_mm": [
+      39589.611189034535,
+      13774.618774550581,
+      17900.0
+    ],
+    "assembled_world_center_mm": [
+      39574.52598591917,
+      13860.386256758611,
+      17700.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C12",
+    "end": 1,
+    "endpoint_adjustment_mm": 87.084,
+    "original_world_center_mm": [
+      39589.611189034535,
+      13774.618774550581,
+      16700.0
+    ],
+    "assembled_world_center_mm": [
+      39574.52598591917,
+      13860.386256758611,
+      16700.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C11",
+    "end": 0,
+    "endpoint_adjustment_mm": 765.748,
+    "original_world_center_mm": [
+      38574.611189034535,
+      13775.018774550575,
+      16188.220000000001
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      13870.265508939789,
+      15428.96958213748
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37C11",
+    "end": 1,
+    "endpoint_adjustment_mm": 99.545,
+    "original_world_center_mm": [
+      38574.611189034535,
+      13775.018774550575,
+      12000.0
+    ],
+    "assembled_world_center_mm": [
+      38603.545825055626,
+      13870.265508939789,
+      12000.0
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C07",
+    "end": 0,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      26974.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      26974.989130789123,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C07",
+    "end": 1,
+    "endpoint_adjustment_mm": 2.381,
+    "original_world_center_mm": [
+      31874.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      31872.68333028286,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C03",
+    "end": 0,
+    "endpoint_adjustment_mm": 190.56,
+    "original_world_center_mm": [
+      13274.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      13084.429861222394,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37C03",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.593,
+    "original_world_center_mm": [
+      18874.989130789123,
+      6475.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      18874.989130789123,
+      6474.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L2-S-37BFF",
+    "end": 0,
+    "endpoint_adjustment_mm": 9.447,
+    "original_world_center_mm": [
+      12574.989130789123,
+      72024.61877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      12584.429861222394,
+      72024.61877455059,
+      10900.331262623786
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L2-S-37BFF",
+    "end": 1,
+    "endpoint_adjustment_mm": 51.368,
+    "original_world_center_mm": [
+      12574.989130789123,
+      7025.01877455059,
+      10900.0
+    ],
+    "assembled_world_center_mm": [
+      12584.429861222394,
+      6974.52724449792,
+      10900.331262623786
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37BFC",
+    "end": 0,
+    "endpoint_adjustment_mm": 32.125,
+    "original_world_center_mm": [
+      13425.362410901114,
+      7025.01877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      13425.362410901114,
+      6992.897750975426,
+      4900.521131240637
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L1-S-37BFC",
+    "end": 1,
+    "endpoint_adjustment_mm": 0.521,
+    "original_world_center_mm": [
+      13425.362410901114,
+      71999.61877455059,
+      4900.0
+    ],
+    "assembled_world_center_mm": [
+      13425.362410901114,
+      71999.61877455059,
+      4900.521131240637
+    ],
+    "connected": false
+  },
+  {
+    "straight": "L3-S-37BE6",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.534,
+    "original_world_center_mm": [
+      13424.611189034535,
+      36025.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      36027.97018290229,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37BE6",
+    "end": 1,
+    "endpoint_adjustment_mm": 39.424,
+    "original_world_center_mm": [
+      13424.611189034535,
+      21575.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      21575.018774550575,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37BE5",
+    "end": 0,
+    "endpoint_adjustment_mm": 39.424,
+    "original_world_center_mm": [
+      13424.611189034535,
+      20775.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      20775.018774550575,
+      18100.93638943694
+    ],
+    "connected": true
+  },
+  {
+    "straight": "L3-S-37BE5",
+    "end": 1,
+    "endpoint_adjustment_mm": 39.424,
+    "original_world_center_mm": [
+      13424.611189034535,
+      14075.018774550575,
+      18100.0
+    ],
+    "assembled_world_center_mm": [
+      13464.023857999127,
+      14075.018774550575,
+      18100.93638943694
+    ],
+    "connected": false
+  }
+]

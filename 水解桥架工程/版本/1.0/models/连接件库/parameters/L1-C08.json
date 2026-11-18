@@ -1,0 +1,101 @@
+{
+  "id": "L1-C08",
+  "source_screenshot_id": "L1-C08",
+  "source_screenshot": "screenshots/L1C08.png",
+  "dwg_handle": "37C3A",
+  "kind": "elbow",
+  "shape": "水平弯头",
+  "units": "mm",
+  "coordinate_system": "local right-handed Z-up; GLB stores meters Y-up",
+  "parameters": {
+    "kind": "elbow",
+    "w1": 400,
+    "w2": 400,
+    "L": 700,
+    "h": 200
+  },
+  "ports": [
+    {
+      "name": "A",
+      "position_mm": [
+        -700.0,
+        0.0,
+        0.0
+      ],
+      "outward_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "width_mm": 400.0,
+      "height_mm": 200.0,
+      "section_up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "B",
+      "position_mm": [
+        0.0,
+        700.0,
+        0.0
+      ],
+      "outward_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "width_mm": 400.0,
+      "height_mm": 200.0,
+      "section_up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "construction_notes": [
+    "水平弯头内角倒角未单独标注，采用参数化倒角；L按中心线臂长解释，装配需对照CAD轮廓。",
+    "板厚2mm为建模假定；无盖、无孔、无法兰及螺栓。壁板分体相交，未做实体布尔合并。"
+  ],
+  "association_status": "filename_association_pending_assembly_check",
+  "geometry_status": "parametric_reference_model_pending_CAD_overlay",
+  "source_views": [],
+  "revision": "1.1",
+  "source_CAD_bbox_mm": [
+    [
+      333690.637589097,
+      69361.38122543317,
+      4599.999999999999
+    ],
+    [
+      334390.637589097,
+      70061.38122543317,
+      4599.999999999999
+    ]
+  ],
+  "source_screenshot_SHA256": "28fa2cd7df2786a43f75a8f3240ecad91077718db77b255e04e2799be98ee6b8",
+  "files": {
+    "glb": "glb/L1-C08.glb",
+    "obj": "obj/L1-C08.obj",
+    "parameters": "parameters/L1-C08.json"
+  },
+  "mesh": {
+    "vertices": 252,
+    "triangles": 84,
+    "bbox_mm": [
+      [
+        -700.0,
+        -200.0,
+        0.0
+      ],
+      [
+        200.0,
+        700.0,
+        200.0
+      ]
+    ]
+  }
+}

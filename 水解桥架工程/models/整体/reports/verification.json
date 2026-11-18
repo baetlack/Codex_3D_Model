@@ -23,6 +23,12 @@
       "status": "passed"
     },
     {
+      "file": "L3_桥架.glb",
+      "parts": 42,
+      "triangles": 2072,
+      "status": "passed"
+    },
+    {
       "file": "L2_桥架.glb",
       "parts": 48,
       "triangles": 2220,
@@ -32,12 +38,6 @@
       "file": "L3-X01_45度乙字弯.glb",
       "parts": 1,
       "triangles": 60,
-      "status": "passed"
-    },
-    {
-      "file": "L3_桥架.glb",
-      "parts": 42,
-      "triangles": 2072,
       "status": "passed"
     },
     {

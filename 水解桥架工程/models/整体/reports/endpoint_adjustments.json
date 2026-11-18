@@ -1,2050 +1,2549 @@
-[
-  {
-    "straight": "L3-S-37F08",
-    "end": 0,
-    "endpoint_adjustment_mm": 205.246,
-    "original_world_center_mm": [
-      40346.611189034535,
-      28900.018774550575,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      40141.36919303483,
-      28899.195076308002,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37F08",
-    "end": 1,
-    "endpoint_adjustment_mm": 15.293,
-    "original_world_center_mm": [
-      40146.611189034535,
-      28900.018774550575,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      40131.36919303506,
-      28899.195076308002,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37F03",
-    "end": 0,
-    "endpoint_adjustment_mm": 199.134,
-    "original_world_center_mm": [
-      40646.611189034535,
-      28900.018774550575,
-      18000.0
-    ],
-    "assembled_world_center_mm": [
-      40641.36919303483,
-      28899.195076308002,
-      17800.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37F03",
-    "end": 1,
-    "endpoint_adjustment_mm": 5.306,
-    "original_world_center_mm": [
-      40646.611189034535,
-      28900.018774550575,
-      17300.0
-    ],
-    "assembled_world_center_mm": [
-      40641.36919303483,
-      28899.195076308002,
-      17300.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EFB",
-    "end": 0,
-    "endpoint_adjustment_mm": 15.272,
-    "original_world_center_mm": [
-      39599.611189034535,
-      34875.11877455058,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      39584.36977319338,
-      34875.34421532088,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EFB",
-    "end": 1,
-    "endpoint_adjustment_mm": 15.293,
-    "original_world_center_mm": [
-      39596.611189034535,
-      29450.018774550575,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      39581.36919303506,
-      29449.195076308002,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EF8",
-    "end": 0,
-    "endpoint_adjustment_mm": 247.62,
-    "original_world_center_mm": [
-      39599.611189034535,
-      36025.11877455058,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      39584.36977319338,
-      35777.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EF8",
-    "end": 1,
-    "endpoint_adjustment_mm": 15.272,
-    "original_world_center_mm": [
-      39599.611189034535,
-      35225.11877455058,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      39584.36977319338,
-      35225.34421532088,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EF3",
-    "end": 0,
-    "endpoint_adjustment_mm": 95.283,
-    "original_world_center_mm": [
-      43174.611189034535,
-      28900.018774550575,
-      17000.0
-    ],
-    "assembled_world_center_mm": [
-      43079.33155425114,
-      28899.195076308002,
-      17000.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EF3",
-    "end": 1,
-    "endpoint_adjustment_mm": 5.306,
-    "original_world_center_mm": [
-      40946.611189034535,
-      28900.018774550575,
-      17000.0
-    ],
-    "assembled_world_center_mm": [
-      40941.36919303483,
-      28899.195076308002,
-      17000.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EF1",
-    "end": 0,
-    "endpoint_adjustment_mm": 99.289,
-    "original_world_center_mm": [
-      43574.611189034535,
-      29300.018774550575,
-      17000.0
-    ],
-    "assembled_world_center_mm": [
-      43579.33155425114,
-      29399.195076308002,
-      17000.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37EF1",
-    "end": 1,
-    "endpoint_adjustment_mm": 4.72,
-    "original_world_center_mm": [
-      43574.611189034535,
-      64474.61877455058,
-      17000.0
-    ],
-    "assembled_world_center_mm": [
-      43579.33155425114,
-      64474.61877455058,
-      17000.0
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37EEE",
-    "end": 0,
-    "endpoint_adjustment_mm": 285.745,
-    "original_world_center_mm": [
-      39599.98913078912,
-      9775.01877455059,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      39314.24892762146,
-      9775.01877455059,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EEE",
-    "end": 1,
-    "endpoint_adjustment_mm": 28.603,
-    "original_world_center_mm": [
-      39124.98913078912,
-      9775.01877455059,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      39153.545825055626,
-      9775.01877455059,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EEC",
-    "end": 0,
-    "endpoint_adjustment_mm": 216.106,
-    "original_world_center_mm": [
-      39999.98913078912,
-      9775.01877455059,
-      8700.0
-    ],
-    "assembled_world_center_mm": [
-      39914.24892762146,
-      9775.01877455059,
-      8501.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EEC",
-    "end": 1,
-    "endpoint_adjustment_mm": 85.74,
-    "original_world_center_mm": [
-      39999.98913078912,
-      9775.01877455059,
-      6000.0
-    ],
-    "assembled_world_center_mm": [
-      39914.24892762146,
-      9775.01877455059,
-      6000.0
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37EE1",
-    "end": 0,
-    "endpoint_adjustment_mm": 285.745,
-    "original_world_center_mm": [
-      39599.98913078912,
-      12025.018774550583,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      39314.24892762146,
-      12025.018774550583,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EE1",
-    "end": 1,
-    "endpoint_adjustment_mm": 28.603,
-    "original_world_center_mm": [
-      39124.98913078912,
-      12025.018774550583,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      39153.545825055626,
-      12025.018774550583,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EDE",
-    "end": 0,
-    "endpoint_adjustment_mm": 216.106,
-    "original_world_center_mm": [
-      39999.98913078912,
-      12025.018774550583,
-      8700.0
-    ],
-    "assembled_world_center_mm": [
-      39914.24892762146,
-      12025.018774550583,
-      8501.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EDE",
-    "end": 1,
-    "endpoint_adjustment_mm": 85.74,
-    "original_world_center_mm": [
-      39999.98913078912,
-      12025.018774550583,
-      6000.0
-    ],
-    "assembled_world_center_mm": [
-      39914.24892762146,
-      12025.018774550583,
-      6000.0
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37ED3",
-    "end": 0,
-    "endpoint_adjustment_mm": 97.692,
-    "original_world_center_mm": [
-      38424.98913078912,
-      71174.61877455059,
-      10500.0
-    ],
-    "assembled_world_center_mm": [
-      38429.70949600579,
-      71077.04181773185,
-      10500.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37ED3",
-    "end": 1,
-    "endpoint_adjustment_mm": 4.732,
-    "original_world_center_mm": [
-      38424.98913078912,
-      64474.61877455059,
-      10500.0
-    ],
-    "assembled_world_center_mm": [
-      38429.70949600579,
-      64474.61877455059,
-      10500.331262623786
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37ED2",
-    "end": 0,
-    "endpoint_adjustment_mm": 2.446,
-    "original_world_center_mm": [
-      33624.98913078912,
-      71574.61877455059,
-      10500.0
-    ],
-    "assembled_world_center_mm": [
-      33624.98913078912,
-      71577.04181773185,
-      10500.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37ED2",
-    "end": 1,
-    "endpoint_adjustment_mm": 95.311,
-    "original_world_center_mm": [
-      38024.98913078912,
-      71574.61877455059,
-      10500.0
-    ],
-    "assembled_world_center_mm": [
-      37929.70949600579,
-      71577.04181773185,
-      10500.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37ED1",
-    "end": 0,
-    "endpoint_adjustment_mm": 97.725,
-    "original_world_center_mm": [
-      32824.98913078912,
-      71574.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      32922.68333028286,
-      71577.04181773185,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37ED1",
-    "end": 1,
-    "endpoint_adjustment_mm": 2.446,
-    "original_world_center_mm": [
-      33224.98913078912,
-      71574.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      33224.98913078912,
-      71577.04181773185,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EC8",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.331,
-    "original_world_center_mm": [
-      18574.989130789123,
-      72024.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      18574.989130789123,
-      72024.61877455059,
-      10900.331262623786
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37EC8",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.331,
-    "original_world_center_mm": [
-      18574.989130789123,
-      62573.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      18574.989130789123,
-      62573.61877455059,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EC6",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      19424.989130789123,
-      7025.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      19424.989130789123,
-      7024.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EC6",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.331,
-    "original_world_center_mm": [
-      19424.989130789123,
-      61398.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      19424.989130789123,
-      61398.61877455059,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EC1",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      26424.989130789123,
-      7025.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      26424.989130789123,
-      7024.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EC1",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.331,
-    "original_world_center_mm": [
-      26424.989130789123,
-      7525.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      26424.989130789123,
-      7525.01877455059,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EB9",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.331,
-    "original_world_center_mm": [
-      26424.989130789123,
-      8325.01877455059,
-      10100.0
-    ],
-    "assembled_world_center_mm": [
-      26424.989130789123,
-      8325.01877455059,
-      10100.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EB9",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.331,
-    "original_world_center_mm": [
-      26424.989130789123,
-      72024.61877455059,
-      10100.0
-    ],
-    "assembled_world_center_mm": [
-      26424.989130789123,
-      72024.61877455059,
-      10100.331262623786
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37EAB",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      33924.98913078912,
-      6475.01877455059,
-      11300.0
-    ],
-    "assembled_world_center_mm": [
-      33924.98913078912,
-      6474.52724449792,
-      11300.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EAB",
-    "end": 1,
-    "endpoint_adjustment_mm": 5.035,
-    "original_world_center_mm": [
-      36064.98913078912,
-      6475.01877455059,
-      11300.0
-    ],
-    "assembled_world_center_mm": [
-      36069.98913078912,
-      6474.52724449792,
-      11300.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EAA",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      21224.989130789123,
-      6475.01877455059,
-      11300.0
-    ],
-    "assembled_world_center_mm": [
-      21224.989130789123,
-      6474.52724449792,
-      11300.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37EAA",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      23774.989130789123,
-      6475.01877455059,
-      11300.0
-    ],
-    "assembled_world_center_mm": [
-      23774.989130789123,
-      6474.52724449792,
-      11300.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8F",
-    "end": 0,
-    "endpoint_adjustment_mm": 381.444,
-    "original_world_center_mm": [
-      37174.98913078912,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      36793.54582505592,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8F",
-    "end": 1,
-    "endpoint_adjustment_mm": 5.035,
-    "original_world_center_mm": [
-      36474.98913078912,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      36469.98913078912,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8E",
-    "end": 0,
-    "endpoint_adjustment_mm": 2.381,
-    "original_world_center_mm": [
-      32974.98913078912,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      32972.68333028286,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8E",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      33524.98913078912,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      33524.98913078912,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8D",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      25874.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      25874.989130789123,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8D",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      24174.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      24174.989130789123,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8C",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      19974.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      19974.989130789123,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37E8C",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      20824.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      20824.989130789123,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37E74",
-    "end": 0,
-    "endpoint_adjustment_mm": 196.801,
-    "original_world_center_mm": [
-      5475.362410901114,
-      14025.018774550583,
-      4700.0
-    ],
-    "assembled_world_center_mm": [
-      5480.208497263608,
-      13828.278448982688,
-      4700.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37E74",
-    "end": 1,
-    "endpoint_adjustment_mm": 4.876,
-    "original_world_center_mm": [
-      5475.362410901114,
-      8349.01877455059,
-      4700.0
-    ],
-    "assembled_world_center_mm": [
-      5480.208497263608,
-      8348.868774550589,
-      4700.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37E70",
-    "end": 0,
-    "endpoint_adjustment_mm": 4.876,
-    "original_world_center_mm": [
-      5475.362410901114,
-      7868.718774550587,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      5480.208497263608,
-      7868.868774550589,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37E70",
-    "end": 1,
-    "endpoint_adjustment_mm": 32.489,
-    "original_world_center_mm": [
-      5475.362410901114,
-      7025.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      5480.208497263608,
-      6992.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37E6E",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      12725.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      12725.362410901114,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37E6E",
-    "end": 1,
-    "endpoint_adjustment_mm": 197.78,
-    "original_world_center_mm": [
-      6375.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      6180.208497263608,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CDD",
-    "end": 0,
-    "endpoint_adjustment_mm": 28.603,
-    "original_world_center_mm": [
-      38574.98913078912,
-      9225.01877455059,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      9225.01877455059,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CDD",
-    "end": 1,
-    "endpoint_adjustment_mm": 251.143,
-    "original_world_center_mm": [
-      38574.98913078912,
-      7025.01877455059,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      7274.52724449792,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CDC",
-    "end": 0,
-    "endpoint_adjustment_mm": 28.603,
-    "original_world_center_mm": [
-      38574.98913078912,
-      11475.018774550583,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      11475.018774550583,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CDC",
-    "end": 1,
-    "endpoint_adjustment_mm": 28.603,
-    "original_world_center_mm": [
-      38574.98913078912,
-      10325.018774550583,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      10325.018774550583,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CD8",
-    "end": 0,
-    "endpoint_adjustment_mm": 99.449,
-    "original_world_center_mm": [
-      38574.98913078912,
-      13375.018774550583,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      13470.265508939789,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CD8",
-    "end": 1,
-    "endpoint_adjustment_mm": 28.603,
-    "original_world_center_mm": [
-      38574.98913078912,
-      12575.018774550583,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      12575.018774550583,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CCB",
-    "end": 0,
-    "endpoint_adjustment_mm": 221.45,
-    "original_world_center_mm": [
-      38024.98913078912,
-      6475.01877455059,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      37803.545825055626,
-      6474.52724449792,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CCB",
-    "end": 1,
-    "endpoint_adjustment_mm": 181.451,
-    "original_world_center_mm": [
-      37974.98913078912,
-      6475.01877455059,
-      9100.0
-    ],
-    "assembled_world_center_mm": [
-      37793.54582505592,
-      6474.52724449792,
-      9101.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CC9",
-    "end": 0,
-    "endpoint_adjustment_mm": 181.451,
-    "original_world_center_mm": [
-      37574.98913078912,
-      6475.01877455059,
-      9500.0
-    ],
-    "assembled_world_center_mm": [
-      37393.54582505592,
-      6474.52724449792,
-      9501.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37CC9",
-    "end": 1,
-    "endpoint_adjustment_mm": 269.795,
-    "original_world_center_mm": [
-      37574.98913078912,
-      6475.01877455059,
-      10500.0
-    ],
-    "assembled_world_center_mm": [
-      37393.54582505592,
-      6474.52724449792,
-      10300.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C74",
-    "end": 0,
-    "endpoint_adjustment_mm": 150.771,
-    "original_world_center_mm": [
-      39393.611189034535,
-      22025.018774550575,
-      15400.0
-    ],
-    "assembled_world_center_mm": [
-      39378.36967362219,
-      21875.020222638246,
-      15400.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C74",
-    "end": 1,
-    "endpoint_adjustment_mm": 150.774,
-    "original_world_center_mm": [
-      39393.611189034535,
-      22025.018774550575,
-      17900.0
-    ],
-    "assembled_world_center_mm": [
-      39378.36967362219,
-      21875.020222638246,
-      17900.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C73",
-    "end": 0,
-    "endpoint_adjustment_mm": 15.271,
-    "original_world_center_mm": [
-      39593.611189034535,
-      21474.918774550584,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      39578.36967362219,
-      21475.020222638246,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C73",
-    "end": 1,
-    "endpoint_adjustment_mm": 285.767,
-    "original_world_center_mm": [
-      39589.611189034535,
-      14175.018774550575,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      39574.52598591917,
-      14460.386256758611,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C72",
-    "end": 0,
-    "endpoint_adjustment_mm": 15.293,
-    "original_world_center_mm": [
-      39596.611189034535,
-      28350.018774550575,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      39581.36919303506,
-      28349.195076308002,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C72",
-    "end": 1,
-    "endpoint_adjustment_mm": 15.271,
-    "original_world_center_mm": [
-      39593.611189034535,
-      22574.918774550584,
-      18300.0
-    ],
-    "assembled_world_center_mm": [
-      39578.36967362219,
-      22575.020222638246,
-      18300.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C70",
-    "end": 0,
-    "endpoint_adjustment_mm": 150.771,
-    "original_world_center_mm": [
-      39043.611189034535,
-      22025.018774550575,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      39028.36967362219,
-      21875.020222638246,
-      15050.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C70",
-    "end": 1,
-    "endpoint_adjustment_mm": 158.113,
-    "original_world_center_mm": [
-      25674.611189034535,
-      22025.018774550575,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      25624.611189034535,
-      21875.020222638246,
-      15050.0
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L3-S-37C6F",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.936,
-    "original_world_center_mm": [
-      30449.611189034535,
-      14075.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      30449.611189034535,
-      14075.018774550575,
-      18100.93638943694
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L3-S-37C6F",
-    "end": 1,
-    "endpoint_adjustment_mm": 3.096,
-    "original_world_center_mm": [
-      30449.611189034535,
-      36025.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      30449.611189034535,
-      36027.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C69",
-    "end": 0,
-    "endpoint_adjustment_mm": 2.381,
-    "original_world_center_mm": [
-      32424.989130789123,
-      7025.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      32422.68333028286,
-      7024.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C69",
-    "end": 1,
-    "endpoint_adjustment_mm": 97.605,
-    "original_world_center_mm": [
-      32424.989130789123,
-      71174.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      32422.68333028286,
-      71077.04181773185,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C48",
-    "end": 0,
-    "endpoint_adjustment_mm": 367.937,
-    "original_world_center_mm": [
-      41517.362410901114,
-      7025.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      41523.881759765325,
-      7392.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C48",
-    "end": 1,
-    "endpoint_adjustment_mm": 327.944,
-    "original_world_center_mm": [
-      41517.362410901114,
-      7075.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      41523.881759765325,
-      7402.897750974749,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C46",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      38425.362410901114,
-      7025.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      38425.362410901114,
-      6992.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C46",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.521,
-    "original_world_center_mm": [
-      38425.362410901114,
-      71999.61877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      38425.362410901114,
-      71999.61877455059,
-      4900.521131240637
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L1-S-37C44",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      26425.362410901114,
-      7025.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      26425.362410901114,
-      6992.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C44",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.521,
-    "original_world_center_mm": [
-      26425.362410901114,
-      71999.61877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      26425.362410901114,
-      71999.61877455059,
-      4900.521131240637
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L1-S-37C42",
-    "end": 0,
-    "endpoint_adjustment_mm": 327.944,
-    "original_world_center_mm": [
-      41517.362410901114,
-      7475.01877455059,
-      5300.0
-    ],
-    "assembled_world_center_mm": [
-      41523.881759765325,
-      7802.897750974749,
-      5300.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C42",
-    "end": 1,
-    "endpoint_adjustment_mm": 327.944,
-    "original_world_center_mm": [
-      41517.362410901114,
-      7475.01877455059,
-      6000.0
-    ],
-    "assembled_world_center_mm": [
-      41523.881759765325,
-      7802.897750974749,
-      6000.0
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L1-S-37C40",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      39125.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      39125.362410901114,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C40",
-    "end": 1,
-    "endpoint_adjustment_mm": 394.79,
-    "original_world_center_mm": [
-      40817.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      40423.881759765325,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C3F",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      27125.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      27125.362410901114,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C3F",
-    "end": 1,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      37725.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      37725.362410901114,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C3E",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      14125.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      14125.362410901114,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C3E",
-    "end": 1,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      25725.362410901114,
-      6325.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      25725.362410901114,
-      6292.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C3B",
-    "end": 0,
-    "endpoint_adjustment_mm": 217.149,
-    "original_world_center_mm": [
-      4050.3624109011143,
-      14525.018774550583,
-      4300.0
-    ],
-    "assembled_world_center_mm": [
-      4136.102614068717,
-      14528.278448982688,
-      4100.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C3B",
-    "end": 1,
-    "endpoint_adjustment_mm": 85.802,
-    "original_world_center_mm": [
-      4050.3624109011143,
-      14525.018774550583,
-      0.0
-    ],
-    "assembled_world_center_mm": [
-      4136.102614068717,
-      14528.278448982688,
-      0.0
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L1-S-37C39",
-    "end": 0,
-    "endpoint_adjustment_mm": 195.182,
-    "original_world_center_mm": [
-      4975.362410901114,
-      14525.018774550583,
-      4700.0
-    ],
-    "assembled_world_center_mm": [
-      4780.208497263608,
-      14528.278448982688,
-      4700.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37C39",
-    "end": 1,
-    "endpoint_adjustment_mm": 285.759,
-    "original_world_center_mm": [
-      4450.362410901114,
-      14525.018774550583,
-      4700.0
-    ],
-    "assembled_world_center_mm": [
-      4736.102614068717,
-      14528.278448982688,
-      4700.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C28",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.483,
-    "original_world_center_mm": [
-      13424.611189034535,
-      21175.018774550575,
-      15400.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      21175.018774550575,
-      15402.35864336859
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C28",
-    "end": 1,
-    "endpoint_adjustment_mm": 39.424,
-    "original_world_center_mm": [
-      13424.611189034535,
-      21175.018774550575,
-      17800.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      21175.018774550575,
-      17800.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C27",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.483,
-    "original_world_center_mm": [
-      13124.611189034535,
-      21175.018774550575,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      13164.023857999127,
-      21175.018774550575,
-      15052.35864336859
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C27",
-    "end": 1,
-    "endpoint_adjustment_mm": 2.359,
-    "original_world_center_mm": [
-      5674.611189034535,
-      21175.018774550575,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      5674.611189034535,
-      21175.018774550575,
-      15052.35864336859
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L3-S-37C24",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.439,
-    "original_world_center_mm": [
-      13424.611189034535,
-      49974.61877455058,
-      15400.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      49973.421744345476,
-      15400.814387294144
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C24",
-    "end": 1,
-    "endpoint_adjustment_mm": 39.442,
-    "original_world_center_mm": [
-      13424.611189034535,
-      49974.61877455058,
-      17800.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      49973.421744345476,
-      17800.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C22",
-    "end": 0,
-    "endpoint_adjustment_mm": 98.919,
-    "original_world_center_mm": [
-      5424.611189034535,
-      50374.61877455058,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      5419.890823817928,
-      50473.421744345476,
-      15050.814387294144
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C22",
-    "end": 1,
-    "endpoint_adjustment_mm": 4.79,
-    "original_world_center_mm": [
-      5424.611189034535,
-      57967.61877455058,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      5419.890823817928,
-      57967.61877455058,
-      15050.814387294144
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L3-S-37C21",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.439,
-    "original_world_center_mm": [
-      13124.611189034535,
-      49974.61877455058,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      13164.023857999127,
-      49973.421744345476,
-      15050.814387294144
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C21",
-    "end": 1,
-    "endpoint_adjustment_mm": 95.291,
-    "original_world_center_mm": [
-      5824.611189034535,
-      49974.61877455058,
-      15050.0
-    ],
-    "assembled_world_center_mm": [
-      5919.890823817928,
-      49973.421744345476,
-      15050.814387294144
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C20",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.442,
-    "original_world_center_mm": [
-      13424.611189034535,
-      50374.61877455058,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      50373.421744345476,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C20",
-    "end": 1,
-    "endpoint_adjustment_mm": 39.424,
-    "original_world_center_mm": [
-      13424.611189034535,
-      72024.61877455059,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      72024.61877455059,
-      18100.93638943694
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L3-S-37C1F",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.534,
-    "original_world_center_mm": [
-      13424.611189034535,
-      36925.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      36927.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C1F",
-    "end": 1,
-    "endpoint_adjustment_mm": 39.442,
-    "original_world_center_mm": [
-      13424.611189034535,
-      49574.61877455058,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      49573.421744345476,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C1C",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.534,
-    "original_world_center_mm": [
-      13924.611189034535,
-      36475.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13964.023857999127,
-      36477.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C1C",
-    "end": 1,
-    "endpoint_adjustment_mm": 3.096,
-    "original_world_center_mm": [
-      29299.611189034535,
-      36475.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      29299.611189034535,
-      36477.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C1A",
-    "end": 0,
-    "endpoint_adjustment_mm": 266.259,
-    "original_world_center_mm": [
-      39050.611189034535,
-      36575.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      38784.36977319338,
-      36577.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C1A",
-    "end": 1,
-    "endpoint_adjustment_mm": 3.096,
-    "original_world_center_mm": [
-      30999.611189034535,
-      36575.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      30999.611189034535,
-      36577.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C18",
-    "end": 0,
-    "endpoint_adjustment_mm": 99.449,
-    "original_world_center_mm": [
-      38574.98913078912,
-      13775.018774550583,
-      9500.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      13870.265508939789,
-      9501.630112647592
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C18",
-    "end": 1,
-    "endpoint_adjustment_mm": 99.436,
-    "original_world_center_mm": [
-      38574.98913078912,
-      13775.018774550583,
-      12000.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      13870.265508939789,
-      12000.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C12",
-    "end": 0,
-    "endpoint_adjustment_mm": 217.278,
-    "original_world_center_mm": [
-      39589.611189034535,
-      13774.618774550581,
-      17900.0
-    ],
-    "assembled_world_center_mm": [
-      39574.52598591917,
-      13860.386256758611,
-      17700.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C12",
-    "end": 1,
-    "endpoint_adjustment_mm": 87.084,
-    "original_world_center_mm": [
-      39589.611189034535,
-      13774.618774550581,
-      16700.0
-    ],
-    "assembled_world_center_mm": [
-      39574.52598591917,
-      13860.386256758611,
-      16700.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C11",
-    "end": 0,
-    "endpoint_adjustment_mm": 765.748,
-    "original_world_center_mm": [
-      38574.611189034535,
-      13775.018774550575,
-      16188.220000000001
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      13870.265508939789,
-      15428.96958213748
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37C11",
-    "end": 1,
-    "endpoint_adjustment_mm": 99.545,
-    "original_world_center_mm": [
-      38574.611189034535,
-      13775.018774550575,
-      12000.0
-    ],
-    "assembled_world_center_mm": [
-      38603.545825055626,
-      13870.265508939789,
-      12000.0
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C07",
-    "end": 0,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      26974.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      26974.989130789123,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C07",
-    "end": 1,
-    "endpoint_adjustment_mm": 2.381,
-    "original_world_center_mm": [
-      31874.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      31872.68333028286,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C03",
-    "end": 0,
-    "endpoint_adjustment_mm": 190.56,
-    "original_world_center_mm": [
-      13274.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      13084.429861222394,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37C03",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.593,
-    "original_world_center_mm": [
-      18874.989130789123,
-      6475.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      18874.989130789123,
-      6474.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L2-S-37BFF",
-    "end": 0,
-    "endpoint_adjustment_mm": 9.447,
-    "original_world_center_mm": [
-      12574.989130789123,
-      72024.61877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      12584.429861222394,
-      72024.61877455059,
-      10900.331262623786
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L2-S-37BFF",
-    "end": 1,
-    "endpoint_adjustment_mm": 51.368,
-    "original_world_center_mm": [
-      12574.989130789123,
-      7025.01877455059,
-      10900.0
-    ],
-    "assembled_world_center_mm": [
-      12584.429861222394,
-      6974.52724449792,
-      10900.331262623786
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37BFC",
-    "end": 0,
-    "endpoint_adjustment_mm": 32.125,
-    "original_world_center_mm": [
-      13425.362410901114,
-      7025.01877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      13425.362410901114,
-      6992.897750975426,
-      4900.521131240637
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L1-S-37BFC",
-    "end": 1,
-    "endpoint_adjustment_mm": 0.521,
-    "original_world_center_mm": [
-      13425.362410901114,
-      71999.61877455059,
-      4900.0
-    ],
-    "assembled_world_center_mm": [
-      13425.362410901114,
-      71999.61877455059,
-      4900.521131240637
-    ],
-    "connected": false
-  },
-  {
-    "straight": "L3-S-37BE6",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.534,
-    "original_world_center_mm": [
-      13424.611189034535,
-      36025.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      36027.97018290229,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37BE6",
-    "end": 1,
-    "endpoint_adjustment_mm": 39.424,
-    "original_world_center_mm": [
-      13424.611189034535,
-      21575.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      21575.018774550575,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37BE5",
-    "end": 0,
-    "endpoint_adjustment_mm": 39.424,
-    "original_world_center_mm": [
-      13424.611189034535,
-      20775.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      20775.018774550575,
-      18100.93638943694
-    ],
-    "connected": true
-  },
-  {
-    "straight": "L3-S-37BE5",
-    "end": 1,
-    "endpoint_adjustment_mm": 39.424,
-    "original_world_center_mm": [
-      13424.611189034535,
-      14075.018774550575,
-      18100.0
-    ],
-    "assembled_world_center_mm": [
-      13464.023857999127,
-      14075.018774550575,
-      18100.93638943694
-    ],
-    "connected": false
-  }
-]
+{
+  "revision_2_changes": [
+    {
+      "id": "L1-C01",
+      "layer": 1,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -55.21049999997698,
+        -1.1430323354488792e-10,
+        0.0
+      ],
+      "translation_mm": [
+        -55.21049999997698,
+        -1.1430323354488792e-10,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C02",
+      "layer": 1,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        49.63958909886783,
+        -1.1435585811625515e-10,
+        0.0
+      ],
+      "translation_mm": [
+        49.63958909886783,
+        -1.1435585811625515e-10,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C03",
+      "layer": 1,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        -2.48245868306185e-13,
+        -1.1430378865640023e-10,
+        0.0
+      ],
+      "translation_mm": [
+        -2.48245868306185e-13,
+        -1.1430378865640023e-10,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L1-C04",
+      "layer": 1,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        49.63958909886906,
+        -1.1445466796544679e-10,
+        0.0
+      ],
+      "translation_mm": [
+        49.63958909886906,
+        -1.1445466796544679e-10,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C05",
+      "layer": 1,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        26.120240234665886,
+        -1.1434997393422464e-10,
+        0.0
+      ],
+      "translation_mm": [
+        26.120240234665886,
+        -1.1434997393422464e-10,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C06",
+      "layer": 1,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        26.120240234665857,
+        5.615063969344192e-10,
+        0.0
+      ],
+      "translation_mm": [
+        26.120240234665857,
+        5.615063969344192e-10,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C07",
+      "layer": 1,
+      "category": "fitting",
+      "label": "乙字弯",
+      "reference_translation_mm": [
+        -55.210499999977046,
+        3.552713678800501e-14,
+        0.0
+      ],
+      "translation_mm": [
+        -55.210499999977046,
+        3.552713678800501e-14,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C08",
+      "layer": 1,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -55.21049999997705,
+        -1.234568003383174e-13,
+        0.0
+      ],
+      "translation_mm": [
+        -55.21049999997705,
+        -1.234568003383174e-13,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L1-C09",
+      "layer": 1,
+      "category": "fitting",
+      "label": "垂直上弯",
+      "reference_translation_mm": [
+        -21.104616805102133,
+        -1.7674750552032492e-13,
+        0.0
+      ],
+      "translation_mm": [
+        -21.104616805102133,
+        -1.7674750552032492e-13,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C01",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -59.43186122237301,
+        -149.5291999999461,
+        0.0
+      ],
+      "translation_mm": [
+        -59.43186122237301,
+        -149.5291999999461,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C02",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        -1.3855583347321954e-13,
+        -149.52919999994612,
+        0.0
+      ],
+      "translation_mm": [
+        -1.3855583347321954e-13,
+        -149.52919999994612,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C03",
+      "layer": 2,
+      "category": "fitting",
+      "label": "上坡过渡",
+      "reference_translation_mm": [
+        -1.2434497875801753e-13,
+        -149.52919999994603,
+        0.0
+      ],
+      "translation_mm": [
+        -1.2434497875801753e-13,
+        -149.52919999994603,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C04",
+      "layer": 2,
+      "category": "fitting",
+      "label": "下坡过渡",
+      "reference_translation_mm": [
+        -2.5224267119483557e-13,
+        -149.5291999999459,
+        0.0
+      ],
+      "translation_mm": [
+        -2.5224267119483557e-13,
+        -149.5291999999459,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C05",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        52.3186697171167,
+        -149.52919999994575,
+        0.0
+      ],
+      "translation_mm": [
+        52.3186697171167,
+        -149.52919999994575,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C06",
+      "layer": 2,
+      "category": "fitting",
+      "label": "上坡过渡",
+      "reference_translation_mm": [
+        -1.5987211554602254e-14,
+        -149.5291999999457,
+        0.0
+      ],
+      "translation_mm": [
+        -1.5987211554602254e-14,
+        -149.5291999999457,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C07",
+      "layer": 2,
+      "category": "fitting",
+      "label": "下坡过渡",
+      "reference_translation_mm": [
+        -2.4513724383723456e-13,
+        -149.52919999994555,
+        0.0
+      ],
+      "translation_mm": [
+        -2.4513724383723456e-13,
+        -149.52919999994555,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C08",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        4.973799150320701e-14,
+        -149.52919999994583,
+        0.0
+      ],
+      "translation_mm": [
+        4.973799150320701e-14,
+        -149.52919999994583,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C09",
+      "layer": 2,
+      "category": "fitting",
+      "label": "垂直上弯",
+      "reference_translation_mm": [
+        -0.01752922439501159,
+        -149.52919999994566,
+        0.0
+      ],
+      "translation_mm": [
+        -0.01752922439501159,
+        -149.52919999994566,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C10",
+      "layer": 2,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        -0.01752922439490945,
+        -149.52919999994572,
+        0.0
+      ],
+      "translation_mm": [
+        -0.01752922439490945,
+        -149.52919999994572,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C11",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -0.017529224104090524,
+        -149.5291999999457,
+        0.0
+      ],
+      "translation_mm": [
+        -0.017529224104090524,
+        -149.5291999999457,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C12",
+      "layer": 2,
+      "category": "fitting",
+      "label": "下坡过渡",
+      "reference_translation_mm": [
+        -8.881784197001252e-15,
+        4.618527782440651e-14,
+        0.0
+      ],
+      "translation_mm": [
+        -8.881784197001252e-15,
+        4.618527782440651e-14,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L2-C13",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        -0.017529224104050556,
+        1.0658141036401503e-13,
+        0.0
+      ],
+      "translation_mm": [
+        -0.017529224104050556,
+        1.0658141036401503e-13,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C14",
+      "layer": 2,
+      "category": "fitting",
+      "label": "垂直上弯",
+      "reference_translation_mm": [
+        7.709388682997087e-13,
+        7.815970093361102e-14,
+        0.0
+      ],
+      "translation_mm": [
+        7.709388682997087e-13,
+        7.815970093361102e-14,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L2-C15",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        -0.01752922410411628,
+        -9.85878045867139e-14,
+        0.0
+      ],
+      "translation_mm": [
+        -0.01752922410411628,
+        -9.85878045867139e-14,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C16",
+      "layer": 2,
+      "category": "fitting",
+      "label": "垂直上弯",
+      "reference_translation_mm": [
+        -2.6922908347160046e-13,
+        -1.6919798895287386e-13,
+        0.0
+      ],
+      "translation_mm": [
+        -2.6922908347160046e-13,
+        -1.6919798895287386e-13,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L2-C17",
+      "layer": 2,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        -0.0175292241040923,
+        2.5270243293462613e-05,
+        0.0
+      ],
+      "translation_mm": [
+        -0.0175292241040923,
+        2.5270243293462613e-05,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C18",
+      "layer": 2,
+      "category": "fitting",
+      "label": "乙字弯",
+      "reference_translation_mm": [
+        -1.6964207816272392e-13,
+        2.113864638886298e-13,
+        0.0
+      ],
+      "translation_mm": [
+        -1.6964207816272392e-13,
+        2.113864638886298e-13,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L2-C19",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        52.31866971711678,
+        -2.043817731849271,
+        0.0
+      ],
+      "translation_mm": [
+        52.31866971711678,
+        -2.043817731849271,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C20",
+      "layer": 2,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        2.930988785010413e-14,
+        -2.043817731848837,
+        0.0
+      ],
+      "translation_mm": [
+        2.930988785010413e-14,
+        -2.043817731848837,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L2-C21",
+      "layer": 2,
+      "category": "fitting",
+      "label": "下坡过渡",
+      "reference_translation_mm": [
+        -1.5276668818842154e-13,
+        -2.0438177318492325,
+        0.0
+      ],
+      "translation_mm": [
+        -1.5276668818842154e-13,
+        -2.0438177318492325,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C01",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直上弯",
+      "reference_translation_mm": [
+        -0.017529224104148255,
+        2.5270243254382763e-05,
+        0.0
+      ],
+      "translation_mm": [
+        -0.017529224104148255,
+        2.5270243254382763e-05,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C02",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直三通",
+      "reference_translation_mm": [
+        10.978142000869145,
+        -50.02079999998436,
+        0.0
+      ],
+      "translation_mm": [
+        10.978142000869145,
+        -50.02079999998436,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C03",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        10.9781420008692,
+        -50.02079999998444,
+        0.0
+      ],
+      "translation_mm": [
+        10.9781420008692,
+        -50.02079999998444,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C04",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直三通",
+      "reference_translation_mm": [
+        0.0920513192401069,
+        199.98177736168495,
+        0.0
+      ],
+      "translation_mm": [
+        0.0920513192401069,
+        199.98177736168495,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C05",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        0.09205131924005361,
+        199.98177736168486,
+        0.0
+      ],
+      "translation_mm": [
+        0.09205131924005361,
+        199.98177736168486,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C06",
+      "layer": 3,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        -0.011833518851688929,
+        1.2100953559190941e-06,
+        0.0
+      ],
+      "translation_mm": [
+        -0.011833518851688929,
+        1.2100953559190941e-06,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C07",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直上弯",
+      "reference_translation_mm": [
+        -5.1958437552457326e-14,
+        1.21009540876571e-06,
+        0.0
+      ],
+      "translation_mm": [
+        -5.1958437552457326e-14,
+        1.21009540876571e-06,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L3-C08",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        -1.0436096431476471e-14,
+        1.2100954238647432e-06,
+        0.0
+      ],
+      "translation_mm": [
+        -1.0436096431476471e-14,
+        1.2100954238647432e-06,
+        0.0
+      ],
+      "moved": false
+    },
+    {
+      "id": "L3-C09",
+      "layer": 3,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -4.333599999996288,
+        1.210095372794484e-06,
+        0.0
+      ],
+      "translation_mm": [
+        -4.333599999996288,
+        1.210095372794484e-06,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C10",
+      "layer": 3,
+      "category": "fitting",
+      "label": "乙字弯",
+      "reference_translation_mm": [
+        -0.011833511921786943,
+        1.3741889540952457e-05,
+        0.0
+      ],
+      "translation_mm": [
+        -0.011833511921786943,
+        1.3741889540952457e-05,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C11",
+      "layer": 3,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -0.011833511921823359,
+        47.031817097690215,
+        0.0
+      ],
+      "translation_mm": [
+        -0.011833511921823359,
+        47.031817097690215,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C12",
+      "layer": 3,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        10.978142000869171,
+        47.03181709769032,
+        0.0
+      ],
+      "translation_mm": [
+        10.978142000869171,
+        47.03181709769032,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C13",
+      "layer": 3,
+      "category": "fitting",
+      "label": "水平三通",
+      "reference_translation_mm": [
+        -1.7541523789077473e-14,
+        47.03181709769028,
+        0.0
+      ],
+      "translation_mm": [
+        -1.7541523789077473e-14,
+        47.03181709769028,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C14",
+      "layer": 3,
+      "category": "fitting",
+      "label": "偏置变径",
+      "reference_translation_mm": [
+        -3.4638958368304884e-14,
+        47.031817097690215,
+        0.0
+      ],
+      "translation_mm": [
+        -3.4638958368304884e-14,
+        47.031817097690215,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C15",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直三通",
+      "reference_translation_mm": [
+        10.978142000869182,
+        -143.31449989994135,
+        0.0
+      ],
+      "translation_mm": [
+        10.978142000869182,
+        -143.31449989994135,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C16",
+      "layer": 3,
+      "category": "fitting",
+      "label": "水平弯头",
+      "reference_translation_mm": [
+        -2.930988785010413e-14,
+        -143.31449989994138,
+        0.0
+      ],
+      "translation_mm": [
+        -2.930988785010413e-14,
+        -143.31449989994138,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-C17",
+      "layer": 3,
+      "category": "fitting",
+      "label": "垂直下弯",
+      "reference_translation_mm": [
+        10.978142000869214,
+        -143.31449989994135,
+        0.0
+      ],
+      "translation_mm": [
+        10.978142000869214,
+        -143.31449989994135,
+        0.0
+      ],
+      "moved": true
+    },
+    {
+      "id": "L3-S-37F08",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -3.055333763768431e-13,
+        1.2100953776794654e-06,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          1.2100936146453023e-06,
+          0.0
+        ],
+        [
+          -0.011833518852654379,
+          1.2100936146453023e-06,
+          0.0
+        ]
+      ],
+      "old_length_mm": 9.99999999976717,
+      "new_length_mm": 10.011833518619824,
+      "length_change_mm": 0.011833518852654379,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37F03",
+      "layer": 3,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -1.5765166949677223e-14,
+        1.2100954038807288e-06,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          1.2100936146453023e-06,
+          0.0
+        ],
+        [
+          0.0,
+          1.2100936146453023e-06,
+          0.0
+        ]
+      ],
+      "old_length_mm": 500.9363894369417,
+      "new_length_mm": 500.9363894369417,
+      "length_change_mm": 0.0,
+      "moved": false
+    },
+    {
+      "id": "L3-S-37EFB",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.011833515902259784,
+        6.543759637711588e-06,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.011833511918666773,
+          1.3741890143137425e-05,
+          0.0
+        ],
+        [
+          -0.011833518852654379,
+          1.2100936146453023e-06,
+          0.0
+        ]
+      ],
+      "old_length_mm": 5426.149968651023,
+      "new_length_mm": 5426.149981182822,
+      "length_change_mm": 1.2531798347481526e-05,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37EF8",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.011833511921825135,
+        -1.6076029396572267e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.011833511918666773,
+          47.03181709768978,
+          0.0
+        ],
+        [
+          -0.011833511918666773,
+          1.3741890143137425e-05,
+          0.0
+        ]
+      ],
+      "old_length_mm": 552.6259675814072,
+      "new_length_mm": 599.6577709372068,
+      "length_change_mm": 47.03180335579964,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37EF3",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -5.861977570020827e-14,
+        1.2100953541427373e-06,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -4.333599999998114,
+          1.2100936146453023e-06,
+          0.0
+        ],
+        [
+          0.0,
+          1.2100936146453023e-06,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2137.9623612163123,
+      "new_length_mm": 2133.628761216314,
+      "length_change_mm": -4.333599999998114,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37EF1",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -4.3335999999962205,
+        5.3734794391857577e-14,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -4.333599999998114,
+          1.2100936146453023e-06,
+          0.0
+        ],
+        [
+          -4.333599999998114,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 35075.42369824258,
+      "new_length_mm": 35075.423697032486,
+      "length_change_mm": -1.2100936146453023e-06,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EEE",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        8.526512829121202e-14,
+        -3.552713678800501e-14,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 160.70310256583616,
+      "new_length_mm": 160.72063178993994,
+      "length_change_mm": 0.017529224103782326,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EEC",
+      "layer": 2,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        7.034373084024992e-13,
+        4.618527782440651e-14,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2501.630112647592,
+      "new_length_mm": 2501.630112647592,
+      "length_change_mm": 0.0,
+      "moved": false
+    },
+    {
+      "id": "L2-S-37EE1",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -5.186961971048731e-13,
+        -1.5054624213917123e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 160.70310256583616,
+      "new_length_mm": 160.72063178993994,
+      "length_change_mm": 0.017529224103782326,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EDE",
+      "layer": 2,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -2.446931546273845e-13,
+        -1.532107773982716e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2501.630112647592,
+      "new_length_mm": 2501.630112647592,
+      "length_change_mm": 0.0,
+      "moved": false
+    },
+    {
+      "id": "L2-S-37ED3",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -1.687538997430238e-14,
+        -5.297984273511247e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -2.0438177318428643,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 6602.423043181261,
+      "new_length_mm": 6600.379225449418,
+      "length_change_mm": -2.0438177318428643,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37ED2",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -2.4158453015843406e-13,
+        -2.0438177318490895,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -2.0438177318428643,
+          0.0
+        ],
+        [
+          0.0,
+          -2.0438177318428643,
+          0.0
+        ]
+      ],
+      "old_length_mm": 4304.7203652166645,
+      "new_length_mm": 4304.7203652166645,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37ED1",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -8.615330671091215e-14,
+        -2.043817731849291,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          52.31866971711861,
+          -2.0438177318428643,
+          0.0
+        ],
+        [
+          0.0,
+          -2.0438177318428643,
+          0.0
+        ]
+      ],
+      "old_length_mm": 302.30580050626304,
+      "new_length_mm": 249.98713078914443,
+      "length_change_mm": -52.31866971711861,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EC8",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -1.9984014443252818e-13,
+        2.1049828546892968e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 9451.0,
+      "new_length_mm": 9451.0,
+      "length_change_mm": 0.0,
+      "moved": false
+    },
+    {
+      "id": "L2-S-37EC6",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -2.5224267119483557e-13,
+        2.8954616482224083e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 54374.09153005267,
+      "new_length_mm": 54523.620730052615,
+      "length_change_mm": 149.5291999999463,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EC1",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        5.861977570020827e-14,
+        -1.679385797093147e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 500.49153005267,
+      "new_length_mm": 650.0207300526163,
+      "length_change_mm": 149.5291999999463,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EB9",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -6.927791673660977e-14,
+        3.3573144264664734e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 63699.6,
+      "new_length_mm": 63699.6,
+      "length_change_mm": 0.0,
+      "moved": false
+    },
+    {
+      "id": "L2-S-37EAB",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        8.704148513061227e-14,
+        -149.52919999994558,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.52919999994538,
+          0.0
+        ],
+        [
+          0.0,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2145.0,
+      "new_length_mm": 2145.0,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37EAA",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -7.247535904753022e-13,
+        -149.52919999994606,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2550.0,
+      "new_length_mm": 2550.0,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37E8F",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -2.1316282072803006e-13,
+        -149.52919999994577,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.01752922439482063,
+          -149.52919999994538,
+          0.0
+        ],
+        [
+          0.0,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 323.5566942667938,
+      "new_length_mm": 323.53916504239896,
+      "length_change_mm": -0.01752922439482063,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37E8E",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -3.219646771412954e-13,
+        -149.52919999994575,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          52.31866971711861,
+          -149.52919999994538,
+          0.0
+        ],
+        [
+          0.0,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 552.305800506263,
+      "new_length_mm": 499.98713078914443,
+      "length_change_mm": -52.31866971711861,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37E8D",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        1.8118839761882555e-13,
+        -149.5291999999458,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ]
+      ],
+      "old_length_mm": 1700.0,
+      "new_length_mm": 1700.0,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37E8C",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -3.907985046680551e-14,
+        -149.529199999946,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ]
+      ],
+      "old_length_mm": 850.0,
+      "new_length_mm": 850.0,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37E74",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -55.21049999997701,
+        -2.0250467969162855e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -55.2104999999774,
+          0.0,
+          0.0
+        ],
+        [
+          -55.2104999999774,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 5479.4096744321,
+      "new_length_mm": 5479.4096744321,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37E70",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -55.21049999997704,
+        3.694822225952521e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -55.2104999999774,
+          0.0,
+          0.0
+        ],
+        [
+          -55.2104999999774,
+          -1.1459633242338896e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 875.9710235751627,
+      "new_length_mm": 875.9710235752773,
+      "length_change_mm": 1.1459633242338896e-10,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37E6E",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        1.0658141036401503e-13,
+        -1.142307359813799e-10,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          49.63958909886787,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          -55.2104999999774,
+          -1.1459633242338896e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 6545.153913637507,
+      "new_length_mm": 6650.004002736352,
+      "length_change_mm": 104.85008909884527,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37CDD",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.017529224104050556,
+        1.438849039914203e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          0.0,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 1950.49153005267,
+      "new_length_mm": 2100.0207300526154,
+      "length_change_mm": 149.52919999994538,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37CDC",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.01752922410408786,
+        -1.2079226507921703e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          0.0,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 1150.0,
+      "new_length_mm": 1150.0,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37CD8",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.017529224104118946,
+        -6.173117572672027e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 895.2467343892058,
+      "new_length_mm": 895.2467596594488,
+      "length_change_mm": 2.527024298615288e-05,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37CCB",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -1.6342482922482304e-13,
+        -149.52919999994566,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          -149.52919999994538,
+          0.0
+        ],
+        [
+          -0.01752922439482063,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 9.999999999708962,
+      "new_length_mm": 10.0,
+      "length_change_mm": 2.9103830456733704e-10,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37CC9",
+      "layer": 2,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -0.017529224394892573,
+        -149.52919999994566,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.01752922439482063,
+          -149.52919999994538,
+          0.0
+        ],
+        [
+          -0.01752922439482063,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 798.7011499761938,
+      "new_length_mm": 798.7011499761938,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C74",
+      "layer": 3,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        0.09205131924010157,
+        199.98177736168495,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.09205131923954468,
+          199.9817773616851,
+          0.0
+        ],
+        [
+          0.09205131923954468,
+          199.9817773616851,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2500.9363894369417,
+      "new_length_mm": 2500.9363894369417,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C73",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.01752923268782869,
+        9.605190585314227e-06,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.09205131923954468,
+          199.9817773616851,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ]
+      ],
+      "old_length_mm": 7014.635018959106,
+      "new_length_mm": 7214.616801073023,
+      "length_change_mm": 199.9817821139177,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C72",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -0.011833516287007129,
+        6.1471747438493485e-06,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.011833518852654379,
+          1.2100936146453023e-06,
+          0.0
+        ],
+        [
+          0.09205131923954468,
+          199.9817773616851,
+          0.0
+        ]
+      ],
+      "old_length_mm": 5774.175632752164,
+      "new_length_mm": 5574.193829617967,
+      "length_change_mm": -199.98180313419743,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C70",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        199.981777361685,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.09205131923954468,
+          199.9817773616851,
+          0.0
+        ],
+        [
+          0.0,
+          199.9817773616851,
+          0.0
+        ]
+      ],
+      "old_length_mm": 13403.758484587655,
+      "new_length_mm": 13403.850535906895,
+      "length_change_mm": 0.09205131923954468,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C6F",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        6.106226635438361e-14,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          47.03181709768978,
+          0.0
+        ]
+      ],
+      "old_length_mm": 21952.951408351713,
+      "new_length_mm": 21999.983225449403,
+      "length_change_mm": 47.03181709768978,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37C69",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        52.31866971711672,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          52.31866971711497,
+          -149.52919999994538,
+          0.0
+        ],
+        [
+          52.31866971711497,
+          -2.0438177318428643,
+          0.0
+        ]
+      ],
+      "old_length_mm": 64052.51457323393,
+      "new_length_mm": 64199.99995550203,
+      "length_change_mm": 147.48538226810342,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C48",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        26.12024023466595,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          26.120240234668017,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          26.120240234668017,
+          5.611582309938967e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 9.999999999323336,
+      "new_length_mm": 9.99999999999909,
+      "length_change_mm": 6.757545634172857e-10,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C46",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        49.63958909886884,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          49.63958909887151,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          49.63958909887151,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 65006.72102357516,
+      "new_length_mm": 65006.72102357528,
+      "length_change_mm": 1.1641532182693481e-10,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C44",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -1.8918200339612667e-13,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 65006.72102357516,
+      "new_length_mm": 65006.72102357528,
+      "length_change_mm": 1.1641532182693481e-10,
+      "moved": false
+    },
+    {
+      "id": "L1-S-37C42",
+      "layer": 1,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        26.120240234665893,
+        5.612932341136911e-10,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          26.120240234668017,
+          5.611582309938967e-10,
+          0.0
+        ],
+        [
+          26.120240234668017,
+          5.611582309938967e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 699.4788687593627,
+      "new_length_mm": 699.4788687593627,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C40",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -1.1442558012220161e-10,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          49.63958909887151,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          26.120240234668017,
+          -1.1459633242338896e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 1298.5193488642108,
+      "new_length_mm": 1275.0000000000073,
+      "length_change_mm": -23.519348864203494,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C3F",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -1.1442313763154743e-10,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          49.63958909887151,
+          -1.1459633242338896e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 10600.0,
+      "new_length_mm": 10649.639589098872,
+      "length_change_mm": 49.63958909887151,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C3E",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -1.1430101309883867e-10,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          49.63958909886787,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          0.0,
+          -1.1459633242338896e-10,
+          0.0
+        ]
+      ],
+      "old_length_mm": 11600.0,
+      "new_length_mm": 11550.360410901132,
+      "length_change_mm": -49.63958909886787,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C3B",
+      "layer": 1,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -21.104616805101966,
+        -2.3714363805993344e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -21.104616805102523,
+          0.0,
+          0.0
+        ],
+        [
+          -21.104616805101614,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 4100.521131240637,
+      "new_length_mm": 4100.521131240637,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37C39",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -1.0746958878371515e-13,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -55.2104999999774,
+          0.0,
+          0.0
+        ],
+        [
+          -21.104616805102523,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 44.10588319489034,
+      "new_length_mm": 10.000000000015461,
+      "length_change_mm": -34.10588319487488,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C28",
+      "layer": 3,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        10.978142000869235,
+        -50.020799999984376,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          -50.020799999983865,
+          0.0
+        ],
+        [
+          10.978142000869411,
+          -50.020799999983865,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2398.577746068351,
+      "new_length_mm": 2398.577746068351,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C27",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -50.02079999998429,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          -50.020799999983865,
+          0.0
+        ],
+        [
+          0.0,
+          -50.020799999983865,
+          0.0
+        ]
+      ],
+      "old_length_mm": 7489.412668964593,
+      "new_length_mm": 7500.390810965462,
+      "length_change_mm": 10.978142000869411,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C24",
+      "layer": 3,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        10.978142000869193,
+        -143.3144998999413,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          -143.31449989994144,
+          0.0
+        ],
+        [
+          10.978142000869411,
+          -143.31449989994144,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2400.122002142798,
+      "new_length_mm": 2400.122002142798,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C22",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        4.618527782440651e-14,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -143.31449989994144,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 7494.197030205105,
+      "new_length_mm": 7637.511530105046,
+      "length_change_mm": 143.31449989994144,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C21",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -143.31449989994132,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          -143.31449989994144,
+          0.0
+        ],
+        [
+          0.0,
+          -143.31449989994144,
+          0.0
+        ]
+      ],
+      "old_length_mm": 7244.133034181199,
+      "new_length_mm": 7255.111176182068,
+      "length_change_mm": 10.978142000869411,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C20",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        10.97814200086915,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          -143.31449989994144,
+          0.0
+        ],
+        [
+          10.978142000869411,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 21651.197030205112,
+      "new_length_mm": 21794.511530105054,
+      "length_change_mm": 143.31449989994144,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C1F",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        10.978142000869262,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          47.03181709768978,
+          0.0
+        ],
+        [
+          10.978142000869411,
+          -143.31449989994144,
+          0.0
+        ]
+      ],
+      "old_length_mm": 12645.451561443188,
+      "new_length_mm": 12455.105244445556,
+      "length_change_mm": -190.34631699763122,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C1C",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        47.03181709769021,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          47.03181709768978,
+          0.0
+        ],
+        [
+          0.0,
+          47.03181709768978,
+          0.0
+        ]
+      ],
+      "old_length_mm": 15335.587331035407,
+      "new_length_mm": 15324.609189034538,
+      "length_change_mm": -10.978142000869411,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C1A",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        47.03181709769023,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.011833511918666773,
+          47.03181709768978,
+          0.0
+        ],
+        [
+          0.0,
+          47.03181709768978,
+          0.0
+        ]
+      ],
+      "old_length_mm": 7784.758584158844,
+      "new_length_mm": 7784.746750646926,
+      "length_change_mm": -0.011833511918666773,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37C18",
+      "layer": 2,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -0.017529224104152696,
+        2.52702432117502e-05,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ]
+      ],
+      "old_length_mm": 2498.369887352408,
+      "new_length_mm": 2498.369887352408,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C12",
+      "layer": 3,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -0.01752922410406299,
+        2.5270243265040904e-05,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ]
+      ],
+      "old_length_mm": 1000.9363894369417,
+      "new_length_mm": 1000.9363894369417,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37C11",
+      "layer": 3,
+      "category": "straight",
+      "label": "竖向直段",
+      "reference_translation_mm": [
+        -0.01752922410411273,
+        2.5270243252606406e-05,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ],
+        [
+          -0.017529224103782326,
+          2.527024298615288e-05,
+          0.0
+        ]
+      ],
+      "old_length_mm": 3428.9695821374808,
+      "new_length_mm": 3428.9695821374808,
+      "length_change_mm": 0.0,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37C07",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -149.52919999994577,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          52.31866971711497,
+          -149.52919999994538,
+          0.0
+        ]
+      ],
+      "old_length_mm": 4897.694199493737,
+      "new_length_mm": 4950.012869210852,
+      "length_change_mm": 52.31866971711497,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37C03",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        0.0,
+        -149.5291999999461,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -59.43186122237239,
+          -149.5291999999463,
+          0.0
+        ],
+        [
+          0.0,
+          -149.5291999999463,
+          0.0
+        ]
+      ],
+      "old_length_mm": 5790.559269566729,
+      "new_length_mm": 5849.991130789102,
+      "length_change_mm": 59.43186122237239,
+      "moved": true
+    },
+    {
+      "id": "L2-S-37BFF",
+      "layer": 2,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        -59.431861222372994,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          -59.43186122237239,
+          0.0,
+          0.0
+        ],
+        [
+          -59.43186122237239,
+          -149.5291999999463,
+          0.0
+        ]
+      ],
+      "old_length_mm": 65050.09153005267,
+      "new_length_mm": 65199.620730052615,
+      "length_change_mm": 149.5291999999463,
+      "moved": true
+    },
+    {
+      "id": "L1-S-37BFC",
+      "layer": 1,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        49.639589098867845,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          49.63958909886787,
+          -1.1459633242338896e-10,
+          0.0
+        ],
+        [
+          49.63958909886787,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 65006.72102357516,
+      "new_length_mm": 65006.72102357528,
+      "length_change_mm": 1.1641532182693481e-10,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37BE6",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        10.978142000869227,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          47.03181709768978,
+          0.0
+        ],
+        [
+          10.978142000869411,
+          -50.020799999983865,
+          0.0
+        ]
+      ],
+      "old_length_mm": 14452.951408351713,
+      "new_length_mm": 14550.004025449387,
+      "length_change_mm": 97.05261709767365,
+      "moved": true
+    },
+    {
+      "id": "L3-S-37BE5",
+      "layer": 3,
+      "category": "straight",
+      "label": "水平直段",
+      "reference_translation_mm": [
+        10.978142000869171,
+        0.0,
+        0.0
+      ],
+      "endpoint_displacements_mm": [
+        [
+          10.978142000869411,
+          -50.020799999983865,
+          0.0
+        ],
+        [
+          10.978142000869411,
+          0.0,
+          0.0
+        ]
+      ],
+      "old_length_mm": 6700.0,
+      "new_length_mm": 6649.979200000016,
+      "length_change_mm": -50.020799999983865,
+      "moved": true
+    },
+    {
+      "id": "L3-X01",
+      "layer": 3,
+      "category": "fitting",
+      "label": "立管45°乙字弯",
+      "reference_translation_mm": [
+        -0.017529224104070984,
+        2.5270243252606406e-05,
+        0.0
+      ],
+      "translation_mm": [
+        -0.017529224104070984,
+        2.5270243252606406e-05,
+        0.0
+      ],
+      "moved": true
+    }
+  ],
+  "baseline_CAD_adjustments_project_relative": "版本/1.0/models/整体/reports/endpoint_adjustments.json"
+}

@@ -1,0 +1,29 @@
+{
+  "version": "2.0",
+  "date": "2026-11-18",
+  "status": "passed",
+  "frozen_version_1_0": "版本/1.0/冻结清单.json",
+  "current_version_2_0": "版本/2.0/index.html",
+  "parts": 112,
+  "columns": 120,
+  "penetrations_before": 69,
+  "penetrations_after": 0,
+  "contact_tolerance_mm": 0.1,
+  "interfaces": 110,
+  "changed_fittings": 41,
+  "changed_straights": 58,
+  "max_fitting_translation_mm": 199.98179854722756,
+  "building_and_equipment_source_files_unchanged": true,
+  "equipment_placement_72_and_unplaced_27_unchanged": true,
+  "raw_CAD_and_library_files_unchanged": true,
+  "new_geometry_pairs_vs_equipment_beams_other_trays": [],
+  "geometry_validation": "models/整体/reports/2.0独立验证.json",
+  "export_and_library_verification": "models/整体/reports/verification.json",
+  "browser_validation": "models/整体/reports/browser_check.json",
+  "assembly_browser_validation": "../水解总装工程/data/浏览器检查.json",
+  "notes": [
+    "上部柱截面沿用当前建筑模型，仍待原结构图逐段复核。",
+    "1.0原文件逐字节保留；新增浏览包装页面不改原始入口。",
+    "未检查检修空间。"
+  ]
+}

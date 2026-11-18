@@ -1,0 +1,123 @@
+{
+  "id": "L1-C02",
+  "source_screenshot_id": "L1-C02",
+  "source_screenshot": "screenshots/L1C02.png",
+  "dwg_handle": "37C3D",
+  "kind": "tee",
+  "shape": "水平三通",
+  "units": "mm",
+  "coordinate_system": "local right-handed Z-up; GLB stores meters Y-up",
+  "parameters": {
+    "kind": "tee",
+    "w1": 800,
+    "w2": 200,
+    "w3": 800,
+    "L1": 1400,
+    "L2": 1100,
+    "h": 200
+  },
+  "ports": [
+    {
+      "name": "A",
+      "position_mm": [
+        -700.0,
+        0.0,
+        0.0
+      ],
+      "outward_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "width_mm": 800.0,
+      "height_mm": 200.0,
+      "section_up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "B",
+      "position_mm": [
+        700.0,
+        0.0,
+        0.0
+      ],
+      "outward_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "width_mm": 800.0,
+      "height_mm": 200.0,
+      "section_up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "C",
+      "position_mm": [
+        0.0,
+        700.0,
+        0.0
+      ],
+      "outward_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "width_mm": 200.0,
+      "height_mm": 200.0,
+      "section_up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "construction_notes": [
+    "三口宽度独立；内角倒角为参数化近似。",
+    "板厚2mm为建模假定；无盖、无孔、无法兰及螺栓。壁板分体相交，未做实体布尔合并。"
+  ],
+  "association_status": "filename_association_pending_assembly_check",
+  "geometry_status": "parametric_reference_model_pending_CAD_overlay",
+  "source_views": [],
+  "revision": "1.1",
+  "source_CAD_bbox_mm": [
+    [
+      341440.63758909795,
+      61261.38122543317,
+      4800
+    ],
+    [
+      342840.63758909795,
+      62361.38122543317,
+      4800
+    ]
+  ],
+  "source_screenshot_SHA256": "678e6fcf290d396f728662e0e6cbd4676488eb36f026f369d7923700cc22da72",
+  "files": {
+    "glb": "glb/L1-C02.glb",
+    "obj": "obj/L1-C02.obj",
+    "parameters": "parameters/L1-C02.json"
+  },
+  "mesh": {
+    "vertices": 408,
+    "triangles": 136,
+    "bbox_mm": [
+      [
+        -700.0,
+        -400.0,
+        0.0
+      ],
+      [
+        700.0,
+        700.0,
+        200.0
+      ]
+    ]
+  }
+}
