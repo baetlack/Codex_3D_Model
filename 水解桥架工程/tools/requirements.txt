@@ -1,6 +1,0 @@
-numpy
-scipy
-matplotlib
-
-# 2.0 cross-module geometry checks also read the existing assembly records.
-# Browser verification: pip install playwright; local Chromium required.
