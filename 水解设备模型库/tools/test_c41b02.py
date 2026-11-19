@@ -30,12 +30,22 @@ def run():
  candidates=defaultdict(list)
  for a in new:candidates[a['name']].append(a)
  for part in old:
-  if part['name'].startswith('接口_') or part['name'] in ['Lid_edge_rim','Tank_cover_lid']:continue
+  if part['name'].startswith(('接口_','06_')) or part['name'] in ['Lid_edge_rim','Tank_cover_lid']:continue
   match=candidates[part['name']].pop(0)
   assert match['faces']==part['faces']
   assert np.allclose(match['vertices'],np.array(part['vertices'])+[0,0,160],atol=1e-8,rtol=0),part['name'];preserved+=1
  # Exposed rim and cover meet at one edge; no coincident cylindrical skin.
- assert max(v[2] for v in byname['Lid_edge_rim']['vertices'])==min(v[2] for v in byname['Tank_cover_lid']['vertices'])
+ assert max(v[2] for v in byname['Lid_edge_rim']['vertices'])==min(v[2] for v in byname['Lid_gasket']['vertices'])
+ assert max(v[2] for v in byname['Lid_gasket']['vertices'])==min(v[2] for v in byname['Tank_cover_lid']['vertices'])
+ previous=OUT/'历史/2.0-C41B02-01'
+ frozen02=json.loads((previous/'冻结清单.json').read_text())
+ for name,digest in frozen02['files'].items():assert sha(previous/name)==digest,name
+ for file in (previous/'基础').iterdir():assert sha(OUT/'基础'/file.name)==sha(file),file.name
+ old02=ck.script(previous/'设备/model_data.js','MODEL_PARTS')
+ for part in old02:
+  if part['name'].startswith('设备支撑_'):assert byname[part['name']]==part,part['name']
+ from test_c41b02_topside import verify_topside
+ topside=verify_topside(new)
  caps=[q for q in new if '盘管检修盖' in q['name']];assert len(caps)==8
  assert len(p['ports'])==33
  for label in ['k','b','j']:assert sum(q['id'].startswith(label) for q in p['ports'])==8
@@ -88,6 +98,6 @@ def run():
    if proof is not None or contains:hits.append([q['id'],obstacle['id'],obstacle['kind']])
   z=q['position_mm'][2];rows.append({'id':q['id'],'foundation_top_EL':100+z/1000,'support_bottom_EL':100+z/1000,'support_gap_mm':float(sv[:,2].min()-bv[:,2].max()),'tank_bottom_EL':100+(z+160)/1000,'tank_top_EL':100+(z+5160)/1000,'mixer_top_EL':100+(z+7345)/1000,'new_orientation_status':q['orientation_status']})
  assert not hits,hits
- report={'status':'passed_with_declared_pending_installation_basis','class':'C41B02','parts':len(new),'preserved_rigid_parts':preserved,'new_port_records':33,'k_covers':8,'items':5,'other_items_unchanged':94,'columns_checked':len(columns),'beams_checked':len(beams),'bridge_parts_checked':len(bridge),'other_placed_equipment_checked':len(others),'intersections':hits,'support_records':rows,'confirmed_tank_and_mixer_dimensions':'passed','foundation_geometry_unchanged':True,'original_models_and_1_0_hashes':'passed','limits':['POS EL承托面定义待确认，5台安装Z状态未标确认。','新接口绝对方位待工艺图，原旋转/镜像只作暂用。','盖径、法兰及局部厚度等包络假设见参数。']}
+ report={'status':'passed_with_declared_pending_installation_basis','revision':'2.0-C41B02-02','topside_reference_check':topside,'class':'C41B02','parts':len(new),'preserved_rigid_parts':preserved,'new_port_records':33,'k_covers':8,'items':5,'other_items_unchanged':94,'columns_checked':len(columns),'beams_checked':len(beams),'bridge_parts_checked':len(bridge),'other_placed_equipment_checked':len(others),'intersections':hits,'support_records':rows,'confirmed_tank_and_mixer_dimensions':'passed','foundation_geometry_unchanged':True,'original_models_and_1_0_hashes':'passed','limits':['POS EL承托面定义待确认，5台安装Z状态未标确认。','新接口绝对方位待工艺图，原旋转/镜像只作暂用。','未标法兰厚度、踏步板层位及缺失零件详图仍有外观假设，见参数。']}
  (OUT/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='support_records'},ensure_ascii=False))
 if __name__=='__main__':run()

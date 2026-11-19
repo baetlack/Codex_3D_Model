@@ -2570,7 +2570,7 @@
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
       },
-      "equipment_version": "2.0-C41B02-01"
+      "equipment_version": "2.0-C41B02-02"
     },
     {
       "id": "C41B02B",
@@ -2603,7 +2603,7 @@
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
       },
-      "equipment_version": "2.0-C41B02-01"
+      "equipment_version": "2.0-C41B02-02"
     },
     {
       "id": "C41B01A",
@@ -2723,7 +2723,7 @@
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
       },
-      "equipment_version": "2.0-C41B02-01"
+      "equipment_version": "2.0-C41B02-02"
     },
     {
       "id": "C41B03A",
@@ -2798,7 +2798,7 @@
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
       },
-      "equipment_version": "2.0-C41B02-01"
+      "equipment_version": "2.0-C41B02-02"
     },
     {
       "id": "C41B02D",
@@ -2831,7 +2831,7 @@
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
       },
-      "equipment_version": "2.0-C41B02-01"
+      "equipment_version": "2.0-C41B02-02"
     },
     {
       "id": "C41B01B",

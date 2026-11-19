@@ -1,5 +1,5 @@
 {
-  "version": "2.0-C41B02-01",
+  "version": "2.0-C41B02-02",
   "before": {
     "tank_bottom_z_mm": 0,
     "shell_top_z_mm": 5000,
@@ -39,9 +39,11 @@
   },
   "position_transform_changed": false,
   "tank_world_z_change_mm": 160,
-  "mixer_geometry_rigid_translation_mm": [
+  "before_version": "设备1.0",
+  "preserved_drive_geometry_translation_mm": [
     0,
     0,
     160
-  ]
+  ],
+  "frame_06": "按02版圆筒开窗外形重建，非整体刚性平移"
 }

@@ -2,21 +2,23 @@
 from pathlib import Path
 import json,os
 from playwright.sync_api import sync_playwright
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'版本/2.0/C41B02';URL=os.environ.get('ASSEMBLY_TEST_URL','http://127.0.0.1:8765');errors=[];failed=[];checks={}
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'版本/2.0/C41B02';
+expected=len(json.JSONDecoder().raw_decode((OUT/'设备/model_data.js').read_text().split('=',1)[1].strip())[0]);
+URL=os.environ.get('ASSEMBLY_TEST_URL','http://127.0.0.1:8765');errors=[];failed=[];checks={}
 with sync_playwright() as pw:
  browser=pw.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
  page=browser.new_page(viewport={'width':1560,'height':1050});page.on('pageerror',lambda e:errors.append(str(e)));page.on('response',lambda r:failed.append(r.url) if r.status>=400 and 'favicon' not in r.url else None)
- page.goto(URL+'/水解设备模型库/?type=C41B02');page.wait_for_function('parts.length>=150 && document.getElementById("preview-message").hidden')
+ page.goto(URL+'/水解设备模型库/?type=C41B02');page.wait_for_function(f'parts.length>={expected} && document.getElementById("preview-message").hidden')
  assert page.locator('#list button').count()==35
  assert '新接口绝对方位' in page.locator('#detail').inner_text();assert 'EL112.310' in page.locator('#detail').inner_text()
  checks['35_groups_and_new_datum_pending_labels']=True
- page.locator('#foundation-mode').select_option('');page.wait_for_function('parts.length===150');page.screenshot(path=str(OUT/'预览_设备.png'))
- page.locator('#foundation-mode').select_option('combined');page.wait_for_function('parts.length===152');page.wait_for_timeout(300);page.screenshot(path=str(OUT/'预览_设备与基础.png'))
+ page.locator('#foundation-mode').select_option('');page.wait_for_function(f'parts.length==={expected}');page.screenshot(path=str(OUT/'预览_设备.png'))
+ page.locator('#foundation-mode').select_option('combined');page.wait_for_function(f'parts.length==={expected+2}');page.wait_for_timeout(300);page.screenshot(path=str(OUT/'预览_设备与基础.png'))
  checks['combined_equipment_and_unchanged_foundation']=True
  page.locator('#top').click();page.wait_for_timeout(200);page.screenshot(path=str(OUT/'预览_盖面.png'))
  page.locator('#group').select_option(label='接口');page.wait_for_timeout(100);assert page.evaluate('partGroups.get("接口").filter(p=>p.name.includes("盘管检修盖")).length')==8
  checks['eight_covers_and_nozzle_parts']=True
- page.locator('#foundation-mode').select_option('');page.wait_for_function('parts.length===150')
+ page.locator('#foundation-mode').select_option('');page.wait_for_function(f'parts.length==={expected}')
  page.locator('#group').select_option(label='底部型钢支撑');assert page.evaluate('partGroups.get("底部型钢支撑").length')==27
  page.locator('#front').click();page.wait_for_timeout(100);page.screenshot(path=str(OUT/'预览_型钢.png'))
  page.locator('#foundation-mode').select_option('C41B02');page.wait_for_function('parts.length===2');checks['support_and_civil_separate']=True
@@ -27,9 +29,16 @@ with sync_playwright() as pw:
  page.screenshot(path=str(OUT/'预览_1.0对比.png'));checks['frozen_1_0_six_port_geometry']=True
  page.goto(URL+'/水解总装工程/');page.wait_for_function('window.assemblyViewer?.getState().ready',timeout=120000)
  assert page.evaluate('assemblyViewer.cfg.equipment.length')==72
- assert page.evaluate('assemblyViewer.cfg.equipment.filter(p=>p.asset==="C41B02"&&p.equipment_version==="2.0-C41B02-01"&&p.orientation_status.includes("待核")).length')==5
+ assert page.evaluate('assemblyViewer.cfg.equipment.filter(p=>p.asset==="C41B02"&&p.equipment_version==="2.0-C41B02-02"&&p.orientation_status.includes("待核")).length')==5
  page.locator('#inside').click();page.locator('#search').fill('C41B02A');page.locator('#list button').click();page.locator('#focus').click();page.wait_for_timeout(300);page.screenshot(path=str(OUT/'预览_总装定位.png'))
  checks['current_assembly_5_revised_72_placed']=True
+ page.goto(URL+'/水解设备模型库/版本/2.0/C41B02/修订对比.html')
+ for frame in page.frames[1:]:frame.wait_for_function('window.compareReady===true')
+ assert len(page.frames)==3
+ for mode in ['top','seat','g','h']:
+  page.locator(f'button[data-view="{mode}"]').click();page.wait_for_timeout(200)
+  page.screenshot(path=str(OUT/f'预览_修订对照_{mode}.png'))
+ checks['revision_01_02_top_seat_side_comparison']=True
  page.goto(URL+'/水解设备模型库/版本/1.0/快照/水解总装工程/');page.wait_for_function('window.assemblyViewer?.getState().ready',timeout=120000);assert not page.evaluate('assemblyViewer.cfg.equipment_versions?.C41B02');assert page.evaluate('assemblyViewer.cfg.equipment.filter(p=>p.asset==="C41B02"&&p.z_status==="有安装基准").length')==5;checks['frozen_1_0_installation']=True
  page.goto(URL+'/水解设备模型库/版本/2.0/');page.frame_locator('iframe').locator('#scene').wait_for();checks['version_2_wrapper']=True
  assert not errors,errors

@@ -12,11 +12,11 @@
   "baseline": "版本/1.0/冻结清单.json",
   "revisions": {
     "C41B02": {
-      "version": "2.0-C41B02-01",
+      "version": "2.0-C41B02-02",
       "equipment": "版本/2.0/C41B02/设备/model_data.js",
       "foundation": "版本/2.0/C41B02/基础/model_data.js",
       "placements": "版本/2.0/C41B02/安装表.json",
-      "status": "几何整改；安装解释及新接口方位待核"
+      "status": "顶侧结构二次修正；基础/底钢不变，POS与绝对方位待核"
     }
   },
   "next_class": "C41B04",

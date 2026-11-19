@@ -206,8 +206,8 @@ function renderDetail(row, type, foundationIds, civilOnly) {
   if (tagForRow(row)==='C41B02' && overrides.version) {
     const info=section(detail,'本类2.0整改与安装');
     field(info,'安装链','楼面EL112.000 → 圆台顶/型钢底EL112.150 → 槽底EL112.310 → 槽顶EL117.310 → 电机顶EL119.495');
-    field(info,'待核','新接口绝对方位；POS EL是否指型钢底。盖/法兰和未明示厚度含包络假设。');
-    const links=element('div','','links');links.append(link('1.0冻结原版','版本/1.0/index.html'),link('本类整改说明','版本/2.0/C41B02/整改说明.html'),link('5台安装表','版本/2.0/C41B02/安装表.json'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('钛液预热槽(C41B02A-E).dxf'),true));info.append(links);
+    field(info,'待核','新接口绝对方位；POS EL是否指型钢底。m高座、b/j切向共座和g/h直套管已按详图修正；部分未标厚度仍列包络。');
+    const links=element('div','','links');links.append(link('1.0冻结原版','版本/1.0/index.html'),link('本类整改说明','版本/2.0/C41B02/整改说明.html'),link('01/02结构对照','版本/2.0/C41B02/修订对比.html'),link('5台安装表','版本/2.0/C41B02/安装表.json'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('钛液预热槽(C41B02A-E).dxf'),true));info.append(links);
   }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
@@ -284,7 +284,10 @@ function collectPartGroups(mesh, archive) {
       ['开窗支架与轴座',/^06_/],
       ['驱动组件',/^(01|02)_/],
       ['双端对称中间轴',/^03_Intermediate_shaft$/],
-      ['接口',/^接口_/]
+      ['接口',/^接口_/],
+      ['盖面高座与盖板',/^盖面_m_/],
+      ['侧口g',/^接口_g_/],
+      ['侧口h',/^接口_h_/]
     ];
     if (mesh.some(part=>/^Impeller_/.test(part.name))) {
       categories.splice(6,0,['轴与叶轮',/^(Agitator_|Impeller_|03_Intermediate_shaft$)/]);

@@ -1,0 +1,41 @@
+{
+  "revision": "2.0-C41B02-02",
+  "previous_revision": "2.0-C41B02-01",
+  "foundation_and_bottom_support": "不变",
+  "m_seat_height_mm": [
+    40,
+    280
+  ],
+  "m_top_plate_mm": 30,
+  "k_cover_OD_mm": [
+    1000,
+    1075
+  ],
+  "bj_pair_spacing_mm": [
+    300,
+    250
+  ],
+  "bj_direction": [
+    "径向",
+    "切向"
+  ],
+  "side_structure": [
+    "锥形变径",
+    "直套管/连接法兰/垫片/直短接"
+  ],
+  "side_projection_chain_mm": [
+    200,
+    13,
+    200
+  ],
+  "d_cover": [
+    "普通盖",
+    "带竖柄取样盖"
+  ],
+  "n_cover": [
+    "开口",
+    "φ340盲板/φ295螺栓圆"
+  ],
+  "measurement_reference": "顶侧结构图面量测.json",
+  "mixer_confirmed_height_mm": 2185
+}

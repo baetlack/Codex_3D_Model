@@ -142,7 +142,7 @@ def build():
             if record['id'] in revised:
                 record['legacy_six_port_evidence']=record.pop('evidence',{})
                 record['status']='新总图8组接口，位置保留、工艺方位待核'
-                record['equipment_version']='2.0-C41B02-01'
+                record['equipment_version']=revised[record['id']]['equipment_version']
         layout_review['reviewed']=sum(p['status'] in ('位置与顶视方位已复核','泵原点及长轴已校正') for p in layout_review['records'])
         layout_review['pending']=sum('待核' in p['status'] for p in layout_review['records'])
         save('data/布置复核.json',layout_review)

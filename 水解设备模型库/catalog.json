@@ -1426,7 +1426,7 @@
       "large_equipment": true,
       "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B02-01",
+      "model_version": "2.0-C41B02-02",
       "position_mm": [
         9500.0,
         61200.4134,
@@ -1465,7 +1465,7 @@
       "large_equipment": true,
       "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B02-01",
+      "model_version": "2.0-C41B02-02",
       "position_mm": [
         9500.0,
         46799.9867,
@@ -1544,7 +1544,7 @@
       "large_equipment": true,
       "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B02-01",
+      "model_version": "2.0-C41B02-02",
       "position_mm": [
         9500.0,
         17999.5866,
@@ -1603,7 +1603,7 @@
       "large_equipment": true,
       "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B02-01",
+      "model_version": "2.0-C41B02-02",
       "position_mm": [
         35000.0,
         32400.4134,
@@ -1642,7 +1642,7 @@
       "large_equipment": true,
       "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B02-01",
+      "model_version": "2.0-C41B02-02",
       "position_mm": [
         35000.0,
         17999.9866,

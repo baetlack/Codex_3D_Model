@@ -3452,7 +3452,7 @@
       "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "equipment_version": "2.0-C41B02-01",
+      "equipment_version": "2.0-C41B02-02",
       "local_datum": "底部型钢承托面Z0；槽底Z160",
       "installation_review": {
         "source_insert": "3321D",
@@ -3520,7 +3520,7 @@
       "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
-      "equipment_version": "2.0-C41B02-01",
+      "equipment_version": "2.0-C41B02-02",
       "local_datum": "底部型钢承托面Z0；槽底Z160",
       "installation_review": {
         "source_insert": "33245",
@@ -3697,7 +3697,7 @@
       "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "equipment_version": "2.0-C41B02-01",
+      "equipment_version": "2.0-C41B02-02",
       "local_datum": "底部型钢承托面Z0；槽底Z160",
       "installation_review": {
         "source_insert": "33BEC",
@@ -3818,7 +3818,7 @@
       "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "equipment_version": "2.0-C41B02-01",
+      "equipment_version": "2.0-C41B02-02",
       "local_datum": "底部型钢承托面Z0；槽底Z160",
       "installation_review": {
         "source_insert": "38103",
@@ -3886,7 +3886,7 @@
       "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
-      "equipment_version": "2.0-C41B02-01",
+      "equipment_version": "2.0-C41B02-02",
       "local_datum": "底部型钢承托面Z0；槽底Z160",
       "installation_review": {
         "source_insert": "38106",
@@ -4839,6 +4839,6 @@
     "未定位设备不进入空间场景或碰撞检查；待核安装标高单列"
   ],
   "equipment_versions": {
-    "C41B02": "2.0-C41B02-01"
+    "C41B02": "2.0-C41B02-02"
   }
 }

@@ -19,7 +19,7 @@ assert all(p['rotation_deg']==0 for p in cfg['equipment'] if p['asset']=='C41B01
 seed={p['id']:p for p in cfg['equipment'] if p['asset']=='D41B01'}
 assert seed['D41B01B']['mirror_y'] and not seed['D41B01C']['mirror_y']
 review=json.loads((OUT/'data/布置复核.json').read_text());assert review['reviewed']==51 and review['pending']==21
-assert len([r for r in review['records'] if r.get('equipment_version')=='2.0-C41B02-01' and '待核' in r['status']])==5
+assert len([r for r in review['records'] if r.get('equipment_version')==cfg['equipment_versions']['C41B02'] and '待核' in r['status']])==5
 for r in review['records']:
  w=r.get('evidence',{}).get('top_port_witness')
  if w and r['id'][:6] in ['D41B02','F41B01','C41B01','C41B02','C41B03','D41B01']:assert w['matched_within_5mm']==w['model_features'],r['id']
