@@ -82,7 +82,8 @@ def main():
  if (ROOT/'project.json').exists():
   previous=json.loads((ROOT/'project.json').read_text());state['revisions']={**previous.get('revisions',{}),**state['revisions']}
   if (OUT/'基准确认.json').exists():state['revisions']['C41B02']['status']='用户已接受外形及精度为基准；POS与绝对方位待核'
-  if 'C41B04' in state['revisions']:state['next_class']=previous.get('next_class','D41B01');state['active_version']='2.0（C41B02、C41B04）'
+  if 'C41B04' in state['revisions']:state['next_class']=previous.get('next_class','D41B01')
+ state['active_version']='2.0（'+'、'.join(state['revisions'])+'）'
  catalog=json.loads((ROOT/'catalog.json').read_text())['models'];revised=sum(p['id'][:6] in state['revisions'] for p in catalog)
  state['counts'].update(completed_batches=len(state['revisions']),revised_items=revised,other_items_unchanged=len(catalog)-revised)
  save(ROOT/'project.json',state)

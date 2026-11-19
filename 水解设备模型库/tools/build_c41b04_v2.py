@@ -173,7 +173,11 @@ def update_registry(parameters,placements,offsets,frame_bounds,policy):
     project=json.loads((ROOT/'project.json').read_text());project['active_version']='2.0（C41B02、C41B04）'
     project['revisions']['C41B02']['status']='用户已接受外形及精度为基准；POS与绝对方位待核'
     project['revisions']['C41B04']={'version':VERSION,'equipment':'版本/2.0/C41B04/设备/model_data.js','foundation':'版本/2.0/C41B04/支架/model_data.js','foundation_single':'版本/2.0/C41B04/支架/单组/model_data.js','placements':'版本/2.0/C41B04/安装表.json','support_placements':'版本/2.0/C41B04/支架安装表.json','status':'本体/四托耳/接口修正；AB组200mm图纸差异待核' if policy=='pending' else '02版删除无充分依据的外露大环/杆/弹簧/螺母；设备位置和钢架保持'}
-    project['counts'].update(completed_batches=2,revised_items=11,other_items_unchanged=88);project['next_class']='D41B01';save(ROOT/'project.json',project)
+    revised=sum(row['id'][:6] in project['revisions'] for row in catalog['models'])
+    project['counts'].update(completed_batches=len(project['revisions']),revised_items=revised,other_items_unchanged=99-revised)
+    project['active_version']='2.0（'+'、'.join(project['revisions'])+'）'
+    if len(project['revisions'])==2:project['next_class']='D41B01'
+    save(ROOT/'project.json',project)
     path=ROOT/'equipment_versions.js';overrides=json.loads(path.read_text().split('=',1)[1].strip().rstrip(';'))
     overrides['ledger']['C41B02A-E']['状态']='外形精度已确认 · 安装待核'
     overrides['equipment']['C41B04']={'dir':'版本/2.0/C41B04/设备/','bounds':parameters['bounds_mm']}

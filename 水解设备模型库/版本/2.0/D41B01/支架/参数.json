@@ -1,0 +1,32 @@
+{
+  "version": "2.0-D41B01-01",
+  "name": "晶种制备槽成对安装支架",
+  "source_drawing": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+  "source_sha256": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
+  "geometry_source": "水解桥架工程/models/设备/设备基础_20261106/D41B01/model_data.js",
+  "geometry_source_sha256": "3cd646370e50df30fc3d54a4d7337aeae34693a6a69cb6eb9ab48f5044a858ed",
+  "units": "mm",
+  "center_spacing_mm": 2600,
+  "bearing_height_mm": 2500,
+  "datum": "梁顶Z0，支架底Z-2500；总装原点EL111.000",
+  "bounds_mm": [
+    2278.0,
+    5118.0,
+    2500.0
+  ],
+  "sections": "沿用示意：梁160×200、柱160×160；未取得支架施工截面",
+  "supports": [
+    [
+      "D41B01B",
+      "D41B01C"
+    ],
+    [
+      "D41B01D",
+      "D41B01E"
+    ]
+  ],
+  "limits": [
+    "A支架待核，不在总装中增加A支架。",
+    "平面中心距2600（DIMENSION F1C1C/F1B80），剖面水平中心距2500（57BF9），差100待核；本次保持平面2600。支架竖向高度另由111.000-108.500得2500。"
+  ]
+}

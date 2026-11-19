@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": {
+    "pair_preview_2600_and_A_support_pending": true,
+    "seven_top_positions_and_separate_four_ear_structure": true,
+    "support_independent": true,
+    "current_equipment_and_support_downloads": true,
+    "old_1_0_and_new_at_common_bearing_datum": true,
+    "total_five_devices_two_pairs_no_A_support": true
+  },
+  "page_errors": [],
+  "failed_resources": []
+}

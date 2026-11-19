@@ -64,8 +64,10 @@ def run():
         errors[key]=min(float(np.linalg.norm(np.array(ports[key]['center_mm'][:2])-c)) for c in centers);assert errors[key]<1,(key,errors[key])
     raw=(OUT/'设备/C41B04.glb').read_bytes();assert raw[:4]==b'glTF' and struct.unpack_from('<I',raw,8)[0]==len(raw)
     cfg=json.loads((REPO/'水解总装工程/assembly.json').read_text());before={q['id']:q for q in pinned['equipment_placements']};current={q['id']:q for q in cfg['equipment']}
+    later=set(cfg['equipment_versions'])-{'C41B02','C41B04'}
     assert len(current)==72 and len(cfg['unplaced'])==27
     for key,q in current.items():
+        if key[:6] in later:continue
         if not key.startswith('C41B04'):assert q==before[key],key
         else:
             assert q['position_mm'][:2]==before[key]['position_mm'][:2]
@@ -74,7 +76,7 @@ def run():
             witness=q['layout_review']['top_port_witness'];assert witness['matched_within_5mm']==2
     oldrows={q['id']:q for q in pinned['catalog']}
     for q in json.loads((ROOT/'catalog.json').read_text())['models']:
-        if not q['id'].startswith('C41B04'):assert q==oldrows[q['id']],q['id']
+        if q['id'][:6] not in later and not q['id'].startswith('C41B04'):assert q==oldrows[q['id']],q['id']
     single=ck.script(OUT/'支架/单组/model_data.js','MODEL_PARTS');frames=json.loads((OUT/'支架安装表.json').read_text());bearings=[]
     assert len(frames)==3 and len(single)==38
     for frame in frames:
@@ -144,6 +146,9 @@ def run():
     assert not hits,hits
     assert len(floor_checks)==6
     report={'revision':'2.0-C41B04-02','status':'passed','accepted_C41B02_building_bridge_hashes':'unchanged','other_93_catalog_items':'unchanged','other_66_placed_equipment':'unchanged','dimensions_mm':p['dimensions_mm'],'source_plan_center_errors_mm':errors,'limits':'中心对原图吻合度不是现场公差；未标局部细部仍属外观量测','ear_beam_checks':bearings,'columns':len(columns),'beams':len(beams),'bridge_parts':len(bridge),'other_equipment':len(others),'new_support_groups':3,'intersections':hits,'AB_frame_decision':conflicts[0]}
+    if later:
+        report['other_93_catalog_items']='unchanged except separately registered revisions: '+','.join(sorted(later))
+        report['other_66_placed_equipment']='unchanged except separately registered revisions: '+','.join(sorted(later))
     report['floor_opening_checks']=floor_checks
     report['own_support_open_interior_checks']=own_support_checks
     report['revision_02_removal']={'removed_objects':82,'remaining_objects_unchanged':len(parts),'steel_geometry_and_placements':'unchanged','old_01_frozen_hashes':'passed'}

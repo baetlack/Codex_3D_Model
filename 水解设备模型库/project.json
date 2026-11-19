@@ -1,13 +1,13 @@
 {
   "module": "水解设备模型库",
-  "active_version": "2.0（C41B02、C41B04）",
+  "active_version": "2.0（C41B02、C41B04、D41B01）",
   "baseline_version": "1.0",
   "counts": {
     "ledger_groups": 35,
     "ledger_items": 99,
-    "completed_batches": 2,
-    "revised_items": 11,
-    "other_items_unchanged": 88
+    "completed_batches": 3,
+    "revised_items": 16,
+    "other_items_unchanged": 83
   },
   "baseline": "版本/1.0/冻结清单.json",
   "revisions": {
@@ -26,8 +26,17 @@
       "placements": "版本/2.0/C41B04/安装表.json",
       "support_placements": "版本/2.0/C41B04/支架安装表.json",
       "status": "02版删除无充分依据的外露大环/杆/弹簧/螺母；设备位置和钢架保持"
+    },
+    "D41B01": {
+      "version": "2.0-D41B01-01",
+      "equipment": "版本/2.0/D41B01/设备/model_data.js",
+      "foundation": "版本/2.0/D41B01/支架/model_data.js",
+      "foundation_single": "版本/2.0/D41B01/支架/model_data.js",
+      "placements": "版本/2.0/D41B01/安装表.json",
+      "support_placements": "版本/2.0/D41B01/支架安装表.json",
+      "status": "5台新本体与BC/DE成对支架；平剖面槽距100差异、A支架/新接口绝对方位待核"
     }
   },
-  "next_class": "D41B01",
+  "next_class": "L41B01",
   "rules": "每类单独追溯；不覆盖1.0与原图，不修改其他设备、建筑或桥架几何"
 }

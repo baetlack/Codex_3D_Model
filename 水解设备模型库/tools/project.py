@@ -60,11 +60,15 @@ def main():
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/test_c41b02.py')],check=True)
   if (ROOT/'版本/2.0/C41B04/设备/model_data.js').exists():subprocess.run([sys.executable,str(ROOT/'tools/test_c41b04.py')],check=True)
+  if (ROOT/'版本/2.0/D41B01/设备/model_data.js').exists():subprocess.run([sys.executable,str(ROOT/'tools/test_d41b01.py')],check=True)
  elif command=='build-c41b02':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_c41b02_v2.py')],check=True)
  elif command=='build-c41b04':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_c41b04_v2.py'),'--frame-policy','layout'],check=True)
- else:raise SystemExit('Use freeze | build-c41b02 | snapshot | check')
+ elif command=='build-d41b01':
+  import subprocess
+  subprocess.run([sys.executable,str(ROOT/'tools/build_d41b01_v2.py')],check=True)
+ else:raise SystemExit('Use freeze | build-c41b02 | build-c41b04 | build-d41b01 | snapshot | check')
 if __name__=='__main__':main()
