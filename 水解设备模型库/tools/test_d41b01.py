@@ -31,6 +31,10 @@ def run():
  assert abs(np.linalg.norm(np.array(ports['c']['center_mm'])[:2]-ports['d']['center_mm'][:2])-180)<.001
  low=min(v[2] for q in parts for v in q['vertices']);high=max(v[2] for q in parts for v in q['vertices'])
  assert low==-1312.1173 and high==2103
+ cap_top=box(names['搅拌_k_安装盖'])[1][2]
+ for seat in [q for q in parts if q['name']=='搅拌_k_高座侧板']:
+  lo,hi=box(seat);assert lo[2]==cap_top and hi[2]==816
+ assert box(names['搅拌_外露传动轴'])[0][2]==box(names['搅拌_机架下法兰'])[1][2]
  for q in parts:
   v=np.asarray(q['vertices']);assert np.isfinite(v).all(),q['name'];edges={}
   for f in q['faces']:
