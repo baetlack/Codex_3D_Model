@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": {
+    "current_new_cone_three_ears_no_round_base_combination": true,
+    "top_ports_and_separate_three_ear_parts": true,
+    "current_download_and_pending_labels": true,
+    "frozen_1_0_and_new_comparison": true,
+    "frozen_round_base_preview_preserved": true,
+    "six_current_instances_three_reflections_no_invented_supports": true
+  },
+  "page_errors": [],
+  "failed_resources": []
+}

@@ -1,0 +1,29 @@
+{
+  "revision": "2.0-L41B01-01",
+  "date": "2026-11-19",
+  "status": "本体及当前暂用位置校核完成；三耳承托结构/EL与新接口绝对方位待核",
+  "accuracy_reference": "用户认可的C41B02-02工程展示精度",
+  "user_decision": "承托EL暂不明确；按原位置作待核展示；旧圆台留1.0、不与新本体组合",
+  "items": [
+    "L41B01A",
+    "L41B01B",
+    "L41B01C",
+    "L41B01D",
+    "L41B01E",
+    "L41B01F"
+  ],
+  "ears_per_unit": 3,
+  "ports_per_unit": 5,
+  "new_civil_supports": 0,
+  "corrected_source_mirrors": [
+    "L41B01A",
+    "L41B01C",
+    "L41B01E"
+  ],
+  "position_xyz": "原暂用值保留；不能作为已确认安装值",
+  "remaining": [
+    "6台三耳承托结构与承托EL",
+    "工艺管口方位图",
+    "缺-2/-3/-4制造详图，局部外廓/细节按总图图面展示"
+  ]
+}

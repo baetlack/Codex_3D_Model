@@ -1,0 +1,68 @@
+{
+  "version": "2.0-L41B01-01",
+  "new_equipment_support": "三耳；承托底局部Z650、孔圈1382、60/180/300度",
+  "civil_geometry_created": false,
+  "installed_civil_instances": 0,
+  "legacy_foundation": "版本/1.0/快照/水解桥架工程/models/设备/设备基础_20261106/L41B01",
+  "legacy_round_base_mm": [
+    1300,
+    200
+  ],
+  "reason": "圆台不是三耳支承结构；缺承托EL与承托梁/支墩图，按用户选择不与新本体组合",
+  "items": [
+    {
+      "id": "L41B01A",
+      "position_mm": [
+        15500.0,
+        24100.0,
+        1500.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01B",
+      "position_mm": [
+        15500.0,
+        33000.0,
+        1500.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01D",
+      "position_mm": [
+        15500.0,
+        54600.0,
+        100.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01E",
+      "position_mm": [
+        28500.0,
+        24099.8994,
+        300.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01C",
+      "position_mm": [
+        15500.0,
+        45700.0,
+        1500.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01F",
+      "position_mm": [
+        28499.9504,
+        32999.8994,
+        300.0
+      ],
+      "z_status": "待核"
+    }
+  ]
+}
