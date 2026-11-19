@@ -50,7 +50,9 @@ def run():
  difference=json.loads((OUT/'来源与差异.json').read_text())['conflicts'][1]
  assert difference['plan_mm']==2600 and difference['section_mm']==2500 and difference['difference_mm']==100
  assert len(current)==72 and len(cfg['unplaced'])==27
+ later=set(cfg['equipment_versions'])-{'C41B02','C41B04','D41B01'}
  for tag,q in current.items():
+  if tag[:6] in later:continue
   if not tag.startswith('D41B01'):assert q==before[tag],tag
   else:
    assert q['position_mm'][:2]==before[tag]['position_mm'][:2] and q['position_mm'][2]==11000
@@ -60,7 +62,7 @@ def run():
  assert current['D41B01A']['z_status']=='待核'
  oldrows={q['id']:q for q in pin['catalog']}
  for q in json.loads((ROOT/'catalog.json').read_text())['models']:
-  if not q['id'].startswith('D41B01'):assert q==oldrows[q['id']],q['id']
+  if q['id'][:6] not in later and not q['id'].startswith('D41B01'):assert q==oldrows[q['id']],q['id']
  frame=ck.script(OUT/'支架/model_data.js','MODEL_PARTS');oldframe=ck.script(REPO/'水解桥架工程/models/设备/设备基础_20261106/D41B01/model_data.js','MODEL_PARTS')
  # Export adds smoothed normals; topology, coordinates, colors and names are exact.
  for a,b in zip(frame,oldframe):
@@ -132,6 +134,7 @@ def run():
  report={'version':p['version'],'status':'passed' if not hits and not any(r['actual_mesh_intersection'] for r in floor_checks) else 'review-required','other_67_equipment_and_94_catalog_items':'unchanged','building_bridge_accepted_equipment_hashes':'unchanged','top_nozzle_DXF_center_errors_mm':top_errors,'watertight_components':len(parts),'bearing_checks':bearings,'support_open_interior_checks':support_checks,'screen':{'columns':len(columns),'beams':len(beams),'bridge_parts':len(bridge),'other_equipment':other_count,'pair_support_groups':2,'aabb_candidates':candidates},'intersections':hits,'floor_checks':floor_checks,'quantity_decision':p['user_decision'],'limits':p['limits']}
  report['same_class_pair_screen']={'pairs':len(pair_gaps),'minimum_separating_aabb_gap_mm':round(min(pair_gaps),3)}
  report['plan_section_spacing_difference']=difference
+ if later:report['other_67_equipment_and_94_catalog_items']='unchanged except separately registered revisions: '+','.join(sorted(later))
  (OUT/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:v for k,v in report.items() if k not in ['bearing_checks','limits']},ensure_ascii=False))
  assert not hits,hits

@@ -1918,74 +1918,248 @@
     },
     {
       "id": "L41B01A",
-      "status": "原点或类型方向未充分对应，保留待核",
-      "evidence": {
+      "status": "布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核",
+      "before_xy_mm": [
+        15500.0,
+        24100.0
+      ],
+      "after_xy_mm": [
+        15500.0,
+        24100.0
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "equipment_version": "2.0-L41B01-01",
+      "arrangement_symbol_evidence": {
+        "reference_handle": "B94F7",
+        "reference_block": "*U562",
         "source_rotation_deg": 180.0,
         "source_scale": [
           -1.0,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
       }
     },
     {
       "id": "L41B01B",
-      "status": "原点或类型方向未充分对应，保留待核",
-      "evidence": {
+      "status": "布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核",
+      "before_xy_mm": [
+        15500.0,
+        33000.0
+      ],
+      "after_xy_mm": [
+        15500.0,
+        33000.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "equipment_version": "2.0-L41B01-01",
+      "arrangement_symbol_evidence": {
+        "reference_handle": "B94F5",
+        "reference_block": "*U562",
         "source_rotation_deg": 0.0,
         "source_scale": [
           1,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
       }
     },
     {
       "id": "L41B01D",
-      "status": "原点或类型方向未充分对应，保留待核",
-      "evidence": {
+      "status": "布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核",
+      "before_xy_mm": [
+        15500.0,
+        54600.0
+      ],
+      "after_xy_mm": [
+        15500.0,
+        54600.0
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "equipment_version": "2.0-L41B01-01",
+      "arrangement_symbol_evidence": {
+        "reference_handle": "B94ED",
+        "reference_block": "*U562",
         "source_rotation_deg": 0.0,
         "source_scale": [
           1,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
       }
     },
     {
       "id": "L41B01E",
-      "status": "原点或类型方向未充分对应，保留待核",
-      "evidence": {
+      "status": "布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核",
+      "before_xy_mm": [
+        28500.0,
+        24099.8994
+      ],
+      "after_xy_mm": [
+        28500.0,
+        24099.8994
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "equipment_version": "2.0-L41B01-01",
+      "arrangement_symbol_evidence": {
+        "reference_handle": "B94FF",
+        "reference_block": "*U562",
         "source_rotation_deg": 180.0,
         "source_scale": [
           -1.0,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
       }
     },
     {
       "id": "L41B01C",
-      "status": "原点或类型方向未充分对应，保留待核",
-      "evidence": {
+      "status": "布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核",
+      "before_xy_mm": [
+        15500.0,
+        45700.0
+      ],
+      "after_xy_mm": [
+        15500.0,
+        45700.0
+      ],
+      "before_rotation_deg": 180.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": true,
+      "equipment_version": "2.0-L41B01-01",
+      "arrangement_symbol_evidence": {
+        "reference_handle": "B94EF",
+        "reference_block": "*U562",
         "source_rotation_deg": 180.0,
         "source_scale": [
           -1.0,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
       }
     },
     {
       "id": "L41B01F",
-      "status": "原点或类型方向未充分对应，保留待核",
-      "evidence": {
+      "status": "布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核",
+      "before_xy_mm": [
+        28499.9504,
+        32999.8994
+      ],
+      "after_xy_mm": [
+        28499.9504,
+        32999.8994
+      ],
+      "before_rotation_deg": 0.0,
+      "after_rotation_deg": 0.0,
+      "mirror_y": false,
+      "equipment_version": "2.0-L41B01-01",
+      "arrangement_symbol_evidence": {
+        "reference_handle": "B94FD",
+        "reference_block": "*U562",
         "source_rotation_deg": 0.0,
         "source_scale": [
           1,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
       }
     },
     {

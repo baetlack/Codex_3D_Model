@@ -935,8 +935,24 @@
       "h": 1220,
       "shape": "filter",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B01-01",
+      "model_spec": "内Ø1200/外Ø1216；上下分筒+锥斗；盖顶约H1446，顶口H1566；三耳承托待核",
+      "position_mm": [
+        15500.0,
+        24100.0,
+        1500.0
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/L41B01/设备/model_data.js",
+        "glb": "版本/2.0/L41B01/设备/L41B01.glb",
+        "obj": "版本/2.0/L41B01/设备/L41B01.obj",
+        "parameters": "parameters/L41B01A.json",
+        "installation": "版本/2.0/L41B01/安装表.json"
+      }
     },
     {
       "id": "L41B01B",
@@ -955,8 +971,24 @@
       "h": 1220,
       "shape": "filter",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B01-01",
+      "model_spec": "内Ø1200/外Ø1216；上下分筒+锥斗；盖顶约H1446，顶口H1566；三耳承托待核",
+      "position_mm": [
+        15500.0,
+        33000.0,
+        1500.0
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/L41B01/设备/model_data.js",
+        "glb": "版本/2.0/L41B01/设备/L41B01.glb",
+        "obj": "版本/2.0/L41B01/设备/L41B01.obj",
+        "parameters": "parameters/L41B01B.json",
+        "installation": "版本/2.0/L41B01/安装表.json"
+      }
     },
     {
       "id": "L41B01D",
@@ -975,8 +1007,24 @@
       "h": 1220,
       "shape": "filter",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B01-01",
+      "model_spec": "内Ø1200/外Ø1216；上下分筒+锥斗；盖顶约H1446，顶口H1566；三耳承托待核",
+      "position_mm": [
+        15500.0,
+        54600.0,
+        100.0
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/L41B01/设备/model_data.js",
+        "glb": "版本/2.0/L41B01/设备/L41B01.glb",
+        "obj": "版本/2.0/L41B01/设备/L41B01.obj",
+        "parameters": "parameters/L41B01D.json",
+        "installation": "版本/2.0/L41B01/安装表.json"
+      }
     },
     {
       "id": "L41B01E",
@@ -995,8 +1043,24 @@
       "h": 1220,
       "shape": "filter",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B01-01",
+      "model_spec": "内Ø1200/外Ø1216；上下分筒+锥斗；盖顶约H1446，顶口H1566；三耳承托待核",
+      "position_mm": [
+        28500.0,
+        24099.8994,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/L41B01/设备/model_data.js",
+        "glb": "版本/2.0/L41B01/设备/L41B01.glb",
+        "obj": "版本/2.0/L41B01/设备/L41B01.obj",
+        "parameters": "parameters/L41B01E.json",
+        "installation": "版本/2.0/L41B01/安装表.json"
+      }
     },
     {
       "id": "L41B01C",
@@ -1015,8 +1079,24 @@
       "h": 1220,
       "shape": "filter",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B01-01",
+      "model_spec": "内Ø1200/外Ø1216；上下分筒+锥斗；盖顶约H1446，顶口H1566；三耳承托待核",
+      "position_mm": [
+        15500.0,
+        45700.0,
+        1500.0
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/L41B01/设备/model_data.js",
+        "glb": "版本/2.0/L41B01/设备/L41B01.glb",
+        "obj": "版本/2.0/L41B01/设备/L41B01.obj",
+        "parameters": "parameters/L41B01C.json",
+        "installation": "版本/2.0/L41B01/安装表.json"
+      }
     },
     {
       "id": "L41B01F",
@@ -1035,8 +1115,24 @@
       "h": 1220,
       "shape": "filter",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B01-01",
+      "model_spec": "内Ø1200/外Ø1216；上下分筒+锥斗；盖顶约H1446，顶口H1566；三耳承托待核",
+      "position_mm": [
+        28499.9504,
+        32999.8994,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/L41B01/设备/model_data.js",
+        "glb": "版本/2.0/L41B01/设备/L41B01.glb",
+        "obj": "版本/2.0/L41B01/设备/L41B01.obj",
+        "parameters": "parameters/L41B01F.json",
+        "installation": "版本/2.0/L41B01/安装表.json"
+      }
     },
     {
       "id": "P41B01E",

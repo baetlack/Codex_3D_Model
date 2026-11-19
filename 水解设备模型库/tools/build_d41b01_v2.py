@@ -172,7 +172,9 @@ def update_registry(params,installs,support_bounds):
     project['revisions']['D41B01']={'version':VERSION,'equipment':'版本/2.0/D41B01/设备/model_data.js','foundation':'版本/2.0/D41B01/支架/model_data.js','foundation_single':'版本/2.0/D41B01/支架/model_data.js','placements':'版本/2.0/D41B01/安装表.json','support_placements':'版本/2.0/D41B01/支架安装表.json','status':'5台新本体与BC/DE成对支架；平剖面槽距100差异、A支架/新接口绝对方位待核'}
     project['active_version']='2.0（'+ '、'.join(project['revisions'])+'）'
     revised=sum(r['id'][:6] in project['revisions'] for r in catalog['models'])
-    project['counts'].update(completed_batches=len(project['revisions']),revised_items=revised,other_items_unchanged=99-revised);project['next_class']='L41B01';save(ROOT/'project.json',project)
+    project['counts'].update(completed_batches=len(project['revisions']),revised_items=revised,other_items_unchanged=99-revised)
+    if len(project['revisions'])==3:project['next_class']='L41B01'
+    save(ROOT/'project.json',project)
     path=ROOT/'equipment_versions.js';o=json.loads(path.read_text().split('=',1)[1].strip().rstrip(';'));o['version']=VERSION
     o['equipment']['D41B01']={'dir':'版本/2.0/D41B01/设备/','bounds':params['bounds_mm']}
     f=json.loads((REPO/(OLD+'基础索引.json')).read_text())['assets']['D41B01']

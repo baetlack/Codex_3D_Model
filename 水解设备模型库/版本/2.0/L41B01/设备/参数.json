@@ -1,0 +1,172 @@
+{
+  "version": "2.0-L41B01-01",
+  "name": "水解过滤器",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/水解过滤器.dxf",
+  "source_sha256": "41447cee5d2e3ccffb55632a32358ac37af1a249432ed1c4193630d07a71ed62",
+  "drawing_number": "LMBLJC2001-03L4103-1",
+  "drawing_stage": "施工图总图，第1张/共4张",
+  "cad_units_per_mm": 1,
+  "applicability": "2026.5.21台账水解页103行复用图号LMBLJC2001-03L4103，与本次总图一致；图示与台账均6台",
+  "dimensions_mm": {
+    "shell_ID": 1200,
+    "shell_OD": 1216,
+    "shell_wall": 8,
+    "lower_straight_shell": 500,
+    "upper_straight_shell": 450,
+    "cone_axial_height": 350,
+    "bottom_nozzle_nominal_extension": 100,
+    "top_plate_OD": 1256,
+    "top_plate_thickness": 8,
+    "main_flange_OD_drawn": 1375,
+    "main_flange_bolt_circle": 1320,
+    "main_flange_bolts": 24,
+    "main_flange_bolt_spec": "M20×130",
+    "screen_edge_thickness": 20,
+    "gasket_thickness_each": 5,
+    "body_face_to_lid_top_approx": 1446,
+    "top_nozzle_extension": 120,
+    "overall_envelope": 1566,
+    "ear_count": 3,
+    "ear_bearing_z": 650,
+    "ear_angles_deg": [
+      60,
+      180,
+      300
+    ],
+    "ear_hole_circle": 1382,
+    "ear_hole_diameter": 30,
+    "ear_plate_radial_tangent_thickness": [
+      125,
+      160,
+      10
+    ]
+  },
+  "ledger_spec": "Ø1200,H1220；台账名义H与总图约1446分开保留，不以旧高度压缩新图",
+  "datum": "底部c口密封端面Z0；下筒锥斗起点Z450；三耳底Z650；平盖顶Z1446；d/e口顶Z1566",
+  "ports": [
+    {
+      "id": "d",
+      "dn": 50,
+      "center_mm": [
+        400.0,
+        200.0,
+        1566
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "role": "清洗口",
+      "projection_mm": 120,
+      "flange_OD_mm": 165,
+      "basis": "管口表120；主俯视400、±200及Ø165圆；主视Ø57×3.5"
+    },
+    {
+      "id": "e",
+      "dn": 50,
+      "center_mm": [
+        400.0,
+        -200.0,
+        1566
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "role": "呼吸口",
+      "projection_mm": 120,
+      "flange_OD_mm": 165,
+      "basis": "管口表120；主俯视400、±200及Ø165圆；主视Ø57×3.5"
+    },
+    {
+      "id": "a",
+      "dn": 300,
+      "ceramic_bore_mm": 250,
+      "center_mm": [
+        -750,
+        445.5,
+        700
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "role": "进料口",
+      "flange_OD_mm": 445,
+      "basis": "主视距锥斗起点250；俯视X-750、Ø250/Ø290瓷衬同心于Y445.5；不把立筋间距500当作侧口偏心"
+    },
+    {
+      "id": "b",
+      "dn": 300,
+      "center_mm": [
+        0,
+        -758,
+        1238
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "role": "出料口",
+      "projection_mm": 150,
+      "flange_OD_mm": 445,
+      "basis": "管口表伸出150；主视距顶盖下表面200；俯视南侧中心"
+    },
+    {
+      "id": "c",
+      "dn": 300,
+      "center_mm": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "role": "排渣口",
+      "projection_mm": 100,
+      "flange_OD_mm": 445,
+      "bolt_circle_mm": 400,
+      "bore_mm": 293,
+      "basis": "主剖面锥斗350、口颈100、Ø325×8、Ø293；Ø400是螺栓圆，非外法兰直径"
+    }
+  ],
+  "top_plan_source_points": {
+    "d": {
+      "handle": "17295B",
+      "xy_mm": [
+        400.0,
+        200.0
+      ]
+    },
+    "e": {
+      "handle": "172956",
+      "xy_mm": [
+        400.0,
+        -200.0
+      ]
+    }
+  },
+  "bounds_mm": [
+    1437.5,
+    1445.5,
+    1566.0
+  ],
+  "support_status": "新图三耳悬挂支承；未取得承托梁/支墩与承托EL，暂不新建；旧Ø1300×200圆台仅保留1.0，不与新本体组合",
+  "user_decision": "承托EL暂不明确；保留现有位置作待核展示，旧圆台留1.0、不与新本体组合",
+  "limits": [
+    "本体/接口/三耳按适用总图；未提供-2/-3/-4制造详图，局部法兰/螺栓外廓及耳板未标细节按CAD图面展示。",
+    "主连接法兰外廓按图面Ø1375；Ø1320为主连接螺栓圆，Ø1382为三耳孔圆，底口Ø400为该口螺栓圆，均不混作筒径或法兰外径。",
+    "仅表现外露PP筛板边缘、垫片、加强筋，不展开内部筛孔、衬砖/衬胶施工层与隐藏流道。",
+    "总图注明按工艺专业管口方位图；按布置INSERT保留平面方向/镜像，但新接口绝对方位仍待核。",
+    "6台X/Y及原暂用Z保持；A/C/E纠正原INSERT负比例镜像遗漏。原Z无可靠承托依据，以底口端面作当前暂用原点，不能作为安装验收。",
+    "不造承托梁、支墩、地脚连接或检修空间；支承图/承托标高提供后再闭合安装链。"
+  ]
+}

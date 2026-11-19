@@ -72,8 +72,8 @@
       "units": "mm"
     },
     "L41B01": {
-      "path": "../水解设备模型库/示图建模_20260521/模型/L41B01/model_data.js",
-      "source": "水解设备模型库/示图建模_20260521/模型/L41B01/model_data.js",
+      "path": "../水解设备模型库/版本/2.0/L41B01/设备/model_data.js",
+      "source": "水解设备模型库/版本/2.0/L41B01/设备/model_data.js",
       "units": "mm"
     },
     "P41B08": {
@@ -2625,11 +2625,11 @@
         24100.0,
         1500.0
       ],
-      "rotation_deg": 180.0,
+      "rotation_deg": 0.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "待核",
-      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "orientation_status": "按布置图INSERT纠正负比例镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "B94F7",
       "source_block": "*U562",
       "label_handle": "B9504",
@@ -2638,15 +2638,70 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "z_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
       "layout_review": {
+        "reference_handle": "B94F7",
+        "reference_block": "*U562",
         "source_rotation_deg": 180.0,
         "source_scale": [
           -1.0,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "equipment_version": "2.0-L41B01-01",
+      "local_datum": "底部c口密封端面Z0；托耳底Z650",
+      "installation_review": {
+        "before_position_mm": [
+          15500.0,
+          24100.0,
+          1500.0
+        ],
+        "before_rotation_deg": 180.0,
+        "before_mirror_y": false,
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "source_transform_matrix_xy": [
+          [
+            1.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            -1.0
+          ]
+        ],
+        "retained_xy_and_provisional_z": true,
+        "temporary_bearing_EL": 102.15,
+        "support_status": "承托结构/标高待核；不采用旧暂定圆台",
+        "legacy_layout_review": {
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "status": "原点或类型方向未充分对应，保留待核"
+        }
       }
     },
     {
@@ -2662,7 +2717,7 @@
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "待核",
-      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "orientation_status": "按布置图INSERT纠正负比例镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "B94F5",
       "source_block": "*U562",
       "label_handle": "B9507",
@@ -2671,15 +2726,70 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "z_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
       "layout_review": {
+        "reference_handle": "B94F5",
+        "reference_block": "*U562",
         "source_rotation_deg": 0.0,
         "source_scale": [
           1,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "equipment_version": "2.0-L41B01-01",
+      "local_datum": "底部c口密封端面Z0；托耳底Z650",
+      "installation_review": {
+        "before_position_mm": [
+          15500.0,
+          33000.0,
+          1500.0
+        ],
+        "before_rotation_deg": 0.0,
+        "before_mirror_y": false,
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "source_transform_matrix_xy": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "retained_xy_and_provisional_z": true,
+        "temporary_bearing_EL": 102.15,
+        "support_status": "承托结构/标高待核；不采用旧暂定圆台",
+        "legacy_layout_review": {
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "status": "原点或类型方向未充分对应，保留待核"
+        }
       }
     },
     {
@@ -2695,7 +2805,7 @@
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "待核",
-      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "orientation_status": "按布置图INSERT纠正负比例镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "B94ED",
       "source_block": "*U562",
       "label_handle": "B950A",
@@ -2704,15 +2814,70 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "z_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
       "layout_review": {
+        "reference_handle": "B94ED",
+        "reference_block": "*U562",
         "source_rotation_deg": 0.0,
         "source_scale": [
           1,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "equipment_version": "2.0-L41B01-01",
+      "local_datum": "底部c口密封端面Z0；托耳底Z650",
+      "installation_review": {
+        "before_position_mm": [
+          15500.0,
+          54600.0,
+          100.0
+        ],
+        "before_rotation_deg": 0.0,
+        "before_mirror_y": false,
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "source_transform_matrix_xy": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "retained_xy_and_provisional_z": true,
+        "temporary_bearing_EL": 100.75,
+        "support_status": "承托结构/标高待核；不采用旧暂定圆台",
+        "legacy_layout_review": {
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "status": "原点或类型方向未充分对应，保留待核"
+        }
       }
     },
     {
@@ -2724,11 +2889,11 @@
         24099.8994,
         300.0
       ],
-      "rotation_deg": 180.0,
+      "rotation_deg": 0.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "待核",
-      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "orientation_status": "按布置图INSERT纠正负比例镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "B94FF",
       "source_block": "*U562",
       "label_handle": "B950D",
@@ -2737,15 +2902,70 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "z_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
       "layout_review": {
+        "reference_handle": "B94FF",
+        "reference_block": "*U562",
         "source_rotation_deg": 180.0,
         "source_scale": [
           -1.0,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "equipment_version": "2.0-L41B01-01",
+      "local_datum": "底部c口密封端面Z0；托耳底Z650",
+      "installation_review": {
+        "before_position_mm": [
+          28500.0,
+          24099.8994,
+          300.0
+        ],
+        "before_rotation_deg": 180.0,
+        "before_mirror_y": false,
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "source_transform_matrix_xy": [
+          [
+            1.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            -1.0
+          ]
+        ],
+        "retained_xy_and_provisional_z": true,
+        "temporary_bearing_EL": 100.95,
+        "support_status": "承托结构/标高待核；不采用旧暂定圆台",
+        "legacy_layout_review": {
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "status": "原点或类型方向未充分对应，保留待核"
+        }
       }
     },
     {
@@ -2757,11 +2977,11 @@
         45700.0,
         1500.0
       ],
-      "rotation_deg": 180.0,
+      "rotation_deg": 0.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "待核",
-      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "orientation_status": "按布置图INSERT纠正负比例镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "B94EF",
       "source_block": "*U562",
       "label_handle": "B9708",
@@ -2770,15 +2990,70 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "z_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
       "layout_review": {
+        "reference_handle": "B94EF",
+        "reference_block": "*U562",
         "source_rotation_deg": 180.0,
         "source_scale": [
           -1.0,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "equipment_version": "2.0-L41B01-01",
+      "local_datum": "底部c口密封端面Z0；托耳底Z650",
+      "installation_review": {
+        "before_position_mm": [
+          15500.0,
+          45700.0,
+          1500.0
+        ],
+        "before_rotation_deg": 180.0,
+        "before_mirror_y": false,
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "source_transform_matrix_xy": [
+          [
+            1.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            -1.0
+          ]
+        ],
+        "retained_xy_and_provisional_z": true,
+        "temporary_bearing_EL": 102.15,
+        "support_status": "承托结构/标高待核；不采用旧暂定圆台",
+        "legacy_layout_review": {
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "status": "原点或类型方向未充分对应，保留待核"
+        }
       }
     },
     {
@@ -2794,7 +3069,7 @@
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "待核",
-      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "orientation_status": "按布置图INSERT纠正负比例镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "B94FD",
       "source_block": "*U562",
       "label_handle": "B975C",
@@ -2803,15 +3078,70 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "z_basis": "按用户选择保留原暂用Z，以c口端面为当前模型原点；三耳承托EL=原暂用EL+0.650，仅算术暂用，不是确认标高",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
       "layout_review": {
+        "reference_handle": "B94FD",
+        "reference_block": "*U562",
         "source_rotation_deg": 0.0,
         "source_scale": [
           1,
           1
         ],
-        "status": "原点或类型方向未充分对应，保留待核"
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "两处顶口中心对应布置符号；必须保留INSERT负比例镜像；侧口新尺寸及绝对工艺方位另核",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 2,
+          "nearest_error_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "equipment_version": "2.0-L41B01-01",
+      "local_datum": "底部c口密封端面Z0；托耳底Z650",
+      "installation_review": {
+        "before_position_mm": [
+          28499.9504,
+          32999.8994,
+          300.0
+        ],
+        "before_rotation_deg": 0.0,
+        "before_mirror_y": false,
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "source_transform_matrix_xy": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "retained_xy_and_provisional_z": true,
+        "temporary_bearing_EL": 100.95,
+        "support_status": "承托结构/标高待核；不采用旧暂定圆台",
+        "legacy_layout_review": {
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "status": "原点或类型方向未充分对应，保留待核"
+        }
       }
     },
     {
@@ -5295,6 +5625,7 @@
   "equipment_versions": {
     "C41B02": "2.0-C41B02-02",
     "C41B04": "2.0-C41B04-02",
-    "D41B01": "2.0-D41B01-01"
+    "D41B01": "2.0-D41B01-01",
+    "L41B01": "2.0-L41B01-01"
   }
 }

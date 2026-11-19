@@ -1,13 +1,13 @@
 {
   "module": "水解设备模型库",
-  "active_version": "2.0（C41B02、C41B04、D41B01）",
+  "active_version": "2.0（C41B02、C41B04、D41B01、L41B01）",
   "baseline_version": "1.0",
   "counts": {
     "ledger_groups": 35,
     "ledger_items": 99,
-    "completed_batches": 3,
-    "revised_items": 16,
-    "other_items_unchanged": 83
+    "completed_batches": 4,
+    "revised_items": 22,
+    "other_items_unchanged": 77
   },
   "baseline": "版本/1.0/冻结清单.json",
   "revisions": {
@@ -35,8 +35,15 @@
       "placements": "版本/2.0/D41B01/安装表.json",
       "support_placements": "版本/2.0/D41B01/支架安装表.json",
       "status": "5台新本体与BC/DE成对支架；平剖面槽距100差异、A支架/新接口绝对方位待核"
+    },
+    "L41B01": {
+      "version": "2.0-L41B01-01",
+      "equipment": "版本/2.0/L41B01/设备/model_data.js",
+      "placements": "版本/2.0/L41B01/安装表.json",
+      "support_review": "版本/2.0/L41B01/支承待核.json",
+      "status": "6台本体/三耳更新，A/C/E源镜像纠正；保留暂用位置，承托结构/EL与新管口方位待核"
     }
   },
-  "next_class": "L41B01",
+  "next_class": "F41B03",
   "rules": "每类单独追溯；不覆盖1.0与原图，不修改其他设备、建筑或桥架几何"
 }

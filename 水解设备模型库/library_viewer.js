@@ -199,7 +199,7 @@ function renderDetail(row, type, foundationIds, civilOnly) {
       link('设备参数 JSON',dir+'参数.json'));
     detail.append(downloads);
   }
-  for (const [label,view] of Object.entries(row.视图||{})) figure((tagForRow(row)==='C41B02'&&overrides.version?'1.0旧示图 ':'DXF ')+label,batch+view.文件);
+  for (const [label,view] of Object.entries(row.视图||{})) figure((['C41B02','L41B01'].includes(tagForRow(row))&&overrides.version?'1.0旧示图 ':'DXF ')+label,batch+view.文件);
   if (tagForRow(row)==='C41B02'&&overrides.version) {figure('2.0新增总图主视','版本/2.0/C41B02/来源_主视.png');figure('2.0新增总图俯视','版本/2.0/C41B02/来源_俯视.png');}
   if (row.尺寸量测?.布置图量测视图) figure('布置量测',batch+row.尺寸量测.布置图量测视图);
   renderLedger(row,type);
@@ -222,6 +222,13 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     field(info,'支架与待核','B/C、D/E成对支架，平面中心距2600、承托高2500；截面沿用示意。平面2600与剖面水平2500差100待核。A支架及标高适用性待核；新接口绝对方位待工艺方位图。');
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/D41B01/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/D41B01/修订对比.html'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('晶种制备槽(D41B01A-E).dxf'),true),link('5台安装表','版本/2.0/D41B01/安装表.json'));info.append(links);
     figure('新增总图 · 主视','版本/2.0/D41B01/依据_主视.png');figure('新增总图 · 俯视','版本/2.0/D41B01/依据_俯视.png');figure('刚性环耳式支座详图','版本/2.0/D41B01/依据_托耳.png');
+  }
+  if (tagForRow(row)==='L41B01' && overrides.equipment?.L41B01) {
+    const info=section(detail,'本类2.0整改与支承');
+    field(info,'本体','内径1200/外径1216；上下筒体、锥斗与中心排渣。盖顶距底口约1446，顶口至1566；5管口、3耳、24M20连接。');
+    field(info,'安装待核','按用户选择保留6台X/Y和暂用Z。A/C/E按INSERT负比例纠正镜像；三耳承托EL及承托梁/支墩未明确，不与旧圆台组合。新接口绝对方位待工艺图。');
+    const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/L41B01/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/L41B01/修订对比.html'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('水解过滤器.dxf'),true),link('6台安装表','版本/2.0/L41B01/安装表.json'),link('1.0旧库（搜索L41B01查看圆台）','版本/1.0/快照/水解设备模型库/index.html'));info.append(links);
+    figure('新总图 · 主剖视','版本/2.0/L41B01/依据_主视.png');figure('新总图 · 俯视','版本/2.0/L41B01/依据_俯视.png');
   }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
@@ -312,7 +319,7 @@ function collectPartGroups(mesh, archive) {
     }
   } else {
     for (const part of mesh) {
-      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':'换热器托耳'):part.name.split('_')[0];
+      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':typeInfo(rowsByTag.get(rowTag))?.key==='L41B01'?'过滤器托耳':'换热器托耳'):part.name.split('_')[0];
       if (!groups.has(label)) groups.set(label,[]);
       groups.get(label).push(part);
     }
@@ -334,7 +341,7 @@ async function select(id) {
   const row=rowsByTag.get(id);
   const type=typeInfo(row);
   const tag=id?.slice(0,6);
-  const foundationIds=row?.名称.endsWith('泵')?[]:foundations?.tags[tag] || [];
+  const foundationIds=row?.名称.endsWith('泵')||overrides.foundation_policy?.[tag]?[]:foundations?.tags[tag] || [];
   const civilOnly=foundations?.civilOnly?.includes(tag);
   renderList();
   renderDetail(row,type,foundationIds,civilOnly);
