@@ -1262,7 +1262,7 @@
     },
     {
       "id": "C41B04E",
-      "status": "位置已核，接口方位待核",
+      "status": "位置与顶视方位已复核",
       "before_xy_mm": [
         21300.0,
         63299.5427
@@ -1303,17 +1303,18 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
-      }
+      },
+      "equipment_version": "2.0-C41B04-01"
     },
     {
       "id": "C41B04F",
-      "status": "位置已核，接口方位待核",
+      "status": "位置与顶视方位已复核",
       "before_xy_mm": [
         23700.0,
         63299.5427
@@ -1354,13 +1355,14 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
-      }
+      },
+      "equipment_version": "2.0-C41B04-01"
     },
     {
       "id": "D41B02B3",
@@ -2112,7 +2114,7 @@
     },
     {
       "id": "C41B04A",
-      "status": "位置已核，接口方位待核",
+      "status": "位置与顶视方位已复核",
       "before_xy_mm": [
         21300.0,
         70299.5332
@@ -2153,17 +2155,18 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
-      }
+      },
+      "equipment_version": "2.0-C41B04-01"
     },
     {
       "id": "C41B04B",
-      "status": "位置已核，接口方位待核",
+      "status": "位置与顶视方位已复核",
       "before_xy_mm": [
         23700.0,
         70299.5332
@@ -2204,17 +2207,18 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
-      }
+      },
+      "equipment_version": "2.0-C41B04-01"
     },
     {
       "id": "C41B04C",
-      "status": "位置已核，接口方位待核",
+      "status": "位置与顶视方位已复核",
       "before_xy_mm": [
         21300.0,
         66300.4573
@@ -2255,17 +2259,18 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
-      }
+      },
+      "equipment_version": "2.0-C41B04-01"
     },
     {
       "id": "C41B04D",
-      "status": "位置已核，接口方位待核",
+      "status": "位置与顶视方位已复核",
       "before_xy_mm": [
         23700.0,
         66300.4573
@@ -2306,13 +2311,14 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
-      }
+      },
+      "equipment_version": "2.0-C41B04-01"
     },
     {
       "id": "D41B01B",
@@ -2553,6 +2559,7 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
+      "equipment_version": "2.0-C41B02-02",
       "legacy_six_port_evidence": {
         "reference_handle": "3321D",
         "reference_block": "钛液预热槽",
@@ -2569,8 +2576,7 @@
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
-      },
-      "equipment_version": "2.0-C41B02-02"
+      }
     },
     {
       "id": "C41B02B",
@@ -2586,6 +2592,7 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": true,
+      "equipment_version": "2.0-C41B02-02",
       "legacy_six_port_evidence": {
         "reference_handle": "33245",
         "reference_block": "钛液预热槽",
@@ -2602,8 +2609,7 @@
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
-      },
-      "equipment_version": "2.0-C41B02-02"
+      }
     },
     {
       "id": "C41B01A",
@@ -2706,6 +2712,7 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 180.0,
       "mirror_y": false,
+      "equipment_version": "2.0-C41B02-02",
       "legacy_six_port_evidence": {
         "reference_handle": "33BEC",
         "reference_block": "钛液预热槽",
@@ -2722,8 +2729,7 @@
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
-      },
-      "equipment_version": "2.0-C41B02-02"
+      }
     },
     {
       "id": "C41B03A",
@@ -2781,6 +2787,7 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
+      "equipment_version": "2.0-C41B02-02",
       "legacy_six_port_evidence": {
         "reference_handle": "38103",
         "reference_block": "钛液预热槽",
@@ -2797,8 +2804,7 @@
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
-      },
-      "equipment_version": "2.0-C41B02-02"
+      }
     },
     {
       "id": "C41B02D",
@@ -2814,6 +2820,7 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": true,
+      "equipment_version": "2.0-C41B02-02",
       "legacy_six_port_evidence": {
         "reference_handle": "38106",
         "reference_block": "钛液预热槽",
@@ -2830,8 +2837,7 @@
         ],
         "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
         "top_plan": null
-      },
-      "equipment_version": "2.0-C41B02-02"
+      }
     },
     {
       "id": "C41B01B",
@@ -2941,7 +2947,7 @@
       "status": "圆轮廓位置可核，朝向缺少特征待核"
     }
   ],
-  "reviewed": 51,
-  "pending": 21,
+  "reviewed": 57,
+  "pending": 15,
   "rule": "位置/朝向按真实图块与顶视特征复核；负比例只取镜像与方向，设备净模尺寸不缩放；无法对应的保留待核"
 }

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "FRAME-C41B04AB",
+    "name": "偏钛酸冷却器AB组钢架",
+    "asset": "foundation-C41B04",
+    "position_mm": [
+      22500.0001,
+      70299.5095,
+      0
+    ],
+    "rotation_deg": 0,
+    "level": "EL100",
+    "support_for": [
+      "C41B04A",
+      "C41B04B"
+    ],
+    "status": "按设备中心与钢架梁网就位"
+  },
+  {
+    "id": "FRAME-C41B04CD",
+    "name": "偏钛酸冷却器CD组钢架",
+    "asset": "foundation-C41B04",
+    "position_mm": [
+      22500.0,
+      66299.9906,
+      0
+    ],
+    "rotation_deg": 0,
+    "level": "EL100",
+    "support_for": [
+      "C41B04C",
+      "C41B04D"
+    ],
+    "status": "按设备中心与钢架梁网就位"
+  },
+  {
+    "id": "FRAME-C41B04EF",
+    "name": "偏钛酸冷却器EF组钢架",
+    "asset": "foundation-C41B04",
+    "position_mm": [
+      22500.0,
+      63300.0094,
+      0
+    ],
+    "rotation_deg": 0,
+    "level": "EL100",
+    "support_for": [
+      "C41B04E",
+      "C41B04F"
+    ],
+    "status": "按设备中心与钢架梁网就位"
+  }
+]

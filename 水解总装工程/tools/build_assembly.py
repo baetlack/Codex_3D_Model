@@ -36,11 +36,12 @@ def build():
     foundation=js(FOUND+'foundation_data.js')
     equipment_project=doc('水解设备模型库/project.json') if (ROOT/'水解设备模型库/project.json').exists() else {}
     revisions=equipment_project.get('revisions',{})
-    c02_install=doc('水解设备模型库/'+revisions['C41B02']['placements']) if 'C41B02' in revisions else []
+    revision_installs={key:doc('水解设备模型库/'+value['placements']) for key,value in revisions.items()}
     for revision in revisions.values():
         params=doc('水解设备模型库/'+str(Path(revision['equipment']).with_name('参数.json')))
         inputs.add(params['source_drawing'])
-        doc('水解设备模型库/'+str(Path(revision['foundation']).with_name('参数.json')))
+        foundation_params=doc('水解设备模型库/'+str(Path(revision['foundation']).with_name('参数.json')))
+        if foundation_params.get('source_drawing'):inputs.add(foundation_params['source_drawing'])
     labels=[]
     for e in m.query('TEXT MTEXT'):
         s=e.dxf.text if e.dxftype()=='TEXT' else e.plain_text()
@@ -129,20 +130,22 @@ def build():
     if not (ROOT/building_path).exists():raise SystemExit('先运行 厂房外观模型/建筑/tools/build_building.py')
     buildings=js(building_path)['parts']
     read('厂房外观模型/建筑/building.json')
-    if c02_install:
-        revised={p['id']:p for p in c02_install}
+    if revision_installs:
+        revised={p['id']:p for values in revision_installs.values() for p in values}
         for p in placements:
-            if p['asset']!='C41B02':continue
+            if p['id'] not in revised:continue
             record=revised[p['id']]
-            assert np.allclose(p['position_mm'],record['position_mm'],atol=.001)
+            assert np.allclose(p['position_mm'][:2],record['position_mm'][:2],atol=.001)
             assert p['rotation_deg']==record['rotation_deg'] and p.get('mirror_y',False)==record.get('mirror_y',False)
+            p['position_mm']=record['position_mm'][:]
             for field in ['equipment_version','local_datum','z_status','orientation_status','z_basis','installation_review']:p[field]=record[field]
-            p.pop('layout_review',None)
+            if p['asset']=='C41B02':p.pop('layout_review',None)
         for record in layout_review['records']:
             if record['id'] in revised:
-                record['legacy_six_port_evidence']=record.pop('evidence',{})
-                record['status']='新总图8组接口，位置保留、工艺方位待核'
                 record['equipment_version']=revised[record['id']]['equipment_version']
+                if record['id'].startswith('C41B02'):
+                    record['legacy_six_port_evidence']=record.pop('evidence',{})
+                    record['status']='新总图8组接口，位置保留、工艺方位待核'
         layout_review['reviewed']=sum(p['status'] in ('位置与顶视方位已复核','泵原点及长轴已校正') for p in layout_review['records'])
         layout_review['pending']=sum('待核' in p['status'] for p in layout_review['records'])
         save('data/布置复核.json',layout_review)
@@ -152,6 +155,10 @@ def build():
         if key not in ('D41B02','F41B01','C41B01','C41B02','C41B03') or key not in foundation['assets']:continue
         source=('水解设备模型库/'+revisions[key]['foundation']) if key in revisions else FOUND+key+'/model_data.js';assets['foundation-'+key]={'path':'../'+source,'source':source,'units':'mm'};mesh(source)
         civil.append({'id':'BASE-'+p['id'],'name':foundation['assets'][key]['name'],'asset':'foundation-'+key,'position_mm':p['position_mm'],'rotation_deg':p['rotation_deg'],'mirror_y':p.get('mirror_y',False),'level':p['level'],'support_for':p['id']})
+    if 'C41B04' in revisions:
+        revision=revisions['C41B04'];source='水解设备模型库/'+revision['foundation_single']
+        assets['foundation-C41B04']={'path':'../'+source,'source':source,'units':'mm'};mesh(source)
+        civil.extend(doc('水解设备模型库/'+revision['support_placements']))
     # Cross-check 23 main vessel centers against the independent architectural plan.
     refs=doc('厂房外观模型/建筑/一层设备基础.json')['items']; checks=[]
     for p in placements:

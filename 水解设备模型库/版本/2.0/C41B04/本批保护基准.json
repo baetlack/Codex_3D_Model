@@ -1,0 +1,6071 @@
+{
+  "source_commit": "58ca07481d91c153e6cffdf5f1fc0ca45dc625a9",
+  "unchanged_files": {
+    "厂房外观模型/建筑/model_data.js": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b",
+    "水解桥架工程/models/整体/viewer_data.js": "653c4dd35057dd4e9a2950616a93b06e397f7bd22daba0dd1380e60aa50901f5",
+    "水解桥架工程/models/整体/assembly.json": "80d3b5ca5339ab2fa943ce34b11eef1dbe9945d864653863636dabdf040ae629",
+    "水解设备模型库/版本/2.0/C41B02/设备/C41B02.obj": "98c5ef1946b046aec6bb453292353fb32577c36e46a199a85fd0005f3a973320",
+    "水解设备模型库/版本/2.0/C41B02/设备/C41B02.glb": "61570c74cbb41a09c6c959db61fd746e71f30a214bc37cb4834d68bbc0090f19",
+    "水解设备模型库/版本/2.0/C41B02/设备/参数.json": "ecb7674664ba5387e3f180015a3dff39c4e94264fbf7decc58a3a1e3a4c9fe9a",
+    "水解设备模型库/版本/2.0/C41B02/设备/C41B02.mtl": "72e2f300d45a091dd6d8b600b1046bfffaf896f7a7222de38306ad6d2bbc26de",
+    "水解设备模型库/版本/2.0/C41B02/设备/model_data.js": "50bb0f53ab7aae3765f45c9824ea1597b2c91f9af041ade1f39138a374a31350",
+    "水解设备模型库/版本/2.0/C41B02/基础/C41B02.obj": "28e296600119c2641a60c89e225183925a87d833e32dbbdfef2691867e0612da",
+    "水解设备模型库/版本/2.0/C41B02/基础/C41B02.glb": "6398fc168127bf34598e85864c833f067767cf6c9d1799144cdd793af29028ef",
+    "水解设备模型库/版本/2.0/C41B02/基础/参数.json": "2559e88d84bdd12a2b925d151bd869c7e88974ba578a92a5b7956397c3133c71",
+    "水解设备模型库/版本/2.0/C41B02/基础/C41B02.mtl": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c",
+    "水解设备模型库/版本/2.0/C41B02/基础/model_data.js": "a5074b65d85b02d2eb2a6c0f4caa2d5dae93cd23d8ad43c14fc752690506b601",
+    "水解设备模型库/版本/2.0/C41B02/安装表.json": "ca1bf3ccd3c6b7d5860d9e77d8e2ad73a00be0445740cc9dcfa8aaa2f7b9f22b"
+  },
+  "equipment_placements": [
+    {
+      "id": "D41B02C3",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        68074.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ECD",
+      "source_block": "水解槽",
+      "label_handle": "1090BA",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331D2",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D2",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            68074.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02C2",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        60874.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ECF",
+      "source_block": "水解槽",
+      "label_handle": "1090BD",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331D1",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D1",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            60874.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02C1",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        53674.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED0",
+      "source_block": "水解槽",
+      "label_handle": "1090C0",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331D0",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D0",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            53674.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02A3",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        24874.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38036",
+      "source_block": "水解槽",
+      "label_handle": "1090CC",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380A2",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380A2",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            24874.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02A2",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        17674.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38038",
+      "source_block": "水解槽",
+      "label_handle": "1090CF",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380A4",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380A4",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            17674.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02A1",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        10474.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "3803A",
+      "source_block": "水解槽",
+      "label_handle": "1090D2",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380A6",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380A6",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            10474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02D3",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        22500.0,
+        24874.9998,
+        1500
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37EE0",
+      "source_block": "水解槽",
+      "label_handle": "1090DE",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "331D9",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D9",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            24874.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02D2",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        22500.0,
+        17674.9998,
+        1500
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37EE2",
+      "source_block": "水解槽",
+      "label_handle": "1090E1",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "331D8",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D8",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            17674.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02D1",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        22500.0,
+        10474.9998,
+        1500
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37EE3",
+      "source_block": "水解槽",
+      "label_handle": "1090E4",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "331D7",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D7",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            10474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02E3",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        22500.0,
+        46474.9998,
+        1500
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED5",
+      "source_block": "水解槽",
+      "label_handle": "1090D5",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "331D6",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D6",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            46474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02E2",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        22500.0,
+        39274.9998,
+        1500
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED6",
+      "source_block": "水解槽",
+      "label_handle": "1090D8",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "331D5",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D5",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            39274.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02E1",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        22500.0,
+        32074.9998,
+        1500
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED7",
+      "source_block": "水解槽",
+      "label_handle": "1090DB",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "331D4",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331D4",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            22500.0,
+            32074.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A2",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        61300.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "3805E",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "38061",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331DC",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DC",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            61300.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A1",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        68500.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38059",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "3805C",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331DD",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DD",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            68500.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A4",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        46900.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38068",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "3806B",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331DA",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DA",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            46900.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01A3",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        54100.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38063",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "38066",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331DB",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331DB",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            54100.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "P41B01C",
+      "name": "水解料中转泵",
+      "asset": "P41B01",
+      "position_mm": [
+        15335.0,
+        49650.0,
+        -1500.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "FB3C8",
+      "source_block": "水解料中转泵",
+      "label_handle": "37F69",
+      "label_distance_mm": 2024.14,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B01F",
+      "name": "水解料中转泵",
+      "asset": "P41B01",
+      "position_mm": [
+        28330.4973,
+        29500.0,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "FB3D4",
+      "source_block": "水解料中转泵",
+      "label_handle": "37F6C",
+      "label_distance_mm": 1258.89,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "F41B01B4",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        18100.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37F01",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "37F6F",
+      "label_distance_mm": 1715.57,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380C1",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C1",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            18100.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01B1",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        39700.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "3806D",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "38070",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380C4",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C4",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            39700.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01B2",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        32500.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38072",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "38075",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380C3",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C3",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            32500.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B01B3",
+      "name": "偏钛酸缓冲槽",
+      "asset": "F41B01",
+      "position_mm": [
+        35000.0,
+        25300.0,
+        300
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38077",
+      "source_block": "偏钛酸缓冲槽低",
+      "label_handle": "3807A",
+      "label_distance_mm": 1715.6,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础顶 +0.300 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "380C2",
+        "reference_block": "水解料浆缓冲槽顶盖",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "380C2",
+          "block": "水解料浆缓冲槽顶盖",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            35000.0,
+            25300.0
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.011,
+            0.046,
+            0.046,
+            0.046,
+            0.046,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "P41B01A",
+      "name": "水解料中转泵",
+      "asset": "P41B01",
+      "position_mm": [
+        15335.0,
+        28050.0,
+        0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "FB3D3",
+      "source_block": "水解料中转泵",
+      "label_handle": "38089",
+      "label_distance_mm": 2160.34,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "C41B04E",
+      "name": "偏钛酸冷却器",
+      "asset": "C41B04",
+      "position_mm": [
+        21300.0,
+        63300.0094,
+        0
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "source_insert": "7BD14",
+      "source_block": "石墨换热器-底",
+      "label_handle": "3853B/3853E/38541",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "7BBA3",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBA3",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            21300.0,
+            63300.0094
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04F",
+      "name": "偏钛酸冷却器",
+      "asset": "C41B04",
+      "position_mm": [
+        23700.0,
+        63300.0094,
+        0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "source_insert": "7BD13",
+      "source_block": "石墨换热器-底",
+      "label_handle": "3853B/3853E/38541",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "7BBA2",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBA2",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            23700.0,
+            63300.0094
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02B3",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        46474.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED1",
+      "source_block": "水解槽",
+      "label_handle": "1090C3",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331CF",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331CF",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            46474.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02B2",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        39274.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED2",
+      "source_block": "水解槽",
+      "label_handle": "1090C6",
+      "label_distance_mm": 2108.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331CE",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331CE",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            39274.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B02B1",
+      "name": "水解槽",
+      "asset": "D41B02",
+      "position_mm": [
+        9500.0,
+        32074.9998,
+        1500
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "37ED3",
+      "source_block": "水解槽",
+      "label_handle": "1090C9",
+      "label_distance_mm": 2290.78,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "基础肋顶 +1.500 m，设备净模槽底 Z0",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "331CD",
+        "reference_block": "水解锅顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "331CD",
+          "block": "水解锅顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            9500.0,
+            32074.9998
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 11,
+          "matched_within_5mm": 11,
+          "nearest_error_mm": [
+            0.09,
+            0.066,
+            0.124,
+            0.09,
+            0.082,
+            0.091,
+            0.09,
+            0.07,
+            0.082,
+            0.09,
+            0.09
+          ]
+        }
+      },
+      "position_correction": {
+        "source_position_mm": [
+          9700.0,
+          32075.0006,
+          1500
+        ],
+        "reason": "EL100底部图块偏约200mm；EL106顶视中心与建筑基础相互印证，按顶视中心就位"
+      }
+    },
+    {
+      "id": "F41B06",
+      "name": "稀碱储槽",
+      "asset": "F41B06",
+      "position_mm": [
+        23300.0,
+        52453.6,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38A43",
+      "source_block": "钛液事故槽",
+      "label_handle": "38A8A",
+      "label_distance_mm": 2616.31,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "38A43",
+        "reference_block": "钛液事故槽",
+        "source_rotation_deg": 90.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": -90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          53.6,
+          0
+        ],
+        "basis": "复用F41B02类型；按对应事故槽块中心和方位就位",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 5,
+          "nearest_error_mm": [
+            0.0,
+            0.038,
+            0.02,
+            0.007,
+            853.2,
+            0.007
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B05",
+      "name": "稀碱配置槽",
+      "asset": "F41B05",
+      "position_mm": [
+        23300.0,
+        55653.6,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "5D249",
+      "source_block": "钛液事故槽",
+      "label_handle": "5D24B",
+      "label_distance_mm": 3145.88,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "5D249",
+        "reference_block": "钛液事故槽",
+        "source_rotation_deg": 90.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": -90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          53.6,
+          0
+        ],
+        "basis": "复用F41B02类型；按对应事故槽块中心和方位就位",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 5,
+          "nearest_error_mm": [
+            0.0,
+            0.038,
+            0.02,
+            0.007,
+            853.2,
+            0.007
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B02",
+      "name": "钛液事故槽",
+      "asset": "F41B02",
+      "position_mm": [
+        23300.0,
+        59653.6,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "5D252",
+      "source_block": "钛液事故槽",
+      "label_handle": "5D254",
+      "label_distance_mm": 2587.78,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "5D252",
+        "reference_block": "钛液事故槽",
+        "source_rotation_deg": 90.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": -90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          53.6,
+          0
+        ],
+        "basis": "顶口方位转-90度；槽中心相对块插入点偏X+53.6mm",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 6,
+          "matched_within_5mm": 5,
+          "nearest_error_mm": [
+            0.0,
+            0.038,
+            0.02,
+            0.007,
+            853.2,
+            0.007
+          ]
+        }
+      }
+    },
+    {
+      "id": "P41B02B4",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        24475.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "F708A",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E70",
+      "label_distance_mm": 2736.12,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02B3",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        28975.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "B5E61",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E73",
+      "label_distance_mm": 2597.14,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02B2",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        33475.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "B5E60",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E76",
+      "label_distance_mm": 2480.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02B1",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41500.0,
+        37975.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "F703D",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E79",
+      "label_distance_mm": 2785.63,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A4",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        42475.0,
+        0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "F7026",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E7C",
+      "label_distance_mm": 2906.71,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A3",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        46975.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "B5E5F",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E7F",
+      "label_distance_mm": 2717.91,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A2",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        51475.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "B5E5E",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E82",
+      "label_distance_mm": 2744.35,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B02A1",
+      "name": "一洗压滤供料泵",
+      "asset": "P41B02",
+      "position_mm": [
+        41499.8447,
+        55975.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "B5E5D",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "B5E85",
+      "label_distance_mm": 2608.03,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E5D",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          361234.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "L41B01A",
+      "name": "水解过滤器",
+      "asset": "L41B01",
+      "position_mm": [
+        15500.0,
+        24100.0,
+        1500.0
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "B94F7",
+      "source_block": "*U562",
+      "label_handle": "B9504",
+      "label_distance_mm": 1370.96,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01B",
+      "name": "水解过滤器",
+      "asset": "L41B01",
+      "position_mm": [
+        15500.0,
+        33000.0,
+        1500.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "B94F5",
+      "source_block": "*U562",
+      "label_handle": "B9507",
+      "label_distance_mm": 1405.71,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01D",
+      "name": "水解过滤器",
+      "asset": "L41B01",
+      "position_mm": [
+        15500.0,
+        54600.0,
+        100.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "B94ED",
+      "source_block": "*U562",
+      "label_handle": "B950A",
+      "label_distance_mm": 1224.16,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01E",
+      "name": "水解过滤器",
+      "asset": "L41B01",
+      "position_mm": [
+        28500.0,
+        24099.8994,
+        300.0
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "B94FF",
+      "source_block": "*U562",
+      "label_handle": "B950D",
+      "label_distance_mm": 1407.83,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01C",
+      "name": "水解过滤器",
+      "asset": "L41B01",
+      "position_mm": [
+        15500.0,
+        45700.0,
+        1500.0
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "B94EF",
+      "source_block": "*U562",
+      "label_handle": "B9708",
+      "label_distance_mm": 1224.16,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "L41B01F",
+      "name": "水解过滤器",
+      "asset": "L41B01",
+      "position_mm": [
+        28499.9504,
+        32999.8994,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "B94FD",
+      "source_block": "*U562",
+      "label_handle": "B975C",
+      "label_distance_mm": 1409.32,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "P41B01E",
+      "name": "水解料中转泵",
+      "asset": "P41B01",
+      "position_mm": [
+        28330.4973,
+        28000.0,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "FB3D5",
+      "source_block": "水解料中转泵",
+      "label_handle": "D9519",
+      "label_distance_mm": 986.62,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B01B",
+      "name": "水解料中转泵",
+      "asset": "P41B01",
+      "position_mm": [
+        15335.0,
+        29550.0,
+        0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "FB3D2",
+      "source_block": "水解料中转泵",
+      "label_handle": "D952E",
+      "label_distance_mm": 2248.0,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B01D",
+      "name": "水解料中转泵",
+      "asset": "P41B01",
+      "position_mm": [
+        15335.0,
+        51150.0,
+        -1500.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "FB3C7",
+      "source_block": "水解料中转泵",
+      "label_handle": "D9548",
+      "label_distance_mm": 2035.67,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "FB3D3",
+        "sample_model_origin_world_mm": [
+          658964.037,
+          333309.2765
+        ],
+        "native_origin_offset_mm": [
+          -365.0,
+          0.0
+        ],
+        "source_block_rotation_deg": 0.0,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "P41B08",
+      "name": "偏钛酸转运泵",
+      "asset": "P41B08",
+      "position_mm": [
+        41499.8447,
+        60475.0,
+        300.0
+      ],
+      "rotation_deg": 90.0,
+      "level": "EL100",
+      "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+      "z_status": "待核",
+      "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+      "source_insert": "B5E59",
+      "source_block": "一洗压滤供料泵",
+      "label_handle": "F7300",
+      "label_distance_mm": 2648.67,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "sample_handle": "B5E59",
+        "sample_model_origin_world_mm": [
+          685128.8817,
+          365734.2765
+        ],
+        "native_origin_offset_mm": [
+          -325.0,
+          0.1553
+        ],
+        "source_block_rotation_deg": 90.00000000000003,
+        "source_block_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "F41B08",
+      "name": "密封水循环槽",
+      "asset": "F41B08",
+      "position_mm": [
+        20200.0,
+        58599.999,
+        300.0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "圆轮廓仅确认中心，管口朝向待核",
+      "source_insert": "113DE7",
+      "source_block": "CIRCLE-设备轮廓",
+      "label_handle": "平面位号与圆轮廓核对",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "台账/既有布置 POS EL；安装基准待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf"
+    },
+    {
+      "id": "C41B04A",
+      "name": "偏钛酸冷却器",
+      "asset": "C41B04",
+      "position_mm": [
+        21300.0001,
+        70299.5095,
+        0
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "source_insert": "7BC3F",
+      "source_block": "石墨换热器-底",
+      "label_handle": "3853B/3853E/38541",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "7BB27",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BB27",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            21300.0001,
+            70299.5095
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04B",
+      "name": "偏钛酸冷却器",
+      "asset": "C41B04",
+      "position_mm": [
+        23700.0,
+        70299.5095,
+        0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "source_insert": "7BB14",
+      "source_block": "石墨换热器-底",
+      "label_handle": "3853B/3853E/38541",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "7BB13",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BB13",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            23700.0,
+            70299.5095
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04C",
+      "name": "偏钛酸冷却器",
+      "asset": "C41B04",
+      "position_mm": [
+        21300.0,
+        66299.9906,
+        0
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "source_insert": "7BD54",
+      "source_block": "石墨换热器-底",
+      "label_handle": "3853B/3853E/38541",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "7BBCF",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBCF",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            21300.0,
+            66299.9906
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B04D",
+      "name": "偏钛酸冷却器",
+      "asset": "C41B04",
+      "position_mm": [
+        23700.0,
+        66299.9906,
+        0
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL100",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "source_insert": "7BD53",
+      "source_block": "石墨换热器-底",
+      "label_handle": "3853B/3853E/38541",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        643629.0370487935,
+        305259.2765326498
+      ],
+      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "7BBCE",
+        "reference_block": "石墨换热器-顶",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+        "top_plan": {
+          "handle": "7BBCE",
+          "block": "石墨换热器-顶",
+          "plan_origin_mm": [
+            708400.4461407755,
+            305259.2765326498
+          ],
+          "local_xy_mm": [
+            23700.0,
+            66299.9906
+          ]
+        },
+        "top_port_witness": {
+          "model_features": 2,
+          "matched_within_5mm": 0,
+          "nearest_error_mm": [
+            457.93,
+            457.93
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01B",
+      "name": "晶种制备槽",
+      "asset": "D41B01",
+      "position_mm": [
+        3700.0,
+        52700.001,
+        9820
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL106",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "F1B27",
+      "source_block": "水解晶种制备槽",
+      "label_handle": "F1B51",
+      "label_distance_mm": 2984.46,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "F1B27",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01D",
+      "name": "晶种制备槽",
+      "asset": "D41B01",
+      "position_mm": [
+        28300.0,
+        23900.001,
+        9820
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL106",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "F1B3D",
+      "source_block": "水解晶种制备槽",
+      "label_handle": "F1B48",
+      "label_distance_mm": 2029.16,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "F1B3D",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01A",
+      "name": "晶种制备槽",
+      "asset": "D41B01",
+      "position_mm": [
+        3700.0,
+        19300.001,
+        9820
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL106",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "F1AB4",
+      "source_block": "水解晶种制备槽",
+      "label_handle": "F1ACA",
+      "label_distance_mm": 2206.78,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "F1AB4",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01C",
+      "name": "晶种制备槽",
+      "asset": "D41B01",
+      "position_mm": [
+        3700.0,
+        55300.001,
+        9820
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL106",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "F1B18",
+      "source_block": "水解晶种制备槽",
+      "label_handle": "F1B54",
+      "label_distance_mm": 2984.46,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "F1B18",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "D41B01E",
+      "name": "晶种制备槽",
+      "asset": "D41B01",
+      "position_mm": [
+        28300.0,
+        26500.001,
+        9820
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL106",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "F1B2E",
+      "source_block": "水解晶种制备槽",
+      "label_handle": "F1B4E",
+      "label_distance_mm": 2045.3,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "F1B2E",
+        "reference_block": "水解晶种制备槽",
+        "source_rotation_deg": 0.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.0,
+            0.004,
+            0.001,
+            0.051,
+            0.004,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02C",
+      "name": "钛液预热槽",
+      "asset": "C41B02",
+      "position_mm": [
+        9500.0,
+        61200.4134,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
+      "source_insert": "3321D",
+      "source_block": "钛液预热槽",
+      "label_handle": "33783",
+      "label_distance_mm": 4205.1,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "equipment_version": "2.0-C41B02-02",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "3321D",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "3321D",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "C41B02B",
+      "name": "钛液预热槽",
+      "asset": "C41B02",
+      "position_mm": [
+        9500.0,
+        46799.9867,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
+      "source_insert": "33245",
+      "source_block": "钛液预热槽",
+      "label_handle": "33786",
+      "label_distance_mm": 4231.91,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "equipment_version": "2.0-C41B02-02",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "33245",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "33245",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "C41B01A",
+      "name": "热水预热槽",
+      "asset": "C41B01",
+      "position_mm": [
+        9500.0,
+        39599.8,
+        12200
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "33246",
+      "source_block": "热水预热槽",
+      "label_handle": "33789",
+      "label_distance_mm": 2775.16,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "33246",
+        "reference_block": "热水预热槽",
+        "source_rotation_deg": 270.0,
+        "source_scale": [
+          0.9696927021915351,
+          0.9696927021915351
+        ],
+        "model_to_block_rotation_deg": 90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.144,
+            0.165,
+            0.186,
+            0.182,
+            0.175,
+            0.169,
+            0.138
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B03B",
+      "name": "稀碱预热槽",
+      "asset": "C41B03",
+      "position_mm": [
+        9500.0,
+        52800.0,
+        12200
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "33244",
+      "source_block": "碱液预热槽",
+      "label_handle": "3378C",
+      "label_distance_mm": 1825.7,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "33244",
+        "reference_block": "碱液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 4,
+          "matched_within_5mm": 4,
+          "nearest_error_mm": [
+            0.036,
+            0.037,
+            0.037,
+            0.012
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02A",
+      "name": "钛液预热槽",
+      "asset": "C41B02",
+      "position_mm": [
+        9500.0,
+        17999.5866,
+        12150
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
+      "source_insert": "33BEC",
+      "source_block": "钛液预热槽",
+      "label_handle": "33BEE",
+      "label_distance_mm": 4432.1,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "equipment_version": "2.0-C41B02-02",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "33BEC",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "33BEC",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "C41B03A",
+      "name": "稀碱预热槽",
+      "asset": "C41B03",
+      "position_mm": [
+        9500.0,
+        24000.0,
+        12200
+      ],
+      "rotation_deg": 180.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "33BEB",
+      "source_block": "碱液预热槽",
+      "label_handle": "33BF1",
+      "label_distance_mm": 1519.08,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "layout_review": {
+        "reference_handle": "33BEB",
+        "reference_block": "碱液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          1,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 4,
+          "matched_within_5mm": 4,
+          "nearest_error_mm": [
+            0.036,
+            0.037,
+            0.037,
+            0.012
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B02E",
+      "name": "钛液预热槽",
+      "asset": "C41B02",
+      "position_mm": [
+        35000.0,
+        32400.4134,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
+      "source_insert": "38103",
+      "source_block": "钛液预热槽",
+      "label_handle": "38109",
+      "label_distance_mm": 3910.07,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "equipment_version": "2.0-C41B02-02",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "38103",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "38103",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "C41B02D",
+      "name": "钛液预热槽",
+      "asset": "C41B02",
+      "position_mm": [
+        35000.0,
+        17999.9866,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "按承托面换算，POS定义待核",
+      "orientation_status": "新总图8组接口，工艺绝对方位待核；保留1.0旋转/镜像",
+      "source_insert": "38106",
+      "source_block": "钛液预热槽",
+      "label_handle": "3810C",
+      "label_distance_mm": 4117.8,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "基础顶EL112.150=型钢底，型钢H160，槽底EL112.310；POS定义待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": true,
+      "equipment_version": "2.0-C41B02-02",
+      "local_datum": "底部型钢承托面Z0；槽底Z160",
+      "installation_review": {
+        "source_insert": "38106",
+        "xy_unchanged": true,
+        "rotation_and_mirror_unchanged": true,
+        "foundation_top_EL": 112.15,
+        "support_bottom_EL": 112.15,
+        "tank_bottom_EL": 112.31,
+        "tank_top_EL": 117.31,
+        "mixer_top_EL": 119.495,
+        "support_gap_mm": 0,
+        "legacy_layout_review": {
+          "reference_handle": "38106",
+          "reference_block": "钛液预热槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": true,
+          "native_center_offset_mm": [
+            0,
+            -0.41335
+          ],
+          "basis": "六处顶口Y向与图块定义相反；叠加INSERT实际镜像，保留模型尺寸",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 6,
+            "matched_within_5mm": 6,
+            "nearest_error_mm": [
+              0.047,
+              0.039,
+              0.0,
+              0.022,
+              0.022,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "C41B01B",
+      "name": "热水预热槽",
+      "asset": "C41B01",
+      "position_mm": [
+        29500.0,
+        17999.8,
+        12200
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38107",
+      "source_block": "热水预热槽",
+      "label_handle": "3810F",
+      "label_distance_mm": 3204.23,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "38107",
+        "reference_block": "热水预热槽",
+        "source_rotation_deg": 270.0,
+        "source_scale": [
+          0.9696927021915351,
+          0.9696927021915351
+        ],
+        "model_to_block_rotation_deg": 90,
+        "model_to_block_mirror_y": false,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 7,
+          "matched_within_5mm": 7,
+          "nearest_error_mm": [
+            0.144,
+            0.165,
+            0.186,
+            0.182,
+            0.175,
+            0.169,
+            0.138
+          ]
+        }
+      }
+    },
+    {
+      "id": "C41B03C",
+      "name": "稀碱预热槽",
+      "asset": "C41B03",
+      "position_mm": [
+        35000.0,
+        24000.0,
+        12200
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "有安装基准",
+      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "source_insert": "38105",
+      "source_block": "碱液预热槽",
+      "label_handle": "38112",
+      "label_distance_mm": 1318.28,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "mirror_y": false,
+      "layout_review": {
+        "reference_handle": "38105",
+        "reference_block": "碱液预热槽",
+        "source_rotation_deg": 180.0,
+        "source_scale": [
+          -1.0,
+          1
+        ],
+        "model_to_block_rotation_deg": 0,
+        "model_to_block_mirror_y": true,
+        "native_center_offset_mm": [
+          0,
+          0
+        ],
+        "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+        "top_plan": null,
+        "top_port_witness": {
+          "model_features": 4,
+          "matched_within_5mm": 4,
+          "nearest_error_mm": [
+            0.036,
+            0.037,
+            0.037,
+            0.012
+          ]
+        }
+      }
+    },
+    {
+      "id": "F41B03",
+      "name": "冷凝水分汽器",
+      "asset": "F41B03",
+      "position_mm": [
+        40000.0,
+        41750.0,
+        12200
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "圆轮廓仅确认中心，管口朝向待核",
+      "source_insert": "D9737",
+      "source_block": "CIRCLE-设备轮廓",
+      "label_handle": "平面位号与圆轮廓核对",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112平面POSEL112.200，局部设备原点待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf"
+    },
+    {
+      "id": "L41B04",
+      "name": "减温减压器",
+      "asset": "L41B04",
+      "position_mm": [
+        43200.0,
+        54900.0,
+        12000
+      ],
+      "rotation_deg": 90.00000000000003,
+      "level": "EL112",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+      "source_insert": "DE46C",
+      "source_block": "减温减压器",
+      "label_handle": "DE477",
+      "label_distance_mm": 4238.23,
+      "source_floor_origin_mm": [
+        778010.4484369854,
+        305259.2765326499
+      ],
+      "z_basis": "EL112平面图块，精确安装高差待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+      "layout_review": {
+        "source_rotation_deg": 90.00000000000003,
+        "source_scale": [
+          1.5,
+          1.5
+        ],
+        "status": "原点或类型方向未充分对应，保留待核"
+      }
+    },
+    {
+      "id": "F41B04",
+      "name": "尾气烟囱",
+      "asset": "F41B04",
+      "position_mm": [
+        26000.0,
+        31900.0,
+        23000
+      ],
+      "rotation_deg": 0.0,
+      "level": "EL123",
+      "xy_status": "图块中心定位",
+      "z_status": "待核",
+      "orientation_status": "圆轮廓仅确认中心，管口朝向待核",
+      "source_insert": "33EAC",
+      "source_block": "CIRCLE-设备轮廓",
+      "label_handle": "平面位号与圆轮廓核对",
+      "label_distance_mm": null,
+      "source_floor_origin_mm": [
+        846107.0477544266,
+        305259.2765326498
+      ],
+      "z_basis": "屋面平面圆轮廓与烟囱基础图：楼面23.000m；基础安装高差待核",
+      "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf"
+    }
+  ],
+  "catalog": [
+    {
+      "id": "D41B02C3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        374227
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02C2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        367027
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02C1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        359827
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02A3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        331027
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02A2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        323827
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02A1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        316627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02D3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        331027
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02D2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        323827
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02D1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        316627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02E3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        352627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02E2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        345427
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02E1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        664219,
+        338227
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A2",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        368115
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A1",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        375315
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A4",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        353715
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01A3",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        360915
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01C",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        657311,
+        355068
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01F",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        672763,
+        335939
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B4",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        324915
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B07A",
+      "group": "F41B07A/B",
+      "name": "废水收集地坑",
+      "spec": "V=1500X1500X2000=4.5m3(地下池）",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        670969,
+        347275
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500,
+      "h": 2000,
+      "shape": "pit",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B07A",
+      "group": "P41B07A/B",
+      "name": "废水输送泵",
+      "spec": "立式泵，流量Q=30m3/h，扬程H=30m",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 100.1,
+      "cad_position_mm": [
+        671099,
+        343252
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B05",
+      "group": "P41B05",
+      "name": "稀碱中转泵",
+      "spec": "流量Q=10m3/h,扬程H=10m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        671449,
+        362017
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B1",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        346515
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B2",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        339315
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B01B3",
+      "group": "F41B01A/B1-4",
+      "name": "偏钛酸缓冲槽",
+      "spec": "ø5000X5900，V总＝115.8m3",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        677905,
+        332115
+      ],
+      "plan_sheet": "EL100",
+      "w": 5000.0,
+      "h": 5900,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01A",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        657172,
+        333436
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04E",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        659824,
+        368218
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04F",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        662224,
+        368218
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02B3",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        352627
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02B2",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        345427
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B02B1",
+      "group": "D41B02A-E1-3",
+      "name": "水解槽",
+      "spec": "ø5900X4700，V总＝128m3，V有＝110m3",
+      "qty": "15",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        651219,
+        338227
+      ],
+      "plan_sheet": "EL100",
+      "w": 5900.0,
+      "h": 4700,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B06",
+      "group": "F41B06",
+      "name": "稀碱储槽",
+      "spec": "ø2800X2500，V总＝12m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        664741,
+        356225
+      ],
+      "plan_sheet": "EL100",
+      "w": 2800.0,
+      "h": 2500,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B05",
+      "group": "F41B05",
+      "name": "稀碱配置槽",
+      "spec": "ø2800X2500，V总＝12m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        664019,
+        362054
+      ],
+      "plan_sheet": "EL100",
+      "w": 2800.0,
+      "h": 2500,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B03",
+      "group": "P41B03",
+      "name": "钛液事故泵",
+      "spec": "流量Q=50m3/h,扬程H=33m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        673495,
+        364974
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B02",
+      "group": "F41B02",
+      "name": "钛液事故槽",
+      "spec": "ø2800X2500，V总＝12m3，V有＝9.5m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        665433,
+        366971
+      ],
+      "plan_sheet": "EL100",
+      "w": 2800.0,
+      "h": 2500,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B04",
+      "group": "P41B04",
+      "name": "水解喷淋增压泵",
+      "spec": "管道泵，Q=120m3/h,H=40m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        670735,
+        373695
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B4",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682596,
+        331095
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B3",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682705,
+        335491
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B2",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682698,
+        339548
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02B1",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682518,
+        344528
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A4",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        682593,
+        349479
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A3",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682610,
+        353579
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A2",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682620,
+        358172
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B02A1",
+      "group": "P41B02A/B1-4",
+      "name": "一洗压滤供料泵",
+      "spec": "后吸式离心泵，流量Q=120m3/h,扬程H=60m",
+      "qty": "8",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682620,
+        362273
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01A",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        660491,
+        329517
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01B",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        660528,
+        338395
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01D",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.1,
+      "cad_position_mm": [
+        660346,
+        359995
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01E",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        673530,
+        329495
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01C",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 101.5,
+      "cad_position_mm": [
+        660346,
+        351095
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B01F",
+      "group": "L41B01A-F",
+      "name": "水解过滤器",
+      "spec": "ø1200,H=1220",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        673532,
+        338395
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1220,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01E",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        672763,
+        332376
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01B",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        657114,
+        335194
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B01D",
+      "group": "P41B01A-F",
+      "name": "水解料中转泵",
+      "spec": "流量Q=220m3/h，扬程H=36m",
+      "qty": "6",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        657311,
+        356678
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B06",
+      "group": "P41B06",
+      "name": "稀碱输送泵",
+      "spec": "流量Q=10m3/h,扬程H=33m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": null,
+      "cad_position_mm": [
+        671525,
+        356829
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B07B",
+      "group": "F41B07A/B",
+      "name": "废水收集地坑",
+      "spec": "V=1500X1500X2000=4.5m3(地下池）",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 98.5,
+      "cad_position_mm": [
+        663043,
+        357881
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500,
+      "h": 2000,
+      "shape": "pit",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B07B",
+      "group": "P41B07A/B",
+      "name": "废水输送泵",
+      "spec": "立式泵，流量Q=30m3/h，扬程H=30m",
+      "qty": "2",
+      "level": "EL100",
+      "pos_el": 100.1,
+      "cad_position_mm": [
+        663187,
+        360793
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B08",
+      "group": "P41B08",
+      "name": "偏钛酸转运泵",
+      "spec": "流量Q=120m3/h,扬程H=20m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        682766,
+        367256
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B11",
+      "group": "P41B11",
+      "name": "密封水循环泵",
+      "spec": "金属泵，Q=5m3/h，H=15m",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        664118,
+        363112
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B08",
+      "group": "F41B08",
+      "name": "密封水循环槽",
+      "spec": "V=∅1000x1000，V=0.785m3",
+      "qty": "1",
+      "level": "EL100",
+      "pos_el": 100.3,
+      "cad_position_mm": [
+        660825,
+        364448
+      ],
+      "plan_sheet": "EL100",
+      "w": 1000.0,
+      "h": 1000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04A",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        669906,
+        375269
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04B",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        672306,
+        375269
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04C",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        669906,
+        372142
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B04D",
+      "group": "C41B04A-F",
+      "name": "偏钛酸冷却器",
+      "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
+      "qty": "6",
+      "level": "EL106",
+      "pos_el": 104.5,
+      "cad_position_mm": [
+        672306,
+        372142
+      ],
+      "plan_sheet": "EL100",
+      "w": 1700,
+      "h": 3600,
+      "shape": "coolerUnit",
+      "large_equipment": true,
+      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01B",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        644096,
+        358281
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01D",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        675447,
+        329270
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01A",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        646645,
+        322393
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01C",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        644096,
+        360881
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "D41B01E",
+      "group": "D41B01A-E",
+      "name": "晶种制备槽",
+      "spec": "Φ1800,H=1600,V全=3.3m3",
+      "qty": "5",
+      "level": "EL106",
+      "pos_el": 108.5,
+      "cad_position_mm": [
+        675447,
+        331870
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 1600,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B03",
+      "group": "L41B03",
+      "name": "旋流除雾器",
+      "spec": "直径ø1800，高H=3100",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        660751,
+        343767
+      ],
+      "plan_sheet": "EL100",
+      "w": 1800.0,
+      "h": 3100,
+      "shape": "demister",
+      "large_equipment": true,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B02",
+      "group": "L41B02",
+      "name": "尾气洗涤塔",
+      "spec": "直径∅2200，高H=10300",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        661756,
+        347460
+      ],
+      "plan_sheet": "EL100",
+      "w": 2200.0,
+      "h": 10300,
+      "shape": "tower",
+      "large_equipment": true,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02C",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL112",
+      "pos_el": 112.15,
+      "cad_position_mm": [
+        657066,
+        366618
+      ],
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-02",
+      "position_mm": [
+        9500.0,
+        61200.4134,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02C.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02C.json"
+    },
+    {
+      "id": "C41B02B",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL112",
+      "pos_el": 112.15,
+      "cad_position_mm": [
+        657092,
+        352218
+      ],
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-02",
+      "position_mm": [
+        9500.0,
+        46799.9867,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02B.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02B.json"
+    },
+    {
+      "id": "C41B01A",
+      "group": "C41B01A/B",
+      "name": "热水预热槽",
+      "spec": "ø3500X4000，V总=38.5m3",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        655634,
+        345018
+      ],
+      "plan_sheet": "EL100",
+      "w": 3500.0,
+      "h": 4000,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B03B",
+      "group": "C41B03A-C",
+      "name": "稀碱预热槽",
+      "spec": "Φ1500X2000,V全=3.5m3",
+      "qty": "3",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        654571,
+        358707
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500.0,
+      "h": 2000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02A",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL112",
+      "pos_el": 112.15,
+      "cad_position_mm": [
+        657293,
+        323418
+      ],
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-02",
+      "position_mm": [
+        9500.0,
+        17999.5866,
+        12150
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02A.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02A.json"
+    },
+    {
+      "id": "C41B03A",
+      "group": "C41B03A-C",
+      "name": "稀碱预热槽",
+      "spec": "Φ1500X2000,V全=3.5m3",
+      "qty": "3",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        654343,
+        329604
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500.0,
+      "h": 2000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B02E",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL112",
+      "pos_el": 112.15,
+      "cad_position_mm": [
+        682270,
+        337818
+      ],
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-02",
+      "position_mm": [
+        35000.0,
+        32400.4134,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02E.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02E.json"
+    },
+    {
+      "id": "C41B02D",
+      "group": "C41B02A-E",
+      "name": "钛液预热槽",
+      "spec": "ø5500X5000，V总＝118m3",
+      "model_spec": "Ø5500×5000mm；槽底型钢H160；搅拌高2185mm",
+      "ledger_spec": "ø5500X5000，V总＝118m3",
+      "drawing_pos_el": 112.15,
+      "qty": "5",
+      "level": "EL112",
+      "pos_el": 112.15,
+      "cad_position_mm": [
+        682478,
+        323418
+      ],
+      "plan_sheet": "EL112",
+      "w": 5500,
+      "h": 5000,
+      "shape": "preheater",
+      "large_equipment": true,
+      "position_basis": "EL112真实图块中心；Z0为型钢底EL112.150，POS定义和新接口方位待核；旧cad_position_mm仅保留文字点追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B02-02",
+      "position_mm": [
+        35000.0,
+        17999.9866,
+        12150
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B02/设备/model_data.js",
+        "glb": "版本/2.0/C41B02/设备/C41B02.glb",
+        "obj": "版本/2.0/C41B02/设备/C41B02.obj",
+        "parameters": "parameters/C41B02D.json",
+        "installation": "版本/2.0/C41B02/安装表.json"
+      },
+      "legacy_1_0_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B02D.json"
+    },
+    {
+      "id": "C41B01B",
+      "group": "C41B01A/B",
+      "name": "热水预热槽",
+      "spec": "ø3500X4000，V总=38.5m3",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        670237,
+        321423
+      ],
+      "plan_sheet": "EL100",
+      "w": 3500.0,
+      "h": 4000,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "C41B03C",
+      "group": "C41B03A-C",
+      "name": "稀碱预热槽",
+      "spec": "Φ1500X2000,V全=3.5m3",
+      "qty": "3",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        679677,
+        329371
+      ],
+      "plan_sheet": "EL100",
+      "w": 1500.0,
+      "h": 2000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B03",
+      "group": "F41B03",
+      "name": "冷凝水分汽器",
+      "spec": "直筒段∅1000，高H=1000",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        684204,
+        346629
+      ],
+      "plan_sheet": "EL100",
+      "w": 1000.0,
+      "h": 1000,
+      "shape": "cylinder",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B05",
+      "group": "L41B05",
+      "name": "蒸汽分汽缸",
+      "spec": "ø1000X3800，V=3.28m3",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.2,
+      "cad_position_mm": [
+        686302,
+        342955
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 3800,
+      "shape": "filter",
+      "large_equipment": true,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "L41B04",
+      "group": "L41B04",
+      "name": "减温减压器",
+      "spec": "处理量40t/h，出口压力0.5MPa饱和蒸汽",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": null,
+      "cad_position_mm": [
+        684771,
+        356319
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 1500,
+      "shape": "filter",
+      "large_equipment": false,
+      "position_basis": "平面设备位号点；按图题偏移归一",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B09A",
+      "group": "P41B09A/B",
+      "name": "减温水增压泵",
+      "spec": "Q=4m3/h，H=131m，立式管道泵",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": null,
+      "cad_position_mm": [
+        680168,
+        361724
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "A/B共用CAD位号点；单泵坐标由并列关系估分",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B09B",
+      "group": "P41B09A/B",
+      "name": "减温水增压泵",
+      "spec": "Q=4m3/h，H=131m，立式管道泵",
+      "qty": "2",
+      "level": "EL112",
+      "pos_el": null,
+      "cad_position_mm": [
+        681368,
+        361724
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "A/B共用CAD位号点；单泵坐标由并列关系估分",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "F41B04",
+      "group": "F41B04",
+      "name": "尾气烟囱",
+      "spec": "直径∅1000，高H=17000",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        673677,
+        338409
+      ],
+      "plan_sheet": "EL100",
+      "w": 1000.0,
+      "h": 17000,
+      "shape": "cylinder",
+      "large_equipment": true,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41B10",
+      "group": "P41B10",
+      "name": "尾气风机",
+      "spec": "Q=40000m3/h，△P=3000Pa",
+      "qty": "1",
+      "level": "EL112",
+      "pos_el": 112.0,
+      "cad_position_mm": [
+        661519,
+        336466
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B01A",
+      "group": "V41B01A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量1吨，起升高度6米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        658569,
+        313277
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B01C",
+      "group": "V41B01A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量1吨，起升高度6米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        684088,
+        313063
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B01B",
+      "group": "V41B01A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量1吨，起升高度6米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        673349,
+        313277
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B02A",
+      "group": "V41B02A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度12米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        655827,
+        310145
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B02B",
+      "group": "V41B02A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度12米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        668970,
+        309943
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B03A",
+      "group": "V41B03A/B",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度24米",
+      "qty": "2",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        652762,
+        309376
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B03B",
+      "group": "V41B03A/B",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度24米",
+      "qty": "2",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        676078,
+        309345
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B04A",
+      "group": "V41B04A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量5吨，起升高度24米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        667352,
+        375894
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B04B",
+      "group": "V41B04A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量5吨，起升高度24米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        667352,
+        371894
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B04C",
+      "group": "V41B04A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量5吨，起升高度24米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        667352,
+        368894
+      ],
+      "plan_sheet": "EL100",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "V41B02C",
+      "group": "V41B02A-C",
+      "name": "电动葫芦",
+      "spec": "起升重量2吨，起升高度12米",
+      "qty": "3",
+      "level": "EL123",
+      "pos_el": 123.0,
+      "cad_position_mm": [
+        917708,
+        323118
+      ],
+      "plan_sheet": "EL123",
+      "w": 1200,
+      "h": 700,
+      "shape": "hoist",
+      "large_equipment": false,
+      "position_basis": "侧视/剖视显示梁下安装于高位钢梁；将起升高度与实体高度分开",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+    },
+    {
+      "id": "P41A08",
+      "group": "P41A08",
+      "name": "偏钛酸转运泵",
+      "spec": "流量Q=120m3/h，扬程H=20m",
+      "qty": "1",
+      "level": "未定位",
+      "pos_el": null,
+      "cad_position_mm": [
+        null,
+        null
+      ],
+      "plan_sheet": null,
+      "w": 1200,
+      "h": 700,
+      "shape": "pump",
+      "large_equipment": false,
+      "position_basis": "台账有设备；本布置图内未找到可确认的对应位号位置",
+      "height_basis": "泵外形按同系列P41B08示意，未取得总图尺寸"
+    }
+  ]
+}
