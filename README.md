@@ -4,12 +4,12 @@
 
 | 模块 | GitHub目录与说明 | 单独下载 | 主要内容 |
 |---|---|---|---|
-| 桥架工程 | [查看桥架](水解桥架工程/) | [桥架ZIP](https://github.com/baetlack/Codex_3D_Model/releases/latest/download/hydrolysis-bridge.zip) | 三层桥架、连接件库、GLB/OBJ、1.0与2.0 |
-| 厂房外观 | [查看外观](厂房外观模型/) | [外观ZIP](https://github.com/baetlack/Codex_3D_Model/releases/latest/download/hydrolysis-building.zip) | 完整建筑、楼梯、房间、开孔楼板、尺寸测量 |
-| 设备模型库 | [查看设备](水解设备模型库/) | [设备ZIP](https://github.com/baetlack/Codex_3D_Model/releases/latest/download/hydrolysis-equipment.zip) | 35组99项台账、类型模型、基础、图纸、1.0与当前2.0 |
-| 水解总装 | [查看总装](水解总装工程/) | [总装ZIP](https://github.com/baetlack/Codex_3D_Model/releases/latest/download/hydrolysis-assembly.zip) | 三模块组合、就位表、空间核对；含完整依赖 |
+| 桥架工程 | [查看桥架](水解桥架工程/) | [桥架ZIP](https://github.com/baetlack/Codex_3D_Model/archive/refs/heads/module-bridge.zip) | 三层桥架、连接件库、GLB/OBJ、1.0与2.0 |
+| 厂房外观 | [查看外观](厂房外观模型/) | [外观ZIP](https://github.com/baetlack/Codex_3D_Model/archive/refs/heads/module-building.zip) | 完整建筑、楼梯、房间、开孔楼板、尺寸测量 |
+| 设备模型库 | [查看设备](水解设备模型库/) | [设备ZIP](https://github.com/baetlack/Codex_3D_Model/archive/refs/heads/module-equipment.zip) | 35组99项台账、类型模型、基础、图纸、1.0与当前2.0 |
+| 水解总装 | [查看总装](水解总装工程/) | [总装ZIP](https://github.com/baetlack/Codex_3D_Model/archive/refs/heads/module-assembly.zip) | 三模块组合、就位表、空间核对；含完整依赖 |
 
-[全部发布版本](https://github.com/baetlack/Codex_3D_Model/releases) · [下载校验码](https://github.com/baetlack/Codex_3D_Model/releases/latest/download/SHA256SUMS.txt)
+[全部发布版本及固定版本下载](https://github.com/baetlack/Codex_3D_Model/releases) · 每个ZIP根目录含 `下载包清单.json`，逐文件记录SHA256。
 
 GitHub页面可以分别查看目录、说明、参数和预览图；交互式3D需要下载后在浏览器打开。仓库及发布包沿用私有权限，下载时需登录有访问权的GitHub账号。
 
@@ -42,4 +42,4 @@ python tools/package_modules.py --output /tmp/hydrolysis-packages
 python tools/test_module_packages.py --output /tmp/hydrolysis-packages --browser
 ```
 
-后续每次发布使用新的 `modules-*` 标签，运行上述打包与校验，将四个ZIP及校验清单一起发布到GitHub Releases。新Release成为最新下载，旧Release不覆盖；浏览检查需要安装Playwright/Chromium。
+后续每次发布使用新的 `modules-*` 标签，运行上述打包与校验，再运行 `python tools/publish_module_branches.py --output /tmp/hydrolysis-packages --version modules-YYYY-MM-DD` 生成模块分支与版本标签，检查后用Git推送这八个引用。Release中列出四个标签的原生ZIP下载链接。各模块发布到 `module-*` 分支，GitHub原生生成独立ZIP；固定版本使用 `modules-日期-模块` 标签，旧标签及Release不覆盖。浏览检查需要安装Playwright/Chromium。

@@ -17,6 +17,10 @@ MODULES = CONFIG['modules']
 REPO_URL = 'https://github.com/' + CONFIG['repository']
 
 
+def download_url(module):
+    return REPO_URL + '/archive/refs/heads/' + module['branch'] + '.zip'
+
+
 def belongs(path, prefix):
     return path == prefix or path.startswith(prefix + '/')
 
@@ -39,8 +43,8 @@ def landing(module_id=None):
         name = html.escape(module['name'])
         local = ('<a href="' + module['entry'] + '">打开三维模型</a> · ') if key in installed else ''
         cards.append(f'<article><h2>{name}</h2><p>{html.escape(module["description"])}</p>'
-                     f'<p>{local}<a href="{REPO_URL}/tree/main/{module["directory"]}">GitHub目录</a> · '
-                     f'<a href="{REPO_URL}/releases/latest/download/{module["asset"]}">下载独立ZIP</a></p></article>')
+                     f'<p>{local}<a href="{REPO_URL}/tree/{module["branch"]}/{module["directory"]}">GitHub目录</a> · '
+                     f'<a href="{download_url(module)}">下载独立ZIP</a></p></article>')
     title = '水解工段 · 模块入口' if module_id is None else MODULES[module_id]['name'] + ' · 独立下载包'
     return ('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{title}</title><style>body{{max-width:1050px;margin:40px auto;padding:20px;background:#101923;color:#dce8ef;font:15px sans-serif;line-height:1.8}}'
@@ -58,7 +62,7 @@ def notice(module, prefix):
     return (f'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>{module["name"]}</title>'
             '<body style="background:#101923;color:#dce8ef;font:16px sans-serif;padding:40px;line-height:2">'
             f'<h1>{module["name"]}是独立模块</h1><p>当前下载包未包含此模块的三维浏览入口。请下载对应独立包，或下载总装包查看组合模型。</p>'
-            f'<p><a style="color:#7cdce6" href="{REPO_URL}/releases/latest/download/{module["asset"]}">下载{module["name"]}</a> · '
+            f'<p><a style="color:#7cdce6" href="{download_url(module)}">下载{module["name"]}</a> · '
             f'<a style="color:#7cdce6" href="{back}">返回模块入口</a></p></body></html>').encode('utf-8')
 
 
