@@ -1,0 +1,36 @@
+[
+  {
+    "id": "FRAME-D41B01BC",
+    "name": "晶种制备槽BC组成对支架",
+    "asset": "foundation-D41B01",
+    "position_mm": [
+      3700.0,
+      54000.001,
+      11000
+    ],
+    "rotation_deg": 0,
+    "level": "EL106",
+    "support_for": [
+      "D41B01B",
+      "D41B01C"
+    ],
+    "status": "承托EL111.000、支架底EL108.500；截面示意待施工图"
+  },
+  {
+    "id": "FRAME-D41B01DE",
+    "name": "晶种制备槽DE组成对支架",
+    "asset": "foundation-D41B01",
+    "position_mm": [
+      28300.0,
+      25200.001,
+      11000
+    ],
+    "rotation_deg": 0,
+    "level": "EL106",
+    "support_for": [
+      "D41B01D",
+      "D41B01E"
+    ],
+    "status": "承托EL111.000、支架底EL108.500；截面示意待施工图"
+  }
+]

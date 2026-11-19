@@ -1,0 +1,209 @@
+{
+  "version": "2.0-D41B01-01",
+  "status": "passed",
+  "other_67_equipment_and_94_catalog_items": "unchanged",
+  "building_bridge_accepted_equipment_hashes": "unchanged",
+  "top_nozzle_DXF_center_errors_mm": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 0.0,
+    "d": 0.0,
+    "e": 0.0,
+    "f": 0.0,
+    "h": 0.0
+  },
+  "watertight_components": 147,
+  "bearing_checks": [
+    {
+      "id": "D41B01B",
+      "ear": "R1",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01B",
+      "ear": "R2",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01B",
+      "ear": "R3",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01B",
+      "ear": "R4",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01C",
+      "ear": "R1",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01C",
+      "ear": "R2",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01C",
+      "ear": "R3",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01C",
+      "ear": "R4",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01D",
+      "ear": "R1",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01D",
+      "ear": "R2",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01D",
+      "ear": "R3",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01D",
+      "ear": "R4",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01E",
+      "ear": "R1",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01E",
+      "ear": "R2",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01E",
+      "ear": "R3",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    },
+    {
+      "id": "D41B01E",
+      "ear": "R4",
+      "bearing_EL": 111.0,
+      "gap_mm": 0,
+      "solid_points_on_actual_beam": 2,
+      "ear_hole_to_beam_axis_offset_mm": 8
+    }
+  ],
+  "support_open_interior_checks": 24,
+  "screen": {
+    "columns": 120,
+    "beams": 76,
+    "bridge_parts": 112,
+    "other_equipment": 67,
+    "pair_support_groups": 2,
+    "aabb_candidates": 0
+  },
+  "intersections": [],
+  "floor_checks": [
+    {
+      "id": "D41B01B",
+      "floor": "FLOOR-112",
+      "actual_mesh_intersection": false
+    },
+    {
+      "id": "D41B01D",
+      "floor": "FLOOR-112",
+      "actual_mesh_intersection": false
+    },
+    {
+      "id": "D41B01A",
+      "floor": "FLOOR-112",
+      "actual_mesh_intersection": false
+    },
+    {
+      "id": "D41B01C",
+      "floor": "FLOOR-112",
+      "actual_mesh_intersection": false
+    },
+    {
+      "id": "D41B01E",
+      "floor": "FLOOR-112",
+      "actual_mesh_intersection": false
+    }
+  ],
+  "quantity_decision": "A—E五台均采用新本体；A支架继续待核。新图数量4不用于删减台账。",
+  "limits": [
+    "总图明确管口方位须按工艺专业方位图；本次保留5台X/Y、旋转和镜像，新增接口绝对方位待核。",
+    "总图示意总高约3410与分段尺寸/图面量测链约3415并列记录，不将近似总高作为精确制造尺寸。",
+    "图中覆盖尺寸优先：电机340而非几何361、顶盖21而非26、c/d高154而非169、耳板12而非20。",
+    "托耳孔跨主视2102与俯视图面2118差16；采用明示2102，现有支架梁轴2118保留，孔各偏轴8mm仍处于承托范围。",
+    "平面两槽中心距2600，剖面另标水平2500，相差100；按现有平面位置保留2600，差异待图纸复核。支架高度2500另由EL108.500至EL111.000确定。",
+    "支架纵横梁160×200、立柱160×160继续沿用既有示意截面；未提供支架施工详图，不标为结构验收完成。",
+    "保温60只表达外包络，隐藏衬胶/衬砖、内部盘管与叶轮不展开；不补无尺寸雨棚及外接工艺管线。"
+  ],
+  "same_class_pair_screen": {
+    "pairs": 10,
+    "minimum_separating_aabb_gap_mm": 268.0
+  },
+  "plan_section_spacing_difference": {
+    "topic": "平面/剖面水平中心距",
+    "plan_mm": 2600,
+    "plan_handles": [
+      "F1C1C",
+      "F1B80"
+    ],
+    "section_mm": 2500,
+    "section_handle": "57BF9",
+    "difference_mm": 100,
+    "resolution": "本次以既有平面位置2600建模，剖面2500差异待复核，不擅自挪动设备。支架高2500由独立标高差111.000-108.500确定。"
+  }
+}

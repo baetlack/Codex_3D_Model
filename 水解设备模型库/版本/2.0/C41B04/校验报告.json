@@ -2,8 +2,8 @@
   "revision": "2.0-C41B04-02",
   "status": "passed",
   "accepted_C41B02_building_bridge_hashes": "unchanged",
-  "other_93_catalog_items": "unchanged",
-  "other_66_placed_equipment": "unchanged",
+  "other_93_catalog_items": "unchanged except separately registered revisions: D41B01",
+  "other_66_placed_equipment": "unchanged except separately registered revisions: D41B01",
   "dimensions_mm": {
     "shell_OD": 1300,
     "graphite_block_spec": 1200,
