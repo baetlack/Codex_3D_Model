@@ -4,6 +4,9 @@
 !/.gitattributes
 !/AGENTS.md
 !/README.md
+!/index.html
+!/modules.json
+!/tools/
 !/水解桥架工程/
 !/水解设备模型库/
 !/厂房外观模型/
