@@ -1,5 +1,5 @@
 {
-  "revision": "2.0-C41B04-01",
+  "revision": "2.0-C41B04-02",
   "status": "passed",
   "accepted_C41B02_building_bridge_hashes": "unchanged",
   "other_93_catalog_items": "unchanged",
@@ -12,8 +12,7 @@
     "bottom_to_bearing": 2612,
     "lug_outer_span": 2055,
     "lug_hole_span": 1875,
-    "lug_hole_diameter": 30,
-    "spring_envelope_above_top": 200
+    "lug_hole_diameter": 30
   },
   "source_plan_center_errors_mm": {
     "N1": 0.4667645861945857,
@@ -242,5 +241,11 @@
       "actual_floor_mesh_intersection": false
     }
   ],
-  "own_support_open_interior_checks": 108
+  "own_support_open_interior_checks": 108,
+  "revision_02_removal": {
+    "removed_objects": 82,
+    "remaining_objects_unchanged": 66,
+    "steel_geometry_and_placements": "unchanged",
+    "old_01_frozen_hashes": "passed"
+  }
 }

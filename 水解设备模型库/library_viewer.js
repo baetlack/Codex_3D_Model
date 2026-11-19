@@ -211,7 +211,7 @@ function renderDetail(row, type, foundationIds, civilOnly) {
   }
   if (tagForRow(row)==='C41B04' && overrides.equipment?.C41B04) {
     const info=section(detail,'本类2.0整改与安装');
-    field(info,'尺寸基准','外壳Ø1300 / 换热块Ø1200；端面高4812；四托耳承托EL104.500；底端EL101.888 / 顶端EL106.700。弹簧另列约200mm包络。');
+    field(info,'尺寸基准','外壳Ø1300 / 换热块Ø1200；端面高4812；四托耳承托EL104.500；底端EL101.888 / 顶端EL106.700。02版已删除推断的大环、外露杆及配套弹簧/螺母。');
     field(info,'图纸整合','保持6台设备布置位置及旋转/镜像，AB钢架随设备调整约200mm；单组梁网4275×1875不变。原台账230㎡与条件图240㎡差异保留。');
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/C41B04/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/C41B04/修订对比.html'),link('厂家条件图PDF','水解设备图纸/'+encodeURIComponent('偏钛酸酸冷却器(C41B04A-F).pdf'),true),link('6台安装表','版本/2.0/C41B04/安装表.json'));info.append(links);
     figure('厂家条件图 · 主视','版本/2.0/C41B04/来源_主视.png');figure('厂家条件图 · 俯视','版本/2.0/C41B04/来源_俯视.png');

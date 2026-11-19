@@ -1,0 +1,132 @@
+{
+  "version": "2.0-C41B04-01",
+  "old_model": "设备1.0，原模型和原安装表保留",
+  "old_envelope_mm": [
+    2150,
+    1460,
+    5005
+  ],
+  "new_envelope_mm": [
+    2055,
+    2055,
+    5012
+  ],
+  "new_explicit_end_face_height_mm": 4812,
+  "old_ears": 2,
+  "new_ears": 4,
+  "new_bottom_drains": 5,
+  "old_frame_in_total": 0,
+  "new_frame_in_total": 3,
+  "items": [
+    {
+      "id": "C41B04A",
+      "before_origin_mm": [
+        21300.0001,
+        70299.5095,
+        0
+      ],
+      "after_origin_mm": [
+        21300.0001,
+        70299.5095,
+        4500
+      ],
+      "xy_rotation_mirror_unchanged": true,
+      "reason": "原局部楼面Z0改四托耳承托Z0，安装Z4500；实体端面按新图尺寸链"
+    },
+    {
+      "id": "C41B04B",
+      "before_origin_mm": [
+        23700.0,
+        70299.5095,
+        0
+      ],
+      "after_origin_mm": [
+        23700.0,
+        70299.5095,
+        4500
+      ],
+      "xy_rotation_mirror_unchanged": true,
+      "reason": "原局部楼面Z0改四托耳承托Z0，安装Z4500；实体端面按新图尺寸链"
+    },
+    {
+      "id": "C41B04C",
+      "before_origin_mm": [
+        21300.0,
+        66299.9906,
+        0
+      ],
+      "after_origin_mm": [
+        21300.0,
+        66299.9906,
+        4500
+      ],
+      "xy_rotation_mirror_unchanged": true,
+      "reason": "原局部楼面Z0改四托耳承托Z0，安装Z4500；实体端面按新图尺寸链"
+    },
+    {
+      "id": "C41B04D",
+      "before_origin_mm": [
+        23700.0,
+        66299.9906,
+        0
+      ],
+      "after_origin_mm": [
+        23700.0,
+        66299.9906,
+        4500
+      ],
+      "xy_rotation_mirror_unchanged": true,
+      "reason": "原局部楼面Z0改四托耳承托Z0，安装Z4500；实体端面按新图尺寸链"
+    },
+    {
+      "id": "C41B04E",
+      "before_origin_mm": [
+        21300.0,
+        63300.0094,
+        0
+      ],
+      "after_origin_mm": [
+        21300.0,
+        63300.0094,
+        4500
+      ],
+      "xy_rotation_mirror_unchanged": true,
+      "reason": "原局部楼面Z0改四托耳承托Z0，安装Z4500；实体端面按新图尺寸链"
+    },
+    {
+      "id": "C41B04F",
+      "before_origin_mm": [
+        23700.0,
+        63300.0094,
+        0
+      ],
+      "after_origin_mm": [
+        23700.0,
+        63300.0094,
+        4500
+      ],
+      "xy_rotation_mirror_unchanged": true,
+      "reason": "原局部楼面Z0改四托耳承托Z0，安装Z4500；实体端面按新图尺寸链"
+    }
+  ],
+  "frame_alignment": [
+    {
+      "id": "FRAME-C41B04AB",
+      "from_CD_anchor_nominal_Y": 70499.9906,
+      "after_Y": 70299.5095,
+      "delta_Y_mm": -200.48110000000452
+    },
+    {
+      "id": "FRAME-C41B04CD",
+      "from_CD_anchor_nominal_Y": 66299.9906,
+      "after_Y": 66299.9906,
+      "delta_Y_mm": 0.0
+    },
+    {
+      "id": "FRAME-C41B04EF",
+      "from_CD_anchor_nominal_Y": 63299.990600000005,
+      "after_Y": 63300.0094,
+      "delta_Y_mm": 0.018799999998009298
+    }
+  ]
+}

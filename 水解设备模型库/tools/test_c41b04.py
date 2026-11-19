@@ -20,9 +20,21 @@ def run():
     assert hashlib.sha256((REPO/p['source_drawing']).read_bytes()).hexdigest()==p['source_sha256']
     lo,hi=box(names['本体_外壳OD1300']);assert np.allclose((hi-lo)[:2],[1300,1300])
     low=min(v[2] for q in parts for v in q['vertices']);high=max(v[2] for q in parts for v in q['vertices'])
-    assert low==-2612 and high==2400
-    assert max(v[2] for v in names['本体_上压板']['vertices'])==2200
-    assert max(v[2] for v in names['本体_上压板']['vertices'])-low==4812
+    assert low==-2612 and high==2202  # Retained nozzle fasteners project 2mm.
+    assert max(v[2] for v in names['接口_顶盖法兰_N1']['vertices'])-low==4812
+    previous=OUT/'历史/2.0-C41B04-01'
+    frozen=json.loads((previous/'冻结清单.json').read_text())
+    for name,digest in frozen['files'].items():assert hashlib.sha256((previous/name).read_bytes()).hexdigest()==digest,name
+    original=ck.script(previous/'设备/model_data.js','MODEL_PARTS')
+    def removed(q):
+        name=q['name']
+        return name in ('本体_上压板','本体_下压板') or name.startswith(('拉杆_','弹簧_')) or (name.startswith('紧固_') and name.endswith(('上螺母','下螺母')))
+    assert sum(removed(q) for q in original)==82
+    assert parts==[q for q in original if not removed(q)],'Retained equipment components must stay byte-for-byte equivalent'
+    for sub in ['支架','支架/单组']:
+        for file in (previous/sub).iterdir():
+            if file.suffix in ('.glb','.obj','.mtl','.js'):assert (OUT/sub/file.name).read_bytes()==file.read_bytes(),file.name
+    assert (OUT/'支架安装表.json').read_bytes()==(previous/'支架安装表.json').read_bytes()
     assert p['exchange_area_m2']==240 and p['ledger_exchange_area_m2']==230
     assert len(p['ports'])==11
     ports={q['id']:q for q in p['ports']};assert set(ports)=={'N1','N2','N3','N4','N5','N6','N7a','N7b','N7c','N7d','N7e'}
@@ -58,7 +70,7 @@ def run():
         else:
             assert q['position_mm'][:2]==before[key]['position_mm'][:2]
             assert q['rotation_deg']==before[key]['rotation_deg'] and q['mirror_y']==before[key]['mirror_y']
-            assert q['position_mm'][2]==4500 and q['equipment_version']=='2.0-C41B04-01'
+            assert q['position_mm'][2]==4500 and q['equipment_version']=='2.0-C41B04-02'
             witness=q['layout_review']['top_port_witness'];assert witness['matched_within_5mm']==2
     oldrows={q['id']:q for q in pinned['catalog']}
     for q in json.loads((ROOT/'catalog.json').read_text())['models']:
@@ -131,9 +143,10 @@ def run():
                 floor_checks.append({'id':subject['id'],'floor':floor['id'],'actual_floor_mesh_intersection':False})
     assert not hits,hits
     assert len(floor_checks)==6
-    report={'revision':'2.0-C41B04-01','status':'passed','accepted_C41B02_building_bridge_hashes':'unchanged','other_93_catalog_items':'unchanged','other_66_placed_equipment':'unchanged','dimensions_mm':p['dimensions_mm'],'source_plan_center_errors_mm':errors,'limits':'中心对原图吻合度不是现场公差；未标局部细部仍属外观量测','ear_beam_checks':bearings,'columns':len(columns),'beams':len(beams),'bridge_parts':len(bridge),'other_equipment':len(others),'new_support_groups':3,'intersections':hits,'AB_frame_decision':conflicts[0]}
+    report={'revision':'2.0-C41B04-02','status':'passed','accepted_C41B02_building_bridge_hashes':'unchanged','other_93_catalog_items':'unchanged','other_66_placed_equipment':'unchanged','dimensions_mm':p['dimensions_mm'],'source_plan_center_errors_mm':errors,'limits':'中心对原图吻合度不是现场公差；未标局部细部仍属外观量测','ear_beam_checks':bearings,'columns':len(columns),'beams':len(beams),'bridge_parts':len(bridge),'other_equipment':len(others),'new_support_groups':3,'intersections':hits,'AB_frame_decision':conflicts[0]}
     report['floor_opening_checks']=floor_checks
     report['own_support_open_interior_checks']=own_support_checks
+    report['revision_02_removal']={'removed_objects':82,'remaining_objects_unchanged':len(parts),'steel_geometry_and_placements':'unchanged','old_01_frozen_hashes':'passed'}
     (OUT/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k!='ear_beam_checks'},ensure_ascii=False))
 if __name__=='__main__':run()
