@@ -1,5 +1,0 @@
-numpy
-scipy
-ezDxf
-matplotlib
-# Optional browser validation: playwright and local Chromium.
