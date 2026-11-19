@@ -2,6 +2,7 @@
   "status": "passed",
   "checks": {
     "six_equipment_three_frames_and_datum_labels": true,
+    "unsupported_rings_rods_springs_nuts_removed": true,
     "four_separate_ears_and_holes": true,
     "steel_independent": true,
     "current_glb_and_manufacturer_pdf_downloads": true,

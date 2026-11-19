@@ -544,7 +544,7 @@
       "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
       "depth": 1300,
-      "model_version": "2.0-C41B04-01",
+      "model_version": "2.0-C41B04-02",
       "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
       "position_mm": [
         21300.0,
@@ -581,7 +581,7 @@
       "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
       "depth": 1300,
-      "model_version": "2.0-C41B04-01",
+      "model_version": "2.0-C41B04-02",
       "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
       "position_mm": [
         23700.0,
@@ -1238,7 +1238,7 @@
       "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
       "depth": 1300,
-      "model_version": "2.0-C41B04-01",
+      "model_version": "2.0-C41B04-02",
       "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
       "position_mm": [
         21300.0001,
@@ -1275,7 +1275,7 @@
       "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
       "depth": 1300,
-      "model_version": "2.0-C41B04-01",
+      "model_version": "2.0-C41B04-02",
       "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
       "position_mm": [
         23700.0,
@@ -1312,7 +1312,7 @@
       "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
       "depth": 1300,
-      "model_version": "2.0-C41B04-01",
+      "model_version": "2.0-C41B04-02",
       "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
       "position_mm": [
         21300.0,
@@ -1349,7 +1349,7 @@
       "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
       "depth": 1300,
-      "model_version": "2.0-C41B04-01",
+      "model_version": "2.0-C41B04-02",
       "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
       "position_mm": [
         23700.0,

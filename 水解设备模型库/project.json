@@ -19,13 +19,13 @@
       "status": "用户已接受外形及精度为基准；POS与绝对方位待核"
     },
     "C41B04": {
-      "version": "2.0-C41B04-01",
+      "version": "2.0-C41B04-02",
       "equipment": "版本/2.0/C41B04/设备/model_data.js",
       "foundation": "版本/2.0/C41B04/支架/model_data.js",
       "foundation_single": "版本/2.0/C41B04/支架/单组/model_data.js",
       "placements": "版本/2.0/C41B04/安装表.json",
       "support_placements": "版本/2.0/C41B04/支架安装表.json",
-      "status": "按用户选择整合钢架和设备布置"
+      "status": "02版删除无充分依据的外露大环/杆/弹簧/螺母；设备位置和钢架保持"
     }
   },
   "next_class": "D41B01",

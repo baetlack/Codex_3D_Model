@@ -24,7 +24,7 @@
     "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": true,
-    "equipment_version": "2.0-C41B04-01",
+    "equipment_version": "2.0-C41B04-02",
     "local_datum": "四向托耳底承托面Z0",
     "installation_review": {
       "before_position_mm": [
@@ -99,7 +99,7 @@
     "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": false,
-    "equipment_version": "2.0-C41B04-01",
+    "equipment_version": "2.0-C41B04-02",
     "local_datum": "四向托耳底承托面Z0",
     "installation_review": {
       "before_position_mm": [
@@ -174,7 +174,7 @@
     "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": false,
-    "equipment_version": "2.0-C41B04-01",
+    "equipment_version": "2.0-C41B04-02",
     "local_datum": "四向托耳底承托面Z0",
     "installation_review": {
       "before_position_mm": [
@@ -249,7 +249,7 @@
     "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": true,
-    "equipment_version": "2.0-C41B04-01",
+    "equipment_version": "2.0-C41B04-02",
     "local_datum": "四向托耳底承托面Z0",
     "installation_review": {
       "before_position_mm": [
@@ -324,7 +324,7 @@
     "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": true,
-    "equipment_version": "2.0-C41B04-01",
+    "equipment_version": "2.0-C41B04-02",
     "local_datum": "四向托耳底承托面Z0",
     "installation_review": {
       "before_position_mm": [
@@ -399,7 +399,7 @@
     "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": false,
-    "equipment_version": "2.0-C41B04-01",
+    "equipment_version": "2.0-C41B04-02",
     "local_datum": "四向托耳底承托面Z0",
     "installation_review": {
       "before_position_mm": [

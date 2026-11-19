@@ -1,5 +1,5 @@
 {
-  "version": "2.0-C41B04-01",
+  "version": "2.0-C41B04-02",
   "name": "偏钛酸冷却器",
   "units": "mm",
   "source_drawing": "水解设备模型库/水解设备图纸/偏钛酸酸冷却器(C41B04A-F).pdf",
@@ -16,8 +16,7 @@
     "bottom_to_bearing": 2612,
     "lug_outer_span": 2055,
     "lug_hole_span": 1875,
-    "lug_hole_diameter": 30,
-    "spring_envelope_above_top": 200
+    "lug_hole_diameter": 30
   },
   "exchange_area_m2": 240,
   "ledger_exchange_area_m2": 230,
@@ -25,8 +24,7 @@
   "installation": {
     "bearing_EL": 104.5,
     "bottom_end_EL": 101.888,
-    "top_end_EL": 106.7,
-    "spring_envelope_EL": 106.9
+    "top_end_EL": 106.7
   },
   "ports": [
     {
@@ -234,15 +232,17 @@
   "bounds_mm": [
     2055.0,
     2055.0,
-    5012.0
+    4814.0
   ],
   "limits": [
     "外壳1300与换热块1200分别记录，不将传热面积当几何尺寸。",
-    "压板/封头过渡、法兰未标厚度、吊耳、弹簧包络及N5/N6准确标高按图面/旧DXF作展示量测。",
-    "20组拉杆沿用布置DXF的φ1390圈上孔位；内部10流程、石墨流道不展开。",
+    "封头过渡、法兰未标厚度、吊耳及N5/N6准确标高按图面/旧DXF作展示量测。",
+    "按用户要求删除2个大开孔端环、20根通长外露杆及配套20个弹簧/40个螺母；旧DXF圆符号不再用于推断这套外露构造。内部石墨流道不展开。",
     "AB/CD图纸200mm差异已按用户选择解决：保持设备位置，AB钢架随设备调整；见来源与差异。",
     "该PDF为厂家条件图，本模型不是制造或施工放样模型。"
   ],
+  "user_revision_decision": "删掉上下大环及20根外露杆和配套弹簧/螺母；其余构件、支架和安装变换保持",
+  "model_max_EL": 106.702,
   "id": "C41B04F",
   "group": "C41B04A-F",
   "qty": 6,

@@ -1,0 +1,246 @@
+{
+  "revision": "2.0-C41B04-01",
+  "status": "passed",
+  "accepted_C41B02_building_bridge_hashes": "unchanged",
+  "other_93_catalog_items": "unchanged",
+  "other_66_placed_equipment": "unchanged",
+  "dimensions_mm": {
+    "shell_OD": 1300,
+    "graphite_block_spec": 1200,
+    "end_face_height": 4812,
+    "top_to_bearing": 2200,
+    "bottom_to_bearing": 2612,
+    "lug_outer_span": 2055,
+    "lug_hole_span": 1875,
+    "lug_hole_diameter": 30,
+    "spring_envelope_above_top": 200
+  },
+  "source_plan_center_errors_mm": {
+    "N1": 0.4667645861945857,
+    "N2": 0.4667645861918004,
+    "N7a": 0.9055632386900925,
+    "N7b": 0.4667645861950405,
+    "N7c": 0.46676458619063127,
+    "N7d": 0.466764586192263,
+    "N7e": 0.905563238688528
+  },
+  "limits": "中心对原图吻合度不是现场公差；未标局部细部仍属外观量测",
+  "ear_beam_checks": [
+    {
+      "id": "C41B04A",
+      "ear": "R1",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04A",
+      "ear": "R2",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04A",
+      "ear": "R3",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04A",
+      "ear": "R4",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04B",
+      "ear": "R1",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04B",
+      "ear": "R2",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04B",
+      "ear": "R3",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04B",
+      "ear": "R4",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04C",
+      "ear": "R1",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04C",
+      "ear": "R2",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04C",
+      "ear": "R3",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04C",
+      "ear": "R4",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04D",
+      "ear": "R1",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04D",
+      "ear": "R2",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04D",
+      "ear": "R3",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04D",
+      "ear": "R4",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04E",
+      "ear": "R1",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04E",
+      "ear": "R2",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04E",
+      "ear": "R3",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04E",
+      "ear": "R4",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04F",
+      "ear": "R1",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04F",
+      "ear": "R2",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04F",
+      "ear": "R3",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    },
+    {
+      "id": "C41B04F",
+      "ear": "R4",
+      "bearing_EL": 104.5,
+      "vertical_gap_mm": 0,
+      "solid_plate_points_over_beam": 2
+    }
+  ],
+  "columns": 120,
+  "beams": 76,
+  "bridge_parts": 112,
+  "other_equipment": 66,
+  "new_support_groups": 3,
+  "intersections": [],
+  "AB_frame_decision": {
+    "topic": "AB/CD组中心距",
+    "foundation_mm": 4200,
+    "layout_mm": 3999.5189,
+    "difference_mm": 200.4811,
+    "policy": "layout",
+    "user_decision": "保留设备布置位置，AB组钢架随设备调整200mm",
+    "consequence": "按用户选择，以布置图设备中心定位三组钢架；保留基础图4200mm原值供追溯"
+  },
+  "floor_opening_checks": [
+    {
+      "id": "C41B04E",
+      "floor": "FLOOR-106",
+      "actual_floor_mesh_intersection": false
+    },
+    {
+      "id": "C41B04F",
+      "floor": "FLOOR-106",
+      "actual_floor_mesh_intersection": false
+    },
+    {
+      "id": "C41B04A",
+      "floor": "FLOOR-106",
+      "actual_floor_mesh_intersection": false
+    },
+    {
+      "id": "C41B04B",
+      "floor": "FLOOR-106",
+      "actual_floor_mesh_intersection": false
+    },
+    {
+      "id": "C41B04C",
+      "floor": "FLOOR-106",
+      "actual_floor_mesh_intersection": false
+    },
+    {
+      "id": "C41B04D",
+      "floor": "FLOOR-106",
+      "actual_floor_mesh_intersection": false
+    }
+  ],
+  "own_support_open_interior_checks": 108
+}

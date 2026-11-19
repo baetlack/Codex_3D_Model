@@ -15,6 +15,9 @@ with sync_playwright() as pw:
     assert 'EL104.500' in page.locator('#detail').inner_text() and '200mm' in page.locator('#detail').inner_text()
     page.screenshot(path=str(OUT/'预览_设备与钢架.png'));checks['six_equipment_three_frames_and_datum_labels']=True
     page.locator('#foundation-mode').select_option('');page.wait_for_function(f'parts.length==={expected}')
+    assert not page.evaluate('parts.some(p=>/^(拉杆_|弹簧_|本体_上压板$|本体_下压板$)/.test(p.name))')
+    assert not page.evaluate('parts.some(p=>p.name.startsWith("紧固_")&&/螺母$/.test(p.name))')
+    checks['unsupported_rings_rods_springs_nuts_removed']=True
     page.screenshot(path=str(OUT/'预览_设备.png'))
     page.locator('#top').click();page.screenshot(path=str(OUT/'预览_俯视.png'))
     assert page.evaluate('parts.filter(p=>p.name.includes("承托底板")).length')==4
@@ -32,7 +35,7 @@ with sync_playwright() as pw:
         page.locator('button[data-view="'+mode+'"]').click();page.wait_for_timeout(100);page.screenshot(path=str(OUT/('预览_对照_'+mode+'.png')))
     checks['frozen_1_0_vs_new_compared_at_same_bearing_datum']=True
     page.goto(URL+'/水解总装工程/');page.wait_for_function('window.assemblyViewer?.getState().ready',timeout=120000)
-    assert page.evaluate('assemblyViewer.cfg.equipment.filter(e=>e.asset==="C41B04"&&e.equipment_version==="2.0-C41B04-01"&&e.position_mm[2]===4500).length')==6
+    assert page.evaluate('assemblyViewer.cfg.equipment.filter(e=>e.asset==="C41B04"&&e.equipment_version==="2.0-C41B04-02"&&e.position_mm[2]===4500).length')==6
     assert page.evaluate('assemblyViewer.cfg.foundations.filter(e=>e.asset==="foundation-C41B04").length')==3
     page.locator('#inside').click();page.locator('#search').fill('C41B04A');page.locator('#list button').first.click();page.locator('#focus').click();page.wait_for_timeout(200)
     page.screenshot(path=str(OUT/'预览_总装.png'));checks['six_current_instances_and_three_independent_supports_in_total']=True
