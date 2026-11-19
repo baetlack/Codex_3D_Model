@@ -8,6 +8,6 @@
 
 本包用于浏览、下载模型和核对资料。完整维护/重建、跨模块校验请克隆完整仓库，按各模块README操作。冻结版本和源网格逐字节保留；下载包清单记录每个源文件SHA256和源提交。
 
-源提交：1e274ca654ebbbeced404e83ba6e6f44c531ffe5
+源提交：0801893a1c72f621ac2a51d53248ab08202d304b
 
 仓库：https://github.com/baetlack/Codex_3D_Model

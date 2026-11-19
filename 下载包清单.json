@@ -1,7 +1,7 @@
 {
   "module": "building",
   "name": "厂房外观模型",
-  "source_commit": "1e274ca654ebbbeced404e83ba6e6f44c531ffe5",
+  "source_commit": "0801893a1c72f621ac2a51d53248ab08202d304b",
   "entry": "厂房外观模型/index.html",
   "versions": {
     "bridge": "2.0-column-contact",
@@ -21,6 +21,15 @@
         "placements": "版本/2.0/C41B04/安装表.json",
         "support_placements": "版本/2.0/C41B04/支架安装表.json",
         "status": "02版删除无充分依据的外露大环/杆/弹簧/螺母；设备位置和钢架保持"
+      },
+      "D41B01": {
+        "version": "2.0-D41B01-01",
+        "equipment": "版本/2.0/D41B01/设备/model_data.js",
+        "foundation": "版本/2.0/D41B01/支架/model_data.js",
+        "foundation_single": "版本/2.0/D41B01/支架/model_data.js",
+        "placements": "版本/2.0/D41B01/安装表.json",
+        "support_placements": "版本/2.0/D41B01/支架安装表.json",
+        "status": "5台新本体与BC/DE成对支架；平剖面槽距100差异、A支架/新接口绝对方位待核"
       }
     },
     "building_sha256": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b"
