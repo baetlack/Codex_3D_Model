@@ -20,11 +20,12 @@ def run():
  assert p['tank']['outside_diameter_mm']==5500 and p['tank']['straight_shell_height_mm']==5000
  assert p['mixer']['height_above_shell_top_mm']==2185
  catalog=json.loads((ROOT/'catalog.json').read_text());oldcatalog=json.loads((BASE/'水解设备模型库/catalog.json').read_text());oldrows={p['id']:p for p in oldcatalog['models']}
+ revisions=json.loads((ROOT/'project.json').read_text())['revisions']
  for row in catalog['models']:
   if row['id'].startswith('C41B02'):
    assert row['w']==5500 and row['h']==5000 and row['pos_el']==112.15
    assert row['current_files']['model']=='版本/2.0/C41B02/设备/model_data.js'
-  else:assert row==oldrows[row['id']],row['id']
+  elif row['id'][:6] not in revisions:assert row==oldrows[row['id']],row['id']
  byname={a['name']:a for a in new};preserved=0
  from collections import defaultdict
  candidates=defaultdict(list)
@@ -68,8 +69,8 @@ def run():
  assert before['unplaced']==after['unplaced'] and len(after['equipment'])==72
  b={q['id']:q for q in before['equipment']};actual={q['id']:q for q in after['equipment']};install=json.loads((OUT/'安装表.json').read_text());assert len(install)==5
  for ident,q in actual.items():
-  if q['asset']!='C41B02':assert q==b[ident],ident
-  else:
+  if q['asset'] not in revisions:assert q==b[ident],ident
+  elif q['asset']=='C41B02':
    for key in ['position_mm','rotation_deg','mirror_y']:assert q[key]==b[ident][key],(ident,key)
    assert '待核' in q['orientation_status'] and '待核' in q['z_status']
  assert after['assets']['C41B02']['source']=='水解设备模型库/版本/2.0/C41B02/设备/model_data.js'
@@ -98,6 +99,6 @@ def run():
    if proof is not None or contains:hits.append([q['id'],obstacle['id'],obstacle['kind']])
   z=q['position_mm'][2];rows.append({'id':q['id'],'foundation_top_EL':100+z/1000,'support_bottom_EL':100+z/1000,'support_gap_mm':float(sv[:,2].min()-bv[:,2].max()),'tank_bottom_EL':100+(z+160)/1000,'tank_top_EL':100+(z+5160)/1000,'mixer_top_EL':100+(z+7345)/1000,'new_orientation_status':q['orientation_status']})
  assert not hits,hits
- report={'status':'passed_with_declared_pending_installation_basis','revision':'2.0-C41B02-02','topside_reference_check':topside,'class':'C41B02','parts':len(new),'preserved_rigid_parts':preserved,'new_port_records':33,'k_covers':8,'items':5,'other_items_unchanged':94,'columns_checked':len(columns),'beams_checked':len(beams),'bridge_parts_checked':len(bridge),'other_placed_equipment_checked':len(others),'intersections':hits,'support_records':rows,'confirmed_tank_and_mixer_dimensions':'passed','foundation_geometry_unchanged':True,'original_models_and_1_0_hashes':'passed','limits':['POS EL承托面定义待确认，5台安装Z状态未标确认。','新接口绝对方位待工艺图，原旋转/镜像只作暂用。','未标法兰厚度、踏步板层位及缺失零件详图仍有外观假设，见参数。']}
+ report={'status':'passed_with_declared_pending_installation_basis','revision':'2.0-C41B02-02','topside_reference_check':topside,'class':'C41B02','parts':len(new),'preserved_rigid_parts':preserved,'new_port_records':33,'k_covers':8,'items':5,'other_items_unchanged':json.loads((ROOT/'project.json').read_text())['counts']['other_items_unchanged'],'other_revised_classes':[k for k in revisions if k!='C41B02'],'columns_checked':len(columns),'beams_checked':len(beams),'bridge_parts_checked':len(bridge),'other_placed_equipment_checked':len(others),'intersections':hits,'support_records':rows,'confirmed_tank_and_mixer_dimensions':'passed','foundation_geometry_unchanged':True,'original_models_and_1_0_hashes':'passed','limits':['POS EL承托面定义待确认，5台安装Z状态未标确认。','新接口绝对方位待工艺图，原旋转/镜像只作暂用。','未标法兰厚度、踏步板层位及缺失零件详图仍有外观假设，见参数。']}
  (OUT/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='support_records'},ensure_ascii=False))
 if __name__=='__main__':run()

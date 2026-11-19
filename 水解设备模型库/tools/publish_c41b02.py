@@ -41,5 +41,7 @@ def publish():
  wrapper(ROOT/'版本/2.0/index.html','设备2.0 · C41B02顶侧修正02','../../index.html?type=C41B02')
  wrapper(OUT/'index.html','C41B02 · 顶侧结构修正02','../../../index.html?type=C41B02')
  (ROOT/'版本/index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>设备版本与整改进度</title><style>'+style+'</style><h1>设备模块 · 版本与逐类进度</h1><p>35个位号组、99台/处。当前C41B02已更新到顶侧结构修正02；基础、底部型钢和其余94项保持。</p><table><tr><th>版本</th><th>内容</th><th>入口</th></tr><tr><td>设备1.0冻结</td><td>整改前设备及安装</td><td><a href="1.0/index.html">原设备库</a></td></tr><tr><td>设备2.0当前</td><td>C41B02修正02</td><td><a href="2.0/index.html">当前模型</a> · <a href="2.0/C41B02/修订对比.html">01/02结构对照</a></td></tr></table><p><a href="2.0/C41B02/整改说明.html">本次图纸取值和校验</a> · <a href="../../水解总装工程/index.html">当前总装</a></p><p class="pending">POS定义与工艺绝对方位仍待核；图面量测、缺失详图与未标尺寸均单独说明。</p></html>')
+ from publish_equipment_index import publish as publish_index
+ publish_index()
  print('Published C41B02 revision 02 and 01/02 comparison.')
 if __name__=='__main__':publish()

@@ -1,53 +1,264 @@
 {
+  "version": "2.0-C41B04-01",
+  "name": "偏钛酸冷却器",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/偏钛酸酸冷却器(C41B04A-F).pdf",
+  "source_sha256": "8c694b081c48980d5e5972a697b6f7f249819741d1529c792644b876f413c239",
+  "drawing_number": "SS-XYK1200-240S(10)",
+  "drawing_stage": "条件图",
+  "drawing_revision": "Rev.0 2026.01.09，图面2026.4.14签字",
+  "user_accuracy_reference": "C41B02-02当前外形及展示精度已获用户认可；按同等工程展示风格，不展开内部流道",
+  "dimensions_mm": {
+    "shell_OD": 1300,
+    "graphite_block_spec": 1200,
+    "end_face_height": 4812,
+    "top_to_bearing": 2200,
+    "bottom_to_bearing": 2612,
+    "lug_outer_span": 2055,
+    "lug_hole_span": 1875,
+    "lug_hole_diameter": 30,
+    "spring_envelope_above_top": 200
+  },
+  "exchange_area_m2": 240,
+  "ledger_exchange_area_m2": 230,
+  "datum": "四向托耳底承托面Z0；底端面Z-2612，顶端面Z2200",
+  "installation": {
+    "bearing_EL": 104.5,
+    "bottom_end_EL": 101.888,
+    "top_end_EL": 106.7,
+    "spring_envelope_EL": 106.9
+  },
+  "ports": [
+    {
+      "id": "N1",
+      "dn": 200,
+      "center_mm": [
+        240,
+        390,
+        2200.0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "flange_OD_mm": 395,
+      "bolt_circle_mm": 350,
+      "bolt_count": 12,
+      "basis": "PDF主/俯视与管口表；法兰外廓395取布置DXF"
+    },
+    {
+      "id": "N2",
+      "dn": 200,
+      "center_mm": [
+        -240,
+        390,
+        2200.0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "flange_OD_mm": 395,
+      "bolt_circle_mm": 350,
+      "bolt_count": 12,
+      "basis": "PDF主/俯视与管口表；法兰外廓395取布置DXF"
+    },
+    {
+      "id": "N7a",
+      "dn": 50,
+      "center_mm": [
+        123.60679774997898,
+        380.4226065180614,
+        -2612.0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "flange_OD_mm": 200,
+      "bolt_circle_mm": 160,
+      "bolt_count": 8,
+      "pitch_circle_mm": 800,
+      "basis": "PDF俯视与管口表；未标角度由布置DXF对应圆轮廓复核"
+    },
+    {
+      "id": "N7b",
+      "dn": 50,
+      "center_mm": [
+        400.0,
+        0.0,
+        -2612.0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "flange_OD_mm": 200,
+      "bolt_circle_mm": 160,
+      "bolt_count": 8,
+      "pitch_circle_mm": 800,
+      "basis": "PDF俯视与管口表；未标角度由布置DXF对应圆轮廓复核"
+    },
+    {
+      "id": "N7c",
+      "dn": 50,
+      "center_mm": [
+        -123.60679774997902,
+        -380.4226065180614,
+        -2612.0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "flange_OD_mm": 200,
+      "bolt_circle_mm": 160,
+      "bolt_count": 8,
+      "pitch_circle_mm": 800,
+      "basis": "PDF俯视与管口表；未标角度由布置DXF对应圆轮廓复核"
+    },
+    {
+      "id": "N7d",
+      "dn": 50,
+      "center_mm": [
+        -400.0,
+        4.898587196589413e-14,
+        -2612.0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "flange_OD_mm": 200,
+      "bolt_circle_mm": 160,
+      "bolt_count": 8,
+      "pitch_circle_mm": 800,
+      "basis": "PDF俯视与管口表；未标角度由布置DXF对应圆轮廓复核"
+    },
+    {
+      "id": "N7e",
+      "dn": 50,
+      "center_mm": [
+        -123.60679774997894,
+        380.42260651806146,
+        -2612.0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "flange_OD_mm": 200,
+      "bolt_circle_mm": 160,
+      "bolt_count": 8,
+      "pitch_circle_mm": 800,
+      "basis": "PDF俯视与管口表；未标角度由布置DXF对应圆轮廓复核"
+    },
+    {
+      "id": "N3",
+      "dn": 300,
+      "center_mm": [
+        -858,
+        0,
+        -1782.0
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "flange_OD_mm": 445,
+      "drawing_azimuth_deg": 270,
+      "basis": "PDF标注轴向830/802、中心至端面858，管口表PL300(B)-10"
+    },
+    {
+      "id": "N4",
+      "dn": 300,
+      "center_mm": [
+        -858,
+        0,
+        1398.0
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "flange_OD_mm": 445,
+      "drawing_azimuth_deg": 270,
+      "basis": "PDF标注轴向830/802、中心至端面858，管口表PL300(B)-10"
+    },
+    {
+      "id": "N5",
+      "dn": 32,
+      "center_mm": [
+        770,
+        0,
+        1600.0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "flange_OD_mm": 140,
+      "shell_projection_mm": 120,
+      "drawing_azimuth_deg": 90,
+      "basis": "PDF明确DN32及外伸120；标高按主视图面约600暂取，非明示尺寸"
+    },
+    {
+      "id": "N6",
+      "dn": 32,
+      "center_mm": [
+        770,
+        0,
+        -2012.0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "flange_OD_mm": 140,
+      "shell_projection_mm": 120,
+      "drawing_azimuth_deg": 90,
+      "basis": "PDF明确DN32及外伸120；标高按主视图面约600暂取，非明示尺寸"
+    }
+  ],
+  "bounds_mm": [
+    2055.0,
+    2055.0,
+    5012.0
+  ],
+  "limits": [
+    "外壳1300与换热块1200分别记录，不将传热面积当几何尺寸。",
+    "压板/封头过渡、法兰未标厚度、吊耳、弹簧包络及N5/N6准确标高按图面/旧DXF作展示量测。",
+    "20组拉杆沿用布置DXF的φ1390圈上孔位；内部10流程、石墨流道不展开。",
+    "AB/CD图纸200mm差异已按用户选择解决：保持设备位置，AB钢架随设备调整；见来源与差异。",
+    "该PDF为厂家条件图，本模型不是制造或施工放样模型。"
+  ],
   "id": "C41B04E",
   "group": "C41B04A-F",
-  "name": "偏钛酸冷却器",
-  "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
-  "qty": "6",
-  "x": -3110,
-  "y": 68218,
-  "z": 4500,
-  "level": "EL106",
-  "pos_el": 104.5,
-  "w": 1700,
-  "h": 3600,
-  "depth": 1700,
-  "shape": "coolerUnit",
-  "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-  "foundation": null,
-  "support": null,
-  "quantity_role": "individual unit expanded from paired CAD callout",
-  "source_foundation": {
-    "material": "RC",
-    "width": 1950,
-    "depth": 1950,
-    "height": 180
+  "qty": 6,
+  "position_mm": [
+    21300.0,
+    63300.0094,
+    4500
+  ],
+  "rotation_deg": 180.0,
+  "mirror_y": true,
+  "current_files": {
+    "model": "版本/2.0/C41B04/设备/model_data.js",
+    "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+    "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+    "parameters": "parameters/C41B04E.json",
+    "installation": "版本/2.0/C41B04/安装表.json"
   },
-  "source_support": {
-    "material": "steel",
-    "count": 12,
-    "height": 250
-  },
-  "model_scope": "冷却器本体；不含基础及底部支撑",
-  "footprint_mm": [
-    1700.0,
-    1700.0
-  ],
-  "body_height_mm": 3600.0,
-  "paired_platform_reference_mm": [
-    4800,
-    2725
-  ],
-  "platform_center_spacing_mm": 2400,
-  "foundation_removed": true,
-  "support_removed": true,
-  "cad_position_mm": [
-    659824,
-    368218
-  ],
-  "plan_sheet": "EL100",
-  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
-  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
-  "large_equipment": true
+  "legacy_parameters": "版本/1.0/快照/水解设备模型库/parameters/C41B04E.json"
 }

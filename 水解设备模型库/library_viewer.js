@@ -209,6 +209,13 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     field(info,'待核','新接口绝对方位；POS EL是否指型钢底。m高座、b/j切向共座和g/h直套管已按详图修正；部分未标厚度仍列包络。');
     const links=element('div','','links');links.append(link('1.0冻结原版','版本/1.0/index.html'),link('本类整改说明','版本/2.0/C41B02/整改说明.html'),link('01/02结构对照','版本/2.0/C41B02/修订对比.html'),link('5台安装表','版本/2.0/C41B02/安装表.json'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('钛液预热槽(C41B02A-E).dxf'),true));info.append(links);
   }
+  if (tagForRow(row)==='C41B04' && overrides.equipment?.C41B04) {
+    const info=section(detail,'本类2.0整改与安装');
+    field(info,'尺寸基准','外壳Ø1300 / 换热块Ø1200；端面高4812；四托耳承托EL104.500；底端EL101.888 / 顶端EL106.700。弹簧另列约200mm包络。');
+    field(info,'图纸整合','保持6台设备布置位置及旋转/镜像，AB钢架随设备调整约200mm；单组梁网4275×1875不变。原台账230㎡与条件图240㎡差异保留。');
+    const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/C41B04/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/C41B04/修订对比.html'),link('厂家条件图PDF','水解设备图纸/'+encodeURIComponent('偏钛酸酸冷却器(C41B04A-F).pdf'),true),link('6台安装表','版本/2.0/C41B04/安装表.json'));info.append(links);
+    figure('厂家条件图 · 主视','版本/2.0/C41B04/来源_主视.png');figure('厂家条件图 · 俯视','版本/2.0/C41B04/来源_俯视.png');
+  }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
     const civil=section(detail,support?'安装支架与图纸':'基础图与模型');
@@ -298,7 +305,7 @@ function collectPartGroups(mesh, archive) {
     }
   } else {
     for (const part of mesh) {
-      const label=part.name==='支撑_换热器托耳'?'换热器托耳':part.name.split('_')[0];
+      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?'换热器托耳':part.name.split('_')[0];
       if (!groups.has(label)) groups.set(label,[]);
       groups.get(label).push(part);
     }
