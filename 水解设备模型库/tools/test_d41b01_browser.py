@@ -42,7 +42,8 @@ with sync_playwright() as pw:
  assert page.evaluate('assemblyViewer.cfg.equipment.filter(p=>p.asset==="D41B01"&&p.equipment_version==="2.0-D41B01-01"&&p.position_mm[2]===11000).length')==5
  assert page.evaluate('assemblyViewer.cfg.foundations.filter(p=>p.asset==="foundation-D41B01").length')==2
  assert page.evaluate('assemblyViewer.cfg.equipment.find(p=>p.id==="D41B01A").z_status')=='待核'
- page.locator('#inside').click();page.locator('#search').fill('D41B01B');page.locator('#list button').first.click();page.locator('#focus').click();page.wait_for_timeout(200);page.screenshot(path=str(OUT/'预览_总装定位.png'))
+ page.locator('#inside').click();page.locator('#shell').select_option('hidden');page.evaluate('assemblyViewer.setView(Math.PI/4,.35)')
+ page.locator('#search').fill('D41B01B');page.locator('#list button').first.click();page.locator('#focus').click();page.wait_for_timeout(200);page.screenshot(path=str(OUT/'预览_总装定位.png'))
  checks['total_five_devices_two_pairs_no_A_support']=True
  assert not errors,errors;assert not failed,failed
  browser.close()
