@@ -40,8 +40,10 @@ def build():
     for revision in revisions.values():
         params=doc('水解设备模型库/'+str(Path(revision['equipment']).with_name('参数.json')))
         inputs.add(params['source_drawing'])
-        foundation_params=doc('水解设备模型库/'+str(Path(revision['foundation']).with_name('参数.json')))
-        if foundation_params.get('source_drawing'):inputs.add(foundation_params['source_drawing'])
+        if revision.get('foundation'):
+            foundation_params=doc('水解设备模型库/'+str(Path(revision['foundation']).with_name('参数.json')))
+            if foundation_params.get('source_drawing'):inputs.add(foundation_params['source_drawing'])
+        if revision.get('support_review'):doc('水解设备模型库/'+revision['support_review'])
     labels=[]
     for e in m.query('TEXT MTEXT'):
         s=e.dxf.text if e.dxftype()=='TEXT' else e.plain_text()
@@ -149,6 +151,9 @@ def build():
                 elif record['id'].startswith('D41B01'):
                     record['superseded_arrangement_symbol_evidence']=record.pop('evidence',{})
                     record['status']='新总图接口，位置保留、工艺方位待核'
+                elif record['id'].startswith('L41B01'):
+                    record['arrangement_symbol_evidence']=record.pop('evidence',{})
+                    record['status']='布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核'
         layout_review['reviewed']=sum(p['status'] in ('位置与顶视方位已复核','泵原点及长轴已校正') for p in layout_review['records'])
         layout_review['pending']=sum('待核' in p['status'] for p in layout_review['records'])
         save('data/布置复核.json',layout_review)

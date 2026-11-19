@@ -1,0 +1,140 @@
+{
+  "version": "2.0-L41B01-01",
+  "status": "passed-with-unresolved-support-and-EL",
+  "native_DXF_and_ledger_applicability": "passed",
+  "closed_components": 157,
+  "ports": 5,
+  "ears": 3,
+  "top_nozzle_center_errors_mm": {
+    "d": 0.0,
+    "e": 0.0
+  },
+  "ear_hole_centers_native_mm": [
+    [
+      -691.0,
+      0.0
+    ],
+    [
+      345.5,
+      -598.42355
+    ],
+    [
+      345.5,
+      598.42355
+    ]
+  ],
+  "INSERT_transform_checks": [
+    {
+      "id": "L41B01A",
+      "source_insert": "B94F7",
+      "rotation_deg": 0,
+      "mirror_y": true,
+      "two_top_circle_WCS_errors_mm": [
+        0.0,
+        0.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01B",
+      "source_insert": "B94F5",
+      "rotation_deg": 0,
+      "mirror_y": false,
+      "two_top_circle_WCS_errors_mm": [
+        0.0,
+        0.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01D",
+      "source_insert": "B94ED",
+      "rotation_deg": 0,
+      "mirror_y": false,
+      "two_top_circle_WCS_errors_mm": [
+        0.0,
+        0.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01E",
+      "source_insert": "B94FF",
+      "rotation_deg": 0,
+      "mirror_y": true,
+      "two_top_circle_WCS_errors_mm": [
+        1e-05,
+        1e-05
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01C",
+      "source_insert": "B94EF",
+      "rotation_deg": 0,
+      "mirror_y": true,
+      "two_top_circle_WCS_errors_mm": [
+        0.0,
+        0.0
+      ],
+      "z_status": "待核"
+    },
+    {
+      "id": "L41B01F",
+      "source_insert": "B94FD",
+      "rotation_deg": 0,
+      "mirror_y": false,
+      "two_top_circle_WCS_errors_mm": [
+        1.4e-05,
+        1.4e-05
+      ],
+      "z_status": "待核"
+    }
+  ],
+  "other_66_placed_and_93_catalog_records": "unchanged",
+  "existing_foundations": "unchanged; no new L41B01 support",
+  "building_bridge_and_accepted_models_hashes": "unchanged",
+  "screen": {
+    "columns": 120,
+    "beams": 76,
+    "bridge_parts": 112,
+    "other_equipment": 66,
+    "aabb_candidates": 0
+  },
+  "current_provisional_position_intersections": [],
+  "floor_checks": [
+    {
+      "id": "L41B01A",
+      "crossed_floor_slabs": []
+    },
+    {
+      "id": "L41B01B",
+      "crossed_floor_slabs": []
+    },
+    {
+      "id": "L41B01D",
+      "crossed_floor_slabs": []
+    },
+    {
+      "id": "L41B01E",
+      "crossed_floor_slabs": []
+    },
+    {
+      "id": "L41B01C",
+      "crossed_floor_slabs": []
+    },
+    {
+      "id": "L41B01F",
+      "crossed_floor_slabs": []
+    }
+  ],
+  "support_and_EL": "unresolved by user decision; no civil support inferred",
+  "limits": [
+    "本体/接口/三耳按适用总图；未提供-2/-3/-4制造详图，局部法兰/螺栓外廓及耳板未标细节按CAD图面展示。",
+    "主连接法兰外廓按图面Ø1375；Ø1320为主连接螺栓圆，Ø1382为三耳孔圆，底口Ø400为该口螺栓圆，均不混作筒径或法兰外径。",
+    "仅表现外露PP筛板边缘、垫片、加强筋，不展开内部筛孔、衬砖/衬胶施工层与隐藏流道。",
+    "总图注明按工艺专业管口方位图；按布置INSERT保留平面方向/镜像，但新接口绝对方位仍待核。",
+    "6台X/Y及原暂用Z保持；A/C/E纠正原INSERT负比例镜像遗漏。原Z无可靠承托依据，以底口端面作当前暂用原点，不能作为安装验收。",
+    "不造承托梁、支墩、地脚连接或检修空间；支承图/承托标高提供后再闭合安装链。"
+  ]
+}

@@ -41,10 +41,11 @@
   "new_port_records": 33,
   "k_covers": 8,
   "items": 5,
-  "other_items_unchanged": 83,
+  "other_items_unchanged": 77,
   "other_revised_classes": [
     "C41B04",
-    "D41B01"
+    "D41B01",
+    "L41B01"
   ],
   "columns_checked": 120,
   "beams_checked": 76,
