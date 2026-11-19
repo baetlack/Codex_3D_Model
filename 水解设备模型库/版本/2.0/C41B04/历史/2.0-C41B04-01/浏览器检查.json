@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": {
+    "six_equipment_three_frames_and_datum_labels": true,
+    "four_separate_ears_and_holes": true,
+    "steel_independent": true,
+    "current_glb_and_manufacturer_pdf_downloads": true,
+    "frozen_1_0_vs_new_compared_at_same_bearing_datum": true,
+    "six_current_instances_and_three_independent_supports_in_total": true
+  },
+  "page_errors": [],
+  "failed_resources": []
+}

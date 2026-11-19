@@ -1,0 +1,33 @@
+{
+  "version": "2.0-C41B04-01",
+  "name": "三组双机钢架",
+  "source_drawing": "水解桥架工程/data/原始资料/设备基础/水解设备基础图.dxf",
+  "source_sha256": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7",
+  "unit": "mm",
+  "single_frame_axis_span_mm": [
+    4275,
+    1875
+  ],
+  "bearing_height_mm": 4500,
+  "device_center_spacing_mm": 2400,
+  "source_group_spacing_mm": [
+    4200,
+    3000
+  ],
+  "layout_group_spacing_mm": [
+    3999.5189,
+    2999.9812
+  ],
+  "frame_policy": "layout",
+  "sections": "GZ1/GL1/ZC1继续沿用原基础模型展示截面，未作无依据细化",
+  "single_frame_bounds_mm": [
+    4725.0,
+    2325.0,
+    4500.0
+  ],
+  "combined_bounds_mm": [
+    4725.0001,
+    9324.5001,
+    4500.0
+  ]
+}

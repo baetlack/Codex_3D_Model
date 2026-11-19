@@ -1,5 +1,5 @@
 {
-  "revision": "2.0-C41B04-01",
+  "revision": "2.0-C41B04-02",
   "date": "2026-11-19",
   "status": "图纸整合、几何及安装检查完成，待用户外形复核",
   "accuracy_reference": "C41B02-02用户已认可的外形/精度",
@@ -23,12 +23,16 @@
     "bottom_to_bearing": 2612,
     "lug_outer_span": 2055,
     "lug_hole_span": 1875,
-    "lug_hole_diameter": 30,
-    "spring_envelope_above_top": 200
+    "lug_hole_diameter": 30
   },
   "confirmed_C41B02_core": "unchanged",
   "remaining": [
     "台账230㎡与厂家条件图240㎡容量口径差异继续保留",
-    "弹簧/吊耳/未标法兰厚度和N5/N6标高含外观量测"
-  ]
+    "吊耳/未标法兰厚度和N5/N6标高含外观量测"
+  ],
+  "revision_02_removal": {
+    "removed_objects": 82,
+    "user_instruction": "删掉",
+    "scope": "两个大环及20组杆/弹簧/配套螺母，其余保持"
+  }
 }

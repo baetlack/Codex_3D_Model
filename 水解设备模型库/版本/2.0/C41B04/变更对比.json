@@ -1,5 +1,5 @@
 {
-  "version": "2.0-C41B04-01",
+  "version": "2.0-C41B04-02",
   "old_model": "设备1.0，原模型和原安装表保留",
   "old_envelope_mm": [
     2150,
@@ -9,7 +9,7 @@
   "new_envelope_mm": [
     2055,
     2055,
-    5012
+    4814
   ],
   "new_explicit_end_face_height_mm": 4812,
   "old_ears": 2,
@@ -128,5 +128,16 @@
       "after_Y": 63300.0094,
       "delta_Y_mm": 0.018799999998009298
     }
-  ]
+  ],
+  "revision_02": {
+    "user_instruction": "删掉",
+    "removed": [
+      "上下大开孔端环2件",
+      "通长外露杆20根",
+      "配套弹簧20件",
+      "配套螺母40件"
+    ],
+    "retained": "全部其余设备网格、接口紧固件、托耳、贴体连接圈、三组钢架和安装变换",
+    "previous_revision": "历史/2.0-C41B04-01"
+  }
 }

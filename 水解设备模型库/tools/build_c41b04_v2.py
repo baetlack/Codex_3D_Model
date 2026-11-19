@@ -14,7 +14,7 @@ sys.path.insert(0,str(REPO/'水解桥架工程/tools/source'))
 import build_tank_mixer as geo
 sys.path.insert(0,str(REPO/'水解总装工程/tools'))
 from check_assembly import script
-VERSION='2.0-C41B04-01'
+VERSION='2.0-C41B04-02'
 PDF='水解设备模型库/水解设备图纸/偏钛酸酸冷却器(C41B04A-F).pdf'
 FOUND='水解桥架工程/data/原始资料/设备基础/水解设备基础图.dxf'
 LAYOUT='水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf'
@@ -57,17 +57,6 @@ def pipe(name,start,end,ro,ri,color=STEEL):
         j=(i+1)%count
         faces.extend([[i,j,count+j,count+i],[2*count+j,2*count+i,3*count+i,3*count+j],[count+i,count+j,3*count+j,3*count+i],[j,i,2*count+i,2*count+j]])
     geo.add(name,color,vertices,faces)
-def spring(name,xy):
-    count=7*24;theta=np.linspace(0,14*math.pi,count+1);vertices=[];faces=[]
-    for t in theta:
-        c=np.array([xy[0]+27*math.cos(t),xy[1]+27*math.sin(t),TOP+12+160*t/(14*math.pi)])
-        normal=np.array([math.cos(t),math.sin(t),0]);binormal=np.array([0,0,1])
-        vertices.extend((c+5*math.cos(s)*normal+5*math.sin(s)*binormal).tolist() for s in np.linspace(0,2*math.pi,9)[:-1])
-    for i in range(count):
-        for j in range(8):faces.append([i*8+j,i*8+(j+1)%8,(i+1)*8+(j+1)%8,(i+1)*8+j])
-    faces+=[list(reversed(range(8))),list(range(count*8,(count+1)*8))]
-    geo.add(name,DARK,vertices,faces)
-
 def equipment():
     geo.parts.clear();ports=[]
     # OD1300 outer shell, Ø1200 graphite block specification is kept separately.
@@ -75,18 +64,10 @@ def equipment():
     geo.cyl('本体_下端收口',BOTTOM+120,BOTTOM+360,480,BODY,96,650)
     geo.cyl('本体_上端收口',TOP-360,TOP-220,650,BODY,96,600)
     geo.cyl('本体_上端集流盖',TOP-220,TOP-200,600,BODY,96)
-    # Pressure end rings, tie rods and visible springs. Internal graphite channels
-    # and manufacturing joints are intentionally not drawn through the closed shell.
-    ring('本体_上压板',(0,0),TOP-24,TOP,730,600)
-    ring('本体_下压板',(0,0),BOTTOM,BOTTOM+24,730,480)
+    # User removed the two unsupported annular end plates and all 20 exposed
+    # tie-rod/spring/nut assemblies. Keep the two existing collars on the body.
     for label,z in [('上',TOP-450),('下',BOTTOM+400)]:
         ring('本体_'+label+'端连接圈',(0,0),z,z+35,705,650)
-    for i,a in enumerate(np.linspace(0,2*math.pi,21)[:-1],1):
-        xy=(695*math.cos(a),695*math.sin(a))
-        cylinder(f'拉杆_{i:02}',xy,BOTTOM,TOP+200,12,DARK,12)
-        spring(f'弹簧_{i:02}',xy)
-        cylinder(f'紧固_{i:02}_上螺母',xy,TOP+176,TOP+200,22,STEEL,6)
-        cylinder(f'紧固_{i:02}_下螺母',xy,BOTTOM,BOTTOM+24,22,STEEL,6)
     for label,x in [('N1',240),('N2',-240)]:
         xy=(x,390)
         ring('接口_'+label+'_接管',xy,TOP-220,TOP-24,109.5,100)
@@ -130,9 +111,11 @@ def main(frame_policy):
     pinned=json.loads((OUT/'本批保护基准.json').read_text());old={p['id']:p for p in pinned['equipment_placements']}
     ports=equipment();bounds=export(OUT/'设备','C41B04')
     parameters={'version':VERSION,'name':'偏钛酸冷却器','units':'mm','source_drawing':PDF,'source_sha256':sha(REPO/PDF),'drawing_number':'SS-XYK1200-240S(10)','drawing_stage':'条件图','drawing_revision':'Rev.0 2026.01.09，图面2026.4.14签字','user_accuracy_reference':'C41B02-02当前外形及展示精度已获用户认可；按同等工程展示风格，不展开内部流道',
-        'dimensions_mm':{'shell_OD':1300,'graphite_block_spec':1200,'end_face_height':4812,'top_to_bearing':2200,'bottom_to_bearing':2612,'lug_outer_span':2055,'lug_hole_span':1875,'lug_hole_diameter':30,'spring_envelope_above_top':200},
-        'exchange_area_m2':240,'ledger_exchange_area_m2':230,'datum':'四向托耳底承托面Z0；底端面Z-2612，顶端面Z2200','installation':{'bearing_EL':104.5,'bottom_end_EL':101.888,'top_end_EL':106.7,'spring_envelope_EL':106.9},'ports':ports,'bounds_mm':bounds,
-        'limits':['外壳1300与换热块1200分别记录，不将传热面积当几何尺寸。','压板/封头过渡、法兰未标厚度、吊耳、弹簧包络及N5/N6准确标高按图面/旧DXF作展示量测。','20组拉杆沿用布置DXF的φ1390圈上孔位；内部10流程、石墨流道不展开。','AB/CD图纸200mm差异已按用户选择解决：保持设备位置，AB钢架随设备调整；见来源与差异。','该PDF为厂家条件图，本模型不是制造或施工放样模型。']}
+        'dimensions_mm':{'shell_OD':1300,'graphite_block_spec':1200,'end_face_height':4812,'top_to_bearing':2200,'bottom_to_bearing':2612,'lug_outer_span':2055,'lug_hole_span':1875,'lug_hole_diameter':30},
+        'exchange_area_m2':240,'ledger_exchange_area_m2':230,'datum':'四向托耳底承托面Z0；底端面Z-2612，顶端面Z2200','installation':{'bearing_EL':104.5,'bottom_end_EL':101.888,'top_end_EL':106.7},'ports':ports,'bounds_mm':bounds,
+        'limits':['外壳1300与换热块1200分别记录，不将传热面积当几何尺寸。','封头过渡、法兰未标厚度、吊耳及N5/N6准确标高按图面/旧DXF作展示量测。','按用户要求删除2个大开孔端环、20根通长外露杆及配套20个弹簧/40个螺母；旧DXF圆符号不再用于推断这套外露构造。内部石墨流道不展开。','AB/CD图纸200mm差异已按用户选择解决：保持设备位置，AB钢架随设备调整；见来源与差异。','该PDF为厂家条件图，本模型不是制造或施工放样模型。']}
+    parameters['user_revision_decision']='删掉上下大环及20根外露杆和配套弹簧/螺母；其余构件、支架和安装变换保持'
+    parameters['model_max_EL']=104.5+max(v[2] for q in geo.parts for v in q[2])/1000
     save(OUT/'设备/参数.json',parameters)
     placements=[]
     for suffix in 'ABCDEF':
@@ -171,7 +154,7 @@ def main(frame_policy):
     frame_params={'version':VERSION,'name':'三组双机钢架','source_drawing':FOUND,'source_sha256':sha(REPO/FOUND),'unit':'mm','single_frame_axis_span_mm':[4275,1875],'bearing_height_mm':4500,'device_center_spacing_mm':2400,'source_group_spacing_mm':[4200,3000],'layout_group_spacing_mm':[3999.5189,2999.9812],'frame_policy':frame_policy,'sections':'GZ1/GL1/ZC1继续沿用原基础模型展示截面，未作无依据细化','single_frame_bounds_mm':frame_bounds,'combined_bounds_mm':combined_bounds}
     save(OUT/'支架/参数.json',frame_params);save(OUT/'支架/单组/参数.json',frame_params);save(OUT/'支架安装表.json',group_records)
     save(OUT/'来源与差异.json',{'revision':VERSION,'sources':{p:sha(REPO/p) for p in [PDF,FOUND,LAYOUT]},'accepted':['厂家总图H4812、托耳距上端2200、四托耳1875/2055、N1—N7管口表；图中240㎡与原台账230㎡差异单列','布置图6台中心及顶口朝向','基础图单组4275×1875、钢架顶4500、梁网与截面展示'],
-        'replaced':['旧5005高包络改明确端面高度4812，弹簧另列200包络','2只托耳改四向4只，底部2大口改5个DN50排净口','两处顶口Y-390改Y+390；取消无依据的中央顶口','旧4个相同侧口改N3/N4 DN300及N5/N6 DN32','6台逐台元数据1700×3600及面积240/230矛盾已整合，旧值在1.0保留'],
+        'replaced':['端面高度4812保持；02版删除01版的外露端环/杆/弹簧/配套螺母，撤销200mm弹簧包络','2只托耳改四向4只，底部2大口改5个DN50排净口','两处顶口Y-390改Y+390；取消无依据的中央顶口','旧4个相同侧口改N3/N4 DN300及N5/N6 DN32','6台逐台元数据1700×3600及面积240/230矛盾已整合，旧值在1.0保留'],
         'conflicts':[{'topic':'AB/CD组中心距','foundation_mm':4200,'layout_mm':3999.5189,'difference_mm':200.4811,'policy':frame_policy,'user_decision':'保留设备布置位置，AB组钢架随设备调整200mm','consequence':'按用户选择，以布置图设备中心定位三组钢架；保留基础图4200mm原值供追溯'}], 'limits':parameters['limits']})
     update_registry(parameters,placements,preview_offsets,combined_bounds,frame_policy)
     from publish_c41b04 import publish
@@ -189,7 +172,7 @@ def update_registry(parameters,placements,offsets,frame_bounds,policy):
     save(ROOT/'catalog.json',catalog)
     project=json.loads((ROOT/'project.json').read_text());project['active_version']='2.0（C41B02、C41B04）'
     project['revisions']['C41B02']['status']='用户已接受外形及精度为基准；POS与绝对方位待核'
-    project['revisions']['C41B04']={'version':VERSION,'equipment':'版本/2.0/C41B04/设备/model_data.js','foundation':'版本/2.0/C41B04/支架/model_data.js','foundation_single':'版本/2.0/C41B04/支架/单组/model_data.js','placements':'版本/2.0/C41B04/安装表.json','support_placements':'版本/2.0/C41B04/支架安装表.json','status':'本体/四托耳/接口修正；AB组200mm图纸差异待核' if policy=='pending' else '按用户选择整合钢架和设备布置'}
+    project['revisions']['C41B04']={'version':VERSION,'equipment':'版本/2.0/C41B04/设备/model_data.js','foundation':'版本/2.0/C41B04/支架/model_data.js','foundation_single':'版本/2.0/C41B04/支架/单组/model_data.js','placements':'版本/2.0/C41B04/安装表.json','support_placements':'版本/2.0/C41B04/支架安装表.json','status':'本体/四托耳/接口修正；AB组200mm图纸差异待核' if policy=='pending' else '02版删除无充分依据的外露大环/杆/弹簧/螺母；设备位置和钢架保持'}
     project['counts'].update(completed_batches=2,revised_items=11,other_items_unchanged=88);project['next_class']='D41B01';save(ROOT/'project.json',project)
     path=ROOT/'equipment_versions.js';overrides=json.loads(path.read_text().split('=',1)[1].strip().rstrip(';'))
     overrides['ledger']['C41B02A-E']['状态']='外形精度已确认 · 安装待核'
@@ -197,7 +180,7 @@ def update_registry(parameters,placements,offsets,frame_bounds,policy):
     old=json.loads((REPO/'水解桥架工程/models/设备/设备基础_20261106/基础索引.json').read_text())['assets']['C41B04']
     old.update(dir='版本/2.0/C41B04/支架/',stem='C41B04',bounds=frame_bounds,offsets=offsets,mount=[0,0,0],dimensions='3组双机钢架；单组柱轴距4275×1875，托耳承托EL104.500；本体端面H4812',note='AB/CD基础图4200、设备布置约4000，200差异待核。' if policy=='pending' else '按用户确认位置口径整合钢架，单组梁网不变。')
     overrides['foundations']['C41B04']=old
-    overrides['ledger']['C41B04A-F']={'状态':'2.0整改 · AB钢架位置待核' if policy=='pending' else '2.0整改','建模口径或缺项':'厂家条件图SS-XYK1200-240S(10)：Ø1200换热块/Ø1300壳体，端面H4812、四托耳；承托EL104.500；2顶口、5底口及4侧口分别建模。AB/CD钢架与布置相差200mm，已按用户选择保持设备位置、钢架随设备调整。'}
+    overrides['ledger']['C41B04A-F']={'状态':'2.0整改 · AB钢架位置待核' if policy=='pending' else '2.0整改','建模口径或缺项':'02版按用户要求删除外露端环/杆及配套弹簧螺母；厂家条件图SS-XYK1200-240S(10)：Ø1200换热块/Ø1300壳体，端面H4812、四托耳；承托EL104.500；2顶口、5底口及4侧口分别建模。AB/CD钢架与布置相差200mm，已按用户选择保持设备位置、钢架随设备调整。'}
     path.write_text('window.EQUIPMENT_VERSION_OVERRIDES='+json.dumps(overrides,ensure_ascii=False,separators=(',',':'))+';\n')
 
 if __name__=='__main__':
