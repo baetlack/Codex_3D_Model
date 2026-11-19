@@ -87,8 +87,8 @@
       "units": "mm"
     },
     "D41B01": {
-      "path": "../水解桥架工程/models/设备/设备基础_20261106/设备净模/D41B01/model_data.js",
-      "source": "水解桥架工程/models/设备/设备基础_20261106/设备净模/D41B01/model_data.js",
+      "path": "../水解设备模型库/版本/2.0/D41B01/设备/model_data.js",
+      "source": "水解设备模型库/版本/2.0/D41B01/设备/model_data.js",
       "units": "mm"
     },
     "C41B02": {
@@ -149,6 +149,11 @@
     "foundation-C41B04": {
       "path": "../水解设备模型库/版本/2.0/C41B04/支架/单组/model_data.js",
       "source": "水解设备模型库/版本/2.0/C41B04/支架/单组/model_data.js",
+      "units": "mm"
+    },
+    "foundation-D41B01": {
+      "path": "../水解设备模型库/版本/2.0/D41B01/支架/model_data.js",
+      "source": "水解设备模型库/版本/2.0/D41B01/支架/model_data.js",
       "units": "mm"
     }
   },
@@ -3453,13 +3458,13 @@
       "position_mm": [
         3700.0,
         52700.001,
-        9820
+        11000
       ],
       "rotation_deg": 0.0,
       "level": "EL106",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "orientation_status": "保留原图INSERT旋转/镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "F1B27",
       "source_block": "水解晶种制备槽",
       "label_handle": "F1B51",
@@ -3468,38 +3473,51 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "z_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
-      "layout_review": {
-        "reference_handle": "F1B27",
-        "reference_block": "水解晶种制备槽",
-        "source_rotation_deg": 180.0,
-        "source_scale": [
-          -1.0,
-          1
+      "equipment_version": "2.0-D41B01-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          3700.0,
+          52700.001,
+          9820
         ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": false,
-        "native_center_offset_mm": [
-          0,
-          0
-        ],
-        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
-            0.0,
-            0.0
-          ]
-        }
+        "before_bearing_local_z_mm": 1180,
+        "bearing_world_z_mm": 11000,
+        "xy_rotation_mirror_unchanged": true,
+        "legacy_layout_review": {
+          "reference_handle": "F1B27",
+          "reference_block": "水解晶种制备槽",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 7,
+            "matched_within_5mm": 7,
+            "nearest_error_mm": [
+              0.0,
+              0.004,
+              0.001,
+              0.051,
+              0.004,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "support_status": "成对承托模型；截面示意"
       }
     },
     {
@@ -3509,13 +3527,13 @@
       "position_mm": [
         28300.0,
         23900.001,
-        9820
+        11000
       ],
       "rotation_deg": 180.0,
       "level": "EL106",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "orientation_status": "保留原图INSERT旋转/镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "F1B3D",
       "source_block": "水解晶种制备槽",
       "label_handle": "F1B48",
@@ -3524,38 +3542,51 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "z_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "layout_review": {
-        "reference_handle": "F1B3D",
-        "reference_block": "水解晶种制备槽",
-        "source_rotation_deg": 180.0,
-        "source_scale": [
-          1,
-          1
+      "equipment_version": "2.0-D41B01-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          28300.0,
+          23900.001,
+          9820
         ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": false,
-        "native_center_offset_mm": [
-          0,
-          0
-        ],
-        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
-            0.0,
-            0.0
-          ]
-        }
+        "before_bearing_local_z_mm": 1180,
+        "bearing_world_z_mm": 11000,
+        "xy_rotation_mirror_unchanged": true,
+        "legacy_layout_review": {
+          "reference_handle": "F1B3D",
+          "reference_block": "水解晶种制备槽",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 7,
+            "matched_within_5mm": 7,
+            "nearest_error_mm": [
+              0.0,
+              0.004,
+              0.001,
+              0.051,
+              0.004,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "support_status": "成对承托模型；截面示意"
       }
     },
     {
@@ -3565,13 +3596,13 @@
       "position_mm": [
         3700.0,
         19300.001,
-        9820
+        11000
       ],
       "rotation_deg": 0.0,
       "level": "EL106",
       "xy_status": "图块中心定位",
-      "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "z_status": "待核",
+      "orientation_status": "保留原图INSERT旋转/镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "F1AB4",
       "source_block": "水解晶种制备槽",
       "label_handle": "F1ACA",
@@ -3580,38 +3611,51 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "z_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "layout_review": {
-        "reference_handle": "F1AB4",
-        "reference_block": "水解晶种制备槽",
-        "source_rotation_deg": 0.0,
-        "source_scale": [
-          1,
-          1
+      "equipment_version": "2.0-D41B01-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          3700.0,
+          19300.001,
+          9820
         ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": false,
-        "native_center_offset_mm": [
-          0,
-          0
-        ],
-        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
-            0.0,
-            0.0
-          ]
-        }
+        "before_bearing_local_z_mm": 1180,
+        "bearing_world_z_mm": 11000,
+        "xy_rotation_mirror_unchanged": true,
+        "legacy_layout_review": {
+          "reference_handle": "F1AB4",
+          "reference_block": "水解晶种制备槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 7,
+            "matched_within_5mm": 7,
+            "nearest_error_mm": [
+              0.0,
+              0.004,
+              0.001,
+              0.051,
+              0.004,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "support_status": "A支架待核"
       }
     },
     {
@@ -3621,13 +3665,13 @@
       "position_mm": [
         3700.0,
         55300.001,
-        9820
+        11000
       ],
       "rotation_deg": 0.0,
       "level": "EL106",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "orientation_status": "保留原图INSERT旋转/镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "F1B18",
       "source_block": "水解晶种制备槽",
       "label_handle": "F1B54",
@@ -3636,38 +3680,51 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "z_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
-      "layout_review": {
-        "reference_handle": "F1B18",
-        "reference_block": "水解晶种制备槽",
-        "source_rotation_deg": 0.0,
-        "source_scale": [
-          1,
-          1
+      "equipment_version": "2.0-D41B01-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          3700.0,
+          55300.001,
+          9820
         ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": false,
-        "native_center_offset_mm": [
-          0,
-          0
-        ],
-        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
-            0.0,
-            0.0
-          ]
-        }
+        "before_bearing_local_z_mm": 1180,
+        "bearing_world_z_mm": 11000,
+        "xy_rotation_mirror_unchanged": true,
+        "legacy_layout_review": {
+          "reference_handle": "F1B18",
+          "reference_block": "水解晶种制备槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 7,
+            "matched_within_5mm": 7,
+            "nearest_error_mm": [
+              0.0,
+              0.004,
+              0.001,
+              0.051,
+              0.004,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "support_status": "成对承托模型；截面示意"
       }
     },
     {
@@ -3677,13 +3734,13 @@
       "position_mm": [
         28300.0,
         26500.001,
-        9820
+        11000
       ],
       "rotation_deg": 180.0,
       "level": "EL106",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "已核对布置图顶视特征及INSERT镜像；未缩放源模型",
+      "orientation_status": "保留原图INSERT旋转/镜像；新总图要求工艺管口方位图，新接口绝对方位待核",
       "source_insert": "F1B2E",
       "source_block": "水解晶种制备槽",
       "label_handle": "F1B4E",
@@ -3692,38 +3749,51 @@
         778010.4484369854,
         305259.2765326499
       ],
-      "z_basis": "支架底 EL108.5，承托面 EL111.0；组合数据 mount Z1180，设备原点=111000-100000-1180",
+      "z_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
-      "layout_review": {
-        "reference_handle": "F1B2E",
-        "reference_block": "水解晶种制备槽",
-        "source_rotation_deg": 0.0,
-        "source_scale": [
-          -1.0,
-          1
+      "equipment_version": "2.0-D41B01-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          28300.0,
+          26500.001,
+          9820
         ],
-        "model_to_block_rotation_deg": 0,
-        "model_to_block_mirror_y": false,
-        "native_center_offset_mm": [
-          0,
-          0
-        ],
-        "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
-            0.0,
-            0.0
-          ]
-        }
+        "before_bearing_local_z_mm": 1180,
+        "bearing_world_z_mm": 11000,
+        "xy_rotation_mirror_unchanged": true,
+        "legacy_layout_review": {
+          "reference_handle": "F1B2E",
+          "reference_block": "水解晶种制备槽",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
+          "top_plan": null,
+          "top_port_witness": {
+            "model_features": 7,
+            "matched_within_5mm": 7,
+            "nearest_error_mm": [
+              0.0,
+              0.004,
+              0.001,
+              0.051,
+              0.004,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "support_status": "成对承托模型；截面示意"
       }
     },
     {
@@ -4934,6 +5004,40 @@
         "C41B04F"
       ],
       "status": "按设备中心与钢架梁网就位"
+    },
+    {
+      "id": "FRAME-D41B01BC",
+      "name": "晶种制备槽BC组成对支架",
+      "asset": "foundation-D41B01",
+      "position_mm": [
+        3700.0,
+        54000.001,
+        11000
+      ],
+      "rotation_deg": 0,
+      "level": "EL106",
+      "support_for": [
+        "D41B01B",
+        "D41B01C"
+      ],
+      "status": "承托EL111.000、支架底EL108.500；截面示意待施工图"
+    },
+    {
+      "id": "FRAME-D41B01DE",
+      "name": "晶种制备槽DE组成对支架",
+      "asset": "foundation-D41B01",
+      "position_mm": [
+        28300.0,
+        25200.001,
+        11000
+      ],
+      "rotation_deg": 0,
+      "level": "EL106",
+      "support_for": [
+        "D41B01D",
+        "D41B01E"
+      ],
+      "status": "承托EL111.000、支架底EL108.500；截面示意待施工图"
     }
   ],
   "unplaced": [
@@ -5190,6 +5294,7 @@
   ],
   "equipment_versions": {
     "C41B02": "2.0-C41B02-02",
-    "C41B04": "2.0-C41B04-02"
+    "C41B04": "2.0-C41B04-02",
+    "D41B01": "2.0-D41B01-01"
   }
 }

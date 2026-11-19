@@ -216,6 +216,13 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/C41B04/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/C41B04/修订对比.html'),link('厂家条件图PDF','水解设备图纸/'+encodeURIComponent('偏钛酸酸冷却器(C41B04A-F).pdf'),true),link('6台安装表','版本/2.0/C41B04/安装表.json'));info.append(links);
     figure('厂家条件图 · 主视','版本/2.0/C41B04/来源_主视.png');figure('厂家条件图 · 俯视','版本/2.0/C41B04/来源_俯视.png');
   }
+  if (tagForRow(row)==='D41B01' && overrides.equipment?.D41B01) {
+    const info=section(detail,'本类2.0整改与安装');
+    field(info,'尺寸与安装','钢壳内径1800/外径1816，保温60；四托耳底EL111.000，槽顶EL111.600，电机顶EL113.103。5台统一新本体。');
+    field(info,'支架与待核','B/C、D/E成对支架，平面中心距2600、承托高2500；截面沿用示意。平面2600与剖面水平2500差100待核。A支架及标高适用性待核；新接口绝对方位待工艺方位图。');
+    const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/D41B01/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/D41B01/修订对比.html'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('晶种制备槽(D41B01A-E).dxf'),true),link('5台安装表','版本/2.0/D41B01/安装表.json'));info.append(links);
+    figure('新增总图 · 主视','版本/2.0/D41B01/依据_主视.png');figure('新增总图 · 俯视','版本/2.0/D41B01/依据_俯视.png');figure('刚性环耳式支座详图','版本/2.0/D41B01/依据_托耳.png');
+  }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
     const civil=section(detail,support?'安装支架与图纸':'基础图与模型');
@@ -305,7 +312,7 @@ function collectPartGroups(mesh, archive) {
     }
   } else {
     for (const part of mesh) {
-      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?'换热器托耳':part.name.split('_')[0];
+      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':'换热器托耳'):part.name.split('_')[0];
       if (!groups.has(label)) groups.set(label,[]);
       groups.get(label).push(part);
     }

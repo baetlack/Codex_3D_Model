@@ -43,3 +43,11 @@ python tools/test_module_packages.py --output /tmp/hydrolysis-packages --browser
 ```
 
 后续每次发布使用新的 `modules-*` 标签，运行上述打包与校验，再运行 `python tools/publish_module_branches.py --output /tmp/hydrolysis-packages --version modules-YYYY-MM-DD` 生成模块分支与版本标签，检查后用Git推送这八个引用。Release中列出四个标签的原生ZIP下载链接。各模块发布到 `module-*` 分支，GitHub原生生成独立ZIP；固定版本使用 `modules-日期-模块` 标签，旧标签及Release不覆盖。浏览检查需要安装Playwright/Chromium。
+
+<details><summary>设备预览 · 晶种制备槽当前修订</summary>
+
+![晶种制备槽与成对支架](水解设备模型库/版本/2.0/D41B01/预览_双槽支架.png)
+
+[本类说明与原版对比](水解设备模型库/版本/2.0/D41B01/整改说明.html)：5台统一新本体，BC/DE两组成对支架；A支架与新接口绝对方位待核。当前3类16项完成本轮整改。
+
+</details>

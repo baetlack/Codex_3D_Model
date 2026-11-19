@@ -2322,7 +2322,7 @@
     },
     {
       "id": "D41B01B",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         3700.0,
         52700.001
@@ -2334,7 +2334,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "F1B27",
         "reference_block": "水解晶种制备槽",
         "source_rotation_deg": 180.0,
@@ -2351,14 +2352,13 @@
         "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
         "top_plan": null,
         "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
+          "model_features": 6,
+          "matched_within_5mm": 4,
           "nearest_error_mm": [
             0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
+            0.0,
+            75.0,
+            442.504,
             0.0,
             0.0
           ]
@@ -2367,7 +2367,7 @@
     },
     {
       "id": "D41B01D",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         28300.0,
         23900.001
@@ -2379,7 +2379,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "F1B3D",
         "reference_block": "水解晶种制备槽",
         "source_rotation_deg": 180.0,
@@ -2396,14 +2397,13 @@
         "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
         "top_plan": null,
         "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
+          "model_features": 6,
+          "matched_within_5mm": 4,
           "nearest_error_mm": [
             0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
+            0.0,
+            75.0,
+            442.504,
             0.0,
             0.0
           ]
@@ -2412,7 +2412,7 @@
     },
     {
       "id": "D41B01A",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         3700.0,
         19300.001
@@ -2424,7 +2424,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "F1AB4",
         "reference_block": "水解晶种制备槽",
         "source_rotation_deg": 0.0,
@@ -2441,14 +2442,13 @@
         "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
         "top_plan": null,
         "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
+          "model_features": 6,
+          "matched_within_5mm": 4,
           "nearest_error_mm": [
             0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
+            0.0,
+            75.0,
+            442.504,
             0.0,
             0.0
           ]
@@ -2457,7 +2457,7 @@
     },
     {
       "id": "D41B01C",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         3700.0,
         55300.001
@@ -2469,7 +2469,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "F1B18",
         "reference_block": "水解晶种制备槽",
         "source_rotation_deg": 0.0,
@@ -2486,14 +2487,13 @@
         "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
         "top_plan": null,
         "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
+          "model_features": 6,
+          "matched_within_5mm": 4,
           "nearest_error_mm": [
             0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
+            0.0,
+            75.0,
+            442.504,
             0.0,
             0.0
           ]
@@ -2502,7 +2502,7 @@
     },
     {
       "id": "D41B01E",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图接口，位置保留、工艺方位待核",
       "before_xy_mm": [
         28300.0,
         26500.001
@@ -2514,7 +2514,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "F1B2E",
         "reference_block": "水解晶种制备槽",
         "source_rotation_deg": 0.0,
@@ -2531,14 +2532,13 @@
         "basis": "七处顶口与块定义一致，应用原图INSERT镜像",
         "top_plan": null,
         "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
+          "model_features": 6,
+          "matched_within_5mm": 4,
           "nearest_error_mm": [
             0.0,
-            0.004,
-            0.001,
-            0.051,
-            0.004,
+            0.0,
+            75.0,
+            442.504,
             0.0,
             0.0
           ]
@@ -2947,7 +2947,7 @@
       "status": "圆轮廓位置可核，朝向缺少特征待核"
     }
   ],
-  "reviewed": 57,
-  "pending": 15,
+  "reviewed": 52,
+  "pending": 20,
   "rule": "位置/朝向按真实图块与顶视特征复核；负比例只取镜像与方向，设备净模尺寸不缩放；无法对应的保留待核"
 }

@@ -1383,8 +1383,24 @@
       "h": 1600,
       "shape": "cylinder",
       "large_equipment": false,
-      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B01-01",
+      "model_spec": "壳内Ø1800/钢壳Ø1816；保温60；筒高1600；四耳承托EL111.000；A支架待核",
+      "position_mm": [
+        3700.0,
+        52700.001,
+        11000
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/D41B01/设备/model_data.js",
+        "glb": "版本/2.0/D41B01/设备/D41B01.glb",
+        "obj": "版本/2.0/D41B01/设备/D41B01.obj",
+        "parameters": "parameters/D41B01B.json",
+        "installation": "版本/2.0/D41B01/安装表.json"
+      }
     },
     {
       "id": "D41B01D",
@@ -1403,8 +1419,24 @@
       "h": 1600,
       "shape": "cylinder",
       "large_equipment": false,
-      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B01-01",
+      "model_spec": "壳内Ø1800/钢壳Ø1816；保温60；筒高1600；四耳承托EL111.000；A支架待核",
+      "position_mm": [
+        28300.0,
+        23900.001,
+        11000
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/D41B01/设备/model_data.js",
+        "glb": "版本/2.0/D41B01/设备/D41B01.glb",
+        "obj": "版本/2.0/D41B01/设备/D41B01.obj",
+        "parameters": "parameters/D41B01D.json",
+        "installation": "版本/2.0/D41B01/安装表.json"
+      }
     },
     {
       "id": "D41B01A",
@@ -1423,8 +1455,24 @@
       "h": 1600,
       "shape": "cylinder",
       "large_equipment": false,
-      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B01-01",
+      "model_spec": "壳内Ø1800/钢壳Ø1816；保温60；筒高1600；四耳承托EL111.000；A支架待核",
+      "position_mm": [
+        3700.0,
+        19300.001,
+        11000
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/D41B01/设备/model_data.js",
+        "glb": "版本/2.0/D41B01/设备/D41B01.glb",
+        "obj": "版本/2.0/D41B01/设备/D41B01.obj",
+        "parameters": "parameters/D41B01A.json",
+        "installation": "版本/2.0/D41B01/安装表.json"
+      }
     },
     {
       "id": "D41B01C",
@@ -1443,8 +1491,24 @@
       "h": 1600,
       "shape": "cylinder",
       "large_equipment": false,
-      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B01-01",
+      "model_spec": "壳内Ø1800/钢壳Ø1816；保温60；筒高1600；四耳承托EL111.000；A支架待核",
+      "position_mm": [
+        3700.0,
+        55300.001,
+        11000
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/D41B01/设备/model_data.js",
+        "glb": "版本/2.0/D41B01/设备/D41B01.glb",
+        "obj": "版本/2.0/D41B01/设备/D41B01.obj",
+        "parameters": "parameters/D41B01C.json",
+        "installation": "版本/2.0/D41B01/安装表.json"
+      }
     },
     {
       "id": "D41B01E",
@@ -1463,8 +1527,24 @@
       "h": 1600,
       "shape": "cylinder",
       "large_equipment": false,
-      "position_basis": "三层剖视图设备底座标高EL108.500；平面轴网位置按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "保持原承托面EL111.000；B/C、D/E支架底EL108.500，上部承托高2500；A支架及该标高适用性待核",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B01-01",
+      "model_spec": "壳内Ø1800/钢壳Ø1816；保温60；筒高1600；四耳承托EL111.000；A支架待核",
+      "position_mm": [
+        28300.0,
+        26500.001,
+        11000
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/D41B01/设备/model_data.js",
+        "glb": "版本/2.0/D41B01/设备/D41B01.glb",
+        "obj": "版本/2.0/D41B01/设备/D41B01.obj",
+        "parameters": "parameters/D41B01E.json",
+        "installation": "版本/2.0/D41B01/安装表.json"
+      }
     },
     {
       "id": "L41B03",
@@ -2183,5 +2263,5 @@
     }
   ],
   "legacy_export_version": "0.2",
-  "binding_policy": "C41B02当前模型与参数按current_files；obj/及viewer_data.js旧网格保留历史，当前浏览不读取它们。其余条目不变。"
+  "binding_policy": "已整改条目按current_files引用2.0；其余条目和历史导出保留；旧cad_position_mm是文字点追溯，不作为安装中心。"
 }
