@@ -1,7 +1,7 @@
 {
   "module": "building",
   "name": "厂房外观模型",
-  "source_commit": "0801893a1c72f621ac2a51d53248ab08202d304b",
+  "source_commit": "7bb10bf2a2323e240298fb64d7fb69f6f9de1aad",
   "entry": "厂房外观模型/index.html",
   "versions": {
     "bridge": "2.0-column-contact",
@@ -30,6 +30,13 @@
         "placements": "版本/2.0/D41B01/安装表.json",
         "support_placements": "版本/2.0/D41B01/支架安装表.json",
         "status": "5台新本体与BC/DE成对支架；平剖面槽距100差异、A支架/新接口绝对方位待核"
+      },
+      "L41B01": {
+        "version": "2.0-L41B01-01",
+        "equipment": "版本/2.0/L41B01/设备/model_data.js",
+        "placements": "版本/2.0/L41B01/安装表.json",
+        "support_review": "版本/2.0/L41B01/支承待核.json",
+        "status": "6台本体/三耳更新，A/C/E源镜像纠正；保留暂用位置，承托结构/EL与新管口方位待核"
       }
     },
     "building_sha256": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b"
