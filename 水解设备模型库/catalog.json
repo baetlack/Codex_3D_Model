@@ -1,5 +1,5 @@
 {
-  "version": "2.0-first-C41B02",
+  "version": "2.0-revised-classes",
   "units": "mm",
   "count": 99,
   "source": "2.水解水洗设备一览表 2026.8.12.xlsx",
@@ -530,19 +530,36 @@
       "name": "偏钛酸冷却器",
       "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
       "qty": "6",
-      "level": "EL106",
+      "level": "EL100",
       "pos_el": 104.5,
       "cad_position_mm": [
         659824,
         368218
       ],
       "plan_sheet": "EL100",
-      "w": 1700,
-      "h": 3600,
+      "w": 1300,
+      "h": 4812,
       "shape": "coolerUnit",
       "large_equipment": true,
-      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "depth": 1300,
+      "model_version": "2.0-C41B04-01",
+      "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
+      "position_mm": [
+        21300.0,
+        63300.0094,
+        4500
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B04/设备/model_data.js",
+        "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+        "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+        "parameters": "parameters/C41B04E.json",
+        "installation": "版本/2.0/C41B04/安装表.json"
+      }
     },
     {
       "id": "C41B04F",
@@ -550,19 +567,36 @@
       "name": "偏钛酸冷却器",
       "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
       "qty": "6",
-      "level": "EL106",
+      "level": "EL100",
       "pos_el": 104.5,
       "cad_position_mm": [
         662224,
         368218
       ],
       "plan_sheet": "EL100",
-      "w": 1700,
-      "h": 3600,
+      "w": 1300,
+      "h": 4812,
       "shape": "coolerUnit",
       "large_equipment": true,
-      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "depth": 1300,
+      "model_version": "2.0-C41B04-01",
+      "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
+      "position_mm": [
+        23700.0,
+        63300.0094,
+        4500
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B04/设备/model_data.js",
+        "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+        "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+        "parameters": "parameters/C41B04F.json",
+        "installation": "版本/2.0/C41B04/安装表.json"
+      }
     },
     {
       "id": "D41B02B3",
@@ -1190,19 +1224,36 @@
       "name": "偏钛酸冷却器",
       "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
       "qty": "6",
-      "level": "EL106",
+      "level": "EL100",
       "pos_el": 104.5,
       "cad_position_mm": [
         669906,
         375269
       ],
       "plan_sheet": "EL100",
-      "w": 1700,
-      "h": 3600,
+      "w": 1300,
+      "h": 4812,
       "shape": "coolerUnit",
       "large_equipment": true,
-      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "depth": 1300,
+      "model_version": "2.0-C41B04-01",
+      "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
+      "position_mm": [
+        21300.0001,
+        70299.5095,
+        4500
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B04/设备/model_data.js",
+        "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+        "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+        "parameters": "parameters/C41B04A.json",
+        "installation": "版本/2.0/C41B04/安装表.json"
+      }
     },
     {
       "id": "C41B04B",
@@ -1210,19 +1261,36 @@
       "name": "偏钛酸冷却器",
       "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
       "qty": "6",
-      "level": "EL106",
+      "level": "EL100",
       "pos_el": 104.5,
       "cad_position_mm": [
         672306,
         375269
       ],
       "plan_sheet": "EL100",
-      "w": 1700,
-      "h": 3600,
+      "w": 1300,
+      "h": 4812,
       "shape": "coolerUnit",
       "large_equipment": true,
-      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "depth": 1300,
+      "model_version": "2.0-C41B04-01",
+      "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
+      "position_mm": [
+        23700.0,
+        70299.5095,
+        4500
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B04/设备/model_data.js",
+        "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+        "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+        "parameters": "parameters/C41B04B.json",
+        "installation": "版本/2.0/C41B04/安装表.json"
+      }
     },
     {
       "id": "C41B04C",
@@ -1230,19 +1298,36 @@
       "name": "偏钛酸冷却器",
       "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
       "qty": "6",
-      "level": "EL106",
+      "level": "EL100",
       "pos_el": 104.5,
       "cad_position_mm": [
         669906,
         372142
       ],
       "plan_sheet": "EL100",
-      "w": 1700,
-      "h": 3600,
+      "w": 1300,
+      "h": 4812,
       "shape": "coolerUnit",
       "large_equipment": true,
-      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "depth": 1300,
+      "model_version": "2.0-C41B04-01",
+      "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
+      "position_mm": [
+        21300.0,
+        66299.9906,
+        4500
+      ],
+      "rotation_deg": 180.0,
+      "mirror_y": false,
+      "current_files": {
+        "model": "版本/2.0/C41B04/设备/model_data.js",
+        "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+        "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+        "parameters": "parameters/C41B04C.json",
+        "installation": "版本/2.0/C41B04/安装表.json"
+      }
     },
     {
       "id": "C41B04D",
@@ -1250,19 +1335,36 @@
       "name": "偏钛酸冷却器",
       "spec": "立式圆形块孔石墨换热器（A=240m2/台）",
       "qty": "6",
-      "level": "EL106",
+      "level": "EL100",
       "pos_el": 104.5,
       "cad_position_mm": [
         672306,
         372142
       ],
       "plan_sheet": "EL100",
-      "w": 1700,
-      "h": 3600,
+      "w": 1300,
+      "h": 4812,
       "shape": "coolerUnit",
       "large_equipment": true,
-      "position_basis": "CAD成对位号点；按俯视图2400mm中心距分解到单台",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "安装采用position_mm建筑轴网坐标，Z为托耳底EL104.500；x/y/cad_position_mm旧文字点仅保留追溯",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "depth": 1300,
+      "model_version": "2.0-C41B04-01",
+      "model_spec": "壳体Ø1300；换热块Ø1200；端面H4812；四托耳承托EL104.500",
+      "position_mm": [
+        23700.0,
+        66299.9906,
+        4500
+      ],
+      "rotation_deg": 0.0,
+      "mirror_y": true,
+      "current_files": {
+        "model": "版本/2.0/C41B04/设备/model_data.js",
+        "glb": "版本/2.0/C41B04/设备/C41B04.glb",
+        "obj": "版本/2.0/C41B04/设备/C41B04.obj",
+        "parameters": "parameters/C41B04D.json",
+        "installation": "版本/2.0/C41B04/安装表.json"
+      }
     },
     {
       "id": "D41B01B",

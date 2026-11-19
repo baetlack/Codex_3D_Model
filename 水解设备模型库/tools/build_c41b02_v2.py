@@ -81,6 +81,8 @@ def main():
  state={'module':'水解设备模型库','active_version':'2.0（首批C41B02）','baseline_version':'1.0','counts':{'ledger_groups':35,'ledger_items':99,'completed_batches':1,'revised_items':5,'other_items_unchanged':94},'baseline':'版本/1.0/冻结清单.json','revisions':{'C41B02':{'version':'2.0-C41B02-02','equipment':'版本/2.0/C41B02/设备/model_data.js','foundation':'版本/2.0/C41B02/基础/model_data.js','placements':'版本/2.0/C41B02/安装表.json','status':'顶侧结构二次修正；基础/底钢不变，POS与绝对方位待核'}},'next_class':'C41B04','rules':'每类单独追溯；不覆盖1.0与原图，不修改其他设备、建筑或桥架几何'}
  if (ROOT/'project.json').exists():
   previous=json.loads((ROOT/'project.json').read_text());state['revisions']={**previous.get('revisions',{}),**state['revisions']}
+  if (OUT/'基准确认.json').exists():state['revisions']['C41B02']['status']='用户已接受外形及精度为基准；POS与绝对方位待核'
+  if 'C41B04' in state['revisions']:state['next_class']=previous.get('next_class','D41B01');state['active_version']='2.0（C41B02、C41B04）'
  catalog=json.loads((ROOT/'catalog.json').read_text())['models'];revised=sum(p['id'][:6] in state['revisions'] for p in catalog)
  state['counts'].update(completed_batches=len(state['revisions']),revised_items=revised,other_items_unchanged=len(catalog)-revised)
  save(ROOT/'project.json',state)

@@ -1,0 +1,20 @@
+{
+  "revision": "2.0-C41B02-02",
+  "user_confirmation": "这个精度可以了，以此为准。下一个",
+  "date": "2026-11-19",
+  "accepted_scope": "当前外形与展示建模精度，作为后续设备精度和风格基准",
+  "unchanged_pending": "未把展示精度验收扩展为POS定义及新接口现场绝对方位确认",
+  "core_files_sha256": {
+    "水解设备模型库/版本/2.0/C41B02/设备/C41B02.obj": "98c5ef1946b046aec6bb453292353fb32577c36e46a199a85fd0005f3a973320",
+    "水解设备模型库/版本/2.0/C41B02/设备/C41B02.glb": "61570c74cbb41a09c6c959db61fd746e71f30a214bc37cb4834d68bbc0090f19",
+    "水解设备模型库/版本/2.0/C41B02/设备/参数.json": "ecb7674664ba5387e3f180015a3dff39c4e94264fbf7decc58a3a1e3a4c9fe9a",
+    "水解设备模型库/版本/2.0/C41B02/设备/C41B02.mtl": "72e2f300d45a091dd6d8b600b1046bfffaf896f7a7222de38306ad6d2bbc26de",
+    "水解设备模型库/版本/2.0/C41B02/设备/model_data.js": "50bb0f53ab7aae3765f45c9824ea1597b2c91f9af041ade1f39138a374a31350",
+    "水解设备模型库/版本/2.0/C41B02/基础/C41B02.obj": "28e296600119c2641a60c89e225183925a87d833e32dbbdfef2691867e0612da",
+    "水解设备模型库/版本/2.0/C41B02/基础/C41B02.glb": "6398fc168127bf34598e85864c833f067767cf6c9d1799144cdd793af29028ef",
+    "水解设备模型库/版本/2.0/C41B02/基础/参数.json": "2559e88d84bdd12a2b925d151bd869c7e88974ba578a92a5b7956397c3133c71",
+    "水解设备模型库/版本/2.0/C41B02/基础/C41B02.mtl": "8a07c3fbd4459b8b15ff6ee6f7302fa9abfa4316d5b0b6f9434bde26ad7c319c",
+    "水解设备模型库/版本/2.0/C41B02/基础/model_data.js": "a5074b65d85b02d2eb2a6c0f4caa2d5dae93cd23d8ad43c14fc752690506b601",
+    "水解设备模型库/版本/2.0/C41B02/安装表.json": "ca1bf3ccd3c6b7d5860d9e77d8e2ad73a00be0445740cc9dcfa8aaa2f7b9f22b"
+  }
+}

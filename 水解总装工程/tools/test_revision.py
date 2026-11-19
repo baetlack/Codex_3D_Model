@@ -18,14 +18,14 @@ assert all(p['rotation_deg']==(180 if p['id'][6] in 'DE' else 0) and p['mirror_y
 assert all(p['rotation_deg']==0 for p in cfg['equipment'] if p['asset']=='C41B01')
 seed={p['id']:p for p in cfg['equipment'] if p['asset']=='D41B01'}
 assert seed['D41B01B']['mirror_y'] and not seed['D41B01C']['mirror_y']
-review=json.loads((OUT/'data/布置复核.json').read_text());assert review['reviewed']==51 and review['pending']==21
+review=json.loads((OUT/'data/布置复核.json').read_text());extra=6 if 'C41B04' in cfg['equipment_versions'] else 0;assert review['reviewed']==51+extra and review['pending']==21-extra
 assert len([r for r in review['records'] if r.get('equipment_version')==cfg['equipment_versions']['C41B02'] and '待核' in r['status']])==5
 for r in review['records']:
  w=r.get('evidence',{}).get('top_port_witness')
- if w and r['id'][:6] in ['D41B02','F41B01','C41B01','C41B02','C41B03','D41B01']:assert w['matched_within_5mm']==w['model_features'],r['id']
+ if w and r['id'][:6] in ['D41B02','F41B01','C41B01','C41B02','C41B03','D41B01','C41B04']:assert w['matched_within_5mm']==w['model_features'],r['id']
 for p in cfg['equipment']:
  if p['asset'] in ['P41B01','P41B02','P41B08']:assert 'sample_model_origin_world_mm' in p['layout_review']
 report=json.loads((OUT/'data/桥架立柱核对.json').read_text());assert report['columns_retained']==88
 assert all(p['interior_sample_depth_mm']>report['contact_tolerance_mm'] for p in report['penetrations'])
 assert all(p['status']=='表面接触（正常）' for p in report['normal_contacts'])
-print('88根粗柱位置/截面不变、10细柱移除、4层淡化板、51台平面方向/原点复核、5台C41B02新接口重新标待核及表面接触分类通过')
+print(f"建筑柱/楼板保持；平面方向复核{review['reviewed']}台、待核{review['pending']}台；C41B02新接口待核标签及表面接触分类通过")

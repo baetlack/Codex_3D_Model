@@ -47,8 +47,8 @@
       "units": "mm"
     },
     "C41B04": {
-      "path": "../水解桥架工程/models/设备/设备基础_20261106/设备净模/C41B04/model_data.js",
-      "source": "水解桥架工程/models/设备/设备基础_20261106/设备净模/C41B04/model_data.js",
+      "path": "../水解设备模型库/版本/2.0/C41B04/设备/model_data.js",
+      "source": "水解设备模型库/版本/2.0/C41B04/设备/model_data.js",
       "units": "mm"
     },
     "F41B06": {
@@ -144,6 +144,11 @@
     "foundation-C41B03": {
       "path": "../水解桥架工程/models/设备/设备基础_20261106/C41B03/model_data.js",
       "source": "水解桥架工程/models/设备/设备基础_20261106/C41B03/model_data.js",
+      "units": "mm"
+    },
+    "foundation-C41B04": {
+      "path": "../水解设备模型库/版本/2.0/C41B04/支架/单组/model_data.js",
+      "source": "水解设备模型库/版本/2.0/C41B04/支架/单组/model_data.js",
       "units": "mm"
     }
   },
@@ -1669,13 +1674,13 @@
       "position_mm": [
         21300.0,
         63300.0094,
-        0
+        4500
       ],
       "rotation_deg": 180.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "orientation_status": "PDF两顶口位于+Y一侧，与EL106顶视图对应；沿用原INSERT旋转/镜像",
       "source_insert": "7BD14",
       "source_block": "石墨换热器-底",
       "label_handle": "3853B/3853E/38541",
@@ -1684,7 +1689,7 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
       "layout_review": {
@@ -1716,12 +1721,61 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
+      },
+      "equipment_version": "2.0-C41B04-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          21300.0,
+          63300.0094,
+          0
+        ],
+        "bearing_EL": 104.5,
+        "bottom_end_EL": 101.888,
+        "top_end_EL": 106.7,
+        "legacy_layout_review": {
+          "reference_handle": "7BBA3",
+          "reference_block": "石墨换热器-顶",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+          "top_plan": {
+            "handle": "7BBA3",
+            "block": "石墨换热器-顶",
+            "plan_origin_mm": [
+              708400.4461407755,
+              305259.2765326498
+            ],
+            "local_xy_mm": [
+              21300.0,
+              63300.0094
+            ]
+          },
+          "top_port_witness": {
+            "model_features": 2,
+            "matched_within_5mm": 0,
+            "nearest_error_mm": [
+              457.93,
+              457.93
+            ]
+          }
+        },
+        "position_policy": "layout"
       }
     },
     {
@@ -1731,13 +1785,13 @@
       "position_mm": [
         23700.0,
         63300.0094,
-        0
+        4500
       ],
       "rotation_deg": 0.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "orientation_status": "PDF两顶口位于+Y一侧，与EL106顶视图对应；沿用原INSERT旋转/镜像",
       "source_insert": "7BD13",
       "source_block": "石墨换热器-底",
       "label_handle": "3853B/3853E/38541",
@@ -1746,7 +1800,7 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
       "layout_review": {
@@ -1778,12 +1832,61 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
+      },
+      "equipment_version": "2.0-C41B04-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          23700.0,
+          63300.0094,
+          0
+        ],
+        "bearing_EL": 104.5,
+        "bottom_end_EL": 101.888,
+        "top_end_EL": 106.7,
+        "legacy_layout_review": {
+          "reference_handle": "7BBA2",
+          "reference_block": "石墨换热器-顶",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+          "top_plan": {
+            "handle": "7BBA2",
+            "block": "石墨换热器-顶",
+            "plan_origin_mm": [
+              708400.4461407755,
+              305259.2765326498
+            ],
+            "local_xy_mm": [
+              23700.0,
+              63300.0094
+            ]
+          },
+          "top_port_witness": {
+            "model_features": 2,
+            "matched_within_5mm": 0,
+            "nearest_error_mm": [
+              457.93,
+              457.93
+            ]
+          }
+        },
+        "position_policy": "layout"
       }
     },
     {
@@ -2906,13 +3009,13 @@
       "position_mm": [
         21300.0001,
         70299.5095,
-        0
+        4500
       ],
       "rotation_deg": 180.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "orientation_status": "PDF两顶口位于+Y一侧，与EL106顶视图对应；沿用原INSERT旋转/镜像",
       "source_insert": "7BC3F",
       "source_block": "石墨换热器-底",
       "label_handle": "3853B/3853E/38541",
@@ -2921,7 +3024,7 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
       "layout_review": {
@@ -2953,12 +3056,61 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
+      },
+      "equipment_version": "2.0-C41B04-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          21300.0001,
+          70299.5095,
+          0
+        ],
+        "bearing_EL": 104.5,
+        "bottom_end_EL": 101.888,
+        "top_end_EL": 106.7,
+        "legacy_layout_review": {
+          "reference_handle": "7BB27",
+          "reference_block": "石墨换热器-顶",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+          "top_plan": {
+            "handle": "7BB27",
+            "block": "石墨换热器-顶",
+            "plan_origin_mm": [
+              708400.4461407755,
+              305259.2765326498
+            ],
+            "local_xy_mm": [
+              21300.0001,
+              70299.5095
+            ]
+          },
+          "top_port_witness": {
+            "model_features": 2,
+            "matched_within_5mm": 0,
+            "nearest_error_mm": [
+              457.93,
+              457.93
+            ]
+          }
+        },
+        "position_policy": "layout"
       }
     },
     {
@@ -2968,13 +3120,13 @@
       "position_mm": [
         23700.0,
         70299.5095,
-        0
+        4500
       ],
       "rotation_deg": 0.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "orientation_status": "PDF两顶口位于+Y一侧，与EL106顶视图对应；沿用原INSERT旋转/镜像",
       "source_insert": "7BB14",
       "source_block": "石墨换热器-底",
       "label_handle": "3853B/3853E/38541",
@@ -2983,7 +3135,7 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
       "layout_review": {
@@ -3015,12 +3167,61 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
+      },
+      "equipment_version": "2.0-C41B04-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          23700.0,
+          70299.5095,
+          0
+        ],
+        "bearing_EL": 104.5,
+        "bottom_end_EL": 101.888,
+        "top_end_EL": 106.7,
+        "legacy_layout_review": {
+          "reference_handle": "7BB13",
+          "reference_block": "石墨换热器-顶",
+          "source_rotation_deg": 0.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+          "top_plan": {
+            "handle": "7BB13",
+            "block": "石墨换热器-顶",
+            "plan_origin_mm": [
+              708400.4461407755,
+              305259.2765326498
+            ],
+            "local_xy_mm": [
+              23700.0,
+              70299.5095
+            ]
+          },
+          "top_port_witness": {
+            "model_features": 2,
+            "matched_within_5mm": 0,
+            "nearest_error_mm": [
+              457.93,
+              457.93
+            ]
+          }
+        },
+        "position_policy": "layout"
       }
     },
     {
@@ -3030,13 +3231,13 @@
       "position_mm": [
         21300.0,
         66299.9906,
-        0
+        4500
       ],
       "rotation_deg": 180.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "orientation_status": "PDF两顶口位于+Y一侧，与EL106顶视图对应；沿用原INSERT旋转/镜像",
       "source_insert": "7BD54",
       "source_block": "石墨换热器-底",
       "label_handle": "3853B/3853E/38541",
@@ -3045,7 +3246,7 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": false,
       "layout_review": {
@@ -3077,12 +3278,61 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
+      },
+      "equipment_version": "2.0-C41B04-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          21300.0,
+          66299.9906,
+          0
+        ],
+        "bearing_EL": 104.5,
+        "bottom_end_EL": 101.888,
+        "top_end_EL": 106.7,
+        "legacy_layout_review": {
+          "reference_handle": "7BBCF",
+          "reference_block": "石墨换热器-顶",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            1,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+          "top_plan": {
+            "handle": "7BBCF",
+            "block": "石墨换热器-顶",
+            "plan_origin_mm": [
+              708400.4461407755,
+              305259.2765326498
+            ],
+            "local_xy_mm": [
+              21300.0,
+              66299.9906
+            ]
+          },
+          "top_port_witness": {
+            "model_features": 2,
+            "matched_within_5mm": 0,
+            "nearest_error_mm": [
+              457.93,
+              457.93
+            ]
+          }
+        },
+        "position_policy": "layout"
       }
     },
     {
@@ -3092,13 +3342,13 @@
       "position_mm": [
         23700.0,
         66299.9906,
-        0
+        4500
       ],
       "rotation_deg": 0.0,
       "level": "EL100",
       "xy_status": "图块中心定位",
       "z_status": "有安装基准",
-      "orientation_status": "中心/图块方向已记录；类型接口与布置符号不一致，朝向待核",
+      "orientation_status": "PDF两顶口位于+Y一侧，与EL106顶视图对应；沿用原INSERT旋转/镜像",
       "source_insert": "7BD53",
       "source_block": "石墨换热器-底",
       "label_handle": "3853B/3853E/38541",
@@ -3107,7 +3357,7 @@
         643629.0370487935,
         305259.2765326498
       ],
-      "z_basis": "类型模型托耳底 Z4500 与钢框架梁顶 +4.500 m 对齐；POS EL104.5 为承托面而非模型底",
+      "z_basis": "钢架梁顶EL104.500；托耳底Z0，端面距承托面下2612/上2200",
       "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
       "mirror_y": true,
       "layout_review": {
@@ -3139,12 +3389,61 @@
         },
         "top_port_witness": {
           "model_features": 2,
-          "matched_within_5mm": 0,
+          "matched_within_5mm": 2,
           "nearest_error_mm": [
-            457.93,
-            457.93
+            0.467,
+            0.467
           ]
         }
+      },
+      "equipment_version": "2.0-C41B04-01",
+      "local_datum": "四向托耳底承托面Z0",
+      "installation_review": {
+        "before_position_mm": [
+          23700.0,
+          66299.9906,
+          0
+        ],
+        "bearing_EL": 104.5,
+        "bottom_end_EL": 101.888,
+        "top_end_EL": 106.7,
+        "legacy_layout_review": {
+          "reference_handle": "7BBCE",
+          "reference_block": "石墨换热器-顶",
+          "source_rotation_deg": 180.0,
+          "source_scale": [
+            -1.0,
+            1
+          ],
+          "model_to_block_rotation_deg": 0,
+          "model_to_block_mirror_y": false,
+          "native_center_offset_mm": [
+            0,
+            0
+          ],
+          "basis": "以EL106顶盖/上部轮廓的真实管口朝向为准，不用EL100底部对称轮廓推断朝向",
+          "top_plan": {
+            "handle": "7BBCE",
+            "block": "石墨换热器-顶",
+            "plan_origin_mm": [
+              708400.4461407755,
+              305259.2765326498
+            ],
+            "local_xy_mm": [
+              23700.0,
+              66299.9906
+            ]
+          },
+          "top_port_witness": {
+            "model_features": 2,
+            "matched_within_5mm": 0,
+            "nearest_error_mm": [
+              457.93,
+              457.93
+            ]
+          }
+        },
+        "position_policy": "layout"
       }
     },
     {
@@ -4584,6 +4883,57 @@
       "mirror_y": false,
       "level": "EL112",
       "support_for": "C41B03C"
+    },
+    {
+      "id": "FRAME-C41B04AB",
+      "name": "偏钛酸冷却器AB组钢架",
+      "asset": "foundation-C41B04",
+      "position_mm": [
+        22500.0001,
+        70299.5095,
+        0
+      ],
+      "rotation_deg": 0,
+      "level": "EL100",
+      "support_for": [
+        "C41B04A",
+        "C41B04B"
+      ],
+      "status": "按设备中心与钢架梁网就位"
+    },
+    {
+      "id": "FRAME-C41B04CD",
+      "name": "偏钛酸冷却器CD组钢架",
+      "asset": "foundation-C41B04",
+      "position_mm": [
+        22500.0,
+        66299.9906,
+        0
+      ],
+      "rotation_deg": 0,
+      "level": "EL100",
+      "support_for": [
+        "C41B04C",
+        "C41B04D"
+      ],
+      "status": "按设备中心与钢架梁网就位"
+    },
+    {
+      "id": "FRAME-C41B04EF",
+      "name": "偏钛酸冷却器EF组钢架",
+      "asset": "foundation-C41B04",
+      "position_mm": [
+        22500.0,
+        63300.0094,
+        0
+      ],
+      "rotation_deg": 0,
+      "level": "EL100",
+      "support_for": [
+        "C41B04E",
+        "C41B04F"
+      ],
+      "status": "按设备中心与钢架梁网就位"
     }
   ],
   "unplaced": [
@@ -4839,6 +5189,7 @@
     "未定位设备不进入空间场景或碰撞检查；待核安装标高单列"
   ],
   "equipment_versions": {
-    "C41B02": "2.0-C41B02-02"
+    "C41B02": "2.0-C41B02-02",
+    "C41B04": "2.0-C41B04-01"
   }
 }
