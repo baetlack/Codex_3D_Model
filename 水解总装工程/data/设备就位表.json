@@ -4591,7 +4591,7 @@
     "level": "EL112",
     "xy_status": "图块中心定位",
     "z_status": "待核",
-    "orientation_status": "圆轮廓仅确认中心，管口朝向待核",
+    "orientation_status": "布置圆轮廓只确认中心；四耳共同方位及管口绝对方向待核",
     "source_insert": "D9737",
     "source_block": "CIRCLE-设备轮廓",
     "label_handle": "平面位号与圆轮廓核对",
@@ -4600,8 +4600,23 @@
       778010.4484369854,
       305259.2765326499
     ],
-    "z_basis": "EL112平面POSEL112.200，局部设备原点待核",
-    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf"
+    "z_basis": "保留原POSEL112.200作为筒段下端暂用原点；耳底位置及四墩承托EL未闭合，不能认定安装确认",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "equipment_version": "2.0-F41B03-01",
+    "local_datum": "直筒段下端Z0；耳底Z0仅沿用示意",
+    "installation_review": {
+      "before_position_mm": [
+        40000.0,
+        41750.0,
+        12200
+      ],
+      "before_rotation_deg": 0.0,
+      "retained_xyz_and_rotation": true,
+      "source_center_handle": "D9737",
+      "position_label_handle": "D973A",
+      "support_contact": "不成立：平面无搭接；过渡件与竖向承托链待核",
+      "civil_instances_added": 0
+    }
   },
   {
     "id": "L41B04",

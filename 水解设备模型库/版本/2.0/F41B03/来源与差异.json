@@ -1,0 +1,85 @@
+{
+  "version": "2.0-F41B03-01",
+  "sources": {
+    "水解设备模型库/示图建模_20260521/原始资料/水解设备模型示图_更新20261105.dxf": "b06d01a8b8bd50f8cd815412f37ede908c2573b0636030ab6018a92a124a3338",
+    "水解桥架工程/data/原始资料/设备基础/水解设备基础图.dxf": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7",
+    "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
+    "水解设备模型库/示图建模_20260521/原始资料/2.水解水洗设备一览表 2026.5.21.xls": "77844a77077ae85ac67e0f8f7c21fe1cee6d73d06564036b53959560b0df07a3"
+  },
+  "adopted": [
+    "台账第51行直筒段Ø1000×1000、数量1",
+    "示图3623名义筒径、3626中心线孔圈、3625四耳及3630孔",
+    "基础图750+750、300×300与四预埋板位置",
+    "布置D9737圆心及D973A的POSEL112.200追溯"
+  ],
+  "changed": [
+    "移除误把孔圈转成的上下两实体圈",
+    "四块实心托耳底板改按原俯视外轮廓及Ø16.5孔表达"
+  ],
+  "preserved": [
+    "原直筒段网格",
+    "四支墩/预埋板全部几何",
+    "原就位XYZ及旋转；安装状态待核",
+    "1.0与其他设备/建筑/桥架"
+  ],
+  "support_differences": {
+    "version": "2.0-F41B03-01",
+    "status": "not-bearing",
+    "comparison_datum": "仅诊断平面搭接：耳底与支墩顶暂设同高Z0，不是厂房安装标高",
+    "direct_contact_area_mm2": 0,
+    "axis_outer_edge_gap_mm": 8.75,
+    "ear_outer_corner_radius_mm": 595.233673,
+    "support_min_radius_mm": 600,
+    "minimum_radial_separation_mm": 4.766327,
+    "hole_radius_mm": 550,
+    "pad_center_radius_mm": 750,
+    "hole_to_embedded_plate_center_mm": 200,
+    "rotation_can_close_gap": false,
+    "four_directions": [
+      {
+        "direction_deg": 0,
+        "ear_tip_mm": 591.25,
+        "support_inner_edge_mm": 600,
+        "axis_gap_mm": 8.75,
+        "hole_to_embedded_center_mm": 200
+      },
+      {
+        "direction_deg": 90,
+        "ear_tip_mm": 591.25,
+        "support_inner_edge_mm": 600,
+        "axis_gap_mm": 8.75,
+        "hole_to_embedded_center_mm": 200
+      },
+      {
+        "direction_deg": 180,
+        "ear_tip_mm": 591.25,
+        "support_inner_edge_mm": 600,
+        "axis_gap_mm": 8.75,
+        "hole_to_embedded_center_mm": 200
+      },
+      {
+        "direction_deg": 270,
+        "ear_tip_mm": 591.25,
+        "support_inner_edge_mm": 600,
+        "axis_gap_mm": 8.75,
+        "hole_to_embedded_center_mm": 200
+      }
+    ],
+    "unresolved": [
+      "连接过渡件形式/尺寸",
+      "托耳厚度/立筋高度/承托面相对筒段的位置",
+      "全局承托EL及POSEL112.200定义",
+      "完整侧视/总图、封头及管口形状/方位"
+    ],
+    "civil_instances_added_to_assembly": 0
+  },
+  "limits": [
+    "台账明确的是直筒段Ø1000×1000，不代表整机总高；现无完整侧视/总图。",
+    "壁厚12、耳板厚24和耳底Z0沿用原显示口径，均待详图，不作为明示制造尺寸。",
+    "俯视可见双筋投影，但缺高度，不补造立筋三维外形。",
+    "Ø1100中心线是四安装孔分度圆，不是实体端圈；撤销原两道端圈。",
+    "四耳外缘591.25与支墩内缘600差8.75；孔心550与预埋板心750差200，搭接面积为0。旋转也不能使两者直接接触。",
+    "原X40000/Y41750、暂用原点Z12200及零旋转保留；圆轮廓仅能确认中心，管口方位与全局承托EL待核。",
+    "四支墩独立查看；诊断视图同高仅为检验平面差异，不当作总装安装方案，不补过渡钢板/支腿。"
+  ]
+}

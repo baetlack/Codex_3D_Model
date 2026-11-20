@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": {
+    "five_parts_no_unsupported_end_rings_and_scope_label": true,
+    "independent_four_pedestals_no_installation_combination": true,
+    "current_equipment_and_preserved_foundation_downloads": true,
+    "diagnostic_overlay_and_local_gap_are_explicitly_not_installation": true,
+    "frozen_two_rings_vs_corrected_hole_plan": true,
+    "full_frozen_library_geometry_preserved": true,
+    "assembly_keeps_provisional_position_and_no_new_foundation": true
+  },
+  "page_errors": [],
+  "failed_resources": []
+}

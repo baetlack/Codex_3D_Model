@@ -1,7 +1,7 @@
 {
   "version": "2.0-D41B01-01",
   "status": "passed",
-  "other_67_equipment_and_94_catalog_items": "unchanged except separately registered revisions: L41B01",
+  "other_67_equipment_and_94_catalog_items": "unchanged except separately registered revisions: F41B03,L41B01",
   "building_bridge_accepted_equipment_hashes": "unchanged",
   "top_nozzle_DXF_center_errors_mm": {
     "a": 0.0,
