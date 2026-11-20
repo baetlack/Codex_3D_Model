@@ -71,11 +71,13 @@ def run():
     raw=(OUT/'设备/L41B02.glb').read_bytes();assert raw[:4]==b'glTF' and struct.unpack_from('<I',raw,8)[0]==len(raw)
     for name,digest in pin['protected_files'].items():assert sha(REPO/name)==digest,name
     cfg=json.loads((REPO/'水解总装工程/assembly.json').read_text())
-    for key in ['equipment','foundations','assets','unplaced']:assert cfg[key]==pin['assembly'][key],key
+    from revision_scope import unchanged_outside
+    later=set(cfg['equipment_versions'])-set(pin['assembly']['equipment_versions'])-{'L41B02'}
+    for key in ['equipment','foundations','assets','unplaced']:assert unchanged_outside(pin['assembly'][key],cfg[key],later),key
     assert len(cfg['equipment'])==72 and len(cfg['unplaced'])==27 and not any(q['id']=='L41B02' for q in cfg['equipment'])
     oldrows={q['id']:q for q in pin['catalog']['models']}
     for q in json.loads((ROOT/'catalog.json').read_text())['models']:
-        if q['id']!='L41B02':assert q==oldrows[q['id']],q['id']
+        if q['id']!='L41B02' and q['id'][:6] not in later:assert q==oldrows[q['id']],q['id']
     for key,folder in [('L41B02','基础'),('L41B02-钢塔架','钢塔架')]:
         for path in (BASESRC/key).iterdir():
             if path.suffix in ['.js','.glb','.obj','.mtl']:assert (OUT/folder/path.name).read_bytes()==path.read_bytes(),str(path)

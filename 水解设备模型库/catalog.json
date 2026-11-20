@@ -2118,8 +2118,23 @@
       "h": 17000,
       "shape": "cylinder",
       "large_equipment": true,
-      "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "增补钢塔架背立面8ED2：筒底在楼面23.000以上300，与圆基础顶23.300同高；总装筒底EL123.300。仅Z基准明确，总高/锚固仍待核。",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B04-01",
+      "model_spec": "Ø1000×15100原筒体；筒底EL123.300，整机高度/锚固待核",
+      "position_mm": [
+        26000.0,
+        31900.0,
+        23300
+      ],
+      "rotation_deg": 0.0,
+      "current_files": {
+        "model": "版本/2.0/F41B04/设备/model_data.js",
+        "glb": "版本/2.0/F41B04/设备/F41B04.glb",
+        "obj": "版本/2.0/F41B04/设备/F41B04.obj",
+        "parameters": "parameters/F41B04.json",
+        "installation": "版本/2.0/F41B04/安装表.json"
+      }
     },
     {
       "id": "P41B10",

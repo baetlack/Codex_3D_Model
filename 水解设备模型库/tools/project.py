@@ -58,7 +58,7 @@ def main():
   assert json.loads(INDEX.read_text())==files(ROOT),'Equipment files changed; review then snapshot'
   check_frozen()
   import subprocess
-  classes=['C41B02','C41B04','D41B01','L41B01','F41B03','L41B02']
+  classes=['C41B02','C41B04','D41B01','L41B01','F41B03','L41B02','F41B04']
   selected=sys.argv[2:] or classes
   assert set(selected)<=set(classes),'Unknown equipment class'
   for key in selected:
@@ -81,5 +81,8 @@ def main():
  elif command=='build-l41b02':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_l41b02_v2.py')],check=True)
- else:raise SystemExit('Use freeze | build-c41b02 | build-c41b04 | build-d41b01 | build-l41b01 | build-f41b03 | build-l41b02 | snapshot | check [CLASS ...]')
+ elif command=='build-f41b04':
+  import subprocess
+  subprocess.run([sys.executable,str(ROOT/'tools/build_f41b04_v2.py')],check=True)
+ else:raise SystemExit('Use freeze | build-c41b02 | build-c41b04 | build-d41b01 | build-l41b01 | build-f41b03 | build-l41b02 | build-f41b04 | snapshot | check [CLASS ...]')
 if __name__=='__main__':main()
