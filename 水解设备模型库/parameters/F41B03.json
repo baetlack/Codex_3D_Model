@@ -1,49 +1,69 @@
 {
-  "id": "F41B03",
-  "group": "F41B03",
+  "version": "2.0-F41B03-01",
   "name": "冷凝水分汽器",
-  "spec": "直筒段∅1000，高H=1000",
-  "qty": "1",
-  "x": 21270,
-  "y": 46629,
-  "z": 12200,
-  "level": "EL112",
-  "pos_el": 112.2,
-  "w": 1000.0,
-  "h": 1000,
-  "depth": 720.0,
-  "shape": "cylinder",
-  "position_basis": "平面设备位号点；按图题偏移归一",
-  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-  "foundation": null,
-  "support": null,
-  "source_foundation": {
-    "material": "RC",
-    "width": 1700.0,
-    "depth": 1700.0,
-    "height": 250
+  "units": "mm",
+  "source_drawing": "水解设备模型库/示图建模_20260521/原始资料/水解设备模型示图_更新20261105.dxf",
+  "source_sha256": "b06d01a8b8bd50f8cd815412f37ede908c2573b0636030ab6018a92a124a3338",
+  "drawing_scope": "设备示图的俯视，非完整设备总图",
+  "ledger_source": "水解设备模型库/示图建模_20260521/原始资料/2.水解水洗设备一览表 2026.5.21.xls",
+  "ledger_row": 51,
+  "ledger_quantity": 1,
+  "modeled_scope": "仅直筒段及四耳底板；不推断封头、盖板、工艺管口和立筋高度",
+  "dimensions_mm": {
+    "straight_section_nominal_diameter": 1000,
+    "straight_section_height": 1000,
+    "display_shell_wall_thickness": 12,
+    "ear_plate_radial_mm": 102.0195149,
+    "ear_plate_tangent_mm": 137.5000001,
+    "ear_plate_display_thickness": 24,
+    "ear_outer_edge_radius": 591.25,
+    "hole_pitch_diameter": 1100,
+    "hole_diameter": 16.5,
+    "hole_angles_deg": [
+      0,
+      90,
+      180,
+      270
+    ]
   },
-  "source_support": {
-    "material": "steel",
-    "count": 12,
-    "height": 250
-  },
-  "model_scope": "设备本体；不含基础及底部支撑",
-  "footprint_mm": [
-    1000.0,
+  "datum": "直筒段下端Z0；耳底Z0/厚24为沿用显示值，非确认承托面",
+  "bounds_mm": [
+    1182.5,
+    1182.5,
     1000.0
   ],
-  "body_diameter_mm": 1000.0,
-  "body_height_mm": 1000.0,
-  "body_z_mm": 0,
-  "mixer_total_height_mm": null,
-  "mixer_height_basis": null,
-  "cad_position_mm": [
-    684204,
-    346629
+  "removed_unsupported_parts": [
+    "本体_端缘（上）",
+    "本体_端缘（下）"
   ],
-  "plan_sheet": "EL100",
-  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
-  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
-  "large_equipment": false
+  "ports": [],
+  "ports_status": "未提供管口图，不以孔位分度圆代造管口/端部法兰",
+  "support_status": "not-bearing",
+  "limits": [
+    "台账明确的是直筒段Ø1000×1000，不代表整机总高；现无完整侧视/总图。",
+    "壁厚12、耳板厚24和耳底Z0沿用原显示口径，均待详图，不作为明示制造尺寸。",
+    "俯视可见双筋投影，但缺高度，不补造立筋三维外形。",
+    "Ø1100中心线是四安装孔分度圆，不是实体端圈；撤销原两道端圈。",
+    "四耳外缘591.25与支墩内缘600差8.75；孔心550与预埋板心750差200，搭接面积为0。旋转也不能使两者直接接触。",
+    "原X40000/Y41750、暂用原点Z12200及零旋转保留；圆轮廓仅能确认中心，管口方位与全局承托EL待核。",
+    "四支墩独立查看；诊断视图同高仅为检验平面差异，不当作总装安装方案，不补过渡钢板/支腿。"
+  ],
+  "id": "F41B03",
+  "group": "F41B03",
+  "qty": 1,
+  "position_mm": [
+    40000.0,
+    41750.0,
+    12200
+  ],
+  "rotation_deg": 0.0,
+  "z_status": "待核",
+  "current_files": {
+    "model": "版本/2.0/F41B03/设备/model_data.js",
+    "glb": "版本/2.0/F41B03/设备/F41B03.glb",
+    "obj": "版本/2.0/F41B03/设备/F41B03.obj",
+    "parameters": "parameters/F41B03.json",
+    "installation": "版本/2.0/F41B03/安装表.json"
+  },
+  "legacy_parameters": "版本/1.0/快照/水解设备模型库/parameters/F41B03.json"
 }

@@ -57,13 +57,14 @@ def run():
   assert all(n==2 for n in edges.values()),q['name']
  raw=(OUT/'设备/L41B01.glb').read_bytes();assert raw[:4]==b'glTF' and struct.unpack_from('<I',raw,8)[0]==len(raw)
  cfg=json.loads((REPO/'水解总装工程/assembly.json').read_text());before={q['id']:q for q in pin['equipment_placements']};current={q['id']:q for q in cfg['equipment']};placed=[q for q in current.values() if q['asset']=='L41B01']
+ later=set(cfg['equipment_versions'])-{'C41B02','C41B04','D41B01','L41B01'}
  assert len(current)==72 and len(cfg['unplaced'])==27 and len(placed)==6
  assert cfg['foundations']==pin['foundations'],'No new support may be invented or another support moved'
  oldrows={q['id']:q for q in pin['catalog']}
  for q in json.loads((ROOT/'catalog.json').read_text())['models']:
-  if not q['id'].startswith('L41B01'):assert q==oldrows[q['id']],q['id']
+  if q['id'][:6] not in later and not q['id'].startswith('L41B01'):assert q==oldrows[q['id']],q['id']
  for tag,q in current.items():
-  if q['asset']!='L41B01':assert q==before[tag],tag
+  if q['asset'] not in later and q['asset']!='L41B01':assert q==before[tag],tag
  layout=ezdxf.readfile(REPO/'水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf');transform_checks=[]
  for q in placed:
   assert q['position_mm']==before[q['id']]['position_mm'] and q['rotation_deg']==0
@@ -111,6 +112,7 @@ def run():
  for i,a in enumerate(subjects):
   for b in subjects[i+1:]:assert np.any(np.minimum(a['high'],b['high'])-np.maximum(a['low'],b['low'])<0)
  report={'version':p['version'],'status':'passed-with-unresolved-support-and-EL' if not hits else 'geometry-passed-current-position-interferences-require-review','native_DXF_and_ledger_applicability':'passed','closed_components':len(parts),'ports':5,'ears':3,'top_nozzle_center_errors_mm':errors,'ear_hole_centers_native_mm':ear_centers.tolist(),'INSERT_transform_checks':transform_checks,'other_66_placed_and_93_catalog_records':'unchanged','existing_foundations':'unchanged; no new L41B01 support','building_bridge_and_accepted_models_hashes':'unchanged','screen':{'columns':len(columns),'beams':len(beams),'bridge_parts':len(bridge),'other_equipment':other_count,'aabb_candidates':candidates},'current_provisional_position_intersections':hits,'floor_checks':floor_checks,'support_and_EL':'unresolved by user decision; no civil support inferred','limits':p['limits']}
+ if later:report['other_66_placed_and_93_catalog_records']='unchanged except separately registered revisions: '+','.join(sorted(later))
  (OUT/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:v for k,v in report.items() if k not in ['INSERT_transform_checks','limits']},ensure_ascii=False))
  assert not any(r['actual_mesh_intersection'] for f in floor_checks for r in f['crossed_floor_slabs']),floor_checks

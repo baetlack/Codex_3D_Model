@@ -1994,8 +1994,23 @@
       "h": 1000,
       "shape": "cylinder",
       "large_equipment": false,
-      "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "position_basis": "保留原POSEL112.200作为筒段下端暂用原点；耳底位置及四墩承托EL未闭合，不能认定安装确认",
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B03-01",
+      "model_spec": "仅Ø1000×1000直筒段；四耳/Ø16.5孔；孔圈Ø1100不作端圈；四墩支承未闭合",
+      "current_files": {
+        "model": "版本/2.0/F41B03/设备/model_data.js",
+        "glb": "版本/2.0/F41B03/设备/F41B03.glb",
+        "obj": "版本/2.0/F41B03/设备/F41B03.obj",
+        "parameters": "parameters/F41B03.json",
+        "installation": "版本/2.0/F41B03/安装表.json"
+      },
+      "position_mm": [
+        40000.0,
+        41750.0,
+        12200
+      ],
+      "rotation_deg": 0.0
     },
     {
       "id": "L41B05",

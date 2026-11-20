@@ -1,0 +1,79 @@
+{
+  "version": "2.0-F41B03-01",
+  "status": "geometry-validated-bearing-unresolved",
+  "straight_section_dictionary": "unchanged including normals/material",
+  "unsupported_end_rings_removed": 2,
+  "real_holes": 4,
+  "watertight_components": 5,
+  "source_hole_centres_mm": [
+    [
+      550.0,
+      0.0
+    ],
+    [
+      -0.0,
+      550.0
+    ],
+    [
+      -550.0,
+      -0.0
+    ],
+    [
+      0.0,
+      -550.0
+    ]
+  ],
+  "support_checks": [
+    {
+      "direction_deg": 0,
+      "measured_axis_gap_mm": 8.75,
+      "measured_hole_to_embedded_center_mm": 200.0,
+      "direct_bearing_area_mm2": 0
+    },
+    {
+      "direction_deg": 90,
+      "measured_axis_gap_mm": 8.75,
+      "measured_hole_to_embedded_center_mm": 200.0,
+      "direct_bearing_area_mm2": 0
+    },
+    {
+      "direction_deg": 180,
+      "measured_axis_gap_mm": 8.75,
+      "measured_hole_to_embedded_center_mm": 200.0,
+      "direct_bearing_area_mm2": 0
+    },
+    {
+      "direction_deg": 270,
+      "measured_axis_gap_mm": 8.75,
+      "measured_hole_to_embedded_center_mm": 200.0,
+      "direct_bearing_area_mm2": 0
+    }
+  ],
+  "ear_corner_max_radius_mm": 595.233673,
+  "support_min_radius_mm": 600,
+  "rotation_cannot_make_direct_contact": true,
+  "direct_bearing_area_mm2": 0,
+  "support_geometry_bytes": "unchanged",
+  "other_71_placed_and_98_catalog_records": "unchanged",
+  "building_bridge_previous_models_hashes": "unchanged",
+  "current_xyz_rotation": "unchanged; Z/absolute orientation still provisional",
+  "screen": {
+    "columns": 120,
+    "beams": 76,
+    "bridge_parts": 112,
+    "other_equipment": 71,
+    "aabb_candidates": 0
+  },
+  "current_provisional_position_intersections": [],
+  "floor_slabs_crossed": [],
+  "civil_instances_added": 0,
+  "limits": [
+    "台账明确的是直筒段Ø1000×1000，不代表整机总高；现无完整侧视/总图。",
+    "壁厚12、耳板厚24和耳底Z0沿用原显示口径，均待详图，不作为明示制造尺寸。",
+    "俯视可见双筋投影，但缺高度，不补造立筋三维外形。",
+    "Ø1100中心线是四安装孔分度圆，不是实体端圈；撤销原两道端圈。",
+    "四耳外缘591.25与支墩内缘600差8.75；孔心550与预埋板心750差200，搭接面积为0。旋转也不能使两者直接接触。",
+    "原X40000/Y41750、暂用原点Z12200及零旋转保留；圆轮廓仅能确认中心，管口方位与全局承托EL待核。",
+    "四支墩独立查看；诊断视图同高仅为检验平面差异，不当作总装安装方案，不补过渡钢板/支腿。"
+  ]
+}
