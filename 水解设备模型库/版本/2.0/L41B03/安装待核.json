@@ -1,0 +1,17 @@
+{
+  "id": "L41B03",
+  "status": "待定位，不进入总装",
+  "legacy_text_insert_mm": [
+    660751,
+    343767
+  ],
+  "absolute_position": null,
+  "relative_offset_mm": [
+    0,
+    -175,
+    2000
+  ],
+  "relative_floor_EL": 123,
+  "relative_bearing_EL": 125,
+  "basis": "基础图23.000至25.000；只确认局部楼面—钢架顶高差，不代表厂房中心/方位已确认"
+}

@@ -1,0 +1,49 @@
+{
+  "version": "2.0-L41B03-01",
+  "status": "local-geometry-checked-absolute-location-and-manufacture-pending",
+  "steel_geometry": "byte-identical",
+  "steel_parts": 31,
+  "absolute_position": "unplaced",
+  "assembly_instances_added": 0,
+  "relative_offset_mm": [
+    0,
+    -175,
+    2000
+  ],
+  "intersections": [],
+  "bearing_contacts": [
+    {
+      "ear": "托耳_1底板",
+      "contact_area_mm2": 13747.862,
+      "bearing_Z_mm": 2000,
+      "method": "耳板底面与原钢架顶面矩形交集的并集，排除梁/钢板重叠重复面积"
+    },
+    {
+      "ear": "托耳_2底板",
+      "contact_area_mm2": 13747.862,
+      "bearing_Z_mm": 2000,
+      "method": "耳板底面与原钢架顶面矩形交集的并集，排除梁/钢板重叠重复面积"
+    },
+    {
+      "ear": "托耳_3底板",
+      "contact_area_mm2": 13747.862,
+      "bearing_Z_mm": 2000,
+      "method": "耳板底面与原钢架顶面矩形交集的并集，排除梁/钢板重叠重复面积"
+    },
+    {
+      "ear": "托耳_4底板",
+      "contact_area_mm2": 50988.962,
+      "bearing_Z_mm": 2000,
+      "method": "耳板底面与原钢架顶面矩形交集的并集，排除梁/钢板重叠重复面积"
+    }
+  ],
+  "opening_clearance_mm": 125,
+  "limits": [
+    "原示图无本体尺寸标注，图面量测不作制造尺寸",
+    "原图Ø2000/锥尖至顶约4168与台账Ø1800×3100差异保留",
+    "原设备示图框架高3000，专用基础图高2000；两者不得同时作为安装支承",
+    "接口/托耳的未标尺寸按示图比例表达；法兰厚、壁厚、筋板厚仍为显示值",
+    "钢架GZ1/GL1截面仍示意；仅验证模型承托与开口关系",
+    "绝对X/Y和工艺方位待核，不以文字插点放入总装；不新增孔/支腿或内部除雾叶片"
+  ]
+}

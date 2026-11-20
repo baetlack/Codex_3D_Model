@@ -1,0 +1,18 @@
+{
+  "version": "2.0-L41B03-01",
+  "status": "passed",
+  "user_dimensions_mm": [
+    1800,
+    3100
+  ],
+  "height_datum": "cone tip to top flange; bottom drain extra",
+  "body_parts": 23,
+  "excluded_reference_frame_parts": 8,
+  "previous_runtime_parts": 22,
+  "civil_parts_preserved": 31,
+  "local_intersections": 0,
+  "bearing_contacts": 4,
+  "equipment_in_scene": 72,
+  "unplaced": 27,
+  "other_models_and_placements": "unchanged"
+}

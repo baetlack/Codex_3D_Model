@@ -245,6 +245,13 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     field(info,'位置与钢架','基础和钢塔架原几何保留；局部同心对照，接口与钢架的相交见本类报告。绝对中心/方位未核，不进入厂房总装。');
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/L41B02/整改说明.html'),link('1.0/2.0模型对照','版本/2.0/L41B02/修订对比.html'),link('钢架相交校核','版本/2.0/L41B02/支承相交校核.json'),link('安装待核','版本/2.0/L41B02/安装待核.json'));info.append(links);
   }
+  if (tagForRow(row)==='L41B03' && overrides.equipment?.L41B03) {
+    const info=section(detail,'本类2.0取舍与支承');
+    field(info,'主尺寸','用户选择台账Ø1800×3100；3100为锥尖至顶法兰，底排接管另计。原示图Ø2000/约4168差异保留，接口和未标尺寸只作比例表达。');
+    field(info,'本体与支承','本体不含旧4柱/4梁；四托耳独立，原31件专用钢支架保持。局部耳底对齐平台2000、开口中心Y-175，接触不代表制造或承载确认。');
+    field(info,'安装待核','绝对中心X/Y和工艺方位未核；本类仍待定位，不进入总装。');
+    const links=element('div','','links');links.append(link('整改说明','版本/2.0/L41B03/整改说明.html'),link('新旧对比','版本/2.0/L41B03/修订对比.html'),link('安装待核','版本/2.0/L41B03/安装待核.json'),link('支承复核','版本/2.0/L41B03/支承复核.json'));info.append(links);
+  }
   if (tagForRow(row)==='F41B04' && overrides.equipment?.F41B04) {
     const info=section(detail,'本类2.0安装基准与高度差异');
     field(info,'本体保持','原Ø1000×15100筒体及导出逐字节保留。台账17000、旧图11000、新塔架背立面约15100，以及新版平面约Ø1100的差异继续待核。');
@@ -341,7 +348,7 @@ function collectPartGroups(mesh, archive) {
     }
   } else {
     for (const part of mesh) {
-      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':typeInfo(rowsByTag.get(rowTag))?.key==='L41B01'?'过滤器托耳':typeInfo(rowsByTag.get(rowTag))?.key==='F41B03'?'分汽器托耳':'换热器托耳'):part.name.split('_')[0];
+      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':typeInfo(rowsByTag.get(rowTag))?.key==='L41B01'?'过滤器托耳':typeInfo(rowsByTag.get(rowTag))?.key==='F41B03'?'分汽器托耳':typeInfo(rowsByTag.get(rowTag))?.key==='L41B03'?'除雾器托耳':'换热器托耳'):part.name.split('_')[0];
       if (!groups.has(label)) groups.set(label,[]);
       groups.get(label).push(part);
     }

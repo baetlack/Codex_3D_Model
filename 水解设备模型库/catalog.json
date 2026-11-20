@@ -1660,7 +1660,16 @@
       "shape": "demister",
       "large_equipment": true,
       "position_basis": "三层剖视图显示设备基座落在EL112屋面/平台；平面按位号点",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B03-01",
+      "model_spec": "台账Ø1800×3100；按原示图比例修正，绝对定位待核",
+      "current_files": {
+        "model": "版本/2.0/L41B03/设备/model_data.js",
+        "glb": "版本/2.0/L41B03/设备/L41B03.glb",
+        "obj": "版本/2.0/L41B03/设备/L41B03.obj",
+        "parameters": "parameters/L41B03.json",
+        "installation": "版本/2.0/L41B03/安装待核.json"
+      }
     },
     {
       "id": "L41B02",
