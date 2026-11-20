@@ -1,0 +1,39 @@
+{
+  "source": "水解桥架工程/data/原始资料/设备基础/水解设备基础图_增补烟囱及洗涤塔钢塔架_20261106.dxf",
+  "tube_handles": [
+    "8DFD",
+    "8DFE",
+    "8DFF"
+  ],
+  "base_height_handle": "8ED2",
+  "steel_foot_height_handle": "8ED8",
+  "floor_label": "8E0F",
+  "floor_y": 76130.85218248097,
+  "tube_bottom_y": 76430.85218248097,
+  "tube_top_y": 91529.45382496668,
+  "measured_tube_height_mm": 15098.601642485708,
+  "measured_OD_mm": 1000.0,
+  "measured_bottom_above_floor_mm": 300.0,
+  "dimension_bottom_above_floor_mm": 300.0,
+  "plan_circle_handle": "8F98",
+  "plan_circle_diameter_mm": 1099.7595264185218,
+  "layout_circle": {
+    "handle": "33EAC",
+    "center_source_mm": [
+      872107.0477544264,
+      337159.276532652
+    ],
+    "radius_mm": 500.0
+  },
+  "adopted_model_mm": [
+    1000,
+    15100
+  ],
+  "height_conflicts_mm": {
+    "ledger": 17000,
+    "old_side": 11000,
+    "new_steel_elevation_measured": 15098.601642485708,
+    "current_rounded_display": 15100
+  },
+  "policy": "保留当前Ø1000×15100筒体原网格；高度及新版平面Ø1100差异明示待核。仅改有明确尺寸依据的筒底高差300。"
+}

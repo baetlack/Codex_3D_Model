@@ -1,0 +1,44 @@
+[
+  {
+    "id": "F41B04",
+    "name": "尾气烟囱",
+    "asset": "F41B04",
+    "position_mm": [
+      26000.0,
+      31900.0,
+      23300
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL123",
+    "xy_status": "图块中心定位",
+    "z_status": "有安装基准",
+    "orientation_status": "圆截面只确认中心；钢塔架与底部锚固的共同绝对方位待核",
+    "source_insert": "33EAC",
+    "source_block": "CIRCLE-设备轮廓",
+    "label_handle": "平面位号与圆轮廓核对",
+    "label_distance_mm": null,
+    "source_floor_origin_mm": [
+      846107.0477544266,
+      305259.2765326498
+    ],
+    "z_basis": "增补钢塔架背立面8ED2：筒底在楼面23.000以上300，与圆基础顶23.300同高；总装筒底EL123.300。仅Z基准明确，总高/锚固仍待核。",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "equipment_version": "2.0-F41B04-01",
+    "local_datum": "筒体下端Z0，世界EL123.300；当前显示筒高15100未作制造确认",
+    "installation_review": {
+      "before_position_mm": [
+        26000.0,
+        31900.0,
+        23000
+      ],
+      "before_rotation_deg": 0.0,
+      "retained_xy_and_rotation": true,
+      "z_correction_mm": 300,
+      "source_handle": "8ED2",
+      "base_top_EL": 123.3,
+      "body_top_display_EL": 138.4,
+      "height_confirmation": "17000/11000/约15100差异待核；本次保留现模型15100",
+      "anchorage": "缺设备底连接详图，不造底法兰/地脚孔或接口"
+    }
+  }
+]

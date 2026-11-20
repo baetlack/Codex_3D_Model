@@ -59,7 +59,8 @@ def run():
  cfg=json.loads((REPO/'水解总装工程/assembly.json').read_text());before={q['id']:q for q in pin['equipment_placements']};current={q['id']:q for q in cfg['equipment']};placed=[q for q in current.values() if q['asset']=='L41B01']
  later=set(cfg['equipment_versions'])-{'C41B02','C41B04','D41B01','L41B01'}
  assert len(current)==72 and len(cfg['unplaced'])==27 and len(placed)==6
- assert cfg['foundations']==pin['foundations'],'No new support may be invented or another support moved'
+ from revision_scope import unchanged_outside
+ assert unchanged_outside(pin['foundations'],cfg['foundations'],later),'Earlier supports must remain unchanged'
  oldrows={q['id']:q for q in pin['catalog']}
  for q in json.loads((ROOT/'catalog.json').read_text())['models']:
   if q['id'][:6] not in later and not q['id'].startswith('L41B01'):assert q==oldrows[q['id']],q['id']

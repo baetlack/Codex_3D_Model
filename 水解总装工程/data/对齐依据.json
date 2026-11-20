@@ -152,7 +152,7 @@
   "max_error_mm": 0.492,
   "placed": 72,
   "unplaced": 27,
-  "z_referenced": 38,
+  "z_referenced": 39,
   "limitations": [
     "上部柱截面沿用源模型，+9.900m以上需结构图复核",
     "墙厚200mm及屋面厚200mm仅显示假设，不参与确认碰撞",

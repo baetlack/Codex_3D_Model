@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": {
+    "original_tube_and_pending_height_labels": true,
+    "all_five_modes_and_153_preserved_steel_parts": true,
+    "current_GLB_downloads": true,
+    "before_after_installation_table": true,
+    "accepted_class_default_unchanged": true,
+    "assembly_EL123300_and_round_base_without_steel_instance": true
+  },
+  "page_errors_or_failed_resources": []
+}

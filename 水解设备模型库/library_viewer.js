@@ -245,6 +245,13 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     field(info,'位置与钢架','基础和钢塔架原几何保留；局部同心对照，接口与钢架的相交见本类报告。绝对中心/方位未核，不进入厂房总装。');
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/L41B02/整改说明.html'),link('1.0/2.0模型对照','版本/2.0/L41B02/修订对比.html'),link('钢架相交校核','版本/2.0/L41B02/支承相交校核.json'),link('安装待核','版本/2.0/L41B02/安装待核.json'));info.append(links);
   }
+  if (tagForRow(row)==='F41B04' && overrides.equipment?.F41B04) {
+    const info=section(detail,'本类2.0安装基准与高度差异');
+    field(info,'本体保持','原Ø1000×15100筒体及导出逐字节保留。台账17000、旧图11000、新塔架背立面约15100，以及新版平面约Ø1100的差异继续待核。');
+    field(info,'安装修正','总装筒底由EL123.000改EL123.300，补入300高圆基础；中心X26000/Y31900及零旋转保持。');
+    field(info,'锚固与钢架','圆基础/原153件钢架保持。钢架仅作局部对照，绝对方位未核；设备底部连接详图缺失，不补造底法兰或地脚孔，不把几何无相交视为锚固闭合。');
+    const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/F41B04/整改说明.html'),link('安装前后对照','版本/2.0/F41B04/安装对照.html'),link('安装表','版本/2.0/F41B04/安装表.json'),link('锚固/限位待核','版本/2.0/F41B04/支承复核.json'));info.append(links);
+  }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
     const civil=section(detail,support?'安装支架与图纸':'基础图与模型');

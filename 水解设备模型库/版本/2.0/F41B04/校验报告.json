@@ -1,0 +1,43 @@
+{
+  "version": "2.0-F41B04-01",
+  "status": "datum-checked-height-anchorage-and-steel-direction-pending",
+  "tube_and_exports": "byte-identical",
+  "foundation_and_153_steel_parts": "byte-identical",
+  "native_300mm_base_height": "passed",
+  "original_XY_rotation": "unchanged",
+  "new_Z_mm": 23300,
+  "new_round_base_instances": 1,
+  "new_steel_frame_instances": 0,
+  "other_71_positions_and_98_catalog_records": "unchanged",
+  "relative_frame_pairs": 0,
+  "relative_base_pairs": 0,
+  "GJ04_surface_gaps_mm": [
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981
+  ],
+  "anchor_radial_gap_mm": 88.0,
+  "screened_existing_objects": 520,
+  "aabb_candidates": 0,
+  "world_intersections": [],
+  "roof_base_contact": "roof top/base bottom =23000; normal surface contact",
+  "limits": [
+    "当前直筒外径1000/显示高15100保留；新背立面实量15098.60圆整为15100，台账17000及旧侧视11000差异未解决。",
+    "新版钢架平面圆直径约1099.76，与台账及立面1000不同，不能据此放大原筒体。",
+    "原壁厚16为显示值；现无制造总图/底部锚固详图，不补造底法兰、地脚孔或未画出的侧口。",
+    "圆基础和钢塔架源几何均保持，200mm螺栓露头沿用原展示口径；锚栓没有已确认的设备连接板。",
+    "筒底基准与基础顶的相对300mm可确认，不等于整机高度和锚固验收；钢架绝对方位未核，不加入厂房总装。"
+  ]
+}

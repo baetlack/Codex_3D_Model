@@ -1,0 +1,32 @@
+{
+  "version": "2.0-F41B04-01",
+  "status": "datum-checked-height-anchorage-and-steel-direction-pending",
+  "round_base": "Ø1400×300、50二次浇筑、PCD1200/12-M24，原几何不变",
+  "steel_frame": "原153构件保留；同心/原mount仅作局部检查",
+  "anchors": "缺设备底部连接板，不能认定锚固链闭合",
+  "steel_installed_in_plant": false,
+  "base_installed_in_plant": true,
+  "relative_frame_pairs": 0,
+  "relative_base_pairs": 0,
+  "GJ04_surface_gaps_mm": [
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981,
+    5.4,
+    145.981,
+    145.981
+  ],
+  "anchor_to_tube_radial_gap_mm": 88.0,
+  "round_base_bottom_EL": 123,
+  "round_base_top_EL": 123.3,
+  "display_tube_top_EL": 138.4
+}
