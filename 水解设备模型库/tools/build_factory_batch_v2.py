@@ -85,9 +85,13 @@ def top_port(name,xy,z,dn,height,flange=None,lower_dn=None,lower_flange=None):
         return p
     return port(name,(x,y,z-4),(x,y,z+height),dn,flange)
 
-def manhole(name,xy,z,dn,height,cover_d):
+def manhole(name,xy,z,dn,height,cover_d,center_lid=False):
     p=top_port(name,xy,z,dn,height,cover_d)
     geo.cyl('盖面_'+name+'盖',z+height,z+height+8,cover_d/2,STEEL,72)
+    if center_lid:
+        # C41B01 h lid must share the neck/handle XY, not the vessel origin.
+        label,color,vertices,faces=geo.parts[-1]
+        geo.parts[-1]=(label,color,[(x+xy[0],y+xy[1],zz) for x,y,zz in vertices],faces)
     x,y=xy;geo.box('盖面_'+name+'提手',(x,y,z+height+29),(80,12,34),STEEL)
     return p
 
@@ -163,7 +167,7 @@ def tanks(key,doc):
         rows=[('a','28D64',80,150,200,None),('b2/k2','28D0C',80,300,200,200),('b1/k1','28D23',65,300,185,200),('g','28D40',100,100,220,None),('m','28D4C',150,150,265,None),('e','28D58',80,100,200,None)]
         for name,h,dn,height,flange,lower in rows:
             xy=native_point(doc,h,c);holes.append((*xy,PIPE_OD[lower or dn]/2-6));ports.append(top_port(name,xy,top,dn,height,flange,lower,340 if lower else None));measurements[name]={'handle':h,'xy_mm':xy}
-        xy=native_point(doc,'28CD4',c);holes.append((*xy,259));ports.append(manhole('h',xy,top,500,150,620));measurements['h']={'handle':'28CD4','xy_mm':xy}
+        xy=native_point(doc,'28CD4',c);holes.append((*xy,259));ports.append(manhole('h',xy,top,500,150,620,center_lid=True));measurements['h']={'handle':'28CD4','xy_mm':xy}
         for name,deg,dn,z,extension in [('d',-45,80,top-200,150),('f',-135,25,1112,200)]:
             a=math.radians(deg);v=np.array([math.cos(a),math.sin(a),0]);start=v*1740;end=v*(1760+extension);start[2]=end[2]=z;ports.append(port(name,start,end,dn))
         ports.append(port('c1',(0,-1748,136),(0,-1908,136),150,285,outer_d=219,bore_d=150))

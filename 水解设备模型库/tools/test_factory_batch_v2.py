@@ -39,6 +39,11 @@ def run(selected):
         for q in parts:
             assert all(len(face)>=3 and min(face)>=0 and max(face)<len(q['vertices']) for face in q['faces']),q['name']
         glb=(out/f'设备/{key}.glb').read_bytes();assert glb[:4]==b'glTF' and struct.unpack_from('<I',glb,8)[0]==len(glb)
+        if key=='C41B01':
+            h=next(q for q in params['ports'] if q['id']=='h')
+            lid=np.asarray(next(q for q in parts if q['name']=='盖面_h盖')['vertices'])
+            assert np.allclose((lid.min(0)+lid.max(0))[:2]/2,h['face_center_mm'][:2],atol=1e-6)
+            assert abs(lid[:,2].min()-h['face_center_mm'][2])<1e-6
         lid_name={'C41B03':'e','F41B01':'k','F41B02':'h2','D41B02':'t'}.get(family)
         if lid_name:
             p=next(q for q in params['ports'] if q['id']==lid_name);assert p['closure']=='带盖侧人孔'
