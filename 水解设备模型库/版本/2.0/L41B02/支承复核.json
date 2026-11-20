@@ -12,5 +12,7 @@
   "assembly_instances_added": 0,
   "relative_interference_report": "支承相交校核.json",
   "old_intersection_pairs": 2,
-  "new_intersection_pairs": 6
+  "new_intersection_pairs": 6,
+  "foundation_interface_report": "基础接口校核.json",
+  "foundation_interface_pairs": 1
 }
