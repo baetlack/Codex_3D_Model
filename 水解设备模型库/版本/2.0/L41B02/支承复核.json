@@ -1,0 +1,16 @@
+{
+  "version": "2.0-L41B02-01",
+  "status": "geometry-checked-relative-intersections-pending",
+  "absolute_location": "unplaced",
+  "datum": "局部同心对照，圆基础顶Z0、钢塔架楼面Z-300；不是绝对安装确认",
+  "foundation_geometry": "unchanged",
+  "steel_geometry": "unchanged",
+  "tower_floor_EL": 123,
+  "base_top_EL": 123.3,
+  "frame_top_EL": 131.3,
+  "note": "原基础图23.000按总装EL100=本地0换算；不把旧EL112文字插点认定为新安装依据。",
+  "assembly_instances_added": 0,
+  "relative_interference_report": "支承相交校核.json",
+  "old_intersection_pairs": 2,
+  "new_intersection_pairs": 6
+}

@@ -1,0 +1,116 @@
+{
+  "version": "2.0-L41B02-01",
+  "status": "geometry-checked-relative-intersections-pending",
+  "datum": "局部同心对照：基础顶Z0、钢架楼面Z-300；绝对位置/方位待核",
+  "old_hits": [
+    {
+      "equipment": "接口_西侧排口法兰",
+      "frame": "支墩_混凝土 #6",
+      "surface_witness": [
+        224,
+        7
+      ],
+      "point_inside_both_mm": [
+        -1433.8,
+        0.0,
+        299.5
+      ]
+    },
+    {
+      "equipment": "接口_南侧中下接管",
+      "frame": "钢塔架_GJ04限位杆 #57",
+      "surface_witness": [
+        192,
+        48
+      ],
+      "point_inside_both_mm": [
+        -112.03922,
+        -1150.00311,
+        3042.95352
+      ]
+    }
+  ],
+  "new_hits": [
+    {
+      "equipment": "接口_西侧低口_接管",
+      "frame": "支墩_混凝土 #6",
+      "surface_witness": [
+        19,
+        7
+      ],
+      "point_inside_both_mm": [
+        -1423.3,
+        75.66373,
+        199.44311
+      ]
+    },
+    {
+      "equipment": "接口_西侧低口_法兰",
+      "frame": "支墩_混凝土 #6",
+      "surface_witness": [
+        2,
+        7
+      ],
+      "point_inside_both_mm": [
+        -1434.15355,
+        -89.94356,
+        118.38036
+      ]
+    },
+    {
+      "equipment": "接口_北侧大口_接管",
+      "frame": "钢塔架_GJ03倒V撑 #13",
+      "surface_witness": [
+        2,
+        240
+      ],
+      "point_inside_both_mm": [
+        370.58218,
+        1279.88535,
+        1623.71208
+      ]
+    },
+    {
+      "equipment": "接口_北侧大口_接管",
+      "frame": "钢塔架_GJ03倒V撑 #21",
+      "surface_witness": [
+        251,
+        320
+      ],
+      "point_inside_both_mm": [
+        -377.63185,
+        1257.5969,
+        1618.75676
+      ]
+    },
+    {
+      "equipment": "接口_北侧大口_法兰",
+      "frame": "钢塔架_GJ03倒V撑 #13",
+      "surface_witness": [
+        2,
+        248
+      ],
+      "point_inside_both_mm": [
+        421.27261,
+        1299.55415,
+        1710.57191
+      ]
+    },
+    {
+      "equipment": "接口_北侧大口_法兰",
+      "frame": "钢塔架_GJ03倒V撑 #21",
+      "surface_witness": [
+        243,
+        304
+      ],
+      "point_inside_both_mm": [
+        -367.60185,
+        1280.11465,
+        1622.49489
+      ]
+    }
+  ],
+  "new_regions_by_frame": 3,
+  "pair_count_meaning": "设备构件与钢架构件对，不等于独立施工冲突数；双实体内部采样排除单纯表面接触",
+  "unplaced_excluded_from_plant": true
+}

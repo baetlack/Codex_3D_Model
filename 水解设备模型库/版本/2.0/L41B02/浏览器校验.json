@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": {
+    "new_model_and_default_equipment_only": true,
+    "five_equipment_foundation_frame_modes": true,
+    "frozen_old_model_and_new_comparison": true,
+    "accepted_class_default_mode_unchanged": true,
+    "assembly_remains_72_placed_and_L41B02_unplaced": true
+  },
+  "page_errors_or_failed_resources": []
+}
