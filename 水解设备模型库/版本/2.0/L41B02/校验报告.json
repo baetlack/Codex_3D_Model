@@ -10,5 +10,6 @@
   "foundation_and_frame_bytes": "unchanged",
   "relative_old_intersection_pairs": 2,
   "relative_new_intersection_pairs": 6,
+  "foundation_interface_pairs": 1,
   "plant_collision": "not applicable: unplaced"
 }

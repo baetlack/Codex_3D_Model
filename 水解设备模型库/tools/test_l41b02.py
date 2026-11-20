@@ -28,10 +28,10 @@ def volume_witness(a,b):
                     if all(ck.inside(q,a['t']) and ck.inside(q,b['t']) for q in probes):return sample.round(5).tolist()
     return None
 
-def intersections(parts,frame):
+def intersections(parts,frame,translation=(0,0,-300)):
     hits=[]
     aa=[ck.object_mesh(p['name'],'equipment',ck.tri([p])) for p in parts]
-    bb=[ck.object_mesh(p['name']+' #'+str(i),'frame',ck.tri([p],(0,0,-300))) for i,p in enumerate(frame)]
+    bb=[ck.object_mesh(p['name']+' #'+str(i),'frame',ck.tri([p],translation)) for i,p in enumerate(frame)]
     for obj in aa+bb:
         points=np.unique(obj['t'][:,:,:2].reshape(-1,2),axis=0)
         obj['foot']=points[ConvexHull(points).vertices]
@@ -81,10 +81,15 @@ def run():
             if path.suffix in ['.js','.glb','.obj','.mtl']:assert (OUT/folder/path.name).read_bytes()==path.read_bytes(),str(path)
     frame=ck.script(OUT/'钢塔架/model_data.js','MODEL_PARTS');old=ck.script(ROOT/'示图建模_20260521/模型/L41B02/model_data.js','MODEL_PARTS')
     previous=intersections(old,frame);current=intersections(parts,frame)
+    base=ck.script(OUT/'基础/model_data.js','MODEL_PARTS')
+    # Plate/bolt clearance is already proved by the 12 real holes above.
+    # Here check the side interfaces against the preserved exposed anchors.
+    foundation_hits=intersections([p for p in parts if p['name'].startswith('接口_')],base,(0,0,0))
     report={'version':p['version'],'status':'geometry-checked-relative-intersections-pending' if current else 'geometry-checked-location-pending','datum':'局部同心对照：基础顶Z0、钢架楼面Z-300；绝对位置/方位待核','old_hits':previous,'new_hits':current,'new_regions_by_frame':len({h['frame'] for h in current}),'pair_count_meaning':'设备构件与钢架构件对，不等于独立施工冲突数；双实体内部采样排除单纯表面接触','unplaced_excluded_from_plant':True}
     save(OUT/'支承相交校核.json',report)
-    review=json.loads((OUT/'支承复核.json').read_text());review.update(status=report['status'],relative_interference_report='支承相交校核.json',old_intersection_pairs=len(previous),new_intersection_pairs=len(current));save(OUT/'支承复核.json',review)
-    save(OUT/'校验报告.json',{'version':p['version'],'status':report['status'],'closed_components':len(parts),'native_side_outline_checks':'passed','real_anchor_holes':12,'other_98_catalog_records':'unchanged','all_72_placements_and_27_unplaced':'unchanged','building_bridge_previous_equipment':'hashes unchanged','foundation_and_frame_bytes':'unchanged','relative_old_intersection_pairs':len(previous),'relative_new_intersection_pairs':len(current),'plant_collision':'not applicable: unplaced'})
+    save(OUT/'基础接口校核.json',{'version':p['version'],'datum':'圆基础顶/设备底同为Z0，沿用旧12-M24/200mm露头显示值','hits':foundation_hits,'contact_tolerance_mm':.1,'limits':'锚栓露头和设备共同方位待详图；不擅自缩短原锚栓或移动接口。底板孔位同心且孔半径15大于螺杆半径12，净距3mm。'})
+    review=json.loads((OUT/'支承复核.json').read_text());review.update(status=report['status'],relative_interference_report='支承相交校核.json',old_intersection_pairs=len(previous),new_intersection_pairs=len(current),foundation_interface_report='基础接口校核.json',foundation_interface_pairs=len(foundation_hits));save(OUT/'支承复核.json',review)
+    save(OUT/'校验报告.json',{'version':p['version'],'status':report['status'],'closed_components':len(parts),'native_side_outline_checks':'passed','real_anchor_holes':12,'other_98_catalog_records':'unchanged','all_72_placements_and_27_unplaced':'unchanged','building_bridge_previous_equipment':'hashes unchanged','foundation_and_frame_bytes':'unchanged','relative_old_intersection_pairs':len(previous),'relative_new_intersection_pairs':len(current),'foundation_interface_pairs':len(foundation_hits),'plant_collision':'not applicable: unplaced'})
     from publish_l41b02 import publish
     publish()
     print(json.dumps({'status':report['status'],'closed_parts':len(parts),'old_relative_pairs':len(previous),'new_relative_pairs':len(current),'new_hits':current,'placements':'72/27 unchanged'},ensure_ascii=False))
