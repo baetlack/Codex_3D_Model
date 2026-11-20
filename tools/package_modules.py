@@ -37,11 +37,18 @@ def json_bytes(value):
 
 def landing(module_id=None):
     """The same portal works in the repository and inside an individual ZIP."""
+    online = module_id is None
+    intro = ('点击下方入口即可在线旋转、分层查看模型；厂房页支持尺寸测量。'
+             '需要离线使用时，下载对应独立ZIP，完整解压后打开 index.html。') if online else (
+             '下载后先完整解压，再打开本页选择模型。可旋转、分层查看；模型格式和参数在各模块页面下载。'
+             'GitHub仓库页面展示文件、说明和预览图，不直接运行交互式3D。')
+    instructions = REPO_URL + '/blob/main/README.md' if online else 'README.md'
     installed = set(MODULES if module_id is None or module_id == 'assembly' else [module_id])
     cards = []
     for key, module in MODULES.items():
         name = html.escape(module['name'])
-        local = ('<a href="' + module['entry'] + '">打开三维模型</a> · ') if key in installed else ''
+        label = '在线查看三维模型' if online else '打开三维模型'
+        local = ('<a href="' + module['entry'] + '">' + label + '</a> · ') if key in installed else ''
         cards.append(f'<article><h2>{name}</h2><p>{html.escape(module["description"])}</p>'
                      f'<p>{local}<a href="{REPO_URL}/tree/{module["branch"]}/{module["directory"]}">GitHub目录</a> · '
                      f'<a href="{download_url(module)}">下载独立ZIP</a></p></article>')
@@ -50,9 +57,8 @@ def landing(module_id=None):
             f'<title>{title}</title><style>body{{max-width:1050px;margin:40px auto;padding:20px;background:#101923;color:#dce8ef;font:15px sans-serif;line-height:1.8}}'
             'a{color:#7cdce6}article{border:1px solid #344957;border-radius:8px;padding:8px 22px;margin:18px 0}h2{font-size:20px}</style>'
             f'<h1>{title}</h1><p>东 +X · 北 +Y · 上 +Z · EL100 / 106 / 112</p>'
-            '<p>下载后先完整解压，再打开本页选择模型。可旋转、分层查看；模型格式和参数在各模块页面下载。'
-            'GitHub仓库页面展示文件、说明和预览图，不直接运行交互式3D。</p>'
-            + ''.join(cards) + f'<p><a href="{REPO_URL}/releases">全部发布版本</a> · <a href="README.md">使用说明</a></p></html>').encode('utf-8')
+            f'<p>{intro}</p>'
+            + ''.join(cards) + f'<p><a href="{REPO_URL}/releases">全部发布版本</a> · <a href="{instructions}">使用说明</a></p></html>').encode('utf-8')
 
 
 def notice(module, prefix):

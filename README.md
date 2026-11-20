@@ -2,6 +2,8 @@
 
 桥架、厂房外观、设备和总装分别维护、分别浏览、分别下载。总装继续引用各模块原文件，东 +X、北 +Y、上 +Z，EL100 / 106 / 112；分包不改变模型、结构或安装位置。
 
+在线浏览：[模型总入口](https://baetlack.github.io/Codex_3D_Model/) · [桥架](https://baetlack.github.io/Codex_3D_Model/水解桥架工程/) · [厂房](https://baetlack.github.io/Codex_3D_Model/厂房外观模型/) · [设备](https://baetlack.github.io/Codex_3D_Model/水解设备模型库/) · [总装](https://baetlack.github.io/Codex_3D_Model/水解总装工程/)。直接通过浏览器查看，厂房页可测量尺寸。
+
 | 模块 | GitHub目录与说明 | 单独下载 | 主要内容 |
 |---|---|---|---|
 | 桥架工程 | [查看桥架](水解桥架工程/) | [桥架ZIP](https://github.com/baetlack/Codex_3D_Model/archive/refs/heads/module-bridge.zip) | 三层桥架、连接件库、GLB/OBJ、1.0与2.0 |
@@ -11,7 +13,9 @@
 
 [全部发布版本及固定版本下载](https://github.com/baetlack/Codex_3D_Model/releases) · 每个ZIP根目录含 `下载包清单.json`，逐文件记录SHA256。
 
-GitHub页面可以分别查看目录、说明、参数和预览图；交互式3D需要下载后在浏览器打开。仓库及发布包沿用私有权限，下载时需登录有访问权的GitHub账号。
+GitHub仓库文件页用于查看目录、说明、参数和预览图；在线交互式3D使用上述GitHub Pages入口，也可下载后离线打开。仓库已公开，模型与发布包可公开访问。
+
+Pages发布源为 `main` 分支根目录，`.nojekyll` 保证原目录及下划线命名的资源直接发布。主分支更新后自动部署；发布前保持资源相对路径完整，发布体积不超过1 GB。此配置不重建模型、不修改结构或安装位置。
 
 下载对应ZIP，**完整解压后双击根目录 `index.html`**，再选择本包模型。不要只取出其中的HTML或JS。推荐使用桌面版Chrome或Edge；如浏览器限制本地文件，在解压目录运行 `python -m http.server 8000`，访问 `http://localhost:8000/`。
 
@@ -33,7 +37,7 @@ GitHub页面可以分别查看目录、说明、参数和预览图；交互式3D
 
 </details>
 
-桥架当前2.0，1.0冻结保留；设备当前逐类整改，C41B02-02外形及精度已确认，C41B04为2.0-C41B04-02，两类共11项整改、其余88项保持。设备1.0、C41B02上一工作版01和旧Release均保留。[版本与整改进度](水解设备模型库/版本/index.html) · [桥架版本说明](水解桥架工程/README.md) · [备用设备模型（已弃用）](备用设备模型/README.md)。
+桥架当前2.0，1.0冻结保留；设备当前逐类整改，C41B02-02外形及精度已确认，当前C41B02、C41B04、D41B01、L41B01和F41B03五类共23项进入整改范围、其余76项保持。本体局部修正与支承/安装待核项分别记录，F41B03尚无完整总图。设备1.0、各类历史工作版和旧Release均保留。[版本与整改进度](水解设备模型库/版本/index.html) · [桥架版本说明](水解桥架工程/README.md) · [备用设备模型（已弃用）](备用设备模型/README.md)。
 
 完整维护与重建请克隆完整仓库，按各模块README及AGENTS操作。独立ZIP面向浏览和模型下载，发布清单记录源提交与每个文件的SHA256。分包范围在 [modules.json](modules.json)；发布工具只读取源文件，不移动或改写它们。
 
