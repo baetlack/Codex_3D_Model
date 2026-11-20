@@ -56,11 +56,13 @@ def run():
  relation=json.loads((OUT/'支承差异.json').read_text());assert relation['direct_contact_area_mm2']==0 and relation['axis_outer_edge_gap_mm']==8.75 and not relation['rotation_can_close_gap']
  raw=(OUT/'设备/F41B03.glb').read_bytes();assert raw[:4]==b'glTF' and struct.unpack_from('<I',raw,8)[0]==len(raw)
  cfg=json.loads((REPO/'水解总装工程/assembly.json').read_text());current={q['id']:q for q in cfg['equipment']};before={q['id']:q for q in pin['equipment_placements']}
- assert len(current)==72 and len(cfg['unplaced'])==27 and cfg['foundations']==pin['foundations']
+ later=set(cfg['equipment_versions'])-{'C41B02','C41B04','D41B01','L41B01','F41B03'}
+ from revision_scope import unchanged_outside
+ assert len(current)==72 and len(cfg['unplaced'])==27 and unchanged_outside(pin['foundations'],cfg['foundations'],later)
  unit=current['F41B03'];assert unit['position_mm']==before['F41B03']['position_mm']==[40000,41750,12200] and unit['rotation_deg']==before['F41B03']['rotation_deg']==0
  assert unit['z_status']=='待核' and '待核' in unit['orientation_status'] and unit['equipment_version']==p['version']
  for tag,q in current.items():
-  if tag!='F41B03':assert q==before[tag],tag
+  if tag!='F41B03' and q['asset'] not in later:assert q==before[tag],tag
  oldrows={q['id']:q for q in pin['catalog']}
  later=set(cfg['equipment_versions'])-{'C41B02','C41B04','D41B01','L41B01','F41B03'}
  for q in json.loads((ROOT/'catalog.json').read_text())['models']:

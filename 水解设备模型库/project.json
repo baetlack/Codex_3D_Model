@@ -1,13 +1,13 @@
 {
   "module": "水解设备模型库",
-  "active_version": "2.0（C41B02、C41B04、D41B01、L41B01、F41B03、L41B02）",
+  "active_version": "2.0（C41B02、C41B04、D41B01、L41B01、F41B03、L41B02、F41B04）",
   "baseline_version": "1.0",
   "counts": {
     "ledger_groups": 35,
     "ledger_items": 99,
-    "completed_batches": 6,
-    "revised_items": 24,
-    "other_items_unchanged": 75
+    "completed_batches": 7,
+    "revised_items": 25,
+    "other_items_unchanged": 74
   },
   "baseline": "版本/1.0/冻结清单.json",
   "revisions": {
@@ -58,8 +58,18 @@
       "placements": "版本/2.0/L41B02/安装表.json",
       "support_review": "版本/2.0/L41B02/支承复核.json",
       "status": "按原侧视修正侧口/底锚圈；基础和钢塔架保留，绝对定位及视图差异待核"
+    },
+    "F41B04": {
+      "version": "2.0-F41B04-01",
+      "equipment": "版本/2.0/F41B04/设备/model_data.js",
+      "foundation": "版本/2.0/F41B04/基础/model_data.js",
+      "foundation_single": "版本/2.0/F41B04/基础/model_data.js",
+      "placements": "版本/2.0/F41B04/安装表.json",
+      "support_placements": "版本/2.0/F41B04/基础安装表.json",
+      "support_review": "版本/2.0/F41B04/支承复核.json",
+      "status": "原筒体15100保持，筒底修正300并补圆基础；总高、底锚固和塔架方位待核"
     }
   },
-  "next_class": "F41B04",
+  "next_class": "L41B03",
   "rules": "每类单独追溯；不覆盖1.0与原图，不修改其他设备、建筑或桥架几何"
 }

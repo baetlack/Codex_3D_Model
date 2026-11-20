@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BASE-F41B04",
+    "name": "尾气烟囱圆基础",
+    "asset": "foundation-F41B04",
+    "position_mm": [
+      26000.0,
+      31900.0,
+      23300
+    ],
+    "rotation_deg": 0,
+    "level": "EL123",
+    "support_for": "F41B04",
+    "status": "基础底EL123.000、顶EL123.300；锚固连接待设备详图"
+  }
+]
