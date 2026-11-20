@@ -238,6 +238,13 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     const links=element('div','','links');links.append(link('本类校核说明','版本/2.0/F41B03/整改说明.html'),link('四耳/四墩诊断对照','版本/2.0/F41B03/支承对照.html'),link('1.0/2.0模型对照','版本/2.0/F41B03/修订对比.html'),link('安装待核表','版本/2.0/F41B03/安装表.json'));info.append(links);
     figure('设备原俯视','版本/2.0/F41B03/依据_设备俯视.png');figure('四墩基础图','版本/2.0/F41B03/依据_基础.png');
   }
+  if (tagForRow(row)==='L41B02' && overrides.equipment?.L41B02) {
+    const info=section(detail,'本类2.0侧视修正与定位');
+    field(info,'本次修正','侧口中心250/800/1500/5000/7000/8900；底部改为环形锚板和立边表达，撤下四托座。内部喷淋不展开。');
+    field(info,'图纸差异','顶法兰侧视955/俯视1182.5，底锚圈2600/2750；当前外形按侧视。壁厚、孔径及底部立边环向连续性为显示口径，待制造详图。');
+    field(info,'位置与钢架','基础和钢塔架原几何保留；局部同心对照，接口与钢架的相交见本类报告。绝对中心/方位未核，不进入厂房总装。');
+    const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/L41B02/整改说明.html'),link('1.0/2.0模型对照','版本/2.0/L41B02/修订对比.html'),link('钢架相交校核','版本/2.0/L41B02/支承相交校核.json'),link('安装待核','版本/2.0/L41B02/安装待核.json'));info.append(links);
+  }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
     const civil=section(detail,support?'安装支架与图纸':'基础图与模型');
@@ -443,7 +450,7 @@ async function select(id) {
           console.error(error);
         }
       };
-      if (mounted || civilOnly) {
+      if ((mounted || civilOnly) && !overrides.equipment?.[type.key]?.default_equipment_only) {
         foundationMode.value=mounted?'combined':foundationIds[0];
         await foundationMode.onchange();
         if (token!==selection) return;

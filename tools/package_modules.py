@@ -72,7 +72,7 @@ def notice(module, prefix):
             f'<a style="color:#7cdce6" href="{back}">返回模块入口</a></p></body></html>').encode('utf-8')
 
 
-def build(output):
+def build(output, module_ids=None):
     output.mkdir(parents=True, exist_ok=True)
     tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
     tracked = [p for p in tracked if p]
@@ -84,6 +84,8 @@ def build(output):
     }
     releases = []
     for module_id, module in MODULES.items():
+        if module_ids and module_id not in module_ids:
+            continue
         files = selected_files(module, tracked)
         assert module['entry'] in files, module_id
         manifest = {'module': module_id, 'name': module['name'], 'source_commit': commit,
@@ -124,6 +126,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, help='输出到仓库外的发布目录')
     parser.add_argument('--portal-only', action='store_true', help='只生成仓库根目录模块入口')
+    parser.add_argument('--module', action='append', choices=MODULES, help='只打包指定模块；可重复使用，默认全部')
     args = parser.parse_args()
     if args.portal_only:
         (ROOT/'index.html').write_bytes(landing())
@@ -132,4 +135,4 @@ if __name__ == '__main__':
             parser.error('请用 --output 指定发布目录。')
         if args.output.resolve() == ROOT or ROOT in args.output.resolve().parents:
             parser.error('ZIP输出必须位于仓库外，避免重复归档生成文件。')
-        build(args.output)
+        build(args.output, args.module)
