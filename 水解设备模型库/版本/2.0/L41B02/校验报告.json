@@ -1,0 +1,14 @@
+{
+  "version": "2.0-L41B02-01",
+  "status": "geometry-checked-relative-intersections-pending",
+  "closed_components": 20,
+  "native_side_outline_checks": "passed",
+  "real_anchor_holes": 12,
+  "other_98_catalog_records": "unchanged",
+  "all_72_placements_and_27_unplaced": "unchanged",
+  "building_bridge_previous_equipment": "hashes unchanged",
+  "foundation_and_frame_bytes": "unchanged",
+  "relative_old_intersection_pairs": 2,
+  "relative_new_intersection_pairs": 6,
+  "plant_collision": "not applicable: unplaced"
+}

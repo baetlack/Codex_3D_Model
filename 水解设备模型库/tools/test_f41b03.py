@@ -62,8 +62,9 @@ def run():
  for tag,q in current.items():
   if tag!='F41B03':assert q==before[tag],tag
  oldrows={q['id']:q for q in pin['catalog']}
+ later=set(cfg['equipment_versions'])-{'C41B02','C41B04','D41B01','L41B01','F41B03'}
  for q in json.loads((ROOT/'catalog.json').read_text())['models']:
-  if q['id']!='F41B03':assert q==oldrows[q['id']],q['id']
+  if q['id']!='F41B03' and q['id'][:6] not in later:assert q==oldrows[q['id']],q['id']
  circle=ezdxf.readfile(REPO/'水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf').entitydb['D9737']
  assert np.allclose(np.array(circle.dxf.center)[:2]-unit['source_floor_origin_mm'],unit['position_mm'][:2],atol=.001)
  bridge,columns=au.load();beams=[];floors=[]
@@ -88,6 +89,7 @@ def run():
  crossed=[b['id'] for b in floors if subject['high'][2]>=b['low'][2] and subject['low'][2]<=b['high'][2]]
  assert not crossed,crossed
  report={'version':p['version'],'status':'geometry-validated-bearing-unresolved','straight_section_dictionary':'unchanged including normals/material','unsupported_end_rings_removed':2,'real_holes':4,'watertight_components':len(parts),'source_hole_centres_mm':[xy.round(7).tolist() for xy in native],'support_checks':checks,'ear_corner_max_radius_mm':round(plate_radius,6),'support_min_radius_mm':600,'rotation_cannot_make_direct_contact':True,'direct_bearing_area_mm2':0,'support_geometry_bytes':'unchanged','other_71_placed_and_98_catalog_records':'unchanged','building_bridge_previous_models_hashes':'unchanged','current_xyz_rotation':'unchanged; Z/absolute orientation still provisional','screen':{'columns':len(columns),'beams':len(beams),'bridge_parts':len(bridge),'other_equipment':other_count,'aabb_candidates':candidates},'current_provisional_position_intersections':hits,'floor_slabs_crossed':crossed,'civil_instances_added':0,'limits':p['limits']}
+ if later:report['other_71_placed_and_98_catalog_records']='unchanged except separately registered revisions: '+','.join(sorted(later))
  (OUT/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:v for k,v in report.items() if k not in ['limits','support_checks']},ensure_ascii=False));assert not hits,hits
 if __name__=='__main__':run()
