@@ -1,0 +1,300 @@
+{
+  "source": "水解设备模型库/水解设备图纸/偏钛酸缓冲槽(F4101A-B1～4).dxf",
+  "sha256": "753ab0508cb03f6fe5ef33280ebae6436c4c9f7852b124e3299aed5fa905057d",
+  "dimension_entities": {
+    "1A79D": {
+      "actual_measurement": 5900.0,
+      "defpoint2": [
+        7759.047538129014,
+        11256.81988761954,
+        1.24e-14
+      ],
+      "defpoint3": [
+        7267.594058975575,
+        17156.81988761954,
+        1.24e-14
+      ]
+    },
+    "27045": {
+      "text": "\\A1;\\U+22055000",
+      "actual_measurement": 4999.999999999999,
+      "defpoint2": [
+        2178.59405897559,
+        15841.56728158415,
+        2.8e-15
+      ],
+      "defpoint3": [
+        7178.594058975588,
+        15841.56728158415,
+        2.9e-15
+      ]
+    },
+    "274BD": {
+      "text": "\\A1;\\U+22055100",
+      "actual_measurement": 5099.999999999998,
+      "defpoint2": [
+        7228.594058975585,
+        11242.66363761954,
+        1.24e-14
+      ],
+      "defpoint3": [
+        2128.594058975587,
+        11242.81988761954,
+        1.37e-14
+      ]
+    },
+    "2A386": {
+      "actual_measurement": 1100.0,
+      "defpoint2": [
+        2128.594058975587,
+        11256.81988761954,
+        1.24e-14
+      ],
+      "defpoint3": [
+        2064.594058975588,
+        12356.81988761953,
+        1.02e-14
+      ]
+    },
+    "2A3CE": {
+      "actual_measurement": 2400.0,
+      "defpoint2": [
+        6230.290907049023,
+        12056.81988761917,
+        1.24e-14
+      ],
+      "defpoint3": [
+        4784.592997475585,
+        14456.81988761917,
+        -7.1e-15
+      ]
+    }
+  },
+  "plan_points": {
+    "a/n1": {
+      "handle": "2AA11",
+      "xy_mm": [
+        1999.999999999999,
+        0.0
+      ]
+    },
+    "c/n2": {
+      "handle": "2AA3F",
+      "xy_mm": [
+        -1999.9999999999995,
+        0.0
+      ]
+    },
+    "d": {
+      "handle": "193A1",
+      "xy_mm": [
+        1628.9898912080862,
+        1160.3413007998379
+      ]
+    },
+    "e": {
+      "handle": "1938E",
+      "xy_mm": [
+        -1414.2135623730946,
+        -1414.2135623730774
+      ]
+    },
+    "f": {
+      "handle": "1A600",
+      "xy_mm": [
+        0.0,
+        1749.999999999999
+      ]
+    },
+    "h": {
+      "handle": "2A945",
+      "xy_mm": [
+        -9.094947017729282e-13,
+        -2000.000000000001
+      ]
+    },
+    "k盖": {
+      "source_name_handle": "31D2E",
+      "flange_source_handle": "31D2B",
+      "source_name": "人孔盖/法兰 δ＝38"
+    }
+  },
+  "specification": {
+    "nominal_inner_diameter_mm": 5000,
+    "steel_outer_diameter_mm": 5020,
+    "nominal_body_height_mm": 5900,
+    "body_base_mm": 162,
+    "cover_top_mm": 6062,
+    "bottom_member_height_mm": 150,
+    "bottom_plate_diameter_mm": 5100,
+    "bottom_plate_thickness_mm": 12,
+    "cover_diameter_mm": 5220,
+    "cover_thickness_mm": 12,
+    "mixer_display_height_mm": 2310,
+    "ring_bolt_count": 40,
+    "ring_bolt_PCD_mm": 5140
+  },
+  "port_table": [
+    {
+      "id": "a/n1",
+      "DN": 200,
+      "face_center_mm": [
+        1999.999999999999,
+        0.0,
+        6362.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18,
+      "outer_DN": 250,
+      "outside_flange_OD_mm": 395
+    },
+    {
+      "id": "c/n2",
+      "DN": 150,
+      "face_center_mm": [
+        -1999.9999999999995,
+        0.0,
+        6362.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340
+    },
+    {
+      "id": "d",
+      "DN": 200,
+      "face_center_mm": [
+        1628.9898912080862,
+        1160.3413007998379,
+        6212.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 200,
+      "face_center_mm": [
+        -1414.2135623730946,
+        -1414.2135623730774,
+        6212.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 80,
+      "face_center_mm": [
+        0.0,
+        1749.999999999999,
+        6162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h",
+      "DN": 500,
+      "face_center_mm": [
+        -9.094947017729282e-13,
+        -2000.000000000001,
+        6212.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 620,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b",
+      "DN": 400,
+      "face_center_mm": [
+        2770.0,
+        0.0,
+        362.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "neck_OD_mm": 426.0,
+      "flange_OD_mm": 565,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "k",
+      "DN": 800,
+      "face_center_mm": [
+        1986.9700551341987,
+        1986.9700551341984,
+        1062.0
+      ],
+      "normal": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "neck_OD_mm": 820.0,
+      "flange_OD_mm": 1000,
+      "flange_thickness_mm": 38,
+      "closure": "带盖侧人孔",
+      "cover_thickness_mm": 38,
+      "handle_scope": "图示提手按比例表达；未标细部不作制造尺寸"
+    },
+    {
+      "id": "g",
+      "DN": 65,
+      "face_center_mm": [
+        -1916.2593770155436,
+        -1916.259377015544,
+        762.0
+      ],
+      "normal": [
+        -0.6484664555997907,
+        -0.6484664555997915,
+        -0.39872611141444986
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18
+    }
+  ],
+  "scale_note": "以明确标注值优先；平面与侧视可能不同图形比例；未标尺寸保持显示假设"
+}

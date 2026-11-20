@@ -1,13 +1,16 @@
 {
   "module": "水解设备模型库",
-  "active_version": "2.0（C41B02、C41B04、D41B01、L41B01、F41B03、L41B02、F41B04）",
+  "active_version": "2.0（首轮35类99项已覆盖，未决项保留）",
   "baseline_version": "1.0",
   "counts": {
     "ledger_groups": 35,
     "ledger_items": 99,
-    "completed_batches": 7,
-    "revised_items": 25,
-    "other_items_unchanged": 74
+    "completed_batches": 16,
+    "revised_items": 58,
+    "other_items_unchanged": 41,
+    "reviewed_batches": 35,
+    "reviewed_items": 99,
+    "unreviewed_items": 0
   },
   "baseline": "版本/1.0/冻结清单.json",
   "revisions": {
@@ -68,8 +71,202 @@
       "support_placements": "版本/2.0/F41B04/基础安装表.json",
       "support_review": "版本/2.0/F41B04/支承复核.json",
       "status": "原筒体15100保持，筒底修正300并补圆基础；总高、底锚固和塔架方位待核"
+    },
+    "L41B03": {
+      "version": "2.0-L41B03-01",
+      "equipment": "版本/2.0/L41B03/设备/model_data.js",
+      "foundation": "版本/2.0/L41B03/钢支架/model_data.js",
+      "placements": "版本/2.0/L41B03/安装表.json",
+      "support_review": "版本/2.0/L41B03/支承复核.json",
+      "status": "台账主尺寸、示图比例修正；本体不含旧框架；原钢支架保留，绝对定位待核"
+    },
+    "C41B01": {
+      "version": "2.0-C41B01-01",
+      "equipment": "版本/2.0/C41B01/设备/model_data.js",
+      "placements": "版本/2.0/C41B01/安装表.json",
+      "support_review": "版本/2.0/C41B01/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "foundation": "版本/2.0/C41B01/基础/C41B01/model_data.js"
+    },
+    "C41B03": {
+      "version": "2.0-C41B03-01",
+      "equipment": "版本/2.0/C41B03/设备/model_data.js",
+      "placements": "版本/2.0/C41B03/安装表.json",
+      "support_review": "版本/2.0/C41B03/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "foundation": "版本/2.0/C41B03/基础/C41B03/model_data.js"
+    },
+    "F41B01": {
+      "version": "2.0-F41B01-01",
+      "equipment": "版本/2.0/F41B01/设备/model_data.js",
+      "placements": "版本/2.0/F41B01/安装表.json",
+      "support_review": "版本/2.0/F41B01/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "foundation": "版本/2.0/F41B01/基础/F41B01/model_data.js"
+    },
+    "F41B02": {
+      "version": "2.0-F41B02-01",
+      "equipment": "版本/2.0/F41B02/设备/model_data.js",
+      "placements": "版本/2.0/F41B02/安装表.json",
+      "support_review": "版本/2.0/F41B02/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "foundation": "版本/2.0/F41B02/基础/F41B02/model_data.js"
+    },
+    "F41B05": {
+      "version": "2.0-F41B05-01",
+      "equipment": "版本/2.0/F41B05/设备/model_data.js",
+      "placements": "版本/2.0/F41B05/安装表.json",
+      "support_review": "版本/2.0/F41B05/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列"
+    },
+    "F41B06": {
+      "version": "2.0-F41B06-01",
+      "equipment": "版本/2.0/F41B06/设备/model_data.js",
+      "placements": "版本/2.0/F41B06/安装表.json",
+      "support_review": "版本/2.0/F41B06/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列"
+    },
+    "D41B02": {
+      "version": "2.0-D41B02-01",
+      "equipment": "版本/2.0/D41B02/设备/model_data.js",
+      "placements": "版本/2.0/D41B02/安装表.json",
+      "support_review": "版本/2.0/D41B02/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "foundation": "版本/2.0/D41B02/基础/D41B02/model_data.js"
+    },
+    "L41B05": {
+      "version": "2.0-L41B05-01",
+      "equipment": "版本/2.0/L41B05/设备/model_data.js",
+      "placements": "版本/2.0/L41B05/安装表.json",
+      "support_review": "版本/2.0/L41B05/支承复核.json",
+      "orientation_review": "new-factory-layout-pending",
+      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "foundation": "版本/2.0/L41B05/基础/L41B05/model_data.js"
     }
   },
-  "next_class": "L41B03",
-  "rules": "每类单独追溯；不覆盖1.0与原图，不修改其他设备、建筑或桥架几何"
+  "next_class": null,
+  "rules": "每类单独追溯；不覆盖1.0与原图，不修改其他设备、建筑或桥架几何",
+  "reviews": {
+    "F41B07": {
+      "version": "2.0-F41B07-复核01",
+      "status": "保留已按图建立的两座地坑；净空1500×1500×2000继续作为口径",
+      "record": "版本/2.0/F41B07/复核记录.json",
+      "geometry_changed": false
+    },
+    "F41B08": {
+      "version": "2.0-F41B08-复核01",
+      "status": "保留用户确认的Ø1000×1000一体圆柱",
+      "record": "版本/2.0/F41B08/复核记录.json",
+      "geometry_changed": false
+    },
+    "L41B04": {
+      "version": "2.0-L41B04-复核01",
+      "status": "保留现有减温减压器外形；平面外廓有依据，立面与安装支座待核",
+      "record": "版本/2.0/L41B04/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41A08": {
+      "version": "2.0-P41A08-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41A08/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B01": {
+      "version": "2.0-P41B01-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B01/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B02": {
+      "version": "2.0-P41B02-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B02/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B03": {
+      "version": "2.0-P41B03-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B03/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B04": {
+      "version": "2.0-P41B04-复核01",
+      "status": "暂留管道泵示意；卧式/立式型式与安装外形待厂家图",
+      "record": "版本/2.0/P41B04/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B05": {
+      "version": "2.0-P41B05-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B05/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B06": {
+      "version": "2.0-P41B06-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B06/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B07": {
+      "version": "2.0-P41B07-复核01",
+      "status": "暂留现有泵示意，立式外形尚未整改通过",
+      "record": "版本/2.0/P41B07/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B08": {
+      "version": "2.0-P41B08-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B08/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B09": {
+      "version": "2.0-P41B09-复核01",
+      "status": "暂留现有泵示意，立式外形尚未整改通过",
+      "record": "版本/2.0/P41B09/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B10": {
+      "version": "2.0-P41B10-复核01",
+      "status": "保留风机蜗壳、轴向入口、切向出口及本体底座",
+      "record": "版本/2.0/P41B10/复核记录.json",
+      "geometry_changed": false
+    },
+    "P41B11": {
+      "version": "2.0-P41B11-复核01",
+      "status": "保留可追溯的卧式泵示意，厂家安装尺寸待补",
+      "record": "版本/2.0/P41B11/复核记录.json",
+      "geometry_changed": false
+    },
+    "V41B01": {
+      "version": "2.0-V41B01-复核01",
+      "status": "保留葫芦示意模型；吨位/起升高度仅作为台账参数",
+      "record": "版本/2.0/V41B01/复核记录.json",
+      "geometry_changed": false
+    },
+    "V41B02": {
+      "version": "2.0-V41B02-复核01",
+      "status": "保留葫芦示意模型；吨位/起升高度仅作为台账参数",
+      "record": "版本/2.0/V41B02/复核记录.json",
+      "geometry_changed": false
+    },
+    "V41B03": {
+      "version": "2.0-V41B03-复核01",
+      "status": "保留葫芦示意模型；吨位/起升高度仅作为台账参数",
+      "record": "版本/2.0/V41B03/复核记录.json",
+      "geometry_changed": false
+    },
+    "V41B04": {
+      "version": "2.0-V41B04-复核01",
+      "status": "保留葫芦示意模型；吨位/起升高度仅作为台账参数",
+      "record": "版本/2.0/V41B04/复核记录.json",
+      "geometry_changed": false
+    }
+  }
 }

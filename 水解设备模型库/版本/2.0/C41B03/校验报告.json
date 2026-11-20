@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "version": "2.0-C41B03-01",
+  "core_and_source_checks": "passed",
+  "placement_preservation": "passed",
+  "civil_intersection_pairs": 0,
+  "installation_approval": false
+}

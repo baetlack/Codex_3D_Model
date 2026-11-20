@@ -1,0 +1,342 @@
+{
+  "source": "水解设备模型库/水解设备图纸/热水预热槽(C41B01A-B).dxf",
+  "sha256": "78767d9e3b6537ddddee22bc7de1a6834927d0349b61383461c39ac4794dc213",
+  "dimension_entities": {
+    "28FB8": {
+      "actual_measurement": 4000.000000000007,
+      "defpoint2": [
+        24171.71460428133,
+        11272.63119539553,
+        0.0
+      ],
+      "defpoint3": [
+        24216.71460428132,
+        15272.63119539554,
+        0.0
+      ]
+    },
+    "291D0": {
+      "text": "%%C<>",
+      "actual_measurement": 3500.0,
+      "defpoint2": [
+        20631.71460428133,
+        14551.25670670563,
+        0.0
+      ],
+      "defpoint3": [
+        24131.71460428133,
+        14551.25670670563,
+        0.0
+      ]
+    },
+    "291CD": {
+      "text": "\\A1;\\U+22053580",
+      "actual_measurement": 3580.0,
+      "defpoint2": [
+        20591.71460428133,
+        11260.63119539553,
+        0.0
+      ],
+      "defpoint3": [
+        24171.71460428133,
+        11260.63119539553,
+        0.0
+      ]
+    },
+    "28C4C": {
+      "text": "\\A1;\\U+22053606",
+      "actual_measurement": 3605.999999999993,
+      "defpoint2": [
+        20578.71460428133,
+        15308.63119539554,
+        -1e-16
+      ],
+      "defpoint3": [
+        24184.71460428132,
+        15308.63119539554,
+        -1e-16
+      ]
+    },
+    "28C4F": {
+      "text": "\\A1;\\U+22053670",
+      "actual_measurement": 3669.999999999993,
+      "defpoint2": [
+        20546.71460428133,
+        15293.63119539554,
+        0.0
+      ],
+      "defpoint3": [
+        24216.71460428132,
+        15293.63119539542,
+        0.0
+      ]
+    }
+  },
+  "plan_points": {
+    "a": {
+      "handle": "28D64",
+      "xy_mm": [
+        -862.1742679930503,
+        905.0721140388032
+      ]
+    },
+    "b2/k2": {
+      "handle": "28D0C",
+      "xy_mm": [
+        -1250.0,
+        -1.8189894035458565e-12
+      ]
+    },
+    "b1/k1": {
+      "handle": "28D23",
+      "xy_mm": [
+        0.0,
+        -1250.000000000001
+      ]
+    },
+    "g": {
+      "handle": "28D40",
+      "xy_mm": [
+        -932.5468455645605,
+        -832.3799497991267
+      ]
+    },
+    "m": {
+      "handle": "28D4C",
+      "xy_mm": [
+        883.8834764831699,
+        -883.8834764831881
+      ]
+    },
+    "e": {
+      "handle": "28D58",
+      "xy_mm": [
+        999.9999999999891,
+        -3.226195985917002e-05
+      ]
+    },
+    "h": {
+      "handle": "28CD4",
+      "xy_mm": [
+        -1.6007106751203537e-10,
+        1249.9999999999418
+      ]
+    },
+    "c2": {
+      "handle": "356A3",
+      "flange_face_xy_mm": [
+        -493.82673805561353,
+        -1842.9864765595412
+      ]
+    }
+  },
+  "specification": {
+    "nominal_inner_diameter_mm": 3500,
+    "steel_outer_diameter_mm": 3520,
+    "nominal_body_height_mm": 4000,
+    "body_base_mm": 12,
+    "cover_top_mm": 4012,
+    "bottom_member_height_mm": 0,
+    "bottom_plate_diameter_mm": 3580,
+    "bottom_plate_thickness_mm": 12,
+    "cover_diameter_mm": 3670,
+    "cover_thickness_mm": 10,
+    "mixer_display_height_mm": 0,
+    "ring_bolt_count": 28,
+    "ring_bolt_PCD_mm": 3606
+  },
+  "port_table": [
+    {
+      "id": "a",
+      "DN": 80,
+      "face_center_mm": [
+        -862.1742679930503,
+        905.0721140388032,
+        4162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b2/k2",
+      "DN": 80,
+      "face_center_mm": [
+        -1250.0,
+        -1.8189894035458565e-12,
+        4312.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340
+    },
+    {
+      "id": "b1/k1",
+      "DN": 65,
+      "face_center_mm": [
+        0.0,
+        -1250.000000000001,
+        4312.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340
+    },
+    {
+      "id": "g",
+      "DN": 100,
+      "face_center_mm": [
+        -932.5468455645605,
+        -832.3799497991267,
+        4112.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "m",
+      "DN": 150,
+      "face_center_mm": [
+        883.8834764831699,
+        -883.8834764831881,
+        4162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 265,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 80,
+      "face_center_mm": [
+        999.9999999999891,
+        -3.226195985917002e-05,
+        4112.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h",
+      "DN": 500,
+      "face_center_mm": [
+        -1.6007106751203537e-10,
+        1249.9999999999418,
+        4162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 620,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d",
+      "DN": 80,
+      "face_center_mm": [
+        1350.5739520663058,
+        -1350.5739520663058,
+        3812.0
+      ],
+      "normal": [
+        0.7071067811865469,
+        -0.7071067811865482,
+        0.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 25,
+      "face_center_mm": [
+        -1385.929291125633,
+        -1385.9292911256332,
+        1112.0
+      ],
+      "normal": [
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c1",
+      "DN": 150,
+      "face_center_mm": [
+        0.0,
+        -1908.0,
+        136.0
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c2",
+      "DN": 200,
+      "face_center_mm": [
+        -493.8267380556135,
+        -1842.9864765595412,
+        147.0
+      ],
+      "normal": [
+        -0.2588190451025228,
+        -0.9659258262890678,
+        0.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    }
+  ],
+  "scale_note": "以明确标注值优先；平面与侧视可能不同图形比例；未标尺寸保持显示假设"
+}

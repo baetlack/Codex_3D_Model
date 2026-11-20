@@ -1,0 +1,44 @@
+[
+  {
+    "id": "P41B08",
+    "name": "偏钛酸转运泵",
+    "asset": "P41B08",
+    "position_mm": [
+      41499.8447,
+      60475.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "B5E59",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "F7300",
+    "label_distance_mm": 2648.67,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E59",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        365734.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  }
+]

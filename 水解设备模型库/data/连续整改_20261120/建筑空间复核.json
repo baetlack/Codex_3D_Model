@@ -1,0 +1,60 @@
+{
+  "status": "checked",
+  "checked_units": [
+    "D41B02C3",
+    "D41B02C2",
+    "D41B02C1",
+    "D41B02A3",
+    "D41B02A2",
+    "D41B02A1",
+    "D41B02D3",
+    "D41B02D2",
+    "D41B02D1",
+    "D41B02E3",
+    "D41B02E2",
+    "D41B02E1",
+    "F41B01A2",
+    "F41B01A1",
+    "F41B01A4",
+    "F41B01A3",
+    "F41B01B4",
+    "F41B01B1",
+    "F41B01B2",
+    "F41B01B3",
+    "D41B02B3",
+    "D41B02B2",
+    "D41B02B1",
+    "F41B06",
+    "F41B05",
+    "F41B02",
+    "C41B01A",
+    "C41B03B",
+    "C41B03A",
+    "C41B01B",
+    "C41B03C"
+  ],
+  "complete_building_objects": 299,
+  "aabb_candidates": 16,
+  "solid_intersections": [],
+  "tolerance_mm": 0.1,
+  "scope": "新增本体/接口逐部件对完整建筑；包围盒候选按部件计；D41B02已锁定主体不重复处理，仅检查新接口；孔洞使用真实网格",
+  "limits": [
+    "表面接触不作为穿入",
+    "楼板厚及部分建筑构件为展示口径，几何相交不等于施工冲突",
+    "设备绝对工艺方位、暂用标高及盖面基准待核的项目不因本报告解除",
+    "桥架/柱、设备/柱及设备互相另见总装公共相交报告"
+  ],
+  "input_sha256": {
+    "building": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b",
+    "assembly": "01cb3d19620a070ca5a5b51d4e591c5a561e3448d2c39de15cca9a751d8a402b",
+    "models": {
+      "D41B02": "e9bbc51e997df7e5fd274d7d0201d6b54af3986e9f29d50a941f58ef6b9ea861",
+      "F41B01": "1fa83f50d17eb559f1f87955f85beaa237e6dfb9bf2d5b833800df568b3392aa",
+      "F41B06": "fa681d75b0dc4fd69c48e9dcc0f889ba25b3dfd59d518831213f94e691831be4",
+      "F41B05": "fa681d75b0dc4fd69c48e9dcc0f889ba25b3dfd59d518831213f94e691831be4",
+      "F41B02": "fa681d75b0dc4fd69c48e9dcc0f889ba25b3dfd59d518831213f94e691831be4",
+      "C41B01": "543d160e13b4776b893533277f1179c18e7a82c7941185ed074955b23ae84863",
+      "C41B03": "7b2f97273fa55d03b52103a47cba52b6b3bd1fe95d20b8f079eb4611c1f3d88c"
+    }
+  }
+}

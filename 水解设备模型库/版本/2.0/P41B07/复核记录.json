@@ -1,0 +1,50 @@
+{
+  "id": "P41B07",
+  "name": "废水输送泵",
+  "version": "2.0-P41B07-复核01",
+  "action": "暂留现有泵示意，立式外形尚未整改通过",
+  "geometry_action": "retained",
+  "status": "reviewed-with-open-items",
+  "unit_tags": [
+    "P41B07A",
+    "P41B07B"
+  ],
+  "active_model_source": null,
+  "active_model_sha256": null,
+  "legacy_model_basis": "原档案及示图；未取得厂家立面尺寸",
+  "sources": {
+    "水解设备模型库/示图建模_20260521/原始资料/水解设备模型示图_更新20261105.dxf": "b06d01a8b8bd50f8cd815412f37ede908c2573b0636030ab6018a92a124a3338",
+    "水解桥架工程/data/原始资料/设备基础/水解设备基础图.dxf": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7",
+    "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
+    "水解设备模型库/示图建模_20260521/原始资料/2.水解水洗设备一览表 2026.5.21.xls": "77844a77077ae85ac67e0f8f7c21fe1cee6d73d06564036b53959560b0df07a3"
+  },
+  "installation": {
+    "placed": [],
+    "unplaced": [
+      {
+        "id": "P41B07A",
+        "name": "废水输送泵",
+        "reason": "未取得可唯一关联的平面设备图块，禁止以文字插入点代替设备中心",
+        "legacy_position_mm": [
+          671099,
+          343252
+        ]
+      },
+      {
+        "id": "P41B07B",
+        "name": "废水输送泵",
+        "reason": "未取得可唯一关联的平面设备图块，禁止以文字插入点代替设备中心",
+        "legacy_position_mm": [
+          663187,
+          360793
+        ]
+      }
+    ],
+    "position_action": "unchanged"
+  },
+  "pending": [
+    "台账为立式泵/立式管道泵，现有卧式比例外形不符合已知型式，应替换厂家立式模型",
+    "现有平面安装符号不能推导真实总高、电机外形或入坑深度",
+    "不凭流量扬程推造设备尺寸；原位置/基础暂留，外形标记待厂家图"
+  ]
+}

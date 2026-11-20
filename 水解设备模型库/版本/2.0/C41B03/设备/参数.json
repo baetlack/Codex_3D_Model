@@ -1,0 +1,167 @@
+{
+  "id": "C41B03",
+  "group": "C41B03",
+  "name": "稀碱预热槽",
+  "version": "2.0-C41B03-01",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/稀碱预热槽(C41B03A-C).dxf",
+  "source_sha256": "b1378771eedd7e9d960faa1b1ceefff629ff063c1e663b46940c4f8d816ac735",
+  "scope": "外部本体/接口、基础配合与安装复核；不展开内部工艺构造",
+  "dimensions_mm": {
+    "nominal_inner_diameter_mm": 1500,
+    "steel_outer_diameter_mm": 1512,
+    "nominal_body_height_mm": 2000,
+    "body_base_mm": 6,
+    "cover_top_mm": 2006,
+    "bottom_member_height_mm": 0,
+    "bottom_plate_diameter_mm": 1550,
+    "bottom_plate_thickness_mm": 6,
+    "cover_diameter_mm": 1638,
+    "cover_thickness_mm": 6,
+    "mixer_display_height_mm": 1350,
+    "ring_bolt_count": 20,
+    "ring_bolt_PCD_mm": 1586
+  },
+  "bounds_mm": [
+    1870.4023,
+    1825.0,
+    3382.5
+  ],
+  "ports": [
+    {
+      "id": "h",
+      "DN": 80,
+      "face_center_mm": [
+        424.26406871190994,
+        424.2640687119422,
+        2156.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b",
+      "DN": 100,
+      "face_center_mm": [
+        599.9999999999632,
+        9.943808739384016e-12,
+        2156.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "a",
+      "DN": 100,
+      "face_center_mm": [
+        424.26406871190994,
+        -424.26406871194195,
+        2156.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c",
+      "DN": 50,
+      "face_center_mm": [
+        -562.9165124598561,
+        -325.0000000000262,
+        2306.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 57.0,
+      "flange_OD_mm": 165,
+      "flange_thickness_mm": 18,
+      "outer_DN": 150,
+      "outside_flange_OD_mm": 265
+    },
+    {
+      "id": "e",
+      "DN": 500,
+      "face_center_mm": [
+        906.0,
+        0.0,
+        506.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 650,
+      "flange_thickness_mm": 18,
+      "closure": "带盖侧人孔",
+      "cover_thickness_mm": 8,
+      "handle_scope": "图示提手按比例表达；未标细部不作制造尺寸"
+    },
+    {
+      "id": "d",
+      "DN": 50,
+      "face_center_mm": [
+        -862.0660171779821,
+        0.0,
+        612.0660171779821
+      ],
+      "normal": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "neck_OD_mm": 57.0,
+      "flange_OD_mm": 165,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 50,
+      "face_center_mm": [
+        0.0,
+        1006.0,
+        56.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "neck_OD_mm": 57.0,
+      "flange_OD_mm": 165,
+      "flange_thickness_mm": 18
+    }
+  ],
+  "datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+  "limits": [
+    "平面R600图形半径1125，采用8/15换算，不能直接按图形1:1取数",
+    "Ø1550/1586/1638为明确标注；对应图形1556/1590/1642差异保留",
+    "厂家题名碱液稀释槽，上传文件对应C41B03；设备适用性及侧口细部待确认",
+    "现有1350搅拌总高保持；内部盘管与未标附件不展开",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ],
+  "detail_level": "采用已接受的C41B02工程展示风格；无依据细部不作制造确认"
+}

@@ -1,0 +1,337 @@
+{
+  "source": "水解设备模型库/水解设备图纸/钛液事故槽(F41B02)稀碱配置槽(F41B05)稀碱储槽(F41B06).dxf",
+  "sha256": "3bf2340412eecbabf7aff3bf2f8a60053656aa4405473aaf2945459c28d434ce",
+  "dimension_entities": {
+    "FA85": {
+      "text": "%%C<>x8",
+      "actual_measurement": 2816.0,
+      "defpoint2": [
+        -744.0000000000001,
+        1702.675022937757,
+        0.0
+      ],
+      "defpoint3": [
+        2072.0,
+        1702.675022937757,
+        0.0
+      ]
+    },
+    "FAB0": {
+      "text": "%%C<>",
+      "actual_measurement": 2900.0,
+      "defpoint2": [
+        -786.0,
+        -484.0749770622424,
+        0.0
+      ],
+      "defpoint3": [
+        2114.0,
+        -513.8249770622423,
+        0.0
+      ]
+    },
+    "FDAE": {
+      "actual_measurement": 2500.0,
+      "defpoint2": [
+        -786.0,
+        -416.8249770622423,
+        0.0
+      ],
+      "defpoint3": [
+        -819.0000000000001,
+        2083.175022937758,
+        0.0
+      ]
+    },
+    "10328": {
+      "text": "5X500=2500",
+      "actual_measurement": 2500.000000000002,
+      "defpoint2": [
+        -585.9999999999998,
+        -573.2249770622328,
+        0.0
+      ],
+      "defpoint3": [
+        1914.000000000001,
+        -573.2249770622423,
+        0.0
+      ]
+    },
+    "FB71": {
+      "actual_measurement": 2966.000000000004
+    },
+    "FB7B": {
+      "actual_measurement": 2906.0
+    }
+  },
+  "plan_points": {
+    "a": {
+      "handle": "5159",
+      "xy_mm": [
+        9.094947017729282e-13,
+        900.0000000000003
+      ],
+      "drawing_xy_mm": [
+        900.0000000000003,
+        -9.094947017729282e-13
+      ],
+      "factory_to_type_rotation_deg": 90
+    },
+    "c": {
+      "handle": "516C",
+      "xy_mm": [
+        -450.0,
+        779.4228634059942
+      ],
+      "drawing_xy_mm": [
+        779.4228634059942,
+        450.0
+      ],
+      "factory_to_type_rotation_deg": 90
+    },
+    "d": {
+      "handle": "5174",
+      "xy_mm": [
+        450.0,
+        779.4228634059942
+      ],
+      "drawing_xy_mm": [
+        779.4228634059942,
+        -450.0
+      ],
+      "factory_to_type_rotation_deg": 90
+    },
+    "e": {
+      "handle": "5162",
+      "xy_mm": [
+        -1100.0,
+        -2.2737367544323206e-13
+      ],
+      "drawing_xy_mm": [
+        -2.2737367544323206e-13,
+        1100.0
+      ],
+      "factory_to_type_rotation_deg": 90
+    },
+    "f": {
+      "handle": "5178",
+      "xy_mm": [
+        449.9999999999991,
+        -779.4228634059954
+      ],
+      "drawing_xy_mm": [
+        -779.4228634059954,
+        -449.9999999999991
+      ],
+      "factory_to_type_rotation_deg": 90
+    },
+    "h1": {
+      "handle": "512E",
+      "xy_mm": [
+        -0.0,
+        -899.9999999999997
+      ],
+      "drawing_xy_mm": [
+        -899.9999999999997,
+        0.0
+      ],
+      "factory_to_type_rotation_deg": 90
+    },
+    "h2盖": {
+      "source_name_handle": "103A4",
+      "source_name": "侧壁人孔；盖件见10563"
+    }
+  },
+  "specification": {
+    "nominal_inner_diameter_mm": 2800,
+    "steel_outer_diameter_mm": 2816,
+    "nominal_body_height_mm": 2500,
+    "body_base_mm": 158,
+    "cover_top_mm": 2658,
+    "bottom_member_height_mm": 150,
+    "bottom_plate_diameter_mm": 2900,
+    "bottom_plate_thickness_mm": 8,
+    "cover_diameter_mm": 2966,
+    "cover_thickness_mm": 8,
+    "mixer_display_height_mm": 1560,
+    "ring_bolt_count": 34,
+    "ring_bolt_PCD_mm": 2906,
+    "factory_to_type_rotation_deg": 90
+  },
+  "port_table": [
+    {
+      "id": "a",
+      "DN": 150,
+      "face_center_mm": [
+        9.094947017729282e-13,
+        900.0000000000003,
+        2958.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 315,
+      "flange_thickness_mm": 18,
+      "outer_DN": 250,
+      "outside_flange_OD_mm": 375
+    },
+    {
+      "id": "c",
+      "DN": 100,
+      "face_center_mm": [
+        -450.0,
+        779.4228634059942,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 210,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d",
+      "DN": 150,
+      "face_center_mm": [
+        450.0,
+        779.4228634059942,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 265,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 200,
+      "face_center_mm": [
+        -1100.0,
+        -2.2737367544323206e-13,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 320,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 80,
+      "face_center_mm": [
+        449.9999999999991,
+        -779.4228634059954,
+        2758.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h1",
+      "DN": 500,
+      "face_center_mm": [
+        -0.0,
+        -899.9999999999997,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 630,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "g",
+      "DN": 80,
+      "face_center_mm": [
+        -0.0,
+        -1059.9999999999995,
+        3016
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "basis": "g/h1共座呼吸口；不补造出口法兰"
+    },
+    {
+      "id": "h2",
+      "DN": 700,
+      "face_center_mm": [
+        -0.0,
+        -1558.0,
+        758.0
+      ],
+      "normal": [
+        -0.0,
+        -1.0,
+        0.0
+      ],
+      "neck_OD_mm": 720.0,
+      "flange_OD_mm": 1150,
+      "flange_thickness_mm": 18,
+      "closure": "带盖侧人孔",
+      "cover_thickness_mm": 8,
+      "handle_scope": "图示提手按比例表达；未标细部不作制造尺寸"
+    },
+    {
+      "id": "b1",
+      "DN": 150,
+      "face_center_mm": [
+        1808.0,
+        1.1070807064292073e-13,
+        358.0
+      ],
+      "normal": [
+        1.0,
+        6.123233995736764e-17,
+        0.0
+      ],
+      "neck_OD_mm": 190.0,
+      "flange_OD_mm": 315,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b2",
+      "DN": 150,
+      "face_center_mm": [
+        1278.449060385278,
+        -1278.4490603852778,
+        358.0
+      ],
+      "normal": [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "neck_OD_mm": 190.0,
+      "flange_OD_mm": 315,
+      "flange_thickness_mm": 18
+    }
+  ],
+  "scale_note": "以明确标注值优先；平面与侧视可能不同图形比例；未标尺寸保持显示假设"
+}

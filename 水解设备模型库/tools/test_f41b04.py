@@ -39,8 +39,9 @@ def run():
     assert base_install['position_mm']==unit['position_mm'] and base_install['asset']=='foundation-F41B04'
     assert len(cfg['equipment'])==72 and len(cfg['unplaced'])==27
     assert len(cfg['foundations'])==len(pin['assembly']['foundations'])+1
-    for key in ['equipment','foundations','assets','unplaced']:assert unchanged_outside(pin['assembly'][key],cfg[key],{'F41B04'}),key
-    assert unchanged_outside(pin['catalog']['models'],json.loads((ROOT/'catalog.json').read_text())['models'],{'F41B04'})
+    later=set(cfg['equipment_versions'])-set(pin['assembly']['equipment_versions'])-{'F41B04'}
+    for key in ['equipment','foundations','assets','unplaced']:assert unchanged_outside(pin['assembly'][key],cfg[key],{'F41B04'}|later),key
+    assert unchanged_outside(pin['catalog']['models'],json.loads((ROOT/'catalog.json').read_text())['models'],{'F41B04'}|later)
     assert all('钢塔架' not in q['name'] for q in cfg['foundations'] if q.get('support_for')=='F41B04')
     frame=ck.script(OUT/'钢塔架/model_data.js','MODEL_PARTS');base=ck.script(OUT/'基础/model_data.js','MODEL_PARTS')
     assert len(frame)==153 and len(base)==14
