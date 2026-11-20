@@ -1,0 +1,208 @@
+{
+  "source": "水解设备模型库/水解设备图纸/水解蒸汽分汽缸(L41B05).dxf",
+  "sha256": "b79f570b4318a6f21a3539673c81e9b175c27c3f4bab58d18ace1bf72453b10f",
+  "dimension_entities": {},
+  "plan_points": {},
+  "specification": {
+    "body_outer_diameter_mm": 1000,
+    "straight_length_mm": 3800,
+    "head_depth_mm": 275,
+    "overall_body_length_mm": 4350,
+    "axis_height_mm": 700,
+    "saddle_center_distance_mm": 2000,
+    "top_nozzles": 9,
+    "bottom_nozzles": 2,
+    "nozzle_extension_mm": 200,
+    "display_wall_mm": 16
+  },
+  "port_table": [
+    {
+      "id": "a",
+      "DN": 350,
+      "face_center_mm": [
+        -1500.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 377.0,
+      "flange_OD_mm": 520,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b",
+      "DN": 100,
+      "face_center_mm": [
+        -900.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c1",
+      "DN": 25,
+      "face_center_mm": [
+        -550.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c2",
+      "DN": 25,
+      "face_center_mm": [
+        -250.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d1",
+      "DN": 25,
+      "face_center_mm": [
+        0.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d2",
+      "DN": 25,
+      "face_center_mm": [
+        300.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 150,
+      "face_center_mm": [
+        700.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 200,
+      "face_center_mm": [
+        1100.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "g",
+      "DN": 350,
+      "face_center_mm": [
+        1600.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 377.0,
+      "flange_OD_mm": 520,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h",
+      "DN": 100,
+      "face_center_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "j",
+      "DN": 32,
+      "face_center_mm": [
+        1500.0,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "neck_OD_mm": 38.0,
+      "flange_OD_mm": 140,
+      "flange_thickness_mm": 18
+    }
+  ],
+  "scale_note": "以明确标注值优先；平面与侧视可能不同图形比例；未标尺寸保持显示假设"
+}

@@ -2,48 +2,236 @@
   "id": "L41B05",
   "group": "L41B05",
   "name": "蒸汽分汽缸",
-  "spec": "ø1000X3800，V=3.28m3",
-  "qty": "1",
-  "x": 23368,
-  "y": 42955,
-  "z": 12200,
-  "level": "EL112",
-  "pos_el": 112.2,
-  "w": 1200,
-  "h": 3800,
-  "depth": 864.0,
-  "shape": "filter",
-  "position_basis": "平面设备位号点；按图题偏移归一",
-  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-  "foundation": null,
-  "support": null,
-  "source_foundation": {
-    "material": "RC",
-    "width": 1900,
-    "depth": 1900,
-    "height": 250
+  "version": "2.0-L41B05-01",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/水解蒸汽分汽缸(L41B05).dxf",
+  "source_sha256": "b79f570b4318a6f21a3539673c81e9b175c27c3f4bab58d18ace1bf72453b10f",
+  "scope": "外部本体/接口、基础配合与安装复核；不展开内部工艺构造",
+  "dimensions_mm": {
+    "body_outer_diameter_mm": 1000,
+    "straight_length_mm": 3800,
+    "head_depth_mm": 275,
+    "overall_body_length_mm": 4350,
+    "axis_height_mm": 700,
+    "saddle_center_distance_mm": 2000,
+    "top_nozzles": 9,
+    "bottom_nozzles": 2,
+    "nozzle_extension_mm": 200,
+    "display_wall_mm": 16
   },
-  "source_support": {
-    "material": "steel",
-    "count": 12,
-    "height": 250
-  },
-  "model_scope": "设备本体；不含基础及底部支撑",
-  "footprint_mm": [
-    1200.0,
-    1200.0
+  "bounds_mm": [
+    4350.0,
+    1000.0,
+    1400.0
   ],
-  "body_diameter_mm": 1200.0,
-  "body_height_mm": 3800.0,
-  "body_z_mm": 0,
-  "mixer_total_height_mm": null,
-  "mixer_height_basis": null,
-  "cad_position_mm": [
-    686302,
-    342955
+  "ports": [
+    {
+      "id": "a",
+      "DN": 350,
+      "face_center_mm": [
+        -1500.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 377.0,
+      "flange_OD_mm": 520,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b",
+      "DN": 100,
+      "face_center_mm": [
+        -900.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c1",
+      "DN": 25,
+      "face_center_mm": [
+        -550.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "c2",
+      "DN": 25,
+      "face_center_mm": [
+        -250.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d1",
+      "DN": 25,
+      "face_center_mm": [
+        0.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d2",
+      "DN": 25,
+      "face_center_mm": [
+        300.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 150,
+      "face_center_mm": [
+        700.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 200,
+      "face_center_mm": [
+        1100.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "g",
+      "DN": 350,
+      "face_center_mm": [
+        1600.0,
+        0.0,
+        1400.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 377.0,
+      "flange_OD_mm": 520,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h",
+      "DN": 100,
+      "face_center_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "j",
+      "DN": 32,
+      "face_center_mm": [
+        1500.0,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "neck_OD_mm": 38.0,
+      "flange_OD_mm": 140,
+      "flange_thickness_mm": 18
+    }
   ],
-  "plan_sheet": "EL100",
-  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
-  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
-  "large_equipment": true
+  "datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+  "limits": [
+    "DN与外径不是同一量；未给钢管系列/壁厚时按常见外形显示，法兰厚暂18",
+    "b表中DN100、俯视内圈约Ø200不一致；采用表中DN100，俯视外廓Ø340保留待核",
+    "a与g同为DN350；a俯视未完整表达，按侧视位置/管口表补齐，最终厂家总图待确认",
+    "条件图未给鞍座宽/厚，300×800底板及20厚腹板为显示值；鞍座中心距2000与轴高700有图示",
+    "原基础仅单墩详图，不能自动认定为完整两鞍座基础；绝对定位、支承数量/方向/标高继续待核",
+    "本类仍待定位，不加入厂房总装",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ],
+  "detail_level": "采用已接受的C41B02工程展示风格；无依据细部不作制造确认",
+  "qty": 1,
+  "current_files": {
+    "model": "版本/2.0/L41B05/设备/model_data.js",
+    "glb": "版本/2.0/L41B05/设备/L41B05.glb",
+    "obj": "版本/2.0/L41B05/设备/L41B05.obj",
+    "parameters": "parameters/L41B05.json",
+    "installation": "版本/2.0/L41B05/安装表.json"
+  }
 }

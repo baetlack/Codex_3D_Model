@@ -1,0 +1,31 @@
+{
+  "version": "2.0-C41B01-01",
+  "status": "checked-with-open-installation-items",
+  "old_XYZ_rotation_mirror": "unchanged",
+  "new_assembly_instances": 0,
+  "geometry_parts": 31,
+  "bounds_mm": [
+    3670.0,
+    3743.0,
+    4335.0
+  ],
+  "civil_local_checks": [
+    {
+      "civil": "C41B01",
+      "solid_intersections": [],
+      "geometry": "byte-identical",
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": [
+    "h侧视接管Ø530与平面内圈Ø490不同，外形采用侧视接管和俯视盖外廓；制造接口待详图",
+    "侧口d/f及c1/c2口高按总图标注，未标伸出与法兰厚为显示值",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ]
+}

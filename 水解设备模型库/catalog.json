@@ -22,7 +22,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02C2",
@@ -42,7 +51,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02C1",
@@ -62,7 +80,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02A3",
@@ -82,7 +109,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02A2",
@@ -102,7 +138,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02A1",
@@ -122,7 +167,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02D3",
@@ -142,7 +196,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02D2",
@@ -162,7 +225,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02D1",
@@ -182,7 +254,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02E3",
@@ -202,7 +283,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02E2",
@@ -222,7 +312,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02E1",
@@ -242,7 +341,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B01A2",
@@ -262,7 +370,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B01A1",
@@ -282,7 +399,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B01A4",
@@ -302,7 +428,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B01A3",
@@ -322,7 +457,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "P41B01C",
@@ -382,7 +526,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B07A",
@@ -462,7 +615,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B01B2",
@@ -482,7 +644,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B01B3",
@@ -502,7 +673,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B01-01",
+      "current_files": {
+        "model": "版本/2.0/F41B01/设备/model_data.js",
+        "glb": "版本/2.0/F41B01/设备/F41B01.glb",
+        "obj": "版本/2.0/F41B01/设备/F41B01.obj",
+        "parameters": "parameters/F41B01.json",
+        "installation": "版本/2.0/F41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "P41B01A",
@@ -616,7 +796,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02B2",
@@ -636,7 +825,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "D41B02B1",
@@ -656,7 +854,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-D41B02-01",
+      "current_files": {
+        "model": "版本/2.0/D41B02/设备/model_data.js",
+        "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+        "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+        "parameters": "parameters/D41B02.json",
+        "installation": "版本/2.0/D41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B06",
@@ -676,7 +883,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B06-01",
+      "current_files": {
+        "model": "版本/2.0/F41B06/设备/model_data.js",
+        "glb": "版本/2.0/F41B06/设备/F41B06.glb",
+        "obj": "版本/2.0/F41B06/设备/F41B06.obj",
+        "parameters": "parameters/F41B06.json",
+        "installation": "版本/2.0/F41B06/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B05",
@@ -696,7 +912,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B05-01",
+      "current_files": {
+        "model": "版本/2.0/F41B05/设备/model_data.js",
+        "glb": "版本/2.0/F41B05/设备/F41B05.glb",
+        "obj": "版本/2.0/F41B05/设备/F41B05.obj",
+        "parameters": "parameters/F41B05.json",
+        "installation": "版本/2.0/F41B05/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "P41B03",
@@ -736,7 +961,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-F41B02-01",
+      "current_files": {
+        "model": "版本/2.0/F41B02/设备/model_data.js",
+        "glb": "版本/2.0/F41B02/设备/F41B02.glb",
+        "obj": "版本/2.0/F41B02/设备/F41B02.obj",
+        "parameters": "parameters/F41B02.json",
+        "installation": "版本/2.0/F41B02/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "P41B04",
@@ -1796,7 +2030,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B01-01",
+      "current_files": {
+        "model": "版本/2.0/C41B01/设备/model_data.js",
+        "glb": "版本/2.0/C41B01/设备/C41B01.glb",
+        "obj": "版本/2.0/C41B01/设备/C41B01.obj",
+        "parameters": "parameters/C41B01.json",
+        "installation": "版本/2.0/C41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "C41B03B",
@@ -1816,7 +2059,16 @@
       "shape": "cylinder",
       "large_equipment": false,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B03-01",
+      "current_files": {
+        "model": "版本/2.0/C41B03/设备/model_data.js",
+        "glb": "版本/2.0/C41B03/设备/C41B03.glb",
+        "obj": "版本/2.0/C41B03/设备/C41B03.obj",
+        "parameters": "parameters/C41B03.json",
+        "installation": "版本/2.0/C41B03/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "C41B02A",
@@ -1875,7 +2127,16 @@
       "shape": "cylinder",
       "large_equipment": false,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B03-01",
+      "current_files": {
+        "model": "版本/2.0/C41B03/设备/model_data.js",
+        "glb": "版本/2.0/C41B03/设备/C41B03.glb",
+        "obj": "版本/2.0/C41B03/设备/C41B03.obj",
+        "parameters": "parameters/C41B03.json",
+        "installation": "版本/2.0/C41B03/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "C41B02E",
@@ -1973,7 +2234,16 @@
       "shape": "cylinder",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B01-01",
+      "current_files": {
+        "model": "版本/2.0/C41B01/设备/model_data.js",
+        "glb": "版本/2.0/C41B01/设备/C41B01.glb",
+        "obj": "版本/2.0/C41B01/设备/C41B01.obj",
+        "parameters": "parameters/C41B01.json",
+        "installation": "版本/2.0/C41B01/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "C41B03C",
@@ -1993,7 +2263,16 @@
       "shape": "cylinder",
       "large_equipment": false,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-C41B03-01",
+      "current_files": {
+        "model": "版本/2.0/C41B03/设备/model_data.js",
+        "glb": "版本/2.0/C41B03/设备/C41B03.glb",
+        "obj": "版本/2.0/C41B03/设备/C41B03.obj",
+        "parameters": "parameters/C41B03.json",
+        "installation": "版本/2.0/C41B03/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "F41B03",
@@ -2048,7 +2327,16 @@
       "shape": "filter",
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
-      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度"
+      "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+      "model_version": "2.0-L41B05-01",
+      "current_files": {
+        "model": "版本/2.0/L41B05/设备/model_data.js",
+        "glb": "版本/2.0/L41B05/设备/L41B05.glb",
+        "obj": "版本/2.0/L41B05/设备/L41B05.obj",
+        "parameters": "parameters/L41B05.json",
+        "installation": "版本/2.0/L41B05/安装表.json"
+      },
+      "model_spec": "新增图纸外部本体/接口复核；单台安装/工艺方位待核"
     },
     {
       "id": "L41B04",

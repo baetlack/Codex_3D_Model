@@ -1,0 +1,33 @@
+{
+  "version": "2.0-C41B03-01",
+  "status": "checked-with-open-installation-items",
+  "old_XYZ_rotation_mirror": "unchanged",
+  "new_assembly_instances": 0,
+  "geometry_parts": 61,
+  "bounds_mm": [
+    1870.4023,
+    1825.0,
+    3382.5
+  ],
+  "civil_local_checks": [
+    {
+      "civil": "C41B03",
+      "solid_intersections": [],
+      "geometry": "byte-identical",
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": [
+    "平面R600图形半径1125，采用8/15换算，不能直接按图形1:1取数",
+    "Ø1550/1586/1638为明确标注；对应图形1556/1590/1642差异保留",
+    "厂家题名碱液稀释槽，上传文件对应C41B03；设备适用性及侧口细部待确认",
+    "现有1350搅拌总高保持；内部盘管与未标附件不展开",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ]
+}

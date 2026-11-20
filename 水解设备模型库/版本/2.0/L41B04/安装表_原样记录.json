@@ -1,0 +1,35 @@
+[
+  {
+    "id": "L41B04",
+    "name": "减温减压器",
+    "asset": "L41B04",
+    "position_mm": [
+      43200.0,
+      54900.0,
+      12000
+    ],
+    "rotation_deg": 90.00000000000003,
+    "level": "EL112",
+    "xy_status": "图块中心定位",
+    "z_status": "待核",
+    "orientation_status": "图块旋转已记录；类型模型管口朝向待逐项核对",
+    "source_insert": "DE46C",
+    "source_block": "减温减压器",
+    "label_handle": "DE477",
+    "label_distance_mm": 4238.23,
+    "source_floor_origin_mm": [
+      778010.4484369854,
+      305259.2765326499
+    ],
+    "z_basis": "EL112平面图块，精确安装高差待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "layout_review": {
+      "source_rotation_deg": 90.00000000000003,
+      "source_scale": [
+        1.5,
+        1.5
+      ],
+      "status": "原点或类型方向未充分对应，保留待核"
+    }
+  }
+]

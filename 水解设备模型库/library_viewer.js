@@ -4,7 +4,7 @@ const byId = id => document.getElementById(id);
 const batch = '示图建模_20260521/';
 const ledger = window.EQUIPMENT_LEDGER || {};
 const overrides=window.EQUIPMENT_VERSION_OVERRIDES||{};
-const rows = (ledger.清单 || []).map(row=>({...row,...(overrides.ledger?.[row.位号]||{})}));
+const rows = (ledger.清单 || []).map(row=>({...row,...(overrides.ledger?.[row.位号]||overrides.ledger?.[row.位号?.slice(0,6)]||{})}));
 const rowsByTag = new Map(rows.map(row=>[row.位号,row]));
 const typeModels = window.BATCH_MODELS || {};
 const foundationRoot = '../水解桥架工程/models/设备/设备基础_20261106/';
@@ -112,10 +112,12 @@ function figure(label, url) {
 function typeInfo(row) {
   const entry=row?.模型入口;
   if (!entry) return null;
-  const key=new URL(entry,new URL(batch,location.href)).searchParams.get('model');
-  if (key && Object.hasOwn(typeModels,key)) {
+  const sourceKey=new URL(entry,new URL(batch,location.href)).searchParams.get('model');
+  const ownKey=tagForRow(row);
+  const key=overrides.review_info?.[ownKey]&&overrides.equipment?.[ownKey]?ownKey:sourceKey;
+  if (sourceKey && Object.hasOwn(typeModels,sourceKey)) {
     const dir=batch+'模型/'+key+'/';
-    const model=typeModels[key];
+    const model=typeModels[sourceKey];
     const extra=model.layout?[-3*Math.PI/4,'泵端轴测']:key==='P41B10'?[Math.PI*.83,'进风侧轴测']:null;
     return {key,dir,stem:key,entry:batch+entry,model,extra};
   }
@@ -199,7 +201,7 @@ function renderDetail(row, type, foundationIds, civilOnly) {
       link('设备参数 JSON',dir+'参数.json'));
     detail.append(downloads);
   }
-  for (const [label,view] of Object.entries(row.视图||{})) figure((['C41B02','L41B01'].includes(tagForRow(row))&&overrides.version?'1.0旧示图 ':'DXF ')+label,batch+view.文件);
+  for (const [label,view] of Object.entries(row.视图||{})) figure(((['C41B02','L41B01'].includes(tagForRow(row))&&overrides.version||overrides.review_info?.[tagForRow(row)]&&overrides.equipment?.[tagForRow(row)])?'1.0旧示图 ':'DXF ')+label,batch+view.文件);
   if (tagForRow(row)==='C41B02'&&overrides.version) {figure('2.0新增总图主视','版本/2.0/C41B02/来源_主视.png');figure('2.0新增总图俯视','版本/2.0/C41B02/来源_俯视.png');}
   if (row.尺寸量测?.布置图量测视图) figure('布置量测',batch+row.尺寸量测.布置图量测视图);
   renderLedger(row,type);
@@ -244,6 +246,14 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     field(info,'图纸差异','顶法兰侧视955/俯视1182.5，底锚圈2600/2750；当前外形按侧视。壁厚、孔径及底部立边环向连续性为显示口径，待制造详图。');
     field(info,'位置与钢架','基础和钢塔架原几何保留；局部同心对照，接口与钢架的相交见本类报告。绝对中心/方位未核，不进入厂房总装。');
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/L41B02/整改说明.html'),link('1.0/2.0模型对照','版本/2.0/L41B02/修订对比.html'),link('钢架相交校核','版本/2.0/L41B02/支承相交校核.json'),link('安装待核','版本/2.0/L41B02/安装待核.json'));info.append(links);
+  }
+  if (overrides.review_info?.[tagForRow(row)]) {
+    const review=overrides.review_info[tagForRow(row)];
+    const info=section(detail,'本类首轮处理与待核');
+    field(info,review.geometry,review.action);
+    if (review.sizing) field(info,'尺寸口径',review.sizing);
+    for (const item of (review.pending||[]).slice(0,2)) field(info,'待核',item);
+    const links=element('div','','links');links.append(link('本类来源与完整待核项',review.url),link('全部35类复核记录','版本/复核总览.html'));if (review.drawing) links.prepend(link('新增原始图 DXF',review.drawing,true));info.append(links);
   }
   if (tagForRow(row)==='L41B03' && overrides.equipment?.L41B03) {
     const info=section(detail,'本类2.0取舍与支承');

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "P41B01C",
+    "name": "水解料中转泵",
+    "asset": "P41B01",
+    "position_mm": [
+      15335.0,
+      49650.0,
+      -1500.0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "FB3C8",
+    "source_block": "水解料中转泵",
+    "label_handle": "37F69",
+    "label_distance_mm": 2024.14,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "FB3D3",
+      "sample_model_origin_world_mm": [
+        658964.037,
+        333309.2765
+      ],
+      "native_origin_offset_mm": [
+        -365.0,
+        0.0
+      ],
+      "source_block_rotation_deg": 0.0,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B01F",
+    "name": "水解料中转泵",
+    "asset": "P41B01",
+    "position_mm": [
+      28330.4973,
+      29500.0,
+      300.0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "FB3D4",
+    "source_block": "水解料中转泵",
+    "label_handle": "37F6C",
+    "label_distance_mm": 1258.89,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "FB3D3",
+      "sample_model_origin_world_mm": [
+        658964.037,
+        333309.2765
+      ],
+      "native_origin_offset_mm": [
+        -365.0,
+        0.0
+      ],
+      "source_block_rotation_deg": 0.0,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B01A",
+    "name": "水解料中转泵",
+    "asset": "P41B01",
+    "position_mm": [
+      15335.0,
+      28050.0,
+      0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "FB3D3",
+    "source_block": "水解料中转泵",
+    "label_handle": "38089",
+    "label_distance_mm": 2160.34,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "FB3D3",
+      "sample_model_origin_world_mm": [
+        658964.037,
+        333309.2765
+      ],
+      "native_origin_offset_mm": [
+        -365.0,
+        0.0
+      ],
+      "source_block_rotation_deg": 0.0,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B01E",
+    "name": "水解料中转泵",
+    "asset": "P41B01",
+    "position_mm": [
+      28330.4973,
+      28000.0,
+      300.0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "FB3D5",
+    "source_block": "水解料中转泵",
+    "label_handle": "D9519",
+    "label_distance_mm": 986.62,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "FB3D3",
+      "sample_model_origin_world_mm": [
+        658964.037,
+        333309.2765
+      ],
+      "native_origin_offset_mm": [
+        -365.0,
+        0.0
+      ],
+      "source_block_rotation_deg": 0.0,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B01B",
+    "name": "水解料中转泵",
+    "asset": "P41B01",
+    "position_mm": [
+      15335.0,
+      29550.0,
+      0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "FB3D2",
+    "source_block": "水解料中转泵",
+    "label_handle": "D952E",
+    "label_distance_mm": 2248.0,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "FB3D3",
+      "sample_model_origin_world_mm": [
+        658964.037,
+        333309.2765
+      ],
+      "native_origin_offset_mm": [
+        -365.0,
+        0.0
+      ],
+      "source_block_rotation_deg": 0.0,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B01D",
+    "name": "水解料中转泵",
+    "asset": "P41B01",
+    "position_mm": [
+      15335.0,
+      51150.0,
+      -1500.0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "FB3C7",
+    "source_block": "水解料中转泵",
+    "label_handle": "D9548",
+    "label_distance_mm": 2035.67,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "FB3D3",
+      "sample_model_origin_world_mm": [
+        658964.037,
+        333309.2765
+      ],
+      "native_origin_offset_mm": [
+        -365.0,
+        0.0
+      ],
+      "source_block_rotation_deg": 0.0,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  }
+]

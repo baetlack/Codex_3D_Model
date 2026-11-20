@@ -1,0 +1,202 @@
+{
+  "id": "F41B01",
+  "group": "F41B01",
+  "name": "偏钛酸缓冲槽",
+  "version": "2.0-F41B01-01",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/偏钛酸缓冲槽(F4101A-B1～4).dxf",
+  "source_sha256": "753ab0508cb03f6fe5ef33280ebae6436c4c9f7852b124e3299aed5fa905057d",
+  "scope": "外部本体/接口、基础配合与安装复核；不展开内部工艺构造",
+  "dimensions_mm": {
+    "nominal_inner_diameter_mm": 5000,
+    "steel_outer_diameter_mm": 5020,
+    "nominal_body_height_mm": 5900,
+    "body_base_mm": 162,
+    "cover_top_mm": 6062,
+    "bottom_member_height_mm": 150,
+    "bottom_plate_diameter_mm": 5100,
+    "bottom_plate_thickness_mm": 12,
+    "cover_diameter_mm": 5220,
+    "cover_thickness_mm": 12,
+    "mixer_display_height_mm": 2310,
+    "ring_bolt_count": 40,
+    "ring_bolt_PCD_mm": 5140
+  },
+  "bounds_mm": [
+    5380.0,
+    5220.0,
+    8372.0
+  ],
+  "ports": [
+    {
+      "id": "a/n1",
+      "DN": 200,
+      "face_center_mm": [
+        1999.999999999999,
+        0.0,
+        6362.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18,
+      "outer_DN": 250,
+      "outside_flange_OD_mm": 395
+    },
+    {
+      "id": "c/n2",
+      "DN": 150,
+      "face_center_mm": [
+        -1999.9999999999995,
+        0.0,
+        6362.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340
+    },
+    {
+      "id": "d",
+      "DN": 200,
+      "face_center_mm": [
+        1628.9898912080862,
+        1160.3413007998379,
+        6212.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 200,
+      "face_center_mm": [
+        -1414.2135623730946,
+        -1414.2135623730774,
+        6212.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 80,
+      "face_center_mm": [
+        0.0,
+        1749.999999999999,
+        6162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h",
+      "DN": 500,
+      "face_center_mm": [
+        -9.094947017729282e-13,
+        -2000.000000000001,
+        6212.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 620,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b",
+      "DN": 400,
+      "face_center_mm": [
+        2770.0,
+        0.0,
+        362.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "neck_OD_mm": 426.0,
+      "flange_OD_mm": 565,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "k",
+      "DN": 800,
+      "face_center_mm": [
+        1986.9700551341987,
+        1986.9700551341984,
+        1062.0
+      ],
+      "normal": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "neck_OD_mm": 820.0,
+      "flange_OD_mm": 1000,
+      "flange_thickness_mm": 38,
+      "closure": "带盖侧人孔",
+      "cover_thickness_mm": 38,
+      "handle_scope": "图示提手按比例表达；未标细部不作制造尺寸"
+    },
+    {
+      "id": "g",
+      "DN": 65,
+      "face_center_mm": [
+        -1916.2593770155436,
+        -1916.259377015544,
+        762.0
+      ],
+      "normal": [
+        -0.6484664555997907,
+        -0.6484664555997915,
+        -0.39872611141444986
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18
+    }
+  ],
+  "datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+  "limits": [
+    "新总图增加150高底型钢；模型以型钢下表面Z0，底板与槽体上移，基础承托位置不动",
+    "型钢高度/500间距有图示；未标截面仅显示，不能用于结构承载",
+    "搅拌总高2310保持，内部叶轮与盘管不展开；m检视窗细部待核",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ],
+  "detail_level": "采用已接受的C41B02工程展示风格；无依据细部不作制造确认"
+}
