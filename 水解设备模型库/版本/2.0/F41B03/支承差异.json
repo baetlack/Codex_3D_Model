@@ -1,0 +1,51 @@
+{
+  "version": "2.0-F41B03-01",
+  "status": "not-bearing",
+  "comparison_datum": "仅诊断平面搭接：耳底与支墩顶暂设同高Z0，不是厂房安装标高",
+  "direct_contact_area_mm2": 0,
+  "axis_outer_edge_gap_mm": 8.75,
+  "ear_outer_corner_radius_mm": 595.233673,
+  "support_min_radius_mm": 600,
+  "minimum_radial_separation_mm": 4.766327,
+  "hole_radius_mm": 550,
+  "pad_center_radius_mm": 750,
+  "hole_to_embedded_plate_center_mm": 200,
+  "rotation_can_close_gap": false,
+  "four_directions": [
+    {
+      "direction_deg": 0,
+      "ear_tip_mm": 591.25,
+      "support_inner_edge_mm": 600,
+      "axis_gap_mm": 8.75,
+      "hole_to_embedded_center_mm": 200
+    },
+    {
+      "direction_deg": 90,
+      "ear_tip_mm": 591.25,
+      "support_inner_edge_mm": 600,
+      "axis_gap_mm": 8.75,
+      "hole_to_embedded_center_mm": 200
+    },
+    {
+      "direction_deg": 180,
+      "ear_tip_mm": 591.25,
+      "support_inner_edge_mm": 600,
+      "axis_gap_mm": 8.75,
+      "hole_to_embedded_center_mm": 200
+    },
+    {
+      "direction_deg": 270,
+      "ear_tip_mm": 591.25,
+      "support_inner_edge_mm": 600,
+      "axis_gap_mm": 8.75,
+      "hole_to_embedded_center_mm": 200
+    }
+  ],
+  "unresolved": [
+    "连接过渡件形式/尺寸",
+    "托耳厚度/立筋高度/承托面相对筒段的位置",
+    "全局承托EL及POSEL112.200定义",
+    "完整侧视/总图、封头及管口形状/方位"
+  ],
+  "civil_instances_added_to_assembly": 0
+}

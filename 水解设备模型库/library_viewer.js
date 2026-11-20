@@ -230,6 +230,14 @@ function renderDetail(row, type, foundationIds, civilOnly) {
     const links=element('div','','links');links.append(link('本类整改说明','版本/2.0/L41B01/整改说明.html'),link('1.0/2.0结构对照','版本/2.0/L41B01/修订对比.html'),link('新增设备总图','水解设备图纸/'+encodeURIComponent('水解过滤器.dxf'),true),link('6台安装表','版本/2.0/L41B01/安装表.json'),link('1.0旧库（搜索L41B01查看圆台）','版本/1.0/快照/水解设备模型库/index.html'));info.append(links);
     figure('新总图 · 主剖视','版本/2.0/L41B01/依据_主视.png');figure('新总图 · 俯视','版本/2.0/L41B01/依据_俯视.png');
   }
+  if (tagForRow(row)==='F41B03' && overrides.equipment?.F41B03) {
+    const info=section(detail,'本类2.0校核与支承差异');
+    field(info,'显示范围','仅Ø1000×1000直筒段及四耳底板；未提供完整侧视/总图，不推断封头、盖板和管口。');
+    field(info,'本次修正','Ø1100是四孔分度圆，已撤下误作实体的两端圈；补四个Ø16.5安装孔。壁厚12、耳板厚24及耳底高度仍是显示暂用值。');
+    field(info,'支承未闭合','托耳外端距支墩内缘8.75mm，孔心与预埋板心相差200mm，平面搭接面积0。过渡件、托耳高度、承托EL及共同方位待核，未向总装新增本类支墩。');
+    const links=element('div','','links');links.append(link('本类校核说明','版本/2.0/F41B03/整改说明.html'),link('四耳/四墩诊断对照','版本/2.0/F41B03/支承对照.html'),link('1.0/2.0模型对照','版本/2.0/F41B03/修订对比.html'),link('安装待核表','版本/2.0/F41B03/安装表.json'));info.append(links);
+    figure('设备原俯视','版本/2.0/F41B03/依据_设备俯视.png');figure('四墩基础图','版本/2.0/F41B03/依据_基础.png');
+  }
   if (foundationIds.length) {
     const support=foundationIds.every(id=>foundations.assets[id].kind==='安装支架');
     const civil=section(detail,support?'安装支架与图纸':'基础图与模型');
@@ -319,7 +327,7 @@ function collectPartGroups(mesh, archive) {
     }
   } else {
     for (const part of mesh) {
-      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':typeInfo(rowsByTag.get(rowTag))?.key==='L41B01'?'过滤器托耳':'换热器托耳'):part.name.split('_')[0];
+      const label=part.name==='支撑_换热器托耳'||part.name.startsWith('托耳_')?(typeInfo(rowsByTag.get(rowTag))?.key==='D41B01'?'晶种槽托耳':typeInfo(rowsByTag.get(rowTag))?.key==='L41B01'?'过滤器托耳':typeInfo(rowsByTag.get(rowTag))?.key==='F41B03'?'分汽器托耳':'换热器托耳'):part.name.split('_')[0];
       if (!groups.has(label)) groups.set(label,[]);
       groups.get(label).push(part);
     }

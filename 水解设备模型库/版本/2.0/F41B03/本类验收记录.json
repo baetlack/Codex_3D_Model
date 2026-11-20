@@ -1,0 +1,20 @@
+{
+  "revision": "2.0-F41B03-01",
+  "date": "2026-11-19",
+  "status": "现有资料范围内表达修正/支承核对完成；整机外形与支承未确认",
+  "scope": "仅Ø1000×1000直筒段与四耳平面，不等同完整设备",
+  "removed_unsupported_end_rings": 2,
+  "holes_corrected": 4,
+  "straight_section_geometry": "unchanged",
+  "foundation_geometry": "unchanged",
+  "current_xyz_rotation": "unchanged/provisional",
+  "bearing_status": "无平面搭接，不加入本类四墩总装实例",
+  "axis_gap_mm": 8.75,
+  "hole_to_embedded_plate_center_mm": 200,
+  "remaining": [
+    "完整设备侧视/总图及封头/管口",
+    "托耳真实高度、厚度与立筋",
+    "连接过渡件形式/尺寸",
+    "承托EL及POSEL112.200定义"
+  ]
+}

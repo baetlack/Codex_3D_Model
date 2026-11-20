@@ -1,0 +1,45 @@
+{
+  "center_source_mm": [
+    103661.7752047995,
+    -3611.747546181898
+  ],
+  "root_handle": "3625",
+  "body_handle": "3623",
+  "pitch_circle_handle": "3626",
+  "pitch_circle_radius_mm": 550.0,
+  "ear_profile": {
+    "outer_radius_mm": 591.2499999995925,
+    "inner_radius_mm": 489.230485088228,
+    "half_tangent_mm": 68.7500000315381
+  },
+  "holes": [
+    {
+      "xy_mm": [
+        550.0,
+        0.0
+      ],
+      "radius_mm": 8.249999999995199
+    },
+    {
+      "xy_mm": [
+        -0.0,
+        550.0
+      ],
+      "radius_mm": 8.249999999995199
+    },
+    {
+      "xy_mm": [
+        -550.0,
+        -0.0
+      ],
+      "radius_mm": 8.249999999995199
+    },
+    {
+      "xy_mm": [
+        0.0,
+        -550.0
+      ],
+      "radius_mm": 8.249999999995199
+    }
+  ]
+}
