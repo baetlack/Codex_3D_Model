@@ -1,5 +1,5 @@
 {
-  "README.md": "0d0b077663b7b010f7c7eebcaaafc701a3e5b8ad802f65941a917635e47f760b",
+  "README.md": "10bdea788232775080d44523883200fcc5d76f792074505151bf3b2e78bbd8fc",
   "catalog.json": "170da05dfd72fc77f876a9bc4acb99c749236432c6564ecd347c0f049085f77b",
   "data/设备整改标准与版本方案_讨论稿.md": "eea4fc480a3afd46dab2bffe92d07170f9f8762220e4f09b753568d98e9c6460",
   "data/设备整改进度.json": "7b64562116561ef388b79744e4a0a77ea87d4dd21c171733260f34fde075857e",
@@ -16,7 +16,7 @@
   "data/连续整改_20261120/浏览器校验.json": "b7123414f329ace3f8469681527b63964205dd0cf69c6c466445cea85f6afd3d",
   "data/连续整改_20261120/预览_总装.png": "685978096efcd923fcb4e9eeadd16456b9776ca46b1b9eaf67da1c2f6a38bd75",
   "equipment_versions.js": "554980cd220b62cd9c4bc4ac49f51dd2e1d2e43c7cca603565704116f3441d1d",
-  "index.html": "7279a5b76a23444801412f1b430fc80598a098d15c4353c04ebf7d5437b4c2dc",
+  "index.html": "2c2c1acbf22876ea6b0c390c32fc96d3a5088c8a0920bc1324c57f79744f059b",
   "library_viewer.js": "7a482bc247c64e236a4f2fae618f2c070dccdbc9070cde7229fdf06c64e40e9a",
   "materials.mtl": "5f53fecb727e4465f252ad6a0b298e36cce9cb420074f1aa7a9650ee4c100201",
   "obj/C41B01A.obj": "c844939f4a1c7e9150c034f04a224a107a1e6b344d71ac857ad7f7188bf2bc6c",
@@ -347,6 +347,7 @@
   "tools/build_sheet_models.py": "746da085abd08027f0b5d9bc9da30e76507de75111b3db23fa15fb39619c351f",
   "tools/c41b02_topside.py": "d2f9820a25a5049dee24b4be0ed601fa7f3839c8789abd148e377ac2f76ea3cd",
   "tools/check_factory_building.py": "b121635759d67d09d00c4cffea2baedefc957b044b88cd7c4db75ada22463561",
+  "tools/export_library_tables.py": "60ddce94aba238bf5bc26f54d5b2407d90e26eda4a19e2128b7a18918081cd71",
   "tools/project.py": "910d58ed1fa63f8ba96c0bb93116804e60a3ef5d0f949c032e2246b1ea003683",
   "tools/publish_c41b02.py": "2ba4a60022a99a56471d971d6afee2d834e797cdd9832f092362ff68f5094d49",
   "tools/publish_c41b04.py": "1b68fb4b9beb40d029ed3995ef61f8bb562e04801b1f9b0dbc248a8ba3537014",
@@ -2097,5 +2098,12 @@
   "设备档案/D41B02_水解槽/index.html": "dd7a16bfaa9aca07fed0d8ee258126cbf8c539c658e22c768967c7240ae65494",
   "设备档案/D41B02_水解槽/model_data.js": "f54bda685cc3fa38b495addb3a74701d194a554598d4ac2ae22e05f8f15af368",
   "设备档案/D41B02_水解槽/参数.json": "15524e7134340f3001010fa71133d516cba370f00f340d0bfccd900f701e4e92",
-  "设备档案/D41B02_水解槽/来源_用户侧视图.png": "48bc1959e08f81c78006cfb8bf80e7a7c01b455babcc2253e46bec2388ad4198"
+  "设备档案/D41B02_水解槽/来源_用户侧视图.png": "48bc1959e08f81c78006cfb8bf80e7a7c01b455babcc2253e46bec2388ad4198",
+  "资料库三表/index.html": "261300c7005b85f8d56536a2efbda4c921d54497c603d999f1cb8122663cc7b4",
+  "资料库三表/三表数据.json": "d950f40e42cac73f2f1d07a1f94695e35b9a4d84042355197acb201a8a5ef275",
+  "资料库三表/整理记录.json": "0d9b006a0dbd30ae5a46945d7cdd10fb28da683412fb1ffcae78387d9205733e",
+  "资料库三表/表1_模型组成.csv": "a646a9b943b81faa8217617b1bd8c5b71dc9c0e197c626d691db648927485597",
+  "资料库三表/表2_安装信息.csv": "5a5406ef3d08877bda066dda502af2da37dc524a09f6e38d271fa95e06c0304d",
+  "资料库三表/表3_参考资料.csv": "af84a6602ad7c287ae7abc8f91473b4f5a582746939df9d7b85083cb2320cb3e",
+  "资料库三表/设备资料库三表.xlsx": "f4cbba79379fd9c09f9b6acf4f4c177a3c04d369e083543166474c475cb9d2ad"
 }
