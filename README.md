@@ -2,7 +2,7 @@
 
 桥架、厂房外观、设备和总装分别维护、分别浏览、分别下载。总装继续引用各模块原文件，东 +X、北 +Y、上 +Z，EL100 / 106 / 112；分包不改变模型、结构或安装位置。
 
-在线浏览：[模型总入口](https://baetlack.github.io/Codex_3D_Model/) · [桥架](https://baetlack.github.io/Codex_3D_Model/水解桥架工程/) · [厂房](https://baetlack.github.io/Codex_3D_Model/厂房外观模型/) · [设备](https://baetlack.github.io/Codex_3D_Model/水解设备模型库/) · [总装](https://baetlack.github.io/Codex_3D_Model/水解总装工程/)。直接通过浏览器查看，厂房页可测量尺寸。
+在线浏览入口（首次启用Pages后生效）：[模型总入口](https://baetlack.github.io/Codex_3D_Model/) · [桥架](https://baetlack.github.io/Codex_3D_Model/水解桥架工程/) · [厂房](https://baetlack.github.io/Codex_3D_Model/厂房外观模型/) · [设备](https://baetlack.github.io/Codex_3D_Model/水解设备模型库/) · [总装](https://baetlack.github.io/Codex_3D_Model/水解总装工程/)。直接通过浏览器查看，厂房页可测量尺寸。
 
 | 模块 | GitHub目录与说明 | 单独下载 | 主要内容 |
 |---|---|---|---|
@@ -15,7 +15,7 @@
 
 GitHub仓库文件页用于查看目录、说明、参数和预览图；在线交互式3D使用上述GitHub Pages入口，也可下载后离线打开。仓库已公开，模型与发布包可公开访问。
 
-Pages发布源为 `main` 分支根目录，`.nojekyll` 保证原目录及下划线命名的资源直接发布。主分支更新后自动部署；发布前保持资源相对路径完整，发布体积不超过1 GB。此配置不重建模型、不修改结构或安装位置。
+首次启用需有Pages设置权限：在 [Settings → Pages](https://github.com/baetlack/Codex_3D_Model/settings/pages) 中选择 `Deploy from a branch`，分支 `main`、目录 `/(root)`，点击 `Save`。`.nojekyll` 保证原目录及下划线命名的资源直接发布。启用后，主分支更新会自动部署；发布前保持资源相对路径完整，发布体积不超过1 GB。此配置不重建模型、不修改结构或安装位置。
 
 下载对应ZIP，**完整解压后双击根目录 `index.html`**，再选择本包模型。不要只取出其中的HTML或JS。推荐使用桌面版Chrome或Edge；如浏览器限制本地文件，在解压目录运行 `python -m http.server 8000`，访问 `http://localhost:8000/`。
 
