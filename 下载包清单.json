@@ -1,7 +1,7 @@
 {
   "module": "building",
   "name": "厂房外观模型",
-  "source_commit": "7bb10bf2a2323e240298fb64d7fb69f6f9de1aad",
+  "source_commit": "c8ffc9d41febb70879647399076450c4b13459e4",
   "entry": "厂房外观模型/index.html",
   "versions": {
     "bridge": "2.0-column-contact",
@@ -37,6 +37,14 @@
         "placements": "版本/2.0/L41B01/安装表.json",
         "support_review": "版本/2.0/L41B01/支承待核.json",
         "status": "6台本体/三耳更新，A/C/E源镜像纠正；保留暂用位置，承托结构/EL与新管口方位待核"
+      },
+      "F41B03": {
+        "version": "2.0-F41B03-01",
+        "equipment": "版本/2.0/F41B03/设备/model_data.js",
+        "foundation": "版本/2.0/F41B03/基础/model_data.js",
+        "placements": "版本/2.0/F41B03/安装表.json",
+        "support_review": "版本/2.0/F41B03/支承差异.json",
+        "status": "直筒段表达/四耳孔修正，撤销无依据端圈；四墩无搭接，过渡件/承托EL待核"
       }
     },
     "building_sha256": "601ead48aa2f900fafd67905940dbf111094ef232bdd2a23cead2408488dd72b"
