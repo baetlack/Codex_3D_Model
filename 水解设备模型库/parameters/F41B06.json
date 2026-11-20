@@ -2,49 +2,226 @@
   "id": "F41B06",
   "group": "F41B06",
   "name": "稀碱储槽",
-  "spec": "ø2800X2500，V总＝12m3",
-  "qty": "1",
-  "x": 1807,
-  "y": 56225,
-  "z": 300,
-  "level": "EL100",
-  "pos_el": 100.3,
-  "w": 2800.0,
-  "h": 2500,
-  "depth": 2016.0,
-  "shape": "cylinder",
-  "position_basis": "平面设备位号点；按图题偏移归一",
-  "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-  "foundation": null,
-  "support": null,
-  "source_foundation": {
-    "material": "RC",
-    "width": 3500.0,
-    "depth": 3500.0,
-    "height": 250
+  "version": "2.0-F41B06-01",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/钛液事故槽(F41B02)稀碱配置槽(F41B05)稀碱储槽(F41B06).dxf",
+  "source_sha256": "3bf2340412eecbabf7aff3bf2f8a60053656aa4405473aaf2945459c28d434ce",
+  "scope": "外部本体/接口、基础配合与安装复核；不展开内部工艺构造",
+  "dimensions_mm": {
+    "nominal_inner_diameter_mm": 2800,
+    "steel_outer_diameter_mm": 2816,
+    "nominal_body_height_mm": 2500,
+    "body_base_mm": 158,
+    "cover_top_mm": 2658,
+    "bottom_member_height_mm": 150,
+    "bottom_plate_diameter_mm": 2900,
+    "bottom_plate_thickness_mm": 8,
+    "cover_diameter_mm": 2966,
+    "cover_thickness_mm": 8,
+    "mixer_display_height_mm": 1560,
+    "ring_bolt_count": 34,
+    "ring_bolt_PCD_mm": 2906,
+    "factory_to_type_rotation_deg": 90
   },
-  "source_support": {
-    "material": "steel",
-    "count": 12,
-    "height": 250
-  },
-  "model_scope": "槽罐本体与顶部搅拌；不含基础及底部支撑",
-  "footprint_mm": [
-    2800.0,
-    2800.0
+  "bounds_mm": [
+    3291.0,
+    3085.0,
+    4218.0
   ],
-  "body_diameter_mm": 2800.0,
-  "body_height_mm": 2500.0,
-  "body_z_mm": 0,
-  "mixer_total_height_mm": 1880,
-  "mixer_height_basis": "按类型侧视比例估取",
-  "mixer_geometry_source": "槽罐搅拌器_标注侧视 v0.3（01、02、03、06）",
-  "cad_position_mm": [
-    664741,
-    356225
+  "ports": [
+    {
+      "id": "a",
+      "DN": 150,
+      "face_center_mm": [
+        9.094947017729282e-13,
+        900.0000000000003,
+        2958.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 315,
+      "flange_thickness_mm": 18,
+      "outer_DN": 250,
+      "outside_flange_OD_mm": 375
+    },
+    {
+      "id": "c",
+      "DN": 100,
+      "face_center_mm": [
+        -450.0,
+        779.4228634059942,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 210,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d",
+      "DN": 150,
+      "face_center_mm": [
+        450.0,
+        779.4228634059942,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 265,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "e",
+      "DN": 200,
+      "face_center_mm": [
+        -1100.0,
+        -2.2737367544323206e-13,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 320,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f",
+      "DN": 80,
+      "face_center_mm": [
+        449.9999999999991,
+        -779.4228634059954,
+        2758.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h1",
+      "DN": 500,
+      "face_center_mm": [
+        -0.0,
+        -899.9999999999997,
+        2808.0
+      ],
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 630,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "g",
+      "DN": 80,
+      "face_center_mm": [
+        -0.0,
+        -1059.9999999999995,
+        3016
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "basis": "g/h1共座呼吸口；不补造出口法兰"
+    },
+    {
+      "id": "h2",
+      "DN": 700,
+      "face_center_mm": [
+        -0.0,
+        -1558.0,
+        758.0
+      ],
+      "normal": [
+        -0.0,
+        -1.0,
+        0.0
+      ],
+      "neck_OD_mm": 720.0,
+      "flange_OD_mm": 1150,
+      "flange_thickness_mm": 18,
+      "closure": "带盖侧人孔",
+      "cover_thickness_mm": 8,
+      "handle_scope": "图示提手按比例表达；未标细部不作制造尺寸"
+    },
+    {
+      "id": "b1",
+      "DN": 150,
+      "face_center_mm": [
+        1808.0,
+        1.1070807064292073e-13,
+        358.0
+      ],
+      "normal": [
+        1.0,
+        6.123233995736764e-17,
+        0.0
+      ],
+      "neck_OD_mm": 190.0,
+      "flange_OD_mm": 315,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "b2",
+      "DN": 150,
+      "face_center_mm": [
+        1278.449060385278,
+        -1278.4490603852778,
+        358.0
+      ],
+      "normal": [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "neck_OD_mm": 190.0,
+      "flange_OD_mm": 315,
+      "flange_thickness_mm": 18
+    }
   ],
-  "plan_sheet": "EL100",
-  "coordinate_reference": "DXF model-space point at equipment tag insertion; approximate equipment center",
-  "coordinate_system": "local model: X east, Y north, Z up; OBJ meters, Z-up",
-  "large_equipment": true
+  "datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+  "limits": [
+    "新总图局部南向主低口转换为既有类型模型东向，整体转90°；原单台XYZ/旋转不变，依据见三槽方位记录",
+    "次低口/人孔的新旧相对方位仍有差异，保持厂家相对布局，工艺最终方位待核；不单独旋转接口消除差异",
+    "按共用文件外形用于F41B02/F41B05/F41B06，三台介质、材质和接口用途不互相复制确认",
+    "新增150高底型钢；裸罐高度2500，搅拌按90+720+750=1560外形口径，内部零件仍示意",
+    "h2外廓Ø1150按总图，DN700与护套/外廓分别记录；底双排口复合套管细部待核",
+    "g/h1共座明确；呼吸弯管曲率和法兰厚待详图，未补造出口法兰",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ],
+  "detail_level": "采用已接受的C41B02工程展示风格；无依据细部不作制造确认",
+  "qty": 1,
+  "current_files": {
+    "model": "版本/2.0/F41B06/设备/model_data.js",
+    "glb": "版本/2.0/F41B06/设备/F41B06.glb",
+    "obj": "版本/2.0/F41B06/设备/F41B06.obj",
+    "parameters": "parameters/F41B06.json",
+    "installation": "版本/2.0/F41B06/安装表.json"
+  }
 }

@@ -1,0 +1,114 @@
+{
+  "C41B01": {
+    "version": "2.0-C41B01-01",
+    "source": "水解设备模型库/水解设备图纸/热水预热槽(C41B01A-B).dxf",
+    "parts": 31,
+    "bounds_mm": [
+      3670.0,
+      3743.0,
+      4335.0
+    ],
+    "placed_instances": 2,
+    "foundation_ids": [
+      "C41B01"
+    ]
+  },
+  "C41B03": {
+    "version": "2.0-C41B03-01",
+    "source": "水解设备模型库/水解设备图纸/稀碱预热槽(C41B03A-C).dxf",
+    "parts": 61,
+    "bounds_mm": [
+      1870.4023,
+      1825.0,
+      3382.5
+    ],
+    "placed_instances": 3,
+    "foundation_ids": [
+      "C41B03"
+    ]
+  },
+  "F41B01": {
+    "version": "2.0-F41B01-01",
+    "source": "水解设备模型库/水解设备图纸/偏钛酸缓冲槽(F4101A-B1～4).dxf",
+    "parts": 79,
+    "bounds_mm": [
+      5380.0,
+      5220.0,
+      8372.0
+    ],
+    "placed_instances": 8,
+    "foundation_ids": [
+      "F41B01"
+    ]
+  },
+  "F41B02": {
+    "version": "2.0-F41B02-01",
+    "source": "水解设备模型库/水解设备图纸/钛液事故槽(F41B02)稀碱配置槽(F41B05)稀碱储槽(F41B06).dxf",
+    "parts": 80,
+    "bounds_mm": [
+      3291.0,
+      3085.0,
+      4218.0
+    ],
+    "placed_instances": 1,
+    "foundation_ids": [
+      "F41B02"
+    ]
+  },
+  "F41B05": {
+    "version": "2.0-F41B05-01",
+    "source": "水解设备模型库/水解设备图纸/钛液事故槽(F41B02)稀碱配置槽(F41B05)稀碱储槽(F41B06).dxf",
+    "parts": 80,
+    "bounds_mm": [
+      3291.0,
+      3085.0,
+      4218.0
+    ],
+    "placed_instances": 1,
+    "foundation_ids": [
+      "F41B02"
+    ]
+  },
+  "F41B06": {
+    "version": "2.0-F41B06-01",
+    "source": "水解设备模型库/水解设备图纸/钛液事故槽(F41B02)稀碱配置槽(F41B05)稀碱储槽(F41B06).dxf",
+    "parts": 80,
+    "bounds_mm": [
+      3291.0,
+      3085.0,
+      4218.0
+    ],
+    "placed_instances": 1,
+    "foundation_ids": [
+      "F41B02"
+    ]
+  },
+  "D41B02": {
+    "version": "2.0-D41B02-01",
+    "source": "水解设备模型库/水解设备图纸/水解槽(D41B02A-E1～3).dxf",
+    "parts": 95,
+    "bounds_mm": [
+      6498.9959,
+      6070.0,
+      7778.5
+    ],
+    "placed_instances": 15,
+    "foundation_ids": [
+      "D41B02"
+    ]
+  },
+  "L41B05": {
+    "version": "2.0-L41B05-01",
+    "source": "水解设备模型库/水解设备图纸/水解蒸汽分汽缸(L41B05).dxf",
+    "parts": 29,
+    "bounds_mm": [
+      4350.0,
+      1000.0,
+      1400.0
+    ],
+    "placed_instances": 0,
+    "foundation_ids": [
+      "L41B05"
+    ]
+  }
+}

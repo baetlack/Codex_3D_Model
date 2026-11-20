@@ -58,11 +58,14 @@ def main():
   assert json.loads(INDEX.read_text())==files(ROOT),'Equipment files changed; review then snapshot'
   check_frozen()
   import subprocess
-  classes=['C41B02','C41B04','D41B01','L41B01','F41B03','L41B02','F41B04']
+  factory=['C41B01','C41B03','F41B01','F41B02','F41B05','F41B06','D41B02','L41B05']
+  classes=['C41B02','C41B04','D41B01','L41B01','F41B03','L41B02','F41B04','L41B03']+factory
   selected=sys.argv[2:] or classes
   assert set(selected)<=set(classes),'Unknown equipment class'
   for key in selected:
+   if key in factory:continue
    if (ROOT/('版本/2.0/'+key+'/设备/model_data.js')).exists():subprocess.run([sys.executable,str(ROOT/('tools/test_'+key.lower()+'.py'))],check=True)
+  if any(key in factory for key in selected):subprocess.run([sys.executable,str(ROOT/'tools/test_factory_batch_v2.py'),*[key for key in selected if key in factory]],check=True)
  elif command=='build-c41b02':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_c41b02_v2.py')],check=True)
@@ -84,5 +87,11 @@ def main():
  elif command=='build-f41b04':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_f41b04_v2.py')],check=True)
- else:raise SystemExit('Use freeze | build-c41b02 | build-c41b04 | build-d41b01 | build-l41b01 | build-f41b03 | build-l41b02 | build-f41b04 | snapshot | check [CLASS ...]')
+ elif command=='build-l41b03':
+  import subprocess
+  subprocess.run([sys.executable,str(ROOT/'tools/build_l41b03_v2.py')],check=True)
+ elif command=='build-factory':
+  import subprocess
+  subprocess.run([sys.executable,str(ROOT/'tools/build_factory_batch_v2.py')],check=True)
+ else:raise SystemExit('Use freeze | build-CLASS | build-factory | snapshot | check [CLASS ...]')
 if __name__=='__main__':main()

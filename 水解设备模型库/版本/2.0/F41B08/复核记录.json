@@ -1,0 +1,55 @@
+{
+  "id": "F41B08",
+  "name": "密封水循环槽",
+  "version": "2.0-F41B08-复核01",
+  "action": "保留用户确认的Ø1000×1000一体圆柱",
+  "geometry_action": "retained",
+  "status": "reviewed-with-open-items",
+  "unit_tags": [
+    "F41B08"
+  ],
+  "active_model_source": "水解设备模型库/示图建模_20260521/模型/F41B08/model_data.js",
+  "active_model_sha256": "5788212d935f67e10408f73c512c435e29064a7481b4b3596705e30eb8dc3dfa",
+  "legacy_model_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "sources": {
+    "水解设备模型库/示图建模_20260521/原始资料/水解设备模型示图_更新20261105.dxf": "b06d01a8b8bd50f8cd815412f37ede908c2573b0636030ab6018a92a124a3338",
+    "水解桥架工程/data/原始资料/设备基础/水解设备基础图.dxf": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7",
+    "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
+    "水解设备模型库/示图建模_20260521/原始资料/2.水解水洗设备一览表 2026.5.21.xls": "77844a77077ae85ac67e0f8f7c21fe1cee6d73d06564036b53959560b0df07a3"
+  },
+  "installation": {
+    "placed": [
+      {
+        "id": "F41B08",
+        "name": "密封水循环槽",
+        "asset": "F41B08",
+        "position_mm": [
+          20200.0,
+          58599.999,
+          300.0
+        ],
+        "rotation_deg": 0.0,
+        "level": "EL100",
+        "xy_status": "图块中心定位",
+        "z_status": "待核",
+        "orientation_status": "圆轮廓仅确认中心，管口朝向待核",
+        "source_insert": "113DE7",
+        "source_block": "CIRCLE-设备轮廓",
+        "label_handle": "平面位号与圆轮廓核对",
+        "label_distance_mm": null,
+        "source_floor_origin_mm": [
+          643629.0370487935,
+          305259.2765326498
+        ],
+        "z_basis": "台账/既有布置 POS EL；安装基准待核",
+        "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf"
+      }
+    ],
+    "unplaced": [],
+    "position_action": "unchanged"
+  },
+  "pending": [
+    "不因其他槽罐更新而增设搅拌、接口或支腿",
+    "仅有台账/俯视353F，真实进出水口和安装详图待补"
+  ]
+}

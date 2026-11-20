@@ -1,0 +1,57 @@
+{
+  "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+  "source_sha256": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
+  "instances": [
+    {
+      "id": "F41B06",
+      "insert": "38A43",
+      "block": "钛液事故槽",
+      "drawing_rotation_deg": 90.0,
+      "retained_model_rotation_deg": 0.0,
+      "retained_position_mm": [
+        23300.0,
+        52453.6,
+        300.0
+      ]
+    },
+    {
+      "id": "F41B05",
+      "insert": "5D249",
+      "block": "钛液事故槽",
+      "drawing_rotation_deg": 90.0,
+      "retained_model_rotation_deg": 0.0,
+      "retained_position_mm": [
+        23300.0,
+        55653.6,
+        300.0
+      ]
+    },
+    {
+      "id": "F41B02",
+      "insert": "5D252",
+      "block": "钛液事故槽",
+      "drawing_rotation_deg": 90.0,
+      "retained_model_rotation_deg": 0.0,
+      "retained_position_mm": [
+        23300.0,
+        59653.6,
+        300.0
+      ]
+    }
+  ],
+  "old_type_model": "水解桥架工程/models/设备/设备基础_20261106/设备净模/F41B02/model_data.js",
+  "old_type_sha256": "560b7b252c9ca8e8a992be0f871aef5f056312cce169f7ee0d1b8d567b2a5160",
+  "retained_main_drain_axis": [
+    1,
+    0,
+    0
+  ],
+  "factory_main_drain_axis": [
+    0,
+    -1,
+    0
+  ],
+  "factory_to_type_rotation_deg": 90,
+  "basis": "布置图主低排口向东；保持原类型模型主低口轴系及原实例变换，将新总图南向主低口整体转为模型东向",
+  "pending": "次低口及人孔与旧布置图的相对方位仍有差异；保留新总图的相对布局，不单独挪孔以贴合旧图"
+}

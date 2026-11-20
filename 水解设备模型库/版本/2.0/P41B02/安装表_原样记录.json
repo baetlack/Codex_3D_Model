@@ -1,0 +1,338 @@
+[
+  {
+    "id": "P41B02B4",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      24475.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "F708A",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E70",
+    "label_distance_mm": 2736.12,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02B3",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      28975.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "B5E61",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E73",
+    "label_distance_mm": 2597.14,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02B2",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      33475.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "B5E60",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E76",
+    "label_distance_mm": 2480.03,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02B1",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41500.0,
+      37975.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "F703D",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E79",
+    "label_distance_mm": 2785.63,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02A4",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      42475.0,
+      0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "F7026",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E7C",
+    "label_distance_mm": 2906.71,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02A3",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      46975.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "B5E5F",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E7F",
+    "label_distance_mm": 2717.91,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02A2",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      51475.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "B5E5E",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E82",
+    "label_distance_mm": 2744.35,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "P41B02A1",
+    "name": "一洗压滤供料泵",
+    "asset": "P41B02",
+    "position_mm": [
+      41499.8447,
+      55975.0,
+      300.0
+    ],
+    "rotation_deg": 90.0,
+    "level": "EL100",
+    "xy_status": "按进液端模型原点与图块轮廓重新对齐",
+    "z_status": "待核",
+    "orientation_status": "泵长轴/进液端已按布置图校正；示意管口细节仍待总图",
+    "source_insert": "B5E5D",
+    "source_block": "一洗压滤供料泵",
+    "label_handle": "B5E85",
+    "label_distance_mm": 2608.03,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "sample_handle": "B5E5D",
+      "sample_model_origin_world_mm": [
+        685128.8817,
+        361234.2765
+      ],
+      "native_origin_offset_mm": [
+        -325.0,
+        0.1553
+      ],
+      "source_block_rotation_deg": 90.00000000000003,
+      "source_block_scale": [
+        1,
+        1
+      ]
+    }
+  }
+]

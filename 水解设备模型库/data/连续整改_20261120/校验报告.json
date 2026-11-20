@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "checked_classes": [
+    "C41B01",
+    "C41B03",
+    "F41B01",
+    "F41B02",
+    "F41B05",
+    "F41B06",
+    "D41B02",
+    "L41B05"
+  ],
+  "reviewed_groups": 35,
+  "reviewed_items": 99,
+  "model_revision_items": 58,
+  "retained_items": 41,
+  "scene_items": 72,
+  "unplaced_items": 27,
+  "original_positions_and_civil_instances": "unchanged",
+  "classes": {
+    "C41B01": {
+      "parts": 31,
+      "civil_intersection_pairs": 0
+    },
+    "C41B03": {
+      "parts": 61,
+      "civil_intersection_pairs": 0
+    },
+    "F41B01": {
+      "parts": 79,
+      "civil_intersection_pairs": 0
+    },
+    "F41B02": {
+      "parts": 80,
+      "civil_intersection_pairs": 0
+    },
+    "F41B05": {
+      "parts": 80,
+      "civil_intersection_pairs": 0
+    },
+    "F41B06": {
+      "parts": 80,
+      "civil_intersection_pairs": 0
+    },
+    "D41B02": {
+      "parts": 95,
+      "civil_intersection_pairs": 0
+    },
+    "L41B05": {
+      "parts": 29,
+      "civil_intersection_pairs": 0
+    }
+  },
+  "limits": "通过的是来源/几何导出/版本隔离校验，未决制造及安装项不因此解除"
+}

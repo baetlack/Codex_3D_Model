@@ -1,0 +1,368 @@
+{
+  "id": "D41B02",
+  "group": "D41B02",
+  "name": "水解槽",
+  "version": "2.0-D41B02-01",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/水解槽(D41B02A-E1～3).dxf",
+  "source_sha256": "8dc1f5d38e00653b9eb7e591d58dbbd892e1fa6257483fc8cdb95d38d673d548",
+  "scope": "外部本体/接口、基础配合与安装复核；不展开内部工艺构造",
+  "dimensions_mm": {
+    "confirmed_body_diameter_mm": 5900,
+    "confirmed_body_height_mm": 4700,
+    "confirmed_mixer_top_mm": 7776,
+    "confirmed_mixer_total_height_mm": 3076,
+    "retained_cover_top_mm": 5020,
+    "new_drawing_cover_datum_pending": true
+  },
+  "bounds_mm": [
+    6498.9959,
+    6070.0,
+    7778.5
+  ],
+  "ports": [
+    {
+      "id": "a",
+      "DN": 250,
+      "face_center_mm": [
+        -1629.670171948918,
+        -1387.0022100414458,
+        5370.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 273.0,
+      "flange_OD_mm": 395,
+      "flange_thickness_mm": 18,
+      "outer_DN": 300,
+      "outside_flange_OD_mm": 445
+    },
+    {
+      "id": "b",
+      "DN": 150,
+      "face_center_mm": [
+        1626.9687987885661,
+        1390.1699636262526,
+        5370.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18,
+      "outer_DN": 250,
+      "outside_flange_OD_mm": 395
+    },
+    {
+      "id": "c",
+      "DN": 100,
+      "face_center_mm": [
+        1708.3153123575246,
+        -1288.308498532162,
+        5370.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18,
+      "outer_DN": 150,
+      "outside_flange_OD_mm": 285
+    },
+    {
+      "id": "e",
+      "DN": 250,
+      "face_center_mm": [
+        928.3549749379347,
+        -1928.1486043632917,
+        5220.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 273.0,
+      "flange_OD_mm": 375,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "f1",
+      "DN": 65,
+      "face_center_mm": [
+        -914.4601295061398,
+        -2045.128257746352,
+        5370.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18,
+      "outer_DN": 150,
+      "outside_flange_OD_mm": 285
+    },
+    {
+      "id": "f2",
+      "DN": 65,
+      "face_center_mm": [
+        -1513.6463081663096,
+        1650.470810237932,
+        5370.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18,
+      "outer_DN": 150,
+      "outside_flange_OD_mm": 285
+    },
+    {
+      "id": "f3",
+      "DN": 65,
+      "face_center_mm": [
+        2224.9579113294844,
+        254.44318518234212,
+        5370.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18,
+      "outer_DN": 150,
+      "outside_flange_OD_mm": 285
+    },
+    {
+      "id": "g",
+      "DN": 600,
+      "face_center_mm": [
+        -0.5158222662761958,
+        2449.9999999999945,
+        5320.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 630.0,
+      "flange_OD_mm": 760,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "j",
+      "DN": 150,
+      "face_center_mm": [
+        -887.2274168382389,
+        1945.7035165023215,
+        5120.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340
+    },
+    {
+      "id": "k",
+      "DN": 80,
+      "face_center_mm": [
+        1015.9466927074048,
+        1883.468162082105,
+        5220.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 190,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "l",
+      "DN": 80,
+      "face_center_mm": [
+        753.3393639018958,
+        2003.5141895553272,
+        5220.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 190,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "d",
+      "DN": 150,
+      "face_center_mm": [
+        -3350.0,
+        4.102566777143633e-13,
+        220.0
+      ],
+      "normal": [
+        -1.0,
+        1.2246467991473527e-16,
+        0.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "h",
+      "DN": 65,
+      "face_center_mm": [
+        -2185.965004500315,
+        2185.965004500315,
+        841.4213562373095
+      ],
+      "normal": [
+        -0.5000000000000008,
+        0.4999999999999988,
+        0.7071067811865479
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "m1",
+      "DN": 200,
+      "face_center_mm": [
+        -1331.2475244832024,
+        -2854.8695291654476,
+        1140.0
+      ],
+      "normal": [
+        -0.4226182617406989,
+        -0.9063077870366503,
+        0.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "m2",
+      "DN": 200,
+      "face_center_mm": [
+        -2227.3863607376247,
+        2227.3863607376247,
+        1140.0
+      ],
+      "normal": [
+        -0.7071067811865486,
+        0.7071067811865465,
+        0.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "m3",
+      "DN": 200,
+      "face_center_mm": [
+        3129.7513453812503,
+        356.5901233689062,
+        1140.0
+      ],
+      "normal": [
+        0.9935718556765875,
+        0.11320321376790685,
+        0.0
+      ],
+      "neck_OD_mm": 219.0,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "n",
+      "DN": 300,
+      "face_center_mm": [
+        2420.147334823756,
+        2068.9903789495684,
+        220.0
+      ],
+      "normal": [
+        0.7600973378563973,
+        0.6498092312237629,
+        0.0
+      ],
+      "neck_OD_mm": 325.0,
+      "flange_OD_mm": 445,
+      "flange_thickness_mm": 18
+    },
+    {
+      "id": "t",
+      "DN": 600,
+      "face_center_mm": [
+        2255.670631985087,
+        -2255.6706319850864,
+        480.0
+      ],
+      "normal": [
+        0.7071067811865476,
+        -0.7071067811865476,
+        0.0
+      ],
+      "neck_OD_mm": 630.0,
+      "flange_OD_mm": 720,
+      "flange_thickness_mm": 18,
+      "closure": "带盖侧人孔",
+      "cover_thickness_mm": 8,
+      "handle_scope": "图示提手按比例表达；未标细部不作制造尺寸"
+    }
+  ],
+  "datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+  "limits": [
+    "已确认Tank_shell、Tank_flat_bottom、Tank_cover_lid及搅拌顶点/面/颜色保持；只替换/补外部接口",
+    "新图11个顶口按1:20几何换算平面，图形通径/衬套与名义DN分开",
+    "原盖面320高差与新总图口高基准未闭合；顶口暂从现有盖面5020表达，不宣称已核实绝对口高",
+    "原模型Ø5900及3076总高保留；新图钢壳Ø5924、盖面及2866分段需与已确认口径核对",
+    "侧口角度由图面分布作局部示意；m1/m2/m3和工艺绝对方位须现场/工艺图核实，不能据此施工",
+    "未标盖板厚、法兰厚和管外径系列为显示值；不得据此制造",
+    "各单台设备的工艺绝对方位待核；不凭文字插点新增位置",
+    "原始图纸、1.0、先前八类、建筑/桥架及原土建几何保持"
+  ],
+  "detail_level": "采用已接受的C41B02工程展示风格；无依据细部不作制造确认",
+  "qty": 15,
+  "current_files": {
+    "model": "版本/2.0/D41B02/设备/model_data.js",
+    "glb": "版本/2.0/D41B02/设备/D41B02.glb",
+    "obj": "版本/2.0/D41B02/设备/D41B02.obj",
+    "parameters": "parameters/D41B02.json",
+    "installation": "版本/2.0/D41B02/安装表.json"
+  }
+}

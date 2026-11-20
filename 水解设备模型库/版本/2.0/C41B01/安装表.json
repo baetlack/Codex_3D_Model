@@ -1,0 +1,138 @@
+[
+  {
+    "id": "C41B01A",
+    "name": "热水预热槽",
+    "asset": "C41B01",
+    "position_mm": [
+      9500.0,
+      39599.8,
+      12200
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL112",
+    "xy_status": "图块中心定位",
+    "z_status": "有安装基准",
+    "orientation_status": "新接口按局部总图表达；沿用原旋转，绝对工艺方位待核",
+    "source_insert": "33246",
+    "source_block": "热水预热槽",
+    "label_handle": "33789",
+    "label_distance_mm": 2775.16,
+    "source_floor_origin_mm": [
+      778010.4484369854,
+      305259.2765326499
+    ],
+    "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "reference_handle": "33246",
+      "reference_block": "热水预热槽",
+      "source_rotation_deg": 270.0,
+      "source_scale": [
+        0.9696927021915351,
+        0.9696927021915351
+      ],
+      "model_to_block_rotation_deg": 90,
+      "model_to_block_mirror_y": false,
+      "native_center_offset_mm": [
+        0,
+        0
+      ],
+      "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
+      "top_plan": null,
+      "top_port_witness": {
+        "model_features": 7,
+        "matched_within_5mm": 7,
+        "nearest_error_mm": [
+          0.144,
+          0.165,
+          0.186,
+          0.182,
+          0.175,
+          0.169,
+          0.138
+        ]
+      }
+    },
+    "equipment_version": "2.0-C41B01-01",
+    "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+    "installation_review": {
+      "before_position_mm": [
+        9500.0,
+        39599.8,
+        12200
+      ],
+      "reason": "原XYZ/旋转保持；新增本体以底部承托面为原点，型钢/底板及未决口高见本类参数",
+      "source_drawing": "水解设备模型库/水解设备图纸/热水预热槽(C41B01A-B).dxf"
+    },
+    "model_origin": "最低承托面Z0；本类图纸口径和未决差异见设备参数"
+  },
+  {
+    "id": "C41B01B",
+    "name": "热水预热槽",
+    "asset": "C41B01",
+    "position_mm": [
+      29500.0,
+      17999.8,
+      12200
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL112",
+    "xy_status": "图块中心定位",
+    "z_status": "有安装基准",
+    "orientation_status": "新接口按局部总图表达；沿用原旋转，绝对工艺方位待核",
+    "source_insert": "38107",
+    "source_block": "热水预热槽",
+    "label_handle": "3810F",
+    "label_distance_mm": 3204.23,
+    "source_floor_origin_mm": [
+      778010.4484369854,
+      305259.2765326499
+    ],
+    "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "reference_handle": "38107",
+      "reference_block": "热水预热槽",
+      "source_rotation_deg": 270.0,
+      "source_scale": [
+        0.9696927021915351,
+        0.9696927021915351
+      ],
+      "model_to_block_rotation_deg": 90,
+      "model_to_block_mirror_y": false,
+      "native_center_offset_mm": [
+        0,
+        0
+      ],
+      "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
+      "top_plan": null,
+      "top_port_witness": {
+        "model_features": 7,
+        "matched_within_5mm": 7,
+        "nearest_error_mm": [
+          0.144,
+          0.165,
+          0.186,
+          0.182,
+          0.175,
+          0.169,
+          0.138
+        ]
+      }
+    },
+    "equipment_version": "2.0-C41B01-01",
+    "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+    "installation_review": {
+      "before_position_mm": [
+        29500.0,
+        17999.8,
+        12200
+      ],
+      "reason": "原XYZ/旋转保持；新增本体以底部承托面为原点，型钢/底板及未决口高见本类参数",
+      "source_drawing": "水解设备模型库/水解设备图纸/热水预热槽(C41B01A-B).dxf"
+    },
+    "model_origin": "最低承托面Z0；本类图纸口径和未决差异见设备参数"
+  }
+]

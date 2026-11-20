@@ -36,6 +36,7 @@ def build():
     foundation=js(FOUND+'foundation_data.js')
     equipment_project=doc('水解设备模型库/project.json') if (ROOT/'水解设备模型库/project.json').exists() else {}
     revisions=equipment_project.get('revisions',{})
+    factory_revisions={key for key,value in revisions.items() if value.get('orientation_review')=='new-factory-layout-pending'}
     revision_installs={key:doc('水解设备模型库/'+value['placements']) for key,value in revisions.items()}
     for revision in revisions.values():
         params=doc('水解设备模型库/'+str(Path(revision['equipment']).with_name('参数.json')))
@@ -141,7 +142,7 @@ def build():
             assert p['rotation_deg']==record['rotation_deg'] and p.get('mirror_y',False)==record.get('mirror_y',False)
             p['position_mm']=record['position_mm'][:]
             for field in ['equipment_version','local_datum','z_status','orientation_status','z_basis','installation_review']:p[field]=record[field]
-            if p['asset'] in ('C41B02','D41B01'):p.pop('layout_review',None)
+            if p['asset'] in ('C41B02','D41B01') or p['asset'] in factory_revisions:p.pop('layout_review',None)
         for record in layout_review['records']:
             if record['id'] in revised:
                 record['equipment_version']=revised[record['id']]['equipment_version']
@@ -154,6 +155,9 @@ def build():
                 elif record['id'].startswith('L41B01'):
                     record['arrangement_symbol_evidence']=record.pop('evidence',{})
                     record['status']='布置图镜像已纠正；三耳支承/标高及新接口工艺方位待核'
+                elif record['id'][:6] in factory_revisions:
+                    record['superseded_arrangement_symbol_evidence']=record.pop('evidence',{})
+                    record['status']='新总图本体/接口；平面中心保留，新增接口工艺方位待核'
         layout_review['reviewed']=sum(p['status'] in ('位置与顶视方位已复核','泵原点及长轴已校正') for p in layout_review['records'])
         layout_review['pending']=sum('待核' in p['status'] for p in layout_review['records'])
         save('data/布置复核.json',layout_review)

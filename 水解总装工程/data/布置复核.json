@@ -4,7 +4,7 @@
   "records": [
     {
       "id": "D41B02C3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         68075.0006
@@ -16,7 +16,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D2",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -42,29 +43,12 @@
             9500.0,
             68074.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02C2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         60875.0006
@@ -76,7 +60,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D1",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -102,29 +87,12 @@
             9500.0,
             60874.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02C1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         53675.0006
@@ -136,7 +104,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D0",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -162,29 +131,12 @@
             9500.0,
             53674.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02A3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9499.9986,
         24875.0006
@@ -196,7 +148,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380A2",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -222,29 +175,12 @@
             9500.0,
             24874.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02A2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9499.9986,
         17675.0006
@@ -256,7 +192,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380A4",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -282,29 +219,12 @@
             9500.0,
             17674.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02A1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9499.9986,
         10475.0006
@@ -316,7 +236,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380A6",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -342,29 +263,12 @@
             9500.0,
             10474.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02D3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         22499.9986,
         24875.0006
@@ -376,7 +280,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D9",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -402,29 +307,12 @@
             22500.0,
             24874.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02D2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         22499.9986,
         17675.0006
@@ -436,7 +324,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D8",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -462,29 +351,12 @@
             22500.0,
             17674.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02D1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         22499.9986,
         10475.0006
@@ -496,7 +368,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D7",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -522,29 +395,12 @@
             22500.0,
             10474.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02E3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         22500.0,
         46475.0006
@@ -556,7 +412,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D6",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -582,29 +439,12 @@
             22500.0,
             46474.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02E2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         22500.0,
         39275.0006
@@ -616,7 +456,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D5",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -642,29 +483,12 @@
             22500.0,
             39274.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02E1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         22500.0,
         32075.0006
@@ -676,7 +500,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331D4",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -702,29 +527,12 @@
             22500.0,
             32074.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "F41B01A2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         61299.91
@@ -736,7 +544,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331DC",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -762,25 +571,12 @@
             35000.0,
             61300.0
           ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
-          ]
         }
       }
     },
     {
       "id": "F41B01A1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         68499.91
@@ -792,7 +588,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331DD",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -818,25 +615,12 @@
             35000.0,
             68500.0
           ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
-          ]
         }
       }
     },
     {
       "id": "F41B01A4",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         46899.91
@@ -848,7 +632,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331DA",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -874,25 +659,12 @@
             35000.0,
             46900.0
           ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
-          ]
         }
       }
     },
     {
       "id": "F41B01A3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         54099.91
@@ -904,7 +676,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331DB",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -929,19 +702,6 @@
           "local_xy_mm": [
             35000.0,
             54100.0
-          ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
           ]
         }
       }
@@ -1008,7 +768,7 @@
     },
     {
       "id": "F41B01B4",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         34999.9714,
         18099.91
@@ -1020,7 +780,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380C1",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -1046,25 +807,12 @@
             35000.0,
             18100.0
           ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
-          ]
         }
       }
     },
     {
       "id": "F41B01B1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         39699.91
@@ -1076,7 +824,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380C4",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -1102,25 +851,12 @@
             35000.0,
             39700.0
           ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
-          ]
         }
       }
     },
     {
       "id": "F41B01B2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         32499.91
@@ -1132,7 +868,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380C3",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -1158,25 +895,12 @@
             35000.0,
             32500.0
           ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
-          ]
         }
       }
     },
     {
       "id": "F41B01B3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.03,
         25299.91
@@ -1188,7 +912,8 @@
       "before_rotation_deg": 0.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "380C2",
         "reference_block": "水解料浆缓冲槽顶盖",
         "source_rotation_deg": 0.0,
@@ -1213,19 +938,6 @@
           "local_xy_mm": [
             35000.0,
             25300.0
-          ]
-        },
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.0,
-            0.011,
-            0.046,
-            0.046,
-            0.046,
-            0.046,
-            0.0
           ]
         }
       }
@@ -1366,7 +1078,7 @@
     },
     {
       "id": "D41B02B3",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         46475.0006
@@ -1378,7 +1090,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331CF",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -1404,29 +1117,12 @@
             9500.0,
             46474.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02B2",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         39275.0006
@@ -1438,7 +1134,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331CE",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -1464,29 +1161,12 @@
             9500.0,
             39274.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "D41B02B1",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9700.0,
         32075.0006
@@ -1498,7 +1178,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-D41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "331CD",
         "reference_block": "水解锅顶",
         "source_rotation_deg": 0.0,
@@ -1524,29 +1205,12 @@
             9500.0,
             32074.9998
           ]
-        },
-        "top_port_witness": {
-          "model_features": 11,
-          "matched_within_5mm": 11,
-          "nearest_error_mm": [
-            0.09,
-            0.066,
-            0.124,
-            0.09,
-            0.082,
-            0.091,
-            0.09,
-            0.07,
-            0.082,
-            0.09,
-            0.09
-          ]
         }
       }
     },
     {
       "id": "F41B06",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         23300.0,
         52400.0
@@ -1558,7 +1222,8 @@
       "before_rotation_deg": 90.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B06-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "38A43",
         "reference_block": "钛液事故槽",
         "source_rotation_deg": 90.0,
@@ -1573,24 +1238,12 @@
           0
         ],
         "basis": "复用F41B02类型；按对应事故槽块中心和方位就位",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 5,
-          "nearest_error_mm": [
-            0.0,
-            0.038,
-            0.02,
-            0.007,
-            853.2,
-            0.007
-          ]
-        }
+        "top_plan": null
       }
     },
     {
       "id": "F41B05",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         23300.0,
         55600.0
@@ -1602,7 +1255,8 @@
       "before_rotation_deg": 90.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B05-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "5D249",
         "reference_block": "钛液事故槽",
         "source_rotation_deg": 90.0,
@@ -1617,24 +1271,12 @@
           0
         ],
         "basis": "复用F41B02类型；按对应事故槽块中心和方位就位",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 5,
-          "nearest_error_mm": [
-            0.0,
-            0.038,
-            0.02,
-            0.007,
-            853.2,
-            0.007
-          ]
-        }
+        "top_plan": null
       }
     },
     {
       "id": "F41B02",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         23300.0,
         59600.0
@@ -1646,7 +1288,8 @@
       "before_rotation_deg": 90.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-F41B02-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "5D252",
         "reference_block": "钛液事故槽",
         "source_rotation_deg": 90.0,
@@ -1661,19 +1304,7 @@
           0
         ],
         "basis": "顶口方位转-90度；槽中心相对块插入点偏X+53.6mm",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 6,
-          "matched_within_5mm": 5,
-          "nearest_error_mm": [
-            0.0,
-            0.038,
-            0.02,
-            0.007,
-            853.2,
-            0.007
-          ]
-        }
+        "top_plan": null
       }
     },
     {
@@ -2787,7 +2418,7 @@
     },
     {
       "id": "C41B01A",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         39599.8
@@ -2799,7 +2430,8 @@
       "before_rotation_deg": 270.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-C41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "33246",
         "reference_block": "热水预热槽",
         "source_rotation_deg": 270.0,
@@ -2814,25 +2446,12 @@
           0
         ],
         "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.144,
-            0.165,
-            0.186,
-            0.182,
-            0.175,
-            0.169,
-            0.138
-          ]
-        }
+        "top_plan": null
       }
     },
     {
       "id": "C41B03B",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         52800.0
@@ -2844,7 +2463,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-C41B03-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "33244",
         "reference_block": "碱液预热槽",
         "source_rotation_deg": 180.0,
@@ -2859,17 +2479,7 @@
           0
         ],
         "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 4,
-          "matched_within_5mm": 4,
-          "nearest_error_mm": [
-            0.036,
-            0.037,
-            0.037,
-            0.012
-          ]
-        }
+        "top_plan": null
       }
     },
     {
@@ -2907,7 +2517,7 @@
     },
     {
       "id": "C41B03A",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         9500.0,
         24000.0
@@ -2919,7 +2529,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 180.0,
       "mirror_y": true,
-      "evidence": {
+      "equipment_version": "2.0-C41B03-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "33BEB",
         "reference_block": "碱液预热槽",
         "source_rotation_deg": 180.0,
@@ -2934,17 +2545,7 @@
           0
         ],
         "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 4,
-          "matched_within_5mm": 4,
-          "nearest_error_mm": [
-            0.036,
-            0.037,
-            0.037,
-            0.012
-          ]
-        }
+        "top_plan": null
       }
     },
     {
@@ -3015,7 +2616,7 @@
     },
     {
       "id": "C41B01B",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         29500.0,
         17999.8
@@ -3027,7 +2628,8 @@
       "before_rotation_deg": 270.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-C41B01-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "38107",
         "reference_block": "热水预热槽",
         "source_rotation_deg": 270.0,
@@ -3042,25 +2644,12 @@
           0
         ],
         "basis": "七处顶口/人孔方位与原图对应；模型相对块定义转90度",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 7,
-          "matched_within_5mm": 7,
-          "nearest_error_mm": [
-            0.144,
-            0.165,
-            0.186,
-            0.182,
-            0.175,
-            0.169,
-            0.138
-          ]
-        }
+        "top_plan": null
       }
     },
     {
       "id": "C41B03C",
-      "status": "位置与顶视方位已复核",
+      "status": "新总图本体/接口；平面中心保留，新增接口工艺方位待核",
       "before_xy_mm": [
         35000.0,
         24000.0
@@ -3072,7 +2661,8 @@
       "before_rotation_deg": 180.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "evidence": {
+      "equipment_version": "2.0-C41B03-01",
+      "superseded_arrangement_symbol_evidence": {
         "reference_handle": "38105",
         "reference_block": "碱液预热槽",
         "source_rotation_deg": 180.0,
@@ -3087,17 +2677,7 @@
           0
         ],
         "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
-        "top_plan": null,
-        "top_port_witness": {
-          "model_features": 4,
-          "matched_within_5mm": 4,
-          "nearest_error_mm": [
-            0.036,
-            0.037,
-            0.037,
-            0.012
-          ]
-        }
+        "top_plan": null
       }
     },
     {
@@ -3123,7 +2703,7 @@
       "equipment_version": "2.0-F41B04-01"
     }
   ],
-  "reviewed": 52,
-  "pending": 20,
+  "reviewed": 21,
+  "pending": 51,
   "rule": "位置/朝向按真实图块与顶视特征复核；负比例只取镜像与方向，设备净模尺寸不缩放；无法对应的保留待核"
 }

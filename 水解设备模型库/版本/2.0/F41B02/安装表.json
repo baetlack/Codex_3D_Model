@@ -1,0 +1,69 @@
+[
+  {
+    "id": "F41B02",
+    "name": "钛液事故槽",
+    "asset": "F41B02",
+    "position_mm": [
+      23300.0,
+      59653.6,
+      300.0
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL100",
+    "xy_status": "图块中心定位",
+    "z_status": "待核",
+    "orientation_status": "新接口按局部总图表达；沿用原旋转，绝对工艺方位待核",
+    "source_insert": "5D252",
+    "source_block": "钛液事故槽",
+    "label_handle": "5D254",
+    "label_distance_mm": 2587.78,
+    "source_floor_origin_mm": [
+      643629.0370487935,
+      305259.2765326498
+    ],
+    "z_basis": "台账/既有布置 POS EL；安装基准待核",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "reference_handle": "5D252",
+      "reference_block": "钛液事故槽",
+      "source_rotation_deg": 90.0,
+      "source_scale": [
+        1,
+        1
+      ],
+      "model_to_block_rotation_deg": -90,
+      "model_to_block_mirror_y": false,
+      "native_center_offset_mm": [
+        53.6,
+        0
+      ],
+      "basis": "顶口方位转-90度；槽中心相对块插入点偏X+53.6mm",
+      "top_plan": null,
+      "top_port_witness": {
+        "model_features": 6,
+        "matched_within_5mm": 5,
+        "nearest_error_mm": [
+          0.0,
+          0.038,
+          0.02,
+          0.007,
+          853.2,
+          0.007
+        ]
+      }
+    },
+    "equipment_version": "2.0-F41B02-01",
+    "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+    "installation_review": {
+      "before_position_mm": [
+        23300.0,
+        59653.6,
+        300.0
+      ],
+      "reason": "原XYZ/旋转保持；新增本体以底部承托面为原点，型钢/底板及未决口高见本类参数",
+      "source_drawing": "水解设备模型库/水解设备图纸/钛液事故槽(F41B02)稀碱配置槽(F41B05)稀碱储槽(F41B06).dxf"
+    },
+    "model_origin": "最低承托面Z0；本类图纸口径和未决差异见设备参数"
+  }
+]

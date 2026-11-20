@@ -1,0 +1,197 @@
+[
+  {
+    "id": "C41B03B",
+    "name": "稀碱预热槽",
+    "asset": "C41B03",
+    "position_mm": [
+      9500.0,
+      52800.0,
+      12200
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL112",
+    "xy_status": "图块中心定位",
+    "z_status": "有安装基准",
+    "orientation_status": "新接口按局部总图表达；沿用原旋转，绝对工艺方位待核",
+    "source_insert": "33244",
+    "source_block": "碱液预热槽",
+    "label_handle": "3378C",
+    "label_distance_mm": 1825.7,
+    "source_floor_origin_mm": [
+      778010.4484369854,
+      305259.2765326499
+    ],
+    "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "reference_handle": "33244",
+      "reference_block": "碱液预热槽",
+      "source_rotation_deg": 180.0,
+      "source_scale": [
+        -1.0,
+        1
+      ],
+      "model_to_block_rotation_deg": 0,
+      "model_to_block_mirror_y": true,
+      "native_center_offset_mm": [
+        0,
+        0
+      ],
+      "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+      "top_plan": null,
+      "top_port_witness": {
+        "model_features": 4,
+        "matched_within_5mm": 4,
+        "nearest_error_mm": [
+          0.036,
+          0.037,
+          0.037,
+          0.012
+        ]
+      }
+    },
+    "equipment_version": "2.0-C41B03-01",
+    "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+    "installation_review": {
+      "before_position_mm": [
+        9500.0,
+        52800.0,
+        12200
+      ],
+      "reason": "原XYZ/旋转保持；新增本体以底部承托面为原点，型钢/底板及未决口高见本类参数",
+      "source_drawing": "水解设备模型库/水解设备图纸/稀碱预热槽(C41B03A-C).dxf"
+    },
+    "model_origin": "最低承托面Z0；本类图纸口径和未决差异见设备参数"
+  },
+  {
+    "id": "C41B03A",
+    "name": "稀碱预热槽",
+    "asset": "C41B03",
+    "position_mm": [
+      9500.0,
+      24000.0,
+      12200
+    ],
+    "rotation_deg": 180.0,
+    "level": "EL112",
+    "xy_status": "图块中心定位",
+    "z_status": "有安装基准",
+    "orientation_status": "新接口按局部总图表达；沿用原旋转，绝对工艺方位待核",
+    "source_insert": "33BEB",
+    "source_block": "碱液预热槽",
+    "label_handle": "33BF1",
+    "label_distance_mm": 1519.08,
+    "source_floor_origin_mm": [
+      778010.4484369854,
+      305259.2765326499
+    ],
+    "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": true,
+    "layout_review": {
+      "reference_handle": "33BEB",
+      "reference_block": "碱液预热槽",
+      "source_rotation_deg": 180.0,
+      "source_scale": [
+        1,
+        1
+      ],
+      "model_to_block_rotation_deg": 0,
+      "model_to_block_mirror_y": true,
+      "native_center_offset_mm": [
+        0,
+        0
+      ],
+      "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+      "top_plan": null,
+      "top_port_witness": {
+        "model_features": 4,
+        "matched_within_5mm": 4,
+        "nearest_error_mm": [
+          0.036,
+          0.037,
+          0.037,
+          0.012
+        ]
+      }
+    },
+    "equipment_version": "2.0-C41B03-01",
+    "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+    "installation_review": {
+      "before_position_mm": [
+        9500.0,
+        24000.0,
+        12200
+      ],
+      "reason": "原XYZ/旋转保持；新增本体以底部承托面为原点，型钢/底板及未决口高见本类参数",
+      "source_drawing": "水解设备模型库/水解设备图纸/稀碱预热槽(C41B03A-C).dxf"
+    },
+    "model_origin": "最低承托面Z0；本类图纸口径和未决差异见设备参数"
+  },
+  {
+    "id": "C41B03C",
+    "name": "稀碱预热槽",
+    "asset": "C41B03",
+    "position_mm": [
+      35000.0,
+      24000.0,
+      12200
+    ],
+    "rotation_deg": 0.0,
+    "level": "EL112",
+    "xy_status": "图块中心定位",
+    "z_status": "有安装基准",
+    "orientation_status": "新接口按局部总图表达；沿用原旋转，绝对工艺方位待核",
+    "source_insert": "38105",
+    "source_block": "碱液预热槽",
+    "label_handle": "38112",
+    "label_distance_mm": 1318.28,
+    "source_floor_origin_mm": [
+      778010.4484369854,
+      305259.2765326499
+    ],
+    "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
+    "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
+    "mirror_y": false,
+    "layout_review": {
+      "reference_handle": "38105",
+      "reference_block": "碱液预热槽",
+      "source_rotation_deg": 180.0,
+      "source_scale": [
+        -1.0,
+        1
+      ],
+      "model_to_block_rotation_deg": 0,
+      "model_to_block_mirror_y": true,
+      "native_center_offset_mm": [
+        0,
+        0
+      ],
+      "basis": "顶口中心核对：(-514.2,+296.9)对应块内(-514.2,-296.9)",
+      "top_plan": null,
+      "top_port_witness": {
+        "model_features": 4,
+        "matched_within_5mm": 4,
+        "nearest_error_mm": [
+          0.036,
+          0.037,
+          0.037,
+          0.012
+        ]
+      }
+    },
+    "equipment_version": "2.0-C41B03-01",
+    "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+    "installation_review": {
+      "before_position_mm": [
+        35000.0,
+        24000.0,
+        12200
+      ],
+      "reason": "原XYZ/旋转保持；新增本体以底部承托面为原点，型钢/底板及未决口高见本类参数",
+      "source_drawing": "水解设备模型库/水解设备图纸/稀碱预热槽(C41B03A-C).dxf"
+    },
+    "model_origin": "最低承托面Z0；本类图纸口径和未决差异见设备参数"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "P41B04",
+  "name": "水解喷淋增压泵",
+  "version": "2.0-P41B04-复核01",
+  "action": "暂留管道泵示意；卧式/立式型式与安装外形待厂家图",
+  "geometry_action": "retained",
+  "status": "reviewed-with-open-items",
+  "unit_tags": [
+    "P41B04"
+  ],
+  "active_model_source": null,
+  "active_model_sha256": null,
+  "legacy_model_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
+  "sources": {
+    "水解设备模型库/示图建模_20260521/原始资料/水解设备模型示图_更新20261105.dxf": "b06d01a8b8bd50f8cd815412f37ede908c2573b0636030ab6018a92a124a3338",
+    "水解桥架工程/data/原始资料/设备基础/水解设备基础图.dxf": "f9b926871baba69f1b974b73455c0e5d3174c6e6f61b1e87b2fd8c229a0fe9d7",
+    "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf": "c1c34f7ebe432db19c46a818453bc19087d9454215e177cf54acbab5ee1afabf",
+    "水解设备模型库/示图建模_20260521/原始资料/2.水解水洗设备一览表 2026.5.21.xls": "77844a77077ae85ac67e0f8f7c21fe1cee6d73d06564036b53959560b0df07a3"
+  },
+  "installation": {
+    "placed": [],
+    "unplaced": [
+      {
+        "id": "P41B04",
+        "name": "水解喷淋增压泵",
+        "reason": "未取得可唯一关联的平面设备图块，禁止以文字插入点代替设备中心",
+        "legacy_position_mm": [
+          670735,
+          373695
+        ]
+      }
+    ],
+    "position_action": "unchanged"
+  },
+  "pending": [
+    "Q120/H40及管道泵台账不足以确定卧式/立式和本体尺寸",
+    "平面459.81×300为安装符号，现高度360仅比例显示",
+    "主管中心高、进出口方向和支座待核；原基础与位置不移动"
+  ]
+}
