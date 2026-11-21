@@ -1,0 +1,23 @@
+{
+  "user_request": "删除与N5重叠的上部带孔附件，其他不动",
+  "removed_part": "上部吊耳_带孔板",
+  "removed_count": 1,
+  "remaining_parts": 65,
+  "all_remaining_parts_exactly_unchanged": true,
+  "N5_unchanged": true,
+  "lower_eye_retained": true,
+  "files": {
+    "水解设备模型库/版本/2.0/C41B04/设备/C41B04.glb": {
+      "before": "b016cbb3cac88bd2bdee9b58474c73f18ded833cca5409a50836cae312614d3b",
+      "after": "826da6fe7f01ea6e59b62a8b775f677b791553fbe8e682987b49ca2a02b30287"
+    },
+    "水解设备模型库/版本/2.0/C41B04/设备/C41B04.obj": {
+      "before": "1a001825d1fae7e84a70ded05a725c20683dcf3a245ceae1d43edfedeee67dd0",
+      "after": "6a8e0e9c9104b0c34c5918fdcf90cf755ff2770b5810618abb6c59c87be8414c"
+    },
+    "水解设备模型库/版本/2.0/C41B04/设备/model_data.js": {
+      "before": "8fdf866e99295eda2fddd51548c8a79dd7bbf02e828910471bd7689063e911b0",
+      "after": "cad18c24d540f2e45d8dedfcff6dc8dd850605eed69e49e335bc849cfcc593e3"
+    }
+  }
+}

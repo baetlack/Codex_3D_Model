@@ -97,8 +97,8 @@ def equipment():
             # A triangular web instead of a diagonal rectangular bar.
             v=[(x,y,z) for y in [side*86-6,side*86+6] for x,z in [(635,20),(1027.5,20),(635,350)]]
             geo.add(f'托耳_R{i}_三角筋{side}',STEEL,v,[[0,2,1],[3,4,5],[0,1,4,3],[1,2,5,4],[2,0,3,5]]);move_last(angle=a)
-    # Two lifting eyes are part of the equipment, not replacement civil supports.
-    for z in [TOP-530,BOTTOM+900]:
+    # User removed only the upper lifting eye overlapping N5; retain the lower eye.
+    for z in [BOTTOM+900]:
         plate('吊耳_带孔板',[(640,-90),(760,-50),(790,0),(760,50),(640,90)],[(740,0,22)],-12,12,DARK)
         n,c,v,f=geo.parts[-1];geo.parts[-1]=(n,c,[(x,t,z+d) for x,d,t in v],[list(reversed(face)) for face in f])
     return ports

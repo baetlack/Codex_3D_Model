@@ -10,7 +10,12 @@ from revision_scope import unchanged_outside
 def run(selected):
     assert set(selected)<=set(CLASSES)
     baseline=json.loads((BATCH/'本批保护基准.json').read_text());cfg=json.loads((REPO/'水解总装工程/assembly.json').read_text());catalog=json.loads((ROOT/'catalog.json').read_text());project=json.loads((ROOT/'project.json').read_text())
-    for name,digest in baseline['protected_files'].items():assert sha(REPO/name)==digest,name
+    approved=json.loads((ROOT/'版本/2.0/C41B04/上部吊耳删除记录.json').read_text())['files']
+    for name,digest in baseline['protected_files'].items():
+        if name in approved:
+            assert approved[name]['before']==digest,name
+            digest=approved[name]['after']
+        assert sha(REPO/name)==digest,name
     assert len(cfg['equipment'])==72 and len(cfg['unplaced'])==27
     before={q['id']:q for q in baseline['assembly']['equipment']};after={q['id']:q for q in cfg['equipment']};assert set(before)==set(after)
     for tag,q in after.items():
