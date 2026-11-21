@@ -305,7 +305,7 @@ function loadParts(dir) {
   if (meshCache.has(dir)) return meshCache.get(dir);
   const request=new Promise((resolve,reject)=>{
     const script=document.createElement('script');
-    script.src=dir+'model_data.js'+(dir.includes('版本/2.0/C41B04/设备/')?'?v=1d56838':'');
+    script.src=dir+'model_data.js'+(dir.includes('版本/2.0/C41B04/设备/')?'?v=1d56838':dir.includes('版本/2.0/C41B01/设备/')?'?v=c1-review02':'');
     script.onload=()=>{
       const mesh=window.MODEL_PARTS;
       delete window.MODEL_PARTS;

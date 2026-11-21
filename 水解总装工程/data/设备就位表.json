@@ -3324,7 +3324,7 @@
     "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": false,
-    "equipment_version": "2.0-C41B01-01",
+    "equipment_version": "2.0-C41B01-02",
     "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
     "installation_review": {
       "before_position_mm": [
@@ -3639,7 +3639,7 @@
     "z_basis": "EL112 平面 POS EL 与基础顶 +0.200/+0.150 m",
     "source": "水解设备模型库/示图建模_20260521/原始资料/3.水解工段设备布置图+2026.5.21.dxf",
     "mirror_y": false,
-    "equipment_version": "2.0-C41B01-01",
+    "equipment_version": "2.0-C41B01-02",
     "local_datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
     "installation_review": {
       "before_position_mm": [

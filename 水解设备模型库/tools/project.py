@@ -66,6 +66,9 @@ def main():
    if key in factory:continue
    if (ROOT/('版本/2.0/'+key+'/设备/model_data.js')).exists():subprocess.run([sys.executable,str(ROOT/('tools/test_'+key.lower()+'.py'))],check=True)
   if any(key in factory for key in selected):subprocess.run([sys.executable,str(ROOT/'tools/test_factory_batch_v2.py'),*[key for key in selected if key in factory]],check=True)
+ elif command=='build-c41b01':
+  import subprocess
+  subprocess.run([sys.executable,str(ROOT/'tools/review_c41b01_v2.py')],check=True)
  elif command=='build-c41b02':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_c41b02_v2.py')],check=True)

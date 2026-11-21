@@ -324,6 +324,8 @@ def review_remaining(baseline,project,catalog,overrides):
     return reviews
 
 def build():
+    if json.loads((ROOT/'project.json').read_text()).get('review_workflow',{}).get('mode')=='逐类确认':
+        raise SystemExit('当前逐类确认模式：使用各类专用生成器，禁止旧批量构建覆盖已修正模型。')
     baseline=pin();frame_proof=common_tank_frame(baseline);project=json.loads((ROOT/'project.json').read_text());catalog=json.loads((ROOT/'catalog.json').read_text());overrides=script(ROOT/'equipment_versions.js','EQUIPMENT_VERSION_OVERRIDES');civil_index=json.loads((CIVIL/'基础索引.json').read_text());docs={};results={};civil_overrides={}
     for key in CLASSES:
         family=ALIASES.get(key,key);source=DRAWINGS/(FILES[family]+'.dxf')

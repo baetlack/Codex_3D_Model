@@ -2430,7 +2430,7 @@
       "before_rotation_deg": 270.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "equipment_version": "2.0-C41B01-01",
+      "equipment_version": "2.0-C41B01-02",
       "superseded_arrangement_symbol_evidence": {
         "reference_handle": "33246",
         "reference_block": "热水预热槽",
@@ -2628,7 +2628,7 @@
       "before_rotation_deg": 270.0,
       "after_rotation_deg": 0.0,
       "mirror_y": false,
-      "equipment_version": "2.0-C41B01-01",
+      "equipment_version": "2.0-C41B01-02",
       "superseded_arrangement_symbol_evidence": {
         "reference_handle": "38107",
         "reference_block": "热水预热槽",

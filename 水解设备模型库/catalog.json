@@ -2031,7 +2031,7 @@
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B01-01",
+      "model_version": "2.0-C41B01-02",
       "current_files": {
         "model": "版本/2.0/C41B01/设备/model_data.js",
         "glb": "版本/2.0/C41B01/设备/C41B01.glb",
@@ -2235,7 +2235,7 @@
       "large_equipment": true,
       "position_basis": "平面设备位号点；按图题偏移归一",
       "height_basis": "逐台视图轮廓 + 台账规格；电机/起升高度不计作设备主体高度",
-      "model_version": "2.0-C41B01-01",
+      "model_version": "2.0-C41B01-02",
       "current_files": {
         "model": "版本/2.0/C41B01/设备/model_data.js",
         "glb": "版本/2.0/C41B01/设备/C41B01.glb",

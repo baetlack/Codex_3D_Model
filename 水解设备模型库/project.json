@@ -81,12 +81,12 @@
       "status": "台账主尺寸、示图比例修正；本体不含旧框架；原钢支架保留，绝对定位待核"
     },
     "C41B01": {
-      "version": "2.0-C41B01-01",
+      "version": "2.0-C41B01-02",
       "equipment": "版本/2.0/C41B01/设备/model_data.js",
       "placements": "版本/2.0/C41B01/安装表.json",
       "support_review": "版本/2.0/C41B01/支承复核.json",
       "orientation_review": "new-factory-layout-pending",
-      "status": "新增总图修正外部本体/接口；原基础/位置保持，未决差异单列",
+      "status": "逐类复核02：修正c1/c2瓷衬出口；h盖、原基础和位置保持，待用户确认",
       "foundation": "版本/2.0/C41B01/基础/C41B01/model_data.js"
     },
     "C41B03": {
@@ -268,5 +268,15 @@
       "record": "版本/2.0/V41B04/复核记录.json",
       "geometry_changed": false
     }
+  },
+  "review_workflow": {
+    "mode": "逐类确认",
+    "current": "C41B01",
+    "status": "待用户确认",
+    "reference": [
+      "L41B02",
+      "F41B04",
+      "L41B03"
+    ]
   }
 }

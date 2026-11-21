@@ -49,6 +49,25 @@ def run(selected):
             lid=np.asarray(next(q for q in parts if q['name']=='盖面_h盖')['vertices'])
             assert np.allclose((lid.min(0)+lid.max(0))[:2]/2,h['face_center_mm'][:2],atol=1e-6)
             assert abs(lid[:,2].min()-h['face_center_mm'][2])<1e-6
+            if params['version']=='2.0-C41B01-02':
+                history=out/'历史/2.0-C41B01-01_逐类复核前'
+                oldparts=mesh(history/'设备/model_data.js');current={q['name']:q for q in parts}
+                changed={'接口_c1接管','接口_c1法兰','接口_c2接管','接口_c2法兰'}
+                assert len(parts)==33
+                for q in oldparts:
+                    if q['name'] not in changed:assert current[q['name']]==q,q['name']
+                oldinstall=json.loads((history/'安装表.json').read_text())
+                newinstall=json.loads((out/'安装表.json').read_text())
+                for old,new in zip(oldinstall,newinstall):
+                    assert {k:v for k,v in old.items() if k!='equipment_version'}=={k:v for k,v in new.items() if k!='equipment_version'}
+                for portkey,od,wall,lining,bore in [('c1',159,4.5,136,100),('c2',219,6,165,125)]:
+                    port=next(q for q in params['ports'] if q['id']==portkey);axis=np.array(port['normal']);end=np.array(port['face_center_mm'])
+                    for name,outer,inner,lo,hi in [('接口_'+portkey+'_瓷套管',lining/2,bore/2,-293,2),('接口_'+portkey+'接管',od/2,(od-2*wall)/2,None,None)]:
+                        v=np.array(current[name]['vertices'])-end;t=v@axis;r=np.linalg.norm(v-t[:,None]*axis,axis=1)
+                        assert np.allclose(np.unique(np.round(r,4)),[inner,outer]),name
+                        if lo is not None:assert np.allclose([t.min(),t.max()],[lo,hi]),name
+                for handle,expected in [('29227','159'),('341B7','136'),('28A2A','219'),('341B0','165')]:
+                    assert expected in doc.entitydb[handle].dxf.text,handle
         lid_name={'C41B03':'e','F41B01':'k','F41B02':'h2','D41B02':'t'}.get(family)
         if lid_name:
             p=next(q for q in params['ports'] if q['id']==lid_name);assert p['closure']=='带盖侧人孔'

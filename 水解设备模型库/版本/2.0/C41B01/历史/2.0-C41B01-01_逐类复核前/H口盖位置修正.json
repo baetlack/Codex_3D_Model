@@ -1,0 +1,17 @@
+{
+  "device": "C41B01",
+  "changed_part": "盖面_h盖",
+  "translation_mm": [
+    -1.6007106751203537e-10,
+    1249.9999999999418,
+    0.0
+  ],
+  "lid_center_after_mm": [
+    -1.6007106751203537e-10,
+    1249.9999999999418,
+    4166.0
+  ],
+  "other_parts_unchanged": 30,
+  "placement_changes": false,
+  "diameter_thickness_color_unchanged": true
+}
