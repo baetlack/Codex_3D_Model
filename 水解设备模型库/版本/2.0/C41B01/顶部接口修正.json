@@ -1,0 +1,10 @@
+{
+  "source": "水解设备模型库/水解设备图纸/热水预热槽(C41B01A-B).dxf",
+  "detail": "II及主视图b1/k1、b2/k2",
+  "change": "补两块带中心穿管孔的可拆盖板，封闭原误留的DN200套管敞口",
+  "retained_parts": 33,
+  "added_parts": 2,
+  "cover_thickness_mm": 10,
+  "thickness_status": "未标，展示值",
+  "positions_foundations_other_parts": "unchanged"
+}

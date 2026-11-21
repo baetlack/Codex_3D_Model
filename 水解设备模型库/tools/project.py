@@ -68,7 +68,7 @@ def main():
   if any(key in factory for key in selected):subprocess.run([sys.executable,str(ROOT/'tools/test_factory_batch_v2.py'),*[key for key in selected if key in factory]],check=True)
  elif command=='build-c41b01':
   import subprocess
-  subprocess.run([sys.executable,str(ROOT/'tools/review_c41b01_v2.py')],check=True)
+  subprocess.run([sys.executable,str(ROOT/'tools/fix_c41b01_top.py')],check=True)
  elif command=='build-c41b02':
   import subprocess
   subprocess.run([sys.executable,str(ROOT/'tools/build_c41b02_v2.py')],check=True)

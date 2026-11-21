@@ -64,7 +64,9 @@
       "flange_thickness_mm": 18,
       "outer_DN": 200,
       "outside_flange_OD_mm": 340,
-      "role": "蒸汽冷凝液进口 / 插入导管安装口"
+      "role": "蒸汽冷凝液进口 / 插入导管安装口",
+      "connection": "DN200套管法兰＋穿管盖板＋贯穿小接管；详图II",
+      "cover_thickness_display_mm": 10
     },
     {
       "id": "b1/k1",
@@ -84,7 +86,9 @@
       "flange_thickness_mm": 18,
       "outer_DN": 200,
       "outside_flange_OD_mm": 340,
-      "role": "蒸汽进口 / 插入导管安装口"
+      "role": "蒸汽进口 / 插入导管安装口",
+      "connection": "DN200套管法兰＋穿管盖板＋贯穿小接管；详图II",
+      "cover_thickness_display_mm": 10
     },
     {
       "id": "g",
@@ -258,5 +262,6 @@
     "parameters": "parameters/C41B01.json",
     "installation": "版本/2.0/C41B01/安装表.json"
   },
-  "review_status": "逐类复核完成，待用户确认后进入下一类"
+  "review_status": "逐类复核完成，待用户确认后进入下一类",
+  "top_revision": "顶部连接修正：补b1/k1、b2/k2穿管盖板；10mm盖厚为展示值，未标紧固件不补造"
 }

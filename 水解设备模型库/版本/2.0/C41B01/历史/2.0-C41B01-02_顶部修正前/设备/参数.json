@@ -1,0 +1,254 @@
+{
+  "id": "C41B01",
+  "group": "C41B01",
+  "name": "热水预热槽",
+  "version": "2.0-C41B01-02",
+  "units": "mm",
+  "source_drawing": "水解设备模型库/水解设备图纸/热水预热槽(C41B01A-B).dxf",
+  "source_sha256": "78767d9e3b6537ddddee22bc7de1a6834927d0349b61383461c39ac4794dc213",
+  "scope": "外部本体/接口、基础配合与安装复核；不展开内部工艺构造",
+  "dimensions_mm": {
+    "nominal_inner_diameter_mm": 3500,
+    "steel_outer_diameter_mm": 3520,
+    "nominal_body_height_mm": 4000,
+    "body_base_mm": 12,
+    "cover_top_mm": 4012,
+    "bottom_member_height_mm": 0,
+    "bottom_plate_diameter_mm": 3580,
+    "bottom_plate_thickness_mm": 12,
+    "cover_diameter_mm": 3670,
+    "cover_thickness_mm": 10,
+    "mixer_display_height_mm": 0,
+    "ring_bolt_count": 28,
+    "ring_bolt_PCD_mm": 3606
+  },
+  "bounds_mm": [
+    3670.0,
+    3745.0,
+    4335.0
+  ],
+  "ports": [
+    {
+      "id": "a",
+      "DN": 80,
+      "face_center_mm": [
+        -862.1742679930503,
+        905.0721140388032,
+        4162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18,
+      "role": "工艺水进口"
+    },
+    {
+      "id": "b2/k2",
+      "DN": 80,
+      "face_center_mm": [
+        -1250.0,
+        -1.8189894035458565e-12,
+        4312.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340,
+      "role": "蒸汽冷凝液进口 / 插入导管安装口"
+    },
+    {
+      "id": "b1/k1",
+      "DN": 65,
+      "face_center_mm": [
+        0.0,
+        -1250.000000000001,
+        4312.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 76.0,
+      "flange_OD_mm": 185,
+      "flange_thickness_mm": 18,
+      "outer_DN": 200,
+      "outside_flange_OD_mm": 340,
+      "role": "蒸汽进口 / 插入导管安装口"
+    },
+    {
+      "id": "g",
+      "DN": 100,
+      "face_center_mm": [
+        -932.5468455645605,
+        -832.3799497991267,
+        4112.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 108.0,
+      "flange_OD_mm": 220,
+      "flange_thickness_mm": 18,
+      "role": "备用口"
+    },
+    {
+      "id": "m",
+      "DN": 150,
+      "face_center_mm": [
+        883.8834764831699,
+        -883.8834764831881,
+        4162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 159.0,
+      "flange_OD_mm": 265,
+      "flange_thickness_mm": 18,
+      "role": "排气口"
+    },
+    {
+      "id": "e",
+      "DN": 80,
+      "face_center_mm": [
+        999.9999999999891,
+        -3.226195985917002e-05,
+        4112.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18,
+      "role": "液位计口"
+    },
+    {
+      "id": "h",
+      "DN": 500,
+      "face_center_mm": [
+        -1.6007106751203537e-10,
+        1249.9999999999418,
+        4162.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "neck_OD_mm": 530.0,
+      "flange_OD_mm": 620,
+      "flange_thickness_mm": 18,
+      "role": "简易人孔"
+    },
+    {
+      "id": "d",
+      "DN": 80,
+      "face_center_mm": [
+        1350.5739520663058,
+        -1350.5739520663058,
+        3812.0
+      ],
+      "normal": [
+        0.7071067811865469,
+        -0.7071067811865482,
+        0.0
+      ],
+      "neck_OD_mm": 89.0,
+      "flange_OD_mm": 200,
+      "flange_thickness_mm": 18,
+      "role": "溢流口"
+    },
+    {
+      "id": "f",
+      "DN": 25,
+      "face_center_mm": [
+        -1385.929291125633,
+        -1385.9292911256332,
+        1112.0
+      ],
+      "normal": [
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "neck_OD_mm": 32.0,
+      "flange_OD_mm": 115,
+      "flange_thickness_mm": 18,
+      "role": "测温口"
+    },
+    {
+      "id": "c1",
+      "DN": 150,
+      "face_center_mm": [
+        0.0,
+        -1908.0,
+        136.0
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "neck_OD_mm": 159,
+      "flange_OD_mm": 285,
+      "flange_thickness_mm": 18,
+      "wall_mm": 4.5,
+      "ceramic_sleeve_OD_mm": 136,
+      "ceramic_bore_mm": 100,
+      "ceramic_length_mm": 295,
+      "ceramic_end_projection_mm": 2,
+      "role": "稀释水出口（衬DN100瓷套管）"
+    },
+    {
+      "id": "c2",
+      "DN": 200,
+      "face_center_mm": [
+        -493.8267380556135,
+        -1842.9864765595412,
+        147.0
+      ],
+      "normal": [
+        -0.2588190451025228,
+        -0.9659258262890678,
+        0.0
+      ],
+      "neck_OD_mm": 219,
+      "flange_OD_mm": 340,
+      "flange_thickness_mm": 18,
+      "wall_mm": 6,
+      "ceramic_sleeve_OD_mm": 165,
+      "ceramic_bore_mm": 125,
+      "ceramic_length_mm": 295,
+      "ceramic_end_projection_mm": 2,
+      "role": "底水出口（衬DN125瓷套管）"
+    }
+  ],
+  "datum": "设备最低承托面Z0；D41B02沿用确认档案Z0；安装表保持原XYZ/旋转",
+  "limits": [
+    "h侧视接管Ø530与俯视内圈Ø490的差异保留；本轮保留已修正的盖面/法兰/提手同心关系。",
+    "其他管口的未标法兰厚度和伸出细部仍为展示值；未逐项升级为制造确认。",
+    "c1/c2瓷套管按详图长度295、外端2表达；保留原接口中心、朝向和法兰外廓，不为配合挪动接口。",
+    "两台中心与原点EL112.200沿用现布置；新接口绝对工艺方位待核，定位不等于全部接口已确认。",
+    "不展开槽内导管、衬砖和加固件；不增加本类图纸未列的搅拌器。"
+  ],
+  "detail_level": "采用已接受的C41B02工程展示风格；无依据细部不作制造确认",
+  "review_status": "逐类复核完成，待用户确认后进入下一类"
+}

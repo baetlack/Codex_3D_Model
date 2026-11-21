@@ -53,7 +53,7 @@ def run(selected):
                 history=out/'历史/2.0-C41B01-01_逐类复核前'
                 oldparts=mesh(history/'设备/model_data.js');current={q['name']:q for q in parts}
                 changed={'接口_c1接管','接口_c1法兰','接口_c2接管','接口_c2法兰'}
-                assert len(parts)==33
+                assert len(parts)==(35 if (out/'顶部接口修正.json').exists() else 33)
                 for q in oldparts:
                     if q['name'] not in changed:assert current[q['name']]==q,q['name']
                 oldinstall=json.loads((history/'安装表.json').read_text())
