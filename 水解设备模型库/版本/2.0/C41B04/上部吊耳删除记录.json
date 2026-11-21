@@ -18,6 +18,10 @@
     "水解设备模型库/版本/2.0/C41B04/设备/model_data.js": {
       "before": "8fdf866e99295eda2fddd51548c8a79dd7bbf02e828910471bd7689063e911b0",
       "after": "cad18c24d540f2e45d8dedfcff6dc8dd850605eed69e49e335bc849cfcc593e3"
+    },
+    "水解设备模型库/版本/2.0/C41B04/预览_设备.png": {
+      "before": "f908f4b7aa455d030f1cfeae71e808a88c882b1a213becb99ac03f1648fba023",
+      "after": "40ac5339233f51e4efe2fd1183822841b1d66e679f02807da4fbda376b48875c"
     }
   }
 }

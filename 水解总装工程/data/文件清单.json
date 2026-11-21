@@ -17,7 +17,7 @@
   "data/浏览器检查.json": "80898f7faaa2f70fce82660ef91e5bc49bb889956dc66073616be3bd32fa4fa5",
   "data/碰撞报告.json": "3f0c870496977aadd818dd067fd4d81cc7b2e536c737c10104c265f21a4b3aa1",
   "data/设备就位表.json": "1b41dae6b05aa5f5db33868af565b1624b265b4552fa34b0ea6c7dbbd40e3d24",
-  "index.html": "9ef64cbce47fc7845f895d520965b017df931bb1d1a7c15766012a2e09bf8d8f",
+  "index.html": "7813448543059a5e0a2d15736cd84a0561d9021c7137684f1de5b6c985612643",
   "previews/几何相交核对.png": "8db0cce11b9f033ca071a9af74dc5ef6e01d61b828272760a7d15921ae643ea4",
   "previews/厂房总装外观.png": "7958dd8c44b30286bc268e122229ad7ec130ce3f6281f202a7128411cdab4350",
   "previews/厂房桥架设备总装.png": "b11f569c1ec026e936e793a0e6fdf45ab3992b0c50779425472f5ab680e0fe94",
@@ -35,5 +35,5 @@
   "tools/test_geometry.py": "84f7b7f3b08c798fb640ef3a8f4b7c3a45723c229e76db5b9b00003a0a806011",
   "tools/test_revision.py": "fb22e595aa3533e0186294c47863d67f37909c1119e2c5ae3cb6e79bb57bd44e",
   "viewer.css": "dead2cabebea2e8317fae268de41d521674dee2bb5061023403f31e5eadefe8a",
-  "viewer.js": "f2866c5bc5e23750b77e0edabac583ca5fbc68f212a43efecf38bd1bdf186cf2"
+  "viewer.js": "891b22084493b7349940ca346a884e9d9877b548990cf268bb6a21da277a00c5"
 }
